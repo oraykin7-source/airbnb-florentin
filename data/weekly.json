@@ -1,0 +1,674 @@
+{
+  "generated_at": "2026-09-28T01:33:08+03:00",
+  "window_start": "2026-09-28",
+  "window_end": "2026-10-06",
+  "items": [
+    {
+      "category": "food",
+      "title": {
+        "en": "Teder / Beit Romano",
+        "de": "Teder / Beit Romano",
+        "fr": "Teder / Beit Romano"
+      },
+      "blurb": {
+        "en": "Ten minutes' walk from the flat: a courtyard bar in an old industrial building where the pizza is as good as the atmosphere, with Eyal Shani's Romano restaurant upstairs and his cassata ice cream round the back.",
+        "de": "Zehn Gehminuten von der Wohnung: eine Hofbar in einem alten Industriegebäude, in der die Pizza so gut ist wie die Stimmung - oben das Restaurant Romano von Eyal Shani, hinten seine Cassata-Eiscreme.",
+        "fr": "À dix minutes à pied de l'appartement : un bar de cour dans un ancien bâtiment industriel où la pizza vaut l'ambiance, avec le restaurant Romano d'Eyal Shani à l'étage et sa glace cassata à l'arrière."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Teder / Beit Romano, Derech Jaffa 9",
+      "area": "Florentin",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-restaurants-in-tel-aviv-2026",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/31893698/pexels-photo-31893698.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Marty Shih / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Jasmino - kebab off Allenby",
+        "de": "Jasmino - Kebab an der Allenby",
+        "fr": "Jasmino - kebab sur Allenby"
+      },
+      "blurb": {
+        "en": "Everything is grilled over charcoal in front of you; the queue on the pavement moves fast. Go for the lamb-and-veal kebab in pita with grilled onion, tahini and amba.",
+        "de": "Alles wird vor Ihren Augen über Holzkohle gegrillt, die Schlange auf dem Bürgersteig geht schnell. Nehmen Sie den Lamm-Kalb-Kebab im Pita mit gegrillten Zwiebeln, Tahini und Amba.",
+        "fr": "Tout est grillé au charbon devant vous et la file sur le trottoir avance vite. Prenez le kebab agneau-veau en pita, avec oignon grillé, tahini et amba."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Jasmino, Allenby St 99",
+      "area": "Allenby / Carmel Market",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-restaurants-in-tel-aviv-2026",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/20819468/pexels-photo-20819468.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Amine Photographe / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "HaTaco in Carmel Market",
+        "de": "HaTaco im Carmel-Markt",
+        "fr": "HaTaco au marché Carmel"
+      },
+      "blurb": {
+        "en": "A tiny taco stand hidden in the lanes of Shuk HaCarmel with two or three tacos on the menu, all made perfectly. Ask for extra lime and try the house hot sauces.",
+        "de": "Ein winziger Taco-Stand in den Gassen des Shuk HaCarmel mit zwei oder drei Tacos auf der Karte - alle perfekt. Bitten Sie um extra Limette und probieren Sie die hauseigenen Saucen.",
+        "fr": "Un tout petit stand de tacos caché dans les ruelles du Shuk HaCarmel : deux ou trois tacos à la carte, tous parfaits. Demandez du citron vert en plus et goûtez les sauces maison."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "HaTaco, HaShomer St 1",
+      "area": "Carmel Market",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-restaurants-in-tel-aviv-2026",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/31615033/pexels-photo-31615033.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Hson / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Pizza Lila",
+        "de": "Pizza Lila",
+        "fr": "Pizza Lila"
+      },
+      "blurb": {
+        "en": "Sourdough pizza with toppings that go well beyond the usual. The original Levinsky Market branch is still under reconstruction, so head to the Shenkin pop-up at Nafha 3.",
+        "de": "Sauerteigpizza mit Belägen weit jenseits des Üblichen. Die ursprüngliche Filiale am Levinsky-Markt wird noch wiederaufgebaut - gehen Sie zum Pop-up in der Nafha 3 bei Shenkin.",
+        "fr": "Une pizza au levain avec des garnitures qui sortent de l'ordinaire. La boutique d'origine du marché Levinsky est encore en travaux : rendez-vous au pop-up de Nafha 3, côté Shenkin."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Pizza Lila, Nafha 3",
+      "area": "Shenkin",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-restaurants-in-tel-aviv-2026",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/3570077/pexels-photo-3570077.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Myatezhny39 / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "SchnittFest - Oktoberfest beers and sausages",
+        "de": "SchnittFest - Oktoberfest mit Bier und Wurst",
+        "fr": "SchnittFest - bières et saucisses d'Oktoberfest"
+      },
+      "blurb": {
+        "en": "Five days of Oktoberfest on Givon Square during the Sukkot holiday week: special brews, sausages, food and live music at the brewpub. Runs until 1 October.",
+        "de": "Fünf Tage Oktoberfest am Givon-Platz in der Sukkot-Ferienwoche: Spezialbiere, Würste, Essen und Livemusik in der Brauereikneipe. Bis zum 1. Oktober.",
+        "fr": "Cinq jours d'Oktoberfest sur la place Givon pendant la semaine de Souccot : bières spéciales, saucisses, cuisine et musique live à la brasserie. Jusqu'au 1er octobre."
+      },
+      "date_start": "2026-09-27",
+      "date_end": "2026-10-01",
+      "time": "12:00",
+      "venue": "Schnitt Brewing Company, HaArba'a St 12",
+      "area": "Givon Square",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/tickets/schnitt-beerfest-schnitt-brewing-company",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/1467807/pexels-photo-1467807.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Brett Sayles / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "LauterFest - Oktoberfest next door",
+        "de": "LauterFest - Oktoberfest gleich daneben",
+        "fr": "LauterFest - l'Oktoberfest d'à côté"
+      },
+      "blurb": {
+        "en": "Lauter's own Oktoberfest runs side by side with SchnittFest on the same square, with special taps and German comfort food from late afternoon.",
+        "de": "Lauters eigenes Oktoberfest läuft direkt neben dem SchnittFest auf demselben Platz - mit besonderen Zapfhähnen und deutscher Hausmannskost ab dem späten Nachmittag.",
+        "fr": "L'Oktoberfest de Lauter se tient juste à côté du SchnittFest, sur la même place, avec des fûts spéciaux et une cuisine allemande réconfortante dès la fin d'après-midi."
+      },
+      "date_start": "2026-09-27",
+      "date_end": "2026-10-01",
+      "time": "16:00",
+      "venue": "Lauter, HaArba'a St 10",
+      "area": "Givon Square",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/tickets/oktoberfest-beerfest-lauter",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/7016492/pexels-photo-7016492.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Darlene Alderson / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Paulaner Fest on the Migdalor deck",
+        "de": "Paulaner Fest auf dem Migdalor-Deck",
+        "fr": "Paulaner Fest sur la terrasse du Migdalor"
+      },
+      "blurb": {
+        "en": "Cold draft beer and sunsets over the sea at the northern deck of Tel Aviv Port, with a sausage pop-up by Eran Bick, Friday-morning yoga and a designer fair. Entry is free.",
+        "de": "Kühles Fassbier und Sonnenuntergänge am Meer auf dem nördlichen Deck des Tel Aviver Hafens - mit Wurst-Pop-up von Eran Bick, Yoga am Freitagmorgen und Designermarkt. Eintritt frei.",
+        "fr": "Bière pression bien fraîche et coucher de soleil sur la mer, sur la terrasse nord du port de Tel-Aviv : pop-up de saucisses d'Eran Bick, yoga le vendredi matin et marché de créateurs. Entrée libre."
+      },
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-03",
+      "time": "18:00",
+      "venue": "Migdalor Cafe, Tel Aviv Port",
+      "area": "Tel Aviv Port",
+      "price": "Free entry",
+      "url": "https://www.secrettelaviv.com/tickets/paulaner-fest-migdalor-cafe-2",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/14565750/pexels-photo-14565750.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Juliano Ferreira / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Brunch pop-up by chef Omer Tal",
+        "de": "Brunch-Pop-up von Chef Omer Tal",
+        "fr": "Pop-up brunch du chef Omer Tal"
+      },
+      "blurb": {
+        "en": "A one-day plant-based brunch for Sukkot: mushroom \"foie gras\", French toast and tofu scramble on sourdough, plus fresh challah and house spreads to take away. Places are limited.",
+        "de": "Ein einziger Tag pflanzlicher Brunch zu Sukkot: Pilz-\"Foie gras\", French Toast und Tofu-Rührei auf Sauerteigbrot, dazu frische Challah und hausgemachte Aufstriche zum Mitnehmen. Plätze sind begrenzt.",
+        "fr": "Un brunch végétal d'un jour pour Souccot : \"foie gras\" de champignons, pain perdu et brouillade de tofu sur pain au levain, plus challah frais et tartinades maison à emporter. Places limitées."
+      },
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "10:00",
+      "venue": "Studio 4",
+      "area": null,
+      "price": null,
+      "url": "https://www.secrettelaviv.com/tickets/pop-up-by-chef-omer-tal-studio-4",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/32765785/pexels-photo-32765785.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Kenan Odabas / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Jaffa Farmer's Market",
+        "de": "Bauernmarkt in Jaffa",
+        "fr": "Marché fermier de Jaffa"
+      },
+      "blurb": {
+        "en": "The city's new permanent farmers market in the Jaffa Flea Market, every Wednesday: dozens of stalls of Israeli produce and Jaffa food makers, with rotating winery, chef and artist collaborations.",
+        "de": "Der neue feste Bauernmarkt der Stadt im Flohmarkt von Jaffa, jeden Mittwoch: Dutzende Stände mit israelischen Erzeugnissen und Jaffa-Produzenten, dazu wechselnde Weingut-, Koch- und Künstlerkooperationen.",
+        "fr": "Le nouveau marché fermier permanent de la ville, au marché aux puces de Jaffa, tous les mercredis : des dizaines d'étals de produits israéliens et de producteurs de Jaffa, avec des collaborations tournantes de domaines viticoles, chefs et artistes."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Jaffa Flea Market, Amiad 12",
+      "area": "Jaffa",
+      "price": null,
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=2137",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/10697692/pexels-photo-10697692.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Helen1 / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Kamuyot by Ohad Naharin - Batsheva Ensemble",
+        "de": "Kamuyot von Ohad Naharin - Batsheva Ensemble",
+        "fr": "Kamuyot d'Ohad Naharin - Batsheva Ensemble"
+      },
+      "blurb": {
+        "en": "Fifty minutes of dance with no stage and no boundaries: the Batsheva Ensemble performs an arm's length away from the audience, in Neve Tzedek. For all ages, no Hebrew needed. Last shows on 2 October.",
+        "de": "Fünfzig Minuten Tanz ohne Bühne und ohne Grenzen: Das Batsheva Ensemble tanzt in Neve Tzedek eine Armlänge vom Publikum entfernt. Für jedes Alter, ohne Hebräisch. Letzte Vorstellungen am 2. Oktober.",
+        "fr": "Cinquante minutes de danse sans scène ni frontières : le Batsheva Ensemble danse à un bras du public, à Neve Tzedek. Pour tous les âges, sans hébreu. Dernières représentations le 2 octobre."
+      },
+      "date_start": "2026-09-17",
+      "date_end": "2026-10-02",
+      "time": null,
+      "venue": "Suzanne Dellal Centre, Yehiely 6",
+      "area": "Neve Tzedek",
+      "price": null,
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=2189",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/6926734/pexels-photo-6926734.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Pavel Danilyuk / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Nachalat Binyamin Art Fair",
+        "de": "Kunsthandwerkermarkt Nachalat Binyamin",
+        "fr": "Foire d'art de Nachalat Binyamin"
+      },
+      "blurb": {
+        "en": "Around 200 stalls of handmade ceramics, jewellery, textiles and woodwork along half a kilometre of pedestrian street, every Tuesday and Friday and on holiday days. The artists are the ones selling.",
+        "de": "Rund 200 Stände mit handgemachter Keramik, Schmuck, Textilien und Holzarbeiten auf einem halben Kilometer Fußgängerstraße - jeden Dienstag und Freitag sowie an Feiertagen. Es verkaufen die Künstler selbst.",
+        "fr": "Environ 200 étals de céramique, bijoux, textiles et objets en bois faits main, sur un demi-kilomètre de rue piétonne, chaque mardi et vendredi et les jours de fête. Ce sont les artistes qui vendent."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Nachalat Binyamin promenade",
+      "area": "Nachalat Binyamin",
+      "price": "Free",
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=2138",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/31858690/pexels-photo-31858690.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Sarah O'Shea / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Jaffa Wednesdays",
+        "de": "Mittwoche in Jaffa",
+        "fr": "Les mercredis de Jaffa"
+      },
+      "blurb": {
+        "en": "A free Wednesday route through Jaffa: a farmers market at the Flea Market, live sunset performances on the Jaffa Port deck and open-air films at Gan HaPisga. A twenty-minute walk or short ride from Florentin.",
+        "de": "Eine kostenlose Mittwochsroute durch Jaffa: Bauernmarkt im Flohmarkt, Livemusik zum Sonnenuntergang am Hafendeck und Freiluftkino im Gan HaPisga. Von Florentin zwanzig Minuten zu Fuß oder eine kurze Fahrt.",
+        "fr": "Un parcours gratuit du mercredi dans Jaffa : marché fermier au marché aux puces, concerts au coucher du soleil sur la terrasse du port et cinéma en plein air au Gan HaPisga. À vingt minutes à pied de Florentin."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Jaffa Flea Market, Jaffa Port, Gan HaPisga",
+      "area": "Jaffa",
+      "price": "Free",
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=2159",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/34781491/pexels-photo-34781491.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Sabrina Rosenberg David / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Be'eri Art Gallery at Beit Romano",
+        "de": "Be'eri-Galerie im Beit Romano",
+        "fr": "Galerie Be'eri à Beit Romano"
+      },
+      "blurb": {
+        "en": "The Be'eri gallery, destroyed in the kibbutz on 7 October, now shows Israeli artists in the industrial Beit Romano complex on the edge of Florentin - a short visit you can combine with lunch downstairs.",
+        "de": "Die im Kibbuz am 7. Oktober zerstörte Be'eri-Galerie zeigt israelische Kunst nun im Industriekomplex Beit Romano am Rand von Florentin - ein kurzer Besuch, gut mit einem Mittagessen unten zu verbinden.",
+        "fr": "La galerie Be'eri, détruite au kibboutz le 7 octobre, expose désormais des artistes israéliens dans le complexe industriel Beit Romano, à la lisière de Florentin - une courte visite à combiner avec un déjeuner en bas."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Beit Romano, Derech Jaffa 9",
+      "area": "Florentin",
+      "price": null,
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=1939",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/15138863/pexels-photo-15138863.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Bertelli Fotografia / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Tom Wesselmann: All Out",
+        "de": "Tom Wesselmann: All Out",
+        "fr": "Tom Wesselmann : All Out"
+      },
+      "blurb": {
+        "en": "A large Pop Art show at the Tel Aviv Museum of Art: Wesselmann's bold still lifes and nudes from the Mugrabi Collection, in dialogue with contemporary artists. On view into December.",
+        "de": "Eine große Pop-Art-Ausstellung im Tel Aviv Museum of Art: Wesselmanns plakative Stillleben und Akte aus der Mugrabi-Sammlung, im Dialog mit zeitgenössischen Künstlern. Bis in den Dezember zu sehen.",
+        "fr": "Une grande exposition de Pop Art au musée d'art de Tel-Aviv : les natures mortes et nus éclatants de Wesselmann, issus de la collection Mugrabi, en dialogue avec des artistes contemporains. Jusqu'en décembre."
+      },
+      "date_start": "2026-06-11",
+      "date_end": "2026-12-26",
+      "time": null,
+      "venue": "Tel Aviv Museum of Art, Shaul HaMelech Blvd 27",
+      "area": "City centre",
+      "price": null,
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=2149",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/3724836/pexels-photo-3724836.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Loic Manegarium / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Modern Times - Chaplin with live orchestra",
+        "de": "Modern Times - Chaplin mit Live-Orchester",
+        "fr": "Les Temps modernes - Chaplin en orchestre live"
+      },
+      "blurb": {
+        "en": "The Revolution Orchestra plays Chaplin's last silent film live at the Opera House. Two earlier shows this season sold out; silent film, so no Hebrew required.",
+        "de": "Das Revolution Orchestra spielt Chaplins letzten Stummfilm live im Opernhaus. Zwei frühere Vorstellungen dieser Saison waren ausverkauft - Stummfilm, also ohne Hebräisch verständlich.",
+        "fr": "Le Revolution Orchestra accompagne en direct le dernier film muet de Chaplin, à l'Opéra. Deux représentations de la saison étaient complètes ; film muet, donc aucun hébreu requis."
+      },
+      "date_start": "2026-10-02",
+      "date_end": null,
+      "time": null,
+      "venue": "Opera House, Shaul Hamelech Blvd 19",
+      "area": "City centre",
+      "price": null,
+      "url": "https://visit.tel-aviv.gov.il/Lists/EventsList/DispForm.aspx?ID=2155",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/6521575/pexels-photo-6521575.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Son Tung Tran / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Comedy for Koby with Michael Rapaport",
+        "de": "Comedy for Koby mit Michael Rapaport",
+        "fr": "Comedy for Koby avec Michael Rapaport"
+      },
+      "blurb": {
+        "en": "An evening of stand-up entirely in English, headlined by Michael Rapaport and hosted by Avi Liberman, marking 25 years of the Koby Mandell Foundation.",
+        "de": "Ein Stand-up-Abend komplett auf Englisch mit Michael Rapaport als Headliner, moderiert von Avi Liberman - zum 25-jährigen Bestehen der Koby-Mandell-Stiftung.",
+        "fr": "Une soirée de stand-up entièrement en anglais, avec Michael Rapaport en tête d'affiche et Avi Liberman à l'animation, pour les 25 ans de la fondation Koby Mandell."
+      },
+      "date_start": "2026-10-01",
+      "date_end": null,
+      "time": "19:30",
+      "venue": "Beit HaHayal, Weizman 60",
+      "area": "City centre",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/tickets/comedy-for-koby-sukkot-2026-beit-hahayal",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/1840320/pexels-photo-1840320.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Teemu R / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Vulvalle vintage market",
+        "de": "Vulvalle Vintage-Markt",
+        "fr": "Marché vintage Vulvalle"
+      },
+      "blurb": {
+        "en": "Two days of vintage in the old railway station park next door in Neve Tzedek: Y2K finds, 80s and 90s pieces, Levi's, streetwear, jewellery and music. Free entry.",
+        "de": "Zwei Tage Vintage im alten Bahnhofspark im benachbarten Neve Tzedek: Y2K-Funde, Stücke aus den 80ern und 90ern, Levi's, Streetwear, Schmuck und Musik. Eintritt frei.",
+        "fr": "Deux jours de vintage dans le parc de l'ancienne gare, à Neve Tzedek juste à côté : trouvailles Y2K, pièces des années 80 et 90, Levi's, streetwear, bijoux et musique. Entrée libre."
+      },
+      "date_start": "2026-10-01",
+      "date_end": "2026-10-02",
+      "time": "10:00",
+      "venue": "Park HaTachana",
+      "area": "Neve Tzedek",
+      "price": "Free",
+      "url": "https://www.secrettelaviv.com/tickets/vulvalle-market-park-hatachana-22",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/16729588/pexels-photo-16729588.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Badun / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Frank Sinatra tribute by the sea",
+        "de": "Frank-Sinatra-Hommage am Meer",
+        "fr": "Hommage à Frank Sinatra face à la mer"
+      },
+      "blurb": {
+        "en": "Sinatra classics sung by Tommer Hesseg with a jazz band on the rooftop of an old Armenian monastery in Jaffa, by candlelight and with the sea below.",
+        "de": "Sinatra-Klassiker, gesungen von Tommer Hesseg mit Jazzband auf dem Dach eines alten armenischen Klosters in Jaffa - bei Kerzenschein, das Meer unter sich.",
+        "fr": "Les classiques de Sinatra chantés par Tommer Hesseg avec un groupe de jazz sur le toit d'un ancien monastère arménien de Jaffa, à la lueur des bougies et la mer en bas."
+      },
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "20:00",
+      "venue": "Saint Nicholas Monastery, Retzif HaAliya HaShniya St 3",
+      "area": "Jaffa",
+      "price": "₪160",
+      "url": "https://www.secrettelaviv.com/tickets/frank-sinatra-orchestra-tribute-by-the-sea-saint-nicholas-monastery-jaffa",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/9399878/pexels-photo-9399878.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Engina Kyurt / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Night in New York - jazz by candlelight",
+        "de": "Night in New York - Jazz bei Kerzenschein",
+        "fr": "Night in New York - jazz à la bougie"
+      },
+      "blurb": {
+        "en": "Sofie Chudnovsky and her quartet play Sinatra, Fitzgerald and Armstrong on the same monastery terrace above the Jaffa coastline, hundreds of candles included.",
+        "de": "Sofie Chudnovsky und ihr Quartett spielen Sinatra, Fitzgerald und Armstrong auf derselben Klosterterrasse über der Küste von Jaffa - hunderte Kerzen inklusive.",
+        "fr": "Sofie Chudnovsky et son quartet jouent Sinatra, Fitzgerald et Armstrong sur la même terrasse de monastère au-dessus du littoral de Jaffa, des centaines de bougies en prime."
+      },
+      "date_start": "2026-10-01",
+      "date_end": null,
+      "time": "20:00",
+      "venue": "Saint Nicholas Monastery, Retzif HaAliya HaShniya St 3",
+      "area": "Jaffa",
+      "price": "₪160",
+      "url": "https://www.secrettelaviv.com/tickets/night-in-new-york-jazz-by-candlelight-saint-nicholas-monastery-jaffa",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/9418649/pexels-photo-9418649.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Cotton Bro / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Leyli live at Barby",
+        "de": "Leyli live im Barby",
+        "fr": "Leyli en concert au Barby"
+      },
+      "blurb": {
+        "en": "The indie-pop duo of Guy Levi and Gal Toren play two albums' worth of songs at Barby, the veteran live club by Jaffa Port - a short walk south from Florentin.",
+        "de": "Das Indie-Pop-Duo Guy Levi und Gal Toren spielt Songs aus zwei Alben im Barby, dem alteingesessenen Liveclub am Hafen von Jaffa - ein kurzer Weg südlich von Florentin.",
+        "fr": "Le duo d'indie-pop Guy Levi et Gal Toren joue le répertoire de deux albums au Barby, la salle historique près du port de Jaffa - une courte marche au sud de Florentin."
+      },
+      "date_start": "2026-09-28",
+      "date_end": null,
+      "time": "21:00",
+      "venue": "Barby, Nemal Yafo St 1",
+      "area": "Jaffa Port",
+      "price": "₪120",
+      "url": "https://www.secrettelaviv.com/tickets/leyli-barby-9",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/15865135/pexels-photo-15865135.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Danik Prihodko / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Jimbo J and the Street Orchestra",
+        "de": "Jimbo J and the Street Orchestra",
+        "fr": "Jimbo J et le Street Orchestra"
+      },
+      "blurb": {
+        "en": "Forty musicians on the Barby stage: the rapper with the SFA band, the Jerusalem Street Orchestra and the Efroni Choir in large-scale arrangements of his hits.",
+        "de": "Vierzig Musiker auf der Barby-Bühne: der Rapper mit der SFA-Band, dem Jerusalem Street Orchestra und dem Efroni-Chor in groß angelegten Arrangements seiner Hits.",
+        "fr": "Quarante musiciens sur la scène du Barby : le rappeur avec le groupe SFA, le Jerusalem Street Orchestra et le chœur Efroni, dans de grands arrangements de ses tubes."
+      },
+      "date_start": "2026-09-29",
+      "date_end": null,
+      "time": "21:00",
+      "venue": "Barby, Nemal Yafo St 1",
+      "area": "Jaffa Port",
+      "price": "₪135",
+      "url": "https://www.secrettelaviv.com/tickets/jimbo-j-and-the-street-orchestra-barby-2",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/8186275/pexels-photo-8186275.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Brett Sayles / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Spoons Sukkot rave at Shalvata",
+        "de": "Spoons Sukkot-Rave im Shalvata",
+        "fr": "Rave Spoons de Souccot au Shalvata"
+      },
+      "blurb": {
+        "en": "An open-air birthday rave by the water from late afternoon, with Adam Ten, Kino Todo and Eli Nissan on the decks. Come for sunset rather than midnight.",
+        "de": "Ein Open-Air-Geburtstagsrave am Wasser ab dem späten Nachmittag, mit Adam Ten, Kino Todo und Eli Nissan an den Decks. Kommen Sie zum Sonnenuntergang, nicht um Mitternacht.",
+        "fr": "Un rave d'anniversaire en plein air au bord de l'eau dès la fin d'après-midi, avec Adam Ten, Kino Todo et Eli Nissan aux platines. Venez pour le coucher de soleil plutôt qu'à minuit."
+      },
+      "date_start": "2026-09-29",
+      "date_end": null,
+      "time": "16:00",
+      "venue": "Shalvata, HaTa'arucha St 3",
+      "area": "Tel Aviv Port",
+      "price": "₪105",
+      "url": "https://www.secrettelaviv.com/tickets/spoons-sukkot-rave-bdays-of-hazoom-ben-raul-yori-w-adam-ten-more-shalvata",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/9005458/pexels-photo-9005458.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Yank Rukov / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Lenge Lenge on the Jaffa Port deck",
+        "de": "Lenge Lenge auf dem Hafendeck in Jaffa",
+        "fr": "Lenge Lenge sur la terrasse du port de Jaffa"
+      },
+      "blurb": {
+        "en": "Free live music on the main deck of Jaffa Port every Wednesday evening, with the sea breeze doing half the work. Just show up and dance.",
+        "de": "Kostenlose Livemusik jeden Mittwochabend auf dem Hauptdeck des Hafens von Jaffa - die Meeresbrise macht die Hälfte der Arbeit. Einfach hinkommen und tanzen.",
+        "fr": "Musique live gratuite sur la terrasse principale du port de Jaffa chaque mercredi soir, la brise marine faisant la moitié du travail. Venez et dansez."
+      },
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "19:30",
+      "venue": "Jaffa Port, central deck",
+      "area": "Jaffa Port",
+      "price": "Free",
+      "url": "https://www.secrettelaviv.com/tickets/live-performances-on-the-deck-music-dec-lenge-lenge-jaffa-port",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/14364672/pexels-photo-14364672.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Caleb Oquendo / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Karnivore x Tal Schweitzer x David Sharon",
+        "de": "Karnivore x Tal Schweitzer x David Sharon",
+        "fr": "Karnivore x Tal Schweitzer x David Sharon"
+      },
+      "blurb": {
+        "en": "A double single-release night at Levontin 7, the small basement club a few streets from the flat: underground sounds from the Karni studio with Karnivore on the decks.",
+        "de": "Ein Abend mit zwei Single-Releases im Levontin 7, dem kleinen Kellerclub wenige Straßen von der Wohnung: Underground-Sounds aus dem Karni-Studio, Karnivore an den Decks.",
+        "fr": "Une soirée double sortie de single au Levontin 7, le petit club en sous-sol à quelques rues de l'appartement : sons underground du studio Karni, Karnivore aux platines."
+      },
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "22:00",
+      "venue": "Levontin 7",
+      "area": "Levontin",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/tickets/karnivore-x-tal-schweitzer-x-david-sharon-levontin-7",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/14483028/pexels-photo-14483028.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Samimi Bir Fotografci / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Room 48 opening week - Mita Gami",
+        "de": "Room-48-Eröffnungswoche - Mita Gami",
+        "fr": "Semaine d'ouverture de Room 48 - Mita Gami"
+      },
+      "blurb": {
+        "en": "A brand-new King George Street club opens its doors with Mita Gami on the decks. Late start, so buy ahead and arrive before the cut-off.",
+        "de": "Ein ganz neuer Club in der King George Street eröffnet mit Mita Gami an den Decks. Später Beginn - im Voraus kaufen und vor dem Einlassschluss kommen.",
+        "fr": "Un club tout neuf de King George Street ouvre avec Mita Gami aux platines. Début tardif : achetez à l'avance et arrivez avant la fermeture des portes."
+      },
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "23:50",
+      "venue": "Room 48, King George St 48",
+      "area": "City centre",
+      "price": "₪130",
+      "url": "https://www.secrettelaviv.com/tickets/room-48-opening-week-mita-gami-room-48",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/5423398/pexels-photo-5423398.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Wellington Paixão / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Decision Sukkot Festival at Haoman 17",
+        "de": "Decision Sukkot Festival im Haoman 17",
+        "fr": "Decision Sukkot Festival au Haoman 17"
+      },
+      "blurb": {
+        "en": "Two rooms, two worlds: techno and trance inside with Out of Orbit, Rising Dust and Captain Hook, pop in the garden. The club is a fifteen-minute walk from Florentin and runs until morning.",
+        "de": "Zwei Räume, zwei Welten: drinnen Techno und Trance mit Out of Orbit, Rising Dust und Captain Hook, im Garten Pop. Der Club liegt fünfzehn Gehminuten von Florentin und läuft bis zum Morgen.",
+        "fr": "Deux salles, deux mondes : techno et trance à l'intérieur avec Out of Orbit, Rising Dust et Captain Hook, pop dans le jardin. Le club est à quinze minutes à pied de Florentin et tourne jusqu'au matin."
+      },
+      "date_start": "2026-10-01",
+      "date_end": null,
+      "time": "22:00",
+      "venue": "Haoman 17, Abarbanel St 88",
+      "area": "South Tel Aviv",
+      "price": "₪249",
+      "url": "https://www.secrettelaviv.com/tickets/decision-sukkot-festival-haoman-17-2",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/10781266/pexels-photo-10781266.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Tolga Aslanturk / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Paradox Sukkot - Astrix x Dekel",
+        "de": "Paradox Sukkot - Astrix x Dekel",
+        "fr": "Paradox Souccot - Astrix x Dekel"
+      },
+      "blurb": {
+        "en": "Israeli psy-trance at its source: Astrix and Dekel take over the Reading 3 hall at the port, with Noam Leshem bridging trance and deep electronics.",
+        "de": "Israelischer Psytrance an der Quelle: Astrix und Dekel übernehmen die Halle Reading 3 am Hafen, Noam Leshem verbindet Trance und tiefe Elektronik.",
+        "fr": "La psy-trance israélienne à la source : Astrix et Dekel investissent la salle Reading 3 au port, Noam Leshem faisant le pont entre trance et électro profonde."
+      },
+      "date_start": "2026-10-01",
+      "date_end": null,
+      "time": "22:00",
+      "venue": "Reading 3",
+      "area": "Tel Aviv Port",
+      "price": "₪250",
+      "url": "https://www.secrettelaviv.com/tickets/paradox-sukkot-astrix-x-dekel-reading-3",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/27570912/pexels-photo-27570912.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Nano Erdozain / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Bitchfork's 4th anniversary",
+        "de": "Bitchfork feiert vier Jahre",
+        "fr": "Les 4 ans de Bitchfork"
+      },
+      "blurb": {
+        "en": "The crew behind Tel Aviv's alternative scene takes over Ozen Bar for a birthday night with a surprise lineup. Small room, high energy.",
+        "de": "Die Crew hinter Tel Avivs alternativer Szene übernimmt die Ozen Bar für eine Geburtstagsnacht mit Überraschungs-Lineup. Kleiner Raum, viel Energie.",
+        "fr": "L'équipe qui fait vivre la scène alternative de Tel-Aviv investit l'Ozen Bar pour un anniversaire au line-up surprise. Petite salle, grosse énergie."
+      },
+      "date_start": "2026-10-01",
+      "date_end": null,
+      "time": "23:00",
+      "venue": "Ozen Bar, King George St 48",
+      "area": "City centre",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/tickets/bitchfork-4th-anniversary-surprise-show-ozen-bar",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/6545129/pexels-photo-6545129.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Valentina Antonucci / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Amitai Kurtz Samba Project",
+        "de": "Amitai Kurtz Samba Project",
+        "fr": "Amitai Kurtz Samba Project"
+      },
+      "blurb": {
+        "en": "Chopin and pop hits rewritten as samba, by the band whose clips went viral worldwide - an early-afternoon show at Barby before their international tour. Impossible to sit still.",
+        "de": "Chopin und Pop-Hits als Samba neu geschrieben, von der Band, deren Clips weltweit viral gingen - eine Matinee im Barby vor der Welttournee. Stillsitzen unmöglich.",
+        "fr": "Chopin et des tubes pop réécrits en samba, par le groupe dont les vidéos ont fait le tour du monde - un concert en début d'après-midi au Barby avant leur tournée internationale. Impossible de rester assis."
+      },
+      "date_start": "2026-10-02",
+      "date_end": null,
+      "time": "13:00",
+      "venue": "Barby, Nemal Yafo St 1",
+      "area": "Jaffa Port",
+      "price": "₪115",
+      "url": "https://www.secrettelaviv.com/tickets/amitai-kurtz-samba-project-barby",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: George Charry / Pexels"
+    }
+  ]
+}
