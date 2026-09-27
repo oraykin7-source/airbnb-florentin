@@ -1,0 +1,307 @@
+{
+  "_comment": "Static part of the guide. Edit the values in `host` - they replace {{placeholders}} in the cards below. Everything else is ready in EN/DE/FR.",
+  "host": {
+    "host_name": "TODO host name",
+    "host_phone": "+972-50-000-0000",
+    "address": "TODO street & number, Florentin, Tel Aviv",
+    "wifi_ssid": "TODO-network-name",
+    "wifi_password": "TODO-password",
+    "shelter": "TODO e.g. the protected room (mamad) next to the bedroom",
+    "boiler_switch": "TODO e.g. the switch with a red light in the hallway, next to the bathroom door",
+    "checkout_time": "11:00"
+  },
+  "cards": [
+    {
+      "id": "wifi",
+      "icon": "📶",
+      "title": {
+        "en": "Wi-Fi",
+        "de": "WLAN",
+        "fr": "Wi-Fi"
+      },
+      "sub": {
+        "en": "Network & password",
+        "de": "Netzwerk & Passwort",
+        "fr": "Réseau et mot de passe"
+      },
+      "kv": [
+        {
+          "label": {
+            "en": "Network",
+            "de": "Netzwerk",
+            "fr": "Réseau"
+          },
+          "value": "{{wifi_ssid}}",
+          "copy": true
+        },
+        {
+          "label": {
+            "en": "Password",
+            "de": "Passwort",
+            "fr": "Mot de passe"
+          },
+          "value": "{{wifi_password}}",
+          "copy": true
+        }
+      ],
+      "items": {
+        "en": [
+          "If the connection drops, unplug the router (white box on the TV shelf) for 10 seconds and plug it back in."
+        ],
+        "de": [
+          "Falls die Verbindung abbricht: Router (weiße Box im TV-Regal) 10 Sekunden ausstecken und wieder einstecken."
+        ],
+        "fr": [
+          "Si la connexion coupe, débranchez le routeur (boîtier blanc sur le meuble TV) 10 secondes puis rebranchez-le."
+        ]
+      }
+    },
+    {
+      "id": "kitchen",
+      "icon": "🍳",
+      "title": {
+        "en": "Kitchen",
+        "de": "Küche",
+        "fr": "Cuisine"
+      },
+      "sub": {
+        "en": "Induction hob, Ninja Combi, where things are",
+        "de": "Induktion, Ninja Combi, wo ist was",
+        "fr": "Induction, Ninja Combi, où trouver quoi"
+      },
+      "items": {
+        "en": [
+          "The kitchen has a portable induction hob and a Ninja Combi (oven, air fryer, steamer in one). The full guide explains the levels, the pots with the click-on handle and where everything is.",
+          "Coffee, tea, oil, salt and spices are yours to use. Tap water in Tel Aviv is safe to drink.",
+          "Please don't open the cabinet under the sink - the door is fragile."
+        ],
+        "de": [
+          "Die Küche hat ein mobiles Induktionskochfeld und einen Ninja Combi (Ofen, Heißluftfritteuse und Dampfgarer in einem). Die vollständige Anleitung erklärt die Stufen, die Töpfe mit Klickgriff und wo alles ist.",
+          "Kaffee, Tee, Öl, Salz und Gewürze dürfen Sie gerne benutzen. Leitungswasser in Tel Aviv ist trinkbar.",
+          "Bitte den Schrank unter der Spüle nicht öffnen - die Tür ist empfindlich."
+        ],
+        "fr": [
+          "La cuisine a une plaque à induction portable et un Ninja Combi (four, friteuse à air et cuiseur vapeur en un). Le guide complet explique les niveaux, les casseroles à poignée clipsable et où tout se trouve.",
+          "Café, thé, huile, sel et épices sont à votre disposition. L'eau du robinet à Tel Aviv est potable.",
+          "Merci de ne pas ouvrir le placard sous l'évier - la porte est fragile."
+        ]
+      },
+      "link": {
+        "href": "kitchen/",
+        "label": {
+          "en": "Open the full kitchen guide",
+          "de": "Vollständige Küchenanleitung öffnen",
+          "fr": "Ouvrir le guide complet de la cuisine"
+        }
+      }
+    },
+    {
+      "id": "ac",
+      "icon": "❄️",
+      "title": {
+        "en": "Air conditioning",
+        "de": "Klimaanlage",
+        "fr": "Climatisation"
+      },
+      "sub": {
+        "en": "Remote & tips",
+        "de": "Fernbedienung & Tipps",
+        "fr": "Télécommande et conseils"
+      },
+      "items": {
+        "en": [
+          "Each room has its own remote on the wall holder. Press ON/OFF, choose ❄ for cooling or ☀ for heating.",
+          "24–25°C is the most comfortable setting - lower doesn't cool faster.",
+          "Please close windows while the AC is running and switch it off when you go out."
+        ],
+        "de": [
+          "Jedes Zimmer hat eine eigene Fernbedienung in der Wandhalterung. ON/OFF drücken, ❄ zum Kühlen oder ☀ zum Heizen wählen.",
+          "24–25 °C ist am angenehmsten - niedriger kühlt nicht schneller.",
+          "Bitte bei laufender Klimaanlage die Fenster schließen und beim Weggehen ausschalten."
+        ],
+        "fr": [
+          "Chaque pièce a sa télécommande sur le support mural. Appuyez sur ON/OFF, choisissez ❄ pour rafraîchir ou ☀ pour chauffer.",
+          "24–25 °C est le réglage le plus confortable - plus bas ne refroidit pas plus vite.",
+          "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant."
+        ]
+      }
+    },
+    {
+      "id": "tv",
+      "icon": "📺",
+      "title": {
+        "en": "TV",
+        "de": "Fernseher",
+        "fr": "Télévision"
+      },
+      "sub": {
+        "en": "Netflix, YouTube, casting",
+        "de": "Netflix, YouTube, Streaming",
+        "fr": "Netflix, YouTube, cast"
+      },
+      "items": {
+        "en": [
+          "Smart TV: use the remote's Home button to open Netflix, YouTube and other apps.",
+          "You're welcome to log in with your own accounts - please log out before you leave.",
+          "To cast from your phone, connect to the apartment Wi-Fi first."
+        ],
+        "de": [
+          "Smart-TV: Mit der Home-Taste der Fernbedienung öffnen Sie Netflix, YouTube und andere Apps.",
+          "Gerne mit eigenen Konten anmelden - bitte vor der Abreise wieder abmelden.",
+          "Zum Streamen vom Handy zuerst mit dem WLAN der Wohnung verbinden."
+        ],
+        "fr": [
+          "Smart TV : le bouton Home de la télécommande ouvre Netflix, YouTube et d'autres applis.",
+          "Vous pouvez vous connecter avec vos propres comptes - pensez à vous déconnecter avant de partir.",
+          "Pour caster depuis votre téléphone, connectez-vous d'abord au Wi-Fi de l'appartement."
+        ]
+      }
+    },
+    {
+      "id": "hot_water",
+      "icon": "🚿",
+      "title": {
+        "en": "Hot water (the \"dud\")",
+        "de": "Warmwasser (der „Dud“)",
+        "fr": "Eau chaude (le « doud »)"
+      },
+      "sub": {
+        "en": "Important - read before showering",
+        "de": "Wichtig - vor dem Duschen lesen",
+        "fr": "Important - à lire avant la douche"
+      },
+      "items": {
+        "en": [
+          "Like most Israeli homes, hot water comes from a tank on the roof called a dud. It's heated by the sun and, when that's not enough, by an electric switch.",
+          "Where the switch is: {{boiler_switch}}.",
+          "On cloudy days or in the evening, turn the switch on about 30–40 minutes before showering, then turn it off afterwards.",
+          "In summer the sun is usually enough - the water can be very hot, so test it first."
+        ],
+        "de": [
+          "Wie in den meisten israelischen Wohnungen kommt das Warmwasser aus einem Tank auf dem Dach, dem „Dud“. Er wird von der Sonne geheizt und bei Bedarf elektrisch per Schalter.",
+          "Wo der Schalter ist: {{boiler_switch}}.",
+          "An bewölkten Tagen oder abends den Schalter etwa 30–40 Minuten vor dem Duschen einschalten und danach wieder ausschalten.",
+          "Im Sommer reicht meist die Sonne - das Wasser kann sehr heiß sein, bitte vorher prüfen."
+        ],
+        "fr": [
+          "Comme dans la plupart des logements israéliens, l'eau chaude vient d'un réservoir sur le toit appelé « doud ». Il est chauffé par le soleil et, si besoin, par un interrupteur électrique.",
+          "Où se trouve l'interrupteur : {{boiler_switch}}.",
+          "Par temps nuageux ou le soir, allumez l'interrupteur 30 à 40 minutes avant la douche, puis éteignez-le ensuite.",
+          "En été, le soleil suffit généralement - l'eau peut être très chaude, testez d'abord."
+        ]
+      }
+    },
+    {
+      "id": "emergency",
+      "icon": "🆘",
+      "emergency": true,
+      "title": {
+        "en": "Emergency",
+        "de": "Notfall",
+        "fr": "Urgences"
+      },
+      "sub": {
+        "en": "Numbers, shelter, hospital",
+        "de": "Nummern, Schutzraum, Krankenhaus",
+        "fr": "Numéros, abri, hôpital"
+      },
+      "tel": [
+        {
+          "label": {
+            "en": "Police 100",
+            "de": "Polizei 100",
+            "fr": "Police 100"
+          },
+          "number": "100"
+        },
+        {
+          "label": {
+            "en": "Ambulance 101",
+            "de": "Rettung 101",
+            "fr": "Ambulance 101"
+          },
+          "number": "101"
+        },
+        {
+          "label": {
+            "en": "Fire 102",
+            "de": "Feuerwehr 102",
+            "fr": "Pompiers 102"
+          },
+          "number": "102"
+        },
+        {
+          "label": {
+            "en": "Your host",
+            "de": "Gastgeber",
+            "fr": "Votre hôte"
+          },
+          "number": "{{host_phone}}"
+        }
+      ],
+      "items": {
+        "en": [
+          "Address to give emergency services: {{address}}.",
+          "Rocket alert siren: go immediately to {{shelter}} and stay there for 10 minutes. The Home Front Command app sends alerts in English.",
+          "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
+          "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7."
+        ],
+        "de": [
+          "Adresse für Rettungsdienste: {{address}}.",
+          "Raketenalarm (Sirene): sofort in {{shelter}} gehen und 10 Minuten dort bleiben. Die App des Heimatfrontkommandos sendet Warnungen auf Englisch.",
+          "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
+          "Apotheken (Super-Pharm, Be) gibt es überall; einige haben lange oder rund um die Uhr geöffnet."
+        ],
+        "fr": [
+          "Adresse à donner aux secours : {{address}}.",
+          "Sirène d'alerte roquettes : allez immédiatement dans {{shelter}} et restez-y 10 minutes. L'appli du Commandement du front intérieur envoie les alertes en anglais.",
+          "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
+          "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvrent tard ou 24h/24."
+        ]
+      }
+    },
+    {
+      "id": "florentin",
+      "icon": "🎨",
+      "title": {
+        "en": "Local tips: Florentin",
+        "de": "Lokale Tipps: Florentin",
+        "fr": "Bons plans : Florentin"
+      },
+      "sub": {
+        "en": "Our neighbourhood, from a local",
+        "de": "Unser Viertel, von Einheimischen",
+        "fr": "Notre quartier, par un local"
+      },
+      "items": {
+        "en": [
+          "Street art: walk Florentin, Vital and Abarbanel streets - the whole neighbourhood is an open-air graffiti gallery.",
+          "Levinsky Market: spice shops, dried fruit, burekas and small cafés, a 5-minute walk. Best in the morning.",
+          "Evenings: the bars around Florentin St and Vital St fill up late - locals go out after 22:00.",
+          "The beach is about a 20-minute walk (or 5 minutes by bike). Old Jaffa and the flea market are 15 minutes on foot.",
+          "Shabbat (Friday afternoon to Saturday evening): most buses and trains don't run and many shops close. Plan taxis (Gett or Yango apps) and shop on Friday morning.",
+          "Rent a bike or scooter through the Tel-O-Fun or other city apps - Tel Aviv is flat and has good bike lanes.",
+          "Please keep it quiet on the balcony after 23:00 - neighbours live very close."
+        ],
+        "de": [
+          "Streetart: durch die Straßen Florentin, Vital und Abarbanel schlendern - das ganze Viertel ist eine Graffiti-Galerie unter freiem Himmel.",
+          "Levinsky-Markt: Gewürzläden, Trockenfrüchte, Burekas und kleine Cafés, 5 Minuten zu Fuß. Am besten vormittags.",
+          "Abends: Die Bars rund um die Florentin St und Vital St füllen sich spät - Einheimische gehen nach 22 Uhr aus.",
+          "Zum Strand sind es ca. 20 Minuten zu Fuß (5 Minuten mit dem Rad). Alt-Jaffa und der Flohmarkt sind 15 Minuten entfernt.",
+          "Schabbat (Freitagnachmittag bis Samstagabend): Die meisten Busse und Züge fahren nicht, viele Läden sind zu. Taxis (Apps Gett oder Yango) einplanen und freitagvormittags einkaufen.",
+          "Fahrräder oder Scooter über Tel-O-Fun oder andere Stadt-Apps mieten - Tel Aviv ist flach und hat gute Radwege.",
+          "Bitte nach 23 Uhr auf dem Balkon leise sein - die Nachbarn wohnen sehr nah."
+        ],
+        "fr": [
+          "Street art : baladez-vous rues Florentin, Vital et Abarbanel - tout le quartier est une galerie de graffitis à ciel ouvert.",
+          "Marché Levinsky : épiceries fines, fruits secs, burekas et petits cafés, à 5 minutes à pied. Idéal le matin.",
+          "Le soir : les bars autour des rues Florentin et Vital se remplissent tard - les locaux sortent après 22 h.",
+          "La plage est à environ 20 minutes à pied (5 minutes à vélo). Le vieux Jaffa et le marché aux puces sont à 15 minutes.",
+          "Shabbat (du vendredi après-midi au samedi soir) : la plupart des bus et trains ne circulent pas et beaucoup de commerces ferment. Prévoyez des taxis (applis Gett ou Yango) et faites vos courses le vendredi matin.",
+          "Louez un vélo ou une trottinette via Tel-O-Fun ou d'autres applis de la ville - Tel Aviv est plate et bien équipée en pistes cyclables.",
+          "Merci de rester discrets sur le balcon après 23 h - les voisins sont tout proches."
+        ]
+      }
+    }
+  ]
+}

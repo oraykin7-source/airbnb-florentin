@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-09-26T20:00:00+03:00",
+  "window_start": "2026-09-26",
+  "window_end": "2026-10-09",
+  "items": [
+    {
+      "category": "food",
+      "title": {
+        "en": "SAMPLE - New bistro opening",
+        "de": "Neues Bistro",
+        "fr": "Nouveau bistrot"
+      },
+      "blurb": {
+        "en": "Placeholder item to preview the layout.",
+        "de": "Platzhalter zur Vorschau.",
+        "fr": "Élément fictif pour l'aperçu."
+      },
+      "date_start": null,
+      "date_end": null,
+      "time": null,
+      "venue": "Example venue",
+      "area": "Florentin",
+      "price": null,
+      "url": "https://www.secrettelaviv.com/",
+      "source": "secrettelaviv.com"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "SAMPLE - Night food market",
+        "de": "Nachtmarkt",
+        "fr": "Marché de nuit"
+      },
+      "blurb": {
+        "en": "Placeholder item to preview the layout.",
+        "de": "Platzhalter zur Vorschau.",
+        "fr": "Élément fictif pour l'aperçu."
+      },
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "19:00",
+      "venue": "Example venue",
+      "area": "Jaffa",
+      "price": "Free",
+      "url": "https://visit.tel-aviv.gov.il/",
+      "source": "visit.tel-aviv.gov.il"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "SAMPLE - Photography exhibition",
+        "de": "Fotoausstellung",
+        "fr": "Exposition photo"
+      },
+      "blurb": {
+        "en": "Placeholder item to preview the layout.",
+        "de": "Platzhalter zur Vorschau.",
+        "fr": "Élément fictif pour l'aperçu."
+      },
+      "date_start": "2026-09-20",
+      "date_end": "2026-10-20",
+      "time": null,
+      "venue": "Example gallery",
+      "area": "Neve Tzedek",
+      "price": "₪40",
+      "url": "https://visit.tel-aviv.gov.il/",
+      "source": "visit.tel-aviv.gov.il"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "SAMPLE - Rooftop party",
+        "de": "Rooftop-Party",
+        "fr": "Soirée rooftop"
+      },
+      "blurb": {
+        "en": "Placeholder item to preview the layout.",
+        "de": "Platzhalter zur Vorschau.",
+        "fr": "Élément fictif pour l'aperçu."
+      },
+      "date_start": "2026-10-02",
+      "date_end": null,
+      "time": "23:00",
+      "venue": "Example club",
+      "area": "Florentin",
+      "price": "₪80",
+      "url": "https://www.chillz.co.il/",
+      "source": "chillz.co.il"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "SAMPLE - Party after your stay",
+        "de": "Party danach",
+        "fr": "Soirée après"
+      },
+      "blurb": {
+        "en": "Should be hidden: after check-out.",
+        "de": "Sollte verborgen sein.",
+        "fr": "Doit être masqué."
+      },
+      "date_start": "2026-10-04",
+      "date_end": null,
+      "time": "23:00",
+      "venue": "Example club",
+      "area": "Jaffa",
+      "price": null,
+      "url": "https://www.chillz.co.il/",
+      "source": "chillz.co.il"
+    }
+  ]
+}
