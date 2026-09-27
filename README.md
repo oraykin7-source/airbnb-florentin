@@ -12,30 +12,41 @@ Digital guide for the Airbnb in Florentin, Tel Aviv. One fixed URL for the QR co
 | `data/weekly.json` | The weekly part, written by the agent. Don't edit by hand. |
 | `data/stays.json` | Upcoming check-out dates only (from the Airbnb calendar). Written by the agent. |
 | `agent/refresh.py` | The agent: reads the Airbnb calendar, researches the three sources with Claude, writes the two JSON files. |
-| `.github/workflows/refresh.yml` | Runs the agent on GitHub's servers: Saturday evening (weekly), Sunday morning (retry), nightly (calendar only). |
+| `agent/ROUTINE.md` | The procedure the weekly **Claude Code Routine** follows (research → `weekly.json` → validate → push). |
+| `agent/validate.py` | Schema / source / window check for `weekly.json`. |
+| `.github/workflows/refresh.yml` | Manual fallback that runs the agent with an API key (not needed while the Routine is on). |
 
-## Setup (once)
+Live at **https://oraykin7-source.github.io/airbnb-florentin/** (GitHub Pages, branch `main`, root).
 
-1. Fill in `content/house.json` → `host` (name, phone, address, Wi-Fi, shelter, boiler switch).
-2. GitHub repo → **Settings → Secrets and variables → Actions**, add:
-   - `ANTHROPIC_API_KEY` - your Claude API key.
-   - `AIRBNB_ICS_URL` - the listing's iCal export URL (Airbnb → Calendar → Availability → Connect calendars → Export). This is the same link already imported into Google Calendar; it is secret, keep it only in this GitHub secret.
-3. **Settings → Pages** → Source: *Deploy from a branch*, branch `main`, folder `/ (root)`.
-4. **Actions** → *Refresh guest guide* → *Run workflow* (mode `full`) to produce the first `weekly.json`.
-5. Make the QR code from the Pages URL (`https://<user>.github.io/<repo>/`). The kitchen page prints its own QR at `/kitchen/`.
+## How it refreshes
+
+Two **Claude Code Routines** (claude.ai → Code → Routines) run on the host's Claude account - no API key:
+
+- **Weekly** - Saturday evening: follows `agent/ROUTINE.md` - updates check-out dates, researches the three sources, writes `data/weekly.json`, validates, pushes.
+- **Nightly** - updates `data/stays.json` only (so a booking made mid-week is picked up).
+
+The Airbnb iCal URL lives only in the routines' prompts, never in the repo (the repo is public).
+
+## Setup left for the host
+
+1. Fill in `content/house.json` → `host` (name, phone, address, Wi-Fi, shelter, boiler switch) and push.
+2. Make the QR code from the Pages URL above. The kitchen page prints its own QR at `/kitchen/`.
+3. Add photos to `kitchen/img/`.
 
 Preview before the first run: open the page with `?demo` to see sample events.
 
-## How the weekly refresh works
+## What the weekly refresh does
 
-- Every Saturday ~19:00 Israel time the workflow runs `agent/refresh.py`.
 - The script reads the Airbnb calendar and keeps only **check-out dates** of real bookings (no names, phones or reservation links are ever written to the repo).
 - The research window is at least the next 8 days, extended to the check-out of any guest arriving before the next refresh (max 3 weeks).
 - Claude (`claude-opus-5`) researches with web search + fetch **restricted to** `visit.tel-aviv.gov.il`, `secrettelaviv.com` and `chillz.co.il`, then structures the picks in EN/DE/FR. Items from any other domain or outside the window are dropped.
 - If fewer than 5 valid items come back, last week's file is kept and the run fails loudly.
 - The page filters events client-side: it shows only items between today and the guest's check-out (the next check-out date after today), and marks them *"during your stay"*.
 
-Cost: one research call per week, roughly a dollar or two.
+
+## Fallback: GitHub Actions with an API key
+
+If the Routine is ever unavailable, add the secrets `ANTHROPIC_API_KEY` and `AIRBNB_ICS_URL` and run **Actions → Refresh guest guide** manually. Cost is roughly $1-3 per run.
 
 ## Running the agent locally
 

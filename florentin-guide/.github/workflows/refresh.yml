@@ -1,8 +1,10 @@
 name: Refresh guest guide
 
 on:
-  # The weekly refresh runs as a Claude Code Routine (see README). This workflow is a
-  # manual fallback that needs the ANTHROPIC_API_KEY and AIRBNB_ICS_URL secrets.
+  schedule:
+    - cron: "0 17 * * 6"   # Saturday ~19:00-20:00 Israel time: weekly events refresh
+    - cron: "0 5 * * 0"    # Sunday morning: retry only if Saturday's run failed
+    - cron: "30 2 * * *"   # every night: update check-out dates only (no Claude cost)
   workflow_dispatch:
     inputs:
       mode:
@@ -39,7 +41,7 @@ jobs:
           AIRBNB_ICS_URL: ${{ secrets.AIRBNB_ICS_URL }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: |
-          if [ "${{ inputs.mode }}" = "stays" ]; then
+          if [ "${{ github.event.schedule }}" = "30 2 * * *" ] || [ "${{ inputs.mode }}" = "stays" ]; then
             python agent/refresh.py --stays
           else
             python agent/refresh.py
