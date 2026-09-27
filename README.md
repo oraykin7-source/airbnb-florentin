@@ -39,7 +39,7 @@ Preview before the first run: open the page with `?demo` to see sample events.
 
 - The script reads the Airbnb calendar and keeps only **check-out dates** of real bookings (no names, phones or reservation links are ever written to the repo).
 - The research window is at least the next 8 days, extended to the check-out of any guest arriving before the next refresh (max 3 weeks).
-- Claude (`claude-opus-5`) researches with web search + fetch **restricted to** `visit.tel-aviv.gov.il`, `secrettelaviv.com` and `chillz.co.il`, then structures the picks in EN/DE/FR. Items from any other domain or outside the window are dropped.
+- Claude (`claude-opus-5`) researches with web search + fetch **restricted to** `visit.tel-aviv.gov.il`, `secrettelaviv.com` and `chillz.com`, then structures the picks in EN/DE/FR. Items from any other domain or outside the window are dropped.
 - If fewer than 5 valid items come back, last week's file is kept and the run fails loudly.
 - The page filters events client-side: it shows only items between today and the guest's check-out (the next check-out date after today), and marks them *"during your stay"*.
 

@@ -21,7 +21,7 @@ It writes `data/stays.json` (check-out dates only) and prints the reserved stays
 
 - https://visit.tel-aviv.gov.il/ - official tourism site: events, exhibitions, festivals, tours, markets.
 - https://www.secrettelaviv.com/ - new restaurant openings, food events, things to do this week.
-- https://www.chillz.co.il/ - parties, club nights, concerts, nightlife tickets (Hebrew; translate what you read).
+- https://www.chillz.com/ - parties, club nights, concerts, nightlife tickets (Hebrew; translate what you read).
 
 Open each homepage, then follow their event/listing pages for the window. You may use web search **restricted to those domains** (`site:visit.tel-aviv.gov.il` etc.) to find pages; do not take items from any other site.
 

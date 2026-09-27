@@ -12,6 +12,7 @@
     en: {
       brand: "Florentin Home Guide", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
+      places_title: "Places we love", places_lead: "Our favourite corners of the city, all close by. Tap a card for the map.", map: "Open in Maps", photo: "Photo",
       cat_food: "Food & restaurants", cat_culture: "Culture & city events", cat_nightlife: "Nightlife & parties",
       footer: "Made with care by your host. Enjoy Florentin!",
       stay_until: d => `Picked for your stay · until ${d}`,
@@ -25,6 +26,7 @@
     de: {
       brand: "Florentin Wohnungsguide", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
+      places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt, alle in der Nähe. Karte antippen für den Weg.", map: "In Maps öffnen", photo: "Foto",
       cat_food: "Essen & Restaurants", cat_culture: "Kultur & Stadtevents", cat_nightlife: "Nachtleben & Partys",
       footer: "Mit Liebe von Ihrem Gastgeber. Viel Spaß in Florentin!",
       stay_until: d => `Ausgewählt für Ihren Aufenthalt · bis ${d}`,
@@ -38,6 +40,7 @@
     fr: {
       brand: "Guide de l'appart Florentin", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
+      places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville, tous à deux pas. Touchez une carte pour l'itinéraire.", map: "Ouvrir dans Maps", photo: "Photo",
       cat_food: "Cuisine & restaurants", cat_culture: "Culture & événements", cat_nightlife: "Vie nocturne & soirées",
       footer: "Préparé avec soin par votre hôte. Profitez de Florentin !",
       stay_until: d => `Sélectionné pour votre séjour · jusqu'au ${d}`,
@@ -50,7 +53,7 @@
     },
   };
 
-  const state = { lang: pickLang(), cat: "food", house: null, weekly: null, stays: null };
+  const state = { lang: pickLang(), cat: "food", house: null, places: null, weekly: null, stays: null };
 
   // ---------- helpers ----------
   function pickLang() {
@@ -164,6 +167,25 @@
     }
   }
 
+  function renderPlaces() {
+    const box = document.getElementById("places-list");
+    box.replaceChildren();
+    if (!state.places) return;
+    const L = state.lang;
+    for (const p of state.places.places) {
+      box.append(el("article", { class: "place" },
+        el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": p.title[L] },
+          el("img", { src: p.image, alt: p.title[L], loading: "lazy", width: "1200", height: "675" }),
+          el("span", { class: "walk" }, p.walk[L])),
+        el("div", { class: "place-body" },
+          el("h3", {}, p.title[L]),
+          el("p", {}, p.text[L]),
+          el("div", { class: "place-foot" },
+            el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
+            el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " →")))));
+    }
+  }
+
   function renderEvents() {
     const box = document.getElementById("events");
     const meta = document.getElementById("week-meta");
@@ -224,7 +246,7 @@
     }
   }
 
-  function renderAll() { renderChrome(); renderHouse(); renderEvents(); }
+  function renderAll() { renderChrome(); renderHouse(); renderPlaces(); renderEvents(); }
 
   // ---------- wiring ----------
   document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
@@ -237,9 +259,10 @@
   state.weekly = undefined; // loading
   renderAll();
 
-  Promise.allSettled([getJSON("content/house.json"), getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
-    .then(([house, weekly, stays]) => {
+  Promise.allSettled([getJSON("content/house.json"), getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json"), getJSON("content/places.json")])
+    .then(([house, weekly, stays, places]) => {
       state.house = house.status === "fulfilled" ? house.value : null;
+      state.places = places.status === "fulfilled" ? places.value : null;
       state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
       state.stays = stays.status === "fulfilled" ? stays.value : null;
       renderAll();

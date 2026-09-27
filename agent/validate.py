@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCES = ("visit.tel-aviv.gov.il", "secrettelaviv.com", "chillz.co.il")
+SOURCES = ("visit.tel-aviv.gov.il", "secrettelaviv.com", "chillz.com")
 CATEGORIES = ("food", "culture", "nightlife")
 IMAGE_HOSTS = ("images.unsplash.com", "unsplash.com", "images.pexels.com", "upload.wikimedia.org", "commons.wikimedia.org")
 BLOCKED_IMAGE_HOSTS = SOURCES + ("instagram.com", "cdninstagram.com", "facebook.com", "fbcdn.net", "tiktok.com", "x.com", "twitter.com")

@@ -90,8 +90,8 @@
       "venue": "Example club",
       "area": "Florentin",
       "price": "₪80",
-      "url": "https://www.chillz.co.il/",
-      "source": "chillz.co.il",
+      "url": "https://www.chillz.com/",
+      "source": "chillz.com",
       "image": null,
       "image_credit": null
     },
@@ -113,8 +113,8 @@
       "venue": "Example club",
       "area": "Jaffa",
       "price": null,
-      "url": "https://www.chillz.co.il/",
-      "source": "chillz.co.il",
+      "url": "https://www.chillz.com/",
+      "source": "chillz.com",
       "image": null,
       "image_credit": null
     }

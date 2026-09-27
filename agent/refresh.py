@@ -5,7 +5,7 @@
    no reservation links ever leave this script.
 2. Computes the event window so it covers every guest whose stay starts before the
    next weekly refresh.
-3. Asks Claude to research visit.tel-aviv.gov.il, secrettelaviv.com and chillz.co.il
+3. Asks Claude to research visit.tel-aviv.gov.il, secrettelaviv.com and chillz.com
    (web search + fetch restricted to those domains), then to structure the findings
    as JSON in English, German and French.
 
@@ -40,7 +40,7 @@ MODEL = "claude-opus-5"
 SOURCES = {
     "visit.tel-aviv.gov.il": "https://visit.tel-aviv.gov.il/",
     "secrettelaviv.com": "https://www.secrettelaviv.com/",
-    "chillz.co.il": "https://www.chillz.co.il/",
+    "chillz.com": "https://www.chillz.com/",
 }
 MIN_WINDOW_DAYS = 8     # always cover at least the coming week
 MAX_WINDOW_DAYS = 21    # but never research more than 3 weeks ahead
@@ -168,7 +168,7 @@ def research(client, today: date, end: date) -> str:
     ]
     prompt = RESEARCH_PROMPT.format(
         start=today.isoformat(), end=end.isoformat(), today=today.strftime("%A %Y-%m-%d"),
-        visit=SOURCES["visit.tel-aviv.gov.il"], secret=SOURCES["secrettelaviv.com"], chillz=SOURCES["chillz.co.il"],
+        visit=SOURCES["visit.tel-aviv.gov.il"], secret=SOURCES["secrettelaviv.com"], chillz=SOURCES["chillz.com"],
     )
     messages = [{"role": "user", "content": prompt}]
 
