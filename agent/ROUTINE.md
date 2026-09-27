@@ -54,11 +54,15 @@ Rules: every item comes from a page on one of the three sites and carries that p
       "area": "Florentin",
       "price": "₪80",
       "url": "https://www.secrettelaviv.com/....",
-      "source": "secrettelaviv.com"
+      "source": "secrettelaviv.com",
+      "image": "https://images.unsplash.com/photo-....?w=800",
+      "image_credit": "Photo: Jane Doe / Unsplash"
     }
   ]
 }
 ```
+
+**Images.** For each item you may attach one photo, but only from a free-to-use source: Unsplash (`images.unsplash.com`), Pexels (`images.pexels.com`) or Wikimedia Commons (`upload.wikimedia.org`), or a photo the venue itself explicitly marked as free to use (then put the licence note in `image_credit`). Search those sources for the venue, the dish, the neighbourhood or the kind of event (e.g. "Levinsky market", "Tel Aviv rooftop bar", "jazz concert") - an evocative generic photo is fine. **Never** take images from the venue's own website, Instagram, Facebook or any other social network, and never from the three source sites. If you find nothing suitable, set `image` to `null` and the page shows a category icon on a coloured background instead. Always fill `image_credit` when `image` is set. Prefer a direct image URL sized ~800px wide.
 
 Titles and blurbs in natural EN/DE/FR; keep proper names as they are. `date_start`/`date_end` are `YYYY-MM-DD` or `null`; `time` is `HH:MM` or `null`. Then run:
 

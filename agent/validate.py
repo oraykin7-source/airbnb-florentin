@@ -15,6 +15,8 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ("visit.tel-aviv.gov.il", "secrettelaviv.com", "chillz.co.il")
 CATEGORIES = ("food", "culture", "nightlife")
+IMAGE_HOSTS = ("images.unsplash.com", "unsplash.com", "images.pexels.com", "upload.wikimedia.org", "commons.wikimedia.org")
+BLOCKED_IMAGE_HOSTS = SOURCES + ("instagram.com", "cdninstagram.com", "facebook.com", "fbcdn.net", "tiktok.com", "x.com", "twitter.com")
 LANGS = ("en", "de", "fr")
 MIN_ITEMS = 5
 
@@ -54,6 +56,18 @@ def main() -> int:
         host = (urlparse(it.get("url", "")).hostname or "").lower()
         if urlparse(it.get("url", "")).scheme != "https" or not any(host == s or host.endswith("." + s) for s in SOURCES):
             errors.append(f"{where}: url not from an allowed source: {it.get('url')!r}")
+        img = it.get("image")
+        if img is not None:
+            u = urlparse(str(img))
+            ihost = (u.hostname or "").lower()
+            if u.scheme != "https":
+                errors.append(f"{where}: image must be https or null")
+            elif any(ihost == b or ihost.endswith("." + b) for b in BLOCKED_IMAGE_HOSTS):
+                errors.append(f"{where}: image from a forbidden host: {ihost}")
+            elif not any(ihost == h or ihost.endswith("." + h) for h in IMAGE_HOSTS) and not it.get("image_credit"):
+                errors.append(f"{where}: image from {ihost} needs an image_credit with the licence")
+            if not str(it.get("image_credit") or "").strip():
+                errors.append(f"{where}: image_credit required when image is set")
         try:
             ds, de = d(it.get("date_start")), d(it.get("date_end"))
         except ValueError:

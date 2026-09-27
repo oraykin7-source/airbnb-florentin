@@ -22,7 +22,9 @@
       "area": "Florentin",
       "price": null,
       "url": "https://www.secrettelaviv.com/",
-      "source": "secrettelaviv.com"
+      "source": "secrettelaviv.com",
+      "image": null,
+      "image_credit": null
     },
     {
       "category": "food",
@@ -43,7 +45,9 @@
       "area": "Jaffa",
       "price": "Free",
       "url": "https://visit.tel-aviv.gov.il/",
-      "source": "visit.tel-aviv.gov.il"
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+      "image_credit": "Photo: Unsplash"
     },
     {
       "category": "culture",
@@ -64,7 +68,9 @@
       "area": "Neve Tzedek",
       "price": "₪40",
       "url": "https://visit.tel-aviv.gov.il/",
-      "source": "visit.tel-aviv.gov.il"
+      "source": "visit.tel-aviv.gov.il",
+      "image": null,
+      "image_credit": null
     },
     {
       "category": "nightlife",
@@ -85,7 +91,9 @@
       "area": "Florentin",
       "price": "₪80",
       "url": "https://www.chillz.co.il/",
-      "source": "chillz.co.il"
+      "source": "chillz.co.il",
+      "image": null,
+      "image_credit": null
     },
     {
       "category": "nightlife",
@@ -106,7 +114,9 @@
       "area": "Jaffa",
       "price": null,
       "url": "https://www.chillz.co.il/",
-      "source": "chillz.co.il"
+      "source": "chillz.co.il",
+      "image": null,
+      "image_credit": null
     }
   ]
 }

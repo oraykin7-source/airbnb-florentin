@@ -203,7 +203,16 @@
       const whereBits = [it.venue, it.area].filter(Boolean).join(" · ");
       const host = (() => { try { return new URL(it.url).hostname.replace(/^www\./, ""); } catch (_) { return it.source; } })();
 
+      const ICON = { food: "🍽️", culture: "🎭", nightlife: "🎧" };
+      const media = it.image
+        ? el("div", { class: "ev-media" },
+            el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
+              onerror: e => { e.target.parentNode.replaceWith(el("div", { class: `ev-media ph ph-${it.category}` }, ICON[it.category])); } }),
+            it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null)
+        : el("div", { class: `ev-media ph ph-${it.category}`, "aria-hidden": "true" }, ICON[it.category]);
+
       box.append(el("article", { class: "ev" },
+        media,
         el("div", { class: "ev-top" },
           el("h3", {}, it.title[L], inStay ? el("span", { class: "badge" }, t("during_stay")) : null),
           el("span", { class: "when" }, when)),
