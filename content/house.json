@@ -382,6 +382,55 @@
           "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvrent tard ou 24h/24.",
           "Pour joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
         ]
+      },
+      "image": "assets/img/house/shelter.jpg",
+      "image_alt": {
+        "en": "The shelter door (marked) - next to the bedroom",
+        "de": "Die Schutzraumtür (markiert) - neben dem Schlafzimmer",
+        "fr": "La porte de l'abri (encadrée) - à côté de la chambre"
+      }
+    },
+    {
+      "id": "rules",
+      "icon": "🤝",
+      "title": {
+        "en": "House rules",
+        "de": "Hausregeln",
+        "fr": "Règles de la maison"
+      },
+      "sub": {
+        "en": "A few things that keep everyone happy",
+        "de": "Ein paar Dinge, damit alle zufrieden sind",
+        "fr": "Quelques points pour que tout se passe bien"
+      },
+      "items": {
+        "en": [
+          "Please eat at the kitchen table or in your room rather than on the sofa - the fabric doesn't forgive crumbs.",
+          "Rubbish goes in the kitchen bin (recycling: plastic bottles to the orange cage, cardboard to the blue bin on the street).",
+          "No smoking or vaping inside the apartment - the balcony is fine.",
+          "No parties or events, and no visitors staying overnight beyond the guests on the booking (extra guests carry an extra fee on Airbnb).",
+          "No pets, sorry.",
+          "Quiet on the balcony after 23:00 - the neighbours are very close.",
+          "Check-out is at {{checkout_time}}: switch off the AC, leave the keys where you found them, and drop us a message. Thank you!"
+        ],
+        "de": [
+          "Bitte am Küchentisch oder im Zimmer essen, nicht auf dem Sofa - der Stoff verzeiht keine Krümel.",
+          "Müll in den Küchenmülleimer (Recycling: Plastikflaschen in den orangen Gitterkorb, Karton in die blaue Tonne auf der Straße).",
+          "In der Wohnung nicht rauchen oder dampfen - der Balkon ist in Ordnung.",
+          "Keine Partys oder Veranstaltungen, keine Übernachtungsgäste über die gebuchten Personen hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
+          "Leider keine Haustiere.",
+          "Nach 23 Uhr auf dem Balkon bitte leise - die Nachbarn wohnen sehr nah.",
+          "Check-out um {{checkout_time}}: Klimaanlage aus, Schlüssel dort lassen, wo Sie ihn gefunden haben, und kurz Bescheid geben. Danke!"
+        ],
+        "fr": [
+          "Merci de manger à la table de la cuisine ou dans votre chambre plutôt que sur le canapé - le tissu ne pardonne pas les miettes.",
+          "Les déchets vont dans la poubelle de la cuisine (tri : bouteilles en plastique dans la cage orange, carton dans le bac bleu dans la rue).",
+          "Pas de cigarette ni de vapotage dans l'appartement - le balcon, oui.",
+          "Pas de fêtes ni d'événements, et pas d'invités pour la nuit au-delà des voyageurs de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
+          "Pas d'animaux, désolé.",
+          "Silence sur le balcon après 23 h - les voisins sont tout proches.",
+          "Départ à {{checkout_time}} : éteignez la clim, laissez les clés là où vous les avez trouvées et envoyez-nous un petit message. Merci !"
+        ]
       }
     },
     {
