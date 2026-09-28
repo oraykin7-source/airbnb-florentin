@@ -741,6 +741,139 @@
       ]
     },
     {
+      "id": "eat",
+      "icon": "🍽️",
+      "title": {
+        "en": "Where Oren eats",
+        "de": "Wo Oren isst",
+        "fr": "Où Oren mange"
+      },
+      "sub": {
+        "en": "Hummus, sabich, burekas, shawarma, fish, pasta, ice cream - all walkable",
+        "de": "Hummus, Sabich, Burekas, Schawarma, Fisch, Pasta, Eis - alles zu Fuß",
+        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace - tout à pied"
+      },
+      "items": {
+        "en": [
+          "My own favourites, no sponsorship. Hours are from Google and can change - tap a name to navigate. Most street-food places close on Shabbat."
+        ],
+        "de": [
+          "Meine persönlichen Favoriten, ohne Sponsoring. Zeiten von Google, können sich ändern - Name antippen zum Navigieren. Die meisten Streetfood-Läden sind am Schabbat zu."
+        ],
+        "fr": [
+          "Mes adresses personnelles, sans sponsoring. Horaires de Google, ils peuvent changer - touchez un nom pour naviguer. La plupart des stands de street food ferment le Shabbat."
+        ]
+      },
+      "lists": [
+        {
+          "title": {
+            "en": "Street food (daytime)",
+            "de": "Streetfood (tagsüber)",
+            "fr": "Street food (en journée)"
+          },
+          "rows": [
+            {
+              "name": "Garger HaZahav",
+              "where": "Levinski St 30",
+              "hours": "until 17:00, closed Sat",
+              "note": {
+                "en": "the best hummus in Levinsky market - 5 min walk",
+                "de": "der beste Hummus im Levinsky-Markt - 5 Min. zu Fuß",
+                "fr": "le meilleur houmous du marché Levinsky - 5 min à pied"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Garger%20HaZahav%20Levinski%20St%2030%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Sabich Frishman",
+              "where": "Levinski St 57",
+              "hours": "until 21:00",
+              "note": {
+                "en": "sabich: pita with fried aubergine, egg, salads - Tel Aviv's classic",
+                "de": "Sabich: Pita mit gebratener Aubergine, Ei, Salaten - der Klassiker Tel Avivs",
+                "fr": "sabich : pita à l'aubergine frite, œuf, salades - le classique de Tel Aviv"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Sabich%20Frishman%20Levinski%20St%2057%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Burekas shel Ima",
+              "where": "Levinski St 46",
+              "hours": "until 18:00, closed Sat",
+              "note": {
+                "en": "'Mom's burekas' - flaky pastry, breakfast on the go",
+                "de": "'Mamas Burekas' - Blätterteig, Frühstück auf die Hand",
+                "fr": "'Les burekas de maman' - feuilleté, petit-déjeuner à emporter"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1%20%D7%A9%D7%9C%20%D7%90%D7%9E%D7%90%20Levinski%20St%2046%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Turk Lahmajoun",
+              "where": "Nahalat Binyamin St 77",
+              "hours": "until 20:00, closed Sat",
+              "note": {
+                "en": "Turkish: lahmajoun, lamb shawarma in laffa - 10 min walk",
+                "de": "Türkisch: Lahmacun, Lamm-Schawarma im Laffa - 10 Min. zu Fuß",
+                "fr": "turc : lahmajoun, shawarma d'agneau dans un laffa - 10 min à pied"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Turk%20Lahmajoun%20Nahalat%20Binyamin%20St%2077%2C%20Tel%20Aviv"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Dinner",
+            "de": "Abendessen",
+            "fr": "Dîner"
+          },
+          "rows": [
+            {
+              "name": "HaShachaf",
+              "where": "Herzl St 22",
+              "hours": "from 17:00",
+              "note": {
+                "en": "fish & seafood, Greek style - octopus, fish carpaccio",
+                "de": "Fisch & Meeresfrüchte auf griechische Art - Oktopus, Fisch-Carpaccio",
+                "fr": "poisson et fruits de mer à la grecque - poulpe, carpaccio de poisson"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=HaShachaf%20Herzl%20St%2022%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Cena",
+              "where": "Herzl St 10",
+              "hours": "from 19:00",
+              "note": {
+                "en": "Italian, a few doors from HaShachaf - pasta",
+                "de": "Italienisch, ein paar Häuser von HaShachaf - Pasta",
+                "fr": "italien, à deux pas de HaShachaf - pâtes"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Cena%20Herzl%20St%2010%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Mirage (Eyal Shani)",
+              "where": "Yehuda HaLevi St 12, Park HaMesila",
+              "hours": "until 00:00",
+              "note": {
+                "en": "celebrity chef Eyal Shani - on the park, 10 min walk",
+                "de": "Promi-Koch Eyal Shani - am Park, 10 Min. zu Fuß",
+                "fr": "le chef star Eyal Shani - sur le parc, 10 min à pied"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Mirage%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Cassata",
+              "where": "Yehuda HaLevi St 12, Park HaMesila",
+              "hours": "until 00:00",
+              "note": {
+                "en": "Eyal Shani's ice cream, next door to Mirage",
+                "de": "Eyal Shanis Eis, direkt neben Mirage",
+                "fr": "la glace d'Eyal Shani, juste à côté de Mirage"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Cassata%20Park%20Hamesila%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "florentin",
       "icon": "🎨",
       "title": {
