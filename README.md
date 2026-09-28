@@ -14,7 +14,6 @@ Digital guide for the Airbnb in Florentin, Tel Aviv. One fixed URL for the QR co
 | `agent/refresh.py` | The agent: reads the Airbnb calendar, researches the three sources with Claude, writes the two JSON files. |
 | `agent/ROUTINE.md` | The procedure the weekly **Claude Code Routine** follows (research → `weekly.json` → validate → push). |
 | `agent/validate.py` | Schema / source / window check for `weekly.json`. |
-| `.github/workflows/refresh.yml` | Manual fallback that runs the agent with an API key (not needed while the Routine is on). |
 
 Live at **https://oraykin7-source.github.io/airbnb-florentin/** (GitHub Pages, branch `main`, root).
 
@@ -44,9 +43,9 @@ Preview before the first run: open the page with `?demo` to see sample events.
 - The page filters events client-side: it shows only items between today and the guest's check-out (the next check-out date after today), and marks them *"during your stay"*.
 
 
-## Fallback: GitHub Actions with an API key
+## Fallback without the Routine
 
-If the Routine is ever unavailable, add the secrets `ANTHROPIC_API_KEY` and `AIRBNB_ICS_URL` and run **Actions → Refresh guest guide** manually. Cost is roughly $1-3 per run.
+`agent/refresh.py` can run the same research through the Anthropic API (`ANTHROPIC_API_KEY` + `AIRBNB_ICS_URL`), locally or from any scheduler. Cost roughly $1-3 per run. There is no GitHub Actions workflow any more - it needed an API key the host doesn't have.
 
 ## Running the agent locally
 

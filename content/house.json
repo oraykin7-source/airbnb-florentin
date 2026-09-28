@@ -478,6 +478,37 @@
           "Merci de rester discrets après 23 h - les voisins sont tout proches."
         ]
       }
+    },
+    {
+      "id": "review",
+      "icon": "⭐",
+      "title": {
+        "en": "Five stars?",
+        "de": "Fünf Sterne?",
+        "fr": "Cinq étoiles ?"
+      },
+      "sub": {
+        "en": "Tell me during your stay, not after",
+        "de": "Sagen Sie es mir während des Aufenthalts, nicht danach",
+        "fr": "Dites-le-moi pendant le séjour, pas après"
+      },
+      "items": {
+        "en": [
+          "On Airbnb, five stars simply means \"everything was fine\" - anything less tells other travellers something went wrong.",
+          "So if anything is missing or not quite right - a towel, the Wi-Fi, a noisy night - please tell me right away (WhatsApp button at the top) and I'll fix it straight away. My goal is that you leave with a genuine five-star experience.",
+          "And if you did enjoy your stay, a few words in your review mean a lot to a small host like me. Thank you!"
+        ],
+        "de": [
+          "Bei Airbnb bedeuten fünf Sterne einfach \"alles war in Ordnung\" - alles darunter signalisiert anderen Reisenden, dass etwas schiefgelaufen ist.",
+          "Falls also etwas fehlt oder nicht ganz stimmt - ein Handtuch, das WLAN, eine laute Nacht - sagen Sie es mir bitte sofort (WhatsApp-Button oben), und ich kümmere mich direkt darum. Mein Ziel ist, dass Sie mit einem echten Fünf-Sterne-Erlebnis abreisen.",
+          "Und wenn es Ihnen gefallen hat: Ein paar Worte in Ihrer Bewertung bedeuten einem kleinen Gastgeber wie mir sehr viel. Danke!"
+        ],
+        "fr": [
+          "Sur Airbnb, cinq étoiles veut simplement dire « tout allait bien » - une note inférieure signale aux autres voyageurs qu'il y a eu un problème.",
+          "Alors si quelque chose manque ou n'est pas tout à fait au point - une serviette, le Wi-Fi, une nuit bruyante - dites-le-moi tout de suite (bouton WhatsApp en haut) et je le règle immédiatement. Mon objectif est que vous repartiez avec une vraie expérience cinq étoiles.",
+          "Et si vous avez aimé votre séjour, quelques mots dans votre commentaire comptent beaucoup pour un petit hôte comme moi. Merci !"
+        ]
+      }
     }
   ]
 }

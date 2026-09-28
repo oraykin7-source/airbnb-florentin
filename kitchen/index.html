@@ -31,11 +31,9 @@
   table { width:100%; border-collapse:collapse; font-size:.93rem; }
   td, th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
   .muted { color:var(--muted); font-size:.9rem; }
-  #qr { text-align:center; }
-  #qrbox { display:inline-block; background:#fff; padding:14px; border-radius:12px; margin-top:8px; }
   [data-l] { display:none; } html[data-lang="en"] [data-l="en"], html[data-lang="de"] [data-l="de"], html[data-lang="fr"] [data-l="fr"] { display:revert; }
   .back { display:inline-block; margin-bottom:6px; color:var(--accent); text-decoration:none; font-weight:600; font-size:.92rem; }
-  @media print { .lang, nav, #qr button { display:none; } section { break-inside:avoid; } }
+  @media print { .lang, nav { display:none; } section { break-inside:avoid; } }
 </style>
 </head>
 <body>
@@ -335,31 +333,9 @@
   </div>
 </section>
 
-<section id="sign" style="text-align:center;border:2px dashed var(--warnb)">
-  <h2 style="justify-content:center">🚫 <span data-l="en">Sign for the cabinet under the sink</span><span data-l="de">Schild für den Schrank unter der Spüle</span><span data-l="fr">Affichette pour le placard sous l'évier</span></h2>
-  <p class="muted"><span data-l="en">Print, cut out, tape to the door.</span><span data-l="de">Ausdrucken, ausschneiden, an die Tür kleben.</span><span data-l="fr">Imprimer, découper, coller sur la porte.</span></p>
-  <div style="display:inline-block;border:3px solid #c0392b;border-radius:14px;padding:18px 26px;margin-top:6px;background:#fff;color:#1f2a2e;text-align:center">
-    <div style="font-size:2.2rem">🚫</div>
-    <div style="font-weight:800;font-size:1.3rem">PLEASE DO NOT OPEN</div>
-    <div style="font-size:.95rem;margin-top:2px">Fragile door. Nothing you need inside.</div>
-    <div style="font-weight:800;font-size:1.15rem;margin-top:10px">BITTE NICHT ÖFFNEN</div>
-    <div style="font-size:.95rem;margin-top:2px">Empfindliche Tür. Nichts drin, was du brauchst.</div>
-    <div style="font-weight:800;font-size:1.15rem;margin-top:10px">MERCI DE NE PAS OUVRIR</div>
-    <div style="font-size:.95rem;margin-top:2px">Porte fragile. Rien dont vous ayez besoin à l'intérieur.</div>
-    <div style="font-weight:800;font-size:1.15rem;margin-top:10px">נא לא לפתוח</div>
-    <div style="font-size:.95rem;margin-top:2px">דלת שבירה. אין כאן שום דבר שצריך.</div>
-  </div>
-</section>
 
-<section id="qr">
-  <h2 style="justify-content:center">📱 QR</h2>
-  <p class="muted"><span data-l="en">Print this code and stick it in the kitchen. It opens this page.</span><span data-l="de">Diesen Code ausdrucken und in der Küche anbringen. Er öffnet diese Seite.</span><span data-l="fr">Imprimez ce code et collez-le dans la cuisine. Il ouvre cette page.</span></p>
-  <div id="qrbox"></div><br>
-  <button onclick="window.print()" style="margin-top:10px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:8px 18px;font-weight:600"><span data-l="en">Print</span><span data-l="de">Drucken</span><span data-l="fr">Imprimer</span></button>
-</section>
 
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
   var LANGS=['en','de','fr'];
   function setLang(l){ document.documentElement.setAttribute('data-lang',l); document.documentElement.lang=l;
@@ -370,7 +346,6 @@
   try{ saved=saved||localStorage.getItem('lang'); }catch(e){}
   saved=saved||(navigator.language||'en').slice(0,2).toLowerCase();
   setLang(LANGS.indexOf(saved)>=0?saved:'en');
-  try{ if(window.QRCode){ new QRCode(document.getElementById('qrbox'), {text: location.href.split('#')[0], width:220, height:220, correctLevel: QRCode.CorrectLevel.M}); } }catch(e){}
 </script>
 </body>
 </html>

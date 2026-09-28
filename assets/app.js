@@ -219,10 +219,22 @@
     }
   }
 
+  const MAX_FEED_AGE_DAYS = 10;
+  function feedIsStale() {
+    if (!state.weekly || !state.weekly.generated_at) return true;
+    const age = (Date.now() - Date.parse(state.weekly.generated_at)) / 86400000;
+    return !(age >= -1 && age <= MAX_FEED_AGE_DAYS);
+  }
   function renderEvents() {
     const box = document.getElementById("events");
     const meta = document.getElementById("week-meta");
     box.replaceChildren();
+    // A feed that failed to load or wasn't refreshed for over 10 days is hidden entirely -
+    // showing expired events would be worse than showing nothing.
+    const stale = state.weekly !== undefined && feedIsStale();
+    document.getElementById("week").hidden = stale;
+    document.querySelector('.jump a[href="#week"]').hidden = stale;
+    if (stale) return;
     if (!state.weekly) {
       box.append(el("p", { class: "empty" }, state.weekly === null ? t("unavailable") : t("loading")));
       meta.textContent = "";
