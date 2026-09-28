@@ -155,6 +155,11 @@
     const L = state.lang;
     for (const c of state.house.cards) {
       const body = el("div", { class: "body" });
+      if (c.image) {
+        const img = el("img", { class: "card-img", src: c.image, alt: (c.image_alt && c.image_alt[L]) || "", loading: "lazy",
+          onerror: e => e.target.remove() });
+        body.append(img);
+      }
       if (c.kv) {
         const dl = el("dl", { class: "kv" });
         for (const row of c.kv) {

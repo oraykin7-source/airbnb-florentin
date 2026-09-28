@@ -5,14 +5,14 @@
     "whatsapp": "",
     "_whatsapp_note": "E.164 without + or spaces, e.g. 972501234567. Leave empty to hide the WhatsApp button. NOTE: the number is visible in the public page source - use a dedicated hosting number.",
     "shelter": {
-      "en": "TODO e.g. the protected room (mamad) next to the bedroom",
-      "de": "TODO z.B. der Schutzraum (Mamad) neben dem Schlafzimmer",
-      "fr": "TODO p.ex. la pièce blindée (mamad) à côté de la chambre"
+      "en": "the protected room (mamad) next to the bedroom",
+      "de": "der Schutzraum (Mamad) neben dem Schlafzimmer",
+      "fr": "la pièce blindée (mamad) à côté de la chambre"
     },
     "boiler_switch": {
-      "en": "TODO e.g. the switch with a red light in the hallway, next to the bathroom door",
-      "de": "TODO z.B. der Schalter mit dem roten Licht im Flur, neben der Badezimmertür",
-      "fr": "TODO p.ex. l'interrupteur au voyant rouge dans le couloir, à côté de la porte de la salle de bain"
+      "en": "in the hallway, next to the bathroom door",
+      "de": "im Flur, neben der Badezimmertür",
+      "fr": "dans le couloir, à côté de la porte de la salle de bain"
     },
     "checkout_time": "11:00"
   },
@@ -93,26 +93,38 @@
         "fr": "Climatisation"
       },
       "sub": {
-        "en": "Remote & tips",
-        "de": "Fernbedienung & Tipps",
-        "fr": "Télécommande et conseils"
+        "en": "On/off, temperature, cool or heat",
+        "de": "Ein/Aus, Temperatur, Kühlen oder Heizen",
+        "fr": "Marche/arrêt, température, froid ou chaud"
       },
       "items": {
         "en": [
-          "Each room has its own remote on the wall holder. Press ON/OFF, choose ❄ for cooling or ☀ for heating.",
-          "24–25°C is the most comfortable setting - lower doesn't cool faster.",
-          "Please close windows while the AC is running and switch it off when you go out."
+          "The remote is simple - you only need three things:",
+          "1. ON/OFF - the power button at the top.",
+          "2. Temperature - the ▲ / ▼ (or + / −) buttons. 24–25°C is comfortable; lower doesn't cool faster.",
+          "3. Mode - press MODE until the display shows ❄ (cool) or ☀ (heat). Ignore the other modes and settings.",
+          "Please close the windows while it runs and switch it off when you go out."
         ],
         "de": [
-          "Jedes Zimmer hat eine eigene Fernbedienung in der Wandhalterung. ON/OFF drücken, ❄ zum Kühlen oder ☀ zum Heizen wählen.",
-          "24–25 °C ist am angenehmsten - niedriger kühlt nicht schneller.",
-          "Bitte bei laufender Klimaanlage die Fenster schließen und beim Weggehen ausschalten."
+          "Die Fernbedienung ist einfach - Sie brauchen nur drei Dinge:",
+          "1. EIN/AUS - die Power-Taste oben.",
+          "2. Temperatur - die Tasten ▲ / ▼ (oder + / −). 24–25 °C ist angenehm; niedriger kühlt nicht schneller.",
+          "3. Modus - MODE drücken, bis im Display ❄ (Kühlen) oder ☀ (Heizen) erscheint. Die anderen Modi und Einstellungen einfach ignorieren.",
+          "Bitte bei laufender Anlage die Fenster schließen und beim Weggehen ausschalten."
         ],
         "fr": [
-          "Chaque pièce a sa télécommande sur le support mural. Appuyez sur ON/OFF, choisissez ❄ pour rafraîchir ou ☀ pour chauffer.",
-          "24–25 °C est le réglage le plus confortable - plus bas ne refroidit pas plus vite.",
+          "La télécommande est simple - trois choses suffisent :",
+          "1. ON/OFF - le bouton d'alimentation en haut.",
+          "2. Température - les touches ▲ / ▼ (ou + / −). 24–25 °C est confortable ; plus bas ne refroidit pas plus vite.",
+          "3. Mode - appuyez sur MODE jusqu'à voir ❄ (froid) ou ☀ (chaud) à l'écran. Ignorez les autres modes et réglages.",
           "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant."
         ]
+      },
+      "image": "assets/img/house/ac-remote.jpg",
+      "image_alt": {
+        "en": "The AC remote",
+        "de": "Die Klimaanlagen-Fernbedienung",
+        "fr": "La télécommande de la clim"
       }
     },
     {
