@@ -2,8 +2,18 @@
   "_comment": "Static part of the guide. Wi-Fi password, exact address and host phone are deliberately NOT stored here (public repo): they live on the printed card by the router and in the Airbnb check-in message. Edit the values in `host`; they replace {{placeholders}} in the cards.",
   "host": {
     "host_name": "Oren",
-    "shelter": "TODO e.g. the protected room (mamad) next to the bedroom",
-    "boiler_switch": "TODO e.g. the switch with a red light in the hallway, next to the bathroom door",
+    "whatsapp": "",
+    "_whatsapp_note": "E.164 without + or spaces, e.g. 972501234567. Leave empty to hide the WhatsApp button. NOTE: the number is visible in the public page source - use a dedicated hosting number.",
+    "shelter": {
+      "en": "TODO e.g. the protected room (mamad) next to the bedroom",
+      "de": "TODO z.B. der Schutzraum (Mamad) neben dem Schlafzimmer",
+      "fr": "TODO p.ex. la pièce blindée (mamad) à côté de la chambre"
+    },
+    "boiler_switch": {
+      "en": "TODO e.g. the switch with a red light in the hallway, next to the bathroom door",
+      "de": "TODO z.B. der Schalter mit dem roten Licht im Flur, neben der Badezimmertür",
+      "fr": "TODO p.ex. l'interrupteur au voyant rouge dans le couloir, à côté de la porte de la salle de bain"
+    },
     "checkout_time": "11:00"
   },
   "cards": [
@@ -216,21 +226,21 @@
           "Rocket alert siren: go immediately to {{shelter}} and stay there for 10 minutes. The Home Front Command app sends alerts in English.",
           "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
           "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7.",
-          "To reach your host, use the Airbnb app or the WhatsApp number on the printed card."
+          "To reach your host: the WhatsApp button at the top of this page, or the Airbnb app."
         ],
         "de": [
           "Adresse für Rettungsdienste: steht auf der Karte neben der Tür und in Ihrer Airbnb-Buchung.",
           "Raketenalarm (Sirene): sofort in {{shelter}} gehen und 10 Minuten dort bleiben. Die App des Heimatfrontkommandos sendet Warnungen auf Englisch.",
           "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
           "Apotheken (Super-Pharm, Be) gibt es überall; einige haben lange oder rund um die Uhr geöffnet.",
-          "Ihren Gastgeber erreichen Sie über die Airbnb-App oder die WhatsApp-Nummer auf der Karte."
+          "Ihren Gastgeber erreichen Sie über den WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
         ],
         "fr": [
           "Adresse à donner aux secours : elle figure sur la carte près de la porte et dans votre réservation Airbnb.",
           "Sirène d'alerte roquettes : allez immédiatement dans {{shelter}} et restez-y 10 minutes. L'appli du Commandement du front intérieur envoie les alertes en anglais.",
           "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
           "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvrent tard ou 24h/24.",
-          "Pour joindre votre hôte : l'appli Airbnb ou le numéro WhatsApp sur la carte."
+          "Pour joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
         ]
       }
     },

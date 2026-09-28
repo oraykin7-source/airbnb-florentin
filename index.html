@@ -28,7 +28,12 @@
   <main>
     <section class="hero">
       <h1 data-i18n="welcome">Welcome home</h1>
-      <p class="stay" id="stay-line" hidden></p>
+      <div class="quick">
+        <a class="qbtn qbtn-wa" id="wa-btn" hidden target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp your host</a>
+        <a class="qbtn qbtn-sos" href="#card-emergency" id="sos-btn" data-i18n="sos">Emergency</a>
+      </div>
+      <!-- Static fallback: visible even if the scripts or the data files fail to load -->
+      <p class="sos-static" id="sos-static"><strong>🆘</strong> Police <a href="tel:100">100</a> · Ambulance <a href="tel:101">101</a> · Fire <a href="tel:102">102</a></p>
     </section>
 
     <nav class="jump" aria-label="Sections">
@@ -52,6 +57,11 @@
       <div class="week-head">
         <h2 data-i18n="week_title">This week in Tel Aviv</h2>
         <p class="muted" id="week-meta"></p>
+        <div class="stay-pick" id="stay-pick">
+          <label for="checkout-input" id="stay-label"></label>
+          <input type="date" id="checkout-input">
+          <button type="button" class="linkish" id="checkout-reset" hidden data-i18n="reset_dates">Reset</button>
+        </div>
       </div>
       <div class="tabs" role="tablist" id="cat-tabs">
         <button role="tab" data-cat="food" data-i18n="cat_food">Food &amp; restaurants</button>

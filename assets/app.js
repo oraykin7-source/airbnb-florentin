@@ -15,8 +15,10 @@
       places_title: "Places we love", places_lead: "Our favourite corners of the city, all close by. Tap a card for the map.", map: "Open in Maps", photo: "Photo",
       cat_food: "Food & restaurants", cat_culture: "Culture & city events", cat_nightlife: "Nightlife & parties",
       footer: "Made with care by your host. Enjoy Florentin!",
-      stay_until: d => `Picked for your stay · until ${d}`,
+      stay_until: d => `Events during your stay · until ${d}`,
       checkout_today: "Check-out today - safe travels!",
+      whatsapp: "WhatsApp your host", sos: "Emergency", reset_dates: "Use calendar dates",
+      stay_label: "Your check-out date (edit if it's not yours):", stay_label_none: "Your check-out date (optional, to filter events):",
       updated: d => `Updated ${d}`,
       during_stay: "during your stay", new_opening: "New", ongoing: "Ongoing",
       empty: "Nothing listed for your dates in this category yet - check another tab.",
@@ -29,8 +31,10 @@
       places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt, alle in der Nähe. Karte antippen für den Weg.", map: "In Maps öffnen", photo: "Foto",
       cat_food: "Essen & Restaurants", cat_culture: "Kultur & Stadtevents", cat_nightlife: "Nachtleben & Partys",
       footer: "Mit Liebe von Ihrem Gastgeber. Viel Spaß in Florentin!",
-      stay_until: d => `Ausgewählt für Ihren Aufenthalt · bis ${d}`,
+      stay_until: d => `Veranstaltungen während Ihres Aufenthalts · bis ${d}`,
       checkout_today: "Heute ist Check-out - gute Reise!",
+      whatsapp: "Gastgeber per WhatsApp", sos: "Notfall", reset_dates: "Kalenderdatum verwenden",
+      stay_label: "Ihr Check-out-Datum (ändern, falls es nicht Ihres ist):", stay_label_none: "Ihr Check-out-Datum (optional, filtert die Events):",
       updated: d => `Aktualisiert am ${d}`,
       during_stay: "während Ihres Aufenthalts", new_opening: "Neu", ongoing: "Laufend",
       empty: "Für Ihre Daten gibt es in dieser Kategorie noch nichts - schauen Sie in einen anderen Reiter.",
@@ -43,8 +47,10 @@
       places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville, tous à deux pas. Touchez une carte pour l'itinéraire.", map: "Ouvrir dans Maps", photo: "Photo",
       cat_food: "Cuisine & restaurants", cat_culture: "Culture & événements", cat_nightlife: "Vie nocturne & soirées",
       footer: "Préparé avec soin par votre hôte. Profitez de Florentin !",
-      stay_until: d => `Sélectionné pour votre séjour · jusqu'au ${d}`,
+      stay_until: d => `Événements pendant votre séjour · jusqu'au ${d}`,
       checkout_today: "Départ aujourd'hui - bon voyage !",
+      whatsapp: "WhatsApp à votre hôte", sos: "Urgences", reset_dates: "Utiliser la date du calendrier",
+      stay_label: "Votre date de départ (modifiez si ce n'est pas la vôtre) :", stay_label_none: "Votre date de départ (facultatif, filtre les événements) :",
       updated: d => `Mis à jour le ${d}`,
       during_stay: "pendant votre séjour", new_opening: "Nouveau", ongoing: "En cours",
       empty: "Rien pour vos dates dans cette catégorie pour l'instant - essayez un autre onglet.",
@@ -88,7 +94,11 @@
     for (const k of kids.flat()) if (k != null) n.append(k.nodeType ? k : document.createTextNode(k));
     return n;
   };
-  const fill = (s, host) => String(s).replace(/\{\{(\w+)\}\}/g, (_, k) => host[k] ?? "");
+  // {{key}} placeholders; a per-language object picks the current language
+  const fill = (s, host) => String(s).replace(/\{\{(\w+)\}\}/g, (_, k) => {
+    const v = host[k];
+    return v && typeof v === "object" ? (v[state.lang] ?? v.en ?? "") : (v ?? "");
+  });
   const t = key => UI[state.lang][key];
 
   async function getJSON(path) {
@@ -98,11 +108,19 @@
   }
 
   // ---------- stay window (from calendar-derived check-out dates) ----------
+  // The calendar only tells us the next check-out; it can't know who opened the page.
+  // A guest may override it with the date picker (kept in this browser only).
+  function guestCheckout() {
+    try { const v = localStorage.getItem("checkout"); return /^\d{4}-\d{2}-\d{2}$/.test(v || "") ? v : null; } catch (_) { return null; }
+  }
+  function setGuestCheckout(v) { try { v ? localStorage.setItem("checkout", v) : localStorage.removeItem("checkout"); } catch (_) {} }
   function currentStay() {
     const { date: today, hour } = nowInTLV();
+    const chosen = guestCheckout();
+    if (chosen && chosen >= today) return { today, checkout: chosen, source: "guest" };
     const checkouts = (state.stays && state.stays.checkouts) || [];
     const next = checkouts.slice().sort().find(c => c > today || (c === today && hour < CHECKOUT_CUTOFF_HOUR));
-    return { today, checkout: next || null };
+    return { today, checkout: next || null, source: next ? "calendar" : null };
   }
 
   // ---------- render ----------
@@ -114,14 +132,19 @@
     document.querySelectorAll("#cat-tabs button").forEach(b =>
       b.setAttribute("aria-selected", String(b.dataset.cat === state.cat)));
 
-    const { today, checkout } = currentStay();
-    const line = document.getElementById("stay-line");
-    if (checkout) {
-      line.textContent = checkout === today
-        ? t("checkout_today")
-        : t("stay_until")(fmtDate(checkout, { weekday: "short", day: "numeric", month: "short" }));
-      line.hidden = false;
-    } else line.hidden = true;
+    const wa = document.getElementById("wa-btn");
+    const num = state.house && String(state.house.host.whatsapp || "").replace(/\D/g, "");
+    if (num) { wa.href = `https://wa.me/${num}`; wa.hidden = false; } else wa.hidden = true;
+
+    // date picker for the events section
+    const { today, checkout, source } = currentStay();
+    const label = document.getElementById("stay-label");
+    const input = document.getElementById("checkout-input");
+    const reset = document.getElementById("checkout-reset");
+    label.textContent = checkout ? t("stay_label") : t("stay_label_none");
+    input.min = today;
+    input.value = checkout || "";
+    reset.hidden = source !== "guest";
   }
 
   function renderHouse() {
@@ -196,9 +219,9 @@
       return;
     }
     const L = state.lang;
-    meta.textContent = t("updated")(fmtDate(state.weekly.generated_at.slice(0, 10), { day: "numeric", month: "long" }));
-
     const { today, checkout } = currentStay();
+    const stayTxt = checkout ? (checkout === today ? t("checkout_today") : t("stay_until")(fmtDate(checkout, { weekday: "short", day: "numeric", month: "short" }))) : "";
+    meta.textContent = [stayTxt, t("updated")(fmtDate(state.weekly.generated_at.slice(0, 10), { day: "numeric", month: "long" }))].filter(Boolean).join(" · ");
     const windowEnd = state.weekly.window_end;
     const until = checkout && checkout < windowEnd ? checkout : windowEnd;
 
@@ -256,15 +279,28 @@
     state.cat = b.dataset.cat; renderChrome(); renderEvents();
   }));
 
+  // The Emergency button also opens the card, not just scrolls to it
+  document.getElementById("sos-btn").addEventListener("click", () => {
+    const card = document.getElementById("card-emergency"); if (card) card.open = true;
+  });
+  document.getElementById("checkout-input").addEventListener("change", e => {
+    setGuestCheckout(e.target.value || null); renderChrome(); renderEvents();
+  });
+  document.getElementById("checkout-reset").addEventListener("click", () => {
+    setGuestCheckout(null); renderChrome(); renderEvents();
+  });
+
   state.weekly = undefined; // loading
   renderAll();
 
-  Promise.allSettled([getJSON("content/house.json"), getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json"), getJSON("content/places.json")])
-    .then(([house, weekly, stays, places]) => {
-      state.house = house.status === "fulfilled" ? house.value : null;
-      state.places = places.status === "fulfilled" ? places.value : null;
+  // Each part renders as soon as its own file arrives: a slow or failed events feed
+  // never delays the apartment / emergency cards.
+  getJSON("content/house.json").then(v => { state.house = v; renderChrome(); renderHouse(); }).catch(() => { state.house = null; });
+  getJSON("content/places.json").then(v => { state.places = v; renderPlaces(); }).catch(() => {});
+  Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
+    .then(([weekly, stays]) => {
       state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
       state.stays = stays.status === "fulfilled" ? stays.value : null;
-      renderAll();
+      renderChrome(); renderEvents();
     });
 })();

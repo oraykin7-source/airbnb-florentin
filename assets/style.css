@@ -72,6 +72,16 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px; }
   display: inline-block; margin: 12px 0 0; padding: 6px 12px; border-radius: 999px;
   background: var(--accent-soft); color: var(--ink); font-size: .9rem; font-weight: 500;
 }
+.quick { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.qbtn { text-decoration: none; font-weight: 600; font-size: .92rem; padding: 10px 16px; border-radius: 12px; display: inline-flex; align-items: center; gap: 6px; }
+.qbtn[hidden] { display: none; }
+.qbtn-wa { background: #25d366; color: #0b2b16; }
+.qbtn-sos { background: var(--accent); color: var(--accent-ink); }
+.sos-static { margin: 10px 0 0; font-size: .85rem; color: var(--muted); }
+.sos-static a { font-weight: 600; }
+.stay-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 8px; font-size: .9rem; }
+.stay-pick input[type="date"] { font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); }
+.linkish { border: 0; background: none; color: var(--accent); font: inherit; font-size: .85rem; cursor: pointer; padding: 0; text-decoration: underline; }
 .jump { display: flex; gap: 8px; padding: 16px 0 4px; flex-wrap: wrap; }
 .jump a {
   text-decoration: none; color: var(--ink); background: var(--surface);
