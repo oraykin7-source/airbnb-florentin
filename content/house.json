@@ -82,7 +82,42 @@
           "de": "Vollständige Küchenanleitung öffnen",
           "fr": "Ouvrir le guide complet de la cuisine"
         }
-      }
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Coffee - capsule machine",
+            "de": "Kaffee - Kapselmaschine",
+            "fr": "Café - machine à capsules"
+          },
+          "image": "assets/img/house/nespresso.jpg",
+          "image_alt": {
+            "en": "The capsule machine, milk frother and capsules",
+            "de": "Kapselmaschine, Milchaufschäumer und Kapseln",
+            "fr": "La machine à capsules, le mousseur à lait et les capsules"
+          },
+          "items": {
+            "en": [
+              "Nespresso-compatible machine (Cafe Joe). Capsules are in the glass next to it - help yourself, they're on us.",
+              "Lift the copper lever, drop in a capsule, close it, put a cup under the spout and press one of the two buttons on top: small = espresso, large = lungo. The buttons blink while it heats up (about 30 seconds).",
+              "Milk frother (the black Aeroccino): fill to the lower line, close the lid, press the button once for hot foam. Rinse it right after use.",
+              "Water tank is at the back - if the machine stops, it's probably empty. Used capsules drop into the drawer behind the drip tray."
+            ],
+            "de": [
+              "Nespresso-kompatible Maschine (Cafe Joe). Die Kapseln stehen im Glas daneben - bedienen Sie sich, sie gehen aufs Haus.",
+              "Kupferhebel anheben, Kapsel einlegen, schließen, Tasse unter den Auslauf und eine der zwei Tasten oben drücken: klein = Espresso, groß = Lungo. Die Tasten blinken beim Aufheizen (ca. 30 Sekunden).",
+              "Milchaufschäumer (der schwarze Aeroccino): bis zur unteren Linie füllen, Deckel schließen, Taste einmal drücken für heißen Schaum. Direkt nach Gebrauch ausspülen.",
+              "Der Wassertank ist hinten - stoppt die Maschine, ist er wahrscheinlich leer. Gebrauchte Kapseln fallen in die Schublade hinter der Abtropfschale."
+            ],
+            "fr": [
+              "Machine compatible Nespresso (Cafe Joe). Les capsules sont dans le verre à côté - servez-vous, c'est offert.",
+              "Levez le levier cuivré, mettez une capsule, refermez, placez une tasse sous le bec et appuyez sur l'un des deux boutons du dessus : petit = espresso, grand = lungo. Les boutons clignotent pendant la chauffe (environ 30 secondes).",
+              "Mousseur à lait (l'Aeroccino noir) : remplir jusqu'au trait inférieur, fermer le couvercle, appuyer une fois pour une mousse chaude. Rincer juste après.",
+              "Le réservoir d'eau est à l'arrière - si la machine s'arrête, il est probablement vide. Les capsules usagées tombent dans le tiroir derrière le bac d'égouttage."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "tami4",
