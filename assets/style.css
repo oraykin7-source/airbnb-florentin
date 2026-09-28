@@ -72,6 +72,9 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px; }
   display: inline-block; margin: 12px 0 0; padding: 6px 12px; border-radius: 999px;
   background: var(--accent-soft); color: var(--ink); font-size: .9rem; font-weight: 500;
 }
+.name-box { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.name-box input { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); min-width: 0; flex: 1 1 180px; max-width: 260px; }
+.qbtn-ghost { background: var(--chip); color: var(--ink); padding: 8px 14px; }
 .quick { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
 .qbtn { text-decoration: none; font-weight: 600; font-size: .92rem; padding: 10px 16px; border-radius: 12px; display: inline-flex; align-items: center; gap: 6px; }
 .qbtn[hidden] { display: none; }

@@ -18,6 +18,7 @@
       stay_until: d => `Events during your stay · until ${d}`,
       checkout_today: "Check-out today - safe travels!",
       whatsapp: "WhatsApp your host", sos: "Emergency", reset_dates: "Use calendar dates",
+      welcome_name: n => `Welcome home, ${n}`, name_prompt: "What should we call you?", name_save: "Save", name_change: "Not you?",
       stay_label: "Your check-out date (edit if it's not yours):", stay_label_none: "Your check-out date (optional, to filter events):",
       updated: d => `Updated ${d}`,
       during_stay: "during your stay", new_opening: "New", ongoing: "Ongoing",
@@ -34,6 +35,7 @@
       stay_until: d => `Veranstaltungen während Ihres Aufenthalts · bis ${d}`,
       checkout_today: "Heute ist Check-out - gute Reise!",
       whatsapp: "Gastgeber per WhatsApp", sos: "Notfall", reset_dates: "Kalenderdatum verwenden",
+      welcome_name: n => `Willkommen zu Hause, ${n}`, name_prompt: "Wie dürfen wir Sie nennen?", name_save: "Speichern", name_change: "Nicht Sie?",
       stay_label: "Ihr Check-out-Datum (ändern, falls es nicht Ihres ist):", stay_label_none: "Ihr Check-out-Datum (optional, filtert die Events):",
       updated: d => `Aktualisiert am ${d}`,
       during_stay: "während Ihres Aufenthalts", new_opening: "Neu", ongoing: "Laufend",
@@ -50,6 +52,7 @@
       stay_until: d => `Événements pendant votre séjour · jusqu'au ${d}`,
       checkout_today: "Départ aujourd'hui - bon voyage !",
       whatsapp: "WhatsApp à votre hôte", sos: "Urgences", reset_dates: "Utiliser la date du calendrier",
+      welcome_name: n => `Bienvenue chez vous, ${n}`, name_prompt: "Comment vous appelle-t-on ?", name_save: "Enregistrer", name_change: "Ce n'est pas vous ?",
       stay_label: "Votre date de départ (modifiez si ce n'est pas la vôtre) :", stay_label_none: "Votre date de départ (facultatif, filtre les événements) :",
       updated: d => `Mis à jour le ${d}`,
       during_stay: "pendant votre séjour", new_opening: "Nouveau", ongoing: "En cours",
@@ -60,6 +63,20 @@
   };
 
   const state = { lang: pickLang(), cat: "food", house: null, places: null, weekly: null, stays: null };
+
+  // Personalisation lives only in this browser. A link from the host's Airbnb message can carry
+  // ?guest=Anna&checkout=2026-10-26 (Airbnb fills those in); we store them once and drop them from the URL.
+  function guestName() { try { return (localStorage.getItem("guest") || "").trim().slice(0, 40); } catch (_) { return ""; } }
+  function setGuestName(n) { try { n ? localStorage.setItem("guest", n.trim().slice(0, 40)) : localStorage.removeItem("guest"); } catch (_) {} }
+  (function readLinkParams() {
+    const q = new URLSearchParams(location.search);
+    const g = (q.get("guest") || "").replace(/[<>"'&]/g, "").trim();
+    const co = q.get("checkout") || "";
+    let touched = false;
+    if (g) { setGuestName(g); touched = true; }
+    if (/^\d{4}-\d{2}-\d{2}$/.test(co)) { try { localStorage.setItem("checkout", co); } catch (_) {} touched = true; }
+    if (touched) { q.delete("guest"); q.delete("checkout"); history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash); }
+  })();
 
   // ---------- helpers ----------
   function pickLang() {
@@ -131,6 +148,19 @@
       b.setAttribute("aria-checked", String(b.dataset.lang === state.lang)));
     document.querySelectorAll("#cat-tabs button").forEach(b =>
       b.setAttribute("aria-selected", String(b.dataset.cat === state.cat)));
+
+    const name = guestName();
+    document.getElementById("welcome").textContent = name ? t("welcome_name")(name) : t("welcome");
+    const nb = document.getElementById("name-box");
+    nb.replaceChildren();
+    if (name) {
+      nb.append(el("button", { class: "linkish", type: "button", onclick: () => { setGuestName(""); renderChrome(); } }, t("name_change")));
+    } else {
+      const inp = el("input", { type: "text", maxlength: "40", placeholder: t("name_prompt"), autocomplete: "given-name" });
+      const save = () => { if (inp.value.trim()) { setGuestName(inp.value); renderChrome(); } };
+      inp.addEventListener("keydown", e => { if (e.key === "Enter") save(); });
+      nb.append(inp, el("button", { class: "qbtn qbtn-ghost", type: "button", onclick: save }, t("name_save")));
+    }
 
     const wa = document.getElementById("wa-btn");
     const num = state.house && String(state.house.host.whatsapp || "").replace(/\D/g, "");
