@@ -324,42 +324,89 @@
         "fr": "Télévision"
       },
       "sub": {
-        "en": "Netflix, Apple TV, Prime, Disney+, Free TV - all ready",
-        "de": "Netflix, Apple TV, Prime, Disney+, Free TV - alles eingerichtet",
-        "fr": "Netflix, Apple TV, Prime, Disney+, Free TV - tout est prêt"
+        "en": "Two TVs - all accounts ready, nothing to log in to",
+        "de": "Zwei Fernseher - alle Konten eingerichtet, kein Login nötig",
+        "fr": "Deux télés - tous les comptes prêts, rien à connecter"
       },
       "items": {
         "en": [
-          "Samsung smart TV in the living room. All the accounts are already signed in - no need to log in with your own.",
-          "ON/OFF: the red ⏻ button at the top of the remote.",
-          "Netflix: press the NETFLIX button, then choose the profile called \"guest\" (the blue smiley). Prime Video and Disney+ also have their own buttons.",
-          "Apple TV, Free TV (Israeli channels), YouTube, Spotify, HBO Max: press the 🏠 Home button, then scroll left/right along the app row at the bottom with the round pad and press its centre to open.",
-          "Volume: the left rocker (+ / −). Channels: the right rocker (∧ / ∨). ↩ goes back.",
-          "Please leave the settings and the accounts as they are - just don't log out or sign in with other accounts."
+          "All the streaming accounts are already signed in on both TVs - no need to log in with your own. Please leave the settings and accounts as they are: don't log out and don't add other accounts."
         ],
         "de": [
-          "Samsung Smart-TV im Wohnzimmer. Alle Konten sind bereits angemeldet - Sie müssen sich nicht mit eigenen einloggen.",
-          "EIN/AUS: die rote ⏻-Taste oben auf der Fernbedienung.",
-          "Netflix: NETFLIX-Taste drücken, dann das Profil \"guest\" (der blaue Smiley) wählen. Prime Video und Disney+ haben ebenfalls eigene Tasten.",
-          "Apple TV, Free TV (israelische Sender), YouTube, Spotify, HBO Max: 🏠 Home drücken, dann mit dem runden Steuerkreuz in der App-Leiste unten nach links/rechts blättern und mit der Mitte öffnen.",
-          "Lautstärke: linke Wippe (+ / −). Sender: rechte Wippe (∧ / ∨). ↩ geht zurück.",
-          "Bitte Einstellungen und Konten so lassen, wie sie sind - nicht abmelden und keine anderen Konten anmelden."
+          "Alle Streaming-Konten sind auf beiden Fernsehern bereits angemeldet - Sie müssen sich nicht mit eigenen einloggen. Bitte Einstellungen und Konten so lassen: nicht abmelden, keine anderen Konten hinzufügen."
         ],
         "fr": [
-          "Smart TV Samsung dans le salon. Tous les comptes sont déjà connectés - inutile de vous connecter avec les vôtres.",
-          "ON/OFF : le bouton rouge ⏻ en haut de la télécommande.",
-          "Netflix : appuyez sur NETFLIX, puis choisissez le profil « guest » (le smiley bleu). Prime Video et Disney+ ont aussi leur propre bouton.",
-          "Apple TV, Free TV (chaînes israéliennes), YouTube, Spotify, HBO Max : appuyez sur 🏠 Home, puis faites défiler la rangée d'applis en bas avec le pavé rond et validez au centre.",
-          "Volume : la bascule de gauche (+ / −). Chaînes : la bascule de droite (∧ / ∨). ↩ pour revenir.",
-          "Merci de laisser les réglages et les comptes tels quels - ne vous déconnectez pas et n'ajoutez pas d'autres comptes."
+          "Tous les comptes de streaming sont déjà connectés sur les deux télés - inutile de vous connecter avec les vôtres. Merci de laisser réglages et comptes tels quels : pas de déconnexion, pas d'autres comptes."
         ]
       },
-      "image": "assets/img/house/tv-remote.jpg",
-      "image_alt": {
-        "en": "The Samsung TV remote",
-        "de": "Die Samsung-Fernbedienung",
-        "fr": "La télécommande Samsung"
-      }
+      "sections": [
+        {
+          "title": {
+            "en": "Your room - Hisense TV + Xiaomi stick (two remotes)",
+            "de": "Ihr Zimmer - Hisense-TV + Xiaomi-Stick (zwei Fernbedienungen)",
+            "fr": "Votre chambre - TV Hisense + clé Xiaomi (deux télécommandes)"
+          },
+          "image": "assets/img/house/tv-remotes-room.jpg",
+          "image_alt": {
+            "en": "Left: the small Xiaomi remote (streaming). Right: the Hisense TV remote.",
+            "de": "Links: die kleine Xiaomi-Fernbedienung (Streaming). Rechts: die Hisense-TV-Fernbedienung.",
+            "fr": "À gauche : la petite télécommande Xiaomi (streaming). À droite : la télécommande de la TV Hisense."
+          },
+          "items": {
+            "en": [
+              "Turning on takes two presses: the red POWER on the big Hisense remote turns on the screen, then the ⏻ on the small Xiaomi remote wakes the streaming stick. Same two buttons to turn off.",
+              "Everything else is done with the small Xiaomi remote: NETFLIX, prime video and YouTube have their own buttons; Apple TV, Disney+ and Free TV are in the app row - press 🏠, scroll with the round pad, press its centre to open. ← goes back.",
+              "Volume: the + / − rocker at the bottom of the Xiaomi remote (or VOL on the Hisense).",
+              "If the screen says \"no signal\", press SOURCE on the Hisense remote and choose the HDMI with the stick."
+            ],
+            "de": [
+              "Einschalten braucht zwei Tasten: rotes POWER auf der großen Hisense-Fernbedienung schaltet den Bildschirm ein, dann ⏻ auf der kleinen Xiaomi-Fernbedienung weckt den Streaming-Stick. Zum Ausschalten dieselben zwei Tasten.",
+              "Alles Weitere mit der kleinen Xiaomi-Fernbedienung: NETFLIX, prime video und YouTube haben eigene Tasten; Apple TV, Disney+ und Free TV sind in der App-Leiste - 🏠 drücken, mit dem runden Steuerkreuz blättern, Mitte drücken zum Öffnen. ← geht zurück.",
+              "Lautstärke: die + / −-Wippe unten an der Xiaomi-Fernbedienung (oder VOL auf der Hisense).",
+              "Zeigt der Bildschirm \"kein Signal\", SOURCE auf der Hisense-Fernbedienung drücken und den HDMI mit dem Stick wählen."
+            ],
+            "fr": [
+              "Allumer se fait en deux appuis : POWER rouge sur la grande télécommande Hisense allume l'écran, puis ⏻ sur la petite Xiaomi réveille la clé de streaming. Les deux mêmes boutons pour éteindre.",
+              "Tout le reste se fait avec la petite télécommande Xiaomi : NETFLIX, prime video et YouTube ont leur propre bouton ; Apple TV, Disney+ et Free TV sont dans la rangée d'applis - appuyez sur 🏠, naviguez avec le pavé rond, validez au centre. ← pour revenir.",
+              "Volume : la bascule + / − en bas de la Xiaomi (ou VOL sur la Hisense).",
+              "Si l'écran affiche « pas de signal », appuyez sur SOURCE sur la Hisense et choisissez le HDMI de la clé."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Living room - Samsung TV (one remote)",
+            "de": "Wohnzimmer - Samsung-TV (eine Fernbedienung)",
+            "fr": "Salon - TV Samsung (une télécommande)"
+          },
+          "image": "assets/img/house/tv-remote.jpg",
+          "image_alt": {
+            "en": "The Samsung TV remote",
+            "de": "Die Samsung-Fernbedienung",
+            "fr": "La télécommande Samsung"
+          },
+          "items": {
+            "en": [
+              "ON/OFF: the red ⏻ button at the top.",
+              "Netflix: press NETFLIX, then choose the profile called \"guest\" (the blue smiley). Prime Video and Disney+ have their own buttons too.",
+              "Apple TV, Free TV (Israeli channels), YouTube, Spotify, HBO Max: press 🏠 Home, scroll along the app row at the bottom with the round pad, press its centre to open.",
+              "Volume: left rocker (+ / −). Channels: right rocker (∧ / ∨). ↩ goes back."
+            ],
+            "de": [
+              "EIN/AUS: die rote ⏻-Taste oben.",
+              "Netflix: NETFLIX drücken, dann das Profil \"guest\" (der blaue Smiley) wählen. Prime Video und Disney+ haben ebenfalls eigene Tasten.",
+              "Apple TV, Free TV (israelische Sender), YouTube, Spotify, HBO Max: 🏠 Home drücken, mit dem runden Steuerkreuz in der App-Leiste unten blättern, Mitte drücken zum Öffnen.",
+              "Lautstärke: linke Wippe (+ / −). Sender: rechte Wippe (∧ / ∨). ↩ geht zurück."
+            ],
+            "fr": [
+              "ON/OFF : le bouton rouge ⏻ en haut.",
+              "Netflix : appuyez sur NETFLIX, puis choisissez le profil « guest » (le smiley bleu). Prime Video et Disney+ ont aussi leur bouton.",
+              "Apple TV, Free TV (chaînes israéliennes), YouTube, Spotify, HBO Max : appuyez sur 🏠 Home, faites défiler la rangée d'applis en bas avec le pavé rond, validez au centre.",
+              "Volume : bascule de gauche (+ / −). Chaînes : bascule de droite (∧ / ∨). ↩ pour revenir."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "hot_water",
