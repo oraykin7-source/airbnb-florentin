@@ -14,7 +14,7 @@
       "de": "im Flur, neben der Badezimmertür",
       "fr": "dans le couloir, à côté de la porte de la salle de bain"
     },
-    "checkout_time": "11:00"
+    "checkout_time": "12:00"
   },
   "cards": [
     {
@@ -399,36 +399,39 @@
         "fr": "Règles de la maison"
       },
       "sub": {
-        "en": "A few things that keep everyone happy",
-        "de": "Ein paar Dinge, damit alle zufrieden sind",
-        "fr": "Quelques points pour que tout se passe bien"
+        "en": "A shared home - a few things that keep everyone happy",
+        "de": "Eine geteilte Wohnung - ein paar Dinge, damit alle zufrieden sind",
+        "fr": "Un logement partagé - quelques points pour que tout se passe bien"
       },
       "items": {
         "en": [
+          "You have your own private room; the kitchen, bathroom and living room are shared with Oren, who lives here too. Make yourself at home - and say hi!",
           "Please eat at the kitchen table or in your room rather than on the sofa - the fabric doesn't forgive crumbs.",
           "Rubbish goes in the kitchen bin (recycling: plastic bottles to the orange cage, cardboard to the blue bin on the street).",
-          "No smoking or vaping inside the apartment - the balcony is fine.",
-          "No parties or events, and no visitors staying overnight beyond the guests on the booking (extra guests carry an extra fee on Airbnb).",
+          "No smoking or vaping anywhere in the apartment - please step outside.",
+          "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
           "No pets, sorry.",
-          "Quiet on the balcony after 23:00 - the neighbours are very close.",
+          "Quiet after 23:00 - thin walls, close neighbours.",
           "Check-out is at {{checkout_time}}: switch off the AC, leave the keys where you found them, and drop us a message. Thank you!"
         ],
         "de": [
+          "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
           "Bitte am Küchentisch oder im Zimmer essen, nicht auf dem Sofa - der Stoff verzeiht keine Krümel.",
           "Müll in den Küchenmülleimer (Recycling: Plastikflaschen in den orangen Gitterkorb, Karton in die blaue Tonne auf der Straße).",
-          "In der Wohnung nicht rauchen oder dampfen - der Balkon ist in Ordnung.",
-          "Keine Partys oder Veranstaltungen, keine Übernachtungsgäste über die gebuchten Personen hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
+          "Nirgends in der Wohnung rauchen oder dampfen - bitte nach draußen gehen.",
+          "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
           "Leider keine Haustiere.",
-          "Nach 23 Uhr auf dem Balkon bitte leise - die Nachbarn wohnen sehr nah.",
+          "Nach 23 Uhr bitte leise - dünne Wände, nahe Nachbarn.",
           "Check-out um {{checkout_time}}: Klimaanlage aus, Schlüssel dort lassen, wo Sie ihn gefunden haben, und kurz Bescheid geben. Danke!"
         ],
         "fr": [
+          "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
           "Merci de manger à la table de la cuisine ou dans votre chambre plutôt que sur le canapé - le tissu ne pardonne pas les miettes.",
           "Les déchets vont dans la poubelle de la cuisine (tri : bouteilles en plastique dans la cage orange, carton dans le bac bleu dans la rue).",
-          "Pas de cigarette ni de vapotage dans l'appartement - le balcon, oui.",
-          "Pas de fêtes ni d'événements, et pas d'invités pour la nuit au-delà des voyageurs de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
+          "Interdit de fumer ou de vapoter partout dans l'appartement - merci de sortir.",
+          "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
           "Pas d'animaux, désolé.",
-          "Silence sur le balcon après 23 h - les voisins sont tout proches.",
+          "Silence après 23 h - murs fins, voisins tout proches.",
           "Départ à {{checkout_time}} : éteignez la clim, laissez les clés là où vous les avez trouvées et envoyez-nous un petit message. Merci !"
         ]
       }
@@ -454,7 +457,7 @@
           "The beach is about a 20-minute walk (or 5 minutes by bike). Old Jaffa and the flea market are 15 minutes on foot.",
           "Shabbat (Friday afternoon to Saturday evening): most buses and trains don't run and many shops close. Plan taxis (Gett or Yango apps) and shop on Friday morning.",
           "Rent a bike or scooter through the Tel-O-Fun or other city apps - Tel Aviv is flat and has good bike lanes.",
-          "Please keep it quiet on the balcony after 23:00 - neighbours live very close."
+          "Please keep it quiet after 23:00 - neighbours live very close."
         ],
         "de": [
           "Streetart: durch die Straßen Florentin, Vital und Abarbanel schlendern - das ganze Viertel ist eine Graffiti-Galerie unter freiem Himmel.",
@@ -463,7 +466,7 @@
           "Zum Strand sind es ca. 20 Minuten zu Fuß (5 Minuten mit dem Rad). Alt-Jaffa und der Flohmarkt sind 15 Minuten entfernt.",
           "Schabbat (Freitagnachmittag bis Samstagabend): Die meisten Busse und Züge fahren nicht, viele Läden sind zu. Taxis (Apps Gett oder Yango) einplanen und freitagvormittags einkaufen.",
           "Fahrräder oder Scooter über Tel-O-Fun oder andere Stadt-Apps mieten - Tel Aviv ist flach und hat gute Radwege.",
-          "Bitte nach 23 Uhr auf dem Balkon leise sein - die Nachbarn wohnen sehr nah."
+          "Bitte nach 23 Uhr leise sein - die Nachbarn wohnen sehr nah."
         ],
         "fr": [
           "Street art : baladez-vous rues Florentin, Vital et Abarbanel - tout le quartier est une galerie de graffitis à ciel ouvert.",
@@ -472,7 +475,7 @@
           "La plage est à environ 20 minutes à pied (5 minutes à vélo). Le vieux Jaffa et le marché aux puces sont à 15 minutes.",
           "Shabbat (du vendredi après-midi au samedi soir) : la plupart des bus et trains ne circulent pas et beaucoup de commerces ferment. Prévoyez des taxis (applis Gett ou Yango) et faites vos courses le vendredi matin.",
           "Louez un vélo ou une trottinette via Tel-O-Fun ou d'autres applis de la ville - Tel Aviv est plate et bien équipée en pistes cyclables.",
-          "Merci de rester discrets sur le balcon après 23 h - les voisins sont tout proches."
+          "Merci de rester discrets après 23 h - les voisins sont tout proches."
         ]
       }
     }
