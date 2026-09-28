@@ -98,6 +98,13 @@
               "מרימים סירים, לא גוררים. נוגעים שוב ב-⏻ לכיבוי האזור. הכפתורים לא מגיבים? הנעילה 🔒 פועלת - מחזיקים עד שמשתחררת.",
               "לא להניח טלפונים וכרטיסים על הזכוכית, ולא לחמם מחבת ריקה. כל הפרטים במדריך המטבח למטה."
             ]
+          },
+          "image": "assets/img/house/hob.jpg",
+          "image_alt": {
+            "en": "The Midea hob - each zone: lock, timer, − / +, B (boost), power",
+            "de": "Das Midea-Kochfeld - je Zone: Sperre, Timer, − / +, B (Boost), Ein/Aus",
+            "fr": "La plaque Midea - par zone : verrou, minuteur, − / +, B (boost), marche",
+            "he": "כיריים Midea - לכל אזור: נעילה, טיימר, − / +, B (בוסט), הדלקה"
           }
         },
         {
