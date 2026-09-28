@@ -555,7 +555,7 @@
           "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
           "No pets, sorry.",
           "Quiet after 23:00, please - I get up at 6 for work.",
-          "Check-out is at {{checkout_time}}: switch off the AC, leave the keys where you found them, and drop us a message. Thank you!"
+          "Check-out is at {{checkout_time}}: switch off the AC and the lights, pull the door shut behind you (it locks itself - no keys) and drop me a message. To the airport: the Gett taxi app or the train from HaHagana station. Thank you!"
         ],
         "de": [
           "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
@@ -568,7 +568,7 @@
           "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
           "Leider keine Haustiere.",
           "Nach 23 Uhr bitte leise - ich stehe um 6 Uhr für die Arbeit auf.",
-          "Check-out um {{checkout_time}}: Klimaanlage aus, Schlüssel dort lassen, wo Sie ihn gefunden haben, und kurz Bescheid geben. Danke!"
+          "Check-out um {{checkout_time}}: Klimaanlage und Licht aus, Tür hinter sich zuziehen (sie schließt von selbst - keine Schlüssel) und kurz Bescheid geben. Zum Flughafen: Taxi-App Gett oder Zug ab Bahnhof HaHagana. Danke!"
         ],
         "fr": [
           "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
@@ -581,7 +581,7 @@
           "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
           "Pas d'animaux, désolé.",
           "Silence après 23 h, s'il vous plaît - je me lève à 6 h pour le travail.",
-          "Départ à {{checkout_time}} : éteignez la clim, laissez les clés là où vous les avez trouvées et envoyez-nous un petit message. Merci !"
+          "Départ à {{checkout_time}} : éteignez la clim et les lumières, tirez la porte derrière vous (elle se verrouille seule - pas de clés) et envoyez-moi un petit message. Pour l'aéroport : l'appli de taxi Gett ou le train depuis la gare HaHagana. Merci !"
         ]
       }
     },
