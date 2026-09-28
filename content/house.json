@@ -629,6 +629,28 @@
               "url": "https://www.google.com/maps/search/?api=1&query=Super%20Yuda%20Matalon%20St%2019%2C%20Tel%20Aviv"
             },
             {
+              "name": "Super El HaYam",
+              "where": "Matalon St 2",
+              "hours": "24/7",
+              "note": {
+                "en": "neighbourhood supermarket, always open",
+                "de": "Supermarkt im Viertel, immer offen",
+                "fr": "supermarché du quartier, toujours ouvert"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=%D7%A1%D7%95%D7%A4%D7%A8%20%D7%90%D7%9C%20%D7%94%D7%99%D7%9D%20Matalon%20St%202%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Mama",
+              "where": "HaAliya St 17",
+              "hours": "until 20:30",
+              "note": {
+                "en": "deli & minimarket - cold cuts, cheeses, non-kosher meat, Russian/Ukrainian products",
+                "de": "Feinkost & Minimarkt - Aufschnitt, Käse, nicht-koscheres Fleisch, russische/ukrainische Produkte",
+                "fr": "épicerie fine & minimarket - charcuterie, fromages, viande non casher, produits russes/ukrainiens"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Mama%20Ha'Aliya%20St%2017%2C%20Tel%20Aviv"
+            },
+            {
               "name": "Shufersal Express",
               "where": "Florentin St 27",
               "hours": "until 22:00",
@@ -673,39 +695,6 @@
               "url": "https://www.google.com/maps/search/?api=1&query=AM%3APM%20Herzl%20St%2061%2C%20Tel%20Aviv"
             },
             {
-              "name": "AM:PM",
-              "where": "Herzl / Shalma Rd 91",
-              "hours": "24/7",
-              "note": {
-                "en": "convenience chain, pricier",
-                "de": "Convenience-Kette, teurer",
-                "fr": "chaîne de dépannage, plus cher"
-              },
-              "url": "https://www.google.com/maps/search/?api=1&query=AM%3APM%20Herzl%20/%20Shalma%20Rd%2091%2C%20Tel%20Aviv"
-            },
-            {
-              "name": "Kolbo Market 24/7",
-              "where": "Shalma Rd 75",
-              "hours": "24/7",
-              "note": {
-                "en": "well-rated grocery",
-                "de": "gut bewerteter Laden",
-                "fr": "épicerie bien notée"
-              },
-              "url": "https://www.google.com/maps/search/?api=1&query=Kolbo%20Market%2024/7%20Shalma%20Rd%2075%2C%20Tel%20Aviv"
-            },
-            {
-              "name": "City Market",
-              "where": "Har Tsiyon Blvd 45",
-              "hours": "24/7",
-              "note": {
-                "en": "supermarket near HaHagana station",
-                "de": "Supermarkt beim Bahnhof HaHagana",
-                "fr": "supermarché près de la gare HaHagana"
-              },
-              "url": "https://www.google.com/maps/search/?api=1&query=City%20Market%20Har%20Tsiyon%20Blvd%2045%2C%20Tel%20Aviv"
-            },
-            {
               "name": "Tiv Taam IN THE CITY",
               "where": "Jerusalem Blvd 4",
               "hours": "until 23:00, open Shabbat",
@@ -746,17 +735,6 @@
                 "fr": "le grand marché - fruits, légumes, street food - 15 min"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Carmel%20Market%20HaCarmel%20St%2C%20Tel%20Aviv"
-            },
-            {
-              "name": "HaTikva Market",
-              "where": "HaTikva St 10",
-              "hours": "until ~19:30, closed Sat",
-              "note": {
-                "en": "cheapest produce, very local - short bus ride",
-                "de": "günstigstes Obst & Gemüse, sehr lokal - kurze Busfahrt",
-                "fr": "le moins cher, très local - court trajet en bus"
-              },
-              "url": "https://www.google.com/maps/search/?api=1&query=HaTikva%20Market%20HaTikva%20St%2010%2C%20Tel%20Aviv"
             }
           ]
         }
