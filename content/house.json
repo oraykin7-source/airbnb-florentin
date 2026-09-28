@@ -85,6 +85,46 @@
       }
     },
     {
+      "id": "tami4",
+      "icon": "💧",
+      "title": {
+        "en": "Water bar (Tami4)",
+        "de": "Wasserbar (Tami4)",
+        "fr": "Fontaine à eau (Tami4)"
+      },
+      "sub": {
+        "en": "Filtered cold & hot water - how to unlock the hot",
+        "de": "Gefiltertes kaltes & heißes Wasser - so entsperren Sie das heiße",
+        "fr": "Eau filtrée froide et chaude - déverrouiller l'eau chaude"
+      },
+      "image": "assets/img/house/tami4.jpg",
+      "image_alt": {
+        "en": "The Tami4 control panel",
+        "de": "Das Bedienfeld des Tami4",
+        "fr": "Le panneau de la Tami4"
+      },
+      "items": {
+        "en": [
+          "The white machine in the kitchen gives filtered drinking water - no need to buy bottles. Put your glass under the spout and touch a button.",
+          "Cold / room-temperature water: the cup buttons on the right.",
+          "Hot water (for tea, coffee, baby bottles): the red cup button on the left is locked for safety. Press and hold it for about 2 seconds until it stops blinking, then press it again to pour. It locks itself again after a moment.",
+          "Nothing to refill - it's connected to the mains. The blue light is normal."
+        ],
+        "de": [
+          "Die weiße Maschine in der Küche liefert gefiltertes Trinkwasser - keine Flaschen nötig. Glas unter den Auslauf stellen und eine Taste berühren.",
+          "Kaltes / zimmerwarmes Wasser: die Becher-Tasten rechts.",
+          "Heißes Wasser (Tee, Kaffee, Babyflaschen): die rote Becher-Taste links ist zur Sicherheit gesperrt. Etwa 2 Sekunden gedrückt halten, bis sie nicht mehr blinkt, dann erneut drücken zum Ausgießen. Nach kurzer Zeit sperrt sie sich wieder.",
+          "Nichts nachzufüllen - die Maschine hängt am Wassernetz. Das blaue Licht ist normal."
+        ],
+        "fr": [
+          "La machine blanche dans la cuisine donne de l'eau filtrée - inutile d'acheter des bouteilles. Placez votre verre sous le bec et touchez un bouton.",
+          "Eau froide / tempérée : les boutons « verre » à droite.",
+          "Eau chaude (thé, café, biberons) : le bouton rouge à gauche est verrouillé par sécurité. Maintenez-le enfoncé environ 2 secondes jusqu'à ce qu'il cesse de clignoter, puis appuyez de nouveau pour verser. Il se reverrouille tout seul peu après.",
+          "Rien à remplir - la machine est raccordée au réseau. La lumière bleue est normale."
+        ]
+      }
+    },
+    {
       "id": "ac",
       "icon": "❄️",
       "title": {
