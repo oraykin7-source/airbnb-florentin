@@ -5,9 +5,9 @@
     "whatsapp": "",
     "_whatsapp_note": "E.164 without + or spaces, e.g. 972501234567. Leave empty to hide the WhatsApp button. NOTE: the number is visible in the public page source - use a dedicated hosting number.",
     "shelter": {
-      "en": "the protected room (mamad) next to the bedroom",
-      "de": "der Schutzraum (Mamad) neben dem Schlafzimmer",
-      "fr": "la pièce blindée (mamad) à côté de la chambre"
+      "en": "the protected room (mamad) - the bedroom off the living room, marked in the photo",
+      "de": "den Schutzraum (Mamad) - das Schlafzimmer neben dem Wohnzimmer, im Foto markiert",
+      "fr": "la pièce blindée (mamad) - la chambre qui donne sur le salon, encadrée sur la photo"
     },
     "boiler_switch": {
       "en": "in the hallway, next to the bathroom door",
@@ -385,9 +385,9 @@
       },
       "image": "assets/img/house/shelter.jpg",
       "image_alt": {
-        "en": "The shelter door (marked) - next to the bedroom",
-        "de": "Die Schutzraumtür (markiert) - neben dem Schlafzimmer",
-        "fr": "La porte de l'abri (encadrée) - à côté de la chambre"
+        "en": "The shelter (mamad) - the room marked in orange, off the living room",
+        "de": "Der Schutzraum (Mamad) - der orange markierte Raum neben dem Wohnzimmer",
+        "fr": "L'abri (mamad) - la pièce encadrée en orange, depuis le salon"
       }
     },
     {
