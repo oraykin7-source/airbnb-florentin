@@ -119,6 +119,39 @@
               "Le réservoir d'eau est à l'arrière - si la machine s'arrête, il est probablement vide. Les capsules usagées tombent dans le tiroir derrière le bac d'égouttage."
             ]
           }
+        },
+        {
+          "title": {
+            "en": "Sparkling water - SodaStream",
+            "de": "Sprudelwasser - SodaStream",
+            "fr": "Eau pétillante - SodaStream"
+          },
+          "image": "assets/img/house/sodastream.jpg",
+          "image_alt": {
+            "en": "The SodaStream and its bottle",
+            "de": "Der SodaStream mit Flasche",
+            "fr": "La SodaStream et sa bouteille"
+          },
+          "items": {
+            "en": [
+              "Fill the bottle with cold water up to the line (cold water fizzes better - the Tami4 is perfect for this).",
+              "Screw the bottle onto the machine until it clicks, then press the button on top 2–3 times in short pushes. More pushes = more fizz.",
+              "Unscrew slowly. Only ever carbonate plain water - never juice or anything with sugar, it damages the machine.",
+              "If nothing fizzes, the gas cylinder is empty - just tell me."
+            ],
+            "de": [
+              "Flasche bis zur Markierung mit kaltem Wasser füllen (kaltes Wasser sprudelt besser - der Tami4 ist dafür ideal).",
+              "Flasche in die Maschine schrauben, bis sie einrastet, dann die Taste oben 2–3 Mal kurz drücken. Mehr Drücken = mehr Sprudel.",
+              "Langsam abschrauben. Nur reines Wasser sprudeln - nie Saft oder etwas Zuckerhaltiges, das beschädigt die Maschine.",
+              "Sprudelt nichts, ist der Gaszylinder leer - sagen Sie mir einfach Bescheid."
+            ],
+            "fr": [
+              "Remplissez la bouteille d'eau froide jusqu'au trait (l'eau froide pétille mieux - la Tami4 est parfaite pour ça).",
+              "Vissez la bouteille sur la machine jusqu'au clic, puis appuyez 2–3 fois brièvement sur le bouton du haut. Plus d'appuis = plus de bulles.",
+              "Dévissez doucement. Ne gazéifiez que de l'eau plate - jamais de jus ni de boisson sucrée, cela abîme la machine.",
+              "Si rien ne pétille, la bouteille de gaz est vide - dites-le-moi simplement."
+            ]
+          }
         }
       ]
     },
