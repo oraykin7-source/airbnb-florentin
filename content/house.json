@@ -2,7 +2,7 @@
   "_comment": "Static part of the guide. Wi-Fi password, exact address and host phone are deliberately NOT stored here (public repo): they live on the printed card by the router and in the Airbnb check-in message. Edit the values in `host`; they replace {{placeholders}} in the cards.",
   "host": {
     "host_name": "Oren",
-    "whatsapp": "",
+    "whatsapp": "972523244799",
     "_whatsapp_note": "E.164 without + or spaces, e.g. 972501234567. Leave empty to hide the WhatsApp button. NOTE: the number is visible in the public page source - use a dedicated hosting number.",
     "shelter": {
       "en": "the protected room (mamad) - the bedroom off the living room, marked in the photo",
