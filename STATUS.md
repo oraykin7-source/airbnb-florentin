@@ -1,12 +1,12 @@
 # STATUS – נקודת המשך לשיחה הבאה
 
-עודכן: 2026-09-29 בבוקר (אחרי תיקוני המועצות). קרא את זה לפני כל דבר אחר.
+עודכן: 2026-09-29 אחה"צ (אחרי עדכון Airbnb + תיקוני תוכן). קרא את זה לפני כל דבר אחר.
 
 ## מה זה
 
 מדריך דיגיטלי לאורחי ה-Airbnb בפלורנטין. QR בדלת → עמוד אחד ב-GitHub Pages, EN/DE/FR.
 - **חי:** https://oraykin7-source.github.io/airbnb-florentin/
-- **ריפו (ציבורי):** https://github.com/oraykin7-source/airbnb-florentin – branch `main`, קומיט אחרון `a56e534`
+- **ריפו (ציבורי):** https://github.com/oraykin7-source/airbnb-florentin – branch `main`, קומיט אחרון `c9bc362`
 - **מקומי:** `~/Documents/Projects/airbnb-florentin` (venv ב-`.venv/` עם Pillow, לא בגיט)
 - **תצוגה מקומית:** `python3 -m http.server 8420` → http://localhost:8420 (`?demo` לנתוני דוגמה)
 - הפרויקט מנוהל בצ'אט עם Claude; המארח (אורן) אינו מפתח.
@@ -16,7 +16,7 @@
 | קובץ | תפקיד |
 |---|---|
 | `index.html`, `assets/app.js`, `assets/style.css` | העמוד. ללא build. |
-| `content/house.json` | כרטיסי הדירה. `host.shelter`/`boiler_switch` לכל שפה – עדיין TODO; `host.whatsapp` ריק (הכפתור מוסתר עד שימולא). בלי סודות. |
+| `content/house.json` | כרטיסי הדירה. `host.shelter`/`boiler_switch` לכל שפה (מולאו; דוד = ליד דלת הכניסה); `host.whatsapp` מולא. בלי סודות. |
 | `content/places.json` + `assets/img/places/*.jpg` | 13 מקומות מומלצים, תמונות CC מ-Wikimedia עם קרדיט. |
 | `kitchen/index.html` | מדריך מטבח מפורט (3 שפות). עדיין עם שאריות QR/הדפסה. |
 | `data/weekly.json` | האירועים השבועיים – נכתב ע"י ה-Routine. לא לערוך ידנית. |
