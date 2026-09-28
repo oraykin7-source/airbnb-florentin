@@ -326,22 +326,22 @@
           },
           "items": {
             "en": [
-              "Turning on takes two presses: the red POWER on the big Hisense remote turns on the screen, then the ⏻ on the small Xiaomi remote wakes the streaming stick. Same two buttons to turn off.",
-              "Everything else is done with the small Xiaomi remote: NETFLIX, prime video and YouTube have their own buttons; Apple TV, Disney+ and Free TV are in the app row - press 🏠, scroll with the round pad, press its centre to open. ← goes back.",
+              "Turning on takes two presses: the red POWER on the big Hisense remote turns on the screen, then ⏻ on the small Xiaomi remote wakes the streaming stick. The TV switches to HDMI 2 by itself and the Google TV home screen appears. Same two buttons to turn off.",
+              "From there everything is on the small Xiaomi remote: NETFLIX, prime video and YouTube have their own buttons; Apple TV, Free TV (Israeli channels) and Disney+ are in the app row - press 🏠, scroll with the round pad, press its centre to open. ← goes back.",
               "Volume: the + / − rocker at the bottom of the Xiaomi remote (or VOL on the Hisense).",
-              "The TV normally switches to HDMI 2 by itself when the stick wakes up. If you ever see \"no signal\", press SOURCE on the Hisense remote and choose HDMI 2."
+              "If you ever see \"no signal\", press SOURCE on the Hisense remote and choose HDMI 2."
             ],
             "de": [
-              "Einschalten braucht zwei Tasten: rotes POWER auf der großen Hisense-Fernbedienung schaltet den Bildschirm ein, dann ⏻ auf der kleinen Xiaomi-Fernbedienung weckt den Streaming-Stick. Zum Ausschalten dieselben zwei Tasten.",
-              "Alles Weitere mit der kleinen Xiaomi-Fernbedienung: NETFLIX, prime video und YouTube haben eigene Tasten; Apple TV, Disney+ und Free TV sind in der App-Leiste - 🏠 drücken, mit dem runden Steuerkreuz blättern, Mitte drücken zum Öffnen. ← geht zurück.",
+              "Einschalten braucht zwei Tasten: rotes POWER auf der großen Hisense-Fernbedienung schaltet den Bildschirm ein, dann ⏻ auf der kleinen Xiaomi-Fernbedienung weckt den Streaming-Stick. Der Fernseher wechselt von selbst auf HDMI 2, und der Google-TV-Startbildschirm erscheint. Zum Ausschalten dieselben zwei Tasten.",
+              "Ab da läuft alles über die kleine Xiaomi-Fernbedienung: NETFLIX, prime video und YouTube haben eigene Tasten; Apple TV, Free TV (israelische Sender) und Disney+ sind in der App-Leiste - 🏠 drücken, mit dem runden Steuerkreuz blättern, Mitte drücken zum Öffnen. ← geht zurück.",
               "Lautstärke: die + / −-Wippe unten an der Xiaomi-Fernbedienung (oder VOL auf der Hisense).",
-              "Der Fernseher wechselt normalerweise von selbst auf HDMI 2, wenn der Stick aufwacht. Falls doch \"kein Signal\" erscheint: SOURCE auf der Hisense-Fernbedienung drücken und HDMI 2 wählen."
+              "Falls doch \"kein Signal\" erscheint: SOURCE auf der Hisense-Fernbedienung drücken und HDMI 2 wählen."
             ],
             "fr": [
-              "Allumer se fait en deux appuis : POWER rouge sur la grande télécommande Hisense allume l'écran, puis ⏻ sur la petite Xiaomi réveille la clé de streaming. Les deux mêmes boutons pour éteindre.",
-              "Tout le reste se fait avec la petite télécommande Xiaomi : NETFLIX, prime video et YouTube ont leur propre bouton ; Apple TV, Disney+ et Free TV sont dans la rangée d'applis - appuyez sur 🏠, naviguez avec le pavé rond, validez au centre. ← pour revenir.",
+              "Allumer se fait en deux appuis : POWER rouge sur la grande télécommande Hisense allume l'écran, puis ⏻ sur la petite Xiaomi réveille la clé de streaming. La télé passe toute seule sur HDMI 2 et l'accueil Google TV apparaît. Les deux mêmes boutons pour éteindre.",
+              "Ensuite tout se fait avec la petite Xiaomi : NETFLIX, prime video et YouTube ont leur propre bouton ; Apple TV, Free TV (chaînes israéliennes) et Disney+ sont dans la rangée d'applis - appuyez sur 🏠, naviguez avec le pavé rond, validez au centre. ← pour revenir.",
               "Volume : la bascule + / − en bas de la Xiaomi (ou VOL sur la Hisense).",
-              "La télé passe normalement toute seule sur HDMI 2 quand la clé se réveille. Si jamais « pas de signal » s'affiche, appuyez sur SOURCE sur la Hisense et choisissez HDMI 2."
+              "Si jamais « pas de signal » s'affiche, appuyez sur SOURCE sur la Hisense et choisissez HDMI 2."
             ]
           }
         },
