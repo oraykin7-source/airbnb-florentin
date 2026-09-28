@@ -576,30 +576,173 @@
         "fr": "Courses et marchés"
       },
       "sub": {
-        "en": "Supermarkets 5 minutes away, three markets close by",
-        "de": "Supermärkte 5 Minuten entfernt, drei Märkte in der Nähe",
-        "fr": "Supermarchés à 5 minutes, trois marchés tout près"
+        "en": "Several open 24/7 - list with maps links",
+        "de": "Mehrere rund um die Uhr offen - Liste mit Kartenlinks",
+        "fr": "Plusieurs ouverts 24h/24 - liste avec liens de navigation"
       },
       "items": {
         "en": [
-          "A few small supermarkets are within a 5-minute walk: on Derech Yafo at the start of Levinsky St, and Super Yuda at Herzl / Matalon St. There's also a corner grocery (a \"makolet\") in the neighbourhood for basics. Prices vary quite a bit between them - it's worth comparing.",
-          "Markets are the cheapest and nicest for fruit, vegetables, nuts and spices: Levinsky Market (5 min), Carmel Market (15 min) and HaTikva Market (a short bus ride). Closed on Saturday.",
-          "The big discount supermarkets are outside the city - not worth the trip for a short stay.",
-          "Most shops close Friday afternoon and reopen Saturday night; a few small groceries stay open on Shabbat at higher prices."
+          "Prices differ quite a bit between shops - the chains (Shufersal, Super Yuda) are usually cheaper than the convenience stores (AM:PM). Several are open 24/7, including on Shabbat. Hours below are from Google and can change - tap a name to navigate."
         ],
         "de": [
-          "Mehrere kleine Supermärkte sind in 5 Gehminuten erreichbar: an der Derech Yafo am Anfang der Levinsky-Straße und Super Yuda an der Ecke Herzl / Matalon. Für das Nötigste gibt es auch einen Tante-Emma-Laden (\"Makolet\") im Viertel. Die Preise unterscheiden sich deutlich - Vergleichen lohnt sich.",
-          "Märkte sind am günstigsten und schönsten für Obst, Gemüse, Nüsse und Gewürze: Levinsky-Markt (5 Min.), Carmel-Markt (15 Min.) und HaTikva-Markt (kurze Busfahrt). Samstags geschlossen.",
-          "Die großen Discounter liegen außerhalb der Stadt - für einen kurzen Aufenthalt lohnt sich der Weg nicht.",
-          "Die meisten Läden schließen Freitagnachmittag und öffnen Samstagabend wieder; ein paar kleine Läden haben am Schabbat zu höheren Preisen geöffnet."
+          "Die Preise unterscheiden sich deutlich - die Ketten (Shufersal, Super Yuda) sind meist günstiger als die Convenience-Läden (AM:PM). Mehrere haben rund um die Uhr offen, auch am Schabbat. Die Zeiten stammen von Google und können sich ändern - Name antippen zum Navigieren."
         ],
         "fr": [
-          "Plusieurs petits supermarchés à 5 minutes à pied : sur Derech Yafo au début de la rue Levinsky, et Super Yuda à l'angle Herzl / Matalon. Il y a aussi une épicerie de quartier (« makolet ») pour le dépannage. Les prix varient pas mal de l'un à l'autre - ça vaut le coup de comparer.",
-          "Les marchés sont les moins chers et les plus agréables pour fruits, légumes, fruits secs et épices : marché Levinsky (5 min), marché du Carmel (15 min) et marché HaTikva (court trajet en bus). Fermés le samedi.",
-          "Les grands supermarchés discount sont hors de la ville - pas la peine pour un court séjour.",
-          "La plupart des commerces ferment le vendredi après-midi et rouvrent le samedi soir ; quelques petites épiceries restent ouvertes pendant Shabbat, à prix plus élevés."
+          "Les prix varient pas mal d'un magasin à l'autre - les chaînes (Shufersal, Super Yuda) sont en général moins chères que les magasins de dépannage (AM:PM). Plusieurs sont ouverts 24h/24, Shabbat compris. Les horaires viennent de Google et peuvent changer - touchez un nom pour naviguer."
         ]
-      }
+      },
+      "lists": [
+        {
+          "title": {
+            "en": "Supermarkets & groceries",
+            "de": "Supermärkte & Läden",
+            "fr": "Supermarchés et épiceries"
+          },
+          "rows": [
+            {
+              "name": "Super Yuda",
+              "where": "Matalon St 19",
+              "hours": "24/7",
+              "note": {
+                "en": "closest supermarket, always open",
+                "de": "nächster Supermarkt, immer offen",
+                "fr": "supermarché le plus proche, toujours ouvert"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Super%20Yuda%20Matalon%20St%2019%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Shufersal Express",
+              "where": "Florentin St 27",
+              "hours": "until 22:00",
+              "note": {
+                "en": "big chain, good prices",
+                "de": "große Kette, gute Preise",
+                "fr": "grande chaîne, bons prix"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Shufersal%20Express%20Florentin%20St%2027%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Super Levinsky",
+              "where": "Levinski St 78",
+              "hours": "until 21:00",
+              "note": {
+                "en": "fruit & veg, corner of Derech Yafo",
+                "de": "Obst & Gemüse, Ecke Derech Yafo",
+                "fr": "fruits et légumes, angle Derech Yafo"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Super%20Levinsky%20Levinski%20St%2078%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Minimarket Levinsky",
+              "where": "Levinski St 77",
+              "hours": "until 23:00",
+              "note": {
+                "en": "small grocery",
+                "de": "kleiner Laden",
+                "fr": "petite épicerie"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Minimarket%20Levinsky%20Levinski%20St%2077%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "AM:PM",
+              "where": "Herzl St 61",
+              "hours": "until 22:30",
+              "note": {
+                "en": "convenience chain, pricier",
+                "de": "Convenience-Kette, teurer",
+                "fr": "chaîne de dépannage, plus cher"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=AM%3APM%20Herzl%20St%2061%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "AM:PM",
+              "where": "Herzl / Shalma Rd 91",
+              "hours": "24/7",
+              "note": {
+                "en": "convenience chain, pricier",
+                "de": "Convenience-Kette, teurer",
+                "fr": "chaîne de dépannage, plus cher"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=AM%3APM%20Herzl%20/%20Shalma%20Rd%2091%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Kolbo Market 24/7",
+              "where": "Shalma Rd 75",
+              "hours": "24/7",
+              "note": {
+                "en": "well-rated grocery",
+                "de": "gut bewerteter Laden",
+                "fr": "épicerie bien notée"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Kolbo%20Market%2024/7%20Shalma%20Rd%2075%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "City Market",
+              "where": "Har Tsiyon Blvd 45",
+              "hours": "24/7",
+              "note": {
+                "en": "supermarket near HaHagana station",
+                "de": "Supermarkt beim Bahnhof HaHagana",
+                "fr": "supermarché près de la gare HaHagana"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=City%20Market%20Har%20Tsiyon%20Blvd%2045%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Tiv Taam IN THE CITY",
+              "where": "Jerusalem Blvd 4",
+              "hours": "until 23:00, open Shabbat",
+              "note": {
+                "en": "non-kosher, pork & wine",
+                "de": "nicht koscher, Schweinefleisch & Wein",
+                "fr": "non casher, porc et vin"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Tiv%20Taam%20IN%20THE%20CITY%20Jerusalem%20Blvd%204%2C%20Tel%20Aviv"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Markets (closed Saturday)",
+            "de": "Märkte (samstags geschlossen)",
+            "fr": "Marchés (fermés le samedi)"
+          },
+          "rows": [
+            {
+              "name": "Levinsky Market",
+              "where": "Levinski St",
+              "hours": "until ~17:00, closed Sat",
+              "note": {
+                "en": "spices, nuts, olives, burekas - 5 min",
+                "de": "Gewürze, Nüsse, Oliven, Burekas - 5 Min.",
+                "fr": "épices, fruits secs, olives, burekas - 5 min"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Levinsky%20Market%20Levinski%20St%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "Carmel Market",
+              "where": "HaCarmel St",
+              "hours": "until ~19:00, closed Sat",
+              "note": {
+                "en": "the big one - fruit, veg, street food - 15 min",
+                "de": "der große Markt - Obst, Gemüse, Streetfood - 15 Min.",
+                "fr": "le grand marché - fruits, légumes, street food - 15 min"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Carmel%20Market%20HaCarmel%20St%2C%20Tel%20Aviv"
+            },
+            {
+              "name": "HaTikva Market",
+              "where": "HaTikva St 10",
+              "hours": "until ~19:30, closed Sat",
+              "note": {
+                "en": "cheapest produce, very local - short bus ride",
+                "de": "günstigstes Obst & Gemüse, sehr lokal - kurze Busfahrt",
+                "fr": "le moins cher, très local - court trajet en bus"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=HaTikva%20Market%20HaTikva%20St%2010%2C%20Tel%20Aviv"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "florentin",
