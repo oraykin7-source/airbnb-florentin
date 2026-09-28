@@ -101,7 +101,8 @@
       const saved = localStorage.getItem("lang");
       if (LANGS.includes(saved)) return saved;
     } catch (_) { /* storage blocked */ }
-    return "en"; // the host's choice: English by default, whatever the phone's language
+    const nav = (navigator.languages || [navigator.language || "en"]).map(l => l.slice(0, 2).toLowerCase());
+    return nav.find(l => LANGS.includes(l)) || "en";
   }
   function saveLang(l) { try { localStorage.setItem("lang", l); } catch (_) {} }
 
