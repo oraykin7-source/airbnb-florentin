@@ -5,9 +5,9 @@
     "whatsapp": "972523244799",
     "_whatsapp_note": "E.164 without + or spaces, e.g. 972501234567. Leave empty to hide the WhatsApp button. NOTE: the number is visible in the public page source - use a dedicated hosting number.",
     "shelter": {
-      "en": "the protected room (mamad) - the bedroom off the living room, marked in the photo",
-      "de": "den Schutzraum (Mamad) - das Schlafzimmer neben dem Wohnzimmer, im Foto markiert",
-      "fr": "la pièce blindée (mamad) - la chambre qui donne sur le salon, encadrée sur la photo"
+      "en": "the protected room (mamad), which is Oren's bedroom off the living room (marked in the photo) - just go straight in, no need to knock, even if he isn't home",
+      "de": "den Schutzraum (Mamad) - das ist Orens Schlafzimmer neben dem Wohnzimmer (im Foto markiert). Einfach direkt hineingehen, ohne anzuklopfen, auch wenn er nicht da ist",
+      "fr": "la pièce blindée (mamad), qui est la chambre d'Oren donnant sur le salon (encadrée sur la photo) - entrez directement, sans frapper, même s'il n'est pas là"
     },
     "boiler_switch": {
       "en": "in the hallway, next to the bathroom door",
@@ -61,17 +61,17 @@
       "items": {
         "en": [
           "The kitchen has a portable induction hob and a Ninja Combi (oven, air fryer, steamer in one). The full guide explains the levels, the pots with the click-on handle and where everything is.",
-          "Coffee, tea, oil, salt and spices are yours to use. Tap water in Tel Aviv is safe to drink.",
+          "Help yourself to the milk in the fridge, the oil and the spices - and the coffee capsules. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
           "Please don't open the cabinet under the sink - the door is fragile."
         ],
         "de": [
           "Die Küche hat ein mobiles Induktionskochfeld und einen Ninja Combi (Ofen, Heißluftfritteuse und Dampfgarer in einem). Die vollständige Anleitung erklärt die Stufen, die Töpfe mit Klickgriff und wo alles ist.",
-          "Kaffee, Tee, Öl, Salz und Gewürze dürfen Sie gerne benutzen. Leitungswasser in Tel Aviv ist trinkbar.",
+          "Milch im Kühlschrank, Öl und Gewürze dürfen Sie gerne benutzen - ebenso die Kaffeekapseln. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
           "Bitte den Schrank unter der Spüle nicht öffnen - die Tür ist empfindlich."
         ],
         "fr": [
           "La cuisine a une plaque à induction portable et un Ninja Combi (four, friteuse à air et cuiseur vapeur en un). Le guide complet explique les niveaux, les casseroles à poignée clipsable et où tout se trouve.",
-          "Café, thé, huile, sel et épices sont à votre disposition. L'eau du robinet à Tel Aviv est potable.",
+          "Servez-vous : le lait du frigo, l'huile et les épices - et les capsules de café. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
           "Merci de ne pas ouvrir le placard sous l'évier - la porte est fragile."
         ]
       },
@@ -513,9 +513,9 @@
       },
       "image": "assets/img/house/shelter.jpg",
       "image_alt": {
-        "en": "The shelter (mamad) - the room marked in orange, off the living room",
-        "de": "Der Schutzraum (Mamad) - der orange markierte Raum neben dem Wohnzimmer",
-        "fr": "L'abri (mamad) - la pièce encadrée en orange, depuis le salon"
+        "en": "The shelter (mamad) is Oren's room - the doorway marked in orange",
+        "de": "Der Schutzraum (Mamad) ist Orens Zimmer - der orange markierte Durchgang",
+        "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange"
       }
     },
     {
@@ -535,6 +535,7 @@
         "en": [
           "You have your own private room; the kitchen, bathroom and living room are shared with Oren, who lives here too. Make yourself at home - and say hi!",
           "Please eat at the kitchen table or in your room rather than on the sofa - the fabric doesn't forgive crumbs.",
+          "Kitchen: milk, oil, spices and coffee capsules are yours to use; please buy your own groceries for anything else.",
           "Rubbish goes in the kitchen bin (recycling: plastic bottles to the orange cage, cardboard to the blue bin on the street).",
           "No smoking or vaping anywhere in the apartment - please step outside.",
           "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
@@ -545,6 +546,7 @@
         "de": [
           "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
           "Bitte am Küchentisch oder im Zimmer essen, nicht auf dem Sofa - der Stoff verzeiht keine Krümel.",
+          "Küche: Milch, Öl, Gewürze und Kaffeekapseln dürfen Sie benutzen; alles andere bitte selbst einkaufen.",
           "Müll in den Küchenmülleimer (Recycling: Plastikflaschen in den orangen Gitterkorb, Karton in die blaue Tonne auf der Straße).",
           "Nirgends in der Wohnung rauchen oder dampfen - bitte nach draußen gehen.",
           "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
@@ -555,12 +557,47 @@
         "fr": [
           "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
           "Merci de manger à la table de la cuisine ou dans votre chambre plutôt que sur le canapé - le tissu ne pardonne pas les miettes.",
+          "Cuisine : lait, huile, épices et capsules de café sont à votre disposition ; pour le reste, merci d'acheter vos propres courses.",
           "Les déchets vont dans la poubelle de la cuisine (tri : bouteilles en plastique dans la cage orange, carton dans le bac bleu dans la rue).",
           "Interdit de fumer ou de vapoter partout dans l'appartement - merci de sortir.",
           "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
           "Pas d'animaux, désolé.",
           "Silence après 23 h - murs fins, voisins tout proches.",
           "Départ à {{checkout_time}} : éteignez la clim, laissez les clés là où vous les avez trouvées et envoyez-nous un petit message. Merci !"
+        ]
+      }
+    },
+    {
+      "id": "shops",
+      "icon": "🛒",
+      "title": {
+        "en": "Groceries & markets",
+        "de": "Einkaufen & Märkte",
+        "fr": "Courses et marchés"
+      },
+      "sub": {
+        "en": "Supermarkets 5 minutes away, three markets close by",
+        "de": "Supermärkte 5 Minuten entfernt, drei Märkte in der Nähe",
+        "fr": "Supermarchés à 5 minutes, trois marchés tout près"
+      },
+      "items": {
+        "en": [
+          "A few small supermarkets are within a 5-minute walk: on Derech Yafo at the start of Levinsky St, and Super Yuda at Herzl / Matalon St. There's also a corner grocery (a \"makolet\") in the neighbourhood for basics. Prices vary quite a bit between them - it's worth comparing.",
+          "Markets are the cheapest and nicest for fruit, vegetables, nuts and spices: Levinsky Market (5 min), Carmel Market (15 min) and HaTikva Market (a short bus ride). Closed on Saturday.",
+          "The big discount supermarkets are outside the city - not worth the trip for a short stay.",
+          "Most shops close Friday afternoon and reopen Saturday night; a few small groceries stay open on Shabbat at higher prices."
+        ],
+        "de": [
+          "Mehrere kleine Supermärkte sind in 5 Gehminuten erreichbar: an der Derech Yafo am Anfang der Levinsky-Straße und Super Yuda an der Ecke Herzl / Matalon. Für das Nötigste gibt es auch einen Tante-Emma-Laden (\"Makolet\") im Viertel. Die Preise unterscheiden sich deutlich - Vergleichen lohnt sich.",
+          "Märkte sind am günstigsten und schönsten für Obst, Gemüse, Nüsse und Gewürze: Levinsky-Markt (5 Min.), Carmel-Markt (15 Min.) und HaTikva-Markt (kurze Busfahrt). Samstags geschlossen.",
+          "Die großen Discounter liegen außerhalb der Stadt - für einen kurzen Aufenthalt lohnt sich der Weg nicht.",
+          "Die meisten Läden schließen Freitagnachmittag und öffnen Samstagabend wieder; ein paar kleine Läden haben am Schabbat zu höheren Preisen geöffnet."
+        ],
+        "fr": [
+          "Plusieurs petits supermarchés à 5 minutes à pied : sur Derech Yafo au début de la rue Levinsky, et Super Yuda à l'angle Herzl / Matalon. Il y a aussi une épicerie de quartier (« makolet ») pour le dépannage. Les prix varient pas mal de l'un à l'autre - ça vaut le coup de comparer.",
+          "Les marchés sont les moins chers et les plus agréables pour fruits, légumes, fruits secs et épices : marché Levinsky (5 min), marché du Carmel (15 min) et marché HaTikva (court trajet en bus). Fermés le samedi.",
+          "Les grands supermarchés discount sont hors de la ville - pas la peine pour un court séjour.",
+          "La plupart des commerces ferment le vendredi après-midi et rouvrent le samedi soir ; quelques petites épiceries restent ouvertes pendant Shabbat, à prix plus élevés."
         ]
       }
     },
