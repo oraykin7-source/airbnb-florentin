@@ -248,6 +248,10 @@
       return;
     }
     const L = state.lang;
+    const hu = document.getElementById("headsup");
+    hu.replaceChildren(...(state.weekly.headsup || []).map(n =>
+      el("li", {}, el("span", { class: "hu-ico", "aria-hidden": "true" }, n.icon || "ℹ️"), n.text[L])));
+    hu.hidden = hu.children.length === 0;
     const { today, checkout } = currentStay();
     const stayTxt = checkout ? (checkout === today ? t("checkout_today") : t("stay_until")(fmtDate(checkout, { weekday: "short", day: "numeric", month: "short" }))) : "";
     meta.textContent = [stayTxt, t("updated")(fmtDate(state.weekly.generated_at.slice(0, 10), { day: "numeric", month: "long" }))].filter(Boolean).join(" · ");

@@ -46,6 +46,17 @@ Collect, per category, the 6-10 best picks for a visitor staying in Florentin:
 
 Rules: every item comes from a page on one of the three sites and carries that page's exact URL; dated items fall inside the window; skip anything already ended or undated-and-unconfirmable; prefer places within easy reach of Florentin (Florentin, Jaffa, Neve Tzedek, Rothschild, the ports) and things that don't require Hebrew; never invent times, venues or prices - leave them `null` if not on the page.
 
+## 3b. "Heads-up this week"
+
+Besides the items, write 1-4 short practical notes for the window in a `headsup` list - things that catch foreign visitors out. Only include what applies to the window; leave the list empty if nothing does. Typical notes:
+
+- Shabbat: from Friday afternoon (about 2 hours before sunset) to Saturday night there are no trains and almost no buses; most shops close; taxis (Gett) run at a surcharge.
+- Jewish holidays inside the window (name them, with the dates): same as Shabbat, sometimes for two days; Yom Kippur = no traffic at all.
+- Friday: shops and markets close early (around 14:00-15:00).
+- Anything else you can confirm from the sources: a big event closing streets, a marathon, a heatwave warning, jellyfish season at the beaches.
+
+Each note: `{"icon": "🕯️", "text": {"en": "...", "de": "...", "fr": "..."}}` - one or two sentences, no links.
+
 ## 4. Write `data/weekly.json`
 
 ```json
@@ -53,6 +64,9 @@ Rules: every item comes from a page on one of the three sites and carries that p
   "generated_at": "2026-10-03T19:05:00+03:00",
   "window_start": "2026-10-03",
   "window_end": "2026-10-11",
+  "headsup": [
+    { "icon": "🕯️", "text": { "en": "Shabbat: from Friday ~16:30 until Saturday ~19:30 no trains or buses and most shops are closed - plan taxis and shop on Friday morning.", "de": "...", "fr": "..." } }
+  ],
   "items": [
     {
       "category": "food",

@@ -118,5 +118,15 @@
       "image": null,
       "image_credit": null
     }
+  ],
+  "headsup": [
+    {
+      "icon": "🕯️",
+      "text": {
+        "en": "SAMPLE - Shabbat: no trains or buses from Friday ~16:30 to Saturday ~19:30; most shops closed.",
+        "de": "BEISPIEL - Schabbat: Fr ~16:30 bis Sa ~19:30 keine Züge/Busse; die meisten Läden zu.",
+        "fr": "EXEMPLE - Shabbat : pas de trains ni de bus du vendredi ~16h30 au samedi ~19h30 ; la plupart des commerces fermés."
+      }
+    }
   ]
 }

@@ -140,6 +140,19 @@ def main() -> int:
         if de and not ds:
             errors.append(f"{where}: date_end without date_start")
 
+    for i, h in enumerate(w.get("headsup") or []):
+        where = f"headsup[{i}]"
+        txt = h.get("text")
+        if not isinstance(txt, dict) or any(not str(txt.get(l, "")).strip() for l in LANGS):
+            errors.append(f"{where}: text must have non-empty en/de/fr")
+        else:
+            for l in LANGS:
+                text_ok(where, f"text.{l}", str(txt[l]), 300, errors)
+        if len(str(h.get("icon", ""))) > 4:
+            errors.append(f"{where}: icon must be a single emoji")
+    if len(w.get("headsup") or []) > 4:
+        errors.append("headsup: at most 4 notes")
+
     if len(w["items"]) < MIN_ITEMS:
         errors.append(f"only {len(w['items'])} items (need at least {MIN_ITEMS})")
     empty = [c for c, n in per_cat.items() if n == 0]
