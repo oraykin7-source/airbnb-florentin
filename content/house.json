@@ -833,7 +833,7 @@
                 "fr": "supermarché le plus proche, toujours ouvert",
                 "he": "הסופר הקרוב ביותר, תמיד פתוח"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Super%20Yuda%20Matalon%20St%2019%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Matalon+St+19,+Tel+Aviv"
             },
             {
               "name": "Super El HaYam",
@@ -845,7 +845,7 @@
                 "fr": "supermarché du quartier, toujours ouvert",
                 "he": "סופר שכונתי, תמיד פתוח"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=%D7%A1%D7%95%D7%A4%D7%A8%20%D7%90%D7%9C%20%D7%94%D7%99%D7%9D%20Matalon%20St%202%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/%D7%A1%D7%95%D7%A4%D7%A8+%D7%90%D7%9C+%D7%94%D7%99%D7%9D/@32.0585396,34.7685471,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d6497656ca3:0x507482c4fe26d5ef!8m2!3d32.0585396!4d34.7685471!16s%2Fg%2F11h056qjq5"
             },
             {
               "name": "Mama",
@@ -857,7 +857,7 @@
                 "fr": "épicerie fine & minimarket - charcuterie, fromages, viande non casher, produits russes/ukrainiens",
                 "he": "מעדנייה ומינימרקט - נקניקים, גבינות, בשר לא כשר, מוצרים רוסיים/אוקראיניים"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Mama%20Ha'Aliya%20St%2017%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/Mama/@32.0591882,34.7736851,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9df0829671:0x2d039c28ac820a3f!8m2!3d32.0591882!4d34.7736851!16s%2Fg%2F11cn0rgtpm"
             },
             {
               "name": "Shufersal Express",
@@ -869,7 +869,7 @@
                 "fr": "grande chaîne, bons prix",
                 "he": "רשת גדולה, מחירים טובים"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Shufersal%20Express%20Florentin%20St%2027%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/Shufersal+Express/@32.0562844,34.7697156,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9f3e838c03:0x372109d0709ed963!8m2!3d32.0562844!4d34.7697156!16s%2Fg%2F11c328n7x7"
             },
             {
               "name": "Super Levinsky",
@@ -881,7 +881,7 @@
                 "fr": "fruits et légumes, angle Derech Yafo",
                 "he": "פירות וירקות, פינת דרך יפו"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Super%20Levinsky%20Levinski%20St%2078%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/Super+Levinsky/@32.0582903,34.7759643,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b8d00f2e8bf:0xbc519a8cf02e9ad8!8m2!3d32.0582903!4d34.7759643!16s%2Fg%2F11scppfhzd"
             },
             {
               "name": "Minimarket Levinsky",
@@ -893,7 +893,7 @@
                 "fr": "petite épicerie",
                 "he": "מכולת קטנה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Minimarket%20Levinsky%20Levinski%20St%2077%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/%D7%9E%D7%99%D7%A0%D7%99%D7%9E%D7%A8%D7%A7%D7%98+%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99/@32.0588142,34.775272,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b62173d5487:0xad1f2e9a865f3d48!8m2!3d32.0588142!4d34.775272!16s%2Fg%2F11c5fz9svk"
             },
             {
               "name": "AM:PM",
@@ -905,7 +905,7 @@
                 "fr": "chaîne de dépannage, plus cher",
                 "he": "רשת נוחות, יקר יותר"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=AM%3APM%20Herzl%20St%2061%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/AM:PM/@32.0579528,34.7708854,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d4234caee05:0xd1c0f96e31201d72!8m2!3d32.0579528!4d34.7708854!16s%2Fg%2F11jgd1lp1r"
             },
             {
               "name": "Tiv Taam IN THE CITY",
@@ -917,7 +917,7 @@
                 "fr": "non casher, porc et vin",
                 "he": "לא כשר, חזיר ויין"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Tiv%20Taam%20IN%20THE%20CITY%20Jerusalem%20Blvd%204%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/IN+THE+CITY+%D7%98%D7%99%D7%91+%D7%98%D7%A2%D7%9D/@32.0564932,34.7596358,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4cbda310aa9f:0x100aaccc9c618da8!8m2!3d32.0564932!4d34.7596358!16s%2Fg%2F11bvtlmmxk"
             }
           ]
         },
@@ -939,7 +939,7 @@
                 "fr": "épices, fruits secs, olives, burekas - 5 min",
                 "he": "תבלינים, אגוזים, זיתים, בורקס - 5 דקות"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Levinsky%20Market%20Levinski%20St%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/place/Levinski+Market/@32.0594379,34.7728971,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9de840d371:0x89c37aa6e94d6bd2!8m2!3d32.0594379!4d34.7728971!16s%2Fg%2F11b7jx1v0k"
             },
             {
               "name": "Carmel Market",
@@ -1006,7 +1006,7 @@
                 "fr": "le meilleur houmous du marché Levinsky - 5 min à pied",
                 "he": "החומוס הכי טוב בשוק לוינסקי - 5 דקות הליכה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Garger%20HaZahav%20Levinski%20St%2030%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/Garger+HaZahav/@32.0597618,34.7714453,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9dd284ccd5:0xb29ba8ccdbaba7b!8m2!3d32.0597618!4d34.7714453!16s%2Fg%2F11bxdy2lyv",
               "image": "assets/img/eat/garger.jpg",
               "image_credit": "Orenrosenfeld, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hummus_plate.jpg",
@@ -1022,7 +1022,7 @@
                 "fr": "sabich : pita à l'aubergine frite, œuf, salades - le classique de Tel Aviv",
                 "he": "סביח: פיתה עם חציל מטוגן, ביצה, סלטים - הקלאסיקה התל-אביבית"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Sabich%20Frishman%20Levinski%20St%2057%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/Sabich+Frishman/@32.0595626,34.7732693,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d321a7d32b9:0x51523f1317917c64!8m2!3d32.0595626!4d34.7732693!16s%2Fg%2F11kc212xt_",
               "image": "assets/img/eat/sabich.jpg",
               "image_credit": "Avi1111 dr. avishai teicher, CC BY 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sabich_Square_6.jpg",
@@ -1038,7 +1038,7 @@
                 "fr": "'Les burekas de maman' - feuilleté, petit-déjeuner à emporter",
                 "he": "הבורקס של אמא - בצק עלים, ארוחת בוקר בדרך"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1%20%D7%A9%D7%9C%20%D7%90%D7%9E%D7%90%20Levinski%20St%2046%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1+%D7%A9%D7%9C+%D7%90%D7%9E%D7%90+%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99/@32.0594197,34.772904,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9de84b8173:0xffe2cf7a925dfafb!8m2!3d32.0594197!4d34.772904!16s%2Fg%2F1vz668k4",
               "image": "assets/img/eat/burekas.jpg",
               "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Burekas_Israeli_breakfast.jpg",
@@ -1054,7 +1054,7 @@
                 "fr": "turc : lahmajoun, shawarma d'agneau dans un laffa - 10 min à pied",
                 "he": "טורקי: לחמג'ון, שווארמת כבש בלאפה - 10 דקות הליכה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Turk%20Lahmajoun%20Nahalat%20Binyamin%20St%2077%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/Turk+Lahmajoun/@32.0618913,34.7723774,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9d0e91b9f3:0x2144c6f22cf6d0c3!8m2!3d32.0618913!4d34.7723774!16s%2Fg%2F1td8v7qj",
               "image": "assets/img/eat/lahmajoun.jpg",
               "image_credit": "Christopher, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lahmacun_(Turkish_Pizza).jpg",
@@ -1080,7 +1080,7 @@
                 "fr": "poisson et fruits de mer à la grecque - poulpe, carpaccio de poisson. Même coin que Mirage, près du parc HaMesila",
                 "he": "דגים ופירות ים בסגנון יווני - תמנון, קרפצ'יו דג. באותה פינה כמו מיראז', ליד פארק המסילה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=HaShachaf%20Herzl%20St%2022%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/HaShachaf/@32.0609587,34.7703884,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d006f922f5d:0xe5ce1150ae8463c1!8m2!3d32.0609587!4d34.7703884!16s%2Fg%2F11x8cvpfs6",
               "image": "assets/img/eat/hashachaf.jpg",
               "image_credit": "Andrew Dalby, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Grilled_octopus_2.jpg",
@@ -1106,7 +1106,7 @@
                 "fr": "italien, à deux pas de HaShachaf - pâtes",
                 "he": "איטלקי, כמה בתים מהשחף - פסטה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Cena%20Herzl%20St%2010%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/Cena/@32.0625804,34.7699414,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d25caf7d2d9:0x8c4a03af8d86af99!8m2!3d32.0625804!4d34.7699414!16s%2Fg%2F11rd8qd71v",
               "image": "assets/img/eat/cena.jpg",
               "image_credit": "10Rosso, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro_3.jpg",
@@ -1122,7 +1122,7 @@
                 "fr": "le chef star Eyal Shani - sur le parc, 10 min à pied",
                 "he": "השף אייל שני - על הפארק, 10 דקות הליכה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Mirage%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/Mirage/@32.0608486,34.7690641,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d2985f84e39:0x39ad6cd0cd4a5909!8m2!3d32.0608486!4d34.7690641!16s%2Fg%2F11rgfyj2kj",
               "image": "assets/img/eat/mirage.jpg",
               "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_%E2%80%93_Whole_roasted_cauliflower.jpg",
@@ -1138,7 +1138,7 @@
                 "fr": "la glace d'Eyal Shani, juste à côté de Mirage",
                 "he": "הגלידה של אייל שני, ליד מיראז'"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Cassata%20Park%20Hamesila%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv",
+              "url": "https://www.google.com/maps/place/Cassata/@32.0608532,34.7690391,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d2c8c686487:0xa96f4213cbed63c5!8m2!3d32.0608532!4d34.7690391!16s%2Fg%2F11vdgfk8h1",
               "image": "assets/img/eat/cassata.jpg",
               "image_credit": "Jason Chung, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Gelato_in_Milan_-_big_cone_2019.jpg",
