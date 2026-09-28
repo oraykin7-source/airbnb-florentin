@@ -10,6 +10,7 @@
 
   const UI = {
     en: {
+      first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "Florentin Home Guide", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
       places_title: "Places we love", places_lead: "Our favourite corners of the city, all close by. Tap a card for the map.", map: "Open in Maps", photo: "Photo",
@@ -27,6 +28,7 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
+      first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Florentin Wohnungsguide", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
       places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt, alle in der Nähe. Karte antippen für den Weg.", map: "In Maps öffnen", photo: "Foto",
@@ -44,6 +46,7 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
+      first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Guide de l'appart Florentin", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
       places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville, tous à deux pas. Touchez une carte pour l'itinéraire.", map: "Ouvrir dans Maps", photo: "Photo",
@@ -61,6 +64,7 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
+      first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על אריח.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "מדריך הדירה בפלורנטין", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
       places_title: "מקומות שאנחנו אוהבים", places_lead: "הפינות האהובות עלינו בעיר, כולן קרובות. לחצו על כרטיס למפה.", map: "פתיחה במפות", photo: "צילום",
@@ -169,6 +173,10 @@
       b.setAttribute("aria-selected", String(b.dataset.cat === state.cat)));
 
     const name = guestName();
+    const hr = nowInTLV().hour;
+    const hiKey = hr < 5 ? "hi_night" : hr < 12 ? "hi_morning" : hr < 18 ? "hi_afternoon" : hr < 23 ? "hi_evening" : "hi_night";
+    const hiIcon = hr < 6 || hr >= 20 ? "🌙" : hr < 12 ? "🌤️" : hr < 18 ? "☀️" : "🌇";
+    document.getElementById("eyebrow").textContent = `${hiIcon} ${t(hiKey)} · ${t("hi_city")}`;
     document.getElementById("welcome").textContent = name ? t("welcome_name")(name) : t("welcome");
     const nb = document.getElementById("name-box");
     nb.replaceChildren();
@@ -202,6 +210,21 @@
     if (!state.house) return;
     const host = state.house.host;
     const L = state.lang;
+    const groups = state.house.groups || {};
+    const grids = {};
+    for (const [gid, label] of Object.entries(groups)) {
+      grids[gid] = el("div", { class: "cards" });
+      box.append(el("h3", { class: "group-title", "data-group": gid }, el("span", { class: "dot", "aria-hidden": "true" }), L_(label)), grids[gid]);
+    }
+    const strip = document.getElementById("first-hour");
+    strip.replaceChildren();
+    const firsts = state.house.cards.filter(c => c.first_hour).sort((a, b) => a.first_hour - b.first_hour);
+    for (const c of firsts) {
+      strip.append(el("a", { class: "tile", href: "#card-" + c.id, onclick: () => { const d = document.getElementById("card-" + c.id); if (d) d.open = true; } },
+        c.thumb ? el("img", { src: c.thumb, alt: "", loading: "lazy" }) : el("span", { class: "tile-ico" }, c.icon),
+        el("span", { class: "tile-txt" }, el("strong", {}, L_(c.title)), el("span", {}, L_(c.sub)))));
+    }
+    document.getElementById("first").hidden = firsts.length === 0;
     for (const c of state.house.cards) {
       const body = el("div", { class: "body" });
       if (c.image) {
@@ -252,11 +275,12 @@
 
       const card = el("details", { class: "card" + (c.emergency ? " emergency" : ""), id: "card-" + c.id },
         el("summary", {},
-          el("span", { class: "ico", "aria-hidden": "true" }, c.icon),
+          c.thumb ? el("img", { class: "thumb", src: c.thumb, alt: "", loading: "lazy", onerror: e => e.target.replaceWith(el("span", { class: "ico", "aria-hidden": "true" }, c.icon)) })
+                  : el("span", { class: "ico", "aria-hidden": "true" }, c.icon),
           el("span", {}, el("h3", {}, L_(c.title)), el("span", { class: "sub" }, L_(c.sub))),
           el("span", { class: "chev", "aria-hidden": "true" }, "▾")),
         body);
-      box.append(card);
+      (grids[c.group] || box).append(card);
     }
   }
 

@@ -193,7 +193,10 @@
             ]
           }
         }
-      ]
+      ],
+      "thumb": "assets/img/house/nespresso.jpg",
+      "group": "comfort",
+      "first_hour": 5
     },
     {
       "id": "tami4",
@@ -242,7 +245,10 @@
           "מים חמים (תה, קפה): כפתור הכוס האדום למעלה משמאל. מטעמי בטיחות הוא מוזג רק כל עוד מחזיקים אותו - לוחצים ומחזיקים, משחררים כדי לעצור. למים רותחים (100°), נוגעים קודם בכפתור הקיטור למטה משמאל ואז מחזיקים את האדום.",
           "אין מה למלא - הוא מחובר לצנרת. האור הכחול תקין."
         ]
-      }
+      },
+      "thumb": "assets/img/house/tami4.jpg",
+      "group": "comfort",
+      "first_hour": 2
     },
     {
       "id": "ac",
@@ -348,7 +354,10 @@
             ]
           }
         }
-      ]
+      ],
+      "thumb": "assets/img/house/ac-remote-bedroom.jpg",
+      "group": "comfort",
+      "first_hour": 3
     },
     {
       "id": "tv",
@@ -462,7 +471,10 @@
             ]
           }
         }
-      ]
+      ],
+      "thumb": "assets/img/house/tv-remotes-room.jpg",
+      "group": "comfort",
+      "first_hour": 4
     },
     {
       "id": "hot_water",
@@ -511,7 +523,10 @@
         "de": "Der Boiler-Schalter - rotes Licht heißt an",
         "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé",
         "he": "מתג הדוד - אור אדום אומר שהוא דולק"
-      }
+      },
+      "thumb": "assets/img/house/boiler-switch.jpg",
+      "group": "comfort",
+      "first_hour": 1
     },
     {
       "id": "laundry",
@@ -545,7 +560,8 @@
           "על המיטה תמצאו שתי מגבות - הגדולה לגוף, הקטנה לפנים. מגבות נוספות בארון.",
           "מכונת כביסה: אפשר להשתמש בשמחה - רק לשלוח קודם הודעה לאורן (כפתור וואטסאפ למעלה). הוא יראה איך היא עובדת, ואם מדובר בכמה פריטים בלבד, אולי יוסיף כמה משלו כדי שהמכונה תרוץ מלאה ולא בשביל ארבעה גרביים."
         ]
-      }
+      },
+      "group": "comfort"
     },
     {
       "id": "emergency",
@@ -642,7 +658,9 @@
           "fr": "Illustration : entrer, fermer la porte en acier, relever la poignée. Votre porte est différente - les gestes sont les mêmes.",
           "he": "המחשה: נכנסים, סוגרים את דלת הפלדה, מרימים את הידית. הדלת שלכם נראית אחרת - התנועות זהות."
         }
-      }
+      },
+      "thumb": "assets/img/house/shelter.jpg",
+      "group": "safe"
     },
     {
       "id": "rules",
@@ -712,7 +730,8 @@
           "שקט אחרי 23:00 בבקשה - אני קם ב-6 לעבודה.",
           "צ'ק-אאוט ב-{{checkout_time}}: לכבות מזגן ואורות, לסגור את הדלת מאחוריכם (היא ננעלת לבד - אין מפתחות) ולשלוח לי הודעה. לשדה התעופה: אפליקציית Gett או הרכבת מתחנת ההגנה. תודה!"
         ]
-      }
+      },
+      "group": "safe"
     },
     {
       "id": "shops",
@@ -884,7 +903,8 @@
             }
           ]
         }
-      ]
+      ],
+      "group": "local"
     },
     {
       "id": "eat",
@@ -1032,7 +1052,8 @@
             }
           ]
         }
-      ]
+      ],
+      "group": "local"
     },
     {
       "id": "florentin",
@@ -1086,7 +1107,8 @@
           "השכירו אופניים או קורקינט דרך תל-אופן או אפליקציות עירוניות אחרות - תל אביב שטוחה ויש בה שבילי אופניים טובים.",
           "בבקשה לשמור על שקט אחרי 23:00 - השכנים גרים קרוב מאוד."
         ]
-      }
+      },
+      "group": "local"
     },
     {
       "id": "review",
@@ -1128,7 +1150,28 @@
           "ואם נהניתם, כמה מילים בביקורת שלכם שוות המון למארח קטן כמוני. תודה!",
           "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה → טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
         ]
-      }
+      },
+      "group": "local"
     }
-  ]
+  ],
+  "groups": {
+    "comfort": {
+      "en": "Get comfortable",
+      "de": "Ankommen",
+      "fr": "S'installer",
+      "he": "להתמקם"
+    },
+    "safe": {
+      "en": "Stay safe & happy",
+      "de": "Sicher & entspannt",
+      "fr": "Sécurité et bonne entente",
+      "he": "בטוחים ומרוצים"
+    },
+    "local": {
+      "en": "Go local",
+      "de": "Wie ein Einheimischer",
+      "fr": "Vivre comme un local",
+      "he": "כמו מקומיים"
+    }
+  }
 }

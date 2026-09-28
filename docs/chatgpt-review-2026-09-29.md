@@ -45,3 +45,6 @@ Oren found the look dated and heavy. ChatGPT (same chat, "Airbnb Page Redesign D
 - Cards: no border, no shadow, 18px radius, 20px padding; Emergency card gets a red left bar.
 - Emoji icons: plain, no tinted squares. Header opaque. Emergency button = white with red outline; WhatsApp = filled green.
 - Removed gradients from event placeholders (flat tints).
+
+## Second design pass (29.9, afternoon) - the "dry" top half
+ChatGPT's ranked ideas, implemented in this order: (1) appliance photos as 56px card thumbnails (`thumb` in house.json, emoji fallback); (2) "Your first hour" swipeable strip of photo tiles (`first_hour` order in house.json) that opens the matching card; (3) hero: soft yellow sun blob + time-of-day greeting in Tel Aviv time ("Good afternoon · Tel Aviv"); (4) the 12 cards grouped under "Get comfortable / Stay safe & happy / Go local" (`group` + `groups` in house.json, coloured dots); (6) tactile feedback on tap and a 180 ms rise of opened card bodies, off under prefers-reduced-motion. Skipped staggered scroll reveals on its advice.

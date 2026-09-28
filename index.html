@@ -28,6 +28,7 @@
 
   <main>
     <section class="hero">
+      <p class="eyebrow" id="eyebrow"></p>
       <h1 id="welcome">Welcome home</h1>
       <div class="name-box" id="name-box"></div>
       <div class="quick">
@@ -44,9 +45,15 @@
       <a href="#week" data-i18n="week_title">This week in Tel Aviv</a>
     </nav>
 
+    <section id="first" class="block first-block" hidden>
+      <h2 data-i18n="first_title">Your first hour</h2>
+      <p class="muted lead" data-i18n="first_lead">The four things every guest asks about - tap one.</p>
+      <div class="strip" id="first-hour"></div>
+    </section>
+
     <section id="house" class="block">
       <h2 data-i18n="house_title">The apartment</h2>
-      <div class="cards" id="house-cards"></div>
+      <div id="house-cards"></div>
     </section>
 
     <section id="places" class="block">
