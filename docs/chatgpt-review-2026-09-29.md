@@ -37,3 +37,11 @@ Keep the static architecture. Finish a house guide a guest can rely on first; ev
 
 ## First thing to do
 Stand in the flat with a phone, complete the shelter location and access instructions in all three languages, and make sure that content shows even when the events load fails. Then: boiler, shared spaces, key hand-over at check-out.
+
+## Design pass (29.9, afternoon)
+Oren found the look dated and heavy. ChatGPT (same chat, "Airbnb Page Redesign Direction") diagnosed the cause: border + shadow + tinted icon square on every card, plus beige/terracotta/serif. Direction implemented in `assets/style.css` in one pass:
+- Palette: background #F4F8FB, white cards, text #172433, primary ocean blue #0A6FD6, happy yellow #FFD966 (brand dot, stay badge, walk-time pill), emergency red #C62828, WhatsApp green kept. Dark mode variant kept.
+- Type: Manrope 800 headings, Inter body 17px/1.6.
+- Cards: no border, no shadow, 18px radius, 20px padding; Emergency card gets a red left bar.
+- Emoji icons: plain, no tinted squares. Header opaque. Emergency button = white with red outline; WhatsApp = filled green.
+- Removed gradients from event placeholders (flat tints).
