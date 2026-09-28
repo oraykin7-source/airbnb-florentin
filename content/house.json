@@ -258,26 +258,41 @@
         "fr": "Télévision"
       },
       "sub": {
-        "en": "Netflix, YouTube, casting",
-        "de": "Netflix, YouTube, Streaming",
-        "fr": "Netflix, YouTube, cast"
+        "en": "Netflix, Apple TV, Prime, Disney+, Free TV - all ready",
+        "de": "Netflix, Apple TV, Prime, Disney+, Free TV - alles eingerichtet",
+        "fr": "Netflix, Apple TV, Prime, Disney+, Free TV - tout est prêt"
       },
       "items": {
         "en": [
-          "Smart TV: use the remote's Home button to open Netflix, YouTube and other apps.",
-          "You're welcome to log in with your own accounts - please log out before you leave.",
-          "To cast from your phone, connect to the apartment Wi-Fi first."
+          "Samsung smart TV in the living room. All the accounts are already signed in - no need to log in with your own.",
+          "ON/OFF: the red ⏻ button at the top of the remote.",
+          "Netflix: press the NETFLIX button, then choose the profile called \"guest\" (the blue smiley). Prime Video and Disney+ also have their own buttons.",
+          "Apple TV, Free TV (Israeli channels), YouTube, Spotify, HBO Max: press the 🏠 Home button, then scroll left/right along the app row at the bottom with the round pad and press its centre to open.",
+          "Volume: the left rocker (+ / −). Channels: the right rocker (∧ / ∨). ↩ goes back.",
+          "Please leave the settings and the accounts as they are - just don't log out or sign in with other accounts."
         ],
         "de": [
-          "Smart-TV: Mit der Home-Taste der Fernbedienung öffnen Sie Netflix, YouTube und andere Apps.",
-          "Gerne mit eigenen Konten anmelden - bitte vor der Abreise wieder abmelden.",
-          "Zum Streamen vom Handy zuerst mit dem WLAN der Wohnung verbinden."
+          "Samsung Smart-TV im Wohnzimmer. Alle Konten sind bereits angemeldet - Sie müssen sich nicht mit eigenen einloggen.",
+          "EIN/AUS: die rote ⏻-Taste oben auf der Fernbedienung.",
+          "Netflix: NETFLIX-Taste drücken, dann das Profil \"guest\" (der blaue Smiley) wählen. Prime Video und Disney+ haben ebenfalls eigene Tasten.",
+          "Apple TV, Free TV (israelische Sender), YouTube, Spotify, HBO Max: 🏠 Home drücken, dann mit dem runden Steuerkreuz in der App-Leiste unten nach links/rechts blättern und mit der Mitte öffnen.",
+          "Lautstärke: linke Wippe (+ / −). Sender: rechte Wippe (∧ / ∨). ↩ geht zurück.",
+          "Bitte Einstellungen und Konten so lassen, wie sie sind - nicht abmelden und keine anderen Konten anmelden."
         ],
         "fr": [
-          "Smart TV : le bouton Home de la télécommande ouvre Netflix, YouTube et d'autres applis.",
-          "Vous pouvez vous connecter avec vos propres comptes - pensez à vous déconnecter avant de partir.",
-          "Pour caster depuis votre téléphone, connectez-vous d'abord au Wi-Fi de l'appartement."
+          "Smart TV Samsung dans le salon. Tous les comptes sont déjà connectés - inutile de vous connecter avec les vôtres.",
+          "ON/OFF : le bouton rouge ⏻ en haut de la télécommande.",
+          "Netflix : appuyez sur NETFLIX, puis choisissez le profil « guest » (le smiley bleu). Prime Video et Disney+ ont aussi leur propre bouton.",
+          "Apple TV, Free TV (chaînes israéliennes), YouTube, Spotify, HBO Max : appuyez sur 🏠 Home, puis faites défiler la rangée d'applis en bas avec le pavé rond et validez au centre.",
+          "Volume : la bascule de gauche (+ / −). Chaînes : la bascule de droite (∧ / ∨). ↩ pour revenir.",
+          "Merci de laisser les réglages et les comptes tels quels - ne vous déconnectez pas et n'ajoutez pas d'autres comptes."
         ]
+      },
+      "image": "assets/img/house/tv-remote.jpg",
+      "image_alt": {
+        "en": "The Samsung TV remote",
+        "de": "Die Samsung-Fernbedienung",
+        "fr": "La télécommande Samsung"
       }
     },
     {
