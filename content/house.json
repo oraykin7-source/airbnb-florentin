@@ -429,22 +429,22 @@
         "fr": "Serviettes et linge"
       },
       "sub": {
-        "en": "Two towels on the bed, more in the wardrobe",
-        "de": "Zwei Handtücher auf dem Bett, weitere im Schrank",
-        "fr": "Deux serviettes sur le lit, d'autres dans l'armoire"
+        "en": "Two towels on the bed, more in the wardrobe · washing machine on request",
+        "de": "Zwei Handtücher auf dem Bett, weitere im Schrank · Waschmaschine auf Anfrage",
+        "fr": "Deux serviettes sur le lit, d'autres dans l'armoire · machine à laver sur demande"
       },
       "items": {
         "en": [
           "You'll find two towels on your bed - the large one for the body, the small one for the face. Extra towels are in the wardrobe.",
-          "Washing machine: for short stays we'd rather you didn't use it - it's a water-hungry machine and a full cycle for four items isn't worth it. If you're staying longer and really need a wash, message Oren (WhatsApp button at the top) and he'll sort it out."
+          "Washing machine: you're welcome to use it - just message Oren first (WhatsApp button at the top). He'll show you how it works and, if it's only a few items, may add some of his own so the machine runs full rather than for four socks."
         ],
         "de": [
           "Auf Ihrem Bett liegen zwei Handtücher - das große für den Körper, das kleine fürs Gesicht. Weitere Handtücher sind im Schrank.",
-          "Waschmaschine: Bei kurzen Aufenthalten bitten wir, sie nicht zu benutzen - sie verbraucht viel Wasser, und ein ganzer Waschgang für vier Teile lohnt sich nicht. Wer länger bleibt und wirklich waschen muss, schreibt Oren (WhatsApp-Button oben), er kümmert sich darum."
+          "Waschmaschine: Sie dürfen sie gerne benutzen - schreiben Sie vorher kurz Oren (WhatsApp-Button oben). Er zeigt Ihnen, wie sie funktioniert, und legt bei wenigen Teilen vielleicht etwas von sich dazu, damit die Maschine voll läuft und nicht für vier Socken."
         ],
         "fr": [
           "Vous trouverez deux serviettes sur votre lit - la grande pour le corps, la petite pour le visage. D'autres serviettes sont dans l'armoire.",
-          "Machine à laver : pour un court séjour, merci de ne pas l'utiliser - elle consomme beaucoup d'eau et un cycle complet pour quatre affaires n'en vaut pas la peine. Si vous restez plus longtemps et avez vraiment besoin d'une lessive, écrivez à Oren (bouton WhatsApp en haut), il s'en occupe."
+          "Machine à laver : vous pouvez l'utiliser - envoyez d'abord un message à Oren (bouton WhatsApp en haut). Il vous montre comment elle marche et, s'il n'y a que quelques affaires, ajoutera peut-être les siennes pour que la machine tourne pleine plutôt que pour quatre chaussettes."
         ]
       }
     },
