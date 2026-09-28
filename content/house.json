@@ -152,6 +152,39 @@
               "Si rien ne pétille, la bouteille de gaz est vide - dites-le-moi simplement."
             ]
           }
+        },
+        {
+          "title": {
+            "en": "Microwave",
+            "de": "Mikrowelle",
+            "fr": "Micro-ondes"
+          },
+          "image": "assets/img/house/microwave.jpg",
+          "image_alt": {
+            "en": "The microwave, on the metal rack under the Ninja",
+            "de": "Die Mikrowelle im Metallregal unter dem Ninja",
+            "fr": "Le micro-ondes, sur l'étagère métallique sous le Ninja"
+          },
+          "items": {
+            "en": [
+              "On the metal rack, under the Ninja Combi.",
+              "Quickest way: press a number (1–6) - that's the number of minutes at full power - and it starts by itself. STOP/CANCEL to stop, open the door to pause.",
+              "Custom time: TIME COOK, type the time, START. POWER lowers the power (e.g. for defrosting or chocolate).",
+              "No metal, no foil, no closed containers. Cover food with a plate to avoid splashes - and wipe it if something does splash."
+            ],
+            "de": [
+              "Im Metallregal, unter dem Ninja Combi.",
+              "Am schnellsten: eine Zahl (1–6) drücken - das sind Minuten bei voller Leistung - und es startet von selbst. STOP/CANCEL zum Stoppen, Tür öffnen zum Pausieren.",
+              "Eigene Zeit: TIME COOK, Zeit eingeben, START. POWER reduziert die Leistung (z. B. zum Auftauen oder für Schokolade).",
+              "Kein Metall, keine Folie, keine geschlossenen Behälter. Essen mit einem Teller abdecken - und auswischen, falls doch etwas spritzt."
+            ],
+            "fr": [
+              "Sur l'étagère métallique, sous le Ninja Combi.",
+              "Le plus rapide : appuyez sur un chiffre (1–6) - ce sont des minutes à pleine puissance - et ça démarre tout seul. STOP/CANCEL pour arrêter, ouvrir la porte pour mettre en pause.",
+              "Durée personnalisée : TIME COOK, tapez la durée, START. POWER baisse la puissance (décongélation, chocolat…).",
+              "Pas de métal, pas d'aluminium, pas de récipient fermé. Couvrez avec une assiette pour éviter les projections - et essuyez si ça éclabousse."
+            ]
+          }
         }
       ]
     },
