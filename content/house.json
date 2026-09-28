@@ -68,6 +68,40 @@
       "sections": [
         {
           "title": {
+            "en": "Induction hob (Midea, 2 zones)",
+            "de": "Induktionskochfeld (Midea, 2 Zonen)",
+            "fr": "Plaque à induction (Midea, 2 zones)",
+            "he": "כיריים אינדוקציה (מידאה, 2 אזורים)"
+          },
+          "items": {
+            "en": [
+              "Portable plate on the left of the counter. Put the pan on a zone, touch ⏻ for that zone, set the level with − / +. Nothing happens without a pan on it.",
+              "It is much hotter than it looks: 1 = simmer, 2-3 = everyday frying, 4 = searing (briefly). 8 / B only for boiling water in a pot - never with a frying pan, it ruins the non-stick.",
+              "Lift pans, don't slide them. Touch ⏻ again to switch the zone off. Buttons not reacting? The 🔒 lock is on - hold it until it releases.",
+              "Keep phones and cards off the glass and never heat an empty pan. Full details in the kitchen guide below."
+            ],
+            "de": [
+              "Mobile Platte links auf der Arbeitsplatte. Topf auf eine Zone stellen, ⏻ der Zone berühren, Stufe mit − / + wählen. Ohne Topf passiert nichts.",
+              "Sie ist viel heißer, als sie aussieht: 1 = köcheln, 2-3 = normales Braten, 4 = scharf anbraten (kurz). 8 / B nur zum Wasserkochen im Topf - nie mit der Pfanne, das ruiniert die Beschichtung.",
+              "Töpfe anheben, nicht schieben. Zum Ausschalten wieder ⏻ berühren. Tasten reagieren nicht? Die 🔒 Sperre ist an - gedrückt halten, bis sie sich löst.",
+              "Handys und Karten nicht aufs Glas legen, nie eine leere Pfanne erhitzen. Alle Details im Küchenguide unten."
+            ],
+            "fr": [
+              "Plaque mobile à gauche du plan de travail. Posez la casserole sur une zone, touchez ⏻ de cette zone, réglez avec − / +. Sans casserole, rien ne se passe.",
+              "Elle chauffe bien plus qu'il n'y paraît : 1 = mijoter, 2-3 = cuisson courante, 4 = saisir (brièvement). 8 / B uniquement pour bouillir de l'eau dans une casserole - jamais avec une poêle, cela abîme l'antiadhésif.",
+              "Soulevez les casseroles, ne les faites pas glisser. Touchez ⏻ à nouveau pour éteindre la zone. Les boutons ne répondent pas ? Le verrou 🔒 est actif - maintenez-le jusqu'au déverrouillage.",
+              "Pas de téléphone ni de carte sur la vitre, jamais de poêle vide à chauffer. Tous les détails dans le guide cuisine ci-dessous."
+            ],
+            "he": [
+              "פלטה ניידת בצד שמאל של השיש. שמים סיר על אזור, נוגעים ב-⏻ של אותו אזור, קובעים עוצמה עם − / +. בלי סיר שום דבר לא קורה.",
+              "היא הרבה יותר חמה ממה שנראה: 1 = בישול איטי, 2-3 = טיגון יומיומי, 4 = צריבה (בקצרה). 8 / B רק להרתחת מים בסיר - אף פעם לא עם מחבת, זה הורס את הציפוי.",
+              "מרימים סירים, לא גוררים. נוגעים שוב ב-⏻ לכיבוי האזור. הכפתורים לא מגיבים? הנעילה 🔒 פועלת - מחזיקים עד שמשתחררת.",
+              "לא להניח טלפונים וכרטיסים על הזכוכית, ולא לחמם מחבת ריקה. כל הפרטים במדריך המטבח למטה."
+            ]
+          }
+        },
+        {
+          "title": {
             "en": "Coffee - capsule machine",
             "de": "Kaffee - Kapselmaschine",
             "fr": "Café - machine à capsules",
