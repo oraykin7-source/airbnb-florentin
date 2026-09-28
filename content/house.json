@@ -449,6 +449,34 @@
       }
     },
     {
+      "id": "laundry",
+      "icon": "🧺",
+      "title": {
+        "en": "Washing machine",
+        "de": "Waschmaschine",
+        "fr": "Machine à laver"
+      },
+      "sub": {
+        "en": "Available - just ask Oren first",
+        "de": "Verfügbar - einfach vorher Oren fragen",
+        "fr": "Disponible - demandez d'abord à Oren"
+      },
+      "items": {
+        "en": [
+          "There's a washing machine you're welcome to use. It has a few quirks, so please message Oren before the first wash (WhatsApp button at the top) and he'll show you how it works - takes two minutes.",
+          "Detergent is provided. Please don't run it after 22:00 - the neighbours hear it."
+        ],
+        "de": [
+          "Es gibt eine Waschmaschine, die Sie gerne benutzen dürfen. Sie hat ein paar Eigenheiten - schreiben Sie Oren bitte vor der ersten Wäsche (WhatsApp-Button oben), er zeigt Ihnen in zwei Minuten, wie sie funktioniert.",
+          "Waschmittel ist da. Bitte nicht nach 22 Uhr waschen - die Nachbarn hören es."
+        ],
+        "fr": [
+          "Il y a une machine à laver que vous pouvez utiliser. Elle a ses petites particularités - envoyez un message à Oren avant la première lessive (bouton WhatsApp en haut), il vous montre en deux minutes.",
+          "La lessive est fournie. Merci de ne pas la lancer après 22 h - les voisins l'entendent."
+        ]
+      }
+    },
+    {
       "id": "emergency",
       "icon": "🆘",
       "emergency": true,
