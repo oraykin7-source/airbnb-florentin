@@ -1,8 +1,8 @@
 (() => {
   "use strict";
 
-  const LANGS = ["en", "de", "fr"];
-  const LOCALES = { en: "en-GB", de: "de-DE", fr: "fr-FR" };
+  const LANGS = ["en", "de", "fr", "he"];
+  const LOCALES = { en: "en-GB", de: "de-DE", fr: "fr-FR", he: "he-IL" };
   const TZ = "Asia/Jerusalem";
   // ?demo loads sample data for previewing the layout before the first weekly run
   const DEMO = new URLSearchParams(location.search).has("demo");
@@ -60,6 +60,23 @@
       loading: "Chargement…", unavailable: "Les sorties de la semaine sont en cours de mise à jour. Revenez bientôt.",
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
+    he: {
+      brand: "מדריך הדירה בפלורנטין", welcome: "ברוכים הבאים הביתה",
+      house_title: "הדירה", week_title: "השבוע בתל אביב",
+      places_title: "מקומות שאנחנו אוהבים", places_lead: "הפינות האהובות עלינו בעיר, כולן קרובות. לחצו על כרטיס למפה.", map: "פתיחה במפות", photo: "צילום",
+      cat_food: "אוכל ומסעדות", cat_culture: "תרבות ואירועים", cat_nightlife: "חיי לילה ומסיבות",
+      footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
+      stay_until: d => `אירועים במהלך השהות · עד ${d}`,
+      checkout_today: "צ'ק-אאוט היום - נסיעה טובה!",
+      whatsapp: "וואטסאפ למארח", sos: "חירום", reset_dates: "לפי תאריכי היומן",
+      welcome_name: n => `ברוכים הבאים הביתה, ${n}`, name_prompt: "איך לקרוא לכם?", name_save: "שמירה", name_change: "לא אתם?",
+      stay_label: "תאריך הצ'ק-אאוט שלכם (אפשר לשנות אם זה לא שלכם):", stay_label_none: "תאריך הצ'ק-אאוט שלכם (לא חובה, לסינון אירועים):",
+      updated: d => `עודכן ${d}`,
+      during_stay: "במהלך השהות", new_opening: "חדש", ongoing: "מתמשך",
+      empty: "עדיין אין פריטים לתאריכים שלכם בקטגוריה הזו - נסו לשונית אחרת.",
+      loading: "טוען…", unavailable: "רשימת השבוע מתעדכנת כרגע. בדקו שוב בקרוב.",
+      more: "פרטים", copy: "העתקה", copied: "הועתק", source: "מתוך",
+    },
   };
 
   const state = { lang: pickLang(), cat: "food", house: null, places: null, weekly: null, stays: null };
@@ -84,8 +101,7 @@
       const saved = localStorage.getItem("lang");
       if (LANGS.includes(saved)) return saved;
     } catch (_) { /* storage blocked */ }
-    const nav = (navigator.languages || [navigator.language || "en"]).map(l => l.slice(0, 2).toLowerCase());
-    return nav.find(l => LANGS.includes(l)) || "en";
+    return "en"; // the host's choice: English by default, whatever the phone's language
   }
   function saveLang(l) { try { localStorage.setItem("lang", l); } catch (_) {} }
 
@@ -117,6 +133,7 @@
     return v && typeof v === "object" ? (v[state.lang] ?? v.en ?? "") : (v ?? "");
   });
   const t = key => UI[state.lang][key];
+  const L_ = o => (o && typeof o === "object") ? (o[state.lang] ?? o.en ?? "") : (o ?? "");
 
   async function getJSON(path) {
     const r = await fetch(path, { cache: "no-cache" });
@@ -143,6 +160,7 @@
   // ---------- render ----------
   function renderChrome() {
     document.documentElement.lang = state.lang;
+    document.documentElement.dir = state.lang === "he" ? "rtl" : "ltr";
     document.querySelectorAll("[data-i18n]").forEach(n => { n.textContent = t(n.dataset.i18n); });
     document.querySelectorAll(".lang button").forEach(b =>
       b.setAttribute("aria-checked", String(b.dataset.lang === state.lang)));
@@ -186,7 +204,7 @@
     for (const c of state.house.cards) {
       const body = el("div", { class: "body" });
       if (c.image) {
-        const img = el("img", { class: "card-img", src: c.image, alt: (c.image_alt && c.image_alt[L]) || "", loading: "lazy",
+        const img = el("img", { class: "card-img", src: c.image, alt: (c.image_alt && L_(c.image_alt)) || "", loading: "lazy",
           onerror: e => e.target.remove() });
         body.append(img);
       }
@@ -203,38 +221,38 @@
             });
             dd.append(btn);
           }
-          dl.append(el("dt", {}, row.label[L]), dd);
+          dl.append(el("dt", {}, L_(row.label)), dd);
         }
         body.append(dl);
       }
       if (c.tel) {
         body.append(el("div", { class: "tel" },
-          c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + x.label[L]))));
+          c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label)))));
       }
-      if (c.items) body.append(el("ul", {}, c.items[L].map(s => el("li", {}, fill(s, host)))));
+      if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, fill(s, host)))));
       if (c.video) {
         body.append(el("video", { class: "card-video", src: c.video.src, poster: c.video.poster || "", muted: "", loop: "", playsinline: "", controls: "", preload: "none" }));
-        body.append(el("p", { class: "muted small" }, c.video.caption[L]));
+        body.append(el("p", { class: "muted small" }, L_(c.video.caption)));
       }
       for (const lst of c.lists || []) {
-        body.append(el("h4", { class: "sec-title" }, lst.title[L]));
+        body.append(el("h4", { class: "sec-title" }, L_(lst.title)));
         body.append(el("ul", { class: "plain" }, lst.rows.map(r => el("li", { class: "row" },
           el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
           el("span", { class: "muted" }, ` · ${r.where} · ${r.hours}`),
-          r.note ? el("div", { class: "muted small" }, r.note[L]) : null))));
+          r.note ? el("div", { class: "muted small" }, L_(r.note)) : null))));
       }
       for (const sec of c.sections || []) {
-        body.append(el("h4", { class: "sec-title" }, sec.title[L]));
-        if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && sec.image_alt[L]) || "", loading: "lazy", onerror: e => e.target.remove() }));
-        if (sec.items) body.append(el("ul", {}, sec.items[L].map(s => el("li", {}, fill(s, host)))));
+        body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
+        if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && L_(sec.image_alt)) || "", loading: "lazy", onerror: e => e.target.remove() }));
+        if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, fill(s, host)))));
       }
       if (c.link) body.append(el("div", { class: "tel" },
-        el("a", { href: `${c.link.href}?lang=${L}` }, c.link.label[L] + " →")));
+        el("a", { href: `${c.link.href}?lang=${L}` }, L_(c.link.label) + " →")));
 
       const card = el("details", { class: "card" + (c.emergency ? " emergency" : ""), id: "card-" + c.id },
         el("summary", {},
           el("span", { class: "ico", "aria-hidden": "true" }, c.icon),
-          el("span", {}, el("h3", {}, c.title[L]), el("span", { class: "sub" }, c.sub[L])),
+          el("span", {}, el("h3", {}, L_(c.title)), el("span", { class: "sub" }, L_(c.sub))),
           el("span", { class: "chev", "aria-hidden": "true" }, "▾")),
         body);
       box.append(card);
@@ -248,12 +266,12 @@
     const L = state.lang;
     for (const p of state.places.places) {
       box.append(el("article", { class: "place" },
-        el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": p.title[L] },
-          el("img", { src: p.image, alt: p.title[L], loading: "lazy", width: "1200", height: "675" }),
-          el("span", { class: "walk" }, p.walk[L])),
+        el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
+          el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
+          el("span", { class: "walk" }, L_(p.walk))),
         el("div", { class: "place-body" },
-          el("h3", {}, p.title[L]),
-          el("p", {}, p.text[L]),
+          el("h3", {}, L_(p.title)),
+          el("p", {}, L_(p.text)),
           el("div", { class: "place-foot" },
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " →")))));
@@ -284,7 +302,7 @@
     const L = state.lang;
     const hu = document.getElementById("headsup");
     hu.replaceChildren(...(state.weekly.headsup || []).map(n =>
-      el("li", {}, el("span", { class: "hu-ico", "aria-hidden": "true" }, n.icon || "ℹ️"), n.text[L])));
+      el("li", {}, el("span", { class: "hu-ico", "aria-hidden": "true" }, n.icon || "ℹ️"), L_(n.text))));
     hu.hidden = hu.children.length === 0;
     const { today, checkout } = currentStay();
     const stayTxt = checkout ? (checkout === today ? t("checkout_today") : t("stay_until")(fmtDate(checkout, { weekday: "short", day: "numeric", month: "short" }))) : "";
@@ -326,10 +344,10 @@
       box.append(el("article", { class: "ev" },
         media,
         el("div", { class: "ev-top" },
-          el("h3", {}, it.title[L], inStay ? el("span", { class: "badge" }, t("during_stay")) : null),
+          el("h3", {}, L_(it.title), inStay ? el("span", { class: "badge" }, t("during_stay")) : null),
           el("span", { class: "when" }, when)),
         whereBits ? el("div", { class: "where" }, whereBits + (it.price ? ` · ${it.price}` : "")) : null,
-        el("p", {}, it.blurb[L]),
+        el("p", {}, L_(it.blurb)),
         el("div", { class: "foot-row" },
           el("span", { class: "src" }, `${t("source")} ${host}`),
           el("a", { href: it.url, target: "_blank", rel: "noopener" }, t("more") + " →"))));

@@ -7,12 +7,14 @@
     "shelter": {
       "en": "the protected room (mamad), which is Oren's bedroom off the living room (marked in the photo) - just go straight in, no need to knock, even if he isn't home",
       "de": "den Schutzraum (Mamad) - das ist Orens Schlafzimmer neben dem Wohnzimmer (im Foto markiert). Einfach direkt hineingehen, ohne anzuklopfen, auch wenn er nicht da ist",
-      "fr": "la pièce blindée (mamad), qui est la chambre d'Oren donnant sur le salon (encadrée sur la photo) - entrez directement, sans frapper, même s'il n'est pas là"
+      "fr": "la pièce blindée (mamad), qui est la chambre d'Oren donnant sur le salon (encadrée sur la photo) - entrez directement, sans frapper, même s'il n'est pas là",
+      "he": "הממ\"ד - זה החדר של אורן, הנכנס מהסלון (מסומן בתמונה). פשוט להיכנס ישר, בלי לדפוק, גם אם הוא לא בבית"
     },
     "boiler_switch": {
       "en": "by the front door, at the entrance to the apartment",
       "de": "neben der Eingangstür, im Eingangsbereich der Wohnung",
-      "fr": "à côté de la porte d'entrée, dans l'entrée de l'appartement"
+      "fr": "à côté de la porte d'entrée, dans l'entrée de l'appartement",
+      "he": "ליד דלת הכניסה, בכניסה לדירה"
     },
     "checkout_time": "12:00"
   },
@@ -23,12 +25,14 @@
       "title": {
         "en": "Kitchen",
         "de": "Küche",
-        "fr": "Cuisine"
+        "fr": "Cuisine",
+        "he": "מטבח"
       },
       "sub": {
         "en": "Induction hob, Ninja Combi, where things are",
         "de": "Induktion, Ninja Combi, wo ist was",
-        "fr": "Induction, Ninja Combi, où trouver quoi"
+        "fr": "Induction, Ninja Combi, où trouver quoi",
+        "he": "כיריים אינדוקציה, נינג'ה קומבי, איפה מה נמצא"
       },
       "items": {
         "en": [
@@ -45,6 +49,11 @@
           "La cuisine a une plaque à induction portable et un Ninja Combi (four, friteuse à air et cuiseur vapeur en un). Le guide complet explique les niveaux, les casseroles à poignée clipsable et où tout se trouve.",
           "Le lait du frigo, l'huile, les épices et les capsules de café font partie du séjour - servez-vous. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
           "Merci de ne pas ouvrir le placard sous l'évier - la porte est fragile."
+        ],
+        "he": [
+          "במטבח יש כיריים אינדוקציה ניידות ונינג'ה קומבי (תנור, אייר-פרייר ואידוי במכשיר אחד). המדריך המלא מסביר את הדרגות, את הסירים עם הידית הנשלפת ואיפה כל דבר נמצא.",
+          "החלב במקרר, השמן, התבלינים וקפסולות הקפה הם חלק מהאירוח - תרגישו חופשי. לכל דבר אחר שתרצו לבשל, החנויות במרחק 5 דקות (ראו כרטיס קניות).",
+          "בבקשה לא לפתוח את הארון מתחת לכיור - הדלת שבירה."
         ]
       },
       "link": {
@@ -52,7 +61,8 @@
         "label": {
           "en": "Open the full kitchen guide",
           "de": "Vollständige Küchenanleitung öffnen",
-          "fr": "Ouvrir le guide complet de la cuisine"
+          "fr": "Ouvrir le guide complet de la cuisine",
+          "he": "למדריך המטבח המלא"
         }
       },
       "sections": [
@@ -60,13 +70,15 @@
           "title": {
             "en": "Coffee - capsule machine",
             "de": "Kaffee - Kapselmaschine",
-            "fr": "Café - machine à capsules"
+            "fr": "Café - machine à capsules",
+            "he": "קפה - מכונת קפסולות"
           },
           "image": "assets/img/house/nespresso.jpg",
           "image_alt": {
             "en": "The capsule machine, milk frother and capsules",
             "de": "Kapselmaschine, Milchaufschäumer und Kapseln",
-            "fr": "La machine à capsules, le mousseur à lait et les capsules"
+            "fr": "La machine à capsules, le mousseur à lait et les capsules",
+            "he": "מכונת הקפסולות, מקציף החלב והקפסולות"
           },
           "items": {
             "en": [
@@ -89,6 +101,13 @@
               "⚠️ Le bouton lungo ne s'arrête pas tout seul - il continue de verser jusqu'à faire déborder la tasse. Pour un lungo, restez à côté de la machine et appuyez de nouveau sur le bouton pour arrêter quand vous en avez assez.",
               "Mousseur à lait (l'Aeroccino noir) : remplir jusqu'au trait inférieur, fermer le couvercle, appuyer une fois pour une mousse chaude. Rincer juste après.",
               "Le réservoir d'eau est à l'arrière - si la machine s'arrête, il est probablement vide. Les capsules usagées tombent dans le tiroir derrière le bac d'égouttage."
+            ],
+            "he": [
+              "מכונה תואמת נספרסו (Cafe Joe). הקפסולות בכוס שלידה - תרגישו חופשי, זה עלינו.",
+              "מרימים את הידית הנחושתית, מכניסים קפסולה, סוגרים, שמים כוס מתחת ולוחצים על אחד משני הכפתורים למעלה: קטן = אספרסו, גדול = לונגו. הכפתורים מהבהבים בזמן החימום (כ-30 שניות).",
+              "⚠️ כפתור הלונגו לא נעצר לבד - הוא ממשיך למזוג עד שהכוס עולה על גדותיה. ללונגו, הישארו ליד המכונה ולחצו שוב על הכפתור כדי לעצור כשיש מספיק.",
+              "מקציף חלב (האירוצ'ינו השחור): למלא עד הקו התחתון, לסגור את המכסה, ללחוץ פעם אחת לקצף חם. לשטוף מיד אחרי השימוש.",
+              "מיכל המים מאחור - אם המכונה נעצרת, כנראה שהוא ריק. קפסולות משומשות נופלות למגירה שמאחורי מגש הטפטוף."
             ]
           }
         },
@@ -96,13 +115,15 @@
           "title": {
             "en": "Sparkling water - SodaStream",
             "de": "Sprudelwasser - SodaStream",
-            "fr": "Eau pétillante - SodaStream"
+            "fr": "Eau pétillante - SodaStream",
+            "he": "מים מוגזים - סודה-סטרים"
           },
           "image": "assets/img/house/sodastream.jpg",
           "image_alt": {
             "en": "The SodaStream and its bottle",
             "de": "Der SodaStream mit Flasche",
-            "fr": "La SodaStream et sa bouteille"
+            "fr": "La SodaStream et sa bouteille",
+            "he": "הסודה-סטרים והבקבוק שלו"
           },
           "items": {
             "en": [
@@ -122,6 +143,12 @@
               "Vissez la bouteille sur la machine jusqu'au clic, puis appuyez 2–3 fois brièvement sur le bouton du haut. Plus d'appuis = plus de bulles.",
               "Dévissez doucement. Ne gazéifiez que de l'eau plate - jamais de jus ni de boisson sucrée, cela abîme la machine.",
               "Si rien ne pétille, la bouteille de gaz est vide - dites-le-moi simplement."
+            ],
+            "he": [
+              "ממלאים את הבקבוק במים קרים עד הקו (מים קרים מתגזים טוב יותר - התמי 4 מושלם לזה).",
+              "מבריגים את הבקבוק למכונה עד שנשמע קליק, ואז לוחצים על הכפתור העליון 2-3 לחיצות קצרות. יותר לחיצות = יותר גז.",
+              "לפתוח לאט. להגזיז רק מים רגילים - אף פעם לא מיץ או משהו עם סוכר, זה הורס את המכונה.",
+              "אם שום דבר לא מתגזז, בלון הגז ריק - פשוט תגידו לי."
             ]
           }
         },
@@ -129,13 +156,15 @@
           "title": {
             "en": "Microwave",
             "de": "Mikrowelle",
-            "fr": "Micro-ondes"
+            "fr": "Micro-ondes",
+            "he": "מיקרוגל"
           },
           "image": "assets/img/house/microwave.jpg",
           "image_alt": {
             "en": "The microwave, on the metal rack under the Ninja",
             "de": "Die Mikrowelle im Metallregal unter dem Ninja",
-            "fr": "Le micro-ondes, sur l'étagère métallique sous le Ninja"
+            "fr": "Le micro-ondes, sur l'étagère métallique sous le Ninja",
+            "he": "המיקרוגל, על מדף המתכת מתחת לנינג'ה"
           },
           "items": {
             "en": [
@@ -155,6 +184,12 @@
               "Le plus rapide : appuyez sur un chiffre (1–6) - ce sont des minutes à pleine puissance - et ça démarre tout seul. STOP/CANCEL pour arrêter, ouvrir la porte pour mettre en pause.",
               "Durée personnalisée : TIME COOK, tapez la durée, START. POWER baisse la puissance (décongélation, chocolat…).",
               "Pas de métal, pas d'aluminium, pas de récipient fermé. Couvrez avec une assiette pour éviter les projections - et essuyez si ça éclabousse."
+            ],
+            "he": [
+              "על מדף המתכת, מתחת לנינג'ה קומבי.",
+              "הדרך המהירה: לוחצים על ספרה (1-6) - זה מספר הדקות בעוצמה מלאה - והוא מתחיל לבד. STOP/CANCEL לעצירה, פתיחת הדלת להשהיה.",
+              "זמן מותאם: TIME COOK, מקלידים את הזמן, START. POWER מוריד את העוצמה (למשל להפשרה או שוקולד).",
+              "בלי מתכת, בלי נייר כסף, בלי כלים סגורים. לכסות את האוכל בצלחת כדי למנוע התזות - ולנגב אם משהו בכל זאת ניתז."
             ]
           }
         }
@@ -166,18 +201,21 @@
       "title": {
         "en": "Water bar (Tami4)",
         "de": "Wasserbar (Tami4)",
-        "fr": "Fontaine à eau (Tami4)"
+        "fr": "Fontaine à eau (Tami4)",
+        "he": "בר מים (תמי 4)"
       },
       "sub": {
         "en": "Filtered cold & hot water - hold the red button to pour hot",
         "de": "Gefiltertes kaltes & heißes Wasser - rote Taste gedrückt halten für heiß",
-        "fr": "Eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude"
+        "fr": "Eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
+        "he": "מים מסוננים קרים וחמים - להחזיק את הכפתור האדום למזיגת מים חמים"
       },
       "image": "assets/img/house/tami4.jpg",
       "image_alt": {
         "en": "The Tami4 control panel",
         "de": "Das Bedienfeld des Tami4",
-        "fr": "Le panneau de la Tami4"
+        "fr": "Le panneau de la Tami4",
+        "he": "לוח הבקרה של התמי 4"
       },
       "items": {
         "en": [
@@ -197,6 +235,12 @@
           "Eau froide / tempérée : les boutons « verre » à droite - une touche.",
           "Eau chaude (thé, café) : le bouton rouge en haut à gauche. Par sécurité, l'eau ne coule que tant que vous le maintenez - appuyez et maintenez, relâchez pour arrêter. Pour de l'eau bouillante (100 °C), touchez d'abord le bouton vapeur en bas à gauche, puis maintenez le rouge.",
           "Rien à remplir - la machine est raccordée au réseau. La lumière bleue est normale."
+        ],
+        "he": [
+          "המכשיר הלבן במטבח נותן מי שתייה מסוננים - אין צורך לקנות בקבוקים. שמים כוס מתחת לפייה ונוגעים בכפתור.",
+          "מים קרים / בטמפרטורת החדר: כפתורי הכוס בצד ימין - נגיעה אחת.",
+          "מים חמים (תה, קפה): כפתור הכוס האדום למעלה משמאל. מטעמי בטיחות הוא מוזג רק כל עוד מחזיקים אותו - לוחצים ומחזיקים, משחררים כדי לעצור. למים רותחים (100°), נוגעים קודם בכפתור הקיטור למטה משמאל ואז מחזיקים את האדום.",
+          "אין מה למלא - הוא מחובר לצנרת. האור הכחול תקין."
         ]
       }
     },
@@ -206,12 +250,14 @@
       "title": {
         "en": "Air conditioning",
         "de": "Klimaanlage",
-        "fr": "Climatisation"
+        "fr": "Climatisation",
+        "he": "מזגן"
       },
       "sub": {
         "en": "Two remotes - each needs only three buttons",
         "de": "Zwei Fernbedienungen - je nur drei Tasten",
-        "fr": "Deux télécommandes - trois touches suffisent"
+        "fr": "Deux télécommandes - trois touches suffisent",
+        "he": "שני שלטים - בכל אחד צריך רק שלושה כפתורים"
       },
       "items": {
         "en": [
@@ -222,6 +268,9 @@
         ],
         "fr": [
           "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant. 24–25 °C est confortable ; plus bas ne refroidit pas plus vite."
+        ],
+        "he": [
+          "בבקשה לסגור את החלונות כשהמזגן עובד ולכבות אותו כשיוצאים. 24-25° נעים; נמוך יותר לא מקרר מהר יותר."
         ]
       },
       "sections": [
@@ -229,13 +278,15 @@
           "title": {
             "en": "Bedroom (white Tornado remote)",
             "de": "Schlafzimmer (weiße Tornado-Fernbedienung)",
-            "fr": "Chambre (télécommande blanche Tornado)"
+            "fr": "Chambre (télécommande blanche Tornado)",
+            "he": "חדר השינה (שלט טורנדו לבן)"
           },
           "image": "assets/img/house/ac-remote-bedroom.jpg",
           "image_alt": {
             "en": "Tornado remote",
             "de": "Tornado-Fernbedienung",
-            "fr": "Télécommande Tornado"
+            "fr": "Télécommande Tornado",
+            "he": "שלט טורנדו"
           },
           "items": {
             "en": [
@@ -252,6 +303,11 @@
               "1. ON/OFF - le bouton orange ⏻ au centre de l'anneau.",
               "2. Température - TEMP ▲ / ▼ (en haut et en bas de l'anneau).",
               "3. Mode - appuyez sur MODE (en haut à droite) jusqu'à voir ❄ (froid) ou ☀ (chaud) à l'écran. Ignorez toutes les autres touches."
+            ],
+            "he": [
+              "1. הדלקה/כיבוי - כפתור ⏻ הכתום במרכז הטבעת.",
+              "2. טמפרטורה - TEMP ▲ / ▼ (למעלה ולמטה בטבעת).",
+              "3. מצב - לוחצים MODE (למעלה מימין) עד שהצג מראה ❄ לקירור או ☀ לחימום. את שאר הכפתורים אפשר להתעלם."
             ]
           }
         },
@@ -259,13 +315,15 @@
           "title": {
             "en": "Living room (Tadiran remote)",
             "de": "Wohnzimmer (Tadiran-Fernbedienung)",
-            "fr": "Salon (télécommande Tadiran)"
+            "fr": "Salon (télécommande Tadiran)",
+            "he": "סלון (שלט תדיראן)"
           },
           "image": "assets/img/house/ac-remote-living.jpg",
           "image_alt": {
             "en": "Tadiran remote",
             "de": "Tadiran-Fernbedienung",
-            "fr": "Télécommande Tadiran"
+            "fr": "Télécommande Tadiran",
+            "he": "שלט תדיראן"
           },
           "items": {
             "en": [
@@ -282,6 +340,11 @@
               "1. ON/OFF - le bouton en haut à gauche.",
               "2. Température - les touches − / +.",
               "3. Mode - appuyez simplement sur COOL (froid) ou HEAT (chaud). Ignorez toutes les autres touches."
+            ],
+            "he": [
+              "1. הדלקה/כיבוי - הכפתור העליון משמאל.",
+              "2. טמפרטורה - כפתורי − / +.",
+              "3. מצב - פשוט לוחצים COOL או HEAT. את שאר הכפתורים אפשר להתעלם."
             ]
           }
         }
@@ -293,12 +356,14 @@
       "title": {
         "en": "TV",
         "de": "Fernseher",
-        "fr": "Télévision"
+        "fr": "Télévision",
+        "he": "טלוויזיה"
       },
       "sub": {
         "en": "Two TVs - all accounts ready, nothing to log in to",
         "de": "Zwei Fernseher - alle Konten eingerichtet, kein Login nötig",
-        "fr": "Deux télés - tous les comptes prêts, rien à connecter"
+        "fr": "Deux télés - tous les comptes prêts, rien à connecter",
+        "he": "שתי טלוויזיות - כל החשבונות מחוברים, אין צורך להתחבר"
       },
       "items": {
         "en": [
@@ -309,6 +374,9 @@
         ],
         "fr": [
           "Tous les comptes de streaming sont déjà connectés sur les deux télés - inutile de vous connecter avec les vôtres. Merci de laisser réglages et comptes tels quels : pas de déconnexion, pas d'autres comptes."
+        ],
+        "he": [
+          "כל שירותי הסטרימינג כבר מחוברים בשתי הטלוויזיות - אין צורך להתחבר עם חשבון משלכם. בבקשה להשאיר את ההגדרות והחשבונות כמו שהם: לא להתנתק ולא להוסיף חשבונות אחרים."
         ]
       },
       "sections": [
@@ -316,13 +384,15 @@
           "title": {
             "en": "Your room - Hisense TV + Xiaomi stick (two remotes)",
             "de": "Ihr Zimmer - Hisense-TV + Xiaomi-Stick (zwei Fernbedienungen)",
-            "fr": "Votre chambre - TV Hisense + clé Xiaomi (deux télécommandes)"
+            "fr": "Votre chambre - TV Hisense + clé Xiaomi (deux télécommandes)",
+            "he": "החדר שלכם - טלוויזיית הייסנס + סטרימר שיאומי (שני שלטים)"
           },
           "image": "assets/img/house/tv-remotes-room.jpg",
           "image_alt": {
             "en": "Left: the small Xiaomi remote (streaming). Right: the Hisense TV remote.",
             "de": "Links: die kleine Xiaomi-Fernbedienung (Streaming). Rechts: die Hisense-TV-Fernbedienung.",
-            "fr": "À gauche : la petite télécommande Xiaomi (streaming). À droite : la télécommande de la TV Hisense."
+            "fr": "À gauche : la petite télécommande Xiaomi (streaming). À droite : la télécommande de la TV Hisense.",
+            "he": "משמאל: שלט השיאומי הקטן (סטרימינג). מימין: שלט טלוויזיית ההייסנס."
           },
           "items": {
             "en": [
@@ -342,6 +412,12 @@
               "Ensuite tout se fait avec la petite Xiaomi : NETFLIX, prime video et YouTube ont leur propre bouton ; Apple TV, Free TV (chaînes israéliennes) et Disney+ sont dans la rangée d'applis - appuyez sur 🏠, naviguez avec le pavé rond, validez au centre. ← pour revenir.",
               "Volume : la bascule + / − en bas de la Xiaomi (ou VOL sur la Hisense).",
               "Si jamais « pas de signal » s'affiche, appuyez sur SOURCE sur la Hisense et choisissez HDMI 2."
+            ],
+            "he": [
+              "הדלקה בשתי לחיצות: POWER האדום בשלט ההייסנס הגדול מדליק את המסך, ואז ⏻ בשלט השיאומי הקטן מעיר את הסטרימר. הטלוויזיה עוברת ל-HDMI 2 לבד ומסך הבית של Google TV מופיע. אותם שני כפתורים לכיבוי.",
+              "משם הכול בשלט השיאומי הקטן: ל-NETFLIX, prime video ו-YouTube יש כפתורים משלהם; Apple TV, Free TV (ערוצים ישראליים) ו-Disney+ בשורת האפליקציות - לוחצים 🏠, גוללים עם המשטח העגול, לוחצים במרכזו לפתיחה. ← חוזר אחורה.",
+              "עוצמת שמע: מתג + / − בתחתית שלט השיאומי (או VOL בהייסנס).",
+              "אם רואים \"no signal\", לוחצים SOURCE בשלט ההייסנס ובוחרים HDMI 2."
             ]
           }
         },
@@ -349,13 +425,15 @@
           "title": {
             "en": "Living room - Samsung TV (one remote)",
             "de": "Wohnzimmer - Samsung-TV (eine Fernbedienung)",
-            "fr": "Salon - TV Samsung (une télécommande)"
+            "fr": "Salon - TV Samsung (une télécommande)",
+            "he": "סלון - טלוויזיית סמסונג (שלט אחד)"
           },
           "image": "assets/img/house/tv-remote.jpg",
           "image_alt": {
             "en": "The Samsung TV remote",
             "de": "Die Samsung-Fernbedienung",
-            "fr": "La télécommande Samsung"
+            "fr": "La télécommande Samsung",
+            "he": "שלט טלוויזיית הסמסונג"
           },
           "items": {
             "en": [
@@ -375,6 +453,12 @@
               "Netflix : appuyez sur NETFLIX, puis choisissez le profil « guest » (le smiley bleu). Prime Video et Disney+ ont aussi leur bouton.",
               "Apple TV, Free TV (chaînes israéliennes), YouTube, Spotify, HBO Max : appuyez sur 🏠 Home, faites défiler la rangée d'applis en bas avec le pavé rond, validez au centre.",
               "Volume : bascule de gauche (+ / −). Chaînes : bascule de droite (∧ / ∨). ↩ pour revenir."
+            ],
+            "he": [
+              "הדלקה/כיבוי: כפתור ⏻ האדום למעלה.",
+              "נטפליקס: לוחצים NETFLIX ובוחרים בפרופיל \"guest\" (הסמיילי הכחול). גם ל-Prime Video ו-Disney+ יש כפתורים משלהם.",
+              "Apple TV, Free TV (ערוצים ישראליים), YouTube, Spotify, HBO Max: לוחצים 🏠 Home, גוללים בשורת האפליקציות למטה עם המשטח העגול, לוחצים במרכזו לפתיחה.",
+              "עוצמת שמע: המתג השמאלי (+ / −). ערוצים: המתג הימני (∧ / ∨). ↩ חוזר אחורה."
             ]
           }
         }
@@ -386,12 +470,14 @@
       "title": {
         "en": "Hot water (the \"dud\")",
         "de": "Warmwasser (der „Dud“)",
-        "fr": "Eau chaude (le « doud »)"
+        "fr": "Eau chaude (le « doud »)",
+        "he": "מים חמים (הדוד)"
       },
       "sub": {
         "en": "Important - read before showering",
         "de": "Wichtig - vor dem Duschen lesen",
-        "fr": "Important - à lire avant la douche"
+        "fr": "Important - à lire avant la douche",
+        "he": "חשוב - לקרוא לפני המקלחת"
       },
       "items": {
         "en": [
@@ -411,13 +497,20 @@
           "Où se trouve l'interrupteur : {{boiler_switch}} (photo ci-dessus - le petit voyant rouge indique qu'il est allumé).",
           "Par temps nuageux ou le soir, allumez l'interrupteur 30 à 40 minutes avant la douche, puis éteignez-le ensuite.",
           "En été, le soleil suffit généralement - l'eau peut être très chaude, testez d'abord."
+        ],
+        "he": [
+          "כמו ברוב הבתים בישראל, המים החמים מגיעים מדוד על הגג. הוא מתחמם מהשמש, וכשזה לא מספיק - ממתג חשמלי.",
+          "איפה המתג: {{boiler_switch}} (בתמונה למעלה - האור האדום הקטן מראה שהוא דולק).",
+          "בימים מעוננים או בערב, מדליקים את המתג כ-30-40 דקות לפני המקלחת ומכבים אחריה.",
+          "בקיץ השמש בדרך כלל מספיקה - המים יכולים להיות חמים מאוד, אז לבדוק קודם."
         ]
       },
       "image": "assets/img/house/boiler-switch.jpg",
       "image_alt": {
         "en": "The boiler switch - red light means it's on",
         "de": "Der Boiler-Schalter - rotes Licht heißt an",
-        "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé"
+        "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé",
+        "he": "מתג הדוד - אור אדום אומר שהוא דולק"
       }
     },
     {
@@ -426,12 +519,14 @@
       "title": {
         "en": "Towels & laundry",
         "de": "Handtücher & Wäsche",
-        "fr": "Serviettes et linge"
+        "fr": "Serviettes et linge",
+        "he": "מגבות וכביסה"
       },
       "sub": {
         "en": "Two towels on the bed, more in the wardrobe · washing machine on request",
         "de": "Zwei Handtücher auf dem Bett, weitere im Schrank · Waschmaschine auf Anfrage",
-        "fr": "Deux serviettes sur le lit, d'autres dans l'armoire · machine à laver sur demande"
+        "fr": "Deux serviettes sur le lit, d'autres dans l'armoire · machine à laver sur demande",
+        "he": "שתי מגבות על המיטה, עוד בארון · מכונת כביסה לפי בקשה"
       },
       "items": {
         "en": [
@@ -445,6 +540,10 @@
         "fr": [
           "Vous trouverez deux serviettes sur votre lit - la grande pour le corps, la petite pour le visage. D'autres serviettes sont dans l'armoire.",
           "Machine à laver : vous pouvez l'utiliser - envoyez d'abord un message à Oren (bouton WhatsApp en haut). Il vous montre comment elle marche et, s'il n'y a que quelques affaires, ajoutera peut-être les siennes pour que la machine tourne pleine plutôt que pour quatre chaussettes."
+        ],
+        "he": [
+          "על המיטה תמצאו שתי מגבות - הגדולה לגוף, הקטנה לפנים. מגבות נוספות בארון.",
+          "מכונת כביסה: אפשר להשתמש בשמחה - רק לשלוח קודם הודעה לאורן (כפתור וואטסאפ למעלה). הוא יראה איך היא עובדת, ואם מדובר בכמה פריטים בלבד, אולי יוסיף כמה משלו כדי שהמכונה תרוץ מלאה ולא בשביל ארבעה גרביים."
         ]
       }
     },
@@ -455,19 +554,22 @@
       "title": {
         "en": "Emergency",
         "de": "Notfall",
-        "fr": "Urgences"
+        "fr": "Urgences",
+        "he": "חירום"
       },
       "sub": {
         "en": "Numbers, shelter, hospital",
         "de": "Nummern, Schutzraum, Krankenhaus",
-        "fr": "Numéros, abri, hôpital"
+        "fr": "Numéros, abri, hôpital",
+        "he": "מספרים, מקלט, בית חולים"
       },
       "tel": [
         {
           "label": {
             "en": "Police 100",
             "de": "Polizei 100",
-            "fr": "Police 100"
+            "fr": "Police 100",
+            "he": "משטרה 100"
           },
           "number": "100"
         },
@@ -475,7 +577,8 @@
           "label": {
             "en": "Ambulance 101",
             "de": "Rettung 101",
-            "fr": "Ambulance 101"
+            "fr": "Ambulance 101",
+            "he": "מד\"א 101"
           },
           "number": "101"
         },
@@ -483,7 +586,8 @@
           "label": {
             "en": "Fire 102",
             "de": "Feuerwehr 102",
-            "fr": "Pompiers 102"
+            "fr": "Pompiers 102",
+            "he": "כיבוי אש 102"
           },
           "number": "102"
         }
@@ -512,13 +616,22 @@
           "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
           "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvrent tard ou 24h/24.",
           "Pour joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
+        ],
+        "he": [
+          "הכתובת למסירה לשירותי החירום: על הכרטיס המודפס ליד הדלת ובהזמנה שלכם ב-Airbnb.",
+          "אזעקה: בתל אביב יש כ-90 שניות. ללכת מיד אל {{shelter}}, לסגור את הדלת ולהישאר 10 דקות אחרי סיום האזעקה. אפליקציית פיקוד העורף החינמית שולחת התרעות - כדאי להתקין עם ההגעה.",
+          "בפנים: לסגור את דלת הפלדה הכבדה ולהרים את הידית 90° עד שהיא ננעלת. זה כל התהליך - חלון הפלדה כבר סגור. (הנחיות פיקוד העורף.)",
+          "בית החולים הקרוב עם מיון 24/7: איכילוב (המרכז הרפואי ת\"א ע\"ש סוראסקי), ויצמן 6 - כ-15 דקות במונית.",
+          "בתי מרקחת (סופר-פארם, Be) בכל העיר; חלקם פתוחים עד מאוחר או 24/7.",
+          "ליצירת קשר עם המארח: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
         ]
       },
       "image": "assets/img/house/shelter.jpg",
       "image_alt": {
         "en": "The shelter (mamad) is Oren's room - the doorway marked in orange",
         "de": "Der Schutzraum (Mamad) ist Orens Zimmer - der orange markierte Durchgang",
-        "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange"
+        "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange",
+        "he": "המקלט (ממ\"ד) הוא החדר של אורן - הפתח מסומן בכתום"
       },
       "video": {
         "src": "assets/video/shelter.mp4",
@@ -526,7 +639,8 @@
         "caption": {
           "en": "Illustration: walk in, close the steel door, lift the handle. Your door looks different - the moves are the same.",
           "de": "Illustration: hineingehen, Stahltür schließen, Griff nach oben. Ihre Tür sieht anders aus - die Handgriffe sind dieselben.",
-          "fr": "Illustration : entrer, fermer la porte en acier, relever la poignée. Votre porte est différente - les gestes sont les mêmes."
+          "fr": "Illustration : entrer, fermer la porte en acier, relever la poignée. Votre porte est différente - les gestes sont les mêmes.",
+          "he": "המחשה: נכנסים, סוגרים את דלת הפלדה, מרימים את הידית. הדלת שלכם נראית אחרת - התנועות זהות."
         }
       }
     },
@@ -536,12 +650,14 @@
       "title": {
         "en": "House rules",
         "de": "Hausregeln",
-        "fr": "Règles de la maison"
+        "fr": "Règles de la maison",
+        "he": "כללי הבית"
       },
       "sub": {
         "en": "A shared home - a few things that keep everyone happy",
         "de": "Eine geteilte Wohnung - ein paar Dinge, damit alle zufrieden sind",
-        "fr": "Un logement partagé - quelques points pour que tout se passe bien"
+        "fr": "Un logement partagé - quelques points pour que tout se passe bien",
+        "he": "בית משותף - כמה דברים ששומרים על כולם מרוצים"
       },
       "items": {
         "en": [
@@ -582,6 +698,19 @@
           "Pas d'animaux, désolé.",
           "Silence après 23 h, s'il vous plaît - je me lève à 6 h pour le travail.",
           "Départ à {{checkout_time}} : éteignez la clim et les lumières, tirez la porte derrière vous (elle se verrouille seule - pas de clés) et envoyez-moi un petit message. Pour l'aéroport : l'appli de taxi Gett ou le train depuis la gare HaHagana. Merci !"
+        ],
+        "he": [
+          "יש לכם חדר פרטי משלכם; המטבח, השירותים והסלון משותפים עם אורן, שגר כאן גם. תרגישו בבית - ותגידו שלום!",
+          "בבקשה לאכול ליד שולחן המטבח או בחדר ולא על הספה - הבד לא סולח לפירורים.",
+          "חלב, שמן, תבלינים וקפסולות קפה הם חלק מהאירוח - תרגישו חופשי. לכל דבר אחר שתרצו לבשל, החנויות במרחק 5 דקות (ראו כרטיס קניות).",
+          "חוזרים מהים? בבקשה ישר למקלחת לשטוף את החול לפני שמסתובבים בדירה - חול מגיע לכל מקום וקשה לנקות.",
+          "רובוט שואב-שוטף מנקה את הדירה כל יום ב-11:00. תיקים על הרצפה בסדר; כבלים ובגדים עדיף שלא. אם הדלת שלכם סגורה, הרובוט פשוט מדלג על החדר.",
+          "אשפה לפח במטבח (מחזור: בקבוקי פלסטיק לכלוב הכתום, קרטון לפח הכחול ברחוב).",
+          "אין עישון או אידוי בשום מקום בדירה - בבקשה לצאת החוצה.",
+          "בלי מסיבות או אירועים, ובלי אורחים ללינה מעבר לאורח שבהזמנה (אורחים נוספים כרוכים בתשלום נוסף ב-Airbnb).",
+          "בלי חיות מחמד, מצטער.",
+          "שקט אחרי 23:00 בבקשה - אני קם ב-6 לעבודה.",
+          "צ'ק-אאוט ב-{{checkout_time}}: לכבות מזגן ואורות, לסגור את הדלת מאחוריכם (היא ננעלת לבד - אין מפתחות) ולשלוח לי הודעה. לשדה התעופה: אפליקציית Gett או הרכבת מתחנת ההגנה. תודה!"
         ]
       }
     },
@@ -591,12 +720,14 @@
       "title": {
         "en": "Groceries & markets",
         "de": "Einkaufen & Märkte",
-        "fr": "Courses et marchés"
+        "fr": "Courses et marchés",
+        "he": "קניות ושווקים"
       },
       "sub": {
         "en": "Several open 24/7 - list with maps links",
         "de": "Mehrere rund um die Uhr offen - Liste mit Kartenlinks",
-        "fr": "Plusieurs ouverts 24h/24 - liste avec liens de navigation"
+        "fr": "Plusieurs ouverts 24h/24 - liste avec liens de navigation",
+        "he": "כמה פתוחים 24/7 - רשימה עם קישורי ניווט"
       },
       "items": {
         "en": [
@@ -607,6 +738,9 @@
         ],
         "fr": [
           "Les prix varient pas mal d'un magasin à l'autre - les chaînes (Shufersal, Super Yuda) sont en général moins chères que les magasins de dépannage (AM:PM). Plusieurs sont ouverts 24h/24, Shabbat compris. Les horaires viennent de Google et peuvent changer - touchez un nom pour naviguer."
+        ],
+        "he": [
+          "המחירים שונים למדי בין החנויות - הרשתות (שופרסל, סופר יודה) בדרך כלל זולות מחנויות הנוחות (AM:PM). כמה פתוחות 24/7, כולל בשבת. השעות מגוגל ועשויות להשתנות - לחצו על שם לניווט."
         ]
       },
       "lists": [
@@ -614,7 +748,8 @@
           "title": {
             "en": "Supermarkets & groceries",
             "de": "Supermärkte & Läden",
-            "fr": "Supermarchés et épiceries"
+            "fr": "Supermarchés et épiceries",
+            "he": "סופרמרקטים ומכולות"
           },
           "rows": [
             {
@@ -624,7 +759,8 @@
               "note": {
                 "en": "closest supermarket, always open",
                 "de": "nächster Supermarkt, immer offen",
-                "fr": "supermarché le plus proche, toujours ouvert"
+                "fr": "supermarché le plus proche, toujours ouvert",
+                "he": "הסופר הקרוב ביותר, תמיד פתוח"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Super%20Yuda%20Matalon%20St%2019%2C%20Tel%20Aviv"
             },
@@ -635,7 +771,8 @@
               "note": {
                 "en": "neighbourhood supermarket, always open",
                 "de": "Supermarkt im Viertel, immer offen",
-                "fr": "supermarché du quartier, toujours ouvert"
+                "fr": "supermarché du quartier, toujours ouvert",
+                "he": "סופר שכונתי, תמיד פתוח"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=%D7%A1%D7%95%D7%A4%D7%A8%20%D7%90%D7%9C%20%D7%94%D7%99%D7%9D%20Matalon%20St%202%2C%20Tel%20Aviv"
             },
@@ -646,7 +783,8 @@
               "note": {
                 "en": "deli & minimarket - cold cuts, cheeses, non-kosher meat, Russian/Ukrainian products",
                 "de": "Feinkost & Minimarkt - Aufschnitt, Käse, nicht-koscheres Fleisch, russische/ukrainische Produkte",
-                "fr": "épicerie fine & minimarket - charcuterie, fromages, viande non casher, produits russes/ukrainiens"
+                "fr": "épicerie fine & minimarket - charcuterie, fromages, viande non casher, produits russes/ukrainiens",
+                "he": "מעדנייה ומינימרקט - נקניקים, גבינות, בשר לא כשר, מוצרים רוסיים/אוקראיניים"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Mama%20Ha'Aliya%20St%2017%2C%20Tel%20Aviv"
             },
@@ -657,7 +795,8 @@
               "note": {
                 "en": "big chain, good prices",
                 "de": "große Kette, gute Preise",
-                "fr": "grande chaîne, bons prix"
+                "fr": "grande chaîne, bons prix",
+                "he": "רשת גדולה, מחירים טובים"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Shufersal%20Express%20Florentin%20St%2027%2C%20Tel%20Aviv"
             },
@@ -668,7 +807,8 @@
               "note": {
                 "en": "fruit & veg, corner of Derech Yafo",
                 "de": "Obst & Gemüse, Ecke Derech Yafo",
-                "fr": "fruits et légumes, angle Derech Yafo"
+                "fr": "fruits et légumes, angle Derech Yafo",
+                "he": "פירות וירקות, פינת דרך יפו"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Super%20Levinsky%20Levinski%20St%2078%2C%20Tel%20Aviv"
             },
@@ -679,7 +819,8 @@
               "note": {
                 "en": "small grocery",
                 "de": "kleiner Laden",
-                "fr": "petite épicerie"
+                "fr": "petite épicerie",
+                "he": "מכולת קטנה"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Minimarket%20Levinsky%20Levinski%20St%2077%2C%20Tel%20Aviv"
             },
@@ -690,7 +831,8 @@
               "note": {
                 "en": "convenience chain, pricier",
                 "de": "Convenience-Kette, teurer",
-                "fr": "chaîne de dépannage, plus cher"
+                "fr": "chaîne de dépannage, plus cher",
+                "he": "רשת נוחות, יקר יותר"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=AM%3APM%20Herzl%20St%2061%2C%20Tel%20Aviv"
             },
@@ -701,7 +843,8 @@
               "note": {
                 "en": "non-kosher, pork & wine",
                 "de": "nicht koscher, Schweinefleisch & Wein",
-                "fr": "non casher, porc et vin"
+                "fr": "non casher, porc et vin",
+                "he": "לא כשר, חזיר ויין"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Tiv%20Taam%20IN%20THE%20CITY%20Jerusalem%20Blvd%204%2C%20Tel%20Aviv"
             }
@@ -711,7 +854,8 @@
           "title": {
             "en": "Markets (closed Saturday)",
             "de": "Märkte (samstags geschlossen)",
-            "fr": "Marchés (fermés le samedi)"
+            "fr": "Marchés (fermés le samedi)",
+            "he": "שווקים (סגורים בשבת)"
           },
           "rows": [
             {
@@ -721,7 +865,8 @@
               "note": {
                 "en": "spices, nuts, olives, burekas - 5 min",
                 "de": "Gewürze, Nüsse, Oliven, Burekas - 5 Min.",
-                "fr": "épices, fruits secs, olives, burekas - 5 min"
+                "fr": "épices, fruits secs, olives, burekas - 5 min",
+                "he": "תבלינים, אגוזים, זיתים, בורקס - 5 דקות"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Levinsky%20Market%20Levinski%20St%2C%20Tel%20Aviv"
             },
@@ -732,7 +877,8 @@
               "note": {
                 "en": "the big one - fruit, veg, street food - 15 min",
                 "de": "der große Markt - Obst, Gemüse, Streetfood - 15 Min.",
-                "fr": "le grand marché - fruits, légumes, street food - 15 min"
+                "fr": "le grand marché - fruits, légumes, street food - 15 min",
+                "he": "הגדול - פירות, ירקות, אוכל רחוב - 15 דקות"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Carmel%20Market%20HaCarmel%20St%2C%20Tel%20Aviv"
             }
@@ -746,12 +892,14 @@
       "title": {
         "en": "Where Oren eats",
         "de": "Wo Oren isst",
-        "fr": "Où Oren mange"
+        "fr": "Où Oren mange",
+        "he": "איפה אורן אוכל"
       },
       "sub": {
         "en": "Hummus, sabich, burekas, shawarma, fish, pasta, ice cream - all walkable",
         "de": "Hummus, Sabich, Burekas, Schawarma, Fisch, Pasta, Eis - alles zu Fuß",
-        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace - tout à pied"
+        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace - tout à pied",
+        "he": "חומוס, סביח, בורקס, שווארמה, דגים, פסטה, גלידה - הכול במרחק הליכה"
       },
       "items": {
         "en": [
@@ -762,6 +910,9 @@
         ],
         "fr": [
           "Mes adresses personnelles, sans sponsoring. Horaires de Google, ils peuvent changer - touchez un nom pour naviguer. La plupart des stands de street food ferment le Shabbat."
+        ],
+        "he": [
+          "המועדפים שלי, בלי חסויות. השעות מגוגל ועשויות להשתנות - לחצו על שם לניווט. רוב מקומות אוכל הרחוב סגורים בשבת."
         ]
       },
       "lists": [
@@ -769,7 +920,8 @@
           "title": {
             "en": "Street food (daytime)",
             "de": "Streetfood (tagsüber)",
-            "fr": "Street food (en journée)"
+            "fr": "Street food (en journée)",
+            "he": "אוכל רחוב (ביום)"
           },
           "rows": [
             {
@@ -779,7 +931,8 @@
               "note": {
                 "en": "the best hummus in Levinsky market - 5 min walk",
                 "de": "der beste Hummus im Levinsky-Markt - 5 Min. zu Fuß",
-                "fr": "le meilleur houmous du marché Levinsky - 5 min à pied"
+                "fr": "le meilleur houmous du marché Levinsky - 5 min à pied",
+                "he": "החומוס הכי טוב בשוק לוינסקי - 5 דקות הליכה"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Garger%20HaZahav%20Levinski%20St%2030%2C%20Tel%20Aviv"
             },
@@ -790,7 +943,8 @@
               "note": {
                 "en": "sabich: pita with fried aubergine, egg, salads - Tel Aviv's classic",
                 "de": "Sabich: Pita mit gebratener Aubergine, Ei, Salaten - der Klassiker Tel Avivs",
-                "fr": "sabich : pita à l'aubergine frite, œuf, salades - le classique de Tel Aviv"
+                "fr": "sabich : pita à l'aubergine frite, œuf, salades - le classique de Tel Aviv",
+                "he": "סביח: פיתה עם חציל מטוגן, ביצה, סלטים - הקלאסיקה התל-אביבית"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Sabich%20Frishman%20Levinski%20St%2057%2C%20Tel%20Aviv"
             },
@@ -801,7 +955,8 @@
               "note": {
                 "en": "'Mom's burekas' - flaky pastry, breakfast on the go",
                 "de": "'Mamas Burekas' - Blätterteig, Frühstück auf die Hand",
-                "fr": "'Les burekas de maman' - feuilleté, petit-déjeuner à emporter"
+                "fr": "'Les burekas de maman' - feuilleté, petit-déjeuner à emporter",
+                "he": "הבורקס של אמא - בצק עלים, ארוחת בוקר בדרך"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1%20%D7%A9%D7%9C%20%D7%90%D7%9E%D7%90%20Levinski%20St%2046%2C%20Tel%20Aviv"
             },
@@ -812,7 +967,8 @@
               "note": {
                 "en": "Turkish: lahmajoun, lamb shawarma in laffa - 10 min walk",
                 "de": "Türkisch: Lahmacun, Lamm-Schawarma im Laffa - 10 Min. zu Fuß",
-                "fr": "turc : lahmajoun, shawarma d'agneau dans un laffa - 10 min à pied"
+                "fr": "turc : lahmajoun, shawarma d'agneau dans un laffa - 10 min à pied",
+                "he": "טורקי: לחמג'ון, שווארמת כבש בלאפה - 10 דקות הליכה"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Turk%20Lahmajoun%20Nahalat%20Binyamin%20St%2077%2C%20Tel%20Aviv"
             }
@@ -822,7 +978,8 @@
           "title": {
             "en": "Dinner",
             "de": "Abendessen",
-            "fr": "Dîner"
+            "fr": "Dîner",
+            "he": "ערב"
           },
           "rows": [
             {
@@ -832,7 +989,8 @@
               "note": {
                 "en": "fish & seafood, Greek style - octopus, fish carpaccio. Same corner as Mirage, by Park HaMesila",
                 "de": "Fisch & Meeresfrüchte auf griechische Art - Oktopus, Fisch-Carpaccio. Gleiche Ecke wie Mirage, am Park HaMesila",
-                "fr": "poisson et fruits de mer à la grecque - poulpe, carpaccio de poisson. Même coin que Mirage, près du parc HaMesila"
+                "fr": "poisson et fruits de mer à la grecque - poulpe, carpaccio de poisson. Même coin que Mirage, près du parc HaMesila",
+                "he": "דגים ופירות ים בסגנון יווני - תמנון, קרפצ'יו דג. באותה פינה כמו מיראז', ליד פארק המסילה"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=HaShachaf%20Herzl%20St%2022%2C%20Tel%20Aviv"
             },
@@ -843,7 +1001,8 @@
               "note": {
                 "en": "Italian, a few doors from HaShachaf - pasta",
                 "de": "Italienisch, ein paar Häuser von HaShachaf - Pasta",
-                "fr": "italien, à deux pas de HaShachaf - pâtes"
+                "fr": "italien, à deux pas de HaShachaf - pâtes",
+                "he": "איטלקי, כמה בתים מהשחף - פסטה"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Cena%20Herzl%20St%2010%2C%20Tel%20Aviv"
             },
@@ -854,7 +1013,8 @@
               "note": {
                 "en": "celebrity chef Eyal Shani - on the park, 10 min walk",
                 "de": "Promi-Koch Eyal Shani - am Park, 10 Min. zu Fuß",
-                "fr": "le chef star Eyal Shani - sur le parc, 10 min à pied"
+                "fr": "le chef star Eyal Shani - sur le parc, 10 min à pied",
+                "he": "השף אייל שני - על הפארק, 10 דקות הליכה"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Mirage%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv"
             },
@@ -865,7 +1025,8 @@
               "note": {
                 "en": "Eyal Shani's ice cream, next door to Mirage",
                 "de": "Eyal Shanis Eis, direkt neben Mirage",
-                "fr": "la glace d'Eyal Shani, juste à côté de Mirage"
+                "fr": "la glace d'Eyal Shani, juste à côté de Mirage",
+                "he": "הגלידה של אייל שני, ליד מיראז'"
               },
               "url": "https://www.google.com/maps/search/?api=1&query=Cassata%20Park%20Hamesila%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv"
             }
@@ -879,12 +1040,14 @@
       "title": {
         "en": "Local tips: Florentin",
         "de": "Lokale Tipps: Florentin",
-        "fr": "Bons plans : Florentin"
+        "fr": "Bons plans : Florentin",
+        "he": "טיפים מקומיים: פלורנטין"
       },
       "sub": {
         "en": "Our neighbourhood, from a local",
         "de": "Unser Viertel, von Einheimischen",
-        "fr": "Notre quartier, par un local"
+        "fr": "Notre quartier, par un local",
+        "he": "השכונה שלנו, ממקומי"
       },
       "items": {
         "en": [
@@ -913,6 +1076,15 @@
           "Shabbat (du vendredi après-midi au samedi soir) : la plupart des bus et trains ne circulent pas et beaucoup de commerces ferment. Prévoyez des taxis (applis Gett ou Yango) et faites vos courses le vendredi matin.",
           "Louez un vélo ou une trottinette via Tel-O-Fun ou d'autres applis de la ville - Tel Aviv est plate et bien équipée en pistes cyclables.",
           "Merci de rester discrets après 23 h - les voisins sont tout proches."
+        ],
+        "he": [
+          "אמנות רחוב: טיילו ברחובות פלורנטין, ויטל ואברבנאל - כל השכונה היא גלריית גרפיטי פתוחה.",
+          "שוק לוינסקי: חנויות תבלינים, פירות יבשים, בורקס ובתי קפה קטנים, 5 דקות הליכה. הכי טוב בבוקר.",
+          "ערבים: הברים סביב רחוב פלורנטין ורחוב ויטל מתמלאים מאוחר - המקומיים יוצאים אחרי 22:00.",
+          "הים במרחק כ-20 דקות הליכה (או 5 דקות באופניים). יפו העתיקה ושוק הפשפשים - 15 דקות ברגל.",
+          "שבת (משישי אחה\"צ עד מוצאי שבת): רוב האוטובוסים והרכבות לא פועלים והרבה חנויות סגורות. תכננו מוניות (אפליקציות Gett או Yango) וקנו ביום שישי בבוקר.",
+          "השכירו אופניים או קורקינט דרך תל-אופן או אפליקציות עירוניות אחרות - תל אביב שטוחה ויש בה שבילי אופניים טובים.",
+          "בבקשה לשמור על שקט אחרי 23:00 - השכנים גרים קרוב מאוד."
         ]
       }
     },
@@ -922,12 +1094,14 @@
       "title": {
         "en": "Five stars?",
         "de": "Fünf Sterne?",
-        "fr": "Cinq étoiles ?"
+        "fr": "Cinq étoiles ?",
+        "he": "חמישה כוכבים?"
       },
       "sub": {
         "en": "Tell me during your stay, not after",
         "de": "Sagen Sie es mir während des Aufenthalts, nicht danach",
-        "fr": "Dites-le-moi pendant le séjour, pas après"
+        "fr": "Dites-le-moi pendant le séjour, pas après",
+        "he": "ספרו לי במהלך השהות, לא אחריה"
       },
       "items": {
         "en": [
@@ -947,6 +1121,12 @@
           "Alors si quelque chose manque ou n'est pas tout à fait au point - une serviette, le Wi-Fi, une nuit bruyante - dites-le-moi tout de suite (bouton WhatsApp en haut) et je le règle immédiatement. Mon objectif est que vous repartiez avec une vraie expérience cinq étoiles.",
           "Et si vous avez aimé votre séjour, quelques mots dans votre commentaire comptent beaucoup pour un petit hôte comme moi. Merci !",
           "Comment ça marche : le lendemain du départ, Airbnb vous envoie une invitation « Écrire un commentaire » (appli → Voyages, ou par e-mail). Notez chaque catégorie, ajoutez deux phrases, et c'est tout - les deux avis sont publiés en même temps."
+        ],
+        "he": [
+          "ב-Airbnb, חמישה כוכבים פשוט אומרים \"הכול היה בסדר\" - כל דבר פחות מזה אומר למטיילים אחרים שמשהו השתבש.",
+          "אז אם משהו חסר או לא בדיוק כמו שצריך - מגבת, הוויי-פיי, לילה רועש - בבקשה ספרו לי מיד (כפתור וואטסאפ למעלה) ואתקן על המקום. המטרה שלי שתצאו מכאן עם חוויה אמיתית של חמישה כוכבים.",
+          "ואם נהניתם, כמה מילים בביקורת שלכם שוות המון למארח קטן כמוני. תודה!",
+          "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה → טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
         ]
       }
     }

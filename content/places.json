@@ -6,17 +6,20 @@
       "walk": {
         "en": "20 min walk · 5 min by bike",
         "de": "20 Min. zu Fuß · 5 Min. mit dem Rad",
-        "fr": "20 min à pied · 5 min à vélo"
+        "fr": "20 min à pied · 5 min à vélo",
+        "he": "20 דקות הליכה · 5 דקות באופניים"
       },
       "title": {
         "en": "The beaches",
         "de": "Die Strände",
-        "fr": "Les plages"
+        "fr": "Les plages",
+        "he": "החופים"
       },
       "text": {
         "en": "One long strip of sand from Jaffa to the port. Closest to us: Alma and Banana Beach (relaxed, young crowd), then Jerusalem Beach and Gordon Beach (lifeguards, showers, beach bars). Sunset is the moment - everyone stops to watch.",
         "de": "Ein langer Sandstreifen von Jaffa bis zum Hafen. Am nächsten: Alma und Banana Beach (entspannt, junges Publikum), dann Jerusalem Beach und Gordon Beach (Rettungsschwimmer, Duschen, Strandbars). Der Sonnenuntergang ist der Moment - alle halten inne und schauen zu.",
-        "fr": "Une longue bande de sable de Jaffa jusqu'au port. Les plus proches : Alma et Banana Beach (ambiance jeune et détendue), puis Jerusalem Beach et Gordon Beach (sauveteurs, douches, bars de plage). Le coucher du soleil est le grand moment - tout le monde s'arrête pour regarder."
+        "fr": "Une longue bande de sable de Jaffa jusqu'au port. Les plus proches : Alma et Banana Beach (ambiance jeune et détendue), puis Jerusalem Beach et Gordon Beach (sauveteurs, douches, bars de plage). Le coucher du soleil est le grand moment - tout le monde s'arrête pour regarder.",
+        "he": "רצועת חול אחת ארוכה מיפו ועד הנמל. הקרובים אלינו: חוף עלמה ובננה ביץ' (רגוע, קהל צעיר), ואחריהם חוף ירושלים וחוף גורדון (מצילים, מקלחות, ברים על החוף). השקיעה היא הרגע - כולם עוצרים להסתכל."
       },
       "image": "assets/img/places/beach.jpg",
       "credit": "Radosław Botev, CC BY 3.0 pl, via Wikimedia Commons",
@@ -30,17 +33,20 @@
       "walk": {
         "en": "20 min walk",
         "de": "20 Min. zu Fuß",
-        "fr": "20 min à pied"
+        "fr": "20 min à pied",
+        "he": "20 דקות הליכה"
       },
       "title": {
         "en": "Jaffa Port",
         "de": "Hafen von Jaffa",
-        "fr": "Le port de Jaffa"
+        "fr": "Le port de Jaffa",
+        "he": "נמל יפו"
       },
       "text": {
         "en": "One of the oldest harbours in the world, still working. Fishing boats, a hangar with restaurants and a fish market, and the best-value seaside dinner around. Come for the late-afternoon light and stay for a drink on the deck.",
         "de": "Einer der ältesten Häfen der Welt, noch in Betrieb. Fischerboote, eine Halle mit Restaurants und Fischmarkt, und das preiswerteste Abendessen am Meer weit und breit. Kommen Sie für das Licht am späten Nachmittag und bleiben Sie auf einen Drink am Deck.",
-        "fr": "L'un des plus vieux ports du monde, toujours en activité. Bateaux de pêche, un hangar avec restaurants et marché aux poissons, et le meilleur rapport qualité-prix pour dîner face à la mer. Venez pour la lumière de fin d'après-midi et restez boire un verre sur le ponton."
+        "fr": "L'un des plus vieux ports du monde, toujours en activité. Bateaux de pêche, un hangar avec restaurants et marché aux poissons, et le meilleur rapport qualité-prix pour dîner face à la mer. Venez pour la lumière de fin d'après-midi et restez boire un verre sur le ponton.",
+        "he": "אחד הנמלים העתיקים בעולם, עדיין פעיל. סירות דייגים, האנגר עם מסעדות ושוק דגים, וארוחת הערב הכי משתלמת על הים באזור. בואו לאור של אחר הצהריים המאוחר והישארו לדרינק על הסיפון."
       },
       "image": "assets/img/places/jaffa_port.jpg",
       "credit": "Noam.armonn, CC BY-SA 3.0, via Wikimedia Commons",
@@ -54,17 +60,20 @@
       "walk": {
         "en": "15 min walk",
         "de": "15 Min. zu Fuß",
-        "fr": "15 min à pied"
+        "fr": "15 min à pied",
+        "he": "15 דקות הליכה"
       },
       "title": {
         "en": "Old Jaffa & the flea market",
         "de": "Alt-Jaffa & der Flohmarkt",
-        "fr": "Le vieux Jaffa et le marché aux puces"
+        "fr": "Le vieux Jaffa et le marché aux puces",
+        "he": "יפו העתיקה ושוק הפשפשים"
       },
       "text": {
         "en": "Start at the clock tower, wander up through the stone alleys to the artists' quarter and the viewpoint over the whole bay. Below it, the flea market (Shuk HaPishpeshim) mixes antiques, vintage and some of the city's best bars and restaurants. Fridays are busiest.",
         "de": "Beginnen Sie am Uhrturm, schlendern Sie durch die Steingassen hinauf zum Künstlerviertel und zum Aussichtspunkt über die ganze Bucht. Darunter mischt der Flohmarkt (Shuk HaPishpeshim) Antiquitäten, Vintage und einige der besten Bars und Restaurants der Stadt. Freitags ist am meisten los.",
-        "fr": "Partez de la tour de l'horloge, montez par les ruelles de pierre jusqu'au quartier des artistes et au point de vue sur toute la baie. En contrebas, le marché aux puces (Shuk HaPishpeshim) mêle antiquités, vintage et certains des meilleurs bars et restaurants de la ville. Le vendredi est le jour le plus animé."
+        "fr": "Partez de la tour de l'horloge, montez par les ruelles de pierre jusqu'au quartier des artistes et au point de vue sur toute la baie. En contrebas, le marché aux puces (Shuk HaPishpeshim) mêle antiquités, vintage et certains des meilleurs bars et restaurants de la ville. Le vendredi est le jour le plus animé.",
+        "he": "מתחילים במגדל השעון, מטפסים בסמטאות האבן לרובע האמנים ולתצפית על כל המפרץ. מתחתיו, שוק הפשפשים מערבב עתיקות, וינטג' וכמה מהברים והמסעדות הכי טובים בעיר. שישי הכי עמוס."
       },
       "image": "assets/img/places/old_jaffa.jpg",
       "credit": "xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
@@ -78,17 +87,20 @@
       "walk": {
         "en": "10 min walk",
         "de": "10 Min. zu Fuß",
-        "fr": "10 min à pied"
+        "fr": "10 min à pied",
+        "he": "10 דקות הליכה"
       },
       "title": {
         "en": "Neve Tzedek",
         "de": "Neve Tzedek",
-        "fr": "Neve Tzedek"
+        "fr": "Neve Tzedek",
+        "he": "נווה צדק"
       },
       "text": {
         "en": "The first Jewish neighbourhood outside Jaffa (1887), now the prettiest few streets in the city: low houses, bougainvillea, boutiques, ice cream and cafés along Shabazi Street. Ideal for a slow morning.",
         "de": "Das erste jüdische Viertel außerhalb Jaffas (1887), heute die schönsten paar Straßen der Stadt: niedrige Häuser, Bougainvillea, Boutiquen, Eis und Cafés entlang der Shabazi-Straße. Ideal für einen langsamen Vormittag.",
-        "fr": "Le premier quartier juif hors de Jaffa (1887), aujourd'hui les plus jolies rues de la ville : maisons basses, bougainvilliers, boutiques, glaces et cafés le long de la rue Shabazi. Idéal pour une matinée tranquille."
+        "fr": "Le premier quartier juif hors de Jaffa (1887), aujourd'hui les plus jolies rues de la ville : maisons basses, bougainvilliers, boutiques, glaces et cafés le long de la rue Shabazi. Idéal pour une matinée tranquille.",
+        "he": "השכונה היהודית הראשונה מחוץ ליפו (1887), היום הרחובות הכי יפים בעיר: בתים נמוכים, בוגנוויליה, בוטיקים, גלידה ובתי קפה לאורך רחוב שבזי. אידיאלי לבוקר איטי."
       },
       "image": "assets/img/places/neve_tzedek.jpg",
       "credit": "Dor Shabashewitz, CC BY 4.0, via Wikimedia Commons",
@@ -102,17 +114,20 @@
       "walk": {
         "en": "10 min walk",
         "de": "10 Min. zu Fuß",
-        "fr": "10 min à pied"
+        "fr": "10 min à pied",
+        "he": "10 דקות הליכה"
       },
       "title": {
         "en": "Suzanne Dellal Centre",
         "de": "Suzanne Dellal Centre",
-        "fr": "Centre Suzanne Dellal"
+        "fr": "Centre Suzanne Dellal",
+        "he": "מרכז סוזן דלל"
       },
       "text": {
         "en": "Israel's home of contemporary dance, in the heart of Neve Tzedek. Batsheva Dance Company performs here - if there's a show during your stay, go; you don't need Hebrew. The courtyard with its orange trees is lovely even without a ticket.",
         "de": "Israels Zentrum für zeitgenössischen Tanz, mitten in Neve Tzedek. Die Batsheva Dance Company tritt hier auf - gibt es während Ihres Aufenthalts eine Vorstellung, gehen Sie hin; Hebräisch braucht man nicht. Der Innenhof mit den Orangenbäumen ist auch ohne Ticket schön.",
-        "fr": "La maison de la danse contemporaine en Israël, au cœur de Neve Tzedek. La Batsheva Dance Company s'y produit - s'il y a un spectacle pendant votre séjour, allez-y, pas besoin d'hébreu. La cour aux orangers vaut le détour même sans billet."
+        "fr": "La maison de la danse contemporaine en Israël, au cœur de Neve Tzedek. La Batsheva Dance Company s'y produit - s'il y a un spectacle pendant votre séjour, allez-y, pas besoin d'hébreu. La cour aux orangers vaut le détour même sans billet.",
+        "he": "הבית של המחול העכשווי בישראל, בלב נווה צדק. להקת בת-שבע מופיעה כאן - אם יש מופע בזמן השהות שלכם, לכו; לא צריך עברית. החצר עם עצי התפוז יפה גם בלי כרטיס."
       },
       "image": "assets/img/places/suzanne_dellal.jpg",
       "credit": "Danny Lyulyev, CC BY-SA 3.0, via Wikimedia Commons",
@@ -126,17 +141,20 @@
       "walk": {
         "en": "15 min by bike or bus",
         "de": "15 Min. mit Rad oder Bus",
-        "fr": "15 min à vélo ou en bus"
+        "fr": "15 min à vélo ou en bus",
+        "he": "15 דקות באופניים או באוטובוס"
       },
       "title": {
         "en": "Tel Aviv Museum of Art",
         "de": "Tel Aviv Museum of Art",
-        "fr": "Musée d'art de Tel Aviv"
+        "fr": "Musée d'art de Tel Aviv",
+        "he": "מוזיאון תל אביב לאמנות"
       },
       "text": {
         "en": "Israeli and international modern art in a striking building - the newer wing is worth the visit on its own. Good for a hot afternoon. Check the current exhibitions in the weekly section below.",
         "de": "Israelische und internationale moderne Kunst in einem beeindruckenden Gebäude - allein der neuere Flügel lohnt den Besuch. Gut für einen heißen Nachmittag. Aktuelle Ausstellungen finden Sie unten im Wochenteil.",
-        "fr": "Art moderne israélien et international dans un bâtiment saisissant - la nouvelle aile vaut à elle seule la visite. Parfait pour un après-midi de chaleur. Les expositions en cours sont dans la section de la semaine, plus bas."
+        "fr": "Art moderne israélien et international dans un bâtiment saisissant - la nouvelle aile vaut à elle seule la visite. Parfait pour un après-midi de chaleur. Les expositions en cours sont dans la section de la semaine, plus bas.",
+        "he": "אמנות מודרנית ישראלית ובינלאומית בבניין מרשים - האגף החדש שווה ביקור בפני עצמו. טוב לאחר צהריים חם. בדקו את התערוכות הנוכחיות בחלק השבועי למטה."
       },
       "image": "assets/img/places/ta_museum.jpg",
       "credit": "Yair Haklai, CC BY-SA 4.0, via Wikimedia Commons",
@@ -150,17 +168,20 @@
       "walk": {
         "en": "5 min walk",
         "de": "5 Min. zu Fuß",
-        "fr": "5 min à pied"
+        "fr": "5 min à pied",
+        "he": "5 דקות הליכה"
       },
       "title": {
         "en": "Levinsky Market",
         "de": "Levinsky-Markt",
-        "fr": "Marché Levinsky"
+        "fr": "Marché Levinsky",
+        "he": "שוק לוינסקי"
       },
       "text": {
         "en": "Our local market: spice shops run by the same families for generations, dried fruit, olives, Balkan burekas and tiny cafés. Try a gazoz (flavoured soda) at Café Levinsky 41. Mornings are calmest; closed Saturday.",
         "de": "Unser Markt um die Ecke: Gewürzläden seit Generationen in Familienhand, Trockenfrüchte, Oliven, Balkan-Burekas und winzige Cafés. Probieren Sie einen Gazoz (aromatisierte Limonade) im Café Levinsky 41. Vormittags ist es am ruhigsten; samstags geschlossen.",
-        "fr": "Notre marché de quartier : épiceries tenues par les mêmes familles depuis des générations, fruits secs, olives, burekas des Balkans et petits cafés. Goûtez un gazoz (soda parfumé) au Café Levinsky 41. Le matin est le plus calme ; fermé le samedi."
+        "fr": "Notre marché de quartier : épiceries tenues par les mêmes familles depuis des générations, fruits secs, olives, burekas des Balkans et petits cafés. Goûtez un gazoz (soda parfumé) au Café Levinsky 41. Le matin est le plus calme ; fermé le samedi.",
+        "he": "השוק השכונתי שלנו: חנויות תבלינים שאותן משפחות מנהלות כבר דורות, פירות יבשים, זיתים, בורקס בלקני ובתי קפה זעירים. נסו גזוז בקפה לוינסקי 41. הבוקר הכי רגוע; סגור בשבת."
       },
       "image": "assets/img/places/levinsky.jpg",
       "credit": "Artem.G, CC BY 4.0, via Wikimedia Commons",
@@ -174,17 +195,20 @@
       "walk": {
         "en": "You're in it",
         "de": "Sie sind mittendrin",
-        "fr": "Vous y êtes"
+        "fr": "Vous y êtes",
+        "he": "אתם בתוכה"
       },
       "title": {
         "en": "Florentin street art",
         "de": "Streetart in Florentin",
-        "fr": "Le street art de Florentin"
+        "fr": "Le street art de Florentin",
+        "he": "אמנות רחוב בפלורנטין"
       },
       "text": {
         "en": "The neighbourhood is an open-air gallery: murals, paste-ups and shutters painted by Dede, Klone, Kis-Lev and dozens more. Walk Florentin, Vital, Abarbanel and Frenkel streets - best on Saturday when the shutters are down and the art is visible.",
         "de": "Das Viertel ist eine Galerie unter freiem Himmel: Wandbilder, Paste-ups und bemalte Rollläden von Dede, Klone, Kis-Lev und Dutzenden mehr. Spazieren Sie durch die Straßen Florentin, Vital, Abarbanel und Frenkel - am besten samstags, wenn die Läden geschlossen sind und die Kunst zu sehen ist.",
-        "fr": "Le quartier est une galerie à ciel ouvert : fresques, collages et rideaux de fer peints par Dede, Klone, Kis-Lev et des dizaines d'autres. Parcourez les rues Florentin, Vital, Abarbanel et Frenkel - idéalement le samedi, quand les rideaux sont baissés et l'art visible."
+        "fr": "Le quartier est une galerie à ciel ouvert : fresques, collages et rideaux de fer peints par Dede, Klone, Kis-Lev et des dizaines d'autres. Parcourez les rues Florentin, Vital, Abarbanel et Frenkel - idéalement le samedi, quand les rideaux sont baissés et l'art visible.",
+        "he": "השכונה היא גלריה פתוחה: ציורי קיר, הדבקות ותריסים מצוירים של דדה, קלון, קיס-לב ועוד עשרות. טיילו ברחובות פלורנטין, ויטל, אברבנאל ופרנקל - הכי טוב בשבת כשהתריסים מורדים והאמנות גלויה."
       },
       "image": "assets/img/places/florentin_art.jpg",
       "credit": "LeRenartQuiPense, CC BY 4.0, via Wikimedia Commons",
@@ -198,17 +222,20 @@
       "walk": {
         "en": "15 min walk",
         "de": "15 Min. zu Fuß",
-        "fr": "15 min à pied"
+        "fr": "15 min à pied",
+        "he": "15 דקות הליכה"
       },
       "title": {
         "en": "Carmel Market",
         "de": "Carmel-Markt",
-        "fr": "Marché du Carmel"
+        "fr": "Marché du Carmel",
+        "he": "שוק הכרמל"
       },
       "text": {
         "en": "The big, loud, wonderful main market: fruit, halva, fresh juice, street food and bars hidden between the stalls. Next to it, Nachalat Binyamin's craft fair on Tuesdays and Fridays. Go hungry.",
         "de": "Der große, laute, wunderbare Hauptmarkt: Obst, Halva, frische Säfte, Streetfood und zwischen den Ständen versteckte Bars. Nebenan dienstags und freitags der Kunsthandwerksmarkt in der Nachalat Binyamin. Hungrig hingehen.",
-        "fr": "Le grand marché principal, bruyant et merveilleux : fruits, halva, jus frais, street food et bars cachés entre les étals. Juste à côté, la foire artisanale de Nachalat Binyamin les mardis et vendredis. Venez le ventre vide."
+        "fr": "Le grand marché principal, bruyant et merveilleux : fruits, halva, jus frais, street food et bars cachés entre les étals. Juste à côté, la foire artisanale de Nachalat Binyamin les mardis et vendredis. Venez le ventre vide.",
+        "he": "השוק הראשי הגדול, הרועש והנפלא: פירות, חלווה, מיץ טרי, אוכל רחוב וברים שמסתתרים בין הדוכנים. לידו, יריד האמנים בנחלת בנימין בימי שלישי ושישי. לבוא רעבים."
       },
       "image": "assets/img/places/carmel.jpg",
       "credit": "andynash, CC BY-SA 2.0, via Wikimedia Commons",
@@ -222,17 +249,20 @@
       "walk": {
         "en": "15 min walk",
         "de": "15 Min. zu Fuß",
-        "fr": "15 min à pied"
+        "fr": "15 min à pied",
+        "he": "15 דקות הליכה"
       },
       "title": {
         "en": "Rothschild Boulevard",
         "de": "Rothschild-Boulevard",
-        "fr": "Boulevard Rothschild"
+        "fr": "Boulevard Rothschild",
+        "he": "שדרות רוטשילד"
       },
       "text": {
         "en": "The city's grand avenue: a shaded bike path down the middle, kiosks for coffee, and the Bauhaus buildings that made Tel Aviv a UNESCO World Heritage site. Independence Hall (where Israel was declared) is at number 16.",
         "de": "Die Prachtallee der Stadt: ein schattiger Radweg in der Mitte, Kioske für den Kaffee und die Bauhaus-Gebäude, die Tel Aviv zum UNESCO-Welterbe machten. Die Independence Hall (wo Israel ausgerufen wurde) ist Nummer 16.",
-        "fr": "La grande avenue de la ville : une piste cyclable ombragée au milieu, des kiosques à café et les immeubles Bauhaus qui ont valu à Tel Aviv son classement à l'UNESCO. Independence Hall (où Israël fut proclamé) est au numéro 16."
+        "fr": "La grande avenue de la ville : une piste cyclable ombragée au milieu, des kiosques à café et les immeubles Bauhaus qui ont valu à Tel Aviv son classement à l'UNESCO. Independence Hall (où Israël fut proclamé) est au numéro 16.",
+        "he": "השדרה הגדולה של העיר: שביל אופניים מוצל באמצע, קיוסקים לקפה, ובנייני הבאוהאוס שהפכו את תל אביב לאתר מורשת עולמית של אונסק\"ו. בית העצמאות (שבו הוכרזה המדינה) במספר 16."
       },
       "image": "assets/img/places/rothschild.jpg",
       "credit": "Homerethegreat, CC BY 4.0, via Wikimedia Commons",
@@ -246,17 +276,20 @@
       "walk": {
         "en": "12 min walk",
         "de": "12 Min. zu Fuß",
-        "fr": "12 min à pied"
+        "fr": "12 min à pied",
+        "he": "12 דקות הליכה"
       },
       "title": {
         "en": "HaTachana",
         "de": "HaTachana",
-        "fr": "HaTachana"
+        "fr": "HaTachana",
+        "he": "התחנה"
       },
       "text": {
         "en": "The restored 1892 Jaffa–Jerusalem railway station, between Neve Tzedek and the sea: shops, cafés, markets on the platforms and space for kids to run. Nice stop on the way to the beach.",
         "de": "Der restaurierte Bahnhof der Strecke Jaffa–Jerusalem von 1892, zwischen Neve Tzedek und dem Meer: Läden, Cafés, Märkte auf den Bahnsteigen und Platz für Kinder zum Toben. Schöner Zwischenstopp auf dem Weg zum Strand.",
-        "fr": "L'ancienne gare Jaffa–Jérusalem de 1892, restaurée, entre Neve Tzedek et la mer : boutiques, cafés, marchés sur les quais et de l'espace pour les enfants. Une halte agréable sur le chemin de la plage."
+        "fr": "L'ancienne gare Jaffa–Jérusalem de 1892, restaurée, entre Neve Tzedek et la mer : boutiques, cafés, marchés sur les quais et de l'espace pour les enfants. Une halte agréable sur le chemin de la plage.",
+        "he": "תחנת הרכבת יפו-ירושלים מ-1892, משוחזרת, בין נווה צדק לים: חנויות, בתי קפה, שווקים על הרציפים ומקום לילדים לרוץ. עצירה נחמדה בדרך לים."
       },
       "image": "assets/img/places/hatachana.jpg",
       "credit": "BergA, CC BY-SA 3.0, via Wikimedia Commons",
@@ -270,17 +303,20 @@
       "walk": {
         "en": "25 min by bike · bus 4",
         "de": "25 Min. mit dem Rad · Bus 4",
-        "fr": "25 min à vélo · bus 4"
+        "fr": "25 min à vélo · bus 4",
+        "he": "25 דקות באופניים · קו 4"
       },
       "title": {
         "en": "Tel Aviv Port (Namal)",
         "de": "Hafen von Tel Aviv (Namal)",
-        "fr": "Le port de Tel Aviv (Namal)"
+        "fr": "Le port de Tel Aviv (Namal)",
+        "he": "נמל תל אביב"
       },
       "text": {
         "en": "At the north end of the beach: a wide wooden boardwalk over the sea, restaurants, a covered farmers' market (Friday mornings are the event) and a big playground. Rent a bike and ride the whole promenade up to it.",
         "de": "Am Nordende des Strands: eine breite Holzpromenade über dem Meer, Restaurants, eine überdachte Markthalle (freitagvormittags ist am meisten los) und ein großer Spielplatz. Rad mieten und die ganze Promenade hinauffahren.",
-        "fr": "À l'extrémité nord de la plage : une large promenade en bois au-dessus de la mer, des restaurants, un marché fermier couvert (le vendredi matin, c'est l'événement) et une grande aire de jeux. Louez un vélo et remontez toute la promenade jusque-là."
+        "fr": "À l'extrémité nord de la plage : une large promenade en bois au-dessus de la mer, des restaurants, un marché fermier couvert (le vendredi matin, c'est l'événement) et une grande aire de jeux. Louez un vélo et remontez toute la promenade jusque-là.",
+        "he": "בקצה הצפוני של החוף: טיילת עץ רחבה מעל הים, מסעדות, שוק איכרים מקורה (בוקר שישי הוא האירוע) וגן שעשועים גדול. השכירו אופניים ורכבו לאורך כל הטיילת עד אליו."
       },
       "image": "assets/img/places/ta_port.jpg",
       "credit": "Israel Ministry of Foreign Affairs, public domain, via Wikimedia Commons",
@@ -294,17 +330,20 @@
       "walk": {
         "en": "20 min by bike",
         "de": "20 Min. mit dem Rad",
-        "fr": "20 min à vélo"
+        "fr": "20 min à vélo",
+        "he": "20 דקות באופניים"
       },
       "title": {
         "en": "Sarona",
         "de": "Sarona",
-        "fr": "Sarona"
+        "fr": "Sarona",
+        "he": "שרונה"
       },
       "text": {
         "en": "A German Templer colony from 1871, restored into gardens and cafés between the skyscrapers, with Sarona Market - the city's indoor food hall - next door. Good rainy-day option.",
         "de": "Eine deutsche Templerkolonie von 1871, restauriert zu Gärten und Cafés zwischen den Hochhäusern, daneben der Sarona Market - die überdachte Markthalle der Stadt. Gut für einen Regentag.",
-        "fr": "Une colonie de Templiers allemands de 1871, restaurée en jardins et cafés entre les gratte-ciel, avec juste à côté le Sarona Market, la halle gourmande couverte de la ville. Bonne option par temps de pluie."
+        "fr": "Une colonie de Templiers allemands de 1871, restaurée en jardins et cafés entre les gratte-ciel, avec juste à côté le Sarona Market, la halle gourmande couverte de la ville. Bonne option par temps de pluie.",
+        "he": "מושבה טמפלרית גרמנית מ-1871, משוחזרת לגנים ובתי קפה בין גורדי השחקים, ולידה שרונה מרקט - היכל האוכל המקורה של העיר. אופציה טובה ליום גשום."
       },
       "image": "assets/img/places/sarona.jpg",
       "credit": "Ynhockey, CC BY-SA 4.0, via Wikimedia Commons",
