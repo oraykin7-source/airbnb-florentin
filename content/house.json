@@ -519,6 +519,15 @@
         "en": "The shelter (mamad) is Oren's room - the doorway marked in orange",
         "de": "Der Schutzraum (Mamad) ist Orens Zimmer - der orange markierte Durchgang",
         "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange"
+      },
+      "video": {
+        "src": "assets/video/shelter.mp4",
+        "poster": "assets/video/shelter-poster.jpg",
+        "caption": {
+          "en": "Illustration: walk in, close the steel door, lift the handle. Your door looks different - the moves are the same.",
+          "de": "Illustration: hineingehen, Stahltür schließen, Griff nach oben. Ihre Tür sieht anders aus - die Handgriffe sind dieselben.",
+          "fr": "Illustration : entrer, fermer la porte en acier, relever la poignée. Votre porte est différente - les gestes sont les mêmes."
+        }
       }
     },
     {

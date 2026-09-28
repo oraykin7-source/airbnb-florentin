@@ -182,6 +182,10 @@
           c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + x.label[L]))));
       }
       if (c.items) body.append(el("ul", {}, c.items[L].map(s => el("li", {}, fill(s, host)))));
+      if (c.video) {
+        body.append(el("video", { class: "card-video", src: c.video.src, poster: c.video.poster || "", muted: "", loop: "", playsinline: "", controls: "", preload: "none" }));
+        body.append(el("p", { class: "muted small" }, c.video.caption[L]));
+      }
       for (const lst of c.lists || []) {
         body.append(el("h4", { class: "sec-title" }, lst.title[L]));
         body.append(el("ul", { class: "plain" }, lst.rows.map(r => el("li", { class: "row" },
