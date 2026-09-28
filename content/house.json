@@ -1154,16 +1154,16 @@
       "id": "florentin",
       "icon": "🎨",
       "title": {
-        "en": "Local tips: Florentin",
-        "de": "Lokale Tipps: Florentin",
-        "fr": "Bons plans : Florentin",
-        "he": "טיפים מקומיים: פלורנטין"
+        "en": "Local tips: Florentin & Tel Aviv",
+        "de": "Tipps: Florentin & Tel Aviv",
+        "fr": "Conseils : Florentin et Tel Aviv",
+        "he": "טיפים: פלורנטין ותל אביב"
       },
       "sub": {
-        "en": "Our neighbourhood, from a local",
-        "de": "Unser Viertel, von Einheimischen",
-        "fr": "Notre quartier, par un local",
-        "he": "השכונה שלנו, ממקומי"
+        "en": "How the city works, from a local",
+        "de": "Wie die Stadt tickt - von einem Einheimischen",
+        "fr": "Comment la ville fonctionne, par un local",
+        "he": "איך העיר עובדת, ממקומי"
       },
       "items": {
         "en": [
@@ -1203,7 +1203,161 @@
           "בבקשה לשמור על שקט אחרי 23:00 - השכנים גרים קרוב מאוד."
         ]
       },
-      "group": "local"
+      "group": "local",
+      "sections": [
+        {
+          "title": {
+            "en": "Getting around",
+            "de": "Unterwegs",
+            "fr": "Se déplacer",
+            "he": "להסתובב בעיר"
+          },
+          "items": {
+            "en": [
+              "Light rail (Red Line): the Elifelet station is 5 minutes from here - south to Jaffa and Bat Yam, north to the Carlebach/Allenby city centre and on to Savidor train station. Pay with Rav-Kav or contactless card.",
+              "Buses and the light rail don't run from Friday afternoon until Saturday night. Plan taxis (Gett - metered, or Yango) or walk; Tel Aviv is small.",
+              "Rav-Kav card: buy at any station, load it at the machine; the Moovit app plans routes and also sells tickets. No cash on buses.",
+              "Bikes and e-scooters (Tel-O-Fun, Lime, Bird) are everywhere. Ride in the bike lanes, not on the pavement, and never on the beach promenade at night without lights.",
+              "Taxis: the meter (\"moneh\") is the law - if a driver offers a flat price, say \"moneh, please\". Gett shows the fare in advance."
+            ],
+            "de": [
+              "Stadtbahn (Rote Linie): die Station Elifelet ist 5 Minuten von hier - südlich nach Jaffa und Bat Yam, nördlich ins Zentrum (Carlebach/Allenby) und weiter zum Bahnhof Savidor. Zahlen mit Rav-Kav oder kontaktloser Karte.",
+              "Busse und Stadtbahn fahren nicht von Freitagnachmittag bis Samstagabend. Taxis einplanen (Gett - mit Taxameter, oder Yango) oder zu Fuß gehen; Tel Aviv ist klein.",
+              "Rav-Kav-Karte: an jeder Station kaufen, am Automaten aufladen; die Moovit-App plant Routen und verkauft auch Tickets. Kein Bargeld im Bus.",
+              "Räder und E-Scooter (Tel-O-Fun, Lime, Bird) gibt es überall. Auf den Radwegen fahren, nicht auf dem Gehweg, und nachts nie ohne Licht auf der Strandpromenade.",
+              "Taxis: das Taxameter (\"Moneh\") ist Pflicht - bietet der Fahrer einen Festpreis an, sagen Sie \"Moneh, bitte\". Gett zeigt den Preis vorab."
+            ],
+            "fr": [
+              "Tramway (ligne rouge) : la station Elifelet est à 5 minutes - vers le sud Jaffa et Bat Yam, vers le nord le centre (Carlebach/Allenby) puis la gare Savidor. Paiement par Rav-Kav ou carte sans contact.",
+              "Bus et tramway ne circulent pas du vendredi après-midi au samedi soir. Prévoyez des taxis (Gett - au compteur, ou Yango) ou marchez ; Tel Aviv est petite.",
+              "Carte Rav-Kav : en vente dans chaque station, à recharger à la borne ; l'appli Moovit calcule les trajets et vend aussi les billets. Pas d'espèces dans les bus.",
+              "Vélos et trottinettes (Tel-O-Fun, Lime, Bird) partout. Roulez sur les pistes cyclables, pas sur le trottoir, et jamais sans lumière sur la promenade la nuit.",
+              "Taxis : le compteur (\"moneh\") est obligatoire - si le chauffeur propose un prix fixe, dites \"moneh, please\". Gett affiche le prix à l'avance."
+            ],
+            "he": [
+              "הרכבת הקלה (הקו האדום): תחנת אליפלט במרחק 5 דקות - דרומה ליפו ובת ים, צפונה למרכז (קרליבך/אלנבי) והלאה לתחנת סבידור. משלמים ברב-קו או בכרטיס ללא מגע.",
+              "אוטובוסים והרכבת הקלה לא פועלים משישי אחה\"צ עד מוצ\"ש. תכננו מוניות (Gett - עם מונה, או Yango) או הליכה; תל אביב קטנה.",
+              "רב-קו: קונים בכל תחנה, טוענים במכונה; אפליקציית Moovit מתכננת מסלולים וגם מוכרת כרטיסים. אין מזומן באוטובוסים.",
+              "אופניים וקורקינטים (תל-אופן, Lime, Bird) בכל מקום. רוכבים בשבילי האופניים, לא על המדרכה, ובלילה לא על הטיילת בלי אורות.",
+              "מוניות: המונה הוא החוק - אם נהג מציע מחיר קבוע, אמרו \"מונה בבקשה\". Gett מציג את המחיר מראש."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Money & everyday",
+            "de": "Geld & Alltag",
+            "fr": "Argent et quotidien",
+            "he": "כסף ויומיום"
+          },
+          "items": {
+            "en": [
+              "Cards and phone payments work everywhere, even at market stalls; you rarely need cash. Tipping: 10-15% in restaurants and cafés (\"service\" is usually not included) - you can add it on the card.",
+              "Tap water is safe to drink. There are free water fountains along the beach - bring a bottle.",
+              "Plugs: type C and H, 230 V. Most European chargers fit; UK/US need an adapter.",
+              "Phone: an eSIM (Airalo and similar) before you land, or a local SIM at any kiosk. Free Wi-Fi in most cafés.",
+              "Everyone speaks English. Four words that open doors: shalom (hello), toda (thanks), slicha (excuse me), sababa (great)."
+            ],
+            "de": [
+              "Karten und Handyzahlung funktionieren überall, sogar am Marktstand; Bargeld braucht man selten. Trinkgeld: 10-15 % in Restaurants und Cafés (\"Service\" ist meist nicht inklusive) - kann auf die Karte gesetzt werden.",
+              "Leitungswasser ist trinkbar. Am Strand gibt es kostenlose Trinkbrunnen - Flasche mitnehmen.",
+              "Stecker: Typ C und H, 230 V. Die meisten europäischen Ladegeräte passen; UK/USA brauchen einen Adapter.",
+              "Handy: eSIM (Airalo o. ä.) vor der Landung oder eine lokale SIM am Kiosk. Gratis-WLAN in fast jedem Café.",
+              "Alle sprechen Englisch. Vier Wörter, die Türen öffnen: shalom (hallo), toda (danke), slicha (entschuldigung), sababa (super)."
+            ],
+            "fr": [
+              "Cartes et paiement mobile partout, même au marché ; l'espèce sert rarement. Pourboire : 10-15 % au restaurant et au café (le \"service\" n'est généralement pas compris) - on peut l'ajouter sur la carte.",
+              "L'eau du robinet est potable. Fontaines gratuites le long de la plage - prenez une gourde.",
+              "Prises : types C et H, 230 V. Les chargeurs européens passent ; UK/US ont besoin d'un adaptateur.",
+              "Téléphone : une eSIM (Airalo ou similaire) avant l'atterrissage, ou une SIM locale dans n'importe quel kiosque. Wi-Fi gratuit dans la plupart des cafés.",
+              "Tout le monde parle anglais. Quatre mots qui ouvrent les portes : shalom (bonjour), toda (merci), slicha (pardon), sababa (super)."
+            ],
+            "he": [
+              "כרטיסים ותשלום בטלפון עובדים בכל מקום, גם בשוק; מזומן כמעט לא צריך. טיפ: 10-15% במסעדות ובתי קפה (שירות בדרך כלל לא כלול) - אפשר להוסיף בכרטיס.",
+              "מי הברז ראויים לשתייה. לאורך החוף יש ברזיות חינם - קחו בקבוק.",
+              "שקעים: סוג C ו-H, 230V. רוב המטענים האירופיים מתאימים; בריטניה/ארה\"ב צריכים מתאם.",
+              "טלפון: eSIM (Airalo וכדומה) לפני הנחיתה, או סים מקומי בכל קיוסק. Wi-Fi חינם ברוב בתי הקפה.",
+              "כולם מדברים אנגלית. ארבע מילים שפותחות דלתות: שלום, תודה, סליחה, סבבה."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Beach & weather",
+            "de": "Strand & Wetter",
+            "fr": "Plage et météo",
+            "he": "ים ומזג אוויר"
+          },
+          "items": {
+            "en": [
+              "Swim only where there's a lifeguard and look at the flag: white = calm, red = careful, black = no swimming. Rip currents are real here.",
+              "Sun: strong from April to October - sunscreen, hat, and the shade of a beach umbrella (rentable). Sunset is around 19:30 in summer and 17:00 in winter; everyone stops to watch.",
+              "Jellyfish drift in for a few weeks in July-August; the lifeguards post a sign. Vinegar helps a sting.",
+              "Weather: hot and humid May-October (30-35°C), mild November-March (15-20°C) with some rainy days. The AC handles both.",
+              "Don't leave valuables on the towel while swimming - take turns, or go with just a card and a key."
+            ],
+            "de": [
+              "Nur bei Rettungsschwimmern baden und auf die Flagge achten: weiß = ruhig, rot = Vorsicht, schwarz = Badeverbot. Rippströmungen gibt es hier wirklich.",
+              "Sonne: stark von April bis Oktober - Sonnencreme, Hut und der Schatten eines (mietbaren) Sonnenschirms. Sonnenuntergang gegen 19:30 im Sommer, 17:00 im Winter; alle bleiben stehen und schauen.",
+              "Quallen kommen für ein paar Wochen im Juli-August; die Rettungsschwimmer hängen ein Schild auf. Essig hilft bei Kontakt.",
+              "Wetter: heiß und feucht Mai-Oktober (30-35 °C), mild November-März (15-20 °C) mit einigen Regentagen. Die Klimaanlage schafft beides.",
+              "Wertsachen nicht auf dem Handtuch lassen, während Sie schwimmen - abwechselnd gehen oder nur mit Karte und Schlüssel."
+            ],
+            "fr": [
+              "Baignez-vous seulement là où il y a un maître-nageur et regardez le drapeau : blanc = calme, rouge = prudence, noir = baignade interdite. Les courants d'arrachement existent vraiment ici.",
+              "Soleil : fort d'avril à octobre - crème, chapeau et l'ombre d'un parasol (à louer). Coucher de soleil vers 19h30 l'été, 17h l'hiver ; tout le monde s'arrête pour regarder.",
+              "Des méduses arrivent quelques semaines en juillet-août ; les maîtres-nageurs affichent un panneau. Le vinaigre soulage une piqûre.",
+              "Météo : chaud et humide de mai à octobre (30-35 °C), doux de novembre à mars (15-20 °C) avec quelques jours de pluie. La clim gère les deux.",
+              "Ne laissez pas d'objets de valeur sur la serviette pendant la baignade - alternez, ou venez avec juste une carte et une clé."
+            ],
+            "he": [
+              "שוחים רק ליד מציל ומסתכלים על הדגל: לבן = רגוע, אדום = זהירות, שחור = אסור לשחות. יש כאן זרמי שובר אמיתיים.",
+              "שמש: חזקה מאפריל עד אוקטובר - קרם הגנה, כובע וצל של שמשייה (להשכרה). השקיעה בערך ב-19:30 בקיץ וב-17:00 בחורף; כולם עוצרים להסתכל.",
+              "מדוזות מגיעות לכמה שבועות ביולי-אוגוסט; המצילים תולים שלט. חומץ עוזר לעקיצה.",
+              "מזג אוויר: חם ולח מאי-אוקטובר (30-35°), נעים נובמבר-מרץ (15-20°) עם כמה ימי גשם. המזגן מתמודד עם שניהם.",
+              "לא להשאיר דברי ערך על המגבת בזמן השחייה - להתחלף, או לבוא רק עם כרטיס ומפתח."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "The Israeli week",
+            "de": "Die israelische Woche",
+            "fr": "La semaine israélienne",
+            "he": "השבוע הישראלי"
+          },
+          "items": {
+            "en": [
+              "The weekend is Friday-Saturday; Sunday is a normal workday. Shabbat runs from Friday sunset to Saturday night: markets and most shops close, public transport stops - but in Tel Aviv many restaurants, bars and the beach are in full swing.",
+              "Friday morning is the best market time (Levinsky, Carmel), Friday afternoon the bars around Florentin fill up early - the locals' favourite hours.",
+              "Nightlife starts late: bars fill after 22:00, clubs after midnight, and Thursday night is the big night out.",
+              "Hummus and street food are lunch things - many of the best places close by 15:00-17:00 and on Shabbat.",
+              "A siren at 10:00 or 11:00 on Holocaust Remembrance Day (spring) and Memorial Day is a two-minute silence, not an alert - people stop and stand still. Any other siren: see the Emergency card."
+            ],
+            "de": [
+              "Das Wochenende ist Freitag-Samstag; Sonntag ist ein normaler Arbeitstag. Schabbat geht von Freitag Sonnenuntergang bis Samstagabend: Märkte und die meisten Läden schließen, der Nahverkehr steht - in Tel Aviv sind aber viele Restaurants, Bars und der Strand voll im Gang.",
+              "Freitagvormittag ist die beste Marktzeit (Levinsky, Carmel), Freitagnachmittag füllen sich die Bars rund um Florentin früh - die Lieblingsstunden der Einheimischen.",
+              "Das Nachtleben beginnt spät: Bars füllen sich nach 22 Uhr, Clubs nach Mitternacht, und Donnerstagabend ist der große Ausgehabend.",
+              "Hummus und Streetfood sind Mittagssache - viele der besten Läden schließen um 15-17 Uhr und am Schabbat.",
+              "Eine Sirene um 10 oder 11 Uhr am Holocaust-Gedenktag (Frühjahr) und am Gefallenengedenktag ist eine zweiminütige Schweigeminute, kein Alarm - alle bleiben stehen. Jede andere Sirene: siehe Karte Notfall."
+            ],
+            "fr": [
+              "Le week-end, c'est vendredi-samedi ; le dimanche est un jour de travail normal. Le Shabbat va du coucher du soleil vendredi au samedi soir : marchés et la plupart des commerces ferment, les transports s'arrêtent - mais à Tel Aviv beaucoup de restaurants, de bars et la plage battent leur plein.",
+              "Le vendredi matin est le meilleur moment pour les marchés (Levinsky, Carmel) ; le vendredi après-midi les bars autour de Florentin se remplissent tôt - les heures préférées des locaux.",
+              "La vie nocturne commence tard : les bars se remplissent après 22h, les clubs après minuit, et le jeudi soir est LA soirée.",
+              "Houmous et street food se mangent à midi - beaucoup des meilleures adresses ferment vers 15h-17h et le Shabbat.",
+              "Une sirène à 10h ou 11h le jour du souvenir de la Shoah (printemps) et le jour du souvenir des soldats est une minute de silence de deux minutes, pas une alerte - tout le monde s'arrête. Toute autre sirène : voir la carte Urgences."
+            ],
+            "he": [
+              "סוף השבוע הוא שישי-שבת; ראשון יום עבודה רגיל. שבת מכניסת השבת בשישי עד מוצ\"ש: שווקים ורוב החנויות סגורים, התחבורה הציבורית עוצרת - אבל בתל אביב הרבה מסעדות, ברים והים בשיא.",
+              "שישי בבוקר הוא הזמן הכי טוב לשווקים (לוינסקי, הכרמל), שישי אחה\"צ הברים סביב פלורנטין מתמלאים מוקדם - השעות האהובות על המקומיים.",
+              "חיי הלילה מתחילים מאוחר: ברים מתמלאים אחרי 22:00, מועדונים אחרי חצות, וחמישי בערב הוא הערב הגדול.",
+              "חומוס ואוכל רחוב זה עניין של צהריים - הרבה מהמקומות הטובים נסגרים ב-15:00-17:00 ובשבת.",
+              "צפירה ב-10:00 או 11:00 ביום השואה (אביב) וביום הזיכרון היא שתי דקות דומייה, לא אזעקה - כולם עוצרים ועומדים. כל צפירה אחרת: ראו כרטיס חירום."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "review",
