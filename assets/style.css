@@ -146,6 +146,13 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px; }
 .card .body ul { margin: 14px 0 0; padding-inline-start: 20px; }
 .card .body ul.plain { list-style: none; padding: 0; }
 .card .body li.row { margin: 10px 0; }
+.card .body li.row-img { display: flex; gap: 12px; align-items: flex-start; margin: 14px 0; }
+.row-pic { flex: none; width: 72px; height: 72px; border-radius: 14px; overflow: hidden; background: var(--chip); }
+.row-pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.row-txt { min-width: 0; flex: 1; }
+.row-links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; }
+.row-links a { text-decoration: none; font-weight: 600; }
+.row-links .credit-link { font-weight: 400; }
 .card .body li.row a { font-weight: 600; text-decoration: none; }
 .small { font-size: .9rem; }
 .card-video { display: block; width: 100%; border-radius: 12px; margin: 14px 0 4px; background: #000; }

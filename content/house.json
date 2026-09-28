@@ -194,7 +194,7 @@
           }
         }
       ],
-      "thumb": "assets/img/house/nespresso.jpg",
+      "thumb": "assets/img/house/thumb/kitchen.jpg",
       "group": "comfort",
       "first_hour": 5
     },
@@ -246,7 +246,7 @@
           "אין מה למלא - הוא מחובר לצנרת. האור הכחול תקין."
         ]
       },
-      "thumb": "assets/img/house/tami4.jpg",
+      "thumb": "assets/img/house/thumb/tami4.jpg",
       "group": "comfort",
       "first_hour": 2
     },
@@ -355,7 +355,7 @@
           }
         }
       ],
-      "thumb": "assets/img/house/ac-remote-bedroom.jpg",
+      "thumb": "assets/img/house/thumb/ac.jpg",
       "group": "comfort",
       "first_hour": 3
     },
@@ -472,7 +472,7 @@
           }
         }
       ],
-      "thumb": "assets/img/house/tv-remotes-room.jpg",
+      "thumb": "assets/img/house/thumb/tv.jpg",
       "group": "comfort",
       "first_hour": 4
     },
@@ -524,7 +524,7 @@
         "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé",
         "he": "מתג הדוד - אור אדום אומר שהוא דולק"
       },
-      "thumb": "assets/img/house/boiler-switch.jpg",
+      "thumb": "assets/img/house/thumb/hot_water.jpg",
       "group": "comfort",
       "first_hour": 1
     },
@@ -659,7 +659,7 @@
           "he": "המחשה: נכנסים, סוגרים את דלת הפלדה, מרימים את הידית. הדלת שלכם נראית אחרת - התנועות זהות."
         }
       },
-      "thumb": "assets/img/house/shelter.jpg",
+      "thumb": "assets/img/house/thumb/emergency.jpg",
       "group": "safe"
     },
     {
@@ -954,7 +954,11 @@
                 "fr": "le meilleur houmous du marché Levinsky - 5 min à pied",
                 "he": "החומוס הכי טוב בשוק לוינסקי - 5 דקות הליכה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Garger%20HaZahav%20Levinski%20St%2030%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Garger%20HaZahav%20Levinski%20St%2030%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/garger.jpg",
+              "image_credit": "Orenrosenfeld, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hummus_plate.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0"
             },
             {
               "name": "Sabich Frishman",
@@ -966,7 +970,11 @@
                 "fr": "sabich : pita à l'aubergine frite, œuf, salades - le classique de Tel Aviv",
                 "he": "סביח: פיתה עם חציל מטוגן, ביצה, סלטים - הקלאסיקה התל-אביבית"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Sabich%20Frishman%20Levinski%20St%2057%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Sabich%20Frishman%20Levinski%20St%2057%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/sabich.jpg",
+              "image_credit": "Avi1111 dr. avishai teicher, CC BY 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sabich_Square_6.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/4.0"
             },
             {
               "name": "Burekas shel Ima",
@@ -978,7 +986,11 @@
                 "fr": "'Les burekas de maman' - feuilleté, petit-déjeuner à emporter",
                 "he": "הבורקס של אמא - בצק עלים, ארוחת בוקר בדרך"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1%20%D7%A9%D7%9C%20%D7%90%D7%9E%D7%90%20Levinski%20St%2046%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1%20%D7%A9%D7%9C%20%D7%90%D7%9E%D7%90%20Levinski%20St%2046%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/burekas.jpg",
+              "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Burekas_Israeli_breakfast.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0"
             },
             {
               "name": "Turk Lahmajoun",
@@ -990,7 +1002,11 @@
                 "fr": "turc : lahmajoun, shawarma d'agneau dans un laffa - 10 min à pied",
                 "he": "טורקי: לחמג'ון, שווארמת כבש בלאפה - 10 דקות הליכה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Turk%20Lahmajoun%20Nahalat%20Binyamin%20St%2077%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Turk%20Lahmajoun%20Nahalat%20Binyamin%20St%2077%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/lahmajoun.jpg",
+              "image_credit": "Christopher, CC BY 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lahmacun_(Turkish_Pizza).jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0"
             }
           ]
         },
@@ -1012,7 +1028,21 @@
                 "fr": "poisson et fruits de mer à la grecque - poulpe, carpaccio de poisson. Même coin que Mirage, près du parc HaMesila",
                 "he": "דגים ופירות ים בסגנון יווני - תמנון, קרפצ'יו דג. באותה פינה כמו מיראז', ליד פארק המסילה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=HaShachaf%20Herzl%20St%2022%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=HaShachaf%20Herzl%20St%2022%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/hashachaf.jpg",
+              "image_credit": "Andrew Dalby, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Grilled_octopus_2.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "links": [
+                {
+                  "label": "Book (Ontopo)",
+                  "url": "https://ontopo.com/"
+                },
+                {
+                  "label": "Instagram",
+                  "url": "https://www.instagram.com/hashachaf_tlv/"
+                }
+              ]
             },
             {
               "name": "Cena",
@@ -1024,7 +1054,11 @@
                 "fr": "italien, à deux pas de HaShachaf - pâtes",
                 "he": "איטלקי, כמה בתים מהשחף - פסטה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Cena%20Herzl%20St%2010%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Cena%20Herzl%20St%2010%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/cena.jpg",
+              "image_credit": "10Rosso, CC BY 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro_3.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0"
             },
             {
               "name": "Mirage (Eyal Shani)",
@@ -1036,7 +1070,11 @@
                 "fr": "le chef star Eyal Shani - sur le parc, 10 min à pied",
                 "he": "השף אייל שני - על הפארק, 10 דקות הליכה"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Mirage%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Mirage%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/mirage.jpg",
+              "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_%E2%80%93_Whole_roasted_cauliflower.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0"
             },
             {
               "name": "Cassata",
@@ -1048,12 +1086,17 @@
                 "fr": "la glace d'Eyal Shani, juste à côté de Mirage",
                 "he": "הגלידה של אייל שני, ליד מיראז'"
               },
-              "url": "https://www.google.com/maps/search/?api=1&query=Cassata%20Park%20Hamesila%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv"
+              "url": "https://www.google.com/maps/search/?api=1&query=Cassata%20Park%20Hamesila%20Yehuda%20ha-Levi%20St%2012%2C%20Tel%20Aviv",
+              "image": "assets/img/eat/cassata.jpg",
+              "image_credit": "Jason Chung, CC BY 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Gelato_in_Milan_-_big_cone_2019.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0"
             }
           ]
         }
       ],
-      "group": "local"
+      "group": "local",
+      "_note": "Row photos are generic dish photos from Wikimedia Commons (CC), not the restaurants' own - see image_credit."
     },
     {
       "id": "florentin",

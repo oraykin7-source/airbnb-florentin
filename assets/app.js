@@ -260,10 +260,16 @@
       }
       for (const lst of c.lists || []) {
         body.append(el("h4", { class: "sec-title" }, L_(lst.title)));
-        body.append(el("ul", { class: "plain" }, lst.rows.map(r => el("li", { class: "row" },
-          el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
-          el("span", { class: "muted" }, ` · ${r.where} · ${r.hours}`),
-          r.note ? el("div", { class: "muted small" }, L_(r.note)) : null))));
+        body.append(el("ul", { class: "plain" }, lst.rows.map(r => el("li", { class: "row" + (r.image ? " row-img" : "") },
+          r.image ? el("a", { class: "row-pic", href: r.url, target: "_blank", rel: "noopener", "aria-hidden": "true", tabindex: "-1" },
+            el("img", { src: r.image, alt: "", loading: "lazy", onerror: e => e.target.closest(".row-pic").remove() })) : null,
+          el("div", { class: "row-txt" },
+            el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
+            el("span", { class: "muted" }, ` · ${r.where} · ${r.hours}`),
+            r.note ? el("div", { class: "muted small" }, L_(r.note)) : null,
+            (r.links || r.image_credit) ? el("div", { class: "row-links small" },
+              ...(r.links || []).map(l => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label + " →")),
+              r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : null) : null)))));
       }
       for (const sec of c.sections || []) {
         body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
