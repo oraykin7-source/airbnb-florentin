@@ -10,9 +10,9 @@
       "fr": "la pièce blindée (mamad), qui est la chambre d'Oren donnant sur le salon (encadrée sur la photo) - entrez directement, sans frapper, même s'il n'est pas là"
     },
     "boiler_switch": {
-      "en": "in the hallway, next to the bathroom door",
-      "de": "im Flur, neben der Badezimmertür",
-      "fr": "dans le couloir, à côté de la porte de la salle de bain"
+      "en": "by the front door, at the entrance to the apartment",
+      "de": "neben der Eingangstür, im Eingangsbereich der Wohnung",
+      "fr": "à côté de la porte d'entrée, dans l'entrée de l'appartement"
     },
     "checkout_time": "12:00"
   },
