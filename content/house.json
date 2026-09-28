@@ -196,7 +196,14 @@
       ],
       "thumb": "assets/img/house/thumb/kitchen.jpg",
       "group": "comfort",
-      "first_hour": 5
+      "first_hour": 5,
+      "image": "assets/img/house/ninja-combi.jpg",
+      "image_alt": {
+        "en": "The Ninja Combi - oven, air fryer and steamer in one",
+        "de": "Der Ninja Combi - Ofen, Heißluftfritteuse und Dampfgarer in einem",
+        "fr": "Le Ninja Combi - four, air fryer et cuiseur vapeur en un",
+        "he": "הנינג'ה קומבי - תנור, אייר-פרייר ואידוי במכשיר אחד"
+      }
     },
     {
       "id": "tami4",
