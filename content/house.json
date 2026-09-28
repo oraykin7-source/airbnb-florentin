@@ -33,17 +33,17 @@
       "items": {
         "en": [
           "The kitchen has a portable induction hob and a Ninja Combi (oven, air fryer, steamer in one). The full guide explains the levels, the pots with the click-on handle and where everything is.",
-          "Help yourself to the milk in the fridge, the oil and the spices - and the coffee capsules. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
+          "Milk in the fridge, oil, spices and the coffee capsules are part of your stay - help yourself. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
           "Please don't open the cabinet under the sink - the door is fragile."
         ],
         "de": [
           "Die Küche hat ein mobiles Induktionskochfeld und einen Ninja Combi (Ofen, Heißluftfritteuse und Dampfgarer in einem). Die vollständige Anleitung erklärt die Stufen, die Töpfe mit Klickgriff und wo alles ist.",
-          "Milch im Kühlschrank, Öl und Gewürze dürfen Sie gerne benutzen - ebenso die Kaffeekapseln. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
+          "Milch im Kühlschrank, Öl, Gewürze und die Kaffeekapseln gehören zum Aufenthalt dazu - bedienen Sie sich. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
           "Bitte den Schrank unter der Spüle nicht öffnen - die Tür ist empfindlich."
         ],
         "fr": [
           "La cuisine a une plaque à induction portable et un Ninja Combi (four, friteuse à air et cuiseur vapeur en un). Le guide complet explique les niveaux, les casseroles à poignée clipsable et où tout se trouve.",
-          "Servez-vous : le lait du frigo, l'huile et les épices - et les capsules de café. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
+          "Le lait du frigo, l'huile, les épices et les capsules de café font partie du séjour - servez-vous. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
           "Merci de ne pas ouvrir le placard sous l'évier - la porte est fragile."
         ]
       },
@@ -547,40 +547,40 @@
         "en": [
           "You have your own private room; the kitchen, bathroom and living room are shared with Oren, who lives here too. Make yourself at home - and say hi!",
           "Please eat at the kitchen table or in your room rather than on the sofa - the fabric doesn't forgive crumbs.",
+          "Milk, oil, spices and coffee capsules are part of your stay - help yourself. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
           "Back from the beach? Please go straight to the shower and rinse off the sand before walking around the apartment - sand gets everywhere and is hard to clean.",
-          "A robot vacuum-and-mop cleans the whole apartment every day at 11:00. Nothing to do - just keep bags, shoes and cables off the floor so it can get through, and don't be surprised when it starts.",
-          "Kitchen: milk, oil, spices and coffee capsules are yours to use; please buy your own groceries for anything else.",
+          "A robot vacuum-and-mop cleans the apartment every day at 11:00. Bags on the floor are fine; cables and clothes are better off it. If your door is closed, the robot simply skips your room.",
           "Rubbish goes in the kitchen bin (recycling: plastic bottles to the orange cage, cardboard to the blue bin on the street).",
           "No smoking or vaping anywhere in the apartment - please step outside.",
           "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
           "No pets, sorry.",
-          "Quiet after 23:00 - thin walls, close neighbours.",
+          "Quiet after 23:00, please - I get up at 6 for work.",
           "Check-out is at {{checkout_time}}: switch off the AC, leave the keys where you found them, and drop us a message. Thank you!"
         ],
         "de": [
           "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
           "Bitte am Küchentisch oder im Zimmer essen, nicht auf dem Sofa - der Stoff verzeiht keine Krümel.",
+          "Milch, Öl, Gewürze und Kaffeekapseln gehören zum Aufenthalt dazu - bedienen Sie sich. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
           "Zurück vom Strand? Bitte direkt unter die Dusche und den Sand abspülen, bevor Sie durch die Wohnung gehen - Sand verteilt sich überall und ist schwer zu entfernen.",
-          "Ein Saug- und Wischroboter reinigt jeden Tag um 11:00 Uhr die ganze Wohnung. Sie müssen nichts tun - nur Taschen, Schuhe und Kabel vom Boden fernhalten, damit er durchkommt, und nicht erschrecken, wenn er losfährt.",
-          "Küche: Milch, Öl, Gewürze und Kaffeekapseln dürfen Sie benutzen; alles andere bitte selbst einkaufen.",
+          "Ein Saug- und Wischroboter reinigt jeden Tag um 11:00 Uhr die Wohnung. Taschen auf dem Boden sind in Ordnung; Kabel und Kleidung besser nicht. Ist Ihre Tür geschlossen, lässt der Roboter Ihr Zimmer einfach aus.",
           "Müll in den Küchenmülleimer (Recycling: Plastikflaschen in den orangen Gitterkorb, Karton in die blaue Tonne auf der Straße).",
           "Nirgends in der Wohnung rauchen oder dampfen - bitte nach draußen gehen.",
           "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
           "Leider keine Haustiere.",
-          "Nach 23 Uhr bitte leise - dünne Wände, nahe Nachbarn.",
+          "Nach 23 Uhr bitte leise - ich stehe um 6 Uhr für die Arbeit auf.",
           "Check-out um {{checkout_time}}: Klimaanlage aus, Schlüssel dort lassen, wo Sie ihn gefunden haben, und kurz Bescheid geben. Danke!"
         ],
         "fr": [
           "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
           "Merci de manger à la table de la cuisine ou dans votre chambre plutôt que sur le canapé - le tissu ne pardonne pas les miettes.",
+          "Le lait, l'huile, les épices et les capsules de café font partie du séjour - servez-vous. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
           "De retour de la plage ? Merci d'aller directement sous la douche pour rincer le sable avant de circuler dans l'appartement - le sable se glisse partout et s'enlève mal.",
-          "Un robot aspirateur-laveur nettoie tout l'appartement chaque jour à 11 h. Rien à faire - laissez juste sacs, chaussures et câbles hors du sol pour qu'il passe, et ne soyez pas surpris quand il démarre.",
-          "Cuisine : lait, huile, épices et capsules de café sont à votre disposition ; pour le reste, merci d'acheter vos propres courses.",
+          "Un robot aspirateur-laveur nettoie l'appartement chaque jour à 11 h. Les sacs au sol ne gênent pas ; les câbles et les vêtements, si. Si votre porte est fermée, le robot saute simplement votre chambre.",
           "Les déchets vont dans la poubelle de la cuisine (tri : bouteilles en plastique dans la cage orange, carton dans le bac bleu dans la rue).",
           "Interdit de fumer ou de vapoter partout dans l'appartement - merci de sortir.",
           "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
           "Pas d'animaux, désolé.",
-          "Silence après 23 h - murs fins, voisins tout proches.",
+          "Silence après 23 h, s'il vous plaît - je me lève à 6 h pour le travail.",
           "Départ à {{checkout_time}} : éteignez la clim, laissez les clés là où vous les avez trouvées et envoyez-nous un petit message. Merci !"
         ]
       }
