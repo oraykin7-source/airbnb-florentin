@@ -161,10 +161,10 @@
           },
           "image": "assets/img/house/microwave.jpg",
           "image_alt": {
-            "en": "The microwave, on the metal rack under the Ninja",
-            "de": "Die Mikrowelle im Metallregal unter dem Ninja",
-            "fr": "Le micro-ondes, sur l'étagère métallique sous le Ninja",
-            "he": "המיקרוגל, על מדף המתכת מתחת לנינג'ה"
+            "en": "The microwave control panel - numbers 1-6 start straight away",
+            "de": "Das Bedienfeld der Mikrowelle - Zahlen 1-6 starten sofort",
+            "fr": "Le panneau du micro-ondes - les chiffres 1-6 lancent directement",
+            "he": "לוח הבקרה של המיקרוגל - הספרות 1-6 מפעילות מיד"
           },
           "items": {
             "en": [
