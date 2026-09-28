@@ -18,34 +18,6 @@
   },
   "cards": [
     {
-      "id": "wifi",
-      "icon": "📶",
-      "title": {
-        "en": "Wi-Fi",
-        "de": "WLAN",
-        "fr": "Wi-Fi"
-      },
-      "sub": {
-        "en": "Network & password",
-        "de": "Netzwerk & Passwort",
-        "fr": "Réseau et mot de passe"
-      },
-      "items": {
-        "en": [
-          "The network name and password are on the printed card next to the router, and in your Airbnb check-in message.",
-          "If the connection drops, unplug the router (white box on the TV shelf) for 10 seconds and plug it back in."
-        ],
-        "de": [
-          "Netzwerkname und Passwort stehen auf der Karte neben dem Router und in Ihrer Airbnb-Check-in-Nachricht.",
-          "Falls die Verbindung abbricht: Router (weiße Box im TV-Regal) 10 Sekunden ausstecken und wieder einstecken."
-        ],
-        "fr": [
-          "Le nom du réseau et le mot de passe sont sur la carte à côté du routeur et dans votre message d'arrivée Airbnb.",
-          "Si la connexion coupe, débranchez le routeur (boîtier blanc sur le meuble TV) 10 secondes puis rebranchez-le."
-        ]
-      }
-    },
-    {
       "id": "kitchen",
       "icon": "🍳",
       "title": {
