@@ -93,39 +93,83 @@
         "fr": "Climatisation"
       },
       "sub": {
-        "en": "On/off, temperature, cool or heat",
-        "de": "Ein/Aus, Temperatur, Kühlen oder Heizen",
-        "fr": "Marche/arrêt, température, froid ou chaud"
+        "en": "Two remotes - each needs only three buttons",
+        "de": "Zwei Fernbedienungen - je nur drei Tasten",
+        "fr": "Deux télécommandes - trois touches suffisent"
       },
       "items": {
         "en": [
-          "The remote is simple - you only need three things:",
-          "1. ON/OFF - the power button at the top.",
-          "2. Temperature - the ▲ / ▼ (or + / −) buttons. 24–25°C is comfortable; lower doesn't cool faster.",
-          "3. Mode - press MODE until the display shows ❄ (cool) or ☀ (heat). Ignore the other modes and settings.",
-          "Please close the windows while it runs and switch it off when you go out."
+          "Please close the windows while the AC runs and switch it off when you go out. 24–25°C is comfortable; lower doesn't cool faster."
         ],
         "de": [
-          "Die Fernbedienung ist einfach - Sie brauchen nur drei Dinge:",
-          "1. EIN/AUS - die Power-Taste oben.",
-          "2. Temperatur - die Tasten ▲ / ▼ (oder + / −). 24–25 °C ist angenehm; niedriger kühlt nicht schneller.",
-          "3. Modus - MODE drücken, bis im Display ❄ (Kühlen) oder ☀ (Heizen) erscheint. Die anderen Modi und Einstellungen einfach ignorieren.",
-          "Bitte bei laufender Anlage die Fenster schließen und beim Weggehen ausschalten."
+          "Bitte bei laufender Klimaanlage die Fenster schließen und beim Weggehen ausschalten. 24–25 °C ist angenehm; niedriger kühlt nicht schneller."
         ],
         "fr": [
-          "La télécommande est simple - trois choses suffisent :",
-          "1. ON/OFF - le bouton d'alimentation en haut.",
-          "2. Température - les touches ▲ / ▼ (ou + / −). 24–25 °C est confortable ; plus bas ne refroidit pas plus vite.",
-          "3. Mode - appuyez sur MODE jusqu'à voir ❄ (froid) ou ☀ (chaud) à l'écran. Ignorez les autres modes et réglages.",
-          "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant."
+          "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant. 24–25 °C est confortable ; plus bas ne refroidit pas plus vite."
         ]
       },
-      "image": "assets/img/house/ac-remote.jpg",
-      "image_alt": {
-        "en": "The AC remote",
-        "de": "Die Klimaanlagen-Fernbedienung",
-        "fr": "La télécommande de la clim"
-      }
+      "sections": [
+        {
+          "title": {
+            "en": "Bedroom (white Tornado remote)",
+            "de": "Schlafzimmer (weiße Tornado-Fernbedienung)",
+            "fr": "Chambre (télécommande blanche Tornado)"
+          },
+          "image": "assets/img/house/ac-remote-bedroom.jpg",
+          "image_alt": {
+            "en": "Tornado remote",
+            "de": "Tornado-Fernbedienung",
+            "fr": "Télécommande Tornado"
+          },
+          "items": {
+            "en": [
+              "1. ON/OFF - the orange ⏻ button in the middle of the ring.",
+              "2. Temperature - TEMP ▲ / ▼ (top and bottom of the ring).",
+              "3. Mode - press MODE (top right) until the display shows ❄ for cooling or ☀ for heating. Ignore all the other buttons."
+            ],
+            "de": [
+              "1. EIN/AUS - die orange ⏻-Taste in der Mitte des Rings.",
+              "2. Temperatur - TEMP ▲ / ▼ (oben und unten am Ring).",
+              "3. Modus - MODE (oben rechts) drücken, bis im Display ❄ (Kühlen) oder ☀ (Heizen) erscheint. Alle anderen Tasten ignorieren."
+            ],
+            "fr": [
+              "1. ON/OFF - le bouton orange ⏻ au centre de l'anneau.",
+              "2. Température - TEMP ▲ / ▼ (en haut et en bas de l'anneau).",
+              "3. Mode - appuyez sur MODE (en haut à droite) jusqu'à voir ❄ (froid) ou ☀ (chaud) à l'écran. Ignorez toutes les autres touches."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Living room (Tadiran remote)",
+            "de": "Wohnzimmer (Tadiran-Fernbedienung)",
+            "fr": "Salon (télécommande Tadiran)"
+          },
+          "image": "assets/img/house/ac-remote-living.jpg",
+          "image_alt": {
+            "en": "Tadiran remote",
+            "de": "Tadiran-Fernbedienung",
+            "fr": "Télécommande Tadiran"
+          },
+          "items": {
+            "en": [
+              "1. ON/OFF - top left button.",
+              "2. Temperature - the − / + buttons.",
+              "3. Mode - simply press COOL or HEAT. Ignore all the other buttons."
+            ],
+            "de": [
+              "1. EIN/AUS - Taste oben links.",
+              "2. Temperatur - die Tasten − / +.",
+              "3. Modus - einfach COOL (Kühlen) oder HEAT (Heizen) drücken. Alle anderen Tasten ignorieren."
+            ],
+            "fr": [
+              "1. ON/OFF - le bouton en haut à gauche.",
+              "2. Température - les touches − / +.",
+              "3. Mode - appuyez simplement sur COOL (froid) ou HEAT (chaud). Ignorez toutes les autres touches."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "tv",
@@ -174,22 +218,28 @@
       "items": {
         "en": [
           "Like most Israeli homes, hot water comes from a tank on the roof called a dud. It's heated by the sun and, when that's not enough, by an electric switch.",
-          "Where the switch is: {{boiler_switch}}.",
+          "Where the switch is: {{boiler_switch}} (photo above - the small red light shows it's on).",
           "On cloudy days or in the evening, turn the switch on about 30–40 minutes before showering, then turn it off afterwards.",
           "In summer the sun is usually enough - the water can be very hot, so test it first."
         ],
         "de": [
           "Wie in den meisten israelischen Wohnungen kommt das Warmwasser aus einem Tank auf dem Dach, dem „Dud“. Er wird von der Sonne geheizt und bei Bedarf elektrisch per Schalter.",
-          "Wo der Schalter ist: {{boiler_switch}}.",
+          "Wo der Schalter ist: {{boiler_switch}} (Foto oben - das kleine rote Licht zeigt, dass er an ist).",
           "An bewölkten Tagen oder abends den Schalter etwa 30–40 Minuten vor dem Duschen einschalten und danach wieder ausschalten.",
           "Im Sommer reicht meist die Sonne - das Wasser kann sehr heiß sein, bitte vorher prüfen."
         ],
         "fr": [
           "Comme dans la plupart des logements israéliens, l'eau chaude vient d'un réservoir sur le toit appelé « doud ». Il est chauffé par le soleil et, si besoin, par un interrupteur électrique.",
-          "Où se trouve l'interrupteur : {{boiler_switch}}.",
+          "Où se trouve l'interrupteur : {{boiler_switch}} (photo ci-dessus - le petit voyant rouge indique qu'il est allumé).",
           "Par temps nuageux ou le soir, allumez l'interrupteur 30 à 40 minutes avant la douche, puis éteignez-le ensuite.",
           "En été, le soleil suffit généralement - l'eau peut être très chaude, testez d'abord."
         ]
+      },
+      "image": "assets/img/house/boiler-switch.jpg",
+      "image_alt": {
+        "en": "The boiler switch - red light means it's on",
+        "de": "Der Boiler-Schalter - rotes Licht heißt an",
+        "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé"
       }
     },
     {

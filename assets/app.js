@@ -182,6 +182,11 @@
           c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + x.label[L]))));
       }
       if (c.items) body.append(el("ul", {}, c.items[L].map(s => el("li", {}, fill(s, host)))));
+      for (const sec of c.sections || []) {
+        body.append(el("h4", { class: "sec-title" }, sec.title[L]));
+        if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && sec.image_alt[L]) || "", loading: "lazy", onerror: e => e.target.remove() }));
+        if (sec.items) body.append(el("ul", {}, sec.items[L].map(s => el("li", {}, fill(s, host)))));
+      }
       if (c.link) body.append(el("div", { class: "tel" },
         el("a", { href: `${c.link.href}?lang=${L}` }, c.link.label[L] + " →")));
 
