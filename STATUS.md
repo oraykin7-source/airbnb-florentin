@@ -1,66 +1,57 @@
 # STATUS – נקודת המשך לשיחה הבאה
 
-עודכן: 2026-09-29 אחה"צ (אחרי עדכון Airbnb + תיקוני תוכן). קרא את זה לפני כל דבר אחר.
+עודכן: 2026-09-28 בערב. קרא את זה לפני כל דבר אחר. הדוח המלא של היום: `docs/reports/2026-09-28-evening.html`.
 
-## מה זה
+## מצב: מוכן לאורח
 
-מדריך דיגיטלי לאורחי ה-Airbnb בפלורנטין. QR בדלת → עמוד אחד ב-GitHub Pages, EN/DE/FR.
+מדריך דיגיטלי לאורחי ה-Airbnb בפלורנטין. QR בדלת → עמוד אחד ב-GitHub Pages, EN/DE/FR/HE.
 - **חי:** https://oraykin7-source.github.io/airbnb-florentin/
-- **ריפו (ציבורי):** https://github.com/oraykin7-source/airbnb-florentin – branch `main`, קומיט אחרון `c9bc362`
-- **מקומי:** `~/Documents/Projects/airbnb-florentin` (venv ב-`.venv/` עם Pillow, לא בגיט)
+- **ריפו (ציבורי):** https://github.com/oraykin7-source/airbnb-florentin – branch `main` (79 קומיטים ב-28.9)
+- **מקומי:** `~/Documents/Projects/airbnb-florentin` (venv ב-`.venv/` עם Pillow + rembg, לא בגיט)
 - **תצוגה מקומית:** `python3 -m http.server 8420` → http://localhost:8420 (`?demo` לנתוני דוגמה)
-- הפרויקט מנוהל בצ'אט עם Claude; המארח (אורן) אינו מפתח.
+- המארח (אורן) אינו מפתח; עובד בצ'אט + Remote Control מהטלפון.
 
 ## מבנה
 
 | קובץ | תפקיד |
 |---|---|
-| `index.html`, `assets/app.js`, `assets/style.css` | העמוד. ללא build. |
-| `content/house.json` | כרטיסי הדירה. `host.shelter`/`boiler_switch` לכל שפה (מולאו; דוד = ליד דלת הכניסה); `host.whatsapp` מולא. בלי סודות. |
-| `content/places.json` + `assets/img/places/*.jpg` | 13 מקומות מומלצים, תמונות CC מ-Wikimedia עם קרדיט. |
-| `kitchen/index.html` | מדריך מטבח מפורט (3 שפות). עדיין עם שאריות QR/הדפסה. |
-| `data/weekly.json` | האירועים השבועיים – נכתב ע"י ה-Routine. לא לערוך ידנית. |
-| `data/stays.json` | תאריכי צ'ק-אאוט בלבד, מהיומן. נכתב ע"י ה-Routine. |
-| `agent/ROUTINE.md` | ההוראות שה-Routine השבועי מבצע. **זה המקום לשנות התנהגות של הסוכן.** |
-| `agent/validate.py` | בדיקת `weekly.json` (מקורות, חלון, שפות, תמונות). |
-| `agent/refresh.py` | פרסור iCal (`--stays`) + גרסת API של המחקר (לא בשימוש). |
-| `.github/workflows/refresh.yml` | fallback ידני עם API key. **מת בפועל** – אין מפתח. |
-| `TODO.md` | משימות תוכן מהמארח. |
-| `docs/council-review-2026-09-28.md` | פסק דין מועצת החכמים. |
-| `docs/reports/` | דוחות יומיים. |
+| `index.html`, `assets/app.js`, `assets/style.css` | העמוד. ללא build. 4 שפות, RTL לעברית, `translate="no"`. |
+| `content/house.json` | 12 כרטיסי הדירה ב-4 שפות. שדות: `thumb`, `group` (comfort/safe/local), `first_hour`, `sections`, `lists` (rows עם `url` = מקום מדויק בגוגל, `image` + `image_credit`, `links`). בלי סודות. |
+| `content/places.json` + `assets/img/places/` | 13 מקומות, תמונות CC. |
+| `assets/img/house/` + `thumb/` | תמונות המכשירים (צילומי אורן; קפה/דוד/תמי 4 משופרים ב-ChatGPT). `ninja-combi.jpg` = תמונת יצרן זמנית. |
+| `assets/img/eat/` | תמונות מנה CC לכרטיס "איפה אורן אוכל". |
+| `kitchen/index.html` | מדריך מטבח מפורט (EN/DE/FR בלבד). |
+| `data/weekly.json`, `data/stays.json` | נכתבים ע"י ה-Routines. לא לערוך ידנית. |
+| `agent/ROUTINE.md`, `agent/validate.py` | הוראות הסוכן השבועי + בדיקות (`validate.py house` לפני כל commit של תוכן). |
+| `docs/` | דוחות יומיים, סקירות מועצה/ChatGPT, חומרי הדפסה (QR, שלט, בריף למוכר). |
+| `../airbnb-florentin-private/airbnb-texts.md` | מחוץ לריפו (כתובת). הטקסטים שהוזנו ל-Airbnb. |
 
-## אוטומציה (Claude Code Routines, על המנוי – בלי API key)
+## אוטומציה (Claude Code Routines)
 
-| Routine | id | מתי | סביבה | מודל |
-|---|---|---|---|---|
-| Florentin guide – weekly events refresh | `trig_016hQPzge4EHs3WRXerHu5sR` | שבת 19:00 IL (`0 16 * * 6` UTC) | `Florentin guide` (`env_01TwwXds8K6zJUbDwq4RGKEN`, Network: Full) | claude-opus-5 |
-| Florentin guide – nightly check-out dates | `trig_01MXPob9kK9YuWVcqq7ypkJr` | 02:30 IL יומי | אותה סביבה | claude-sonnet-5 |
+| Routine | id | מתי | סביבה |
+|---|---|---|---|
+| Florentin guide – weekly events refresh | `trig_016hQPzge4EHs3WRXerHu5sR` | שבת 19:00 IL | `Florentin guide` (`env_01TwwXds8K6zJUbDwq4RGKEN`, Network: Full) |
+| Florentin guide – nightly check-out dates | `trig_01MXPob9kK9YuWVcqq7ypkJr` | 02:30 IL | אותה סביבה |
 
-- ניהול: https://claude.ai/code/routines/<id>. עריכה: חץ ▾ ליד השם → Edit.
-- **קישור ה-iCal של Airbnb נמצא רק בפרומפט של ה-Routine הלילי** (הוסר מהשבועי ב-29.9; המארח הדביק אותו ידנית). לא בריפו, לא בצ'אט. מסווג ההרשאות חוסם את Claude מלכתוב אותו – שינויים בפרומפט שדורשים לשמור אותו: או שהמארח עורך בממשק, או עריכה ב-textarea דרך הדפדפן המובנה עם JS replace (עבד ב-28.9 להחלפת chillz.co.il→chillz.com).
-- הסביבה הישנה `Default` חסמה את כל אתרי המקור (403 בפרוקסי). לכן נוצרה סביבה חדשה עם Full network.
-- ריצה שבועית ראשונה (28.9, סשן `cse_017kWAXx5tqovacuXhQXgY7g`): 19 דקות, 29 פריטים, כולם עם תמונות Pexels, קומיט `804282d`.
-- התראות (push) מופעלות על שני ה-Routines מ-29.9.
-- דיבוג: `RemoteTrigger list_runs` → `get_run_log`.
+- **ה-iCal של Airbnb נמצא רק בפרומפט הלילי.** לא בריפו, לא בצ'אט. מסווג ההרשאות חוסם את Claude מלכתוב אותו.
+- **הריצה השבועית הראשונה "בשידור" אחרי כל השינויים: שבת 3.10.** push מגיע לאורן.
 
-## מקורות ותוצאות
+## Airbnb (listing 5202090)
 
-- visit.tel-aviv.gov.il – מרנדר ב-JS; הסוכן משתמש ב-`Pages/SearchWhatsOn.aspx`.
-- secrettelaviv.com – המקור העיקרי (22/29 פריטים), דפי הכרטיסים מצוינים.
-- **chillz.com** (לא chillz.co.il – זה לא קיים) – מאחורי Vercel bot check (429). הסוכן כנראה לא יצליח לקרוא. המועצה ממליצה להוריד.
-- תמונות: Unsplash ו-Wikimedia חסמו את הסוכן (401/429); Pexels עבד.
+הכול מעודכן ותואם לאתר: כללי הבית, הוראות הגעה, מדריך לאורחים, צ'ק-אאוט, 5 הודעות מתוזמנות (Welcome עם קישור אישי `?guest=&checkout=`, "חדר בפלורנטין" יום לפני – **מכילה קוד דלת, לא לגעת**, Day after check-in, Day before check-out, After check-out), מדריך "מה בסביבה" (id 1882254, 20 מקומות). עריכה דרך Claude-in-Chrome; טיפים טכניים בדוח.
 
-## החלטות שהתקבלו
+## החלטות שעומדות
 
-- Routines במקום GitHub Actions + API key (חינם על המנוי).
-- ריפו ציבורי (נדרש ל-Pages בחשבון חינמי).
-- תמונות: רק מקורות חופשיים (Pexels/Unsplash/Wikimedia) עם קרדיט; לעולם לא מאתר העסק/רשתות. קרדיט לא מכשיר תמונה מוגנת.
-- מקומות מומלצים: תמונות CC אמיתיות מ-Wikimedia, מאוחסנות בריפו, קרדיט + קישור למקור בכל כרטיס.
+- סודות מחוץ לריפו; WhatsApp של אורן גלוי בדף בבחירתו.
+- תמונות: צילום של אורן או CC עם קרדיט. AI-edit רק למכשירים פשוטים אחרי בדיקת כפתורים; לשלטים – רק צילום. תמונות יצרן/מסעדות – לא.
+- ברירת מחדל אנגלית; זיהוי שפת הטלפון נשאר.
+- הגרמנית אושרה ע"י דובר שפת אם (28.9). צרפתית – לא נבדקה.
+- מועצה נוספת – רק אחרי האורח הראשון.
 
-## החלטות פתוחות (ממתינות לאורן)
+## מה פתוח (ראה `TODO.md` + "משימות למחר" בדוח)
 
-1. ~~פרטיות~~ (הוחלט, ראה 3) – המועצה המליצה: לא להכניס Wi-Fi/כתובת/טלפון ל-`house.json` (ריפו ציבורי). במקום: כרטיס מודפס ליד הנתב + הודעת צ'ק-אין ב-Airbnb; הדף יגיד "on the card by the router". Claude מסכים. **stays.json** – המועצה: למחוק; Claude: אפשר להשאיר אם הכתובת לא בדף (הזמינות ממילא ציבורית ב-Airbnb). **צריך "כן" מאורן לפני ביצוע** – זה הופך החלטה קודמת.
-2. ✅ 29.9: ChatGPT (דרך התוסף בכרום, שיחה "חוות דעת על מדריך Airbnb") הריץ מועצה משלו – סיכום ב-`docs/chatgpt-review-2026-09-29.md`, משימות ב-TODO §8. החלטה פתוחה: סינון לפי תאריך שהאורח בוחר (date picker) במקום/בנוסף ליומן.
-3. ✅ 29.9: פרטיות הוחלטה – סודות מחוץ לריפו (בוצע, קומיט `42adf30`), stays.json נשאר.
-
-## מה למחר – ראה `docs/reports/2026-09-28.html` (סעיף "משימות למחר") ו-`TODO.md`.
+1. שבת 3.10 – לבדוק את ריצת ה-Routine ואת האתר.
+2. אורח ראשון – לוודא שהקישור האישי עובד (פורמט `{check-out date}`).
+3. 6.10 – הנינג'ה מגיע → אורן מצלם → להחליף את `ninja-combi.jpg`.
+4. להזמין שלטי QR (`docs/print/seller-message.md`); בינתיים להדפיס `docs/print/qr-guide.png`.
+5. ליטוש: עין צרפתית; קישור המדריך בהודעת "חדר בפלורנטין"; מחיקת 3 קטגוריות ישנות במדריך "מה בסביבה"; עברית ל-feed השבועי ולמדריך המטבח.
