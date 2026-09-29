@@ -61,7 +61,7 @@ a { color: var(--accent); }
 .lang button {
   border: 0; background: transparent; color: var(--muted); cursor: pointer;
   font: 700 13px/1 Inter, sans-serif; letter-spacing: .04em;
-  padding: 10px 12px; border-radius: 999px; min-width: 44px; min-height: 36px;
+  padding: 12px 12px; border-radius: 999px; min-width: 44px; min-height: 44px;
 }
 .lang button[aria-checked="true"] { background: var(--accent); color: var(--accent-ink); }
 
@@ -90,7 +90,7 @@ main { overflow-x: hidden; }
 .sos-static a { font-weight: 700; color: var(--danger); }
 .stay-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 8px; font-size: .95rem; }
 .stay-pick input[type="date"] { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); }
-.linkish { border: 0; background: none; color: var(--accent); font: inherit; font-size: .9rem; cursor: pointer; padding: 0; text-decoration: underline; }
+.linkish { border: 0; background: none; color: var(--accent); font: inherit; font-size: .9rem; cursor: pointer; padding: 10px 0; min-height: 44px; text-decoration: underline; }
 .jump { display: flex; gap: 8px; padding: 24px 0 4px; flex-wrap: wrap; }
 .jump a {
   text-decoration: none; color: var(--ink); background: var(--chip);
@@ -257,9 +257,9 @@ a.auto.out { text-decoration-style: dotted; }
 #first::before { background: radial-gradient(circle at 40% 40%, var(--happy), transparent 72%); inset-inline-start: auto; inset-inline-end: -40px; top: -10px; width: 140px; opacity: .45; }
 
 /* Bottom tab bar (app-like section switcher) */
-.tabbar { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; z-index: 20; display: grid; grid-template-columns: repeat(4, 1fr);
+.tabbar { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; z-index: 20; display: flex;
   background: var(--surface); border-top: 1px solid var(--line); padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); }
-.tabbar a { display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: var(--muted); font-size: .72rem; font-weight: 600; padding: 4px 2px; border-radius: 12px; min-height: 48px; justify-content: center; }
+.tabbar a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: var(--muted); font-size: .72rem; font-weight: 600; padding: 4px 2px; border-radius: 12px; min-height: 48px; justify-content: center; }
 .tabbar a svg { display: block; }
 .tabbar a[aria-current="true"] { color: var(--accent); background: var(--accent-soft); }
 .tabbar a[hidden] { display: none; }
@@ -286,3 +286,7 @@ a.auto.page { text-decoration-style: solid; }
 
 /* The bottom tab bar replaces the section chips */
 .jump { display: none; }
+
+/* SOS brand mark in the sticky header (always reachable) */
+.brand-mark.sos { background: var(--danger); color: #fff; font-size: 15px; text-decoration: none; }
+.badge.sat { background: var(--happy); color: var(--happy-ink); margin-inline-start: 8px; }

@@ -11,12 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600;700&family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=20260929d">
+  <link rel="stylesheet" href="assets/style.css?v=20260929e">
 </head>
 <body>
   <header class="top">
     <div class="brand">
-      <span class="brand-mark" aria-hidden="true">F</span>
+      <a class="brand-mark sos" id="sos-brand" href="#card-emergency" aria-label="Emergency">🆘</a>
       <span class="brand-name" data-i18n="brand">Florentin Home Guide</span>
     </div>
     <div class="lang" role="radiogroup" aria-label="Language">
@@ -33,11 +33,11 @@
       <h1 id="welcome">Welcome home</h1>
       <div class="name-box" id="name-box"></div>
       <div class="quick">
-        <a class="qbtn qbtn-wa" id="wa-btn" hidden target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp your host</a>
+        <a class="qbtn qbtn-wa" id="wa-btn" href="https://wa.me/972523244799" target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp your host</a>
         <a class="qbtn qbtn-sos" href="#card-emergency" id="sos-btn" data-i18n="sos">Emergency</a>
       </div>
       <!-- Static fallback: visible even if the scripts or the data files fail to load -->
-      <p class="sos-static" id="sos-static"><strong>🆘</strong> Police <a href="tel:100">100</a> · Ambulance <a href="tel:101">101</a> · Fire <a href="tel:102">102</a></p>
+      <p class="sos-static" id="sos-static"><strong>🆘</strong> Police <a href="tel:100">100</a> · Ambulance <a href="tel:101">101</a> · Fire <a href="tel:102">102</a><br><span data-i18n="sos_static2">Siren → Oren's room, off the living room. Stay 10 min.</span></p>
     </section>
 
     <nav class="jump" aria-label="Sections">
@@ -94,6 +94,6 @@
     <p data-i18n="footer">Made with care by your host. Enjoy Florentin!</p>
   </footer>
 
-  <script src="assets/app.js?v=20260929d" defer></script>
+  <script src="assets/app.js?v=20260929e" defer></script>
 </body>
 </html>

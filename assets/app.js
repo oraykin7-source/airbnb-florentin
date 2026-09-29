@@ -10,11 +10,12 @@
 
   const UI = {
     en: {
+      sos_static2: "Siren → Oren's room, off the living room. Stay 10 min.", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
       tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "Florentin Home Guide", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
-      places_title: "Places we love", places_lead: "Our favourite corners of the city, all close by. Tap a card for the map.", map: "Open in Maps", photo: "Photo",
+      places_title: "Places we love", places_lead: "Our favourite corners of the city - most within a 20-minute walk. Tap a card for the map.", map: "Open in Maps", photo: "Photo",
       cat_food: "Food & restaurants", cat_culture: "Culture & city events", cat_nightlife: "Nightlife & parties",
       footer: "Made with care by your host. Enjoy Florentin!",
       stay_until: d => `Events during your stay · until ${d}`,
@@ -29,11 +30,12 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
+      sos_static2: "Sirene → Orens Zimmer neben dem Wohnzimmer. 10 Min. bleiben.", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
       tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Diese Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Florentin Wohnungsguide", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
-      places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt, alle in der Nähe. Karte antippen für den Weg.", map: "In Maps öffnen", photo: "Foto",
+      places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt - die meisten in 20 Minuten zu Fuß. Karte antippen für den Weg.", map: "In Maps öffnen", photo: "Foto",
       cat_food: "Essen & Restaurants", cat_culture: "Kultur & Stadtevents", cat_nightlife: "Nachtleben & Partys",
       footer: "Mit Liebe von Ihrem Gastgeber. Viel Spaß in Florentin!",
       stay_until: d => `Veranstaltungen während Ihres Aufenthalts · bis ${d}`,
@@ -48,11 +50,12 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
+      sos_static2: "Sirène → chambre d'Oren, à côté du salon. Restez 10 min.", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
       tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Cette semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Guide de l'appart Florentin", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
-      places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville, tous à deux pas. Touchez une carte pour l'itinéraire.", map: "Ouvrir dans Maps", photo: "Photo",
+      places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville - la plupart à 20 minutes à pied. Touchez une carte pour l'itinéraire.", map: "Ouvrir dans Maps", photo: "Photo",
       cat_food: "Cuisine & restaurants", cat_culture: "Culture & événements", cat_nightlife: "Vie nocturne & soirées",
       footer: "Préparé avec soin par votre hôte. Profitez de Florentin !",
       stay_until: d => `Événements pendant votre séjour · jusqu'au ${d}`,
@@ -67,11 +70,12 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
+      sos_static2: "אזעקה ← לחדר של אורן, מהסלון. 10 דקות.", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
       tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
-      first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על אריח.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
+      first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "מדריך הדירה בפלורנטין", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
-      places_title: "מקומות שאנחנו אוהבים", places_lead: "הפינות האהובות עלינו בעיר, כולן קרובות. לחצו על כרטיס למפה.", map: "פתיחה במפות", photo: "צילום",
+      places_title: "מקומות שאנחנו אוהבים", places_lead: "הפינות האהובות עלינו בעיר - רובן ב-20 דקות הליכה. לחצו על כרטיס למפה.", map: "פתיחה במפות", photo: "צילום",
       cat_food: "אוכל ומסעדות", cat_culture: "תרבות ואירועים", cat_nightlife: "חיי לילה ומסיבות",
       footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
       stay_until: d => `אירועים במהלך השהות · עד ${d}`,
@@ -99,7 +103,9 @@
     const co = q.get("checkout") || "";
     let touched = false;
     if (g) { setGuestName(g); touched = true; }
-    if (/^\d{4}-\d{2}-\d{2}$/.test(co)) { try { localStorage.setItem("checkout", co); } catch (_) {} touched = true; }
+    let iso = /^\d{4}-\d{2}-\d{2}$/.test(co) ? co : "";
+    if (!iso && co) { const dt = new Date(co); if (!isNaN(dt)) iso = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`; }
+    if (iso) { try { localStorage.setItem("checkout", iso); } catch (_) {} touched = true; }
     if (touched) { q.delete("guest"); q.delete("checkout"); history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash); }
   })();
 
@@ -142,6 +148,9 @@
     return v && typeof v === "object" ? (v[state.lang] ?? v.en ?? "") : (v ?? "");
   });
   const t = key => UI[state.lang][key];
+  const ARROW = () => state.lang === "he" ? "←" : "→";
+  // "until 17:00, closed Sat" style hour strings -> localised
+  const hoursText = h => String(h || "").replace(/\b24\/7\b/, t("open_247")).replace(/\buntil\b/g, t("until")).replace(/\bfrom\b/g, t("from")).replace(/closed Sat/g, t("closed_sat")).replace(/open Shabbat/g, t("open_sat"));
 
   // Names mentioned in text become links: places -> their card, apartment cards -> the card,
   // shops/restaurants -> their map link. Built from the JSON, so nothing to maintain by hand.
@@ -170,15 +179,20 @@
     if (kitchenPage) for (const k of ["The full guide", "full kitchen guide", "kitchen guide", "Die vollständige Anleitung", "Küchenguide", "Le guide complet", "guide cuisine", "המדריך המלא", "מדריך המטבח"])
       add(k, kitchenPage.href + "?lang=" + state.lang, "page");
   }
-  function rich(text) {
+  function rich(text, selfId) {
     text = String(text);
     if (!LINKS.size) return [text];
     const keys = [...LINKS.keys()].sort((a, b) => b.length - a.length);
-    const re = new RegExp(keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "g");
+    const re = new RegExp("(" + keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")", "g");
+    const isLetter = ch => /[\p{L}\p{N}]/u.test(ch || "");
     const out = []; let last = 0, m;
     while ((m = re.exec(text))) {
-      if (m.index > last) out.push(text.slice(last, m.index));
+      const before = text[m.index - 1], after = text[m.index + m[0].length];
+      // whole words only (a Hebrew prefix letter ו/ב/ל/מ/ה/ש/כ directly before is fine)
+      if (isLetter(after) || (isLetter(before) && !(/[ובלמהשכ]/.test(before) && !isLetter(text[m.index - 2])))) continue;
       const { href, kind } = LINKS.get(m[0]);
+      if (selfId && href === "#card-" + selfId) continue;
+      if (m.index > last) out.push(text.slice(last, m.index));
       const attrs = { class: "auto " + kind, href };
       if (kind === "out") { attrs.target = "_blank"; attrs.rel = "noopener"; }
       else if (kind === "page") { /* same tab */ }
@@ -242,7 +256,8 @@
 
     const wa = document.getElementById("wa-btn");
     const num = state.house && String(state.house.host.whatsapp || "").replace(/\D/g, "");
-    if (num) { wa.href = `https://wa.me/${num}`; wa.hidden = false; } else wa.hidden = true;
+    if (num) wa.href = `https://wa.me/${num}`;
+    wa.hidden = !(num || wa.getAttribute("href"));
 
     // date picker for the events section
     const { today, checkout, source } = currentStay();
@@ -304,7 +319,7 @@
         body.append(el("div", { class: "tel" },
           c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label)))));
       }
-      if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host))))));
+      if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
       if (c.video) {
         body.append(el("video", { class: "card-video", src: c.video.src, poster: c.video.poster || "", muted: "", loop: "", playsinline: "", controls: "", preload: "none" }));
         body.append(el("p", { class: "muted small" }, L_(c.video.caption)));
@@ -316,19 +331,20 @@
             el("img", { src: r.image, alt: "", loading: "lazy", onerror: e => e.target.closest(".row-pic").remove() })) : null,
           el("div", { class: "row-txt" },
             el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
-            el("span", { class: "muted" }, ` · ${r.where} · ${r.hours}`),
+            el("span", { class: "muted" }, ` · ${r.where} · ${hoursText(r.hours)}`),
+            r.shabbat === true ? el("span", { class: "badge sat" }, t("open_sat")) : null,
             r.note ? el("div", { class: "muted small" }, L_(r.note)) : null,
             (r.links || r.image_credit) ? el("div", { class: "row-links small" },
-              ...(r.links || []).map(l => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label + " →")),
+              ...(r.links || []).map(l => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label + " " + ARROW())),
               r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : null) : null)))));
       }
       for (const sec of c.sections || []) {
         body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
         if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && L_(sec.image_alt)) || "", loading: "lazy", onerror: e => e.target.remove() }));
-        if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, ...rich(fill(s, host))))));
+        if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
       }
       if (c.link) body.append(el("div", { class: "tel" },
-        el("a", { href: `${c.link.href}?lang=${L}` }, L_(c.link.label) + " →")));
+        el("a", { href: `${c.link.href}?lang=${L}` }, L_(c.link.label) + " " + ARROW())));
 
       const card = el("details", { class: "card" + (c.emergency ? " emergency" : ""), id: "card-" + c.id },
         el("summary", {},
@@ -356,7 +372,7 @@
           el("p", {}, ...rich(L_(p.text))),
           el("div", { class: "place-foot" },
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
-            el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " →")))));
+            el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));
     }
   }
 
@@ -433,7 +449,7 @@
         el("p", {}, L_(it.blurb)),
         el("div", { class: "foot-row" },
           el("span", { class: "src" }, `${t("source")} ${host}`),
-          el("a", { href: it.url, target: "_blank", rel: "noopener" }, t("more") + " →"))));
+          el("a", { href: it.url, target: "_blank", rel: "noopener" }, t("more") + " " + ARROW()))));
     }
   }
 
@@ -460,9 +476,9 @@
   }));
 
   // The Emergency button also opens the card, not just scrolls to it
-  document.getElementById("sos-btn").addEventListener("click", () => {
+  document.querySelectorAll("#sos-btn, #sos-brand").forEach(b => b.addEventListener("click", () => {
     const card = document.getElementById("card-emergency"); if (card) card.open = true;
-  });
+  }));
   document.getElementById("checkout-input").addEventListener("change", e => {
     setGuestCheckout(e.target.value || null); renderChrome(); renderEvents();
   });
@@ -475,7 +491,7 @@
 
   // Each part renders as soon as its own file arrives: a slow or failed events feed
   // never delays the apartment / emergency cards.
-  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); }).catch(() => { state.house = null; });
+  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
   getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {

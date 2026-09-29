@@ -8,7 +8,7 @@
       "en": "the protected room (mamad), which is Oren's bedroom off the living room (marked in the photo) - just go straight in, no need to knock, even if he isn't home",
       "de": "den Schutzraum (Mamad) - das ist Orens Schlafzimmer neben dem Wohnzimmer (im Foto markiert). Einfach direkt hineingehen, ohne anzuklopfen, auch wenn er nicht da ist",
       "fr": "la pièce blindée (mamad), qui est la chambre d'Oren donnant sur le salon (encadrée sur la photo) - entrez directement, sans frapper, même s'il n'est pas là",
-      "he": "הממ\"ד - זה החדר של אורן, הנכנס מהסלון (מסומן בתמונה). פשוט להיכנס ישר, בלי לדפוק, גם אם הוא לא בבית"
+      "he": "הממ\"ד - החדר של אורן, שנכנסים אליו מהסלון (מסומן בתמונה). פשוט להיכנס, בלי לדפוק, גם אם הוא לא בבית"
     },
     "boiler_switch": {
       "en": "by the front door, at the entrance to the apartment",
@@ -241,7 +241,6 @@
       ],
       "thumb": "assets/img/house/thumb/kitchen.jpg",
       "group": "comfort",
-      "first_hour": 5,
       "image": "assets/img/house/ninja-combi.jpg",
       "image_alt": {
         "en": "The Ninja Combi - oven, air fryer and steamer in one",
@@ -300,7 +299,7 @@
       },
       "thumb": "assets/img/house/thumb/tami4.jpg",
       "group": "comfort",
-      "first_hour": 2
+      "first_hour": 5
     },
     {
       "id": "ac",
@@ -409,7 +408,7 @@
       ],
       "thumb": "assets/img/house/thumb/ac.jpg",
       "group": "comfort",
-      "first_hour": 3
+      "first_hour": 1
     },
     {
       "id": "tv",
@@ -526,7 +525,7 @@
       ],
       "thumb": "assets/img/house/thumb/tv.jpg",
       "group": "comfort",
-      "first_hour": 4
+      "first_hour": 3
     },
     {
       "id": "hot_water",
@@ -578,7 +577,7 @@
       },
       "thumb": "assets/img/house/thumb/hot_water.jpg",
       "group": "comfort",
-      "first_hour": 1
+      "first_hour": 2
     },
     {
       "id": "laundry",
@@ -616,6 +615,54 @@
       "group": "comfort"
     },
     {
+      "id": "checkout",
+      "icon": "🧳",
+      "group": "comfort",
+      "first_hour": 4,
+      "title": {
+        "en": "Check-out",
+        "de": "Check-out",
+        "fr": "Départ",
+        "he": "צ'ק-אאוט"
+      },
+      "sub": {
+        "en": "By {{checkout_time}} - three things to do",
+        "de": "Bis {{checkout_time}} - drei Dinge",
+        "fr": "Avant {{checkout_time}} - trois choses à faire",
+        "he": "עד {{checkout_time}} - שלושה דברים"
+      },
+      "items": {
+        "en": [
+          "Switch off the AC and the lights.",
+          "Pull the door shut behind you - it locks itself, there are no keys to return.",
+          "Send Oren a message so he knows the room is free.",
+          "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk).",
+          "Left something behind? Message Oren - he'll check."
+        ],
+        "de": [
+          "Klimaanlage und Licht ausschalten.",
+          "Tür hinter sich zuziehen - sie schließt von selbst, es gibt keine Schlüssel abzugeben.",
+          "Oren eine Nachricht schicken, damit er weiß, dass das Zimmer frei ist.",
+          "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß).",
+          "Etwas vergessen? Oren schreiben - er schaut nach."
+        ],
+        "fr": [
+          "Éteignez la clim et les lumières.",
+          "Tirez la porte derrière vous - elle se verrouille seule, il n'y a pas de clés à rendre.",
+          "Envoyez un message à Oren pour qu'il sache que la chambre est libre.",
+          "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied).",
+          "Oublié quelque chose ? Écrivez à Oren - il vérifiera."
+        ],
+        "he": [
+          "מכבים מזגן ואורות.",
+          "סוגרים את הדלת מאחוריכם - היא ננעלת לבד, אין מפתחות להחזיר.",
+          "שולחים לאורן הודעה כדי שידע שהחדר פנוי.",
+          "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה).",
+          "שכחתם משהו? כתבו לאורן - הוא יבדוק."
+        ]
+      }
+    },
+    {
       "id": "emergency",
       "icon": "🆘",
       "emergency": true,
@@ -626,10 +673,10 @@
         "he": "חירום"
       },
       "sub": {
-        "en": "Numbers, shelter, hospital",
-        "de": "Nummern, Schutzraum, Krankenhaus",
-        "fr": "Numéros, abri, hôpital",
-        "he": "מספרים, מקלט, בית חולים"
+        "en": "Siren? Go to Oren's room, off the living room. Numbers, hospital",
+        "de": "Sirene? In Orens Zimmer neben dem Wohnzimmer. Notrufnummern, Krankenhaus",
+        "fr": "Sirène ? Dans la chambre d'Oren, à côté du salon. Numéros, hôpital",
+        "he": "אזעקה? לחדר של אורן, מהסלון. מספרים, בית חולים"
       },
       "tel": [
         {
@@ -662,33 +709,41 @@
       ],
       "items": {
         "en": [
-          "Address to give emergency services: it is on the printed card by the door and in your Airbnb booking.",
-          "Rocket alert siren: in Tel Aviv you have about 90 seconds. Go immediately to {{shelter}}, close the door and stay for 10 minutes after the siren ends. The free Home Front Command app (\"Pikud HaOref\") sends alerts in English - worth installing on arrival.",
-          "Once inside: close the heavy steel door and lift its handle up 90° until it locks. That's the whole procedure - the steel window is already closed. (Official Home Front Command guidance.)",
+          "🚨 Siren = rocket alert. In Tel Aviv you have about 90 seconds.",
+          "Go straight into {{shelter}}. Don't knock, don't wait for anyone.",
+          "Close the steel door and lift its handle up. Stay 10 minutes after the siren ends. (The window is already sealed.)",
+          "The free Home Front Command app (\"Pikud HaOref\") sends alerts in English - worth installing on arrival.",
+          "Address to give emergency services: on the printed card by the door and in your Airbnb booking.",
           "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
           "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7.",
           "To reach your host: the WhatsApp button at the top of this page, or the Airbnb app."
         ],
         "de": [
-          "Adresse für Rettungsdienste: steht auf der Karte neben der Tür und in Ihrer Airbnb-Buchung.",
-          "Raketenalarm (Sirene): In Tel Aviv haben Sie etwa 90 Sekunden. Sofort in {{shelter}} gehen, Tür schließen und nach Ende der Sirene noch 10 Minuten bleiben. Die kostenlose App des Heimatfrontkommandos (\"Pikud HaOref\") warnt auf Englisch - bei Ankunft installieren.",
-          "Drinnen: die schwere Stahltür schließen und den Griff um 90° nach oben drücken, bis er einrastet. Das ist alles - das Stahlfenster ist bereits geschlossen. (Offizielle Anleitung des Heimatfrontkommandos.)",
+          "🚨 Sirene = Raketenalarm. In Tel Aviv haben Sie etwa 90 Sekunden.",
+          "Gehen Sie direkt in {{shelter}}. Nicht anklopfen, auf niemanden warten.",
+          "Stahltür schließen und den Griff nach oben drücken. 10 Minuten nach Ende der Sirene bleiben. (Das Fenster ist bereits verschlossen.)",
+          "Die kostenlose App des Heimatfrontkommandos (\"Pikud HaOref\") schickt Warnungen auf Englisch - bei Ankunft installieren.",
+          "Adresse für den Notruf: auf der gedruckten Karte an der Tür und in Ihrer Airbnb-Buchung.",
           "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
-          "Apotheken (Super-Pharm, Be) gibt es überall; einige haben lange oder rund um die Uhr geöffnet.",
-          "Ihren Gastgeber erreichen Sie über den WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
+          "Apotheken (Super-Pharm, Be) gibt es überall; einige haben spät oder rund um die Uhr offen.",
+          "Gastgeber erreichen: WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
         ],
         "fr": [
-          "Adresse à donner aux secours : elle figure sur la carte près de la porte et dans votre réservation Airbnb.",
-          "Sirène d'alerte roquettes : à Tel Aviv vous avez environ 90 secondes. Allez immédiatement dans {{shelter}}, fermez la porte et restez 10 minutes après la fin de la sirène. L'appli gratuite du Commandement du front intérieur (\"Pikud HaOref\") envoie les alertes en anglais - à installer dès l'arrivée.",
-          "Une fois à l'intérieur : fermez la lourde porte en acier et relevez la poignée de 90° jusqu'au verrouillage. C'est toute la procédure - la fenêtre en acier est déjà fermée. (Consignes officielles du Commandement du front intérieur.)",
+          "🚨 Sirène = alerte roquette. À Tel Aviv vous avez environ 90 secondes.",
+          "Entrez directement dans {{shelter}}. Ne frappez pas, n'attendez personne.",
+          "Fermez la porte en acier et levez la poignée. Restez 10 minutes après la fin de la sirène. (La fenêtre est déjà scellée.)",
+          "L'appli gratuite du Commandement du front intérieur (\"Pikud HaOref\") envoie les alertes en anglais - à installer à l'arrivée.",
+          "Adresse à donner aux secours : sur la carte imprimée près de la porte et dans votre réservation Airbnb.",
           "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
-          "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvrent tard ou 24h/24.",
-          "Pour joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
+          "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvertes tard ou 24h/24.",
+          "Joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
         ],
         "he": [
-          "הכתובת למסירה לשירותי החירום: על הכרטיס המודפס ליד הדלת ובהזמנה שלכם ב-Airbnb.",
-          "אזעקה: בתל אביב יש כ-90 שניות. ללכת מיד אל {{shelter}}, לסגור את הדלת ולהישאר 10 דקות אחרי סיום האזעקה. אפליקציית פיקוד העורף החינמית שולחת התרעות - כדאי להתקין עם ההגעה.",
-          "בפנים: לסגור את דלת הפלדה הכבדה ולהרים את הידית 90° עד שהיא ננעלת. זה כל התהליך - חלון הפלדה כבר סגור. (הנחיות פיקוד העורף.)",
+          "🚨 אזעקה = התרעה על טילים. בתל אביב יש כ-90 שניות.",
+          "נכנסים ישר אל {{shelter}}. לא דופקים, לא מחכים לאף אחד.",
+          "סוגרים את דלת הפלדה ומרימים את הידית למעלה. נשארים 10 דקות אחרי סיום האזעקה. (החלון כבר אטום.)",
+          "אפליקציית פיקוד העורף החינמית שולחת התרעות - כדאי להתקין עם ההגעה.",
+          "הכתובת למסירה לשירותי החירום: על הכרטיס המודפס ליד הדלת ובהזמנה ב-Airbnb.",
           "בית החולים הקרוב עם מיון 24/7: איכילוב (המרכז הרפואי ת\"א ע\"ש סוראסקי), ויצמן 6 - כ-15 דקות במונית.",
           "בתי מרקחת (סופר-פארם, Be) בכל העיר; חלקם פתוחים עד מאוחר או 24/7.",
           "ליצירת קשר עם המארח: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
@@ -762,7 +817,7 @@
           "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
           "No pets, sorry.",
           "Quiet after 23:00, please - I get up at 6 for work.",
-          "Check-out is at {{checkout_time}}: switch off the AC and the lights, pull the door shut behind you (it locks itself - no keys) and drop me a message. To the airport: the Gett taxi app or the train from HaHagana station. Thank you!"
+          "Check-out is at {{checkout_time}} - see the Check-out card."
         ],
         "de": [
           "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
@@ -775,7 +830,7 @@
           "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
           "Leider keine Haustiere.",
           "Nach 23 Uhr bitte leise - ich stehe um 6 Uhr für die Arbeit auf.",
-          "Check-out um {{checkout_time}}: Klimaanlage und Licht aus, Tür hinter sich zuziehen (sie schließt von selbst - keine Schlüssel) und kurz Bescheid geben. Zum Flughafen: Taxi-App Gett oder Zug ab Bahnhof HaHagana. Danke!"
+          "Check-out um {{checkout_time}} - siehe Karte Check-out."
         ],
         "fr": [
           "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
@@ -788,7 +843,7 @@
           "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
           "Pas d'animaux, désolé.",
           "Silence après 23 h, s'il vous plaît - je me lève à 6 h pour le travail.",
-          "Départ à {{checkout_time}} : éteignez la clim et les lumières, tirez la porte derrière vous (elle se verrouille seule - pas de clés) et envoyez-moi un petit message. Pour l'aéroport : l'appli de taxi Gett ou le train depuis la gare HaHagana. Merci !"
+          "Départ à {{checkout_time}} - voir la carte Départ."
         ],
         "he": [
           "יש לכם חדר פרטי משלכם; המטבח, השירותים והסלון משותפים עם אורן, שגר כאן גם. תרגישו בבית - ותגידו שלום!",
@@ -801,7 +856,7 @@
           "בלי מסיבות או אירועים, ובלי אורחים ללינה מעבר לאורח שבהזמנה (אורחים נוספים כרוכים בתשלום נוסף ב-Airbnb).",
           "בלי חיות מחמד, מצטער.",
           "שקט אחרי 23:00 בבקשה - אני קם ב-6 לעבודה.",
-          "צ'ק-אאוט ב-{{checkout_time}}: לכבות מזגן ואורות, לסגור את הדלת מאחוריכם (היא ננעלת לבד - אין מפתחות) ולשלוח לי הודעה. לשדה התעופה: אפליקציית Gett או הרכבת מתחנת ההגנה. תודה!"
+          "צ'ק-אאוט ב-{{checkout_time}} - ראו כרטיס צ'ק-אאוט."
         ]
       },
       "group": "safe"
@@ -854,7 +909,8 @@
                 "fr": "supermarché le plus proche, toujours ouvert",
                 "he": "הסופר הקרוב ביותר, תמיד פתוח"
               },
-              "url": "https://www.google.com/maps/place/%D7%A1%D7%95%D7%A4%D7%A8+%D7%99%D7%95%D7%93%D7%94/@32.0588647,34.7703586,17z/data=!4m6!3m5!1s0x151d4df7f042db31:0x8c874d48ef03d71b!8m2!3d32.0588647!4d34.7703586!16s"
+              "url": "https://www.google.com/maps/place/%D7%A1%D7%95%D7%A4%D7%A8+%D7%99%D7%95%D7%93%D7%94/@32.0588647,34.7703586,17z/data=!4m6!3m5!1s0x151d4df7f042db31:0x8c874d48ef03d71b!8m2!3d32.0588647!4d34.7703586!16s",
+              "shabbat": true
             },
             {
               "name": "Super El HaYam",
@@ -866,7 +922,8 @@
                 "fr": "supermarché du quartier, toujours ouvert",
                 "he": "סופר שכונתי, תמיד פתוח"
               },
-              "url": "https://www.google.com/maps/place/%D7%A1%D7%95%D7%A4%D7%A8+%D7%90%D7%9C+%D7%94%D7%99%D7%9D/@32.0585396,34.7685471,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d6497656ca3:0x507482c4fe26d5ef!8m2!3d32.0585396!4d34.7685471!16s%2Fg%2F11h056qjq5"
+              "url": "https://www.google.com/maps/place/%D7%A1%D7%95%D7%A4%D7%A8+%D7%90%D7%9C+%D7%94%D7%99%D7%9D/@32.0585396,34.7685471,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d6497656ca3:0x507482c4fe26d5ef!8m2!3d32.0585396!4d34.7685471!16s%2Fg%2F11h056qjq5",
+              "shabbat": true
             },
             {
               "name": "Mama",
@@ -926,7 +983,8 @@
                 "fr": "chaîne de dépannage, plus cher",
                 "he": "רשת נוחות, יקר יותר"
               },
-              "url": "https://www.google.com/maps/place/AM:PM/@32.0579528,34.7708854,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d4234caee05:0xd1c0f96e31201d72!8m2!3d32.0579528!4d34.7708854!16s%2Fg%2F11jgd1lp1r"
+              "url": "https://www.google.com/maps/place/AM:PM/@32.0579528,34.7708854,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d4234caee05:0xd1c0f96e31201d72!8m2!3d32.0579528!4d34.7708854!16s%2Fg%2F11jgd1lp1r",
+              "shabbat": true
             },
             {
               "name": "Tiv Taam IN THE CITY",
@@ -938,7 +996,8 @@
                 "fr": "non casher, porc et vin",
                 "he": "לא כשר, חזיר ויין"
               },
-              "url": "https://www.google.com/maps/place/IN+THE+CITY+%D7%98%D7%99%D7%91+%D7%98%D7%A2%D7%9D/@32.0564932,34.7596358,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4cbda310aa9f:0x100aaccc9c618da8!8m2!3d32.0564932!4d34.7596358!16s%2Fg%2F11bvtlmmxk"
+              "url": "https://www.google.com/maps/place/IN+THE+CITY+%D7%98%D7%99%D7%91+%D7%98%D7%A2%D7%9D/@32.0564932,34.7596358,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4cbda310aa9f:0x100aaccc9c618da8!8m2!3d32.0564932!4d34.7596358!16s%2Fg%2F11bvtlmmxk",
+              "shabbat": true
             }
           ]
         },
@@ -960,7 +1019,8 @@
                 "fr": "épices, fruits secs, olives, burekas - 5 min",
                 "he": "תבלינים, אגוזים, זיתים, בורקס - 5 דקות"
               },
-              "url": "https://www.google.com/maps/place/Levinski+Market/@32.0594379,34.7728971,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9de840d371:0x89c37aa6e94d6bd2!8m2!3d32.0594379!4d34.7728971!16s%2Fg%2F11b7jx1v0k"
+              "url": "https://www.google.com/maps/place/Levinski+Market/@32.0594379,34.7728971,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9de840d371:0x89c37aa6e94d6bd2!8m2!3d32.0594379!4d34.7728971!16s%2Fg%2F11b7jx1v0k",
+              "shabbat": false
             },
             {
               "name": "Carmel Market",
@@ -972,7 +1032,8 @@
                 "fr": "le grand marché - fruits, légumes, street food - 15 min",
                 "he": "הגדול - פירות, ירקות, אוכל רחוב - 15 דקות"
               },
-              "url": "https://www.google.com/maps/place/Carmel+Market/@32.0679,34.7686,17z/data=!4m2!3m1!1s0x151d4c838cd36c43:0xbf91643716c6f7f3"
+              "url": "https://www.google.com/maps/place/Carmel+Market/@32.0679,34.7686,17z/data=!4m2!3m1!1s0x151d4c838cd36c43:0xbf91643716c6f7f3",
+              "shabbat": false
             }
           ]
         }
@@ -989,10 +1050,10 @@
         "he": "איפה אורן אוכל"
       },
       "sub": {
-        "en": "Hummus, sabich, burekas, shawarma, fish, pasta, ice cream - all walkable",
-        "de": "Hummus, Sabich, Burekas, Schawarma, Fisch, Pasta, Eis - alles zu Fuß",
-        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace - tout à pied",
-        "he": "חומוס, סביח, בורקס, שווארמה, דגים, פסטה, גלידה - הכול במרחק הליכה"
+        "en": "Hummus, sabich, burekas, shawarma, fish, pasta, ice cream - look for the yellow 'Open Sat' tag",
+        "de": "Hummus, Sabich, Burekas, Schawarma, Fisch, Pasta, Eis - gelbes Etikett = samstags offen",
+        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace - étiquette jaune = ouvert le samedi",
+        "he": "חומוס, סביח, בורקס, שווארמה, דגים, פסטה, גלידה - תג צהוב = פתוח בשבת"
       },
       "items": {
         "en": [
@@ -1031,7 +1092,8 @@
               "image": "assets/img/eat/garger.jpg",
               "image_credit": "Orenrosenfeld, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hummus_plate.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": false
             },
             {
               "name": "Sabich Frishman",
@@ -1063,7 +1125,8 @@
               "image": "assets/img/eat/burekas.jpg",
               "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Burekas_Israeli_breakfast.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": false
             },
             {
               "name": "Turk Lahmajoun",
@@ -1079,7 +1142,8 @@
               "image": "assets/img/eat/lahmajoun.jpg",
               "image_credit": "Christopher, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lahmacun_(Turkish_Pizza).jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by/2.0"
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+              "shabbat": false
             }
           ]
         },
@@ -1328,7 +1392,7 @@
               "Ne laissez pas d'objets de valeur sur la serviette pendant la baignade - alternez, ou venez avec juste une carte et une clé."
             ],
             "he": [
-              "שוחים רק ליד מציל ומסתכלים על הדגל: לבן = רגוע, אדום = זהירות, שחור = אסור לשחות. יש כאן זרמי שובר אמיתיים.",
+              "שוחים רק ליד מציל ומסתכלים על הדגל: לבן = רגוע, אדום = זהירות, שחור = אסור לשחות. יש כאן זרמים חוזרים (rip currents) אמיתיים.",
               "שמש: חזקה מאפריל עד אוקטובר - קרם הגנה, כובע וצל של שמשייה (להשכרה). השקיעה בערך ב-19:30 בקיץ וב-17:00 בחורף; כולם עוצרים להסתכל.",
               "מדוזות מגיעות לכמה שבועות ביולי-אוגוסט; המצילים תולים שלט. חומץ עוזר לעקיצה.",
               "מזג אוויר: חם ולח מאי-אוקטובר (30-35°), נעים נובמבר-מרץ (15-20°) עם כמה ימי גשם. המזגן מתמודד עם שניהם.",
@@ -1455,7 +1519,7 @@
           "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה → טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
         ]
       },
-      "group": "local"
+      "group": "safe"
     }
   ],
   "groups": {
@@ -1466,10 +1530,10 @@
       "he": "להתמקם"
     },
     "safe": {
-      "en": "Stay safe & happy",
-      "de": "Sicher & entspannt",
-      "fr": "Sécurité et bonne entente",
-      "he": "בטוחים ומרוצים"
+      "en": "Good to know",
+      "de": "Gut zu wissen",
+      "fr": "Bon à savoir",
+      "he": "טוב לדעת"
     },
     "local": {
       "en": "Go local",
