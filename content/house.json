@@ -299,7 +299,7 @@
       },
       "thumb": "assets/img/house/thumb/tami4.jpg",
       "group": "comfort",
-      "first_hour": 5
+      "first_hour": 4
     },
     {
       "id": "ac",
@@ -618,7 +618,6 @@
       "id": "checkout",
       "icon": "🧳",
       "group": "comfort",
-      "first_hour": 4,
       "title": {
         "en": "Check-out",
         "de": "Check-out",
