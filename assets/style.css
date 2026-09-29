@@ -274,3 +274,10 @@ body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
   .lang button { min-width: 40px; padding: 10px 9px; }
   .top { gap: 8px; }
 }
+
+/* Belt and braces against horizontal scroll on phones */
+html, body { max-width: 100vw; }
+.strip { max-width: 100vw; }
+/* Softer decorative blobs in dark mode */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .block::before, :root:not([data-theme="light"]) .hero::after { opacity: .22; } }
+:root[data-theme="dark"] .block::before, :root[data-theme="dark"] .hero::after { opacity: .22; }
