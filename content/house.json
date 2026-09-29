@@ -701,16 +701,6 @@
         "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange",
         "he": "המקלט (ממ\"ד) הוא החדר של אורן - הפתח מסומן בכתום"
       },
-      "video": {
-        "src": "assets/video/shelter.mp4",
-        "poster": "assets/video/shelter-poster.jpg",
-        "caption": {
-          "en": "Illustration: walk in, close the steel door, lift the handle. Your door looks different - the moves are the same.",
-          "de": "Illustration: hineingehen, Stahltür schließen, Griff nach oben. Ihre Tür sieht anders aus - die Handgriffe sind dieselben.",
-          "fr": "Illustration : entrer, fermer la porte en acier, relever la poignée. Votre porte est différente - les gestes sont les mêmes.",
-          "he": "המחשה: נכנסים, סוגרים את דלת הפלדה, מרימים את הידית. הדלת שלכם נראית אחרת - התנועות זהות."
-        }
-      },
       "thumb": "assets/img/house/thumb/emergency.jpg",
       "group": "safe"
     },
