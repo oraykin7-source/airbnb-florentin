@@ -935,7 +935,8 @@
                 "fr": "épicerie fine & minimarket - charcuterie, fromages, viande non casher, produits russes/ukrainiens",
                 "he": "מעדנייה ומינימרקט - נקניקים, גבינות, בשר לא כשר, מוצרים רוסיים/אוקראיניים"
               },
-              "url": "https://www.google.com/maps/place/Mama/@32.0591882,34.7736851,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9df0829671:0x2d039c28ac820a3f!8m2!3d32.0591882!4d34.7736851!16s%2Fg%2F11cn0rgtpm"
+              "url": "https://www.google.com/maps/place/Mama/@32.0591882,34.7736851,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9df0829671:0x2d039c28ac820a3f!8m2!3d32.0591882!4d34.7736851!16s%2Fg%2F11cn0rgtpm",
+              "shabbat": false
             },
             {
               "name": "Shufersal Express",
@@ -947,7 +948,8 @@
                 "fr": "grande chaîne, bons prix",
                 "he": "רשת גדולה, מחירים טובים"
               },
-              "url": "https://www.google.com/maps/place/Shufersal+Express/@32.0562844,34.7697156,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9f3e838c03:0x372109d0709ed963!8m2!3d32.0562844!4d34.7697156!16s%2Fg%2F11c328n7x7"
+              "url": "https://www.google.com/maps/place/Shufersal+Express/@32.0562844,34.7697156,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9f3e838c03:0x372109d0709ed963!8m2!3d32.0562844!4d34.7697156!16s%2Fg%2F11c328n7x7",
+              "shabbat": false
             },
             {
               "name": "Super Levinsky",
@@ -959,7 +961,8 @@
                 "fr": "fruits et légumes, angle Derech Yafo",
                 "he": "פירות וירקות, פינת דרך יפו"
               },
-              "url": "https://www.google.com/maps/place/Super+Levinsky/@32.0582903,34.7759643,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b8d00f2e8bf:0xbc519a8cf02e9ad8!8m2!3d32.0582903!4d34.7759643!16s%2Fg%2F11scppfhzd"
+              "url": "https://www.google.com/maps/place/Super+Levinsky/@32.0582903,34.7759643,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b8d00f2e8bf:0xbc519a8cf02e9ad8!8m2!3d32.0582903!4d34.7759643!16s%2Fg%2F11scppfhzd",
+              "shabbat": false
             },
             {
               "name": "Minimarket Levinsky",
@@ -971,7 +974,8 @@
                 "fr": "petite épicerie",
                 "he": "מכולת קטנה"
               },
-              "url": "https://www.google.com/maps/place/%D7%9E%D7%99%D7%A0%D7%99%D7%9E%D7%A8%D7%A7%D7%98+%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99/@32.0588142,34.775272,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b62173d5487:0xad1f2e9a865f3d48!8m2!3d32.0588142!4d34.775272!16s%2Fg%2F11c5fz9svk"
+              "url": "https://www.google.com/maps/place/%D7%9E%D7%99%D7%A0%D7%99%D7%9E%D7%A8%D7%A7%D7%98+%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99/@32.0588142,34.775272,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b62173d5487:0xad1f2e9a865f3d48!8m2!3d32.0588142!4d34.775272!16s%2Fg%2F11c5fz9svk",
+              "shabbat": false
             },
             {
               "name": "AM:PM",
@@ -1109,7 +1113,8 @@
               "image": "assets/img/eat/sabich.jpg",
               "image_credit": "Avi1111 dr. avishai teicher, CC BY 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sabich_Square_6.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by/4.0"
+              "image_license_url": "https://creativecommons.org/licenses/by/4.0",
+              "shabbat": false
             },
             {
               "name": "Burekas shel Ima",
@@ -1158,7 +1163,7 @@
             {
               "name": "HaShachaf",
               "where": "Herzl St 22",
-              "hours": "from 17:00",
+              "hours": "evenings from 17:00, open Shabbat",
               "note": {
                 "en": "fish & seafood, Greek style - octopus, fish carpaccio. Same corner as Mirage, by Park HaMesila",
                 "de": "Fisch & Meeresfrüchte auf griechische Art - Oktopus, Fisch-Carpaccio. Gleiche Ecke wie Mirage, am Park HaMesila",
@@ -1179,7 +1184,8 @@
                   "label": "Instagram",
                   "url": "https://www.instagram.com/hashachaf_tlv/"
                 }
-              ]
+              ],
+              "shabbat": true
             },
             {
               "name": "Cena",
@@ -1195,7 +1201,8 @@
               "image": "assets/img/eat/cena.jpg",
               "image_credit": "10Rosso, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro_3.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by/2.0"
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+              "shabbat": false
             },
             {
               "name": "Mirage (Eyal Shani)",
@@ -1211,7 +1218,8 @@
               "image": "assets/img/eat/mirage.jpg",
               "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_%E2%80%93_Whole_roasted_cauliflower.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": true
             },
             {
               "name": "Cassata",
@@ -1227,7 +1235,8 @@
               "image": "assets/img/eat/cassata.jpg",
               "image_credit": "Jason Chung, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Gelato_in_Milan_-_big_cone_2019.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by/2.0"
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+              "shabbat": false
             }
           ]
         }
