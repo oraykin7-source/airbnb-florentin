@@ -394,3 +394,5 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 
 /* Anchored cards land just below the sticky header */
 .card, .place { scroll-margin-top: 84px; }
+
+.brand-mark.sos::after { display: block; letter-spacing: .04em; padding-inline-start: .04em; }
