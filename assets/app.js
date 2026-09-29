@@ -10,6 +10,7 @@
 
   const UI = {
     en: {
+      tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "Florentin Home Guide", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
@@ -28,6 +29,7 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
+      tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Diese Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Florentin Wohnungsguide", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
@@ -46,6 +48,7 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
+      tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Cette semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Guide de l'appart Florentin", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
@@ -64,6 +67,7 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
+      tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על אריח.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "מדריך הדירה בפלורנטין", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
@@ -138,6 +142,48 @@
     return v && typeof v === "object" ? (v[state.lang] ?? v.en ?? "") : (v ?? "");
   });
   const t = key => UI[state.lang][key];
+
+  // Names mentioned in text become links: places -> their card, apartment cards -> the card,
+  // shops/restaurants -> their map link. Built from the JSON, so nothing to maintain by hand.
+  const LINKS = new Map();
+  function registerLinks() {
+    LINKS.clear();
+    const add = (name, href, kind) => { if (name && name.length > 3) LINKS.set(name, { href, kind }); };
+    for (const c of (state.house && state.house.cards) || []) {
+      for (const L of LANGS) add(c.title[L], "#card-" + c.id, "card");
+      for (const lst of c.lists || []) for (const r of lst.rows) add(r.name, r.url, "out");
+    }
+    // places win over shop rows with the same name (Levinsky Market -> the place card, not the map)
+    for (const p of (state.places && state.places.places) || []) for (const L of LANGS) add(p.title[L], "#place-" + p.id, "in");
+    const placeAlias = { beach: ["The beach", "the beach", "Strand", "la plage", "הים", "החוף"], old_jaffa: ["Old Jaffa", "Alt-Jaffa", "vieux Jaffa", "יפו העתיקה", "flea market", "Flohmarkt", "marché aux puces", "שוק הפשפשים"],
+      jaffa_port: ["Jaffa Port", "Hafen von Jaffa", "port de Jaffa", "נמל יפו"], carmel: ["Carmel Market", "Carmel-Markt", "marché du Carmel", "שוק הכרמל"],
+      rothschild: ["Rothschild", "רוטשילד"], neve_tzedek: ["Neve Tzedek", "נווה צדק"], levinsky: ["Levinsky", "Levinski", "לוינסקי"], hatachana: ["HaTachana", "התחנה"] };
+    for (const [id, names] of Object.entries(placeAlias)) if ((state.places && state.places.places || []).some(p => p.id === id)) for (const n of names) add(n, "#place-" + id, "in");
+    // a few plain words that point at cards
+    const alias = { en: { "Groceries card": "shops", "Emergency card": "emergency", "kitchen guide": "kitchen", "House rules": "rules" },
+                    de: { "Karte Einkaufen": "shops", "Karte Notfall": "emergency", "Küchenguide": "kitchen" },
+                    fr: { "carte Courses": "shops", "carte Urgences": "emergency", "guide cuisine": "kitchen" },
+                    he: { "כרטיס קניות": "shops", "כרטיס חירום": "emergency", "מדריך המטבח": "kitchen" } };
+    for (const L of LANGS) for (const [k, id] of Object.entries(alias[L] || {})) add(k, "#card-" + id, "card");
+  }
+  function rich(text) {
+    text = String(text);
+    if (!LINKS.size) return [text];
+    const keys = [...LINKS.keys()].sort((a, b) => b.length - a.length);
+    const re = new RegExp(keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "g");
+    const out = []; let last = 0, m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) out.push(text.slice(last, m.index));
+      const { href, kind } = LINKS.get(m[0]);
+      const attrs = { class: "auto " + kind, href };
+      if (kind === "out") { attrs.target = "_blank"; attrs.rel = "noopener"; }
+      else attrs.onclick = () => { const d = document.querySelector(href); if (d && d.tagName === "DETAILS") d.open = true; };
+      out.push(el("a", attrs, m[0] + (kind === "out" ? " ↗" : "")));
+      last = m.index + m[0].length;
+    }
+    if (last < text.length) out.push(text.slice(last));
+    return out;
+  }
   const L_ = o => (o && typeof o === "object") ? (o[state.lang] ?? o.en ?? "") : (o ?? "");
 
   async function getJSON(path) {
@@ -253,7 +299,7 @@
         body.append(el("div", { class: "tel" },
           c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label)))));
       }
-      if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, fill(s, host)))));
+      if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host))))));
       if (c.video) {
         body.append(el("video", { class: "card-video", src: c.video.src, poster: c.video.poster || "", muted: "", loop: "", playsinline: "", controls: "", preload: "none" }));
         body.append(el("p", { class: "muted small" }, L_(c.video.caption)));
@@ -274,7 +320,7 @@
       for (const sec of c.sections || []) {
         body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
         if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && L_(sec.image_alt)) || "", loading: "lazy", onerror: e => e.target.remove() }));
-        if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, fill(s, host)))));
+        if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, ...rich(fill(s, host))))));
       }
       if (c.link) body.append(el("div", { class: "tel" },
         el("a", { href: `${c.link.href}?lang=${L}` }, L_(c.link.label) + " →")));
@@ -296,13 +342,13 @@
     if (!state.places) return;
     const L = state.lang;
     for (const p of state.places.places) {
-      box.append(el("article", { class: "place" },
+      box.append(el("article", { class: "place", id: "place-" + p.id },
         el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
           el("span", { class: "walk" }, L_(p.walk))),
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
-          el("p", {}, L_(p.text)),
+          el("p", {}, ...rich(L_(p.text))),
           el("div", { class: "place-foot" },
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " →")))));
@@ -324,6 +370,7 @@
     const stale = state.weekly !== undefined && feedIsStale();
     document.getElementById("week").hidden = stale;
     document.querySelector('.jump a[href="#week"]').hidden = stale;
+    const wt = document.querySelector('.tabbar a[data-target="week"]'); if (wt) wt.hidden = stale;
     if (stale) return;
     if (!state.weekly) {
       box.append(el("p", { class: "empty" }, state.weekly === null ? t("unavailable") : t("loading")));
@@ -385,7 +432,19 @@
     }
   }
 
-  function renderAll() { renderChrome(); renderHouse(); renderPlaces(); renderEvents(); }
+  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderPlaces(); renderEvents(); }
+
+  // Bottom tab bar: highlight the section in view
+  (function tabbar() {
+    const links = [...document.querySelectorAll(".tabbar a")];
+    const targets = ["top", "house", "places", "week"].map(id => document.getElementById(id)).filter(Boolean);
+    const io = new IntersectionObserver(entries => {
+      const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!vis) return;
+      links.forEach(a => a.setAttribute("aria-current", a.dataset.target === vis.target.id ? "true" : "false"));
+    }, { rootMargin: "-40% 0px -50% 0px", threshold: [0, .1, .5] });
+    targets.forEach(el => io.observe(el));
+  })();
 
   // ---------- wiring ----------
   document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
@@ -411,8 +470,8 @@
 
   // Each part renders as soon as its own file arrives: a slow or failed events feed
   // never delays the apartment / emergency cards.
-  getJSON("content/house.json").then(v => { state.house = v; renderChrome(); renderHouse(); }).catch(() => { state.house = null; });
-  getJSON("content/places.json").then(v => { state.places = v; renderPlaces(); }).catch(() => {});
+  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); }).catch(() => { state.house = null; });
+  getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {
       state.weekly = weekly.status === "fulfilled" ? weekly.value : null;

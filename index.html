@@ -27,7 +27,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <p class="eyebrow" id="eyebrow"></p>
       <h1 id="welcome">Welcome home</h1>
@@ -82,6 +82,13 @@
       <div class="events" id="events" role="tabpanel"></div>
     </section>
   </main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#top" data-target="top"><span aria-hidden="true">🏠</span><span data-i18n="tab_home">Start</span></a>
+    <a href="#house" data-target="house"><span aria-hidden="true">🛋️</span><span data-i18n="tab_house">Apartment</span></a>
+    <a href="#places" data-target="places"><span aria-hidden="true">📍</span><span data-i18n="tab_places">Places</span></a>
+    <a href="#week" data-target="week"><span aria-hidden="true">🎉</span><span data-i18n="tab_week">This week</span></a>
+  </nav>
 
   <footer class="foot">
     <p data-i18n="footer">Made with care by your host. Enjoy Florentin!</p>
