@@ -196,7 +196,7 @@
       const attrs = { class: "auto " + kind, href };
       if (kind === "out") { attrs.target = "_blank"; attrs.rel = "noopener"; }
       else if (kind === "page") { /* same tab */ }
-      else attrs.onclick = () => { const d = document.querySelector(href); if (d && d.tagName === "DETAILS") d.open = true; };
+      else attrs.onclick = e => { const d = document.querySelector(href); if (!d) return; e.preventDefault(); if (d.tagName === "DETAILS") d.open = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start", behavior: "smooth" })); };
       out.push(el("a", attrs, m[0] + (kind === "out" ? " ↗" : "")));
       last = m.index + m[0].length;
     }
@@ -286,7 +286,7 @@
     strip.replaceChildren();
     const firsts = state.house.cards.filter(c => c.first_hour).sort((a, b) => a.first_hour - b.first_hour);
     for (const c of firsts) {
-      strip.append(el("a", { class: "tile", href: "#card-" + c.id, onclick: () => { const d = document.getElementById("card-" + c.id); if (d) d.open = true; } },
+      strip.append(el("a", { class: "tile", href: "#card-" + c.id, onclick: e => { const d = document.getElementById("card-" + c.id); if (!d) return; e.preventDefault(); d.open = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start", behavior: "smooth" })); } },
         c.thumb ? el("img", { src: c.thumb, alt: "", loading: "lazy" }) : el("span", { class: "tile-ico" }, c.icon),
         el("span", { class: "tile-txt" }, el("strong", {}, L_(c.title)), el("span", {}, L_(c.sub)))));
     }
@@ -476,8 +476,10 @@
   }));
 
   // The Emergency button also opens the card, not just scrolls to it
-  document.querySelectorAll("#sos-btn, #sos-brand").forEach(b => b.addEventListener("click", () => {
-    const card = document.getElementById("card-emergency"); if (card) card.open = true;
+  document.querySelectorAll("#sos-btn, #sos-brand").forEach(b => b.addEventListener("click", e => {
+    const card = document.getElementById("card-emergency"); if (!card) return;
+    e.preventDefault(); card.open = true;
+    requestAnimationFrame(() => card.scrollIntoView({ block: "start", behavior: "smooth" }));
   }));
   document.getElementById("checkout-input").addEventListener("change", e => {
     setGuestCheckout(e.target.value || null); renderChrome(); renderEvents();
