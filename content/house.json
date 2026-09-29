@@ -299,7 +299,8 @@
       },
       "thumb": "assets/img/house/thumb/tami4.jpg",
       "group": "comfort",
-      "first_hour": 4
+      "first_hour": 4,
+      "tile": "assets/img/tiles/tami4.jpg"
     },
     {
       "id": "ac",
@@ -408,7 +409,10 @@
       ],
       "thumb": "assets/img/house/thumb/ac.jpg",
       "group": "comfort",
-      "first_hour": 1
+      "first_hour": 2,
+      "tile": "assets/img/tiles/ac.jpg",
+      "tile_credit": "Photo: Pexels",
+      "tile_credit_url": "https://www.pexels.com/photo/38788452/"
     },
     {
       "id": "tv",
@@ -525,7 +529,10 @@
       ],
       "thumb": "assets/img/house/thumb/tv.jpg",
       "group": "comfort",
-      "first_hour": 3
+      "first_hour": 3,
+      "tile": "assets/img/tiles/tv.jpg",
+      "tile_credit": "Photo: Pexels",
+      "tile_credit_url": "https://www.pexels.com/photo/21792101/"
     },
     {
       "id": "hot_water",
@@ -577,7 +584,10 @@
       },
       "thumb": "assets/img/house/thumb/hot_water.jpg",
       "group": "comfort",
-      "first_hour": 2
+      "first_hour": 1,
+      "tile": "assets/img/tiles/hot_water.jpg",
+      "tile_credit": "Photo: Karolina Grabowska, Pexels",
+      "tile_credit_url": "https://www.pexels.com/photo/4194865/"
     },
     {
       "id": "laundry",

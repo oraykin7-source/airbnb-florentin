@@ -287,7 +287,7 @@
     const firsts = state.house.cards.filter(c => c.first_hour).sort((a, b) => a.first_hour - b.first_hour);
     for (const c of firsts) {
       strip.append(el("a", { class: "tile", href: "#card-" + c.id, onclick: e => { const d = document.getElementById("card-" + c.id); if (!d) return; e.preventDefault(); d.open = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start", behavior: "smooth" })); } },
-        c.thumb ? el("img", { src: c.thumb, alt: "", loading: "lazy" }) : el("span", { class: "tile-ico" }, c.icon),
+        (c.tile || c.thumb) ? el("img", { src: c.tile || c.thumb, alt: "", loading: "lazy" }) : el("span", { class: "tile-ico" }, c.icon),
         el("span", { class: "tile-txt" }, el("strong", {}, L_(c.title)), el("span", {}, L_(c.sub)))));
     }
     document.getElementById("first").hidden = firsts.length === 0;
