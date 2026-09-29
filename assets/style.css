@@ -411,3 +411,12 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 .wm-sub { font-family: Inter, Heebo, sans-serif; font-weight: 700; font-size: .58rem; letter-spacing: .26em; text-transform: uppercase; color: var(--accent); margin-top: 3px; padding-inline-start: 4px; }
 [dir="rtl"] .wordmark { align-items: flex-start; direction: ltr; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wm-top::before { opacity: .85; } }
+
+/* Wordmark v2 (ChatGPT): Sora 600 + Inter 600, no yellow */
+.wordmark { --logo-name: #172433; --logo-place: #0a6fd6; display: flex; flex-direction: column; justify-content: center; gap: 4px; flex: 0 1 190px; min-width: 145px; height: 44px; padding: 0; white-space: nowrap; direction: ltr; text-align: left; }
+.wm-top { font-family: Sora, Manrope, sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -1px; line-height: 27px; color: var(--logo-name); padding: 0; }
+.wm-top::before { display: none; }
+.wm-sub { font-family: Inter, sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 2px; line-height: 12px; color: var(--logo-place); margin: 0; padding: 0; text-transform: uppercase; }
+:root[data-theme="dark"] .wordmark { --logo-name: #f3f7fc; --logo-place: #80b8ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark { --logo-name: #f3f7fc; --logo-place: #80b8ff; } }
+.top { padding-left: 12px; padding-right: 12px; gap: 8px; }
