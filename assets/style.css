@@ -405,9 +405,9 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 [dir="rtl"] .brand-short { font-family: Heebo, sans-serif; }
 
 /* Wordmark logo */
-.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; line-height: 1; text-decoration: none; color: var(--ink); padding: 2px 0; }
+.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; line-height: 1; text-decoration: none; color: var(--ink); padding: 2px 0; position: relative; z-index: 0; }
 .wm-top { font-family: Fredoka, Manrope, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: -.01em; position: relative; padding: 0 4px; }
-.wm-top::before { content: ""; position: absolute; inset: 55% -2px 2px -2px; background: var(--happy); border-radius: 4px; z-index: -1; transform: rotate(-1.5deg); }
+.wm-top::before { content: ""; position: absolute; inset: 72% -3px -3px -3px; background: var(--happy); border-radius: 4px; z-index: -1; transform: rotate(-1.2deg); }
 .wm-sub { font-family: Inter, Heebo, sans-serif; font-weight: 700; font-size: .58rem; letter-spacing: .26em; text-transform: uppercase; color: var(--accent); margin-top: 3px; padding-inline-start: 4px; }
 [dir="rtl"] .wordmark { align-items: flex-start; direction: ltr; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wm-top::before { opacity: .85; } }
