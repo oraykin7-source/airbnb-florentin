@@ -702,7 +702,38 @@
         "he": "המקלט (ממ\"ד) הוא החדר של אורן - הפתח מסומן בכתום"
       },
       "thumb": "assets/img/house/thumb/emergency.jpg",
-      "group": "safe"
+      "group": "safe",
+      "sections": [
+        {
+          "title": {
+            "en": "The shelter door - two moves",
+            "de": "Die Schutzraumtür - zwei Handgriffe",
+            "fr": "La porte de la pièce blindée - deux gestes",
+            "he": "דלת הממ\"ד - שתי פעולות"
+          },
+          "image": "assets/img/house/shelter-door.jpg",
+          "image_alt": {
+            "en": "The steel door: 1 close it, 2 lift the handle up",
+            "de": "Die Stahltür: 1 schließen, 2 Griff nach oben",
+            "fr": "La porte en acier : 1 fermer, 2 lever la poignée",
+            "he": "דלת הפלדה: 1 לסגור, 2 להרים את הידית"
+          },
+          "items": {
+            "en": [
+              "This is the actual door. Pull it shut, then lift the white handle up until it locks. That's all - the window is already sealed."
+            ],
+            "de": [
+              "Das ist die tatsächliche Tür. Zuziehen, dann den weißen Griff nach oben drücken, bis er einrastet. Das ist alles - das Fenster ist bereits verschlossen."
+            ],
+            "fr": [
+              "C'est la vraie porte. Tirez-la pour la fermer, puis levez la poignée blanche jusqu'au verrouillage. C'est tout - la fenêtre est déjà scellée."
+            ],
+            "he": [
+              "זו הדלת האמיתית. סוגרים אותה, ואז מרימים את הידית הלבנה למעלה עד שננעלת. זה הכול - החלון כבר אטום."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "rules",
