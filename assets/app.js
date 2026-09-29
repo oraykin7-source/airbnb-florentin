@@ -331,7 +331,7 @@
             el("img", { src: r.image, alt: "", loading: "lazy", onerror: e => e.target.closest(".row-pic").remove() })) : null,
           el("div", { class: "row-txt" },
             el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
-            el("span", { class: "muted" }, ` · ${r.where} · ${hoursText(r.hours)}`),
+            el("span", { class: "muted" }, `${r.where} · ${hoursText(r.hours)}`),
             r.shabbat === true ? el("span", { class: "badge sat" }, t("open_sat")) : null,
             r.note ? el("div", { class: "muted small" }, L_(r.note)) : null,
             (r.links || r.image_credit) ? el("div", { class: "row-links small" },
