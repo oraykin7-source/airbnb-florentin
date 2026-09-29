@@ -165,6 +165,10 @@
                     fr: { "carte Courses": "shops", "carte Urgences": "emergency", "guide cuisine": "kitchen" },
                     he: { "כרטיס קניות": "shops", "כרטיס חירום": "emergency", "מדריך המטבח": "kitchen" } };
     for (const L of LANGS) for (const [k, id] of Object.entries(alias[L] || {})) add(k, "#card-" + id, "card");
+    // phrases that point at the separate kitchen guide page
+    const kitchenPage = (state.house && state.house.cards.find(c => c.id === "kitchen") || {}).link;
+    if (kitchenPage) for (const k of ["The full guide", "full kitchen guide", "kitchen guide", "Die vollständige Anleitung", "Küchenguide", "Le guide complet", "guide cuisine", "המדריך המלא", "מדריך המטבח"])
+      add(k, kitchenPage.href + "?lang=" + state.lang, "page");
   }
   function rich(text) {
     text = String(text);
@@ -177,6 +181,7 @@
       const { href, kind } = LINKS.get(m[0]);
       const attrs = { class: "auto " + kind, href };
       if (kind === "out") { attrs.target = "_blank"; attrs.rel = "noopener"; }
+      else if (kind === "page") { /* same tab */ }
       else attrs.onclick = () => { const d = document.querySelector(href); if (d && d.tagName === "DETAILS") d.open = true; };
       out.push(el("a", attrs, m[0] + (kind === "out" ? " ↗" : "")));
       last = m.index + m[0].length;
