@@ -396,3 +396,10 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 .card, .place { scroll-margin-top: 84px; }
 
 .brand-mark.sos::after { display: block; letter-spacing: .04em; padding-inline-start: .04em; }
+
+/* Listing logo in the header */
+.brand-mark.logo { background: none; width: 36px; height: 36px; }
+.brand-mark.logo svg { display: block; }
+.brand-short { display: none; font-weight: 700; font-family: Manrope, Heebo, sans-serif; white-space: nowrap; }
+@media (max-width: 430px) { .brand-short { display: inline; } }
+[dir="rtl"] .brand-short { font-family: Heebo, sans-serif; }
