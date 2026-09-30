@@ -16,7 +16,7 @@
 | קובץ | תפקיד |
 |---|---|
 | `index.html`, `assets/app.js`, `assets/style.css` | העמוד. ללא build. 4 שפות, RTL, `translate="no"`, סרגל טאבים תחתון, קישורים אוטומטיים (`rich()`), לוגו מילולי. **אחרי כל שינוי CSS/JS לקדם `?v=` ב-index.html.** |
-| `content/house.json` | 13 כרטיסים ב-4 שפות (נוסף `checkout`). שדות: `thumb`, `tile` (אריח "השעה הראשונה"), `group` (comfort / safe="Good to know" / local), `first_hour`, `sections`, `lists` (rows: `url` = מקום מדויק, `image`+`image_credit`, `links`, `shabbat`). בלי סודות. |
+| `content/house.json` | 13 כרטיסים ב-4 שפות (נוסף `checkout`). שדות: `thumb`, `tile` (אריח "השעה הראשונה"), `group` (comfort / safe="Good to know" / local), `first_hour`, `steps`+`steps_title` (רשימה ממוספרת גדולה, כרטיס החירום), `links` (קישורים חיצוניים בכרטיס/סקציה), `sections`, `lists` (rows: `url` = מקום מדויק, `image`+`image_credit`, `links`, `shabbat`). בלי סודות. |
 | `content/places.json` + `assets/img/places/` | 13 מקומות, תמונות CC. |
 | `assets/img/house/` + `thumb/` | תמונות המכשירים (צילומי אורן; קפה/דוד/תמי 4 משופרים ב-ChatGPT). `ninja-combi.jpg` = תמונת יצרן זמנית. |
 | `assets/img/eat/`, `assets/img/tiles/` | תמונות מנה CC לכרטיס "איפה אורן אוכל"; אריחי השעה הראשונה (Pexels + תמי 4 של אורן). |
@@ -42,6 +42,9 @@
 ## Airbnb (listing 5202090)
 
 הכול מעודכן ותואם לאתר: כללי הבית, הוראות הגעה, מדריך לאורחים, צ'ק-אאוט, 5 הודעות מתוזמנות (Welcome עם קישור אישי `?guest=&checkout=`, "חדר בפלורנטין" יום לפני – **מכילה קוד דלת, לא לגעת**, Day after check-in, Day before check-out, After check-out), מדריך "מה בסביבה" (id 1882254, 20 מקומות). עריכה דרך Claude-in-Chrome; טיפים טכניים בדוח.
+
+## שינוי אחרון (30.9 אחה"צ): כרטיס החירום רגוע וברור יותר
+בקשת אורן. בראש העמוד: השורה "Siren → Oren's room..." הוחלפה בקישור כחול שקט "Siren? Here's what to do" (פותח את הכרטיס). בכרטיס: משפט פתיחה מרגיע, 3 צעדים ממוספרים גדולים (חדר של אורן / דלת+ידית / 10 דקות), סקציה "לא בבית?" קצרה עם קישור לאתר פיקוד העורף (אנגלית `oref.org.il/eng`, עברית `oref.org.il`), ו"עוד עזרה" (כתובת, איכילוב, בתי מרקחת, מארח). נבדק באתר החי ב-EN וב-HE.
 
 ## החלטות שעומדות
 
