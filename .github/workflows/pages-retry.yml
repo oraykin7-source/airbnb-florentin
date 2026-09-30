@@ -1,0 +1,24 @@
+# Safety net: if GitHub's own "pages build and deployment" run fails
+# (usually a transient 500 on GitHub's side), re-run it once automatically.
+name: Retry failed Pages deployment
+
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+
+permissions:
+  actions: write
+
+jobs:
+  retry:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.run_attempt < 3 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait a minute, then re-run the failed jobs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          sleep 60
+          gh run rerun "$RUN_ID" --failed --repo "${{ github.repository }}"
