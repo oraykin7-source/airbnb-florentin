@@ -682,10 +682,10 @@
         "he": "חירום"
       },
       "sub": {
-        "en": "Siren? Go to Oren's room, off the living room. Numbers, hospital",
-        "de": "Sirene? In Orens Zimmer neben dem Wohnzimmer. Notrufnummern, Krankenhaus",
-        "fr": "Sirène ? Dans la chambre d'Oren, à côté du salon. Numéros, hôpital",
-        "he": "אזעקה? לחדר של אורן, מהסלון. מספרים, בית חולים"
+        "en": "Siren? Three calm steps. Emergency numbers, hospital",
+        "de": "Sirene? Drei ruhige Schritte. Notrufnummern, Krankenhaus",
+        "fr": "Sirène ? Trois gestes simples. Numéros d'urgence, hôpital",
+        "he": "אזעקה? שלושה צעדים פשוטים. מספרי חירום, בית חולים"
       },
       "tel": [
         {
@@ -718,48 +718,44 @@
       ],
       "items": {
         "en": [
-          "🚨 Siren = rocket alert. In Tel Aviv you have about 90 seconds.",
-          "Go straight into {{shelter}}. Don't knock, don't wait for anyone.",
-          "Close the steel door and lift its handle up. Stay 10 minutes after the siren ends. (The window is already sealed.)",
-          "Siren when you're outside: go into the nearest building and stairwell. No building nearby - lie flat on the ground, face down, hands over your head, away from the road. In a bus or taxi: get off and do the same. Wait 10 minutes.",
-          "The free Home Front Command app (\"Pikud HaOref\") sends alerts in English - worth installing on arrival.",
-          "Address to give emergency services: on the printed card by the door and in your Airbnb booking.",
-          "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
-          "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7.",
-          "To reach your host: the WhatsApp button at the top of this page, or the Airbnb app."
+          "A siren means a rocket alert. In Tel Aviv you have about 90 seconds - that's plenty of time, no need to run."
         ],
         "de": [
-          "🚨 Sirene = Raketenalarm. In Tel Aviv haben Sie etwa 90 Sekunden.",
-          "Gehen Sie direkt in {{shelter}}. Nicht anklopfen, auf niemanden warten.",
-          "Stahltür schließen und den Griff nach oben drücken. 10 Minuten nach Ende der Sirene bleiben. (Das Fenster ist bereits verschlossen.)",
-          "Sirene draußen: ins nächste Gebäude, ins Treppenhaus. Kein Gebäude in der Nähe - flach auf den Boden legen, Gesicht nach unten, Hände über den Kopf, weg von der Straße. Im Bus oder Taxi: aussteigen und dasselbe tun. 10 Minuten warten.",
-          "Die kostenlose App des Heimatfrontkommandos (\"Pikud HaOref\") schickt Warnungen auf Englisch - bei Ankunft installieren.",
-          "Adresse für den Notruf: auf der gedruckten Karte an der Tür und in Ihrer Airbnb-Buchung.",
-          "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
-          "Apotheken (Super-Pharm, Be) gibt es überall; einige haben spät oder rund um die Uhr offen.",
-          "Gastgeber erreichen: WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
+          "Eine Sirene bedeutet Raketenalarm. In Tel Aviv haben Sie etwa 90 Sekunden - das reicht gut, kein Grund zu rennen."
         ],
         "fr": [
-          "🚨 Sirène = alerte roquette. À Tel Aviv vous avez environ 90 secondes.",
-          "Entrez directement dans {{shelter}}. Ne frappez pas, n'attendez personne.",
-          "Fermez la porte en acier et levez la poignée. Restez 10 minutes après la fin de la sirène. (La fenêtre est déjà scellée.)",
-          "Sirène dehors : entrez dans l'immeuble le plus proche, dans la cage d'escalier. Pas d'immeuble à proximité - allongez-vous à plat, face contre terre, mains sur la tête, loin de la route. En bus ou en taxi : descendez et faites de même. Attendez 10 minutes.",
-          "L'appli gratuite du Commandement du front intérieur (\"Pikud HaOref\") envoie les alertes en anglais - à installer à l'arrivée.",
-          "Adresse à donner aux secours : sur la carte imprimée près de la porte et dans votre réservation Airbnb.",
-          "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
-          "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvertes tard ou 24h/24.",
-          "Joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
+          "Une sirène signale une alerte roquette. À Tel Aviv vous avez environ 90 secondes - largement assez, pas besoin de courir."
         ],
         "he": [
-          "🚨 אזעקה = התרעה על טילים. בתל אביב יש כ-90 שניות.",
-          "נכנסים ישר אל {{shelter}}. לא דופקים, לא מחכים לאף אחד.",
-          "סוגרים את דלת הפלדה ומרימים את הידית למעלה. נשארים 10 דקות אחרי סיום האזעקה. (החלון כבר אטום.)",
-          "אזעקה בחוץ: נכנסים לבניין הקרוב, לחדר המדרגות. אין בניין בסביבה - שוכבים על הרצפה, פנים למטה, ידיים על הראש, רחוק מהכביש. באוטובוס או במונית: יורדים ועושים אותו דבר. מחכים 10 דקות.",
-          "אפליקציית פיקוד העורף החינמית שולחת התרעות - כדאי להתקין עם ההגעה.",
-          "הכתובת למסירה לשירותי החירום: על הכרטיס המודפס ליד הדלת ובהזמנה ב-Airbnb.",
-          "בית החולים הקרוב עם מיון 24/7: איכילוב (המרכז הרפואי ת\"א ע\"ש סוראסקי), ויצמן 6 - כ-15 דקות במונית.",
-          "בתי מרקחת (סופר-פארם, Be) בכל העיר; חלקם פתוחים עד מאוחר או 24/7.",
-          "ליצירת קשר עם המארח: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
+          "אזעקה = התרעה על טילים. בתל אביב יש כ-90 שניות - זה מספיק זמן, לא צריך לרוץ."
+        ]
+      },
+      "steps_title": {
+        "en": "At home - three steps",
+        "de": "Zu Hause - drei Schritte",
+        "fr": "À la maison - trois gestes",
+        "he": "בבית - שלושה צעדים"
+      },
+      "steps": {
+        "en": [
+          "Go into Oren's room, off the living room (the doorway marked in the photo). Just walk in - no need to knock, even if he isn't home.",
+          "Close the steel door and lift the handle up.",
+          "Stay 10 minutes after the siren stops. Then carry on with your day."
+        ],
+        "de": [
+          "In Orens Zimmer neben dem Wohnzimmer gehen (der im Foto markierte Durchgang). Einfach hinein - nicht anklopfen, auch wenn er nicht da ist.",
+          "Stahltür schließen und den Griff nach oben drücken.",
+          "10 Minuten nach Ende der Sirene bleiben. Dann geht der Tag ganz normal weiter."
+        ],
+        "fr": [
+          "Entrez dans la chambre d'Oren, à côté du salon (l'entrée encadrée sur la photo). Entrez directement - pas besoin de frapper, même s'il n'est pas là.",
+          "Fermez la porte en acier et levez la poignée.",
+          "Restez 10 minutes après la fin de la sirène. Puis reprenez votre journée."
+        ],
+        "he": [
+          "נכנסים לחדר של אורן, מהסלון (הפתח המסומן בתמונה). פשוט נכנסים - בלי לדפוק, גם אם הוא לא בבית.",
+          "סוגרים את דלת הפלדה ומרימים את הידית למעלה.",
+          "נשארים 10 דקות אחרי שהאזעקה נגמרת. ואז ממשיכים ביום."
         ]
       },
       "image": "assets/img/house/shelter.jpg",
@@ -798,6 +794,82 @@
             ],
             "he": [
               "זו הדלת האמיתית. סוגרים אותה, ואז מרימים את הידית הלבנה למעלה עד שננעלת. זה הכול - החלון כבר אטום."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Not at home?",
+            "de": "Nicht zu Hause?",
+            "fr": "Pas à la maison ?",
+            "he": "לא בבית?"
+          },
+          "items": {
+            "en": [
+              "Outside: go into the nearest building, into the stairwell, and wait 10 minutes. Everyone around you will be doing the same.",
+              "The free Home Front Command app sends alerts in English - worth installing on arrival."
+            ],
+            "de": [
+              "Draußen: ins nächste Gebäude, ins Treppenhaus, 10 Minuten warten. Alle um Sie herum machen dasselbe.",
+              "Die kostenlose App des Heimatfrontkommandos schickt Warnungen auf Englisch - bei Ankunft installieren."
+            ],
+            "fr": [
+              "Dehors : entrez dans l'immeuble le plus proche, dans la cage d'escalier, et attendez 10 minutes. Tout le monde autour de vous fera pareil.",
+              "L'appli gratuite du Commandement du front intérieur envoie les alertes en anglais - à installer à l'arrivée."
+            ],
+            "he": [
+              "בחוץ: נכנסים לבניין הקרוב, לחדר המדרגות, ומחכים 10 דקות. כולם מסביב עושים אותו דבר.",
+              "אפליקציית פיקוד העורף החינמית שולחת התרעות - כדאי להתקין עם ההגעה."
+            ]
+          },
+          "links": [
+            {
+              "label": {
+                "en": "Full instructions - Home Front Command (English)",
+                "de": "Alle Anweisungen - Heimatfrontkommando (Englisch)",
+                "fr": "Toutes les consignes - Commandement du front intérieur (en anglais)",
+                "he": "ההנחיות המלאות - פיקוד העורף"
+              },
+              "url": {
+                "en": "https://www.oref.org.il/eng",
+                "de": "https://www.oref.org.il/eng",
+                "fr": "https://www.oref.org.il/eng",
+                "he": "https://www.oref.org.il/"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Other help",
+            "de": "Weitere Hilfe",
+            "fr": "Autres aides",
+            "he": "עוד עזרה"
+          },
+          "items": {
+            "en": [
+              "Address to give emergency services: on the printed card by the door and in your Airbnb booking.",
+              "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
+              "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7.",
+              "To reach your host: the WhatsApp button at the top of this page, or the Airbnb app."
+            ],
+            "de": [
+              "Adresse für den Notruf: auf der gedruckten Karte an der Tür und in Ihrer Airbnb-Buchung.",
+              "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
+              "Apotheken (Super-Pharm, Be) gibt es überall; einige haben spät oder rund um die Uhr offen.",
+              "Gastgeber erreichen: WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
+            ],
+            "fr": [
+              "Adresse à donner aux secours : sur la carte imprimée près de la porte et dans votre réservation Airbnb.",
+              "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
+              "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvertes tard ou 24h/24.",
+              "Joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
+            ],
+            "he": [
+              "הכתובת למסירה לשירותי החירום: על הכרטיס המודפס ליד הדלת ובהזמנה ב-Airbnb.",
+              "בית החולים הקרוב עם מיון 24/7: איכילוב (המרכז הרפואי ת\"א ע\"ש סוראסקי), ויצמן 6 - כ-15 דקות במונית.",
+              "בתי מרקחת (סופר-פארם, Be) בכל העיר; חלקם פתוחים עד מאוחר או 24/7.",
+              "ליצירת קשר עם המארח: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
             ]
           }
         }

@@ -88,6 +88,16 @@ main { overflow-x: hidden; }
 .qbtn-sos { background: var(--surface); color: var(--danger); border: 2px solid var(--danger); }
 .sos-static { margin: 12px 0 0; font-size: .9rem; color: var(--muted); }
 .sos-static a { font-weight: 700; color: var(--danger); }
+.sos-static a.sos-link { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 10px 0 0; display: grid; gap: 12px; }
+.steps li { position: relative; padding-inline-start: 46px; font-size: 1.05rem; line-height: 1.45; min-height: 34px; }
+.steps li::before {
+  counter-increment: step; content: counter(step); position: absolute; inset-inline-start: 0; top: 0;
+  width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: var(--accent-ink, #fff);
+  font: 800 1rem/34px Manrope, Inter, sans-serif; text-align: center;
+}
+.ext-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ext-links a { display: inline-block; padding: 10px 14px; border-radius: 12px; background: var(--chip); color: var(--accent); font-weight: 600; text-decoration: none; min-height: 44px; box-sizing: border-box; }
 .stay-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 8px; font-size: .95rem; }
 .stay-pick input[type="date"] { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); }
 .linkish { border: 0; background: none; color: var(--accent); font: inherit; font-size: .9rem; cursor: pointer; padding: 10px 0; min-height: 44px; text-decoration: underline; }

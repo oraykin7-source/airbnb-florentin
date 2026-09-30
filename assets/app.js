@@ -10,7 +10,7 @@
 
   const UI = {
     en: {
-      sos_static2: "Siren → Oren's room, off the living room. Stay 10 min.", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
+      sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
       tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A quiet room in Florentin", brand_short: "Quiet room", welcome: "Welcome home",
@@ -30,7 +30,7 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
-      sos_static2: "Sirene → Orens Zimmer neben dem Wohnzimmer. 10 Min. bleiben.", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
+      sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
       tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Diese Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein ruhiges Zimmer in Florentin", brand_short: "Ruhiges Zimmer", welcome: "Willkommen zu Hause",
@@ -50,7 +50,7 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
-      sos_static2: "Sirène → chambre d'Oren, à côté du salon. Restez 10 min.", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
+      sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
       tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Cette semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre calme à Florentin", brand_short: "Chambre calme", welcome: "Bienvenue chez vous",
@@ -70,7 +70,7 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
-      sos_static2: "אזעקה ← לחדר של אורן, מהסלון. 10 דקות.", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
+      sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
       tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר שקט בפלורנטין", brand_short: "חדר שקט", welcome: "ברוכים הבאים הביתה",
@@ -149,6 +149,9 @@
   });
   const t = key => UI[state.lang][key];
   const ARROW = () => state.lang === "he" ? "←" : "→";
+  // External links on a card or section: [{label: {en,...}, url: "https://..." | {en,...}}]
+  const extLinks = links => el("div", { class: "ext-links" },
+    links.map(l => el("a", { href: L_(l.url), target: "_blank", rel: "noopener" }, L_(l.label) + " " + ARROW())));
   // "until 17:00, closed Sat" style hour strings -> localised
   const hoursText = h => String(h || "").replace(/\b24\/7\b/, t("open_247")).replace(/\buntil\b/g, t("until")).replace(/\bfrom\b/g, t("from")).replace(/closed Sat/g, t("closed_sat")).replace(/open Shabbat/g, t("open_sat"));
 
@@ -320,6 +323,10 @@
           c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label)))));
       }
       if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
+      if (c.steps) {
+        if (c.steps_title) body.append(el("h4", { class: "sec-title" }, L_(c.steps_title)));
+        body.append(el("ol", { class: "steps" }, L_(c.steps).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
+      }
       if (c.video) {
         body.append(el("video", { class: "card-video", src: c.video.src, poster: c.video.poster || "", muted: "", loop: "", playsinline: "", controls: "", preload: "none" }));
         body.append(el("p", { class: "muted small" }, L_(c.video.caption)));
@@ -342,7 +349,9 @@
         body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
         if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && L_(sec.image_alt)) || "", loading: "lazy", onerror: e => e.target.remove() }));
         if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
+        if (sec.links) body.append(extLinks(sec.links));
       }
+      if (c.links) body.append(extLinks(c.links));
       if (c.link) body.append(el("div", { class: "tel" },
         el("a", { href: `${c.link.href}?lang=${L}` }, L_(c.link.label) + " " + ARROW())));
 
@@ -476,7 +485,7 @@
   }));
 
   // The Emergency button also opens the card, not just scrolls to it
-  document.querySelectorAll("#sos-btn, #sos-brand").forEach(b => b.addEventListener("click", e => {
+  document.querySelectorAll("#sos-btn, #sos-brand, #sos-link").forEach(b => b.addEventListener("click", e => {
     const card = document.getElementById("card-emergency"); if (!card) return;
     e.preventDefault(); card.open = true;
     requestAnimationFrame(() => card.scrollIntoView({ block: "start", behavior: "smooth" }));
