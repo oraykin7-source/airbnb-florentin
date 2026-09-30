@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>דוח שינויים ומצב פרויקט · מדריך האורחים פלורנטין · 29.9.2026</title>
+<style>
+  :root{--ink:#1e293b;--ink2:#334155;--muted:#475569;--soft:#64748b;--line:#e2e8f0;--page:#f7f8fa;--card:#ffffff;--green:#166534;--green-mid:#16a34a;--green-50:#f0fdf4;--green-100:#dcfce7;--amber:#92400e;--amber-50:#fffbeb;--amber-100:#fef3c7;--red:#b91c1c;--red-50:#fef2f2;--red-100:#fee2e2;--navy:#0f172a;--r:14px;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--page);color:var(--ink);font-family:"Segoe UI","Arial Hebrew",Arial,sans-serif;line-height:1.65;padding:28px 18px 60px;}
+  .wrap{max-width:940px;margin:0 auto;}
+  .hero{background:var(--navy);color:#fff;border-radius:var(--r);padding:30px 28px 26px;text-align:center;margin-bottom:30px;}
+  .hero h1{font-size:27px;font-weight:800;letter-spacing:-.3px;} .hero h1 .accent{color:#4ade80;}
+  .hero .sub{margin-top:8px;font-size:13px;color:#94a3b8;}
+  .pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:18px;}
+  .pill{border:1px solid #334155;border-radius:999px;padding:6px 14px;font-size:12px;color:#cbd5e1;} .pill b{color:#4ade80;font-weight:700;} .pill.warn b{color:#fbbf24;} .pill.bad b{color:#f87171;}
+  h2{font-size:17px;font-weight:800;color:var(--green);margin:30px 0 13px;display:flex;align-items:center;gap:9px;}
+  h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--green-mid);flex:none;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:19px 21px;margin-bottom:13px;}
+  .card h3{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:9px;display:flex;flex-wrap:wrap;align-items:center;gap:9px;}
+  .card p{font-size:13.5px;color:var(--ink2);margin-bottom:9px;} .card p:last-child{margin-bottom:0;}
+  .card ul{margin:0 18px 9px 0;font-size:13.5px;color:var(--ink2);} .card li{margin-bottom:5px;}
+  .tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 11px;white-space:nowrap;}
+  .ok{background:var(--green-100);color:var(--green);} .wait{background:var(--amber-100);color:var(--amber);} .stop{background:var(--red-100);color:var(--red);}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;background:#f1f5f9;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px;direction:ltr;display:inline-block;}
+  .src{font-size:11.5px;color:var(--soft);border-top:1px solid var(--line);padding-top:9px;margin-top:12px;}
+  .lead{background:var(--green-50);border:1px solid var(--green-100);border-radius:var(--r);padding:19px 21px;font-size:14px;color:var(--ink2);margin-bottom:8px;}
+  .alert{background:var(--red-50);border-color:var(--red-100);} .note{background:var(--amber-50);border-color:var(--amber-100);}
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:13px;}
+  th{background:var(--green);color:#fff;font-weight:700;text-align:right;padding:8px 11px;} th:first-child{border-radius:0 8px 0 0;} th:last-child{border-radius:8px 0 0 0;}
+  td{padding:8px 11px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top;} tr:nth-child(even) td{background:#fafbfc;}
+  .foot{text-align:center;font-size:12px;color:var(--soft);margin-top:34px;padding-top:16px;border-top:1px solid var(--line);}
+  @media print{body{background:#fff;padding:0;} .card,.lead{break-inside:avoid;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>דוח שינויים ומצב פרויקט <span class="accent">·</span> מדריך האורחים פלורנטין</h1>
+    <div class="sub">האתר החי (GitHub Pages, ענף main) · נכון ל-29.9.2026, 17:00</div>
+    <div class="pills">
+      <span class="pill"><b>25</b> קומיטים היום · HEAD <b>b924a75</b></span>
+      <span class="pill"><b>2</b> סקירות סוכן יושמו (מבנה+תוכן, עיצוב)</span>
+      <span class="pill"><b>0</b> ממתין ל-commit</span>
+      <span class="pill warn"><b>1</b> ממתין: מענה מוכר אליאקספרס</span>
+      <span class="pill bad"><b>0</b> ממצאים פתוחים</span>
+    </div>
+  </div>
+
+  <h2>תקציר</h2>
+  <div class="lead">
+    יום של ליטוש חוויית המובייל והמותג. תוקנה בעיה אמיתית בטלפון (גלילה אופקית שגרמה לדף להיראות "לא מותאם"); האתר קיבל ניווט כמו אפליקציה (סרגל טאבים תחתון, קישורים אוטומטיים מהטקסט לכרטיסים/מקומות/מפות); שתי סקירות סוכן (מבנה+תוכן ואז עיצוב בלבד) יושמו במלואן: חירום מסודר מחדש, כרטיס צ'ק-אאוט, תגי "פתוח בשבת", עומק לכרטיסים, אדום אמיתי בדארק מוד; לוגו מילולי חדש "QUIET ROOM / Florentin" אחרי 6 סבבים; סרטון ה-AI של הממ"ד הוסר והוחלף בתמונת הדלת האמיתית מסומנת. נמדד: 25 קומיטים, כולם דחופים.
+  </div>
+
+  <h2>מה בוצע היום</h2>
+
+  <div class="card">
+    <h3>מובייל: גלילה אופקית וקאש <span class="tag ok">✓ תוקן</span></h3>
+    <p><b>השורש:</b> עיגולי הרקע ורצועת האריחים חרגו מרוחב המסך → כרום בטלפון הרחיב את כל הדף (השפות והסרגל נחתכו). בנוסף הטלפון של אורן החזיק CSS ישן במטמון.</p>
+    <p><b>התיקון:</b> נעילת רוחב בשלוש שכבות (html/body/main), רוחב מפורש לסרגל; קבצי CSS/JS נטענים עם מספר גרסה (<code>?v=</code>) שמתחלף בכל עדכון.</p>
+    <div class="src">37bf5b7, 5057890 · אומת בצילומי מסך של אורן (Samsung, דארק מוד)</div>
+  </div>
+
+  <div class="card">
+    <h3>ניווט כמו אפליקציה <span class="tag ok">✓ הושלם</span></h3>
+    <p>סרגל טאבים תחתון קבוע (התחלה / הדירה / מקומות / השבוע) עם אייקוני SVG, מדגיש את הסקציה הנוכחית; הצ'יפים העליונים הוסרו. <b>קישורים אוטומטיים:</b> כל שם של כרטיס, מקום או מסעדה שמוזכר בטקסט הופך לקישור (נבנה מה-JSON, גבולות מילה, בלי קישור-עצמי, "the full guide" → דף המטבח). לחיצה על SOS/אריח/קישור פותחת את הכרטיס ומנחיתה את כותרתו מתחת לכותרת הדביקה.</p>
+    <div class="src">2e94c15, 385835a, f1f029e, b76873a</div>
+  </div>
+
+  <div class="card">
+    <h3>סקירת סוכן 1 – מבנה, תוכן, באגים (12 סעיפים, כולם יושמו) <span class="tag ok">✓</span></h3>
+    <ul>
+      <li>חירום: תת-כותרת "Siren? Go to Oren's room", 3 שורות קצרות בראש, הנחיה לאזעקה בחוץ (חדר מדרגות / לשכב על הרצפה), כפילות הידית נמחקה.</li>
+      <li>כרטיס צ'ק-אאוט נפרד (5 נקודות); כללי הבית מפנים אליו.</li>
+      <li>תג צהוב "פתוח בשבת" + שעות מתורגמות; אורן אימת: פתוח = סופר יודה, סופר אל הים, AM:PM, טיב טעם, מיראז', השחף (ערבים). השאר סגור.</li>
+      <li>וואטסאפ בגיבוי סטטי ב-HTML; הודעת שגיאה אם ה-JSON לא נטען; הקישור האישי מקבל תאריך גם בפורמט "Oct 26, 2026" (נבדק: נשמר נכון).</li>
+      <li>חצים ← בעברית; סרגל flex (לא נשבר כשהפיד מוסתר); מטרות מגע 44px; "Five stars?" → קבוצה "טוב לדעת"; וידאו הוסר (612KB).</li>
+    </ul>
+    <div class="src">9b510ff, 889a4d8, 0b65bae, aee410d · הסקיל <code>/site-review</code> נשמר ב-<code>.claude/skills/site-review/</code> לשימוש חוזר</div>
+  </div>
+
+  <div class="card">
+    <h3>סקירת סוכן 2 – עיצוב בלבד (10 סעיפים, patch יושם במלואו) <span class="tag ok">✓</span></h3>
+    <p><b>האבחנה:</b> ניגודיות כרטיס/רקע 1.07 (בהיר) ו-1.18 (כהה) = "שטוח". <b>התיקון:</b> צל כחלחל + טבעת לכרטיסים; אדום מילוי אמיתי בדארק מוד (היה סלמון); רק 2 בלובים (hero + Places) עם blur ו-screen בכהה; טאב-בר בסגנון Material; מדרג טיפוגרפי (רק h1 ב-800); חץ הכרטיס כעיגול; שורות מסעדות עם מפריד; גרדיאנט עמוק באריחים; ביטול הבזק הטאפ של סמסונג.</p>
+    <div class="src">5750682 · <code>assets/style.css</code> (בלוק "Design pass 2026-09-29")</div>
+  </div>
+
+  <div class="card">
+    <h3>לוגו מילולי "QUIET ROOM / Florentin" <span class="tag ok">✓ אושר ע"י אורן</span></h3>
+    <p>6 סבבים (SOS → אייקון → Fredoka+מרקר → Sora לפי ChatGPT → caps+כתב יד ב-4 סידורים → 8 כתבי יד). התוצאה: QUIET ROOM ב-Manrope מרווח, Florentin ב-Caveat עולה לרוחב, על לוחית תכולה עם שמש צהובה בפינה; Florentin יושב מתחת לאותיות בלי לכסות. ניסיון עם תמונת רקע – אורן ביקש לחזור ללוחית.</p>
+    <p><b>לקח:</b> ChatGPT בשיחה הזו לא רואה תמונות ("couldn't access the attached image") – לשאלות ויזואליות הסוכן המקומי + דפי השוואה ב-HTML עבדו טוב יותר.</p>
+    <div class="src">58c6fa8, a68005e, b3b81b4 (revert של 81b241e)</div>
+  </div>
+
+  <div class="card">
+    <h3>תמונות <span class="tag ok">✓</span></h3>
+    <ul>
+      <li>סרטון ה-Veo של הממ"ד הוסר (ידית של כספת, לא נכנס לחדר). במקומו: תמונת הדלת האמיתית של אורן, מסומנת ① לסגור ② להרים ידית, בסקציה משלה בכרטיס החירום.</li>
+      <li>אריחי "השעה הראשונה" (מים חמים, מזגן, טלוויזיה, תמי 4): תמונות נקיות מ-Pexels לשלושה הראשונים (רישיון חופשי, קרדיט ב-JSON), תמי 4 = הצילום של אורן. שדה <code>tile</code> נפרד מ-<code>thumb</code>.</li>
+    </ul>
+    <div class="src">6575356, ff99edd, b924a75 · <code>assets/img/tiles/</code></div>
+  </div>
+
+  <h2>ממצאים חדשים שדורשים החלטה</h2>
+  <div class="lead alert">
+    לא נמצאו ממצאים חדשים היום. <b>עדיין פתוח מהיום:</b> הצעת "מפתח בקישור" – להצפין כתובת/Wi-Fi בריפו ולפענח רק למי שסרק את ה-QR או קיבל את הקישור האישי (~שעה עבודה; דורש להחליף את ה-QR לפני שהמוכר מדפיס). אורן טרם החליט.
+  </div>
+
+  <h2>החלטות שהתקבלו היום</h2>
+  <table>
+    <tr><th style="width:32%">הנושא</th><th>ההכרעה והנימוק</th></tr>
+    <tr><td>כרטיס Wi-Fi</td><td>לא חוזר לאתר. <b>האורח מקבל את הפרטים בהודעות Airbnb; אין טעם בכרטיס שאומר "לא כאן".</b></td></tr>
+    <tr><td>כתובת למשטרה</td><td>לא באתר; על שלט SAFE ROOM מודפס עם הכתובת (קובץ פרטי, מחוץ לריפו). <b>ריפו ציבורי = כתובת באינטרנט.</b></td></tr>
+    <tr><td>צ'ק-אאוט ב"שעה הראשונה"</td><td>לא. <b>לא שאלה של יום ראשון.</b></td></tr>
+    <tr><td>תמונת יצרן/אתר בלוגו</td><td>לא (project-tlv.info עם סימן מים). <b>זכויות יוצרים; אורן יכול לצלם את הספסל בעצמו.</b></td></tr>
+    <tr><td>לוגו</td><td>גרסת הלוחית+שמש נשארת. <b>אורן: "תשאיר את מה שהכנת קודם".</b></td></tr>
+  </table>
+
+  <h2>משימות למחר, 30.9.2026 ואילך</h2>
+  <div class="lead note">
+    <b>נקודת הפתיחה של יום העבודה הבא.</b> האתר מוכן לאורח; מה שנשאר תלוי בגורמים חיצוניים.
+  </div>
+  <table>
+    <tr><th style="width:8%">סדר</th><th style="width:36%">המשימה</th><th>למה דווקא בסדר הזה</th></tr>
+    <tr><td><b>1</b></td><td>המוכר באליאקספרס ענה – לקרוא, להחליט על משלוח (55 ₪ יקר; לבקש שילוב/Choice או להדפיס מקומית), לאשר rendering רק אחרי סריקה</td><td>ה-QR הפיזי הוא הדרך של האורח לאתר</td></tr>
+    <tr><td><b>2</b></td><td>להחליט על "מפתח בקישור" (הצפנת כתובת/Wi-Fi)</td><td>אם כן – חייב לפני שה-QR מודפס</td></tr>
+    <tr><td><b>3</b></td><td>שבת 3.10 בערב: push מהריצה השבועית → לבדוק "השבוע בתל אביב"</td><td>ריצה ראשונה אחרי כל שינויי ה-validator</td></tr>
+    <tr><td><b>4</b></td><td>6.10: הנינג'ה מגיע → צילום → להחליף את תמונת היצרן</td><td>הקובץ היחיד לא ברישיון חופשי</td></tr>
+    <tr><td><b>5</b></td><td>10 שניות וידאו אמיתי של הממ"ד (אורן מצלם) → להחזיר לכרטיס</td><td>אופציונלי; התמונה המסומנת כבר עושה את העבודה</td></tr>
+    <tr><td><b>6</b></td><td>M מהסקירות: כיווץ תמונות המקומות ל-WebP (2.1MB), צמצום פונטים, כרטיס חגים נפרד, h4/h5</td><td>ביצועים; לא חוסם</td></tr>
+  </table>
+
+  <div class="card">
+    <h3>מה שחייב לקרות בכל צעד</h3>
+    <ul>
+      <li>כל שינוי תוכן ב-4 שפות (EN/DE/FR/HE) → <code>python3 agent/validate.py house</code> → commit → push. אחרי שינוי CSS/JS: לקדם את <code>?v=</code> ב-<code>index.html</code>.</li>
+      <li>סודות (iCal, קוד דלת, Wi-Fi, כתובת) לעולם לא בריפו/צ'אט/פרומפט. קבצים עם כתובת → <code>../airbnb-florentin-private/</code>.</li>
+      <li>תמונות: צילום של אורן, CC/Pexels עם קרדיט. AI-edit רק למכשירים פשוטים אחרי בדיקת כפתורים. תמונות יצרן/אתרים – לא.</li>
+      <li>לפני שינוי עיצוב גדול: להראות לאורן דף השוואה (HTML בסקראצ'פד → SendUserFile) – זה מה שעבד היום.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>מה שצריך לדעת כדי להמשיך</h3>
+    <ul>
+      <li>ריפו <code>~/Documents/Projects/airbnb-florentin</code>, main, HEAD <code>b924a75</code>. חי: https://oraykin7-source.github.io/airbnb-florentin/ · מקומי: <code>python3 -m http.server 8420</code> (רץ ברקע), <code>?demo</code> לנתוני דוגמה.</li>
+      <li><code>content/house.json</code>: 13 כרטיסים (נוסף <code>checkout</code>); שדות <code>thumb</code>/<code>tile</code>/<code>group</code>/<code>first_hour</code>/<code>shabbat</code>; <code>groups</code> (comfort/safe="Good to know"/local). קישורי מפות = מקום מדויק.</li>
+      <li><code>assets/app.js</code>: <code>rich()</code> קישורים אוטומטיים, <code>hoursText()</code>, <code>ARROW()</code>, tabbar observer. <code>assets/style.css</code>: בלוקים מצטברים בסוף הקובץ (design pass, wordmark v3) דורסים כללים קודמים.</li>
+      <li>סקיל <code>/site-review</code> בפרויקט. שיחות ChatGPT: "עיצוב מחדש לדף Airbnb" (לא רואה תמונות), "Enhance Appliance Photos".</li>
+      <li>Routines: שבועי <code>trig_016hQPzge4EHs3WRXerHu5sR</code>, לילי <code>trig_01MXPob9kK9YuWVcqq7ypkJr</code> (רץ ועדכן stays.json ב-29.9 02:37 – עובד).</li>
+      <li>קבצי הדפסה: <code>docs/print/small-signs.pdf</code> (6 שלטים), <code>docs/print/sign-design.png</code> + <code>qr-guide.png</code> (למוכר), <code>../airbnb-florentin-private/sign-safe-room-with-address.pdf</code>.</li>
+    </ul>
+  </div>
+
+  <h2>פתוח וממתין לגורם חיצוני</h2>
+  <div class="card">
+    <ul>
+      <li>מוכר אליאקספרס – ענה; אורן קורא ומחליט.</li>
+      <li>Routine שבועי – שבת 3.10.</li>
+      <li>נינג'ה קומבי – עד 6.10.</li>
+      <li>אורח ראשון – בודק את הקישור האישי.</li>
+      <li>עין צרפתית – אין מכר צרפתי כרגע (גרמנית אושרה).</li>
+    </ul>
+  </div>
+
+  <div class="foot">אורן רייקין · מדריך האורחים פלורנטין · דוח פנימי · 29.9.2026</div>
+</div>
+</body>
+</html>
