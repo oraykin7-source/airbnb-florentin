@@ -359,7 +359,7 @@
         el("summary", {},
           c.thumb ? el("img", { class: "thumb", src: c.thumb, alt: "", loading: "lazy", onerror: e => e.target.replaceWith(el("span", { class: "ico", "aria-hidden": "true" }, c.icon)) })
                   : el("span", { class: "ico", "aria-hidden": "true" }, c.icon),
-          el("span", {}, el("h3", {}, L_(c.title)), el("span", { class: "sub" }, L_(c.sub))),
+          el("span", {}, el("h3", {}, fill(L_(c.title), host)), el("span", { class: "sub" }, fill(L_(c.sub), host))),
           el("span", { class: "chev", "aria-hidden": "true" }, "▾")),
         body);
       (grids[c.group] || box).append(card);
