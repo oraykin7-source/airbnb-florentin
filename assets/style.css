@@ -80,7 +80,7 @@ main { overflow-x: hidden; }
 }
 .name-box { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
 .name-box input { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); min-width: 0; flex: 1 1 180px; max-width: 260px; }
-.qbtn-ghost { background: var(--chip); color: var(--ink); padding: 10px 14px; }
+.qbtn-ghost { background: var(--chip); color: var(--ink); padding: 10px 14px; border: 1px solid var(--line); }
 .quick { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
 .qbtn { text-decoration: none; font-weight: 700; font-size: 1rem; padding: 12px 18px; min-height: 46px; border-radius: 14px; display: inline-flex; align-items: center; gap: 6px; }
 .qbtn[hidden] { display: none; }
@@ -445,13 +445,8 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 :root[data-theme="dark"] .wordmark { --wm-plate: #243242; --wm-script: #ffd966; --wm-sun: rgba(255,217,102,.28); }
 .top { padding-top: calc(8px + env(safe-area-inset-top)); padding-bottom: 8px; }
 
-/* Wordmark v4 (1.10): clean two-line lockup, no sun blob, no overlap. Overrides v3. */
-.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0;
-  height: 44px; padding: 0 12px; border-radius: 12px; background: var(--wm-plate); overflow: visible; }
+/* 1.10: wordmark v3 kept, sun blob removed */
 .wordmark::before { display: none; }
-.wm-caps { font: 800 10px/1 Manrope, Inter, sans-serif; letter-spacing: .22em; color: var(--muted); margin-top: 1px; }
-.wm-script { position: static; transform: none; font: 700 25px/1 Caveat, cursive; letter-spacing: .02em; margin-top: 1px; text-shadow: none; color: var(--wm-script); }
-@media (max-width: 360px) { .wordmark { padding: 0 10px; } .wm-script { font-size: 22px; } .wm-caps { letter-spacing: .16em; } }
 
 /* Name box (1.10): input and Save always on one line, no truncated placeholder */
 .name-box { flex-wrap: nowrap; }
