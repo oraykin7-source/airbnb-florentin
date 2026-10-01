@@ -14,7 +14,7 @@ Order: 2 acrylic signs, 15 x 10 cm, each with a wooden stand.
 Both signs use the same design (see attached artwork, sign-design-v2.png), but each sign has two DIFFERENT QR codes:
 
 1. Left QR: house guide website. Please generate it from this exact address:
-   https://oraykin7-source.github.io/airbnb-florentin/
+   https://stayflorentin.com/
 
 2. Right QR: Wi-Fi connection. Please generate a standard Wi-Fi QR code with:
    Network name (SSID): [Wi-Fi network name]

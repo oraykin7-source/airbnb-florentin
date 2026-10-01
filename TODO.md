@@ -76,4 +76,4 @@
 ## 7. שער השקה
 - [ ] סריקת QR אמיתית בסלולר, בגרמנית, לחיצה על כל כפתור.
 - [ ] דף מודפס אחד בדירה (גיבוי לסוללה/גלישה).
-- [ ] QR סופי מהכתובת https://oraykin7-source.github.io/airbnb-florentin/
+- [ ] QR סופי מהכתובת https://stayflorentin.com/

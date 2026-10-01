@@ -5,7 +5,7 @@
 ## מצב: מוכן לאורח
 
 מדריך דיגיטלי לאורחי ה-Airbnb בפלורנטין. QR בדלת → עמוד אחד ב-GitHub Pages, EN/DE/FR/HE.
-- **חי:** https://oraykin7-source.github.io/airbnb-florentin/
+- **חי:** https://stayflorentin.com/ (דומיין מ-1.10; הכתובת הישנה https://oraykin7-source.github.io/airbnb-florentin/ מפנה אוטומטית, כולל `?guest=&checkout=`)
 - **ריפו (ציבורי):** https://github.com/oraykin7-source/airbnb-florentin – branch `main` (79 קומיטים ב-28.9, 25 ב-29.9)
 - **מקומי:** `~/Documents/Projects/airbnb-florentin` (venv ב-`.venv/` עם Pillow + rembg, לא בגיט)
 - **תצוגה מקומית:** `python3 -m http.server 8420` → http://localhost:8420 (`?demo` לנתוני דוגמה)

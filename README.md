@@ -15,7 +15,7 @@ Digital guide for the Airbnb in Florentin, Tel Aviv. One fixed URL for the QR co
 | `agent/ROUTINE.md` | The procedure the weekly **Claude Code Routine** follows (research → `weekly.json` → validate → push). |
 | `agent/validate.py` | Schema / source / window check for `weekly.json`. |
 
-Live at **https://oraykin7-source.github.io/airbnb-florentin/** (GitHub Pages, branch `main`, root).
+Live at **https://stayflorentin.com/** (GitHub Pages, branch `main`, root; custom domain via `CNAME`, old github.io URL redirects).
 
 ## How it refreshes
 

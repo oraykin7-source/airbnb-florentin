@@ -4,7 +4,7 @@ Hi! I'd like to order **2 signs** (same design, two copies – one for the bedro
 
 Each sign must have **two QR codes side by side**, not one:
 1. **Wi-Fi QR** – I will send you the network name and password (or a ready QR image) so guests can scan and connect automatically.
-2. **Website QR** – a code that opens this link: https://oraykin7-source.github.io/airbnb-florentin/ (I attach the QR image – please print it exactly as-is, high contrast, and don't recolour or add a logo over it, so it stays scannable).
+2. **Website QR** – a code that opens this link: https://stayflorentin.com/ (I attach the QR image – please print it exactly as-is, high contrast, and don't recolour or add a logo over it, so it stays scannable).
 
 I attach my artwork (PNG, 15 x 10 cm at 300 dpi) with the layout, titles and colours. Please:
 - keep the two codes at least 4 x 4 cm each with a white background behind them;
