@@ -455,6 +455,6 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 
 /* Name box (1.10): input and Save always on one line, no truncated placeholder */
 .name-box { flex-wrap: nowrap; }
-.name-box input { flex: 1 1 0; max-width: none; font-size: 16px; }
+.name-box input { flex: 1 1 0; max-width: 240px; font-size: 15px; padding: 8px 12px; min-height: 40px; }
 .name-box input::placeholder { color: var(--muted); }
-.name-box button, .name-box .btn { flex: none; white-space: nowrap; }
+.name-box .qbtn { flex: none; white-space: nowrap; min-height: 40px; padding: 8px 14px; font-size: .95rem; }
