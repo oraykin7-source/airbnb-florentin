@@ -73,6 +73,8 @@ main { overflow-x: hidden; }
   background: radial-gradient(circle at 40% 40%, var(--happy), transparent 70%); opacity: .8; pointer-events: none; z-index: -1;
 }
 .eyebrow { margin: 0 0 6px; font-weight: 600; color: var(--muted); font-size: .95rem; }
+.eyebrow { display: flex; align-items: center; gap: 10px; }
+.eyebrow .sky { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex: none; box-shadow: 0 1px 4px rgba(0,0,0,.25); }
 .hero h1 { font-size: clamp(2.1rem, 8vw, 2.75rem); }
 .stay {
   display: inline-block; margin: 12px 0 0; padding: 6px 12px; border-radius: 999px;

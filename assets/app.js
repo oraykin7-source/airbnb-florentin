@@ -243,8 +243,10 @@
     const name = guestName();
     const hr = nowInTLV().hour;
     const hiKey = hr < 5 ? "hi_night" : hr < 12 ? "hi_morning" : hr < 18 ? "hi_afternoon" : hr < 23 ? "hi_evening" : "hi_night";
-    const hiIcon = hr < 6 || hr >= 18 ? "🌙" : hr < 12 ? "🌤️" : "☀️";
-    document.getElementById("eyebrow").textContent = `${hiIcon} ${t(hiKey)} · ${t("hi_city")}`;
+    const sky = hr < 5 || hr >= 20 ? "night" : hr < 12 ? "morning" : hr < 17 ? "noon" : "evening";
+    document.getElementById("eyebrow").replaceChildren(
+      el("img", { class: "sky", src: `assets/img/sky/${sky}.webp`, alt: "", width: "40", height: "40", loading: "eager" }),
+      el("span", {}, `${t(hiKey)} · ${t("hi_city")}`));
     document.getElementById("welcome").textContent = name ? t("welcome_name")(name) : t("welcome");
     const nb = document.getElementById("name-box");
     nb.replaceChildren();
