@@ -452,3 +452,9 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 .wm-caps { font: 800 10px/1 Manrope, Inter, sans-serif; letter-spacing: .22em; color: var(--muted); margin-top: 1px; }
 .wm-script { position: static; transform: none; font: 700 25px/1 Caveat, cursive; letter-spacing: .02em; margin-top: 1px; text-shadow: none; color: var(--wm-script); }
 @media (max-width: 360px) { .wordmark { padding: 0 10px; } .wm-script { font-size: 22px; } .wm-caps { letter-spacing: .16em; } }
+
+/* Name box (1.10): input and Save always on one line, no truncated placeholder */
+.name-box { flex-wrap: nowrap; }
+.name-box input { flex: 1 1 0; max-width: none; font-size: 16px; }
+.name-box input::placeholder { color: var(--muted); }
+.name-box button, .name-box .btn { flex: none; white-space: nowrap; }
