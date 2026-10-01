@@ -444,3 +444,11 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark { --wm-plate: #243242; --wm-script: #ffd966; --wm-sun: rgba(255,217,102,.28); } }
 :root[data-theme="dark"] .wordmark { --wm-plate: #243242; --wm-script: #ffd966; --wm-sun: rgba(255,217,102,.28); }
 .top { padding-top: calc(8px + env(safe-area-inset-top)); padding-bottom: 8px; }
+
+/* Wordmark v4 (1.10): clean two-line lockup, no sun blob, no overlap. Overrides v3. */
+.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0;
+  height: 44px; padding: 0 12px; border-radius: 12px; background: var(--wm-plate); overflow: visible; }
+.wordmark::before { display: none; }
+.wm-caps { font: 800 10px/1 Manrope, Inter, sans-serif; letter-spacing: .22em; color: var(--muted); margin-top: 1px; }
+.wm-script { position: static; transform: none; font: 700 25px/1 Caveat, cursive; letter-spacing: .02em; margin-top: 1px; text-shadow: none; color: var(--wm-script); }
+@media (max-width: 360px) { .wordmark { padding: 0 10px; } .wm-script { font-size: 22px; } .wm-caps { letter-spacing: .16em; } }
