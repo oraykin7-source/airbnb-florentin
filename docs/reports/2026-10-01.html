@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>דוח שינויים ומצב פרויקט · מדריך האורחים פלורנטין · 1.10.2026</title>
+<style>
+  :root{--ink:#1e293b;--ink2:#334155;--muted:#475569;--soft:#64748b;--line:#e2e8f0;--page:#f7f8fa;--card:#ffffff;--green:#166534;--green-mid:#16a34a;--green-50:#f0fdf4;--green-100:#dcfce7;--amber:#92400e;--amber-50:#fffbeb;--amber-100:#fef3c7;--red:#b91c1c;--red-50:#fef2f2;--red-100:#fee2e2;--navy:#0f172a;--r:14px;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--page);color:var(--ink);font-family:"Segoe UI","Arial Hebrew",Arial,sans-serif;line-height:1.65;padding:28px 18px 60px;}
+  .wrap{max-width:940px;margin:0 auto;}
+  .hero{background:var(--navy);color:#fff;border-radius:var(--r);padding:30px 28px 26px;text-align:center;margin-bottom:30px;}
+  .hero h1{font-size:27px;font-weight:800;letter-spacing:-.3px;} .hero h1 .accent{color:#4ade80;}
+  .hero .sub{margin-top:8px;font-size:13px;color:#94a3b8;}
+  .pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:18px;}
+  .pill{border:1px solid #334155;border-radius:999px;padding:6px 14px;font-size:12px;color:#cbd5e1;} .pill b{color:#4ade80;font-weight:700;} .pill.warn b{color:#fbbf24;} .pill.bad b{color:#f87171;}
+  h2{font-size:17px;font-weight:800;color:var(--green);margin:30px 0 13px;display:flex;align-items:center;gap:9px;}
+  h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--green-mid);flex:none;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:19px 21px;margin-bottom:13px;}
+  .card h3{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:9px;display:flex;flex-wrap:wrap;align-items:center;gap:9px;}
+  .card p{font-size:13.5px;color:var(--ink2);margin-bottom:9px;} .card p:last-child{margin-bottom:0;}
+  .card ul{margin:0 18px 9px 0;font-size:13.5px;color:var(--ink2);} .card li{margin-bottom:5px;}
+  .tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 11px;white-space:nowrap;}
+  .ok{background:var(--green-100);color:var(--green);} .wait{background:var(--amber-100);color:var(--amber);} .stop{background:var(--red-100);color:var(--red);}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;background:#f1f5f9;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px;direction:ltr;display:inline-block;}
+  .src{font-size:11.5px;color:var(--soft);border-top:1px solid var(--line);padding-top:9px;margin-top:12px;}
+  .lead{background:var(--green-50);border:1px solid var(--green-100);border-radius:var(--r);padding:19px 21px;font-size:14px;color:var(--ink2);margin-bottom:8px;}
+  .alert{background:var(--red-50);border-color:var(--red-100);} .note{background:var(--amber-50);border-color:var(--amber-100);}
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:13px;}
+  th{background:var(--green);color:#fff;font-weight:700;text-align:right;padding:8px 11px;} th:first-child{border-radius:0 8px 0 0;} th:last-child{border-radius:8px 0 0 0;}
+  td{padding:8px 11px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top;} tr:nth-child(even) td{background:#fafbfc;}
+  .foot{text-align:center;font-size:12px;color:var(--soft);margin-top:34px;padding-top:16px;border-top:1px solid var(--line);}
+  @media print{body{background:#fff;padding:0;} .card,.lead{break-inside:avoid;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>דוח שינויים ומצב פרויקט <span class="accent">·</span> מדריך האורחים פלורנטין</h1>
+    <div class="sub">האתר החי https://stayflorentin.com (GitHub Pages, ענף main) + מודעת Airbnb 5202090 · נכון ל-1.10.2026, 22:00</div>
+    <div class="pills">
+      <span class="pill"><b>53</b> קומיטים היום · HEAD <b>a049e4f</b></span>
+      <span class="pill"><b>stayflorentin.com</b> חי עם HTTPS</span>
+      <span class="pill"><b>2</b> שותפויות פעילות (GetYourGuide, ספא פלוס)</span>
+      <span class="pill warn"><b>6</b> ממתינים לגורם חיצוני</span>
+      <span class="pill bad"><b>0</b> ממצאים פתוחים באתר</span>
+    </div>
+  </div>
+
+  <h2>תקציר</h2>
+  <div class="lead">
+    יום ארוך בשלושה צירים. <b>מודעת Airbnb:</b> כותרת, תיאור, סדר תמונות, מינימום 2 לילות והנחות עודכנו, ומועצת יועצים קבעה שהבעיה היא ביקוש ולא המרה. <b>האתר:</b> עבר לדומיין משלו (stayflorentin.com, HTTPS), המותג שונה ל-"Cozy room", כרטיס חירום וכרטיס "טיולי יום וסיורים" חדשים, וכותרת המובייל לוטשה (תיבת שם, לוגו, איור תל אביב שמתחלף לפי זריחה ושקיעה אמיתיות). <b>שותפויות:</b> GetYourGuide (8%) וספא פלוס (2%) פעילות עם קישורים באתר, Airalo הוגשה, Eatwith ו-Wolt ירדו. נמדד: 53 קומיטים, כולם דחופים ל-main.
+  </div>
+
+  <h2>מה בוצע היום</h2>
+
+  <div class="card">
+    <h3>מודעת Airbnb: שיפור לתפוסה <span class="tag ok">✓ בוצע</span></h3>
+    <p><b>השורש:</b> החודש 12.11–12.12 פנוי; 117 צפיות ו-3 הזמנות ב-30 יום (2.6%).</p>
+    <p><b>מה שונה:</b> כותרת "Cozy room in Florentin · Levinski market &amp; beach", תיאור חדש ב-5 חלקים, סדר תמונות (סלון, חדר, מטבח, מקלחת, עמדת עבודה, בניין) עם כיתובים לחדר, מינימום 2 לילות, הנחת "אורחים מדורגים" 15% הוסרה, רגע-אחרון 5%. מחיר נשאר ₪220/240.</p>
+    <p><b>מועצה:</b> הבעיה ביקוש ולא המרה; הצעד הבא הוא Instant Book וביטול "לילה הכנה" (עדיין כבויים, החלטה של אורן); לא Booking.com כרגע. Superhost חסום בגלל 4.76% ביטולים, הערכה הבאה 1.1.27.</p>
+    <div class="src"><code>docs/airbnb-listing-review-2026-10-01.md</code>, <code>docs/council-airbnb-2026-10-01.md</code> · 935e5d0, ea8e3e0, ece119e, cf39fec</div>
+  </div>
+
+  <div class="card">
+    <h3>דומיין stayflorentin.com <span class="tag ok">✓ חי</span></h3>
+    <p>נקנה ב-Namecheap, מחובר ל-GitHub Pages (4 רשומות A + CNAME ל-www), HTTPS נאכף. הכתובת הישנה מפנה אוטומטית כולל פרמטרים. <b>לקח:</b> התעודה לא הונפקה 90 דקות עד שהוסר והוחזר ה-cname בהגדרות Pages.</p>
+    <div class="src">קובץ <code>CNAME</code> · e5edbb4, 56226f5 · אומת ב-curl ובדפדפן</div>
+  </div>
+
+  <div class="card">
+    <h3>מותג "Cozy room" ושלט למוכר <span class="tag ok">✓</span></h3>
+    <p>שם האתר, הלוגו ומחרוזות המותג ב-4 שפות שונו מ-"Quiet room" ל-"Cozy room", כמו כותרת המודעה. למוכר באליאקספרס נשלחו ב-10:09 עיצוב <code>sign-design-v3.png</code>, QR לאתר החדש ו-QR ל-Wi-Fi (הקובץ מחוץ לריפו).</p>
+    <div class="src">94408b5 · <code>docs/print/</code> · המייל בשרשור Gmail מול mysdscustmer</div>
+  </div>
+
+  <div class="card">
+    <h3>כרטיסים חדשים באתר <span class="tag ok">✓</span></h3>
+    <ul>
+      <li><b>חירום:</b> פתיח רגוע, 3 צעדים ממוספרים, "לא בבית?" עם קישור לפיקוד העורף, קישור "Siren? Here's what to do" בראש הדף.</li>
+      <li><b>טיולי יום וסיורים</b> (<code>tours</code>): 6 קישורי GetYourGuide עם מזהה השותף + קישור ספא פלוס, שורת גילוי נאות, 4 שפות.</li>
+      <li>תיקון: <code>{{checkout_time}}</code> לא מולא בכותרות כרטיסים.</li>
+    </ul>
+    <div class="src"><code>content/house.json</code>, <code>assets/app.js</code> (<code>extLinks</code>, <code>steps</code>) · 499810d, fa95bb7, f0daf91 · <code>validate.py house</code> עבר</div>
+  </div>
+
+  <div class="card">
+    <h3>כותרת המובייל <span class="tag ok">✓ אושר ע"י אורן ("פצצה")</span></h3>
+    <p><b>השורש:</b> בטלפון של אורן ה-placeholder של תיבת השם נחתך, כפתור "שמור" הציג מסגרת ברירת-מחדל חלקית של הדפדפן, והאימוג'י של שעת היום נראה זול.</p>
+    <p><b>התיקון:</b> placeholder קצר ("Your first name" / "השם שלכם"), תיבה וכפתור בשורה אחת בגובה 40px עם מסגרת אחידה; לוגו v3 חזר בלי עיגול השמש; במקום אימוג'י, איור עגול קטן של חוף תל אביב ב-4 מצבים (בוקר, צהריים, ערב, לילה) שנבחר לפי זריחה ושקיעה מחושבות (נבדק: 1.10 → 6:34 / 18:27; 21.6 → 5:35 / 19:50; 21.12 → 6:37 / 16:40).</p>
+    <div class="src"><code>assets/style.css</code>, <code>assets/app.js</code> (<code>sunTimesTLV</code>, <code>skyPhase</code>), <code>assets/img/sky/*.webp</code> (נוצר ב-Gemini) · 4e4c45d → 52480e1 · גרסה <code>?v=20261001i</code> · אומת בצילומי מסך 375px</div>
+  </div>
+
+  <div class="card">
+    <h3>שותפויות להכנסה נוספת <span class="tag ok">2 פעילות</span> <span class="tag wait">4 ממתינות</span></h3>
+    <table>
+      <tr><th style="width:24%">שותף</th><th style="width:18%">תנאים</th><th>מצב</th></tr>
+      <tr><td>GetYourGuide</td><td>8%, PayPal</td><td>פעיל. partner_id <code>UO1A9K8</code>, 6 קישורים באתר</td></tr>
+      <tr><td>ספא פלוס</td><td>2%, cookie שבוע</td><td>פעיל. אורן נרשם ב-TrackNow, אושר מיד, קישור באתר. אסור לפרסם בפייסבוק/גוגל/קאשבק</td></tr>
+      <tr><td>Airalo (eSIM)</td><td>10%</td><td>בקשה הוגשה דרך Impact 21:21, האתר אומת בתגית meta. ממתין לאישור</td></tr>
+      <tr><td>Bein Harim</td><td>15%</td><td>בקשה בטופס 30.9 בלילה, אין תשובה. אם אין עד 6.10: מייל ישיר</td></tr>
+      <tr><td>יאללה באסטה</td><td>קוד הנחה לאורח</td><td>הבטיחו קישורים אחרי החג (הודעה קולית, תמלול בתיקייה הפרטית)</td></tr>
+      <tr><td>גרפיטיול (דור)</td><td>לסגור בשיחה</td><td>שיחה ראשון 4.10 אחרי 16:00. המלצה: הנחה לאורח, לא עמלה</td></tr>
+      <tr><td>Eatwith</td><td>8–10%</td><td>ירד. Travelpayouts דורשים סקריפט פרסומות באתר</td></tr>
+      <tr><td>Wolt</td><td>קרדיט</td><td>ירד. אין קוד הזמנה אישי בחשבון של אורן, ואסור לפרסם קוד באתר ציבורי</td></tr>
+      <tr><td>Airbnb Services</td><td>$15</td><td>לא קיים בתל אביב</td></tr>
+    </table>
+    <p><b>הערכה (לא נמדד):</b> עם 3–4 אורחים בחודש, כל השותפויות יחד ₪50–150 בחודש. המנוף האמיתי הוא תפוסה.</p>
+    <div class="src"><code>docs/partnerships-2026-10-01.md</code>, <code>TODO.md</code> סעיף 15 · תגית האימות של Impact ב-<code>index.html</code> (7323f57)</div>
+  </div>
+
+  <div class="card">
+    <h3>סלון וספה חדשה <span class="tag wait">ממתין להגעת הספה</span></h3>
+    <p>נקנתה ספת Divani INFINITY (196–214 ס"מ). נמדד: חדר 2.83×2.66 מ', אריחים 33.3 ס"מ, שטיח 1.5 מ'. 6 הדמיות AI של הסלון הופקו (ב-<code>~/Downloads</code>, לא בריפו). אפשרויות ישיבה נוספות נרשמו ב-STATUS.</p>
+    <div class="src"><code>STATUS.md</code> · e5e4df1, 3f6f75e</div>
+  </div>
+
+  <h2>ממצאים חדשים שדורשים החלטה</h2>
+  <div class="lead alert">
+    <b>1. Instant Book ו"לילה הכנה לפני ואחרי"</b> עדיין כבויים/פעילים במודעה. המועצה דירגה אותם ראשונים להעלאת תפוסה. החלטה של אורן.<br>
+    <b>2. הצעת "מפתח בקישור"</b> (הצפנת כתובת/Wi-Fi) פתוחה מ-29.9. ה-QR כבר נשלח למוכר בלי זה, כלומר אם מחליטים כן צריך QR חדש לפני אישור ההדפסה.<br>
+    <b>3. הודעת Welcome ב-Airbnb</b> עדיין מפנה לכתובת הישנה (עובד דרך הפניה). לעדכן ל-stayflorentin.com בהזדמנות.
+  </div>
+
+  <h2>החלטות שהתקבלו היום</h2>
+  <table>
+    <tr><th style="width:30%">הנושא</th><th>ההכרעה והנימוק</th></tr>
+    <tr><td>מספר אורחים</td><td>אורח אחד בלבד, סופי. <b>"הבית קטן".</b></td></tr>
+    <tr><td>מחיר</td><td>נשאר ₪220/240. <b>מחכים שהתיירות תחזור לפני העלאה.</b></td></tr>
+    <tr><td>תמונות במודעה</td><td>כל 21 נשארות, רק סדר. הסלון נשאר שער עד שהספה החדשה מגיעה.</td></tr>
+    <tr><td>הדמיית אדם אמיתי</td><td>לא מייצרים תמונה של אדם שלישי מזוהה בהדמיות הסלון.</td></tr>
+    <tr><td>סקריפט Travelpayouts Drive</td><td>לא נכנס לאתר. <b>מכניס פרסומות לא נשלטות לאורחים;</b> לכן Eatwith ירד.</td></tr>
+    <tr><td>תגית Impact</td><td>נשארת ב-<code>index.html</code>. <b>תגית meta סטטית, לא קוד שרץ.</b></td></tr>
+    <tr><td>Airalo</td><td>נשאר למרות הכנסה נמוכה. <b>אורן רוצה קישור גם לחברים שטסים.</b></td></tr>
+    <tr><td>מחסני חשמל</td><td>ממתינים ליום ראשון 4.10 לפני הסלמה. <b>חול המועד, רק מענה אוטומטי.</b></td></tr>
+  </table>
+
+  <h2>משימות למחר, 2.10.2026 ואילך</h2>
+  <div class="lead note">
+    <b>נקודת הפתיחה של יום העבודה הבא.</b> האתר והמודעה מעודכנים; רוב מה שנשאר תלוי בתשובות מבחוץ.
+  </div>
+  <table>
+    <tr><th style="width:8%">סדר</th><th style="width:40%">המשימה</th><th>למה דווקא בסדר הזה</th></tr>
+    <tr><td><b>1</b></td><td>בוקר 2.10: לבדוק Gmail (בכרום, המחבר שבור) – תשובת המוכר עם rendering, אישור Airalo מ-Impact, Bein Harim. לבקש מאורן לבדוק גם את הצ'אט באפליקציית AliExpress</td><td>המוכר עונה בשעות היום של סין; rendering = לסרוק את שני ה-QR לפני אישור</td></tr>
+    <tr><td><b>2</b></td><td>כש-Airalo מאשרים: להוציא קישור מ-app.impact.com → שורת eSIM בכרטיס "השעה הראשונה" (4 שפות) → לשלוח לאורן את הקישור לחברים</td><td>הבקשה כבר הוגשה, נשאר רק הקישור</td></tr>
+    <tr><td><b>3</b></td><td>שבת 3.10 בערב: לבדוק את ריצת ה-Routine השבועי ואת "השבוע בתל אביב" באתר</td><td>ריצה ראשונה אחרי המעבר לדומיין החדש</td></tr>
+    <tr><td><b>4</b></td><td>ראשון 4.10: מחסני חשמל – אם אין חשבונית מתוקנת, מייל ההסלמה (דדליין 6.10, אמון הציבור) או טלפון *5018 שלוחה 2</td><td>סוף החג; הוחלט לחכות עד אז</td></tr>
+    <tr><td><b>5</b></td><td>ראשון 4.10 אחרי 16:00: שיחת אורן עם דור (גרפיטיול). אחריה: קוד/קישור לכרטיס הסיורים</td><td>דף הכנה לשיחה ניתן לאורן ב-1.10 (להציע הנחה לאורח)</td></tr>
+    <tr><td><b>6</b></td><td>שלישי 6.10: אם Bein Harim לא ענו – מייל ישיר לכתובת השותפים</td><td>שבוע מהבקשה</td></tr>
+    <tr><td><b>7</b></td><td>1 לכל חודש: סיכום שותפויות (GetYourGuide, ספא פלוס, Impact) – קליקים, הזמנות, עמלה</td><td>משימה מתוזמנת הוגדרה ב-1.10</td></tr>
+    <tr><td><b>8</b></td><td>כשהספה מגיעה: צילום שער חדש מאותה זווית, כרטיס "הספה", עדכון תיאור</td><td>תלוי במשלוח</td></tr>
+  </table>
+
+  <div class="card">
+    <h3>מה שחייב לקרות בכל צעד</h3>
+    <ul>
+      <li>כל שינוי תוכן ב-4 שפות → <code>python3 agent/validate.py house</code> → commit → <code>git pull --rebase</code> → push. אחרי שינוי CSS/JS: לקדם את <code>?v=</code> ב-<code>index.html</code> (כרגע <code>20261001i</code>).</li>
+      <li>סודות (iCal, קוד דלת, Wi-Fi, כתובת) לעולם לא בריפו או בצ'אט. קבצים פרטיים רק ב-<code>../airbnb-florentin-private/</code>.</li>
+      <li>לא מכניסים סקריפט חיצוני לאתר. הרשמות וסיסמאות: אורן ממלא בעצמו; Claude לא נכנס לחשבונות פיננסיים.</li>
+      <li>לאורן כותבים בעברית, קצר, בלי ז'רגון. שינוי עיצוב: לאמת בצילום מסך 375px לפני שמדווחים.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>מה שצריך לדעת כדי להמשיך</h3>
+    <ul>
+      <li>ריפו <code>~/Documents/Projects/airbnb-florentin</code>, main, HEAD <code>a049e4f</code> (לפני קומיט הדוח). חי: https://stayflorentin.com · <code>STATUS.md</code> הוא קובץ המצב, <code>TODO.md</code> סעיפים 15–16 למעקבים.</li>
+      <li>שרת מקומי חסום בסביבה הזו (PermissionError) – מאמתים על האתר החי אחרי deploy (1–2 דקות).</li>
+      <li>לוחות שותפים: partner.getyourguide.com · spaplus.tracknow.io · app.impact.com (כולם בחשבון oraykin7 בכרום). קישור ספא פלוס: <code>spaplus-tracking.partnergopro.com/click?campaign_id=2&amp;ref_id=50</code>.</li>
+      <li>Gemini בכרום ליצירת תמונות: מודל Flash עובד, הורדות נוחתות ב-<code>~/Downloads/Gemini_Generated_Image_*</code>.</li>
+      <li>טלפונים של שותפים ותמלול ההודעה הקולית: <code>STATUS.md</code> ו-<code>../airbnb-florentin-private/inbox/</code>.</li>
+    </ul>
+  </div>
+
+  <h2>פתוח וממתין לגורם חיצוני</h2>
+  <div class="card">
+    <ul>
+      <li>מוכר אליאקספרס – rendering של השלטים.</li>
+      <li>Airalo (דרך Impact) – אישור הבקשה.</li>
+      <li>Bein Harim – תשובה לבקשת ההצטרפות.</li>
+      <li>יאללה באסטה – קוד הנחה וקישורים אחרי החג.</li>
+      <li>גרפיטיול – שיחה 4.10.</li>
+      <li>מחסני חשמל – חשבונית מס מתוקנת (לא קשור לאתר).</li>
+      <li>Divani – משלוח הספה.</li>
+    </ul>
+  </div>
+
+  <div class="foot">אורן רייקין · מדריך האורחים פלורנטין · דוח פנימי · 1.10.2026</div>
+</div>
+</body>
+</html>
