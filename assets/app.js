@@ -128,6 +128,31 @@
     const get = t => parts.find(p => p.type === t).value;
     return { date: `${get("year")}-${get("month")}-${get("day")}`, hour: Number(get("hour")) % 24 };
   }
+  // Sunrise/sunset for Tel Aviv (NOAA approximation), returned as minutes-of-day in local (TLV) time.
+  function sunTimesTLV(now = new Date()) {
+    const lat = 32.08 * Math.PI / 180, lon = 34.78;
+    const tlv = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(now);
+    const g = t => Number(tlv.find(p => p.type === t).value);
+    const localMin = (g("hour") % 24) * 60 + g("minute");
+    const utcMin = now.getUTCHours() * 60 + now.getUTCMinutes();
+    let offset = localMin - utcMin; if (offset > 720) offset -= 1440; if (offset < -720) offset += 1440;
+    const start = Date.UTC(g("year"), 0, 0), doy = Math.floor((Date.UTC(g("year"), g("month") - 1, g("day")) - start) / 864e5);
+    const y = 2 * Math.PI / 365 * (doy - 1 + (12 - 12) / 24);
+    const eq = 229.18 * (0.000075 + 0.001868 * Math.cos(y) - 0.032077 * Math.sin(y) - 0.014615 * Math.cos(2 * y) - 0.040849 * Math.sin(2 * y));
+    const decl = 0.006918 - 0.399912 * Math.cos(y) + 0.070257 * Math.sin(y) - 0.006758 * Math.cos(2 * y) + 0.000907 * Math.sin(2 * y) - 0.002697 * Math.cos(3 * y) + 0.00148 * Math.sin(3 * y);
+    const ha = Math.acos(Math.cos(90.833 * Math.PI / 180) / (Math.cos(lat) * Math.cos(decl)) - Math.tan(lat) * Math.tan(decl)) * 180 / Math.PI;
+    const sunrise = 720 - 4 * (lon + ha) - eq + offset;
+    const sunset = 720 - 4 * (lon - ha) - eq + offset;
+    return { nowMin: localMin, sunrise, sunset };
+  }
+  function skyPhase() {
+    const { nowMin: m, sunrise, sunset } = sunTimesTLV();
+    const dawn = sunrise - 30, dusk = sunset + 25, glow = sunset - 75;
+    if (m < dawn || m >= dusk) return "night";
+    if (m >= glow) return "evening";
+    if (m < 11 * 60) return "morning";
+    return "noon";
+  }
   function fmtDate(iso, opts) {
     const [y, m, d] = iso.split("-").map(Number);
     return new Intl.DateTimeFormat(LOCALES[state.lang], { timeZone: "UTC", ...opts }).format(Date.UTC(y, m - 1, d));
@@ -243,7 +268,7 @@
     const name = guestName();
     const hr = nowInTLV().hour;
     const hiKey = hr < 5 ? "hi_night" : hr < 12 ? "hi_morning" : hr < 18 ? "hi_afternoon" : hr < 23 ? "hi_evening" : "hi_night";
-    const sky = hr < 5 || hr >= 20 ? "night" : hr < 12 ? "morning" : hr < 17 ? "noon" : "evening";
+    const sky = skyPhase();
     document.getElementById("eyebrow").replaceChildren(
       el("img", { class: "sky", src: `assets/img/sky/${sky}.webp`, alt: "", width: "40", height: "40", loading: "eager" }),
       el("span", {}, `${t(hiKey)} · ${t("hi_city")}`));
