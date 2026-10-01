@@ -60,6 +60,7 @@
 
 ## מיתוג ודומיין (1.10 בוקר)
 - השם באתר שונה מ-"Quiet room" ל-**"Cozy room"** (כותרת, לוגו, מחרוזות brand ב-4 שפות), v=20261001b. תואם לכותרת באיירבינבי.
+- כותרת במובייל תוקנה: לוגו חדש (שתי שורות, בלי כתם שמש) v=20261001c; תיבת השם – placeholder קצר ("השם שלכם"/"Your first name") + כפתור שמירה באותה שורה, v=20261001d. נבדק בטלפון 375px ב-4 שפות, כהה ובהיר.
 - **דומיין stayflorentin.com נקנה 1.10 (Namecheap, $6.99 שנה ראשונה, חידוש אוטומטי, Domain Privacy).** חובר: `CNAME` בריפו, custom domain ב-Pages, 4 רשומות A (185.199.108-111.153) + CNAME www→oraykin7-source.github.io ב-Namecheap. **HTTPS פעיל ונאכף (1.10 12:15, תעודה של GitHub; נדרש remove/re-add של הדומיין כדי להתניע).** http ו-github.io מפנים ל-https://stayflorentin.com/ כולל פרמטרים. GetYourGuide עודכן לכתובת החדשה. הודעות Airbnb עדיין עם הכתובת הישנה – עובדות דרך ההפניה, אפשר לעדכן בנחת.
 - `docs/print/qr-website.png` = QR ל-https://stayflorentin.com/ (הישן `qr-guide.png` = כתובת GitHub).
 
