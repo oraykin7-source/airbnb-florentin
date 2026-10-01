@@ -1573,6 +1573,97 @@
       ]
     },
     {
+      "id": "tours",
+      "icon": "🚌",
+      "group": "local",
+      "title": {
+        "en": "Day trips & tours",
+        "de": "Tagesausflüge & Touren",
+        "fr": "Excursions & visites",
+        "he": "טיולי יום וסיורים"
+      },
+      "sub": {
+        "en": "Masada & Dead Sea, Jerusalem, graffiti and food tours - book online, free cancellation",
+        "de": "Masada & Totes Meer, Jerusalem, Graffiti- und Food-Touren - online buchen, kostenlos stornierbar",
+        "fr": "Massada & mer Morte, Jérusalem, visites graffiti et gourmandes - réservation en ligne, annulation gratuite",
+        "he": "מצדה וים המלח, ירושלים, סיורי גרפיטי ואוכל - הזמנה אונליין, ביטול חינם"
+      },
+      "items": {
+        "en": [
+          "All of these pick you up in Tel Aviv or start a short walk from the apartment. Prices are the same as booking anywhere else; Oren gets a small commission, which helps keep this guide running.",
+          "Ask me before you book - I'll tell you which one fits your days here."
+        ],
+        "de": [
+          "Alle starten mit Abholung in Tel Aviv oder wenige Gehminuten von der Wohnung. Die Preise sind dieselben wie überall; Oren bekommt eine kleine Provision, die diesen Guide am Laufen hält.",
+          "Fragen Sie mich vor dem Buchen - ich sage Ihnen, welche Tour zu Ihren Tagen hier passt."
+        ],
+        "fr": [
+          "Toutes incluent la prise en charge à Tel Aviv ou partent à quelques minutes à pied de l'appartement. Les prix sont les mêmes qu'ailleurs ; Oren touche une petite commission qui aide à faire vivre ce guide.",
+          "Demandez-moi avant de réserver - je vous dirai laquelle convient à vos journées ici."
+        ],
+        "he": [
+          "כולם עם איסוף מתל אביב או יוצאים במרחק הליכה קצרה מהדירה. המחירים זהים להזמנה בכל מקום אחר; אורן מקבל עמלה קטנה שעוזרת להחזיק את המדריך הזה.",
+          "שאלו אותי לפני שמזמינים - אגיד לכם איזה סיור מתאים לימים שלכם כאן."
+        ]
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Masada & Dead Sea, full day with pick-up",
+            "de": "Masada & Totes Meer, ganzer Tag mit Abholung",
+            "fr": "Massada & mer Morte, journée avec prise en charge",
+            "he": "מצדה וים המלח, יום שלם עם איסוף"
+          },
+          "url": "https://www.getyourguide.com/tel-aviv-l487/masada-the-dead-sea-full-day-tour-from-tel-aviv-t21580/?partner_id=UO1A9K8&utm_medium=online_publisher"
+        },
+        {
+          "label": {
+            "en": "Jerusalem Old City, guided day tour",
+            "de": "Jerusalem Altstadt, geführte Tagestour",
+            "fr": "Vieille ville de Jérusalem, journée guidée",
+            "he": "ירושלים העיר העתיקה, סיור יום מודרך"
+          },
+          "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-guided-day-tour-from-tel-aviv-t148005/?partner_id=UO1A9K8&utm_medium=online_publisher"
+        },
+        {
+          "label": {
+            "en": "Florentin street art & graffiti walk (2 h)",
+            "de": "Florentin Street-Art- & Graffiti-Tour (2 Std.)",
+            "fr": "Balade street art & graffiti à Florentin (2 h)",
+            "he": "סיור גרפיטי ואמנות רחוב בפלורנטין (שעתיים)"
+          },
+          "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher"
+        },
+        {
+          "label": {
+            "en": "Levinsky market food tour with lunch",
+            "de": "Levinsky-Markt Food-Tour mit Mittagessen",
+            "fr": "Visite gourmande du marché Levinsky avec déjeuner",
+            "he": "סיור אוכל בשוק לוינסקי עם ארוחת צהריים"
+          },
+          "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-2-hour-levinsky-market-tour-with-full-lunch-t361955/?partner_id=UO1A9K8&utm_medium=online_publisher"
+        },
+        {
+          "label": {
+            "en": "Old Jaffa, port & flea market walk",
+            "de": "Alt-Jaffa, Hafen & Flohmarkt zu Fuß",
+            "fr": "Vieux Jaffa, port & marché aux puces à pied",
+            "he": "יפו העתיקה, הנמל ושוק הפשפשים ברגל"
+          },
+          "url": "https://www.getyourguide.com/tel-aviv-l487/jaffa-old-city-port-shuk-hapishpishim-walking-tour-t487378/?partner_id=UO1A9K8&utm_medium=online_publisher"
+        },
+        {
+          "label": {
+            "en": "All tours from Tel Aviv",
+            "de": "Alle Touren ab Tel Aviv",
+            "fr": "Toutes les visites depuis Tel Aviv",
+            "he": "כל הסיורים מתל אביב"
+          },
+          "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher"
+        }
+      ]
+    },
+    {
       "id": "review",
       "icon": "⭐",
       "title": {
