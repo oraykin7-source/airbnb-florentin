@@ -455,10 +455,3 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 .name-box input { flex: 1 1 0; max-width: 240px; font-size: 15px; padding: 8px 12px; min-height: 40px; }
 .name-box input::placeholder { color: var(--muted); }
 .name-box .qbtn { flex: none; white-space: nowrap; min-height: 40px; padding: 8px 14px; font-size: .95rem; }
-
-/* Public vs guest view (2.10): the home details exist only after the guest key decrypts them */
-html[data-mode="public"] [data-guest] { display: none !important; }
-html[data-mode="guest"] [data-public], html[data-mode="pending"] [data-public] { display: none !important; }
-.lead-pub { margin: 6px 0 0; font-size: 1.05rem; color: var(--ink); max-width: 34em; }
-.guest-hint { margin: 10px 0 0; font-size: .9rem; color: var(--muted); }
-img[data-sealed]:not([src]) { background: var(--chip); }

@@ -1,29 +1,951 @@
 {
-  "_comment": "PUBLIC part of the guide (neighbourhood cards only). Everything about the home itself is encrypted in sealed/ and built from ../airbnb-florentin-private/guide/ with agent/seal.mjs. Never put host phone, address, Wi-Fi or door codes here.",
+  "_comment": "Static part of the guide. Wi-Fi password, exact address and host phone are deliberately NOT stored here (public repo): they live on the printed card by the router and in the Airbnb check-in message. Edit the values in `host`; they replace {{placeholders}} in the cards.",
   "host": {
-    "host_name": "Oren"
-  },
-  "groups": {
-    "comfort": {
-      "en": "Get comfortable",
-      "de": "Ankommen",
-      "fr": "S'installer",
-      "he": "להתמקם"
+    "host_name": "Oren",
+    "whatsapp": "972523244799",
+    "_whatsapp_note": "E.164 without + or spaces, e.g. 972501234567. Leave empty to hide the WhatsApp button. NOTE: the number is visible in the public page source - use a dedicated hosting number.",
+    "shelter": {
+      "en": "the protected room (mamad), which is Oren's bedroom off the living room (marked in the photo) - just go straight in, no need to knock, even if he isn't home",
+      "de": "den Schutzraum (Mamad) - das ist Orens Schlafzimmer neben dem Wohnzimmer (im Foto markiert). Einfach direkt hineingehen, ohne anzuklopfen, auch wenn er nicht da ist",
+      "fr": "la pièce blindée (mamad), qui est la chambre d'Oren donnant sur le salon (encadrée sur la photo) - entrez directement, sans frapper, même s'il n'est pas là",
+      "he": "הממ\"ד - החדר של אורן, שנכנסים אליו מהסלון (מסומן בתמונה). פשוט להיכנס, בלי לדפוק, גם אם הוא לא בבית"
     },
-    "safe": {
-      "en": "Good to know",
-      "de": "Gut zu wissen",
-      "fr": "Bon à savoir",
-      "he": "טוב לדעת"
+    "boiler_switch": {
+      "en": "by the front door, at the entrance to the apartment",
+      "de": "neben der Eingangstür, im Eingangsbereich der Wohnung",
+      "fr": "à côté de la porte d'entrée, dans l'entrée de l'appartement",
+      "he": "ליד דלת הכניסה, בכניסה לדירה"
     },
-    "local": {
-      "en": "Go local",
-      "de": "Wie ein Einheimischer",
-      "fr": "Vivre comme un local",
-      "he": "כמו מקומיים"
-    }
+    "checkout_time": "12:00"
   },
   "cards": [
+    {
+      "id": "kitchen",
+      "icon": "🍳",
+      "title": {
+        "en": "Kitchen",
+        "de": "Küche",
+        "fr": "Cuisine",
+        "he": "מטבח"
+      },
+      "sub": {
+        "en": "Induction hob, Ninja Combi, where things are",
+        "de": "Induktion, Ninja Combi, wo ist was",
+        "fr": "Induction, Ninja Combi, où trouver quoi",
+        "he": "כיריים אינדוקציה, נינג'ה קומבי, איפה מה נמצא"
+      },
+      "items": {
+        "en": [
+          "The kitchen has a portable induction hob and a Ninja Combi (oven, air fryer, steamer in one). The full guide explains the levels, the pots with the click-on handle and where everything is.",
+          "Also here, no instructions needed: pop-up toaster and sandwich toaster (left drawers), Ninja blender and hand mixer (cabinet next to the plates). Help yourself.",
+          "Milk in the fridge, oil, spices and the coffee capsules are part of your stay - help yourself. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
+          "The cabinet under the sink and the two upper cabinets on the left hold Oren's own things - no need to open them. Everything for guests is in the other cabinets. Thank you!"
+        ],
+        "de": [
+          "Die Küche hat ein mobiles Induktionskochfeld und einen Ninja Combi (Ofen, Heißluftfritteuse und Dampfgarer in einem). Die vollständige Anleitung erklärt die Stufen, die Töpfe mit Klickgriff und wo alles ist.",
+          "Außerdem da, ganz ohne Anleitung: Toaster und Sandwichtoaster (Schubladen links), Ninja-Blender und Handmixer (Schrank neben den Tellern). Bedienen Sie sich.",
+          "Milch im Kühlschrank, Öl, Gewürze und die Kaffeekapseln gehören zum Aufenthalt dazu - bedienen Sie sich. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
+          "Der Schrank unter der Spüle und die beiden oberen Schränke links enthalten Orens private Sachen - kein Grund, sie zu öffnen. Alles für Gäste ist in den anderen Schränken. Danke!"
+        ],
+        "fr": [
+          "La cuisine a une plaque à induction portable et un Ninja Combi (four, friteuse à air et cuiseur vapeur en un). Le guide complet explique les niveaux, les casseroles à poignée clipsable et où tout se trouve.",
+          "Également à disposition, sans mode d'emploi : grille-pain et appareil à croque-monsieur (tiroirs de gauche), blender Ninja et batteur à main (placard à côté des assiettes). Servez-vous.",
+          "Le lait du frigo, l'huile, les épices et les capsules de café font partie du séjour - servez-vous. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
+          "Le placard sous l'évier et les deux placards du haut à gauche contiennent les affaires personnelles d'Oren - inutile de les ouvrir. Tout ce qu'il faut pour les voyageurs est dans les autres placards. Merci !"
+        ],
+        "he": [
+          "במטבח יש כיריים אינדוקציה ניידות ונינג'ה קומבי (תנור, אייר-פרייר ואידוי במכשיר אחד). המדריך המלא מסביר את הדרגות, את הסירים עם הידית הנשלפת ואיפה כל דבר נמצא.",
+          "יש גם, בלי צורך בהסבר: טוסטר קופץ וטוסטר לחיצה (מגירות משמאל), בלנדר נינג'ה ומיקסר יד (ארון ליד הצלחות). תרגישו חופשי.",
+          "החלב במקרר, השמן, התבלינים וקפסולות הקפה הם חלק מהאירוח - תרגישו חופשי. לכל דבר אחר שתרצו לבשל, החנויות במרחק 5 דקות (ראו כרטיס קניות).",
+          "הארון מתחת לכיור ושני הארונות העליונים משמאל מכילים את הדברים הפרטיים של אורן - אין סיבה לפתוח אותם. כל מה שצריך לאורחים נמצא בשאר הארונות. תודה!"
+        ]
+      },
+      "link": {
+        "href": "kitchen/",
+        "label": {
+          "en": "Open the full kitchen guide",
+          "de": "Vollständige Küchenanleitung öffnen",
+          "fr": "Ouvrir le guide complet de la cuisine",
+          "he": "למדריך המטבח המלא"
+        }
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Induction hob (Midea, 2 zones)",
+            "de": "Induktionskochfeld (Midea, 2 Zonen)",
+            "fr": "Plaque à induction (Midea, 2 zones)",
+            "he": "כיריים אינדוקציה (מידאה, 2 אזורים)"
+          },
+          "items": {
+            "en": [
+              "Portable plate on the left of the counter. Put the pan on a zone, touch ⏻ for that zone, set the level with − / +. Nothing happens without a pan on it.",
+              "It is much hotter than it looks: 1 = simmer, 2-3 = everyday frying, 4 = searing (briefly). 8 / B only for boiling water in a pot - never with a frying pan, it ruins the non-stick.",
+              "Lift pans, don't slide them. Touch ⏻ again to switch the zone off. Buttons not reacting? The 🔒 lock is on - hold it until it releases.",
+              "Keep phones and cards off the glass and never heat an empty pan. Full details in the kitchen guide below."
+            ],
+            "de": [
+              "Mobile Platte links auf der Arbeitsplatte. Topf auf eine Zone stellen, ⏻ der Zone berühren, Stufe mit − / + wählen. Ohne Topf passiert nichts.",
+              "Sie ist viel heißer, als sie aussieht: 1 = köcheln, 2-3 = normales Braten, 4 = scharf anbraten (kurz). 8 / B nur zum Wasserkochen im Topf - nie mit der Pfanne, das ruiniert die Beschichtung.",
+              "Töpfe anheben, nicht schieben. Zum Ausschalten wieder ⏻ berühren. Tasten reagieren nicht? Die 🔒 Sperre ist an - gedrückt halten, bis sie sich löst.",
+              "Handys und Karten nicht aufs Glas legen, nie eine leere Pfanne erhitzen. Alle Details im Küchenguide unten."
+            ],
+            "fr": [
+              "Plaque mobile à gauche du plan de travail. Posez la casserole sur une zone, touchez ⏻ de cette zone, réglez avec − / +. Sans casserole, rien ne se passe.",
+              "Elle chauffe bien plus qu'il n'y paraît : 1 = mijoter, 2-3 = cuisson courante, 4 = saisir (brièvement). 8 / B uniquement pour bouillir de l'eau dans une casserole - jamais avec une poêle, cela abîme l'antiadhésif.",
+              "Soulevez les casseroles, ne les faites pas glisser. Touchez ⏻ à nouveau pour éteindre la zone. Les boutons ne répondent pas ? Le verrou 🔒 est actif - maintenez-le jusqu'au déverrouillage.",
+              "Pas de téléphone ni de carte sur la vitre, jamais de poêle vide à chauffer. Tous les détails dans le guide cuisine ci-dessous."
+            ],
+            "he": [
+              "פלטה ניידת בצד שמאל של השיש. שמים סיר על אזור, נוגעים ב-⏻ של אותו אזור, קובעים עוצמה עם − / +. בלי סיר שום דבר לא קורה.",
+              "היא הרבה יותר חמה ממה שנראה: 1 = בישול איטי, 2-3 = טיגון יומיומי, 4 = צריבה (בקצרה). 8 / B רק להרתחת מים בסיר - אף פעם לא עם מחבת, זה הורס את הציפוי.",
+              "מרימים סירים, לא גוררים. נוגעים שוב ב-⏻ לכיבוי האזור. הכפתורים לא מגיבים? הנעילה 🔒 פועלת - מחזיקים עד שמשתחררת.",
+              "לא להניח טלפונים וכרטיסים על הזכוכית, ולא לחמם מחבת ריקה. כל הפרטים במדריך המטבח למטה."
+            ]
+          },
+          "image": "assets/img/house/hob.jpg",
+          "image_alt": {
+            "en": "The Midea hob - each zone: lock, timer, − / +, B (boost), power",
+            "de": "Das Midea-Kochfeld - je Zone: Sperre, Timer, − / +, B (Boost), Ein/Aus",
+            "fr": "La plaque Midea - par zone : verrou, minuteur, − / +, B (boost), marche",
+            "he": "כיריים Midea - לכל אזור: נעילה, טיימר, − / +, B (בוסט), הדלקה"
+          }
+        },
+        {
+          "title": {
+            "en": "Coffee - capsule machine",
+            "de": "Kaffee - Kapselmaschine",
+            "fr": "Café - machine à capsules",
+            "he": "קפה - מכונת קפסולות"
+          },
+          "image": "assets/img/house/nespresso.jpg",
+          "image_alt": {
+            "en": "The capsule machine, milk frother and capsules",
+            "de": "Kapselmaschine, Milchaufschäumer und Kapseln",
+            "fr": "La machine à capsules, le mousseur à lait et les capsules",
+            "he": "מכונת הקפסולות, מקציף החלב והקפסולות"
+          },
+          "items": {
+            "en": [
+              "Nespresso-compatible machine (Cafe Joe). Capsules are in the glass next to it - help yourself, they're on us.",
+              "Lift the copper lever, drop in a capsule, close it, put a cup under the spout and press one of the two buttons on top: small = espresso, large = lungo. The buttons blink while it heats up (about 30 seconds).",
+              "⚠️ The lungo button doesn't stop by itself - it keeps pouring until the cup overflows. For a lungo, stay next to the machine and press the button again to stop when you have enough.",
+              "Milk frother (the black Aeroccino): fill to the lower line, close the lid, press the button once for hot foam. Rinse it right after use.",
+              "Water tank is at the back - if the machine stops, it's probably empty. Used capsules drop into the drawer behind the drip tray."
+            ],
+            "de": [
+              "Nespresso-kompatible Maschine (Cafe Joe). Die Kapseln stehen im Glas daneben - bedienen Sie sich, sie gehen aufs Haus.",
+              "Kupferhebel anheben, Kapsel einlegen, schließen, Tasse unter den Auslauf und eine der zwei Tasten oben drücken: klein = Espresso, groß = Lungo. Die Tasten blinken beim Aufheizen (ca. 30 Sekunden).",
+              "⚠️ Die Lungo-Taste stoppt nicht von selbst - sie gießt weiter, bis die Tasse überläuft. Für einen Lungo also bei der Maschine bleiben und die Taste erneut drücken, sobald genug in der Tasse ist.",
+              "Milchaufschäumer (der schwarze Aeroccino): bis zur unteren Linie füllen, Deckel schließen, Taste einmal drücken für heißen Schaum. Direkt nach Gebrauch ausspülen.",
+              "Der Wassertank ist hinten - stoppt die Maschine, ist er wahrscheinlich leer. Gebrauchte Kapseln fallen in die Schublade hinter der Abtropfschale."
+            ],
+            "fr": [
+              "Machine compatible Nespresso (Cafe Joe). Les capsules sont dans le verre à côté - servez-vous, c'est offert.",
+              "Levez le levier cuivré, mettez une capsule, refermez, placez une tasse sous le bec et appuyez sur l'un des deux boutons du dessus : petit = espresso, grand = lungo. Les boutons clignotent pendant la chauffe (environ 30 secondes).",
+              "⚠️ Le bouton lungo ne s'arrête pas tout seul - il continue de verser jusqu'à faire déborder la tasse. Pour un lungo, restez à côté de la machine et appuyez de nouveau sur le bouton pour arrêter quand vous en avez assez.",
+              "Mousseur à lait (l'Aeroccino noir) : remplir jusqu'au trait inférieur, fermer le couvercle, appuyer une fois pour une mousse chaude. Rincer juste après.",
+              "Le réservoir d'eau est à l'arrière - si la machine s'arrête, il est probablement vide. Les capsules usagées tombent dans le tiroir derrière le bac d'égouttage."
+            ],
+            "he": [
+              "מכונה תואמת נספרסו (Cafe Joe). הקפסולות בכוס שלידה - תרגישו חופשי, זה עלינו.",
+              "מרימים את הידית הנחושתית, מכניסים קפסולה, סוגרים, שמים כוס מתחת ולוחצים על אחד משני הכפתורים למעלה: קטן = אספרסו, גדול = לונגו. הכפתורים מהבהבים בזמן החימום (כ-30 שניות).",
+              "⚠️ כפתור הלונגו לא נעצר לבד - הוא ממשיך למזוג עד שהכוס עולה על גדותיה. ללונגו, הישארו ליד המכונה ולחצו שוב על הכפתור כדי לעצור כשיש מספיק.",
+              "מקציף חלב (האירוצ'ינו השחור): למלא עד הקו התחתון, לסגור את המכסה, ללחוץ פעם אחת לקצף חם. לשטוף מיד אחרי השימוש.",
+              "מיכל המים מאחור - אם המכונה נעצרת, כנראה שהוא ריק. קפסולות משומשות נופלות למגירה שמאחורי מגש הטפטוף."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Sparkling water - SodaStream",
+            "de": "Sprudelwasser - SodaStream",
+            "fr": "Eau pétillante - SodaStream",
+            "he": "מים מוגזים - סודה-סטרים"
+          },
+          "image": "assets/img/house/sodastream.jpg",
+          "image_alt": {
+            "en": "The SodaStream and its bottle",
+            "de": "Der SodaStream mit Flasche",
+            "fr": "La SodaStream et sa bouteille",
+            "he": "הסודה-סטרים והבקבוק שלו"
+          },
+          "items": {
+            "en": [
+              "Fill the bottle with cold water up to the line (cold water fizzes better - the Tami4 is perfect for this).",
+              "Screw the bottle onto the machine until it clicks, then press the button on top 2–3 times in short pushes. More pushes = more fizz.",
+              "Unscrew slowly. Only ever carbonate plain water - never juice or anything with sugar, it damages the machine.",
+              "If nothing fizzes, the gas cylinder is empty - just tell me."
+            ],
+            "de": [
+              "Flasche bis zur Markierung mit kaltem Wasser füllen (kaltes Wasser sprudelt besser - der Tami4 ist dafür ideal).",
+              "Flasche in die Maschine schrauben, bis sie einrastet, dann die Taste oben 2–3 Mal kurz drücken. Mehr Drücken = mehr Sprudel.",
+              "Langsam abschrauben. Nur reines Wasser sprudeln - nie Saft oder etwas Zuckerhaltiges, das beschädigt die Maschine.",
+              "Sprudelt nichts, ist der Gaszylinder leer - sagen Sie mir einfach Bescheid."
+            ],
+            "fr": [
+              "Remplissez la bouteille d'eau froide jusqu'au trait (l'eau froide pétille mieux - la Tami4 est parfaite pour ça).",
+              "Vissez la bouteille sur la machine jusqu'au clic, puis appuyez 2–3 fois brièvement sur le bouton du haut. Plus d'appuis = plus de bulles.",
+              "Dévissez doucement. Ne gazéifiez que de l'eau plate - jamais de jus ni de boisson sucrée, cela abîme la machine.",
+              "Si rien ne pétille, la bouteille de gaz est vide - dites-le-moi simplement."
+            ],
+            "he": [
+              "ממלאים את הבקבוק במים קרים עד הקו (מים קרים מתגזים טוב יותר - התמי 4 מושלם לזה).",
+              "מבריגים את הבקבוק למכונה עד שנשמע קליק, ואז לוחצים על הכפתור העליון 2-3 לחיצות קצרות. יותר לחיצות = יותר גז.",
+              "לפתוח לאט. להגזיז רק מים רגילים - אף פעם לא מיץ או משהו עם סוכר, זה הורס את המכונה.",
+              "אם שום דבר לא מתגזז, בלון הגז ריק - פשוט תגידו לי."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Microwave",
+            "de": "Mikrowelle",
+            "fr": "Micro-ondes",
+            "he": "מיקרוגל"
+          },
+          "image": "assets/img/house/microwave.jpg",
+          "image_alt": {
+            "en": "The microwave control panel - numbers 1-6 start straight away",
+            "de": "Das Bedienfeld der Mikrowelle - Zahlen 1-6 starten sofort",
+            "fr": "Le panneau du micro-ondes - les chiffres 1-6 lancent directement",
+            "he": "לוח הבקרה של המיקרוגל - הספרות 1-6 מפעילות מיד"
+          },
+          "items": {
+            "en": [
+              "On the metal rack, under the Ninja Combi.",
+              "Quickest way: press a number (1–6) - that's the number of minutes at full power - and it starts by itself. STOP/CANCEL to stop, open the door to pause.",
+              "Custom time: TIME COOK, type the time, START. POWER lowers the power (e.g. for defrosting or chocolate).",
+              "No metal, no foil, no closed containers. Cover food with a plate to avoid splashes - and wipe it if something does splash."
+            ],
+            "de": [
+              "Im Metallregal, unter dem Ninja Combi.",
+              "Am schnellsten: eine Zahl (1–6) drücken - das sind Minuten bei voller Leistung - und es startet von selbst. STOP/CANCEL zum Stoppen, Tür öffnen zum Pausieren.",
+              "Eigene Zeit: TIME COOK, Zeit eingeben, START. POWER reduziert die Leistung (z. B. zum Auftauen oder für Schokolade).",
+              "Kein Metall, keine Folie, keine geschlossenen Behälter. Essen mit einem Teller abdecken - und auswischen, falls doch etwas spritzt."
+            ],
+            "fr": [
+              "Sur l'étagère métallique, sous le Ninja Combi.",
+              "Le plus rapide : appuyez sur un chiffre (1–6) - ce sont des minutes à pleine puissance - et ça démarre tout seul. STOP/CANCEL pour arrêter, ouvrir la porte pour mettre en pause.",
+              "Durée personnalisée : TIME COOK, tapez la durée, START. POWER baisse la puissance (décongélation, chocolat…).",
+              "Pas de métal, pas d'aluminium, pas de récipient fermé. Couvrez avec une assiette pour éviter les projections - et essuyez si ça éclabousse."
+            ],
+            "he": [
+              "על מדף המתכת, מתחת לנינג'ה קומבי.",
+              "הדרך המהירה: לוחצים על ספרה (1-6) - זה מספר הדקות בעוצמה מלאה - והוא מתחיל לבד. STOP/CANCEL לעצירה, פתיחת הדלת להשהיה.",
+              "זמן מותאם: TIME COOK, מקלידים את הזמן, START. POWER מוריד את העוצמה (למשל להפשרה או שוקולד).",
+              "בלי מתכת, בלי נייר כסף, בלי כלים סגורים. לכסות את האוכל בצלחת כדי למנוע התזות - ולנגב אם משהו בכל זאת ניתז."
+            ]
+          }
+        }
+      ],
+      "thumb": "assets/img/house/thumb/kitchen.jpg",
+      "group": "comfort",
+      "image": "assets/img/house/ninja-combi.jpg",
+      "image_alt": {
+        "en": "The Ninja Combi - oven, air fryer and steamer in one",
+        "de": "Der Ninja Combi - Ofen, Heißluftfritteuse und Dampfgarer in einem",
+        "fr": "Le Ninja Combi - four, air fryer et cuiseur vapeur en un",
+        "he": "הנינג'ה קומבי - תנור, אייר-פרייר ואידוי במכשיר אחד"
+      }
+    },
+    {
+      "id": "tami4",
+      "icon": "💧",
+      "title": {
+        "en": "Water bar (Tami4)",
+        "de": "Wasserbar (Tami4)",
+        "fr": "Fontaine à eau (Tami4)",
+        "he": "בר מים (תמי 4)"
+      },
+      "sub": {
+        "en": "Filtered cold & hot water - hold the red button to pour hot",
+        "de": "Gefiltertes kaltes & heißes Wasser - rote Taste gedrückt halten für heiß",
+        "fr": "Eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
+        "he": "מים מסוננים קרים וחמים - להחזיק את הכפתור האדום למזיגת מים חמים"
+      },
+      "image": "assets/img/house/tami4.jpg",
+      "image_alt": {
+        "en": "The Tami4 control panel",
+        "de": "Das Bedienfeld des Tami4",
+        "fr": "Le panneau de la Tami4",
+        "he": "לוח הבקרה של התמי 4"
+      },
+      "items": {
+        "en": [
+          "The white machine in the kitchen gives filtered drinking water - no need to buy bottles. Put your glass under the spout and touch a button.",
+          "Cold / room-temperature water: the cup buttons on the right - one touch.",
+          "Hot water (tea, coffee): the red cup button at the top left. For safety it only pours while you hold it - press and hold, release to stop. If you want it boiling (100°C), first touch the steam button at the bottom left, then hold the red one.",
+          "Nothing to refill - it's connected to the mains. The blue light is normal."
+        ],
+        "de": [
+          "Die weiße Maschine in der Küche liefert gefiltertes Trinkwasser - keine Flaschen nötig. Glas unter den Auslauf stellen und eine Taste berühren.",
+          "Kaltes / zimmerwarmes Wasser: die Becher-Tasten rechts - einmal tippen.",
+          "Heißes Wasser (Tee, Kaffee): die rote Becher-Taste oben links. Zur Sicherheit fließt es nur, solange Sie die Taste halten - gedrückt halten, loslassen stoppt. Für kochendes Wasser (100 °C) zuerst die Dampf-Taste unten links antippen, dann die rote halten.",
+          "Nichts nachzufüllen - die Maschine hängt am Wassernetz. Das blaue Licht ist normal."
+        ],
+        "fr": [
+          "La machine blanche dans la cuisine donne de l'eau filtrée - inutile d'acheter des bouteilles. Placez votre verre sous le bec et touchez un bouton.",
+          "Eau froide / tempérée : les boutons « verre » à droite - une touche.",
+          "Eau chaude (thé, café) : le bouton rouge en haut à gauche. Par sécurité, l'eau ne coule que tant que vous le maintenez - appuyez et maintenez, relâchez pour arrêter. Pour de l'eau bouillante (100 °C), touchez d'abord le bouton vapeur en bas à gauche, puis maintenez le rouge.",
+          "Rien à remplir - la machine est raccordée au réseau. La lumière bleue est normale."
+        ],
+        "he": [
+          "המכשיר הלבן במטבח נותן מי שתייה מסוננים - אין צורך לקנות בקבוקים. שמים כוס מתחת לפייה ונוגעים בכפתור.",
+          "מים קרים / בטמפרטורת החדר: כפתורי הכוס בצד ימין - נגיעה אחת.",
+          "מים חמים (תה, קפה): כפתור הכוס האדום למעלה משמאל. מטעמי בטיחות הוא מוזג רק כל עוד מחזיקים אותו - לוחצים ומחזיקים, משחררים כדי לעצור. למים רותחים (100°), נוגעים קודם בכפתור הקיטור למטה משמאל ואז מחזיקים את האדום.",
+          "אין מה למלא - הוא מחובר לצנרת. האור הכחול תקין."
+        ]
+      },
+      "thumb": "assets/img/house/thumb/tami4.jpg",
+      "group": "comfort",
+      "first_hour": 4,
+      "tile": "assets/img/tiles/tami4.jpg"
+    },
+    {
+      "id": "ac",
+      "icon": "❄️",
+      "title": {
+        "en": "Air conditioning",
+        "de": "Klimaanlage",
+        "fr": "Climatisation",
+        "he": "מזגן"
+      },
+      "sub": {
+        "en": "Two remotes - each needs only three buttons",
+        "de": "Zwei Fernbedienungen - je nur drei Tasten",
+        "fr": "Deux télécommandes - trois touches suffisent",
+        "he": "שני שלטים - בכל אחד צריך רק שלושה כפתורים"
+      },
+      "items": {
+        "en": [
+          "Please close the windows while the AC runs and switch it off when you go out. 24–25°C is comfortable; lower doesn't cool faster."
+        ],
+        "de": [
+          "Bitte bei laufender Klimaanlage die Fenster schließen und beim Weggehen ausschalten. 24–25 °C ist angenehm; niedriger kühlt nicht schneller."
+        ],
+        "fr": [
+          "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant. 24–25 °C est confortable ; plus bas ne refroidit pas plus vite."
+        ],
+        "he": [
+          "בבקשה לסגור את החלונות כשהמזגן עובד ולכבות אותו כשיוצאים. 24-25° נעים; נמוך יותר לא מקרר מהר יותר."
+        ]
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Bedroom (white Tornado remote)",
+            "de": "Schlafzimmer (weiße Tornado-Fernbedienung)",
+            "fr": "Chambre (télécommande blanche Tornado)",
+            "he": "חדר השינה (שלט טורנדו לבן)"
+          },
+          "image": "assets/img/house/ac-remote-bedroom.jpg",
+          "image_alt": {
+            "en": "Tornado remote",
+            "de": "Tornado-Fernbedienung",
+            "fr": "Télécommande Tornado",
+            "he": "שלט טורנדו"
+          },
+          "items": {
+            "en": [
+              "1. ON/OFF - the orange ⏻ button in the middle of the ring.",
+              "2. Temperature - TEMP ▲ / ▼ (top and bottom of the ring).",
+              "3. Mode - press MODE (top right) until the display shows ❄ for cooling or ☀ for heating. Ignore all the other buttons."
+            ],
+            "de": [
+              "1. EIN/AUS - die orange ⏻-Taste in der Mitte des Rings.",
+              "2. Temperatur - TEMP ▲ / ▼ (oben und unten am Ring).",
+              "3. Modus - MODE (oben rechts) drücken, bis im Display ❄ (Kühlen) oder ☀ (Heizen) erscheint. Alle anderen Tasten ignorieren."
+            ],
+            "fr": [
+              "1. ON/OFF - le bouton orange ⏻ au centre de l'anneau.",
+              "2. Température - TEMP ▲ / ▼ (en haut et en bas de l'anneau).",
+              "3. Mode - appuyez sur MODE (en haut à droite) jusqu'à voir ❄ (froid) ou ☀ (chaud) à l'écran. Ignorez toutes les autres touches."
+            ],
+            "he": [
+              "1. הדלקה/כיבוי - כפתור ⏻ הכתום במרכז הטבעת.",
+              "2. טמפרטורה - TEMP ▲ / ▼ (למעלה ולמטה בטבעת).",
+              "3. מצב - לוחצים MODE (למעלה מימין) עד שהצג מראה ❄ לקירור או ☀ לחימום. את שאר הכפתורים אפשר להתעלם."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Living room (Tadiran remote)",
+            "de": "Wohnzimmer (Tadiran-Fernbedienung)",
+            "fr": "Salon (télécommande Tadiran)",
+            "he": "סלון (שלט תדיראן)"
+          },
+          "image": "assets/img/house/ac-remote-living.jpg",
+          "image_alt": {
+            "en": "Tadiran remote",
+            "de": "Tadiran-Fernbedienung",
+            "fr": "Télécommande Tadiran",
+            "he": "שלט תדיראן"
+          },
+          "items": {
+            "en": [
+              "1. ON/OFF - top left button.",
+              "2. Temperature - the − / + buttons.",
+              "3. Mode - simply press COOL or HEAT. Ignore all the other buttons."
+            ],
+            "de": [
+              "1. EIN/AUS - Taste oben links.",
+              "2. Temperatur - die Tasten − / +.",
+              "3. Modus - einfach COOL (Kühlen) oder HEAT (Heizen) drücken. Alle anderen Tasten ignorieren."
+            ],
+            "fr": [
+              "1. ON/OFF - le bouton en haut à gauche.",
+              "2. Température - les touches − / +.",
+              "3. Mode - appuyez simplement sur COOL (froid) ou HEAT (chaud). Ignorez toutes les autres touches."
+            ],
+            "he": [
+              "1. הדלקה/כיבוי - הכפתור העליון משמאל.",
+              "2. טמפרטורה - כפתורי − / +.",
+              "3. מצב - פשוט לוחצים COOL או HEAT. את שאר הכפתורים אפשר להתעלם."
+            ]
+          }
+        }
+      ],
+      "thumb": "assets/img/house/thumb/ac.jpg",
+      "group": "comfort",
+      "first_hour": 2,
+      "tile": "assets/img/tiles/ac.jpg",
+      "tile_credit": "Photo: Pexels",
+      "tile_credit_url": "https://www.pexels.com/photo/38788452/"
+    },
+    {
+      "id": "tv",
+      "icon": "📺",
+      "title": {
+        "en": "TV",
+        "de": "Fernseher",
+        "fr": "Télévision",
+        "he": "טלוויזיה"
+      },
+      "sub": {
+        "en": "Two TVs - all accounts ready, nothing to log in to",
+        "de": "Zwei Fernseher - alle Konten eingerichtet, kein Login nötig",
+        "fr": "Deux télés - tous les comptes prêts, rien à connecter",
+        "he": "שתי טלוויזיות - כל החשבונות מחוברים, אין צורך להתחבר"
+      },
+      "items": {
+        "en": [
+          "All the streaming accounts are already signed in on both TVs - no need to log in with your own. Please leave the settings and accounts as they are: don't log out and don't add other accounts."
+        ],
+        "de": [
+          "Alle Streaming-Konten sind auf beiden Fernsehern bereits angemeldet - Sie müssen sich nicht mit eigenen einloggen. Bitte Einstellungen und Konten so lassen: nicht abmelden, keine anderen Konten hinzufügen."
+        ],
+        "fr": [
+          "Tous les comptes de streaming sont déjà connectés sur les deux télés - inutile de vous connecter avec les vôtres. Merci de laisser réglages et comptes tels quels : pas de déconnexion, pas d'autres comptes."
+        ],
+        "he": [
+          "כל שירותי הסטרימינג כבר מחוברים בשתי הטלוויזיות - אין צורך להתחבר עם חשבון משלכם. בבקשה להשאיר את ההגדרות והחשבונות כמו שהם: לא להתנתק ולא להוסיף חשבונות אחרים."
+        ]
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Your room - Hisense TV + Xiaomi stick (two remotes)",
+            "de": "Ihr Zimmer - Hisense-TV + Xiaomi-Stick (zwei Fernbedienungen)",
+            "fr": "Votre chambre - TV Hisense + clé Xiaomi (deux télécommandes)",
+            "he": "החדר שלכם - טלוויזיית הייסנס + סטרימר שיאומי (שני שלטים)"
+          },
+          "image": "assets/img/house/tv-remotes-room.jpg",
+          "image_alt": {
+            "en": "Left: the small Xiaomi remote (streaming). Right: the Hisense TV remote.",
+            "de": "Links: die kleine Xiaomi-Fernbedienung (Streaming). Rechts: die Hisense-TV-Fernbedienung.",
+            "fr": "À gauche : la petite télécommande Xiaomi (streaming). À droite : la télécommande de la TV Hisense.",
+            "he": "משמאל: שלט השיאומי הקטן (סטרימינג). מימין: שלט טלוויזיית ההייסנס."
+          },
+          "items": {
+            "en": [
+              "Turning on takes two presses: the red POWER on the big Hisense remote turns on the screen, then ⏻ on the small Xiaomi remote wakes the streaming stick. The TV switches to HDMI 2 by itself and the Google TV home screen appears. Same two buttons to turn off.",
+              "From there everything is on the small Xiaomi remote: NETFLIX, prime video and YouTube have their own buttons; Apple TV, Free TV (Israeli channels) and Disney+ are in the app row - press 🏠, scroll with the round pad, press its centre to open. ← goes back.",
+              "Volume: the + / − rocker at the bottom of the Xiaomi remote (or VOL on the Hisense).",
+              "If you ever see \"no signal\", press SOURCE on the Hisense remote and choose HDMI 2."
+            ],
+            "de": [
+              "Einschalten braucht zwei Tasten: rotes POWER auf der großen Hisense-Fernbedienung schaltet den Bildschirm ein, dann ⏻ auf der kleinen Xiaomi-Fernbedienung weckt den Streaming-Stick. Der Fernseher wechselt von selbst auf HDMI 2, und der Google-TV-Startbildschirm erscheint. Zum Ausschalten dieselben zwei Tasten.",
+              "Ab da läuft alles über die kleine Xiaomi-Fernbedienung: NETFLIX, prime video und YouTube haben eigene Tasten; Apple TV, Free TV (israelische Sender) und Disney+ sind in der App-Leiste - 🏠 drücken, mit dem runden Steuerkreuz blättern, Mitte drücken zum Öffnen. ← geht zurück.",
+              "Lautstärke: die + / −-Wippe unten an der Xiaomi-Fernbedienung (oder VOL auf der Hisense).",
+              "Falls doch \"kein Signal\" erscheint: SOURCE auf der Hisense-Fernbedienung drücken und HDMI 2 wählen."
+            ],
+            "fr": [
+              "Allumer se fait en deux appuis : POWER rouge sur la grande télécommande Hisense allume l'écran, puis ⏻ sur la petite Xiaomi réveille la clé de streaming. La télé passe toute seule sur HDMI 2 et l'accueil Google TV apparaît. Les deux mêmes boutons pour éteindre.",
+              "Ensuite tout se fait avec la petite Xiaomi : NETFLIX, prime video et YouTube ont leur propre bouton ; Apple TV, Free TV (chaînes israéliennes) et Disney+ sont dans la rangée d'applis - appuyez sur 🏠, naviguez avec le pavé rond, validez au centre. ← pour revenir.",
+              "Volume : la bascule + / − en bas de la Xiaomi (ou VOL sur la Hisense).",
+              "Si jamais « pas de signal » s'affiche, appuyez sur SOURCE sur la Hisense et choisissez HDMI 2."
+            ],
+            "he": [
+              "הדלקה בשתי לחיצות: POWER האדום בשלט ההייסנס הגדול מדליק את המסך, ואז ⏻ בשלט השיאומי הקטן מעיר את הסטרימר. הטלוויזיה עוברת ל-HDMI 2 לבד ומסך הבית של Google TV מופיע. אותם שני כפתורים לכיבוי.",
+              "משם הכול בשלט השיאומי הקטן: ל-NETFLIX, prime video ו-YouTube יש כפתורים משלהם; Apple TV, Free TV (ערוצים ישראליים) ו-Disney+ בשורת האפליקציות - לוחצים 🏠, גוללים עם המשטח העגול, לוחצים במרכזו לפתיחה. ← חוזר אחורה.",
+              "עוצמת שמע: מתג + / − בתחתית שלט השיאומי (או VOL בהייסנס).",
+              "אם רואים \"no signal\", לוחצים SOURCE בשלט ההייסנס ובוחרים HDMI 2."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Living room - Samsung TV (one remote)",
+            "de": "Wohnzimmer - Samsung-TV (eine Fernbedienung)",
+            "fr": "Salon - TV Samsung (une télécommande)",
+            "he": "סלון - טלוויזיית סמסונג (שלט אחד)"
+          },
+          "image": "assets/img/house/tv-remote.jpg",
+          "image_alt": {
+            "en": "The Samsung TV remote",
+            "de": "Die Samsung-Fernbedienung",
+            "fr": "La télécommande Samsung",
+            "he": "שלט טלוויזיית הסמסונג"
+          },
+          "items": {
+            "en": [
+              "ON/OFF: the red ⏻ button at the top.",
+              "Netflix: press NETFLIX, then choose the profile called \"guest\" (the blue smiley). Prime Video and Disney+ have their own buttons too.",
+              "Apple TV, Free TV (Israeli channels), YouTube, Spotify, HBO Max: press 🏠 Home, scroll along the app row at the bottom with the round pad, press its centre to open.",
+              "Volume: left rocker (+ / −). Channels: right rocker (∧ / ∨). ↩ goes back."
+            ],
+            "de": [
+              "EIN/AUS: die rote ⏻-Taste oben.",
+              "Netflix: NETFLIX drücken, dann das Profil \"guest\" (der blaue Smiley) wählen. Prime Video und Disney+ haben ebenfalls eigene Tasten.",
+              "Apple TV, Free TV (israelische Sender), YouTube, Spotify, HBO Max: 🏠 Home drücken, mit dem runden Steuerkreuz in der App-Leiste unten blättern, Mitte drücken zum Öffnen.",
+              "Lautstärke: linke Wippe (+ / −). Sender: rechte Wippe (∧ / ∨). ↩ geht zurück."
+            ],
+            "fr": [
+              "ON/OFF : le bouton rouge ⏻ en haut.",
+              "Netflix : appuyez sur NETFLIX, puis choisissez le profil « guest » (le smiley bleu). Prime Video et Disney+ ont aussi leur bouton.",
+              "Apple TV, Free TV (chaînes israéliennes), YouTube, Spotify, HBO Max : appuyez sur 🏠 Home, faites défiler la rangée d'applis en bas avec le pavé rond, validez au centre.",
+              "Volume : bascule de gauche (+ / −). Chaînes : bascule de droite (∧ / ∨). ↩ pour revenir."
+            ],
+            "he": [
+              "הדלקה/כיבוי: כפתור ⏻ האדום למעלה.",
+              "נטפליקס: לוחצים NETFLIX ובוחרים בפרופיל \"guest\" (הסמיילי הכחול). גם ל-Prime Video ו-Disney+ יש כפתורים משלהם.",
+              "Apple TV, Free TV (ערוצים ישראליים), YouTube, Spotify, HBO Max: לוחצים 🏠 Home, גוללים בשורת האפליקציות למטה עם המשטח העגול, לוחצים במרכזו לפתיחה.",
+              "עוצמת שמע: המתג השמאלי (+ / −). ערוצים: המתג הימני (∧ / ∨). ↩ חוזר אחורה."
+            ]
+          }
+        }
+      ],
+      "thumb": "assets/img/house/thumb/tv.jpg",
+      "group": "comfort",
+      "first_hour": 3,
+      "tile": "assets/img/tiles/tv.jpg",
+      "tile_credit": "Photo: Pexels",
+      "tile_credit_url": "https://www.pexels.com/photo/21792101/"
+    },
+    {
+      "id": "hot_water",
+      "icon": "🚿",
+      "title": {
+        "en": "Hot water (the \"dud\")",
+        "de": "Warmwasser (der „Dud“)",
+        "fr": "Eau chaude (le « doud »)",
+        "he": "מים חמים (הדוד)"
+      },
+      "sub": {
+        "en": "Important - read before showering",
+        "de": "Wichtig - vor dem Duschen lesen",
+        "fr": "Important - à lire avant la douche",
+        "he": "חשוב - לקרוא לפני המקלחת"
+      },
+      "items": {
+        "en": [
+          "Like most Israeli homes, hot water comes from a tank on the roof called a dud. It's heated by the sun and, when that's not enough, by an electric switch.",
+          "Where the switch is: {{boiler_switch}} (photo above - the small red light shows it's on).",
+          "On cloudy days or in the evening, turn the switch on about 30–40 minutes before showering, then turn it off afterwards.",
+          "In summer the sun is usually enough - the water can be very hot, so test it first."
+        ],
+        "de": [
+          "Wie in den meisten israelischen Wohnungen kommt das Warmwasser aus einem Tank auf dem Dach, dem „Dud“. Er wird von der Sonne geheizt und bei Bedarf elektrisch per Schalter.",
+          "Wo der Schalter ist: {{boiler_switch}} (Foto oben - das kleine rote Licht zeigt, dass er an ist).",
+          "An bewölkten Tagen oder abends den Schalter etwa 30–40 Minuten vor dem Duschen einschalten und danach wieder ausschalten.",
+          "Im Sommer reicht meist die Sonne - das Wasser kann sehr heiß sein, bitte vorher prüfen."
+        ],
+        "fr": [
+          "Comme dans la plupart des logements israéliens, l'eau chaude vient d'un réservoir sur le toit appelé « doud ». Il est chauffé par le soleil et, si besoin, par un interrupteur électrique.",
+          "Où se trouve l'interrupteur : {{boiler_switch}} (photo ci-dessus - le petit voyant rouge indique qu'il est allumé).",
+          "Par temps nuageux ou le soir, allumez l'interrupteur 30 à 40 minutes avant la douche, puis éteignez-le ensuite.",
+          "En été, le soleil suffit généralement - l'eau peut être très chaude, testez d'abord."
+        ],
+        "he": [
+          "כמו ברוב הבתים בישראל, המים החמים מגיעים מדוד על הגג. הוא מתחמם מהשמש, וכשזה לא מספיק - ממתג חשמלי.",
+          "איפה המתג: {{boiler_switch}} (בתמונה למעלה - האור האדום הקטן מראה שהוא דולק).",
+          "בימים מעוננים או בערב, מדליקים את המתג כ-30-40 דקות לפני המקלחת ומכבים אחריה.",
+          "בקיץ השמש בדרך כלל מספיקה - המים יכולים להיות חמים מאוד, אז לבדוק קודם."
+        ]
+      },
+      "image": "assets/img/house/boiler-switch.jpg",
+      "image_alt": {
+        "en": "The boiler switch - red light means it's on",
+        "de": "Der Boiler-Schalter - rotes Licht heißt an",
+        "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé",
+        "he": "מתג הדוד - אור אדום אומר שהוא דולק"
+      },
+      "thumb": "assets/img/house/thumb/hot_water.jpg",
+      "group": "comfort",
+      "first_hour": 1,
+      "tile": "assets/img/tiles/hot_water.jpg",
+      "tile_credit": "Photo: Karolina Grabowska, Pexels",
+      "tile_credit_url": "https://www.pexels.com/photo/4194865/"
+    },
+    {
+      "id": "laundry",
+      "icon": "🧺",
+      "title": {
+        "en": "Towels & laundry",
+        "de": "Handtücher & Wäsche",
+        "fr": "Serviettes et linge",
+        "he": "מגבות וכביסה"
+      },
+      "sub": {
+        "en": "Two towels on the bed, more in the wardrobe · washing machine on request",
+        "de": "Zwei Handtücher auf dem Bett, weitere im Schrank · Waschmaschine auf Anfrage",
+        "fr": "Deux serviettes sur le lit, d'autres dans l'armoire · machine à laver sur demande",
+        "he": "שתי מגבות על המיטה, עוד בארון · מכונת כביסה לפי בקשה"
+      },
+      "items": {
+        "en": [
+          "You'll find two towels on your bed - the large one for the body, the small one for the face. Extra towels are in the wardrobe.",
+          "Washing machine: you're welcome to use it - just message Oren first (WhatsApp button at the top). He'll show you how it works and, if it's only a few items, may add some of his own so the machine runs full rather than for four socks."
+        ],
+        "de": [
+          "Auf Ihrem Bett liegen zwei Handtücher - das große für den Körper, das kleine fürs Gesicht. Weitere Handtücher sind im Schrank.",
+          "Waschmaschine: Sie dürfen sie gerne benutzen - schreiben Sie vorher kurz Oren (WhatsApp-Button oben). Er zeigt Ihnen, wie sie funktioniert, und legt bei wenigen Teilen vielleicht etwas von sich dazu, damit die Maschine voll läuft und nicht für vier Socken."
+        ],
+        "fr": [
+          "Vous trouverez deux serviettes sur votre lit - la grande pour le corps, la petite pour le visage. D'autres serviettes sont dans l'armoire.",
+          "Machine à laver : vous pouvez l'utiliser - envoyez d'abord un message à Oren (bouton WhatsApp en haut). Il vous montre comment elle marche et, s'il n'y a que quelques affaires, ajoutera peut-être les siennes pour que la machine tourne pleine plutôt que pour quatre chaussettes."
+        ],
+        "he": [
+          "על המיטה תמצאו שתי מגבות - הגדולה לגוף, הקטנה לפנים. מגבות נוספות בארון.",
+          "מכונת כביסה: אפשר להשתמש בשמחה - רק לשלוח קודם הודעה לאורן (כפתור וואטסאפ למעלה). הוא יראה איך היא עובדת, ואם מדובר בכמה פריטים בלבד, אולי יוסיף כמה משלו כדי שהמכונה תרוץ מלאה ולא בשביל ארבעה גרביים."
+        ]
+      },
+      "group": "comfort"
+    },
+    {
+      "id": "checkout",
+      "icon": "🧳",
+      "group": "comfort",
+      "title": {
+        "en": "Check-out",
+        "de": "Check-out",
+        "fr": "Départ",
+        "he": "צ'ק-אאוט"
+      },
+      "sub": {
+        "en": "By {{checkout_time}} - three things to do",
+        "de": "Bis {{checkout_time}} - drei Dinge",
+        "fr": "Avant {{checkout_time}} - trois choses à faire",
+        "he": "עד {{checkout_time}} - שלושה דברים"
+      },
+      "items": {
+        "en": [
+          "Switch off the AC and the lights.",
+          "Pull the door shut behind you - it locks itself, there are no keys to return.",
+          "Send Oren a message so he knows the room is free.",
+          "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk).",
+          "Left something behind? Message Oren - he'll check."
+        ],
+        "de": [
+          "Klimaanlage und Licht ausschalten.",
+          "Tür hinter sich zuziehen - sie schließt von selbst, es gibt keine Schlüssel abzugeben.",
+          "Oren eine Nachricht schicken, damit er weiß, dass das Zimmer frei ist.",
+          "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß).",
+          "Etwas vergessen? Oren schreiben - er schaut nach."
+        ],
+        "fr": [
+          "Éteignez la clim et les lumières.",
+          "Tirez la porte derrière vous - elle se verrouille seule, il n'y a pas de clés à rendre.",
+          "Envoyez un message à Oren pour qu'il sache que la chambre est libre.",
+          "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied).",
+          "Oublié quelque chose ? Écrivez à Oren - il vérifiera."
+        ],
+        "he": [
+          "מכבים מזגן ואורות.",
+          "סוגרים את הדלת מאחוריכם - היא ננעלת לבד, אין מפתחות להחזיר.",
+          "שולחים לאורן הודעה כדי שידע שהחדר פנוי.",
+          "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה).",
+          "שכחתם משהו? כתבו לאורן - הוא יבדוק."
+        ]
+      }
+    },
+    {
+      "id": "emergency",
+      "icon": "🆘",
+      "emergency": true,
+      "title": {
+        "en": "Emergency",
+        "de": "Notfall",
+        "fr": "Urgences",
+        "he": "חירום"
+      },
+      "sub": {
+        "en": "Siren? Three calm steps. Emergency numbers, hospital",
+        "de": "Sirene? Drei ruhige Schritte. Notrufnummern, Krankenhaus",
+        "fr": "Sirène ? Trois gestes simples. Numéros d'urgence, hôpital",
+        "he": "אזעקה? שלושה צעדים פשוטים. מספרי חירום, בית חולים"
+      },
+      "tel": [
+        {
+          "label": {
+            "en": "Police 100",
+            "de": "Polizei 100",
+            "fr": "Police 100",
+            "he": "משטרה 100"
+          },
+          "number": "100"
+        },
+        {
+          "label": {
+            "en": "Ambulance 101",
+            "de": "Rettung 101",
+            "fr": "Ambulance 101",
+            "he": "מד\"א 101"
+          },
+          "number": "101"
+        },
+        {
+          "label": {
+            "en": "Fire 102",
+            "de": "Feuerwehr 102",
+            "fr": "Pompiers 102",
+            "he": "כיבוי אש 102"
+          },
+          "number": "102"
+        }
+      ],
+      "items": {
+        "en": [
+          "A siren means a rocket alert. In Tel Aviv you have about 90 seconds - that's plenty of time, no need to run."
+        ],
+        "de": [
+          "Eine Sirene bedeutet Raketenalarm. In Tel Aviv haben Sie etwa 90 Sekunden - das reicht gut, kein Grund zu rennen."
+        ],
+        "fr": [
+          "Une sirène signale une alerte roquette. À Tel Aviv vous avez environ 90 secondes - largement assez, pas besoin de courir."
+        ],
+        "he": [
+          "אזעקה = התרעה על טילים. בתל אביב יש כ-90 שניות - זה מספיק זמן, לא צריך לרוץ."
+        ]
+      },
+      "steps_title": {
+        "en": "At home - three steps",
+        "de": "Zu Hause - drei Schritte",
+        "fr": "À la maison - trois gestes",
+        "he": "בבית - שלושה צעדים"
+      },
+      "steps": {
+        "en": [
+          "Go into Oren's room, off the living room (the doorway marked in the photo). Just walk in - no need to knock, even if he isn't home.",
+          "Close the steel door and lift the handle up.",
+          "Stay 10 minutes after the siren stops. Then carry on with your day."
+        ],
+        "de": [
+          "In Orens Zimmer neben dem Wohnzimmer gehen (der im Foto markierte Durchgang). Einfach hinein - nicht anklopfen, auch wenn er nicht da ist.",
+          "Stahltür schließen und den Griff nach oben drücken.",
+          "10 Minuten nach Ende der Sirene bleiben. Dann geht der Tag ganz normal weiter."
+        ],
+        "fr": [
+          "Entrez dans la chambre d'Oren, à côté du salon (l'entrée encadrée sur la photo). Entrez directement - pas besoin de frapper, même s'il n'est pas là.",
+          "Fermez la porte en acier et levez la poignée.",
+          "Restez 10 minutes après la fin de la sirène. Puis reprenez votre journée."
+        ],
+        "he": [
+          "נכנסים לחדר של אורן, מהסלון (הפתח המסומן בתמונה). פשוט נכנסים - בלי לדפוק, גם אם הוא לא בבית.",
+          "סוגרים את דלת הפלדה ומרימים את הידית למעלה.",
+          "נשארים 10 דקות אחרי שהאזעקה נגמרת. ואז ממשיכים ביום."
+        ]
+      },
+      "image": "assets/img/house/shelter.jpg",
+      "image_alt": {
+        "en": "The shelter (mamad) is Oren's room - the doorway marked in orange",
+        "de": "Der Schutzraum (Mamad) ist Orens Zimmer - der orange markierte Durchgang",
+        "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange",
+        "he": "המקלט (ממ\"ד) הוא החדר של אורן - הפתח מסומן בכתום"
+      },
+      "thumb": "assets/img/house/thumb/emergency.jpg",
+      "group": "safe",
+      "sections": [
+        {
+          "title": {
+            "en": "The shelter door - two moves",
+            "de": "Die Schutzraumtür - zwei Handgriffe",
+            "fr": "La porte de la pièce blindée - deux gestes",
+            "he": "דלת הממ\"ד - שתי פעולות"
+          },
+          "image": "assets/img/house/shelter-door.jpg",
+          "image_alt": {
+            "en": "The steel door: 1 close it, 2 lift the handle up",
+            "de": "Die Stahltür: 1 schließen, 2 Griff nach oben",
+            "fr": "La porte en acier : 1 fermer, 2 lever la poignée",
+            "he": "דלת הפלדה: 1 לסגור, 2 להרים את הידית"
+          },
+          "items": {
+            "en": [
+              "This is the actual door. Pull it shut, then lift the white handle up until it locks. That's all - the window is already sealed."
+            ],
+            "de": [
+              "Das ist die tatsächliche Tür. Zuziehen, dann den weißen Griff nach oben drücken, bis er einrastet. Das ist alles - das Fenster ist bereits verschlossen."
+            ],
+            "fr": [
+              "C'est la vraie porte. Tirez-la pour la fermer, puis levez la poignée blanche jusqu'au verrouillage. C'est tout - la fenêtre est déjà scellée."
+            ],
+            "he": [
+              "זו הדלת האמיתית. סוגרים אותה, ואז מרימים את הידית הלבנה למעלה עד שננעלת. זה הכול - החלון כבר אטום."
+            ]
+          }
+        },
+        {
+          "title": {
+            "en": "Not at home?",
+            "de": "Nicht zu Hause?",
+            "fr": "Pas à la maison ?",
+            "he": "לא בבית?"
+          },
+          "items": {
+            "en": [
+              "Outside: go into the nearest building, into the stairwell, and wait 10 minutes. Everyone around you will be doing the same.",
+              "The free Home Front Command app sends alerts in English - worth installing on arrival."
+            ],
+            "de": [
+              "Draußen: ins nächste Gebäude, ins Treppenhaus, 10 Minuten warten. Alle um Sie herum machen dasselbe.",
+              "Die kostenlose App des Heimatfrontkommandos schickt Warnungen auf Englisch - bei Ankunft installieren."
+            ],
+            "fr": [
+              "Dehors : entrez dans l'immeuble le plus proche, dans la cage d'escalier, et attendez 10 minutes. Tout le monde autour de vous fera pareil.",
+              "L'appli gratuite du Commandement du front intérieur envoie les alertes en anglais - à installer à l'arrivée."
+            ],
+            "he": [
+              "בחוץ: נכנסים לבניין הקרוב, לחדר המדרגות, ומחכים 10 דקות. כולם מסביב עושים אותו דבר.",
+              "אפליקציית פיקוד העורף החינמית שולחת התרעות - כדאי להתקין עם ההגעה."
+            ]
+          },
+          "links": [
+            {
+              "label": {
+                "en": "Full instructions - Home Front Command (English)",
+                "de": "Alle Anweisungen - Heimatfrontkommando (Englisch)",
+                "fr": "Toutes les consignes - Commandement du front intérieur (en anglais)",
+                "he": "ההנחיות המלאות - פיקוד העורף"
+              },
+              "url": {
+                "en": "https://www.oref.org.il/eng",
+                "de": "https://www.oref.org.il/eng",
+                "fr": "https://www.oref.org.il/eng",
+                "he": "https://www.oref.org.il/"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Other help",
+            "de": "Weitere Hilfe",
+            "fr": "Autres aides",
+            "he": "עוד עזרה"
+          },
+          "items": {
+            "en": [
+              "Address to give emergency services: on the printed card by the door and in your Airbnb booking.",
+              "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
+              "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7.",
+              "To reach your host: the WhatsApp button at the top of this page, or the Airbnb app."
+            ],
+            "de": [
+              "Adresse für den Notruf: auf der gedruckten Karte an der Tür und in Ihrer Airbnb-Buchung.",
+              "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
+              "Apotheken (Super-Pharm, Be) gibt es überall; einige haben spät oder rund um die Uhr offen.",
+              "Gastgeber erreichen: WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
+            ],
+            "fr": [
+              "Adresse à donner aux secours : sur la carte imprimée près de la porte et dans votre réservation Airbnb.",
+              "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
+              "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvertes tard ou 24h/24.",
+              "Joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
+            ],
+            "he": [
+              "הכתובת למסירה לשירותי החירום: על הכרטיס המודפס ליד הדלת ובהזמנה ב-Airbnb.",
+              "בית החולים הקרוב עם מיון 24/7: איכילוב (המרכז הרפואי ת\"א ע\"ש סוראסקי), ויצמן 6 - כ-15 דקות במונית.",
+              "בתי מרקחת (סופר-פארם, Be) בכל העיר; חלקם פתוחים עד מאוחר או 24/7.",
+              "ליצירת קשר עם המארח: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "icon": "🤝",
+      "title": {
+        "en": "House rules",
+        "de": "Hausregeln",
+        "fr": "Règles de la maison",
+        "he": "כללי הבית"
+      },
+      "sub": {
+        "en": "A shared home - a few things that keep everyone happy",
+        "de": "Eine geteilte Wohnung - ein paar Dinge, damit alle zufrieden sind",
+        "fr": "Un logement partagé - quelques points pour que tout se passe bien",
+        "he": "בית משותף - כמה דברים ששומרים על כולם מרוצים"
+      },
+      "items": {
+        "en": [
+          "You have your own private room; the kitchen, bathroom and living room are shared with Oren, who lives here too. Make yourself at home - and say hi!",
+          "Please eat at the kitchen table or in your room rather than on the sofa - the fabric doesn't forgive crumbs.",
+          "Milk, oil, spices and coffee capsules are part of your stay - help yourself. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
+          "Back from the beach? Please go straight to the shower and rinse off the sand before walking around the apartment - sand gets everywhere and is hard to clean.",
+          "A robot vacuum-and-mop cleans the apartment every day at 11:00. Bags on the floor are fine; cables and clothes are better off it. If your door is closed, the robot simply skips your room.",
+          "Rubbish goes in the kitchen bin (recycling: plastic bottles to the orange cage, cardboard to the blue bin on the street).",
+          "No smoking or vaping anywhere in the apartment - please step outside.",
+          "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
+          "No pets, sorry.",
+          "Quiet after 23:00, please - I get up at 6 for work.",
+          "Check-out is at {{checkout_time}} - see the Check-out card."
+        ],
+        "de": [
+          "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
+          "Bitte am Küchentisch oder im Zimmer essen, nicht auf dem Sofa - der Stoff verzeiht keine Krümel.",
+          "Milch, Öl, Gewürze und Kaffeekapseln gehören zum Aufenthalt dazu - bedienen Sie sich. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
+          "Zurück vom Strand? Bitte direkt unter die Dusche und den Sand abspülen, bevor Sie durch die Wohnung gehen - Sand verteilt sich überall und ist schwer zu entfernen.",
+          "Ein Saug- und Wischroboter reinigt jeden Tag um 11:00 Uhr die Wohnung. Taschen auf dem Boden sind in Ordnung; Kabel und Kleidung besser nicht. Ist Ihre Tür geschlossen, lässt der Roboter Ihr Zimmer einfach aus.",
+          "Müll in den Küchenmülleimer (Recycling: Plastikflaschen in den orangen Gitterkorb, Karton in die blaue Tonne auf der Straße).",
+          "Nirgends in der Wohnung rauchen oder dampfen - bitte nach draußen gehen.",
+          "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
+          "Leider keine Haustiere.",
+          "Nach 23 Uhr bitte leise - ich stehe um 6 Uhr für die Arbeit auf.",
+          "Check-out um {{checkout_time}} - siehe Karte Check-out."
+        ],
+        "fr": [
+          "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
+          "Merci de manger à la table de la cuisine ou dans votre chambre plutôt que sur le canapé - le tissu ne pardonne pas les miettes.",
+          "Le lait, l'huile, les épices et les capsules de café font partie du séjour - servez-vous. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
+          "De retour de la plage ? Merci d'aller directement sous la douche pour rincer le sable avant de circuler dans l'appartement - le sable se glisse partout et s'enlève mal.",
+          "Un robot aspirateur-laveur nettoie l'appartement chaque jour à 11 h. Les sacs au sol ne gênent pas ; les câbles et les vêtements, si. Si votre porte est fermée, le robot saute simplement votre chambre.",
+          "Les déchets vont dans la poubelle de la cuisine (tri : bouteilles en plastique dans la cage orange, carton dans le bac bleu dans la rue).",
+          "Interdit de fumer ou de vapoter partout dans l'appartement - merci de sortir.",
+          "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
+          "Pas d'animaux, désolé.",
+          "Silence après 23 h, s'il vous plaît - je me lève à 6 h pour le travail.",
+          "Départ à {{checkout_time}} - voir la carte Départ."
+        ],
+        "he": [
+          "יש לכם חדר פרטי משלכם; המטבח, השירותים והסלון משותפים עם אורן, שגר כאן גם. תרגישו בבית - ותגידו שלום!",
+          "בבקשה לאכול ליד שולחן המטבח או בחדר ולא על הספה - הבד לא סולח לפירורים.",
+          "חלב, שמן, תבלינים וקפסולות קפה הם חלק מהאירוח - תרגישו חופשי. לכל דבר אחר שתרצו לבשל, החנויות במרחק 5 דקות (ראו כרטיס קניות).",
+          "חוזרים מהים? בבקשה ישר למקלחת לשטוף את החול לפני שמסתובבים בדירה - חול מגיע לכל מקום וקשה לנקות.",
+          "רובוט שואב-שוטף מנקה את הדירה כל יום ב-11:00. תיקים על הרצפה בסדר; כבלים ובגדים עדיף שלא. אם הדלת שלכם סגורה, הרובוט פשוט מדלג על החדר.",
+          "אשפה לפח במטבח (מחזור: בקבוקי פלסטיק לכלוב הכתום, קרטון לפח הכחול ברחוב).",
+          "אין עישון או אידוי בשום מקום בדירה - בבקשה לצאת החוצה.",
+          "בלי מסיבות או אירועים, ובלי אורחים ללינה מעבר לאורח שבהזמנה (אורחים נוספים כרוכים בתשלום נוסף ב-Airbnb).",
+          "בלי חיות מחמד, מצטער.",
+          "שקט אחרי 23:00 בבקשה - אני קם ב-6 לעבודה.",
+          "צ'ק-אאוט ב-{{checkout_time}} - ראו כרטיס צ'ק-אאוט."
+        ]
+      },
+      "group": "safe"
+    },
     {
       "id": "shops",
       "icon": "🛒",
@@ -749,6 +1671,69 @@
           "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50"
         }
       ]
+    },
+    {
+      "id": "review",
+      "icon": "⭐",
+      "title": {
+        "en": "Five stars?",
+        "de": "Fünf Sterne?",
+        "fr": "Cinq étoiles ?",
+        "he": "חמישה כוכבים?"
+      },
+      "sub": {
+        "en": "Tell me during your stay, not after",
+        "de": "Sagen Sie es mir während des Aufenthalts, nicht danach",
+        "fr": "Dites-le-moi pendant le séjour, pas après",
+        "he": "ספרו לי במהלך השהות, לא אחריה"
+      },
+      "items": {
+        "en": [
+          "On Airbnb, five stars simply means \"everything was fine\" - anything less tells other travellers something went wrong.",
+          "So if anything is missing or not quite right - a towel, the Wi-Fi, a noisy night - please tell me right away (WhatsApp button at the top) and I'll fix it straight away. My goal is that you leave with a genuine five-star experience.",
+          "And if you did enjoy your stay, a few words in your review mean a lot to a small host like me. Thank you!",
+          "How it works: a day after check-out, Airbnb sends you a \"Write a review\" prompt (app → Trips, or by email). Rate each category, add a couple of sentences, and that's it - both reviews are published at the same time."
+        ],
+        "de": [
+          "Bei Airbnb bedeuten fünf Sterne einfach \"alles war in Ordnung\" - alles darunter signalisiert anderen Reisenden, dass etwas schiefgelaufen ist.",
+          "Falls also etwas fehlt oder nicht ganz stimmt - ein Handtuch, das WLAN, eine laute Nacht - sagen Sie es mir bitte sofort (WhatsApp-Button oben), und ich kümmere mich direkt darum. Mein Ziel ist, dass Sie mit einem echten Fünf-Sterne-Erlebnis abreisen.",
+          "Und wenn es Ihnen gefallen hat: Ein paar Worte in Ihrer Bewertung bedeuten einem kleinen Gastgeber wie mir sehr viel. Danke!",
+          "So geht's: einen Tag nach dem Check-out schickt Airbnb Ihnen die Aufforderung \"Bewertung schreiben\" (App → Reisen, oder per E-Mail). Jede Kategorie bewerten, zwei Sätze dazu, fertig - beide Bewertungen werden gleichzeitig veröffentlicht."
+        ],
+        "fr": [
+          "Sur Airbnb, cinq étoiles veut simplement dire « tout allait bien » - une note inférieure signale aux autres voyageurs qu'il y a eu un problème.",
+          "Alors si quelque chose manque ou n'est pas tout à fait au point - une serviette, le Wi-Fi, une nuit bruyante - dites-le-moi tout de suite (bouton WhatsApp en haut) et je le règle immédiatement. Mon objectif est que vous repartiez avec une vraie expérience cinq étoiles.",
+          "Et si vous avez aimé votre séjour, quelques mots dans votre commentaire comptent beaucoup pour un petit hôte comme moi. Merci !",
+          "Comment ça marche : le lendemain du départ, Airbnb vous envoie une invitation « Écrire un commentaire » (appli → Voyages, ou par e-mail). Notez chaque catégorie, ajoutez deux phrases, et c'est tout - les deux avis sont publiés en même temps."
+        ],
+        "he": [
+          "ב-Airbnb, חמישה כוכבים פשוט אומרים \"הכול היה בסדר\" - כל דבר פחות מזה אומר למטיילים אחרים שמשהו השתבש.",
+          "אז אם משהו חסר או לא בדיוק כמו שצריך - מגבת, הוויי-פיי, לילה רועש - בבקשה ספרו לי מיד (כפתור וואטסאפ למעלה) ואתקן על המקום. המטרה שלי שתצאו מכאן עם חוויה אמיתית של חמישה כוכבים.",
+          "ואם נהניתם, כמה מילים בביקורת שלכם שוות המון למארח קטן כמוני. תודה!",
+          "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה → טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
+        ]
+      },
+      "group": "safe"
     }
-  ]
+  ],
+  "groups": {
+    "comfort": {
+      "en": "Get comfortable",
+      "de": "Ankommen",
+      "fr": "S'installer",
+      "he": "להתמקם"
+    },
+    "safe": {
+      "en": "Good to know",
+      "de": "Gut zu wissen",
+      "fr": "Bon à savoir",
+      "he": "טוב לדעת"
+    },
+    "local": {
+      "en": "Go local",
+      "de": "Wie ein Einheimischer",
+      "fr": "Vivre comme un local",
+      "he": "כמו מקומיים"
+    }
+  }
 }
