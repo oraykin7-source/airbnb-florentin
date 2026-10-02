@@ -1,0 +1,43 @@
+# Publishes ONLY the guide's public files to GitHub Pages.
+# Project notes (STATUS.md, TODO.md, docs/, agent/, CLAUDE.md, README.md) are never copied,
+# so they are not reachable at stayflorentin.com.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble the public site (whitelist)
+        run: |
+          set -eu
+          mkdir _site
+          cp CNAME _site/
+          cp ./*.html _site/
+          for f in robots.txt sitemap.xml llms.txt; do [ -f "$f" ] && cp "$f" _site/ || true; done
+          for d in assets content data kitchen sealed; do [ -d "$d" ] && cp -r "$d" _site/ || true; done
+          touch _site/.nojekyll
+          echo "Published files:"; (cd _site && find . -type f | sort | head -200)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

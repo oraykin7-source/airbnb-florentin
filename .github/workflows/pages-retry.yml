@@ -1,10 +1,10 @@
-# Safety net: if GitHub's own "pages build and deployment" run fails
+# Safety net: if the "Deploy site" run fails
 # (usually a transient 500 on GitHub's side), re-run it once automatically.
 name: Retry failed Pages deployment
 
 on:
   workflow_run:
-    workflows: ["pages build and deployment"]
+    workflows: ["Deploy site"]
     types: [completed]
 
 permissions:
