@@ -455,3 +455,9 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 .name-box input { flex: 1 1 0; max-width: 240px; font-size: 15px; padding: 8px 12px; min-height: 40px; }
 .name-box input::placeholder { color: var(--muted); }
 .name-box .qbtn { flex: none; white-space: nowrap; min-height: 40px; padding: 8px 14px; font-size: .95rem; }
+
+/* Day trips & tours section (2.10): open photo cards, like the weekly events */
+.ev.tour .ev-media { display: block; position: relative; }
+.ev.tour .book { font-weight: 700; text-decoration: none; background: var(--accent); color: #fff; padding: 9px 14px; border-radius: 12px; }
+.tours-note { margin-top: 12px; }
+@media (max-width: 400px) { .tabbar a { font-size: .66rem; } }

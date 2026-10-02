@@ -10,6 +10,7 @@
 
   const UI = {
     en: {
+      tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
       tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
@@ -30,6 +31,7 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
+      tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
       tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Diese Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
@@ -50,6 +52,7 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
+      tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
       tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Cette semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
@@ -70,6 +73,7 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
+      tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
       tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
@@ -412,6 +416,33 @@
     }
   }
 
+  // Day trips & tours: open photo cards (same look as the weekly events), each with a partner link
+  function renderTours() {
+    const sec = document.getElementById("tours"), box = document.getElementById("tours-list");
+    const tr = state.house && state.house.tours;
+    const has = !!(tr && tr.items && tr.items.length);
+    sec.hidden = !has;
+    document.querySelectorAll('.jump a[href="#tours"], .tabbar a[data-target="tours"]').forEach(a => { a.hidden = !has; });
+    box.replaceChildren();
+    if (!has) return;
+    document.getElementById("tours-lead").textContent = L_(tr.lead);
+    document.getElementById("tours-note").textContent = L_(tr.note);
+    for (const it of tr.items) {
+      const media = el("a", { class: "ev-media", href: it.url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
+        el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
+          onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
+        it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null);
+      box.append(el("article", { class: "ev tour", id: "tour-" + it.id },
+        media,
+        el("div", { class: "ev-top" }, el("h3", {}, L_(it.title))),
+        el("div", { class: "where" }, L_(it.meta)),
+        el("p", {}, L_(it.blurb)),
+        el("div", { class: "foot-row" },
+          it.image_credit_url ? el("a", { class: "credit-link", href: it.image_credit_url, target: "_blank", rel: "noopener" }, t("photo")) : el("span", {}),
+          el("a", { class: "book", href: it.url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
+    }
+  }
+
   const MAX_FEED_AGE_DAYS = 10;
   function feedIsStale() {
     if (!state.weekly || !state.weekly.generated_at) return true;
@@ -494,17 +525,17 @@
   let openCard = hashCard(), hashScrolled = false;
   function applyHashCard() {
     if (!openCard) return;
-    const d = document.getElementById(openCard); if (!d) return;
-    d.open = true;
+    const d = document.getElementById(openCard === "card-tours" ? "tours" : openCard); if (!d) return;
+    if (d.tagName === "DETAILS") d.open = true;
     if (!hashScrolled) { hashScrolled = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start" })); }
   }
   window.addEventListener("hashchange", () => { openCard = hashCard(); hashScrolled = false; applyHashCard(); });
-  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderPlaces(); renderEvents(); applyHashCard(); }
+  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderTours(); renderPlaces(); renderEvents(); applyHashCard(); }
 
   // Bottom tab bar: highlight the section in view
   (function tabbar() {
     const links = [...document.querySelectorAll(".tabbar a")];
-    const targets = ["top", "house", "places", "week"].map(id => document.getElementById(id)).filter(Boolean);
+    const targets = ["top", "house", "tours", "places", "week"].map(id => document.getElementById(id)).filter(Boolean);
     const io = new IntersectionObserver(entries => {
       const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (!vis) return;
@@ -539,7 +570,7 @@
 
   // Each part renders as soon as its own file arrives: a slow or failed events feed
   // never delays the apartment / emergency cards.
-  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
+  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderTours(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
   getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); applyHashCard(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {

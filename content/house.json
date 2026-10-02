@@ -1573,106 +1573,6 @@
       ]
     },
     {
-      "id": "tours",
-      "icon": "🚌",
-      "group": "local",
-      "title": {
-        "en": "Day trips & tours",
-        "de": "Tagesausflüge & Touren",
-        "fr": "Excursions & visites",
-        "he": "טיולי יום וסיורים"
-      },
-      "sub": {
-        "en": "Masada & Dead Sea, Jerusalem, graffiti and food tours - book online, free cancellation",
-        "de": "Masada & Totes Meer, Jerusalem, Graffiti- und Food-Touren - online buchen, kostenlos stornierbar",
-        "fr": "Massada & mer Morte, Jérusalem, visites graffiti et gourmandes - réservation en ligne, annulation gratuite",
-        "he": "מצדה וים המלח, ירושלים, סיורי גרפיטי ואוכל - הזמנה אונליין, ביטול חינם"
-      },
-      "items": {
-        "en": [
-          "All of these pick you up in Tel Aviv or start a short walk from the apartment. Prices are the same as booking anywhere else; Oren gets a small commission, which helps keep this guide running.",
-          "Ask me before you book - I'll tell you which one fits your days here."
-        ],
-        "de": [
-          "Alle starten mit Abholung in Tel Aviv oder wenige Gehminuten von der Wohnung. Die Preise sind dieselben wie überall; Oren bekommt eine kleine Provision, die diesen Guide am Laufen hält.",
-          "Fragen Sie mich vor dem Buchen - ich sage Ihnen, welche Tour zu Ihren Tagen hier passt."
-        ],
-        "fr": [
-          "Toutes incluent la prise en charge à Tel Aviv ou partent à quelques minutes à pied de l'appartement. Les prix sont les mêmes qu'ailleurs ; Oren touche une petite commission qui aide à faire vivre ce guide.",
-          "Demandez-moi avant de réserver - je vous dirai laquelle convient à vos journées ici."
-        ],
-        "he": [
-          "כולם עם איסוף מתל אביב או יוצאים במרחק הליכה קצרה מהדירה. המחירים זהים להזמנה בכל מקום אחר; אורן מקבל עמלה קטנה שעוזרת להחזיק את המדריך הזה.",
-          "שאלו אותי לפני שמזמינים - אגיד לכם איזה סיור מתאים לימים שלכם כאן."
-        ]
-      },
-      "links": [
-        {
-          "label": {
-            "en": "Masada & Dead Sea, full day with pick-up",
-            "de": "Masada & Totes Meer, ganzer Tag mit Abholung",
-            "fr": "Massada & mer Morte, journée avec prise en charge",
-            "he": "מצדה וים המלח, יום שלם עם איסוף"
-          },
-          "url": "https://www.getyourguide.com/tel-aviv-l487/masada-the-dead-sea-full-day-tour-from-tel-aviv-t21580/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_masada_the_dead_sea_full_day"
-        },
-        {
-          "label": {
-            "en": "Jerusalem Old City, guided day tour",
-            "de": "Jerusalem Altstadt, geführte Tagestour",
-            "fr": "Vieille ville de Jérusalem, journée guidée",
-            "he": "ירושלים העיר העתיקה, סיור יום מודרך"
-          },
-          "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-guided-day-tour-from-tel-aviv-t148005/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jerusalem_guided_day_tour_fr"
-        },
-        {
-          "label": {
-            "en": "Florentin street art & graffiti walk (2 h)",
-            "de": "Florentin Street-Art- & Graffiti-Tour (2 Std.)",
-            "fr": "Balade street art & graffiti à Florentin (2 h)",
-            "he": "סיור גרפיטי ואמנות רחוב בפלורנטין (שעתיים)"
-          },
-          "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_street_art_and_graf"
-        },
-        {
-          "label": {
-            "en": "Levinsky market food tour with lunch",
-            "de": "Levinsky-Markt Food-Tour mit Mittagessen",
-            "fr": "Visite gourmande du marché Levinsky avec déjeuner",
-            "he": "סיור אוכל בשוק לוינסקי עם ארוחת צהריים"
-          },
-          "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-2-hour-levinsky-market-tour-with-full-lunch-t361955/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_2_hour_levinsky_mar"
-        },
-        {
-          "label": {
-            "en": "Old Jaffa, port & flea market walk",
-            "de": "Alt-Jaffa, Hafen & Flohmarkt zu Fuß",
-            "fr": "Vieux Jaffa, port & marché aux puces à pied",
-            "he": "יפו העתיקה, הנמל ושוק הפשפשים ברגל"
-          },
-          "url": "https://www.getyourguide.com/tel-aviv-l487/jaffa-old-city-port-shuk-hapishpishim-walking-tour-t487378/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jaffa_old_city_port_shuk_hap"
-        },
-        {
-          "label": {
-            "en": "All tours from Tel Aviv",
-            "de": "Alle Touren ab Tel Aviv",
-            "fr": "Toutes les visites depuis Tel Aviv",
-            "he": "כל הסיורים מתל אביב"
-          },
-          "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours"
-        },
-        {
-          "label": {
-            "en": "Spa day or massage in Tel Aviv (Spa Plus, Israeli booking site)",
-            "de": "Spa-Tag oder Massage in Tel Aviv (Spa Plus, israelische Buchungsseite)",
-            "fr": "Journée spa ou massage à Tel Aviv (Spa Plus, site israélien)",
-            "he": "יום ספא או עיסוי בתל אביב (ספא פלוס)"
-          },
-          "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50"
-        }
-      ]
-    },
-    {
       "id": "review",
       "icon": "⭐",
       "title": {
@@ -1735,5 +1635,196 @@
       "fr": "Vivre comme un local",
       "he": "כמו מקומיים"
     }
+  },
+  "tours": {
+    "lead": {
+      "en": "Hand-picked trips and tours, bookable online - most with free cancellation.",
+      "de": "Ausgewählte Ausflüge und Touren, online buchbar - meist kostenlos stornierbar.",
+      "fr": "Excursions et visites choisies, réservables en ligne - annulation gratuite pour la plupart.",
+      "he": "טיולים וסיורים נבחרים, בהזמנה אונליין - ברובם ביטול חינם."
+    },
+    "note": {
+      "en": "Prices are the same as booking anywhere else; Oren gets a small commission, which helps keep this guide running. Not sure which one fits your days here? Ask me.",
+      "de": "Die Preise sind dieselben wie überall; Oren bekommt eine kleine Provision, die diesen Guide am Laufen hält. Unsicher, was zu Ihren Tagen passt? Fragen Sie mich.",
+      "fr": "Les prix sont les mêmes qu'ailleurs ; Oren touche une petite commission qui aide à faire vivre ce guide. Un doute sur ce qui convient à votre séjour ? Demandez-moi.",
+      "he": "המחירים זהים להזמנה בכל מקום אחר; אורן מקבל עמלה קטנה שעוזרת להחזיק את המדריך הזה. לא בטוחים מה מתאים לימים שלכם כאן? שאלו אותי."
+    },
+    "items": [
+      {
+        "id": "masada",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/masada-the-dead-sea-full-day-tour-from-tel-aviv-t21580/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_masada_the_dead_sea_full_day",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Israel-2013-Aerial_13-Masada.jpg/960px-Israel-2013-Aerial_13-Masada.jpg",
+        "image_credit": "Godot13, CC BY-SA 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Israel-2013-Aerial_13-Masada.jpg",
+        "title": {
+          "en": "Masada & the Dead Sea",
+          "de": "Masada & Totes Meer",
+          "fr": "Massada & la mer Morte",
+          "he": "מצדה וים המלח"
+        },
+        "meta": {
+          "en": "Full day · pick-up in Tel Aviv",
+          "de": "Ganzer Tag · Abholung in Tel Aviv",
+          "fr": "Journée entière · prise en charge à Tel Aviv",
+          "he": "יום שלם · איסוף מתל אביב"
+        },
+        "blurb": {
+          "en": "Herod's fortress on a desert cliff, then a float in the saltiest sea on earth. The classic day out of the city - book at least a day ahead.",
+          "de": "Herodes' Festung auf dem Wüstenfelsen, danach schweben im salzigsten Meer der Welt. Der Klassiker unter den Tagesausflügen - mindestens einen Tag vorher buchen.",
+          "fr": "La forteresse d'Hérode sur sa falaise du désert, puis on flotte dans la mer la plus salée du monde. L'excursion classique - réservez au moins la veille.",
+          "he": "המבצר של הורדוס על צוק במדבר, ואחריו לצוף בים הכי מלוח בעולם. טיול היום הקלאסי - להזמין לפחות יום מראש."
+        }
+      },
+      {
+        "id": "jerusalem",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-guided-day-tour-from-tel-aviv-t148005/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jerusalem_guided_day_tour_fr",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dome_of_the_Rock_Panorama.jpg/960px-Dome_of_the_Rock_Panorama.jpg",
+        "image_credit": "Askii, CC BY-SA 3.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_Panorama.jpg",
+        "title": {
+          "en": "Jerusalem Old City",
+          "de": "Jerusalem Altstadt",
+          "fr": "Vieille ville de Jérusalem",
+          "he": "ירושלים העיר העתיקה"
+        },
+        "meta": {
+          "en": "Full day · guided",
+          "de": "Ganzer Tag · geführt",
+          "fr": "Journée entière · guidée",
+          "he": "יום שלם · מודרך"
+        },
+        "blurb": {
+          "en": "The Western Wall, the Holy Sepulchre and the market alleys, with a guide who makes sense of it all. About an hour from Tel Aviv.",
+          "de": "Klagemauer, Grabeskirche und die Gassen des Basars - mit einem Guide, der alles einordnet. Etwa eine Stunde von Tel Aviv.",
+          "fr": "Le Mur occidental, le Saint-Sépulcre et les ruelles du souk, avec un guide qui donne du sens à tout cela. À environ une heure de Tel Aviv.",
+          "he": "הכותל, כנסיית הקבר וסמטאות השוק, עם מדריך שעושה סדר בכל זה. כשעה מתל אביב."
+        }
+      },
+      {
+        "id": "graffiti",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_street_art_and_graf",
+        "image": "assets/img/places/florentin_art.jpg",
+        "image_credit": "LeRenartQuiPense, CC BY 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Street_Graffiti_1_Florentin_Abarnabel_Tel_Aviv.jpg",
+        "title": {
+          "en": "Florentin street art walk",
+          "de": "Street-Art-Tour durch Florentin",
+          "fr": "Balade street art à Florentin",
+          "he": "סיור גרפיטי בפלורנטין"
+        },
+        "meta": {
+          "en": "2 hours · starts around the corner",
+          "de": "2 Stunden · startet um die Ecke",
+          "fr": "2 heures · départ au coin de la rue",
+          "he": "שעתיים · יוצא מעבר לפינה"
+        },
+        "blurb": {
+          "en": "The stories behind the murals you walk past every day here: the artists, the politics and the hidden courtyards.",
+          "de": "Die Geschichten hinter den Wandbildern, an denen Sie hier täglich vorbeilaufen: Künstler, Politik und versteckte Hinterhöfe.",
+          "fr": "Les histoires derrière les fresques que vous croisez ici chaque jour : les artistes, la politique et les cours cachées.",
+          "he": "הסיפורים שמאחורי הציורים שאתם עוברים לידם כאן כל יום: האמנים, הפוליטיקה והחצרות הנסתרות."
+        }
+      },
+      {
+        "id": "levinsky",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-2-hour-levinsky-market-tour-with-full-lunch-t361955/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_2_hour_levinsky_mar",
+        "image": "assets/img/places/levinsky.jpg",
+        "image_credit": "Artem.G, CC BY 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Levinsky_Market_in_Tel_Aviv.jpg",
+        "title": {
+          "en": "Levinsky Market food tour",
+          "de": "Food-Tour über den Levinsky-Markt",
+          "fr": "Visite gourmande du marché Levinsky",
+          "he": "סיור אוכל בשוק לוינסקי"
+        },
+        "meta": {
+          "en": "2 hours · lunch included",
+          "de": "2 Stunden · mit Mittagessen",
+          "fr": "2 heures · déjeuner inclus",
+          "he": "שעתיים · כולל ארוחת צהריים"
+        },
+        "blurb": {
+          "en": "Spices, burekas, pickles and a proper lunch - tasting your way through our local market with someone who knows every stall.",
+          "de": "Gewürze, Burekas, Eingelegtes und ein richtiges Mittagessen - einmal quer durch unseren Markt mit jemandem, der jeden Stand kennt.",
+          "fr": "Épices, bourekas, pickles et un vrai déjeuner - on goûte tout notre marché avec quelqu'un qui connaît chaque étal.",
+          "he": "תבלינים, בורקס, חמוצים וארוחת צהריים של ממש - לטעום את השוק השכונתי עם מי שמכיר כל דוכן."
+        }
+      },
+      {
+        "id": "jaffa",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/jaffa-old-city-port-shuk-hapishpishim-walking-tour-t487378/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jaffa_old_city_port_shuk_hap",
+        "image": "assets/img/places/old_jaffa.jpg",
+        "image_credit": "xiquinhosilva, CC BY 2.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_11.jpg",
+        "title": {
+          "en": "Old Jaffa, the port & flea market",
+          "de": "Alt-Jaffa, Hafen & Flohmarkt",
+          "fr": "Vieux Jaffa, le port et les puces",
+          "he": "יפו העתיקה, הנמל ושוק הפשפשים"
+        },
+        "meta": {
+          "en": "Walking tour · 15 minutes from here",
+          "de": "Stadtrundgang · 15 Minuten von hier",
+          "fr": "Visite à pied · à 15 minutes d'ici",
+          "he": "סיור רגלי · 15 דקות מכאן"
+        },
+        "blurb": {
+          "en": "Four thousand years in a few alleys: the old port, the artists' quarter and the flea market, on foot with a guide.",
+          "de": "Viertausend Jahre in ein paar Gassen: alter Hafen, Künstlerviertel und Flohmarkt, zu Fuß mit Guide.",
+          "fr": "Quatre mille ans en quelques ruelles : le vieux port, le quartier des artistes et le marché aux puces, à pied avec un guide.",
+          "he": "ארבעת אלפים שנה בכמה סמטאות: הנמל העתיק, רובע האמנים ושוק הפשפשים, ברגל עם מדריך."
+        }
+      },
+      {
+        "id": "spa",
+        "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
+        "image_credit": "Daniela, CC BY 2.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
+        "title": {
+          "en": "Spa day or massage",
+          "de": "Spa-Tag oder Massage",
+          "fr": "Journée spa ou massage",
+          "he": "יום ספא או עיסוי"
+        },
+        "meta": {
+          "en": "Tel Aviv · Spa Plus (Israeli booking site)",
+          "de": "Tel Aviv · Spa Plus (israelische Buchungsseite)",
+          "fr": "Tel Aviv · Spa Plus (site israélien)",
+          "he": "תל אביב · ספא פלוס"
+        },
+        "blurb": {
+          "en": "Hotel spas and massages around the city, booked online. Good for a rainy day, or the day after a long flight.",
+          "de": "Hotel-Spas und Massagen in der Stadt, online buchbar. Gut für einen Regentag oder den Tag nach einem langen Flug.",
+          "fr": "Spas d'hôtel et massages en ville, réservables en ligne. Parfait un jour de pluie ou le lendemain d'un long vol.",
+          "he": "ספא במלונות ועיסויים ברחבי העיר, בהזמנה אונליין. מתאים ליום גשום, או ליום שאחרי טיסה ארוכה."
+        }
+      },
+      {
+        "id": "all",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours",
+        "image": "assets/img/places/jaffa_port.jpg",
+        "image_credit": "Noam.armonn, CC BY-SA 3.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:OLD_JAFFA_PORT.jpg",
+        "title": {
+          "en": "All tours from Tel Aviv",
+          "de": "Alle Touren ab Tel Aviv",
+          "fr": "Toutes les excursions depuis Tel Aviv",
+          "he": "כל הסיורים מתל אביב"
+        },
+        "meta": {
+          "en": "GetYourGuide",
+          "de": "GetYourGuide",
+          "fr": "GetYourGuide",
+          "he": "GetYourGuide"
+        },
+        "blurb": {
+          "en": "The Galilee, Bethlehem, Petra, boat trips, cooking classes and more - everything you can book from Tel Aviv in one place.",
+          "de": "Galiläa, Bethlehem, Petra, Bootstouren, Kochkurse und mehr - alles, was sich ab Tel Aviv buchen lässt, an einem Ort.",
+          "fr": "La Galilée, Bethléem, Pétra, sorties en bateau, cours de cuisine et plus - tout ce qui se réserve depuis Tel Aviv, au même endroit.",
+          "he": "הגליל, בית לחם, פטרה, שיט, סדנאות בישול ועוד - כל מה שאפשר להזמין מתל אביב, במקום אחד."
+        }
+      }
+    ]
   }
 }
