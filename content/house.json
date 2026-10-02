@@ -1663,10 +1663,10 @@
   },
   "tours": {
     "lead": {
-      "en": "Hand-picked trips and tours, bookable online - most with free cancellation.",
-      "de": "Ausgewählte Ausflüge und Touren, online buchbar - meist kostenlos stornierbar.",
-      "fr": "Excursions et visites choisies, réservables en ligne - annulation gratuite pour la plupart.",
-      "he": "טיולים וסיורים נבחרים, בהזמנה אונליין - ברובם ביטול חינם."
+      "en": "Hand-picked trips and tours, bookable online - most with free cancellation. The ones marked \"Guest favourite\" are the trips my previous guests came back happy from.",
+      "de": "Ausgewählte Ausflüge und Touren, online buchbar - meist kostenlos stornierbar. Mit \"Gäste-Favorit\" markiert sind die Ausflüge, von denen meine bisherigen Gäste begeistert zurückkamen.",
+      "fr": "Excursions et visites choisies, réservables en ligne - annulation gratuite pour la plupart. Celles marquées « Coup de cœur des voyageurs » sont celles dont mes voyageurs précédents sont revenus ravis.",
+      "he": "טיולים וסיורים נבחרים, בהזמנה אונליין - ברובם ביטול חינם. המסומנים \"אהוב על אורחים\" הם הטיולים שאורחים קודמים שלי חזרו מהם מרוצים."
     },
     "note": {
       "en": "Prices are the same as booking anywhere else; Oren gets a small commission, which helps keep this guide running. Not sure which one fits your days here? Ask me.",
@@ -1698,7 +1698,8 @@
           "de": "Herodes' Festung auf dem Wüstenfelsen, danach schweben im salzigsten Meer der Welt. Der Klassiker unter den Tagesausflügen - mindestens einen Tag vorher buchen.",
           "fr": "La forteresse d'Hérode sur sa falaise du désert, puis on flotte dans la mer la plus salée du monde. L'excursion classique - réservez au moins la veille.",
           "he": "המבצר של הורדוס על צוק במדבר, ואחריו לצוף בים הכי מלוח בעולם. טיול היום הקלאסי - להזמין לפחות יום מראש."
-        }
+        },
+        "fav": true
       },
       {
         "id": "jerusalem",
@@ -1723,7 +1724,8 @@
           "de": "Klagemauer, Grabeskirche und die Gassen des Basars - mit einem Guide, der alles einordnet. Etwa eine Stunde von Tel Aviv.",
           "fr": "Le Mur occidental, le Saint-Sépulcre et les ruelles du souk, avec un guide qui donne du sens à tout cela. À environ une heure de Tel Aviv.",
           "he": "הכותל, כנסיית הקבר וסמטאות השוק, עם מדריך שעושה סדר בכל זה. כשעה מתל אביב."
-        }
+        },
+        "fav": true
       },
       {
         "id": "coast",
@@ -1773,7 +1775,8 @@
           "de": "Die Verkündigungsbasilika in Nazareth, dann Kapernaum, Tabgha und das Ufer des Sees Genezareth. Ein langer, grüner Tag im Norden.",
           "fr": "La basilique de l'Annonciation à Nazareth, puis Capharnaüm, Tabgha et les rives du lac de Tibériade. Une longue journée verte dans le nord.",
           "he": "בזיליקת הבשורה בנצרת, ואחריה כפר נחום, טבחה וחוף הכנרת. יום ארוך וירוק בצפון."
-        }
+        },
+        "fav": true
       },
       {
         "id": "spa",
