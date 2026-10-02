@@ -645,6 +645,7 @@
           "Switch off the AC and the lights.",
           "Pull the door shut behind you - it locks itself, there are no keys to return.",
           "Send Oren a message so he knows the room is free.",
+          "Need a later check-out, or want to leave your bags for a few hours? Ask me the day before - if the room is free, it's usually fine.",
           "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk). No trains from Friday afternoon until Saturday evening - take a taxi.",
           "Left something behind? Message Oren - he'll check."
         ],
@@ -652,6 +653,7 @@
           "Klimaanlage und Licht ausschalten.",
           "Tür hinter sich zuziehen - sie schließt von selbst, es gibt keine Schlüssel abzugeben.",
           "Oren eine Nachricht schicken, damit er weiß, dass das Zimmer frei ist.",
+          "Später auschecken oder das Gepäck noch ein paar Stunden dalassen? Fragen Sie mich am Vortag - wenn das Zimmer frei ist, geht das meistens.",
           "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß). Von Freitagnachmittag bis Samstagabend fahren keine Züge - nehmen Sie ein Taxi.",
           "Etwas vergessen? Oren schreiben - er schaut nach."
         ],
@@ -659,6 +661,7 @@
           "Éteignez la clim et les lumières.",
           "Tirez la porte derrière vous - elle se verrouille seule, il n'y a pas de clés à rendre.",
           "Envoyez un message à Oren pour qu'il sache que la chambre est libre.",
+          "Besoin de partir plus tard ou de laisser vos bagages quelques heures ? Demandez-moi la veille - si la chambre est libre, c'est généralement possible.",
           "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied). Pas de trains du vendredi après-midi au samedi soir - prenez un taxi.",
           "Oublié quelque chose ? Écrivez à Oren - il vérifiera."
         ],
@@ -666,6 +669,7 @@
           "מכבים מזגן ואורות.",
           "סוגרים את הדלת מאחוריכם - היא ננעלת לבד, אין מפתחות להחזיר.",
           "שולחים לאורן הודעה כדי שידע שהחדר פנוי.",
+          "צריכים צ'ק-אאוט מאוחר יותר, או להשאיר את התיקים לכמה שעות? שאלו אותי יום לפני - אם החדר פנוי, בדרך כלל אין בעיה.",
           "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה). אין רכבות משישי אחר הצהריים עד מוצאי שבת - קחו מונית.",
           "שכחתם משהו? כתבו לאורן - הוא יבדוק."
         ]

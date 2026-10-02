@@ -472,3 +472,7 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 .name-box input { font-size: 16px; }
 .ev-media .fav-tag { position: absolute; inset-inline-start: 12px; top: 12px; font-size: .8rem; font-weight: 700; color: var(--happy-ink); background: var(--happy); padding: 5px 10px; border-radius: 999px; }
 .more-tours { display: block; margin-top: 4px; padding: 14px 16px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow), 0 0 0 1px var(--ring); color: var(--accent); font-weight: 600; text-decoration: none; }
+
+/* Check-out reminder under the greeting (evening before + the day itself) */
+a.stay { text-decoration: none; min-height: 36px; display: inline-flex; align-items: center; }
+a.stay[hidden] { display: none; }

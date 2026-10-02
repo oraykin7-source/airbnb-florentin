@@ -10,6 +10,7 @@
 
   const UI = {
     en: {
+      co_tomorrow: tm => `Check-out tomorrow by ${tm} - three things to do`, co_today: tm => `Check-out today by ${tm} - three things to do`,
       fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
@@ -32,6 +33,7 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
+      co_tomorrow: tm => `Check-out morgen bis ${tm} - drei Dinge vorher`, co_today: tm => `Check-out heute bis ${tm} - drei Dinge vorher`,
       fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
@@ -54,6 +56,7 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
+      co_tomorrow: tm => `Départ demain avant ${tm} - trois choses à faire`, co_today: tm => `Départ aujourd'hui avant ${tm} - trois choses à faire`,
       fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
@@ -76,6 +79,7 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
+      co_tomorrow: tm => `צ'ק-אאוט מחר עד ${tm} - שלושה דברים לעשות`, co_today: tm => `צ'ק-אאוט היום עד ${tm} - שלושה דברים לעשות`,
       fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
@@ -299,6 +303,16 @@
 
     // date picker for the events section
     const { today, checkout, source } = currentStay();
+    // The evening before and on the day itself: a small reminder under the greeting that opens the check-out card
+    const coB = document.getElementById("co-banner");
+    if (coB) {
+      const [y, mo, da] = today.split("-").map(Number);
+      const tomorrow = new Date(Date.UTC(y, mo - 1, da + 1)).toISOString().slice(0, 10);
+      const tm = (state.house && state.house.host.checkout_time) || "12:00";
+      const which = checkout === today ? "co_today" : checkout === tomorrow ? "co_tomorrow" : null;
+      coB.hidden = !which;
+      if (which) coB.textContent = t(which)(tm) + " " + ARROW();
+    }
     const label = document.getElementById("stay-label");
     const input = document.getElementById("checkout-input");
     const reset = document.getElementById("checkout-reset");
@@ -567,6 +581,11 @@
   }));
 
   // The Emergency button also opens the card, not just scrolls to it
+  document.getElementById("co-banner").addEventListener("click", e => {
+    const card = document.getElementById("card-checkout"); if (!card) return;
+    e.preventDefault(); card.open = true;
+    requestAnimationFrame(() => card.scrollIntoView({ block: "start", behavior: "smooth" }));
+  });
   document.querySelectorAll("#sos-btn, #sos-brand, #sos-link").forEach(b => b.addEventListener("click", e => {
     const card = document.getElementById("card-emergency"); if (!card) return;
     e.preventDefault(); card.open = true;
