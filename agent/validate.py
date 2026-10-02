@@ -58,6 +58,46 @@ def d(s):
     return date.fromisoformat(s) if s else None
 
 
+HH_BARS = ("Berlin", "Mezcal", "Alpaca Bar", "La Tigra")
+HH_HOURS = re.compile(r"^([01]\d|2[0-3]):[0-5]\d-([01]\d|2[0-3]):[0-5]\d$")
+
+
+def check_checks(path: Path, errors: list) -> None:
+    """data/checks.json: the weekly happy-hour comparison. Fixed vocabulary only - a later
+    session reads this file, so nothing free-form from a web page may land in it."""
+    if not path.exists():
+        return
+    try:
+        c = json.loads(path.read_text(encoding="utf-8"))
+        hh = c["happy_hour"]
+        date.fromisoformat(hh["checked"])
+    except (OSError, ValueError, KeyError, TypeError) as e:
+        errors.append(f"checks.json: unreadable or missing happy_hour.checked: {e}")
+        return
+    if set(c) != {"happy_hour"} or set(hh) - {"checked", "status", "changes"}:
+        errors.append("checks.json: unexpected keys")
+    if hh.get("status") not in ("unchanged", "changed", "not_checked"):
+        errors.append("checks.json: status must be unchanged / changed / not_checked")
+    changes = hh.get("changes") or []
+    if hh.get("status") == "changed" and not changes:
+        errors.append("checks.json: status 'changed' needs at least one change")
+    if hh.get("status") != "changed" and changes:
+        errors.append("checks.json: changes only allowed with status 'changed'")
+    for i, ch in enumerate(changes):
+        if not isinstance(ch, dict) or set(ch) - {"bar", "hours", "drinks_percent", "food_percent", "missing"}:
+            errors.append(f"checks.json: changes[{i}] has unexpected keys")
+            continue
+        if ch.get("bar") not in HH_BARS:
+            errors.append(f"checks.json: changes[{i}].bar must be one of {HH_BARS}")
+        if ch.get("hours") is not None and not HH_HOURS.match(str(ch["hours"])):
+            errors.append(f"checks.json: changes[{i}].hours must be HH:MM-HH:MM or null")
+        for k in ("drinks_percent", "food_percent"):
+            if ch.get(k) is not None and not (isinstance(ch[k], int) and 0 <= ch[k] <= 100):
+                errors.append(f"checks.json: changes[{i}].{k} must be 0-100 or null")
+        if ch.get("missing") not in (None, True, False):
+            errors.append(f"checks.json: changes[{i}].missing must be true/false")
+
+
 def main() -> int:
     if len(sys.argv) > 1 and sys.argv[1] == "house":
         return check_house(ROOT / "content" / "house.json")
@@ -158,6 +198,8 @@ def main() -> int:
     empty = [c for c, n in per_cat.items() if n == 0]
     if empty:
         errors.append(f"no items in: {', '.join(empty)}")
+
+    check_checks(ROOT / "data" / "checks.json", errors)
 
     if errors:
         print("\n".join(errors))
