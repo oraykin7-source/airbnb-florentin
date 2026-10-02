@@ -489,7 +489,17 @@
     }
   }
 
-  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderPlaces(); renderEvents(); }
+  // Deep link: stayflorentin.com/#card-tours opens that card and scrolls to it (links sent in messages)
+  const hashCard = () => (/^#card-[\w-]+$/.test(location.hash) ? location.hash.slice(1) : null);
+  let openCard = hashCard(), hashScrolled = false;
+  function applyHashCard() {
+    if (!openCard) return;
+    const d = document.getElementById(openCard); if (!d) return;
+    d.open = true;
+    if (!hashScrolled) { hashScrolled = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start" })); }
+  }
+  window.addEventListener("hashchange", () => { openCard = hashCard(); hashScrolled = false; applyHashCard(); });
+  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderPlaces(); renderEvents(); applyHashCard(); }
 
   // Bottom tab bar: highlight the section in view
   (function tabbar() {
@@ -529,8 +539,8 @@
 
   // Each part renders as soon as its own file arrives: a slow or failed events feed
   // never delays the apartment / emergency cards.
-  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
-  getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); }).catch(() => {});
+  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
+  getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); applyHashCard(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {
       state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
