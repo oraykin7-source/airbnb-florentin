@@ -856,19 +856,23 @@
           "items": {
             "en": [
               "In the utility cupboard in the bathroom: a blue and white bag with plasters, gauze pads, tape, cotton wool, disinfecting alcohol, tweezers and disposable gloves. Use what you need - and tell me if something runs out.",
-              "Sunburn after the beach? There is aloe vera gel in the fridge."
+              "Sunburn after the beach? There is aloe vera gel in the fridge.",
+              "Headache or fever? I have ibuprofen capsules (Nurofen) - just ask me. Check the leaflet first: it is not suitable for everyone."
             ],
             "de": [
               "Im Abstellschrank im Badezimmer: eine blau-weiße Tasche mit Pflastern, Mullkompressen, Klebeband, Watte, Desinfektionsalkohol, Pinzette und Einmalhandschuhen. Nehmen Sie, was Sie brauchen - und sagen Sie mir Bescheid, wenn etwas ausgeht.",
-              "Sonnenbrand nach dem Strand? Im Kühlschrank steht Aloe-vera-Gel."
+              "Sonnenbrand nach dem Strand? Im Kühlschrank steht Aloe-vera-Gel.",
+              "Kopfschmerzen oder Fieber? Ich habe Ibuprofen-Kapseln (Nurofen) - fragen Sie mich einfach. Bitte vorher den Beipackzettel lesen: nicht für jeden geeignet."
             ],
             "fr": [
               "Dans le placard de service de la salle de bain : une trousse bleue et blanche avec pansements, compresses de gaze, sparadrap, coton, alcool désinfectant, pince à épiler et gants jetables. Servez-vous - et dites-moi s'il manque quelque chose.",
-              "Un coup de soleil après la plage ? Il y a du gel d'aloe vera au réfrigérateur."
+              "Un coup de soleil après la plage ? Il y a du gel d'aloe vera au réfrigérateur.",
+              "Mal de tête ou fièvre ? J'ai des capsules d'ibuprofène (Nurofen) - demandez-moi. Lisez d'abord la notice : cela ne convient pas à tout le monde."
             ],
             "he": [
               "בארון השירות בחדר האמבטיה: תיק כחול-לבן עם פלסטרים, פדי גזה, נייר דבק, צמר גפן, אלכוהול לחיטוי, פינצטה וכפפות חד-פעמיות. קחו מה שצריך - ותגידו לי אם משהו נגמר.",
-              "נשרפתם בשמש אחרי הים? יש ג'ל אלוורה במקרר."
+              "נשרפתם בשמש אחרי הים? יש ג'ל אלוורה במקרר.",
+              "כאב ראש או חום? יש לי קפסולות איבופרופן (נורופן) - פשוט תבקשו. קראו קודם את העלון: זה לא מתאים לכל אחד."
             ]
           }
         },
