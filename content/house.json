@@ -841,6 +841,35 @@
         },
         {
           "title": {
+            "en": "First-aid kit",
+            "de": "Erste-Hilfe-Set",
+            "fr": "Trousse de premiers secours",
+            "he": "ערכת עזרה ראשונה"
+          },
+          "image": "assets/img/house/first-aid-kit.jpg",
+          "image_alt": {
+            "en": "Blue and white first-aid bag",
+            "de": "Blau-weiße Erste-Hilfe-Tasche",
+            "fr": "Trousse de secours bleue et blanche",
+            "he": "תיק עזרה ראשונה כחול-לבן"
+          },
+          "items": {
+            "en": [
+              "In the bathroom: a blue and white bag with plasters, bandages and the basics. Use what you need - and tell me if something runs out."
+            ],
+            "de": [
+              "Im Badezimmer: eine blau-weiße Tasche mit Pflastern, Verbänden und dem Nötigsten. Nehmen Sie, was Sie brauchen - und sagen Sie mir Bescheid, wenn etwas ausgeht."
+            ],
+            "fr": [
+              "Dans la salle de bain : une trousse bleue et blanche avec pansements, bandages et l'essentiel. Servez-vous - et dites-moi s'il manque quelque chose."
+            ],
+            "he": [
+              "בחדר האמבטיה: תיק כחול-לבן עם פלסטרים, תחבושות והדברים הבסיסיים. קחו מה שצריך - ותגידו לי אם משהו נגמר."
+            ]
+          }
+        },
+        {
+          "title": {
             "en": "Other help",
             "de": "Weitere Hilfe",
             "fr": "Autres aides",
