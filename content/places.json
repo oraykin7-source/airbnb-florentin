@@ -21,7 +21,7 @@
         "fr": "Une longue bande de sable de Jaffa jusqu'au port. Les plus proches : Alma et Banana Beach (ambiance jeune et détendue), puis Jerusalem Beach et Gordon Beach (sauveteurs, douches, bars de plage). Le coucher du soleil est le grand moment - tout le monde s'arrête pour regarder.",
         "he": "רצועת חול אחת ארוכה מיפו ועד הנמל. הקרובים לדירה: חוף עלמה ובננה ביץ' (רגוע, קהל צעיר), ואחריהם חוף ירושלים וחוף גורדון (מצילים, מקלחות, ברים על החוף). השקיעה היא הרגע - כולם עוצרים להסתכל."
       },
-      "image": "assets/img/places/beach.jpg",
+      "image": "assets/img/places/beach.webp",
       "credit": "Radosław Botev, CC BY 3.0 pl, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Gordon_Beach_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Banana+Beach+Tel+Aviv",
@@ -48,7 +48,7 @@
         "fr": "L'un des plus vieux ports du monde, toujours en activité. Bateaux de pêche, un hangar avec restaurants et marché aux poissons, et le meilleur rapport qualité-prix pour dîner face à la mer. Venez pour la lumière de fin d'après-midi et restez boire un verre sur le ponton.",
         "he": "אחד הנמלים העתיקים בעולם, עדיין פעיל. סירות דייגים, האנגר עם מסעדות ושוק דגים, וארוחת הערב הכי משתלמת על הים באזור. בואו לאור של אחר הצהריים המאוחר והישארו לדרינק על הסיפון."
       },
-      "image": "assets/img/places/jaffa_port.jpg",
+      "image": "assets/img/places/jaffa_port.webp",
       "credit": "Noam.armonn, CC BY-SA 3.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:OLD_JAFFA_PORT.jpg",
       "map": "https://maps.google.com/?q=Jaffa+Port",
@@ -75,7 +75,7 @@
         "fr": "Partez de la tour de l'horloge, montez par les ruelles de pierre jusqu'au quartier des artistes et au point de vue sur toute la baie. En contrebas, le marché aux puces (Shuk HaPishpeshim) mêle antiquités, vintage et certains des meilleurs bars et restaurants de la ville. Le vendredi est le jour le plus animé.",
         "he": "מתחילים במגדל השעון, מטפסים בסמטאות האבן לרובע האמנים ולתצפית על כל המפרץ. מתחתיו, שוק הפשפשים מערבב עתיקות, וינטג' וכמה מהברים והמסעדות הכי טובים בעיר. שישי הכי עמוס."
       },
-      "image": "assets/img/places/old_jaffa.jpg",
+      "image": "assets/img/places/old_jaffa.webp",
       "credit": "xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_11.jpg",
       "map": "https://maps.google.com/?q=Jaffa+Clock+Tower",
@@ -111,7 +111,7 @@
         "fr": "Le premier quartier juif hors de Jaffa (1887), aujourd'hui les plus jolies rues de la ville : maisons basses, bougainvilliers, boutiques, glaces et cafés le long de la rue Shabazi. Idéal pour une matinée tranquille.",
         "he": "השכונה היהודית הראשונה מחוץ ליפו (1887), היום הרחובות הכי יפים בעיר: בתים נמוכים, בוגנוויליה, בוטיקים, גלידה ובתי קפה לאורך רחוב שבזי. אידיאלי לבוקר איטי."
       },
-      "image": "assets/img/places/neve_tzedek.jpg",
+      "image": "assets/img/places/neve_tzedek.webp",
       "credit": "Dor Shabashewitz, CC BY 4.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:19_Neve_Tzedek_St,_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Shabazi+Street+Neve+Tzedek",
@@ -138,7 +138,7 @@
         "fr": "La maison de la danse contemporaine en Israël, au cœur de Neve Tzedek. La Batsheva Dance Company s'y produit - s'il y a un spectacle pendant votre séjour, allez-y, pas besoin d'hébreu. La cour aux orangers vaut le détour même sans billet.",
         "he": "הבית של המחול העכשווי בישראל, בלב נווה צדק. להקת בת-שבע מופיעה כאן - אם יש מופע בזמן השהות שלכם, לכו; לא צריך עברית. החצר עם עצי התפוז יפה גם בלי כרטיס."
       },
-      "image": "assets/img/places/suzanne_dellal.jpg",
+      "image": "assets/img/places/suzanne_dellal.webp",
       "credit": "Danny Lyulyev, CC BY-SA 3.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Suzanne_Dellal_Centre_(panorama).jpg",
       "map": "https://maps.google.com/?q=Suzanne+Dellal+Centre",
@@ -165,7 +165,7 @@
         "fr": "Art moderne israélien et international dans un bâtiment saisissant - la nouvelle aile vaut à elle seule la visite. Parfait pour un après-midi de chaleur. Les expositions en cours sont dans la section de la semaine, plus bas.",
         "he": "אמנות מודרנית ישראלית ובינלאומית בבניין מרשים - האגף החדש שווה ביקור בפני עצמו. טוב לאחר צהריים חם. בדקו את התערוכות הנוכחיות בחלק השבועי למטה."
       },
-      "image": "assets/img/places/ta_museum.jpg",
+      "image": "assets/img/places/ta_museum.webp",
       "credit": "Yair Haklai, CC BY-SA 4.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Preston_Scott_Cohen-Herta_and_Paul_Amir_Building-Tel_Aviv_Museum_of_Art.jpg",
       "map": "https://maps.google.com/?q=Tel+Aviv+Museum+of+Art",
@@ -192,7 +192,7 @@
         "fr": "Mon marché de quartier : épiceries tenues par les mêmes familles depuis des générations, fruits secs, olives, burekas des Balkans et petits cafés. Goûtez un gazoz (soda parfumé) au Café Levinsky 41. Le matin est le plus calme ; fermé le samedi.",
         "he": "השוק השכונתי שלי: חנויות תבלינים שאותן משפחות מנהלות כבר דורות, פירות יבשים, זיתים, בורקס בלקני ובתי קפה זעירים. נסו גזוז בקפה לוינסקי 41. הבוקר הכי רגוע; סגור בשבת."
       },
-      "image": "assets/img/places/levinsky.jpg",
+      "image": "assets/img/places/levinsky.webp",
       "credit": "Artem.G, CC BY 4.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Levinsky_Market_in_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Levinsky+Market+Tel+Aviv",
@@ -228,7 +228,7 @@
         "fr": "Le quartier est une galerie à ciel ouvert : fresques, collages et rideaux de fer peints par Dede, Klone, Kis-Lev et des dizaines d'autres. Parcourez les rues Florentin, Vital, Abarbanel et Frenkel - idéalement le samedi, quand les rideaux sont baissés et l'art visible.",
         "he": "השכונה היא גלריה פתוחה: ציורי קיר, הדבקות ותריסים מצוירים של דדה, קלון, קיס-לב ועוד עשרות. טיילו ברחובות פלורנטין, ויטל, אברבנאל ופרנקל - הכי טוב בשבת כשהתריסים מורדים והאמנות גלויה."
       },
-      "image": "assets/img/places/florentin_art.jpg",
+      "image": "assets/img/places/florentin_art.webp",
       "credit": "LeRenartQuiPense, CC BY 4.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Street_Graffiti_1_Florentin_Abarnabel_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Florentin+Street+Tel+Aviv",
@@ -264,7 +264,7 @@
         "fr": "Le grand marché principal, bruyant et merveilleux : fruits, halva, jus frais, street food et bars cachés entre les étals. Juste à côté, la foire artisanale de Nachalat Binyamin les mardis et vendredis. Venez le ventre vide.",
         "he": "השוק הראשי הגדול, הרועש והנפלא: פירות, חלווה, מיץ טרי, אוכל רחוב וברים שמסתתרים בין הדוכנים. לידו, יריד האמנים בנחלת בנימין בימי שלישי ושישי. לבוא רעבים."
       },
-      "image": "assets/img/places/carmel.jpg",
+      "image": "assets/img/places/carmel.webp",
       "credit": "andynash, CC BY-SA 2.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Carmel_Market_Tel_Aviv_Yafo_-_2.jpg",
       "map": "https://maps.google.com/?q=Carmel+Market+Tel+Aviv",
@@ -291,7 +291,7 @@
         "fr": "La grande avenue de la ville : une piste cyclable ombragée au milieu, des kiosques à café et les immeubles Bauhaus qui ont valu à Tel Aviv son classement à l'UNESCO. Independence Hall (où Israël fut proclamé) est au numéro 16.",
         "he": "השדרה הגדולה של העיר: שביל אופניים מוצל באמצע, קיוסקים לקפה, ובנייני הבאוהאוס שהפכו את תל אביב לאתר מורשת עולמית של אונסק\"ו. בית העצמאות (שבו הוכרזה המדינה) במספר 16."
       },
-      "image": "assets/img/places/rothschild.jpg",
+      "image": "assets/img/places/rothschild.webp",
       "credit": "Homerethegreat, CC BY 4.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Cycling_Tel_Aviv_Rothschild_Boulevard.png",
       "map": "https://maps.google.com/?q=Rothschild+Boulevard+Tel+Aviv",
@@ -318,7 +318,7 @@
         "fr": "L'ancienne gare Jaffa–Jérusalem de 1892, restaurée, entre Neve Tzedek et la mer : boutiques, cafés, marchés sur les quais et de l'espace pour les enfants. Une halte agréable sur le chemin de la plage.",
         "he": "תחנת הרכבת יפו-ירושלים מ-1892, משוחזרת, בין נווה צדק לים: חנויות, בתי קפה, שווקים על הרציפים ומקום לילדים לרוץ. עצירה נחמדה בדרך לים."
       },
-      "image": "assets/img/places/hatachana.jpg",
+      "image": "assets/img/places/hatachana.webp",
       "credit": "BergA, CC BY-SA 3.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa_railway_station.JPG",
       "map": "https://maps.google.com/?q=HaTachana+Tel+Aviv",
@@ -345,7 +345,7 @@
         "fr": "À l'extrémité nord de la plage : une large promenade en bois au-dessus de la mer, des restaurants, un marché fermier couvert (le vendredi matin, c'est l'événement) et une grande aire de jeux. Louez un vélo et remontez toute la promenade jusque-là.",
         "he": "בקצה הצפוני של החוף: טיילת עץ רחבה מעל הים, מסעדות, שוק איכרים מקורה (בוקר שישי הוא האירוע) וגן שעשועים גדול. השכירו אופניים ורכבו לאורך כל הטיילת עד אליו."
       },
-      "image": "assets/img/places/ta_port.jpg",
+      "image": "assets/img/places/ta_port.webp",
       "credit": "Israel Ministry of Foreign Affairs, public domain, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_39040_Geography_of_Israel.JPG",
       "map": "https://maps.google.com/?q=Tel+Aviv+Port",
@@ -372,7 +372,7 @@
         "fr": "Une colonie de Templiers allemands de 1871, restaurée en jardins et cafés entre les gratte-ciel, avec juste à côté le Sarona Market, la halle gourmande couverte de la ville. Bonne option par temps de pluie.",
         "he": "מושבה טמפלרית גרמנית מ-1871, משוחזרת לגנים ובתי קפה בין גורדי השחקים, ולידה שרונה מרקט - היכל האוכל המקורה של העיר. אופציה טובה ליום גשום."
       },
-      "image": "assets/img/places/sarona.jpg",
+      "image": "assets/img/places/sarona.webp",
       "credit": "Ynhockey, CC BY-SA 4.0, via Wikimedia Commons",
       "credit_url": "https://commons.wikimedia.org/wiki/File:Tel_Aviv_Sarona_1.jpg",
       "map": "https://maps.google.com/?q=Sarona+Tel+Aviv",

@@ -103,7 +103,7 @@
               "לא להניח טלפונים וכרטיסים על הזכוכית, ולא לחמם מחבת ריקה. כל הפרטים במדריך המטבח למטה."
             ]
           },
-          "image": "assets/img/house/hob.jpg",
+          "image": "assets/img/house/hob.webp",
           "image_alt": {
             "en": "The Midea hob - each zone: lock, timer, − / +, B (boost), power",
             "de": "Das Midea-Kochfeld - je Zone: Sperre, Timer, − / +, B (Boost), Ein/Aus",
@@ -118,7 +118,7 @@
             "fr": "Café - machine à capsules",
             "he": "קפה - מכונת קפסולות"
           },
-          "image": "assets/img/house/nespresso.jpg",
+          "image": "assets/img/house/nespresso.webp",
           "image_alt": {
             "en": "The capsule machine, milk frother and capsules",
             "de": "Kapselmaschine, Milchaufschäumer und Kapseln",
@@ -163,7 +163,7 @@
             "fr": "Eau pétillante - SodaStream",
             "he": "מים מוגזים - סודה-סטרים"
           },
-          "image": "assets/img/house/sodastream.jpg",
+          "image": "assets/img/house/sodastream.webp",
           "image_alt": {
             "en": "The SodaStream and its bottle",
             "de": "Der SodaStream mit Flasche",
@@ -204,7 +204,7 @@
             "fr": "Micro-ondes",
             "he": "מיקרוגל"
           },
-          "image": "assets/img/house/microwave.jpg",
+          "image": "assets/img/house/microwave.webp",
           "image_alt": {
             "en": "The microwave control panel - numbers 1-6 start straight away",
             "de": "Das Bedienfeld der Mikrowelle - Zahlen 1-6 starten sofort",
@@ -239,9 +239,9 @@
           }
         }
       ],
-      "thumb": "assets/img/house/thumb/kitchen.jpg",
+      "thumb": "assets/img/house/thumb/kitchen.webp",
       "group": "comfort",
-      "image": "assets/img/house/ninja-combi.jpg",
+      "image": "assets/img/house/ninja-combi.webp",
       "image_alt": {
         "en": "The Ninja Combi - oven, air fryer and steamer in one",
         "de": "Der Ninja Combi - Ofen, Heißluftfritteuse und Dampfgarer in einem",
@@ -264,7 +264,7 @@
         "fr": "Eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
         "he": "מים מסוננים קרים וחמים - להחזיק את הכפתור האדום למזיגת מים חמים"
       },
-      "image": "assets/img/house/tami4.jpg",
+      "image": "assets/img/house/tami4.webp",
       "image_alt": {
         "en": "The Tami4 control panel",
         "de": "Das Bedienfeld des Tami4",
@@ -297,10 +297,10 @@
           "אין מה למלא - הוא מחובר לצנרת. האור הכחול תקין."
         ]
       },
-      "thumb": "assets/img/house/thumb/tami4.jpg",
+      "thumb": "assets/img/house/thumb/tami4.webp",
       "group": "comfort",
       "first_hour": 4,
-      "tile": "assets/img/tiles/tami4.jpg"
+      "tile": "assets/img/tiles/tami4.webp"
     },
     {
       "id": "ac",
@@ -339,7 +339,7 @@
             "fr": "Chambre (télécommande blanche Tornado)",
             "he": "חדר השינה (שלט טורנדו לבן)"
           },
-          "image": "assets/img/house/ac-remote-bedroom.jpg",
+          "image": "assets/img/house/ac-remote-bedroom.webp",
           "image_alt": {
             "en": "Tornado remote",
             "de": "Tornado-Fernbedienung",
@@ -376,7 +376,7 @@
             "fr": "Salon (télécommande Tadiran)",
             "he": "סלון (שלט תדיראן)"
           },
-          "image": "assets/img/house/ac-remote-living.jpg",
+          "image": "assets/img/house/ac-remote-living.webp",
           "image_alt": {
             "en": "Tadiran remote",
             "de": "Tadiran-Fernbedienung",
@@ -407,10 +407,10 @@
           }
         }
       ],
-      "thumb": "assets/img/house/thumb/ac.jpg",
+      "thumb": "assets/img/house/thumb/ac.webp",
       "group": "comfort",
       "first_hour": 2,
-      "tile": "assets/img/tiles/ac.jpg",
+      "tile": "assets/img/tiles/ac.webp",
       "tile_credit": "Photo: Pexels",
       "tile_credit_url": "https://www.pexels.com/photo/38788452/"
     },
@@ -451,7 +451,7 @@
             "fr": "Votre chambre - TV Hisense + clé Xiaomi (deux télécommandes)",
             "he": "החדר שלכם - טלוויזיית הייסנס + סטרימר שיאומי (שני שלטים)"
           },
-          "image": "assets/img/house/tv-remotes-room.jpg",
+          "image": "assets/img/house/tv-remotes-room.webp",
           "image_alt": {
             "en": "Left: the small Xiaomi remote (streaming). Right: the Hisense TV remote.",
             "de": "Links: die kleine Xiaomi-Fernbedienung (Streaming). Rechts: die Hisense-TV-Fernbedienung.",
@@ -492,7 +492,7 @@
             "fr": "Salon - TV Samsung (une télécommande)",
             "he": "סלון - טלוויזיית סמסונג (שלט אחד)"
           },
-          "image": "assets/img/house/tv-remote.jpg",
+          "image": "assets/img/house/tv-remote.webp",
           "image_alt": {
             "en": "The Samsung TV remote",
             "de": "Die Samsung-Fernbedienung",
@@ -527,10 +527,10 @@
           }
         }
       ],
-      "thumb": "assets/img/house/thumb/tv.jpg",
+      "thumb": "assets/img/house/thumb/tv.webp",
       "group": "comfort",
       "first_hour": 3,
-      "tile": "assets/img/tiles/tv.jpg",
+      "tile": "assets/img/tiles/tv.webp",
       "tile_credit": "Photo: Pexels",
       "tile_credit_url": "https://www.pexels.com/photo/21792101/"
     },
@@ -575,17 +575,17 @@
           "בקיץ השמש בדרך כלל מספיקה - המים יכולים להיות חמים מאוד, אז לבדוק קודם."
         ]
       },
-      "image": "assets/img/house/boiler-switch.jpg",
+      "image": "assets/img/house/boiler-switch.webp",
       "image_alt": {
         "en": "The boiler switch - red light means it's on",
         "de": "Der Boiler-Schalter - rotes Licht heißt an",
         "fr": "L'interrupteur du chauffe-eau - voyant rouge = allumé",
         "he": "מתג הדוד - אור אדום אומר שהוא דולק"
       },
-      "thumb": "assets/img/house/thumb/hot_water.jpg",
+      "thumb": "assets/img/house/thumb/hot_water.webp",
       "group": "comfort",
       "first_hour": 1,
-      "tile": "assets/img/tiles/hot_water.jpg",
+      "tile": "assets/img/tiles/hot_water.webp",
       "tile_credit": "Photo: Karolina Grabowska, Pexels",
       "tile_credit_url": "https://www.pexels.com/photo/4194865/"
     },
@@ -758,14 +758,14 @@
           "נשארים 10 דקות אחרי שהאזעקה נגמרת. ואז ממשיכים ביום."
         ]
       },
-      "image": "assets/img/house/shelter.jpg",
+      "image": "assets/img/house/shelter.webp",
       "image_alt": {
         "en": "The shelter (mamad) is Oren's room - the doorway marked in orange",
         "de": "Der Schutzraum (Mamad) ist Orens Zimmer - der orange markierte Durchgang",
         "fr": "L'abri (mamad) est la chambre d'Oren - l'entrée encadrée en orange",
         "he": "המקלט (ממ\"ד) הוא החדר של אורן - הפתח מסומן בכתום"
       },
-      "thumb": "assets/img/house/thumb/emergency.jpg",
+      "thumb": "assets/img/house/thumb/emergency.webp",
       "group": "safe",
       "sections": [
         {
@@ -775,7 +775,7 @@
             "fr": "La porte de la pièce blindée - deux gestes",
             "he": "דלת הממ\"ד - שתי פעולות"
           },
-          "image": "assets/img/house/shelter-door.jpg",
+          "image": "assets/img/house/shelter-door.webp",
           "image_alt": {
             "en": "The steel door: 1 close it, 2 lift the handle up",
             "de": "Die Stahltür: 1 schließen, 2 Griff nach oben",
@@ -846,7 +846,7 @@
             "fr": "Trousse de premiers secours",
             "he": "ערכת עזרה ראשונה"
           },
-          "image": "assets/img/house/first-aid-kit.jpg",
+          "image": "assets/img/house/first-aid-kit.webp",
           "image_alt": {
             "en": "Blue and white first-aid bag",
             "de": "Blau-weiße Erste-Hilfe-Tasche",
@@ -1219,7 +1219,7 @@
                 "he": "החומוס הכי טוב בשוק לוינסקי - 5 דקות הליכה"
               },
               "url": "https://www.google.com/maps/place/Garger+HaZahav/@32.0597618,34.7714453,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9dd284ccd5:0xb29ba8ccdbaba7b!8m2!3d32.0597618!4d34.7714453!16s%2Fg%2F11bxdy2lyv",
-              "image": "assets/img/eat/garger.jpg",
+              "image": "assets/img/eat/garger.webp",
               "image_credit": "Orenrosenfeld, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hummus_plate.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1236,7 +1236,7 @@
                 "he": "סביח: פיתה עם חציל מטוגן, ביצה, סלטים - הקלאסיקה התל-אביבית"
               },
               "url": "https://www.google.com/maps/place/Sabich+Frishman/@32.0595626,34.7732693,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d321a7d32b9:0x51523f1317917c64!8m2!3d32.0595626!4d34.7732693!16s%2Fg%2F11kc212xt_",
-              "image": "assets/img/eat/sabich.jpg",
+              "image": "assets/img/eat/sabich.webp",
               "image_credit": "Avi1111 dr. avishai teicher, CC BY 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sabich_Square_6.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by/4.0",
@@ -1253,7 +1253,7 @@
                 "he": "הבורקס של אמא - בצק עלים, ארוחת בוקר בדרך"
               },
               "url": "https://www.google.com/maps/place/%D7%94%D7%91%D7%95%D7%A8%D7%A7%D7%A1+%D7%A9%D7%9C+%D7%90%D7%9E%D7%90+%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99/@32.0594197,34.772904,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9de84b8173:0xffe2cf7a925dfafb!8m2!3d32.0594197!4d34.772904!16s%2Fg%2F1vz668k4",
-              "image": "assets/img/eat/burekas.jpg",
+              "image": "assets/img/eat/burekas.webp",
               "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Burekas_Israeli_breakfast.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1270,7 +1270,7 @@
                 "he": "טורקי: לחמג'ון, שווארמת כבש בלאפה - 10 דקות הליכה"
               },
               "url": "https://www.google.com/maps/place/Turk+Lahmajoun/@32.0618913,34.7723774,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4c9d0e91b9f3:0x2144c6f22cf6d0c3!8m2!3d32.0618913!4d34.7723774!16s%2Fg%2F1td8v7qj",
-              "image": "assets/img/eat/lahmajoun.jpg",
+              "image": "assets/img/eat/lahmajoun.webp",
               "image_credit": "Christopher, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lahmacun_(Turkish_Pizza).jpg",
               "image_license_url": "https://creativecommons.org/licenses/by/2.0",
@@ -1297,7 +1297,7 @@
                 "he": "דגים ופירות ים בסגנון יווני - תמנון, קרפצ'יו דג. באותה פינה כמו מיראז', ליד פארק המסילה"
               },
               "url": "https://www.google.com/maps/place/HaShachaf/@32.0609587,34.7703884,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d006f922f5d:0xe5ce1150ae8463c1!8m2!3d32.0609587!4d34.7703884!16s%2Fg%2F11x8cvpfs6",
-              "image": "assets/img/eat/hashachaf.jpg",
+              "image": "assets/img/eat/hashachaf.webp",
               "image_credit": "Andrew Dalby, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Grilled_octopus_2.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1324,7 +1324,7 @@
                 "he": "איטלקי, כמה בתים מהשחף - פסטה"
               },
               "url": "https://www.google.com/maps/place/Cena/@32.0625804,34.7699414,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d25caf7d2d9:0x8c4a03af8d86af99!8m2!3d32.0625804!4d34.7699414!16s%2Fg%2F11rd8qd71v",
-              "image": "assets/img/eat/cena.jpg",
+              "image": "assets/img/eat/cena.webp",
               "image_credit": "10Rosso, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro_3.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by/2.0",
@@ -1341,7 +1341,7 @@
                 "he": "השף אייל שני - על הפארק, 10 דקות הליכה"
               },
               "url": "https://www.google.com/maps/place/Mirage/@32.0608486,34.7690641,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d2985f84e39:0x39ad6cd0cd4a5909!8m2!3d32.0608486!4d34.7690641!16s%2Fg%2F11rgfyj2kj",
-              "image": "assets/img/eat/mirage.jpg",
+              "image": "assets/img/eat/mirage.webp",
               "image_credit": "HaJunkiyada, CC BY-SA 4.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_%E2%80%93_Whole_roasted_cauliflower.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1358,7 +1358,7 @@
                 "he": "הגלידה של אייל שני, ליד מיראז'"
               },
               "url": "https://www.google.com/maps/place/Cassata/@32.0608532,34.7690391,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d2c8c686487:0xa96f4213cbed63c5!8m2!3d32.0608532!4d34.7690391!16s%2Fg%2F11vdgfk8h1",
-              "image": "assets/img/eat/cassata.jpg",
+              "image": "assets/img/eat/cassata.webp",
               "image_credit": "Jason Chung, CC BY 2.0, via Wikimedia Commons",
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Gelato_in_Milan_-_big_cone_2019.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by/2.0",
@@ -1672,17 +1672,11 @@
       "fr": "Des excursions que mes voyageurs ont aimées. Vous réservez en ligne au prix normal ; je touche une petite commission qui fait vivre ce guide.",
       "he": "טיולי יום שהאורחים שלי נהנו מהם. מזמינים אונליין במחיר הרגיל; אני מקבל עמלה קטנה שמחזיקה את המדריך הזה."
     },
-    "note": {
-      "en": "Not sure which one fits your days here? Ask me.",
-      "de": "Unsicher, was zu Ihren Tagen hier passt? Fragen Sie mich.",
-      "fr": "Un doute sur ce qui convient à votre séjour ? Demandez-moi.",
-      "he": "לא בטוחים מה מתאים לימים שלכם כאן? שאלו אותי."
-    },
     "items": [
       {
         "id": "masada",
         "url": "https://www.getyourguide.com/tel-aviv-l487/masada-the-dead-sea-full-day-tour-from-tel-aviv-t21580/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_masada_the_dead_sea_full_day",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Israel-2013-Aerial_13-Masada.jpg/960px-Israel-2013-Aerial_13-Masada.jpg",
+        "image": "assets/img/tours/masada.webp",
         "image_credit": "Godot13, CC BY-SA 4.0",
         "image_credit_url": "https://commons.wikimedia.org/wiki/File:Israel-2013-Aerial_13-Masada.jpg",
         "title": {
@@ -1708,7 +1702,7 @@
       {
         "id": "jerusalem",
         "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-guided-day-tour-from-tel-aviv-t148005/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jerusalem_guided_day_tour_fr",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dome_of_the_Rock_Panorama.jpg/960px-Dome_of_the_Rock_Panorama.jpg",
+        "image": "assets/img/tours/jerusalem.webp",
         "image_credit": "Askii, CC BY-SA 3.0",
         "image_credit_url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_Panorama.jpg",
         "title": {
@@ -1734,7 +1728,7 @@
       {
         "id": "coast",
         "url": "https://www.getyourguide.com/tel-aviv-l487/from-tel-aviv-caesarea-haifa-and-akko-day-trip-t22120/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_caesarea_haifa_akko",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bahai_Garden_in_Haifa_Israel.jpg/960px-Bahai_Garden_in_Haifa_Israel.jpg",
+        "image": "assets/img/tours/coast.webp",
         "image_credit": "Dani Lavi 0007, CC BY-SA 4.0",
         "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bahai_Garden_in_Haifa_Israel.jpg",
         "title": {
@@ -1759,7 +1753,7 @@
       {
         "id": "galilee",
         "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-nazareth-tiberias-and-sea-of-galilee-tour-t21581/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_nazareth_galilee",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Panorama_on_the_north_Shore_of_the_Sea_of_Galilee_%285796531006%29.jpg/960px-Panorama_on_the_north_Shore_of_the_Sea_of_Galilee_%285796531006%29.jpg",
+        "image": "assets/img/tours/galilee.webp",
         "image_credit": "Ian Scott, CC BY-SA 2.0",
         "image_credit_url": "https://commons.wikimedia.org/wiki/File:Panorama_on_the_north_Shore_of_the_Sea_of_Galilee_(5796531006).jpg",
         "title": {
@@ -1784,7 +1778,7 @@
       {
         "id": "spa",
         "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
+        "image": "assets/img/tours/spa.webp",
         "image_credit": "Daniela, CC BY 2.0",
         "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
         "title": {

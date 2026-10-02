@@ -434,7 +434,7 @@
     box.replaceChildren();
     if (!has) return;
     document.getElementById("tours-lead").textContent = L_(tr.lead);
-    document.getElementById("tours-note").textContent = L_(tr.note);
+    const tn = document.getElementById("tours-note"); tn.textContent = L_(tr.note); tn.hidden = !tr.note;
     for (const it of tr.items) {
       if (it.langs && !it.langs.includes(state.lang)) continue;   // e.g. a Hebrew-only booking site
       const media = el("a", { class: "ev-media", href: it.url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
