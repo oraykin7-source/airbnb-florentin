@@ -1726,6 +1726,56 @@
         }
       },
       {
+        "id": "coast",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/from-tel-aviv-caesarea-haifa-and-akko-day-trip-t22120/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_caesarea_haifa_akko",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bahai_Garden_in_Haifa_Israel.jpg/960px-Bahai_Garden_in_Haifa_Israel.jpg",
+        "image_credit": "Dani Lavi 0007, CC BY-SA 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bahai_Garden_in_Haifa_Israel.jpg",
+        "title": {
+          "en": "Caesarea, Haifa & Akko",
+          "de": "Caesarea, Haifa & Akko",
+          "fr": "Césarée, Haïfa & Acre",
+          "he": "קיסריה, חיפה ועכו"
+        },
+        "meta": {
+          "en": "Full day · pick-up in Tel Aviv",
+          "de": "Ganzer Tag · Abholung in Tel Aviv",
+          "fr": "Journée entière · prise en charge à Tel Aviv",
+          "he": "יום שלם · איסוף מתל אביב"
+        },
+        "blurb": {
+          "en": "Up the coast in one day: the Roman harbour of Caesarea, the Bahá'í Gardens in Haifa, the sea grottoes of Rosh Hanikra and the old city of Akko.",
+          "de": "Einmal die Küste hinauf: der römische Hafen von Caesarea, die Bahai-Gärten in Haifa, die Meeresgrotten von Rosch haNikra und die Altstadt von Akko.",
+          "fr": "Toute la côte en un jour : le port romain de Césarée, les jardins bahaïs de Haïfa, les grottes marines de Rosh Hanikra et la vieille ville d'Acre.",
+          "he": "כל החוף ביום אחד: הנמל הרומי של קיסריה, הגנים הבהאיים בחיפה, הנקרות בראש הנקרה והעיר העתיקה של עכו."
+        }
+      },
+      {
+        "id": "galilee",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-nazareth-tiberias-and-sea-of-galilee-tour-t21581/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_nazareth_galilee",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Panorama_on_the_north_Shore_of_the_Sea_of_Galilee_%285796531006%29.jpg/960px-Panorama_on_the_north_Shore_of_the_Sea_of_Galilee_%285796531006%29.jpg",
+        "image_credit": "Ian Scott, CC BY-SA 2.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Panorama_on_the_north_Shore_of_the_Sea_of_Galilee_(5796531006).jpg",
+        "title": {
+          "en": "Nazareth & the Sea of Galilee",
+          "de": "Nazareth & See Genezareth",
+          "fr": "Nazareth & le lac de Tibériade",
+          "he": "נצרת והכנרת"
+        },
+        "meta": {
+          "en": "Full day · pick-up in Tel Aviv",
+          "de": "Ganzer Tag · Abholung in Tel Aviv",
+          "fr": "Journée entière · prise en charge à Tel Aviv",
+          "he": "יום שלם · איסוף מתל אביב"
+        },
+        "blurb": {
+          "en": "The Basilica of the Annunciation in Nazareth, then Capernaum, Tabgha and the shore of the Sea of Galilee. A long, green day in the north.",
+          "de": "Die Verkündigungsbasilika in Nazareth, dann Kapernaum, Tabgha und das Ufer des Sees Genezareth. Ein langer, grüner Tag im Norden.",
+          "fr": "La basilique de l'Annonciation à Nazareth, puis Capharnaüm, Tabgha et les rives du lac de Tibériade. Une longue journée verte dans le nord.",
+          "he": "בזיליקת הבשורה בנצרת, ואחריה כפר נחום, טבחה וחוף הכנרת. יום ארוך וירוק בצפון."
+        }
+      },
+      {
         "id": "spa",
         "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50",
         "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
@@ -1753,9 +1803,9 @@
       {
         "id": "all",
         "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bahai_Garden_in_Haifa_Israel.jpg/960px-Bahai_Garden_in_Haifa_Israel.jpg",
-        "image_credit": "Dani Lavi 0007, CC BY-SA 4.0",
-        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bahai_Garden_in_Haifa_Israel.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Al-Khazneh_%28The_Treasury%29_2%2C_Petra%2C_Jordan.jpg/960px-Al-Khazneh_%28The_Treasury%29_2%2C_Petra%2C_Jordan.jpg",
+        "image_credit": "Vyacheslav Argenberg, CC BY 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Al-Khazneh_(The_Treasury)_2,_Petra,_Jordan.jpg",
         "title": {
           "en": "All tours from Tel Aviv",
           "de": "Alle Touren ab Tel Aviv",
@@ -1769,10 +1819,10 @@
           "he": "GetYourGuide"
         },
         "blurb": {
-          "en": "Haifa and the Galilee, Bethlehem, Petra, boat trips, cooking classes - and guided walks of Levinsky Market, Florentin's street art and Old Jaffa. Everything you can book from Tel Aviv, in one place.",
-          "de": "Haifa und Galiläa, Bethlehem, Petra, Bootstouren, Kochkurse - und geführte Rundgänge über den Levinsky-Markt, durch Florentins Street-Art und Alt-Jaffa. Alles, was sich ab Tel Aviv buchen lässt, an einem Ort.",
-          "fr": "Haïfa et la Galilée, Bethléem, Pétra, sorties en bateau, cours de cuisine - et des visites guidées du marché Levinsky, du street art de Florentin et du vieux Jaffa. Tout ce qui se réserve depuis Tel Aviv, au même endroit.",
-          "he": "חיפה והגליל, בית לחם, פטרה, שיט, סדנאות בישול - וגם סיורים מודרכים בשוק לוינסקי, בגרפיטי של פלורנטין וביפו העתיקה. כל מה שאפשר להזמין מתל אביב, במקום אחד."
+          "en": "Bethlehem, Petra, boat trips, cooking classes - and guided walks of Levinsky Market, Florentin's street art and Old Jaffa. Everything you can book from Tel Aviv, in one place.",
+          "de": "Bethlehem, Petra, Bootstouren, Kochkurse - und geführte Rundgänge über den Levinsky-Markt, durch Florentins Street-Art und Alt-Jaffa. Alles, was sich ab Tel Aviv buchen lässt, an einem Ort.",
+          "fr": "Bethléem, Pétra, sorties en bateau, cours de cuisine - et des visites guidées du marché Levinsky, du street art de Florentin et du vieux Jaffa. Tout ce qui se réserve depuis Tel Aviv, au même endroit.",
+          "he": "בית לחם, פטרה, שיט, סדנאות בישול - וגם סיורים מודרכים בשוק לוינסקי, בגרפיטי של פלורנטין וביפו העתיקה. כל מה שאפשר להזמין מתל אביב, במקום אחד."
         }
       }
     ]
