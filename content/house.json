@@ -1777,7 +1777,12 @@
       },
       {
         "id": "spa",
-        "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50",
+        "url": {
+          "en": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50&path=https%3A%2F%2Fwww.spaplus.co.il%2Fen",
+          "de": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50&path=https%3A%2F%2Fwww.spaplus.co.il%2Fen",
+          "fr": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50&path=https%3A%2F%2Fwww.spaplus.co.il%2Fen",
+          "he": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50"
+        },
         "image": "assets/img/tours/spa.webp",
         "image_credit": "Daniela, CC BY 2.0",
         "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
@@ -1788,9 +1793,9 @@
           "he": "יום ספא או עיסוי"
         },
         "meta": {
-          "en": "Tel Aviv · Spa Plus (Israeli booking site)",
-          "de": "Tel Aviv · Spa Plus (israelische Buchungsseite)",
-          "fr": "Tel Aviv · Spa Plus (site israélien)",
+          "en": "Tel Aviv · Spa Plus (booking site in English)",
+          "de": "Tel Aviv · Spa Plus (Buchungsseite auf Englisch)",
+          "fr": "Tel Aviv · Spa Plus (site de réservation en anglais)",
           "he": "תל אביב · ספא פלוס"
         },
         "blurb": {
@@ -1798,10 +1803,7 @@
           "de": "Hotel-Spas und Massagen in der Stadt, online buchbar. Gut für einen Regentag oder den Tag nach einem langen Flug.",
           "fr": "Spas d'hôtel et massages en ville, réservables en ligne. Parfait un jour de pluie ou le lendemain d'un long vol.",
           "he": "ספא במלונות ועיסויים ברחבי העיר, בהזמנה אונליין. מתאים ליום גשום, או ליום שאחרי טיסה ארוכה."
-        },
-        "langs": [
-          "he"
-        ]
+        }
       }
     ],
     "more": {

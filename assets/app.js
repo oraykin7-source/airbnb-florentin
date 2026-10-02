@@ -437,7 +437,8 @@
     const tn = document.getElementById("tours-note"); tn.textContent = L_(tr.note); tn.hidden = !tr.note;
     for (const it of tr.items) {
       if (it.langs && !it.langs.includes(state.lang)) continue;   // e.g. a Hebrew-only booking site
-      const media = el("a", { class: "ev-media", href: it.url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
+      const url = L_(it.url);                                     // may differ per language (English landing page)
+      const media = el("a", { class: "ev-media", href: url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
         el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
         it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null,
@@ -449,7 +450,7 @@
         el("p", {}, L_(it.blurb)),
         el("div", { class: "foot-row" },
           it.image_credit_url ? el("a", { class: "credit-link", href: it.image_credit_url, target: "_blank", rel: "noopener" }, t("photo")) : el("span", {}),
-          el("a", { class: "book", href: it.url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
+          el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
     }
     if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
   }
