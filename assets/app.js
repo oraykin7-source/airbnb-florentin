@@ -99,13 +99,16 @@
 
   // Guest key: everything about the home itself is encrypted (sealed/). The key arrives once in the
   // personal link (?k=...), is kept in this browser only and is removed from the address bar.
+  // ?demo&k=<public demo key> opens a made-up home (sealed/demo/) for testing; that key is never stored.
+  const SEALED = DEMO ? "sealed/demo/" : "sealed/";
   let GK = "";
-  try { GK = localStorage.getItem("gk") || ""; } catch (_) {}
+  if (!DEMO) try { GK = localStorage.getItem("gk") || ""; } catch (_) {}
   (function readKey() {
     const q = new URLSearchParams(location.search);
     const k = (q.get("k") || "").trim();
     if (!k) return;
-    if (/^[A-Za-z0-9_-]{22}$/.test(k)) { GK = k; try { localStorage.setItem("gk", k); } catch (_) {} }
+    if (/^[A-Za-z0-9_-]{22}$/.test(k)) { GK = k; if (!DEMO) try { localStorage.setItem("gk", k); } catch (_) {} }
+    if (DEMO) return;
     q.delete("k");
     history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
   })();
@@ -119,7 +122,7 @@
       const raw = Uint8Array.from(atob(GK.replace(/-/g, "+").replace(/_/g, "/")), c => c.charCodeAt(0));
       aesKey = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
     }
-    const r = await fetch("sealed/" + path, { cache: "no-cache" });
+    const r = await fetch(SEALED + path, { cache: "no-cache" });
     if (!r.ok) throw new Error(path + ": " + r.status);
     const buf = new Uint8Array(await r.arrayBuffer());
     return crypto.subtle.decrypt({ name: "AES-GCM", iv: buf.slice(0, 12) }, aesKey, buf.slice(12));
