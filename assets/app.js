@@ -530,7 +530,7 @@
   let openCard = hashCard(), hashScrolled = false;
   function applyHashCard() {
     if (!openCard) return;
-    const d = document.getElementById(openCard === "card-tours" ? "tours" : openCard); if (!d) return;
+    const d = document.getElementById(openCard === "card-tours" ? "tours" : openCard); if (!d || d.hidden) return;   // not rendered yet: try again after the data loads
     if (d.tagName === "DETAILS") d.open = true;
     if (!hashScrolled) { hashScrolled = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start" })); }
   }
