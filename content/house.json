@@ -1387,28 +1387,67 @@
       },
       "items": {
         "en": [
-          "Going out: many bars around Florentin St and Vital St have happy hour in the early evening, roughly 17:00-20:00 (each bar has its own hours). The streets really fill up late - locals go out after 22:00.",
+          "Going out: the bars around Florentin St and Vital St really fill up late - locals go out after 22:00. Earlier in the evening many of them have happy hour (see below).",
           "Shabbat (Friday afternoon to Saturday evening): regular buses, trains and the light rail stop and many shops close - but Tel Aviv runs free weekend buses across the city, Ramat Gan and Givatayim (search 'Shabbat' lines in Moovit), plus night buses on Thursday and Friday nights. Otherwise taxis (Gett or Yango) - and shop on Friday morning.",
           "Rent a bike or scooter through the Tel-O-Fun or other city apps - Tel Aviv is flat and has good bike lanes."
         ],
         "de": [
-          "Ausgehen: Viele Bars rund um die Florentin St und Vital St haben am frühen Abend Happy Hour, ungefähr 17-20 Uhr (jede Bar hat eigene Zeiten). Richtig voll wird es spät - Einheimische gehen nach 22 Uhr aus.",
+          "Ausgehen: Die Bars rund um die Florentin St und Vital St werden erst spät richtig voll - Einheimische gehen nach 22 Uhr aus. Am frühen Abend haben viele Happy Hour (siehe unten).",
           "Schabbat (Freitagnachmittag bis Samstagabend): normale Busse, Züge und Stadtbahn stehen, viele Läden schließen - aber Tel Aviv betreibt kostenlose Wochenendbusse durch die Stadt, Ramat Gan und Givatayim (in Moovit nach 'Shabbat'-Linien suchen), dazu Nachtbusse in den Nächten auf Freitag und Samstag. Sonst Taxis (Gett oder Yango) - und freitagvormittags einkaufen.",
           "Fahrräder oder Scooter über Tel-O-Fun oder andere Stadt-Apps mieten - Tel Aviv ist flach und hat gute Radwege."
         ],
         "fr": [
-          "Sortir : beaucoup de bars autour des rues Florentin et Vital ont un happy hour en début de soirée, environ 17 h-20 h (chaque bar a ses horaires). Les rues se remplissent vraiment tard - les locaux sortent après 22 h.",
+          "Sortir : les bars autour des rues Florentin et Vital se remplissent vraiment tard - les locaux sortent après 22 h. En début de soirée, beaucoup proposent un happy hour (voir plus bas).",
           "Shabbat (du vendredi après-midi au samedi soir) : bus réguliers, trains et tramway s'arrêtent et beaucoup de commerces ferment - mais Tel Aviv fait circuler des bus gratuits le week-end dans la ville, Ramat Gan et Givatayim (cherchez les lignes 'Shabbat' dans Moovit), plus des bus de nuit les jeudis et vendredis soirs. Sinon taxis (Gett ou Yango) - et faites vos courses le vendredi matin.",
           "Louez un vélo ou une trottinette via Tel-O-Fun ou d'autres applis de la ville - Tel Aviv est plate et bien équipée en pistes cyclables."
         ],
         "he": [
-          "בילוי בערב: בהרבה ברים סביב רחוב פלורנטין ורחוב ויטל יש האפי האוור בתחילת הערב, בערך 17:00-20:00 (לכל בר שעות משלו). הרחובות מתמלאים באמת מאוחר - המקומיים יוצאים אחרי 22:00.",
+          "בילוי בערב: הברים סביב רחוב פלורנטין ורחוב ויטל מתמלאים באמת מאוחר - המקומיים יוצאים אחרי 22:00. בתחילת הערב יש בהרבה מהם האפי האוור (ראו למטה).",
           "שבת (משישי אחה\"צ עד מוצ\"ש): האוטובוסים הרגילים, הרכבות והרכבת הקלה עוצרים והרבה חנויות סגורות - אבל העירייה מפעילה קווי סופ\"ש חינם ברחבי תל אביב, רמת גן וגבעתיים (חפשו קווי 'שבת' ב-Moovit), ועוד קווי לילה בלילות חמישי ושישי. אחרת מוניות (Gett או Yango) - וקנו ביום שישי בבוקר.",
           "השכירו אופניים או קורקינט דרך תל-אופן או אפליקציות עירוניות אחרות - תל אביב שטוחה ויש בה שבילי אופניים טובים."
         ]
       },
       "group": "local",
       "sections": [
+        {
+          "_source": "https://www.happytlv.com/tel-aviv-happy-hours (checked weekly by the routine, see agent/ROUTINE.md 4b)",
+          "title": {
+            "en": "Happy hour in Florentin",
+            "de": "Happy Hour in Florentin",
+            "fr": "Happy hour à Florentin",
+            "he": "האפי האוור בפלורנטין"
+          },
+          "items": {
+            "en": [
+              "Berlin (Vital St 1): 17:00-20:00, 50% off drinks.",
+              "Mezcal: 17:00-20:00, 25% off drinks and food.",
+              "Alpaca Bar: 18:00-20:30, 20% off drinks and food.",
+              "La Tigra: 17:00-19:00, 50% off drinks.",
+              "Bars change these deals often - ask before you order."
+            ],
+            "de": [
+              "Berlin (Vital St 1): 17-20 Uhr, 50 % auf Getränke.",
+              "Mezcal: 17-20 Uhr, 25 % auf Getränke und Essen.",
+              "Alpaca Bar: 18-20:30 Uhr, 20 % auf Getränke und Essen.",
+              "La Tigra: 17-19 Uhr, 50 % auf Getränke.",
+              "Die Bars ändern diese Angebote oft - vor dem Bestellen kurz nachfragen."
+            ],
+            "fr": [
+              "Berlin (rue Vital 1) : 17 h-20 h, 50 % sur les boissons.",
+              "Mezcal : 17 h-20 h, 25 % sur les boissons et les plats.",
+              "Alpaca Bar : 18 h-20 h 30, 20 % sur les boissons et les plats.",
+              "La Tigra : 17 h-19 h, 50 % sur les boissons.",
+              "Les bars changent souvent ces offres - demandez avant de commander."
+            ],
+            "he": [
+              "ברלין (ויטל 1): 17:00-20:00, 50% על משקאות.",
+              "מסקל: 17:00-20:00, 25% על משקאות ואוכל.",
+              "אלפקה בר: 18:00-20:30, 20% על משקאות ואוכל.",
+              "לה טיגרה: 17:00-19:00, 50% על משקאות.",
+              "הברים משנים את המבצעים לעיתים קרובות - כדאי לשאול לפני שמזמינים."
+            ]
+          }
+        },
         {
           "title": {
             "en": "Getting around",

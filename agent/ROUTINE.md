@@ -99,6 +99,14 @@ python3 agent/validate.py
 
 Fix anything it reports. If you cannot reach at least 5 valid items across the categories, **do not overwrite** `data/weekly.json` - leave last week's file and say so in your final message.
 
+## 4b. Happy-hour check (read-only)
+
+The guide lists four bars with their happy hour, in `content/house.json`: card `florentin`, section titled "Happy hour in Florentin". Once per run, open **only** this page: https://www.happytlv.com/tel-aviv-happy-hours and find the Florentin (פלורנטין) entries for ברלין בפלורנטין (Berlin), מסקל (Mezcal), אלפקה בר (Alpaca Bar) and לה טיגרה (La Tigra). Compare hours and discount with the section.
+
+- This page is a source for this check only - never take weekly items from it, and do not follow links from it.
+- **Do not edit `content/house.json`** (rule 0 still holds: you change only the two data files). Only report.
+- In your final summary add one line: `HAPPY HOUR: unchanged` or `HAPPY HOUR: CHANGED - <bar>: guide says X, page says Y` (also if a bar disappeared from the page), or `HAPPY HOUR: not checked - <reason>` if the page could not be opened.
+
 ## 5. Commit and push
 
 ```bash
@@ -107,4 +115,4 @@ git -c user.name="guide-bot" -c user.email="guide-bot@users.noreply.github.com" 
 git push
 ```
 
-Commit only those two files. End with a short summary: window, item counts per category, and anything you skipped.
+Commit only those two files. End with a short summary: window, item counts per category, the HAPPY HOUR line from 4b, and anything you skipped.
