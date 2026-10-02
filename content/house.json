@@ -1738,81 +1738,6 @@
         }
       },
       {
-        "id": "graffiti",
-        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_street_art_and_graf",
-        "image": "assets/img/places/florentin_art.jpg",
-        "image_credit": "LeRenartQuiPense, CC BY 4.0",
-        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Street_Graffiti_1_Florentin_Abarnabel_Tel_Aviv.jpg",
-        "title": {
-          "en": "Florentin street art walk",
-          "de": "Street-Art-Tour durch Florentin",
-          "fr": "Balade street art à Florentin",
-          "he": "סיור גרפיטי בפלורנטין"
-        },
-        "meta": {
-          "en": "2 hours · starts around the corner",
-          "de": "2 Stunden · startet um die Ecke",
-          "fr": "2 heures · départ au coin de la rue",
-          "he": "שעתיים · יוצא מעבר לפינה"
-        },
-        "blurb": {
-          "en": "The stories behind the murals you walk past every day here: the artists, the politics and the hidden courtyards.",
-          "de": "Die Geschichten hinter den Wandbildern, an denen Sie hier täglich vorbeilaufen: Künstler, Politik und versteckte Hinterhöfe.",
-          "fr": "Les histoires derrière les fresques que vous croisez ici chaque jour : les artistes, la politique et les cours cachées.",
-          "he": "הסיפורים שמאחורי הציורים שאתם עוברים לידם כאן כל יום: האמנים, הפוליטיקה והחצרות הנסתרות."
-        }
-      },
-      {
-        "id": "levinsky",
-        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-2-hour-levinsky-market-tour-with-full-lunch-t361955/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_2_hour_levinsky_mar",
-        "image": "assets/img/places/levinsky.jpg",
-        "image_credit": "Artem.G, CC BY 4.0",
-        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Levinsky_Market_in_Tel_Aviv.jpg",
-        "title": {
-          "en": "Levinsky Market food tour",
-          "de": "Food-Tour über den Levinsky-Markt",
-          "fr": "Visite gourmande du marché Levinsky",
-          "he": "סיור אוכל בשוק לוינסקי"
-        },
-        "meta": {
-          "en": "2 hours · lunch included",
-          "de": "2 Stunden · mit Mittagessen",
-          "fr": "2 heures · déjeuner inclus",
-          "he": "שעתיים · כולל ארוחת צהריים"
-        },
-        "blurb": {
-          "en": "Spices, burekas, pickles and a proper lunch - tasting your way through our local market with someone who knows every stall.",
-          "de": "Gewürze, Burekas, Eingelegtes und ein richtiges Mittagessen - einmal quer durch unseren Markt mit jemandem, der jeden Stand kennt.",
-          "fr": "Épices, bourekas, pickles et un vrai déjeuner - on goûte tout notre marché avec quelqu'un qui connaît chaque étal.",
-          "he": "תבלינים, בורקס, חמוצים וארוחת צהריים של ממש - לטעום את השוק השכונתי עם מי שמכיר כל דוכן."
-        }
-      },
-      {
-        "id": "jaffa",
-        "url": "https://www.getyourguide.com/tel-aviv-l487/jaffa-old-city-port-shuk-hapishpishim-walking-tour-t487378/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jaffa_old_city_port_shuk_hap",
-        "image": "assets/img/places/old_jaffa.jpg",
-        "image_credit": "xiquinhosilva, CC BY 2.0",
-        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_11.jpg",
-        "title": {
-          "en": "Old Jaffa, the port & flea market",
-          "de": "Alt-Jaffa, Hafen & Flohmarkt",
-          "fr": "Vieux Jaffa, le port et les puces",
-          "he": "יפו העתיקה, הנמל ושוק הפשפשים"
-        },
-        "meta": {
-          "en": "Walking tour · 15 minutes from here",
-          "de": "Stadtrundgang · 15 Minuten von hier",
-          "fr": "Visite à pied · à 15 minutes d'ici",
-          "he": "סיור רגלי · 15 דקות מכאן"
-        },
-        "blurb": {
-          "en": "Four thousand years in a few alleys: the old port, the artists' quarter and the flea market, on foot with a guide.",
-          "de": "Viertausend Jahre in ein paar Gassen: alter Hafen, Künstlerviertel und Flohmarkt, zu Fuß mit Guide.",
-          "fr": "Quatre mille ans en quelques ruelles : le vieux port, le quartier des artistes et le marché aux puces, à pied avec un guide.",
-          "he": "ארבעת אלפים שנה בכמה סמטאות: הנמל העתיק, רובע האמנים ושוק הפשפשים, ברגל עם מדריך."
-        }
-      },
-      {
         "id": "spa",
         "url": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50",
         "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hot_Stone_Massage_at_Witches_Falls_Cottages.jpg",
@@ -1840,9 +1765,9 @@
       {
         "id": "all",
         "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours",
-        "image": "assets/img/places/jaffa_port.jpg",
-        "image_credit": "Noam.armonn, CC BY-SA 3.0",
-        "image_credit_url": "https://commons.wikimedia.org/wiki/File:OLD_JAFFA_PORT.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bahai_Garden_in_Haifa_Israel.jpg/960px-Bahai_Garden_in_Haifa_Israel.jpg",
+        "image_credit": "Dani Lavi 0007, CC BY-SA 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bahai_Garden_in_Haifa_Israel.jpg",
         "title": {
           "en": "All tours from Tel Aviv",
           "de": "Alle Touren ab Tel Aviv",
@@ -1856,10 +1781,10 @@
           "he": "GetYourGuide"
         },
         "blurb": {
-          "en": "The Galilee, Bethlehem, Petra, boat trips, cooking classes and more - everything you can book from Tel Aviv in one place.",
-          "de": "Galiläa, Bethlehem, Petra, Bootstouren, Kochkurse und mehr - alles, was sich ab Tel Aviv buchen lässt, an einem Ort.",
-          "fr": "La Galilée, Bethléem, Pétra, sorties en bateau, cours de cuisine et plus - tout ce qui se réserve depuis Tel Aviv, au même endroit.",
-          "he": "הגליל, בית לחם, פטרה, שיט, סדנאות בישול ועוד - כל מה שאפשר להזמין מתל אביב, במקום אחד."
+          "en": "Haifa and the Galilee, Bethlehem, Petra, boat trips, cooking classes - and guided walks of Levinsky Market, Florentin's street art and Old Jaffa. Everything you can book from Tel Aviv, in one place.",
+          "de": "Haifa und Galiläa, Bethlehem, Petra, Bootstouren, Kochkurse - und geführte Rundgänge über den Levinsky-Markt, durch Florentins Street-Art und Alt-Jaffa. Alles, was sich ab Tel Aviv buchen lässt, an einem Ort.",
+          "fr": "Haïfa et la Galilée, Bethléem, Pétra, sorties en bateau, cours de cuisine - et des visites guidées du marché Levinsky, du street art de Florentin et du vieux Jaffa. Tout ce qui se réserve depuis Tel Aviv, au même endroit.",
+          "he": "חיפה והגליל, בית לחם, פטרה, שיט, סדנאות בישול - וגם סיורים מודרכים בשוק לוינסקי, בגרפיטי של פלורנטין וביפו העתיקה. כל מה שאפשר להזמין מתל אביב, במקום אחד."
         }
       }
     ]

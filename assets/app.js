@@ -410,6 +410,7 @@
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
           el("p", {}, ...rich(L_(p.text))),
+          p.tour ? el("a", { class: "place-tour", href: p.tour.url, target: "_blank", rel: "noopener sponsored" }, "🧭 " + L_(p.tour.label) + " " + ARROW()) : null,
           el("div", { class: "place-foot" },
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));

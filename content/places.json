@@ -80,7 +80,16 @@
       "credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_11.jpg",
       "map": "https://maps.google.com/?q=Jaffa+Clock+Tower",
       "license_url": "https://creativecommons.org/licenses/by/2.0",
-      "image_title": "File:Old Jaffa, August 2014 11.jpg"
+      "image_title": "File:Old Jaffa, August 2014 11.jpg",
+      "tour": {
+        "url": "https://www.getyourguide.com/tel-aviv-l487/jaffa-old-city-port-shuk-hapishpishim-walking-tour-t487378/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_jaffa_old_city_port_shuk_hap",
+        "label": {
+          "en": "Guided walk: old city, port & flea market",
+          "de": "Geführter Rundgang: Altstadt, Hafen & Flohmarkt",
+          "fr": "Visite guidée : vieille ville, port et puces",
+          "he": "סיור מודרך: העיר העתיקה, הנמל ושוק הפשפשים"
+        }
+      }
     },
     {
       "id": "neve_tzedek",
@@ -188,7 +197,16 @@
       "credit_url": "https://commons.wikimedia.org/wiki/File:Levinsky_Market_in_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Levinsky+Market+Tel+Aviv",
       "license_url": "https://creativecommons.org/licenses/by/4.0",
-      "image_title": "File:Levinsky Market in Tel Aviv.jpg"
+      "image_title": "File:Levinsky Market in Tel Aviv.jpg",
+      "tour": {
+        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-2-hour-levinsky-market-tour-with-full-lunch-t361955/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_2_hour_levinsky_mar",
+        "label": {
+          "en": "Guided food tour, lunch included",
+          "de": "Geführte Food-Tour mit Mittagessen",
+          "fr": "Visite gourmande guidée, déjeuner inclus",
+          "he": "סיור אוכל מודרך, כולל ארוחת צהריים"
+        }
+      }
     },
     {
       "id": "florentin_art",
@@ -215,7 +233,16 @@
       "credit_url": "https://commons.wikimedia.org/wiki/File:Street_Graffiti_1_Florentin_Abarnabel_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Florentin+Street+Tel+Aviv",
       "license_url": "https://creativecommons.org/licenses/by/4.0",
-      "image_title": "File:Street Graffiti 1 Florentin Abarnabel Tel Aviv.jpg"
+      "image_title": "File:Street Graffiti 1 Florentin Abarnabel Tel Aviv.jpg",
+      "tour": {
+        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_street_art_and_graf",
+        "label": {
+          "en": "Guided street-art walk (2 h)",
+          "de": "Geführte Street-Art-Tour (2 Std.)",
+          "fr": "Balade street art guidée (2 h)",
+          "he": "סיור גרפיטי מודרך (שעתיים)"
+        }
+      }
     },
     {
       "id": "carmel",
