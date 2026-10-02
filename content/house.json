@@ -855,16 +855,20 @@
           },
           "items": {
             "en": [
-              "In the utility cupboard in the bathroom: a blue and white bag with plasters, gauze pads, tape, cotton wool and disinfecting alcohol. Use what you need - and tell me if something runs out."
+              "In the utility cupboard in the bathroom: a blue and white bag with plasters, gauze pads, tape, cotton wool, disinfecting alcohol, tweezers and disposable gloves. Use what you need - and tell me if something runs out.",
+              "Sunburn after the beach? There is aloe vera gel in the fridge."
             ],
             "de": [
-              "Im Abstellschrank im Badezimmer: eine blau-weiße Tasche mit Pflastern, Mullkompressen, Klebeband, Watte und Desinfektionsalkohol. Nehmen Sie, was Sie brauchen - und sagen Sie mir Bescheid, wenn etwas ausgeht."
+              "Im Abstellschrank im Badezimmer: eine blau-weiße Tasche mit Pflastern, Mullkompressen, Klebeband, Watte, Desinfektionsalkohol, Pinzette und Einmalhandschuhen. Nehmen Sie, was Sie brauchen - und sagen Sie mir Bescheid, wenn etwas ausgeht.",
+              "Sonnenbrand nach dem Strand? Im Kühlschrank steht Aloe-vera-Gel."
             ],
             "fr": [
-              "Dans le placard de service de la salle de bain : une trousse bleue et blanche avec pansements, compresses de gaze, sparadrap, coton et alcool désinfectant. Servez-vous - et dites-moi s'il manque quelque chose."
+              "Dans le placard de service de la salle de bain : une trousse bleue et blanche avec pansements, compresses de gaze, sparadrap, coton, alcool désinfectant, pince à épiler et gants jetables. Servez-vous - et dites-moi s'il manque quelque chose.",
+              "Un coup de soleil après la plage ? Il y a du gel d'aloe vera au réfrigérateur."
             ],
             "he": [
-              "בארון השירות בחדר האמבטיה: תיק כחול-לבן עם פלסטרים, פדי גזה, נייר דבק, צמר גפן ואלכוהול לחיטוי. קחו מה שצריך - ותגידו לי אם משהו נגמר."
+              "בארון השירות בחדר האמבטיה: תיק כחול-לבן עם פלסטרים, פדי גזה, נייר דבק, צמר גפן, אלכוהול לחיטוי, פינצטה וכפפות חד-פעמיות. קחו מה שצריך - ותגידו לי אם משהו נגמר.",
+              "נשרפתם בשמש אחרי הים? יש ג'ל אלוורה במקרר."
             ]
           }
         },
