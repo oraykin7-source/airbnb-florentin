@@ -50,6 +50,22 @@ def check_house(path: Path) -> int:
         for m in re.finditer(pat, raw):
             line = raw.count("\n", 0, m.start()) + 1
             problems.append(f"{path}:{line}: {msg}")
+    # The public file may hold neighbourhood cards only. Everything about the home itself is built
+    # from ../airbnb-florentin-private/guide/ into sealed/ by agent/seal.mjs.
+    if path.name == "house.json":
+        for pat, msg in ((r'"whatsapp"', "host phone belongs in the private source, not here"),
+                         (r"\b9725\d{8}\b|\b05\d[- ]?\d{7}\b", "phone number"),
+                         (r"assets/img/(house|tiles)/", "home photo path (must be sealed)")):
+            for m in re.finditer(pat, raw):
+                problems.append(f"{path}:{raw.count(chr(10), 0, m.start()) + 1}: {msg}")
+        try:
+            ids = {c.get("id") for c in json.loads(raw).get("cards", [])}
+        except ValueError as e:
+            problems.append(f"{path}: not valid JSON ({e})")
+            ids = set()
+        private_ids = {"kitchen", "tami4", "ac", "tv", "hot_water", "laundry", "checkout", "emergency", "rules", "review"}
+        for cid in sorted(ids & private_ids):
+            problems.append(f"{path}: card '{cid}' is about the home and must live in the private source")
     print("\n".join(problems) if problems else f"OK: {path} has no placeholders or secrets")
     return 1 if problems else 0
 
@@ -60,7 +76,14 @@ def d(s):
 
 def main() -> int:
     if len(sys.argv) > 1 and sys.argv[1] == "house":
-        return check_house(ROOT / "content" / "house.json")
+        rc = check_house(ROOT / "content" / "house.json")
+        private = ROOT.parent / "airbnb-florentin-private" / "guide" / "house.private.json"
+        if private.exists():   # only on Oren's Mac; cloud routines never see it
+            rc |= check_house(private)
+        if not (ROOT / "sealed" / "house.bin").exists():
+            print("sealed/house.bin is missing - run: node agent/seal.mjs")
+            rc = 1
+        return rc
     path = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data" / "weekly.json"
     errors: list[str] = []
     try:

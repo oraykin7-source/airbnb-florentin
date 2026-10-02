@@ -10,6 +10,7 @@
 
   const UI = {
     en: {
+      welcome_pub: "Florentin, Tel Aviv", lead_pub: "A local's guide to the neighbourhood: where to eat, what to see, and what's on this week.", guest_hint: "Staying with Oren? Open the link from your Airbnb message to see your apartment guide.", house_title_pub: "Florentin like a local", tab_house_pub: "Local tips", kitchen_locked: "This page is for guests. Open the link from your Airbnb message.",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
       tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
@@ -30,6 +31,7 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
+      welcome_pub: "Florentin, Tel Aviv", lead_pub: "Der Kiez-Guide eines Einheimischen: wo man isst, was man sieht und was diese Woche los ist.", guest_hint: "Sie wohnen bei Oren? Öffnen Sie den Link aus Ihrer Airbnb-Nachricht, um Ihren Wohnungs-Guide zu sehen.", house_title_pub: "Florentin wie ein Einheimischer", tab_house_pub: "Tipps", kitchen_locked: "Diese Seite ist für Gäste. Öffnen Sie den Link aus Ihrer Airbnb-Nachricht.",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
       tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Diese Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
@@ -50,6 +52,7 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
+      welcome_pub: "Florentin, Tel Aviv", lead_pub: "Le guide du quartier par un habitant : où manger, que voir et quoi faire cette semaine.", guest_hint: "Vous logez chez Oren ? Ouvrez le lien reçu dans votre message Airbnb pour voir le guide de l'appartement.", house_title_pub: "Florentin comme un local", tab_house_pub: "Conseils", kitchen_locked: "Cette page est réservée aux voyageurs. Ouvrez le lien reçu dans votre message Airbnb.",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
       tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Cette semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
@@ -70,6 +73,7 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
+      welcome_pub: "פלורנטין, תל אביב", lead_pub: "מדריך שכונתי של מקומי: איפה אוכלים, מה רואים ומה קורה השבוע.", guest_hint: "מתארחים אצל אורן? פתחו את הקישור מההודעה באיירבינבי כדי לראות את מדריך הדירה.", house_title_pub: "פלורנטין כמו מקומיים", tab_house_pub: "טיפים", kitchen_locked: "העמוד הזה מיועד לאורחים. פתחו את הקישור מההודעה באיירבינבי.",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
       tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
@@ -91,7 +95,48 @@
     },
   };
 
-  const state = { lang: pickLang(), cat: "food", house: null, places: null, weekly: null, stays: null };
+  const state = { lang: pickLang(), cat: "food", house: null, pub: null, priv: null, guest: false, places: null, weekly: null, stays: null };
+
+  // Guest key: everything about the home itself is encrypted (sealed/). The key arrives once in the
+  // personal link (?k=...), is kept in this browser only and is removed from the address bar.
+  let GK = "";
+  try { GK = localStorage.getItem("gk") || ""; } catch (_) {}
+  (function readKey() {
+    const q = new URLSearchParams(location.search);
+    const k = (q.get("k") || "").trim();
+    if (!k) return;
+    if (/^[A-Za-z0-9_-]{22}$/.test(k)) { GK = k; try { localStorage.setItem("gk", k); } catch (_) {} }
+    q.delete("k");
+    history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
+  })();
+  const setMode = m => { document.documentElement.dataset.mode = m; };
+  // while the key is still being checked ("pending") the page already uses the guest wording, to avoid a flash
+  const guestUI = () => document.documentElement.dataset.mode !== "public";
+  setMode(GK ? "pending" : "public");
+  let aesKey = null;
+  async function unseal(path) {
+    if (!aesKey) {
+      const raw = Uint8Array.from(atob(GK.replace(/-/g, "+").replace(/_/g, "/")), c => c.charCodeAt(0));
+      aesKey = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+    }
+    const r = await fetch("sealed/" + path, { cache: "no-cache" });
+    if (!r.ok) throw new Error(path + ": " + r.status);
+    const buf = new Uint8Array(await r.arrayBuffer());
+    return crypto.subtle.decrypt({ name: "AES-GCM", iv: buf.slice(0, 12) }, aesKey, buf.slice(12));
+  }
+  // Sealed photos ("sealed:i/<name>.bin|image/jpeg") are decrypted only when they scroll into view.
+  const BLOBS = new Map();
+  const sealedIO = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      sealedIO.unobserve(e.target);
+      const img = e.target, ref = img.dataset.sealed;
+      const [file, type] = ref.slice(7).split("|");
+      (BLOBS.get(ref) || BLOBS.set(ref, unseal(file).then(b => URL.createObjectURL(new Blob([b], { type })))).get(ref))
+        .then(u => { img.src = u; }, () => img.dispatchEvent(new Event("error")));
+    }
+  }, { rootMargin: "300px" });
+  function sealedImg(img, ref) { img.dataset.sealed = ref; sealedIO.observe(img); }
 
   // Personalisation lives only in this browser. A link from the host's Airbnb message can carry
   // ?guest=Anna&checkout=2026-10-26 (Airbnb fills those in); we store them once and drop them from the URL.
@@ -162,6 +207,7 @@
     for (const [k, v] of Object.entries(attrs)) {
       if (k === "class") n.className = v;
       else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else if (k === "src" && tag === "img" && String(v).startsWith("sealed:")) sealedImg(n, v);
       else n.setAttribute(k, v);
     }
     for (const k of kids.flat()) if (k != null) n.append(k.nodeType ? k : document.createTextNode(k));
@@ -250,7 +296,7 @@
     const { date: today, hour } = nowInTLV();
     const chosen = guestCheckout();
     if (chosen && chosen >= today) return { today, checkout: chosen, source: "guest" };
-    const checkouts = (state.stays && state.stays.checkouts) || [];
+    const checkouts = (state.guest && state.stays && state.stays.checkouts) || [];
     const next = checkouts.slice().sort().find(c => c > today || (c === today && hour < CHECKOUT_CUTOFF_HOUR));
     return { today, checkout: next || null, source: next ? "calendar" : null };
   }
@@ -259,7 +305,7 @@
   function renderChrome() {
     document.documentElement.lang = state.lang;
     document.documentElement.dir = state.lang === "he" ? "rtl" : "ltr";
-    document.querySelectorAll("[data-i18n]").forEach(n => { n.textContent = t(n.dataset.i18n); });
+    document.querySelectorAll("[data-i18n]").forEach(n => { n.textContent = t((!guestUI() && n.dataset.i18nPub) || n.dataset.i18n); });
     document.querySelectorAll(".lang button").forEach(b =>
       b.setAttribute("aria-checked", String(b.dataset.lang === state.lang)));
     document.querySelectorAll("#cat-tabs button").forEach(b =>
@@ -272,7 +318,7 @@
     document.getElementById("eyebrow").replaceChildren(
       el("img", { class: "sky", src: `assets/img/sky/${sky}.webp`, alt: "", width: "40", height: "40", loading: "eager" }),
       el("span", {}, `${t(hiKey)} · ${t("hi_city")}`));
-    document.getElementById("welcome").textContent = name ? t("welcome_name")(name) : t("welcome");
+    document.getElementById("welcome").textContent = !guestUI() ? t("welcome_pub") : name ? t("welcome_name")(name) : t("welcome");
     const nb = document.getElementById("name-box");
     nb.replaceChildren();
     if (name) {
@@ -287,7 +333,7 @@
     const wa = document.getElementById("wa-btn");
     const num = state.house && String(state.house.host.whatsapp || "").replace(/\D/g, "");
     if (num) wa.href = `https://wa.me/${num}`;
-    wa.hidden = !(num || wa.getAttribute("href"));
+    wa.hidden = !num;
 
     // date picker for the events section
     const { today, checkout, source } = currentStay();
@@ -309,6 +355,7 @@
     const groups = state.house.groups || {};
     const grids = {};
     for (const [gid, label] of Object.entries(groups)) {
+      if (!state.house.cards.some(c => c.group === gid)) continue;
       grids[gid] = el("div", { class: "cards" });
       box.append(el("h3", { class: "group-title", "data-group": gid }, el("span", { class: "dot", "aria-hidden": "true" }), L_(label)), grids[gid]);
     }
@@ -539,7 +586,16 @@
 
   // Each part renders as soon as its own file arrives: a slow or failed events feed
   // never delays the apartment / emergency cards.
-  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
+  // Public part first; the guest part (if this browser holds a key) is decrypted and merged on top.
+  function compose() {
+    if (!state.pub) return;
+    const pr = state.guest ? state.priv : null;
+    state.house = { host: { ...state.pub.host, ...(pr ? pr.host : {}) }, groups: state.pub.groups, cards: [...(pr ? pr.cards : []), ...state.pub.cards] };
+    registerLinks(); renderChrome(); renderHouse(); renderPlaces(); renderEvents(); applyHashCard();
+  }
+  getJSON("content/house.json").then(v => { state.pub = v; compose(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
+  if (GK) unseal("house.bin").then(b => { state.priv = JSON.parse(new TextDecoder().decode(b)); state.guest = true; setMode("guest"); compose(); })
+    .catch(() => { setMode("public"); renderChrome(); });
   getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); applyHashCard(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {
