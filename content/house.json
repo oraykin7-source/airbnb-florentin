@@ -645,28 +645,28 @@
           "Switch off the AC and the lights.",
           "Pull the door shut behind you - it locks itself, there are no keys to return.",
           "Send Oren a message so he knows the room is free.",
-          "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk).",
+          "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk). No trains from Friday afternoon until Saturday evening - take a taxi.",
           "Left something behind? Message Oren - he'll check."
         ],
         "de": [
           "Klimaanlage und Licht ausschalten.",
           "Tür hinter sich zuziehen - sie schließt von selbst, es gibt keine Schlüssel abzugeben.",
           "Oren eine Nachricht schicken, damit er weiß, dass das Zimmer frei ist.",
-          "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß).",
+          "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß). Von Freitagnachmittag bis Samstagabend fahren keine Züge - nehmen Sie ein Taxi.",
           "Etwas vergessen? Oren schreiben - er schaut nach."
         ],
         "fr": [
           "Éteignez la clim et les lumières.",
           "Tirez la porte derrière vous - elle se verrouille seule, il n'y a pas de clés à rendre.",
           "Envoyez un message à Oren pour qu'il sache que la chambre est libre.",
-          "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied).",
+          "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied). Pas de trains du vendredi après-midi au samedi soir - prenez un taxi.",
           "Oublié quelque chose ? Écrivez à Oren - il vérifiera."
         ],
         "he": [
           "מכבים מזגן ואורות.",
           "סוגרים את הדלת מאחוריכם - היא ננעלת לבד, אין מפתחות להחזיר.",
           "שולחים לאורן הודעה כדי שידע שהחדר פנוי.",
-          "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה).",
+          "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה). אין רכבות משישי אחר הצהריים עד מוצאי שבת - קחו מונית.",
           "שכחתם משהו? כתבו לאורן - הוא יבדוק."
         ]
       }
@@ -1115,7 +1115,7 @@
             {
               "name": "Tiv Taam IN THE CITY",
               "where": "Jerusalem Blvd 4",
-              "hours": "until 23:00, open Shabbat",
+              "hours": "until 23:00",
               "note": {
                 "en": "non-kosher, pork & wine",
                 "de": "nicht koscher, Schweinefleisch & Wein",
@@ -1183,15 +1183,19 @@
       },
       "items": {
         "en": [
+          "Saturday lunch? Almost everything on this list is closed until the evening. Walk about 20 minutes to Jaffa Port - the restaurants there are open on Shabbat.",
           "My own favourites, no sponsorship. Hours are from Google and can change - tap a name to navigate. Most street-food places close on Shabbat."
         ],
         "de": [
+          "Mittagessen am Samstag? Fast alles auf dieser Liste ist bis zum Abend geschlossen. Gehen Sie etwa 20 Minuten zum Hafen von Jaffa - die Restaurants dort haben am Schabbat geöffnet.",
           "Meine persönlichen Favoriten, ohne Sponsoring. Zeiten von Google, können sich ändern - Name antippen zum Navigieren. Die meisten Streetfood-Läden sind am Schabbat zu."
         ],
         "fr": [
+          "Déjeuner le samedi ? Presque toute cette liste est fermée jusqu'au soir. Marchez environ 20 minutes jusqu'au port de Jaffa - les restaurants y sont ouverts le shabbat.",
           "Mes adresses personnelles, sans sponsoring. Horaires de Google, ils peuvent changer - touchez un nom pour naviguer. La plupart des stands de street food ferment le Shabbat."
         ],
         "he": [
+          "צהריים בשבת? כמעט כל הרשימה סגורה עד הערב. לכו כ-20 דקות לנמל יפו - המסעדות שם פתוחות בשבת.",
           "המועדפים שלי, בלי חסויות. השעות מגוגל ועשויות להשתנות - לחצו על שם לניווט. רוב מקומות אוכל הרחוב סגורים בשבת."
         ]
       },
@@ -1285,7 +1289,7 @@
             {
               "name": "HaShachaf",
               "where": "Herzl St 22",
-              "hours": "evenings from 17:00, open Shabbat",
+              "hours": "from 17:00",
               "note": {
                 "en": "fish & seafood, Greek style - octopus, fish carpaccio. Same corner as Mirage, by Park HaMesila",
                 "de": "Fisch & Meeresfrüchte auf griechische Art - Oktopus, Fisch-Carpaccio. Gleiche Ecke wie Mirage, am Park HaMesila",
@@ -1663,16 +1667,16 @@
   },
   "tours": {
     "lead": {
-      "en": "Hand-picked trips and tours, bookable online - most with free cancellation. The ones marked \"Guest favourite\" are the trips my previous guests came back happy from.",
-      "de": "Ausgewählte Ausflüge und Touren, online buchbar - meist kostenlos stornierbar. Mit \"Gäste-Favorit\" markiert sind die Ausflüge, von denen meine bisherigen Gäste begeistert zurückkamen.",
-      "fr": "Excursions et visites choisies, réservables en ligne - annulation gratuite pour la plupart. Celles marquées « Coup de cœur des voyageurs » sont celles dont mes voyageurs précédents sont revenus ravis.",
-      "he": "טיולים וסיורים נבחרים, בהזמנה אונליין - ברובם ביטול חינם. המסומנים \"אהוב על אורחים\" הם הטיולים שאורחים קודמים שלי חזרו מהם מרוצים."
+      "en": "Day trips my guests have enjoyed. You book online at the normal price; I get a small commission, which keeps this guide running.",
+      "de": "Tagesausflüge, die meinen Gästen gefallen haben. Sie buchen online zum normalen Preis; ich bekomme eine kleine Provision, die diesen Guide am Laufen hält.",
+      "fr": "Des excursions que mes voyageurs ont aimées. Vous réservez en ligne au prix normal ; je touche une petite commission qui fait vivre ce guide.",
+      "he": "טיולי יום שהאורחים שלי נהנו מהם. מזמינים אונליין במחיר הרגיל; אני מקבל עמלה קטנה שמחזיקה את המדריך הזה."
     },
     "note": {
-      "en": "Prices are the same as booking anywhere else; Oren gets a small commission, which helps keep this guide running. Not sure which one fits your days here? Ask me.",
-      "de": "Die Preise sind dieselben wie überall; Oren bekommt eine kleine Provision, die diesen Guide am Laufen hält. Unsicher, was zu Ihren Tagen passt? Fragen Sie mich.",
-      "fr": "Les prix sont les mêmes qu'ailleurs ; Oren touche une petite commission qui aide à faire vivre ce guide. Un doute sur ce qui convient à votre séjour ? Demandez-moi.",
-      "he": "המחירים זהים להזמנה בכל מקום אחר; אורן מקבל עמלה קטנה שעוזרת להחזיק את המדריך הזה. לא בטוחים מה מתאים לימים שלכם כאן? שאלו אותי."
+      "en": "Not sure which one fits your days here? Ask me.",
+      "de": "Unsicher, was zu Ihren Tagen hier passt? Fragen Sie mich.",
+      "fr": "Un doute sur ce qui convient à votre séjour ? Demandez-moi.",
+      "he": "לא בטוחים מה מתאים לימים שלכם כאן? שאלו אותי."
     },
     "items": [
       {
@@ -1775,8 +1779,7 @@
           "de": "Die Verkündigungsbasilika in Nazareth, dann Kapernaum, Tabgha und das Ufer des Sees Genezareth. Ein langer, grüner Tag im Norden.",
           "fr": "La basilique de l'Annonciation à Nazareth, puis Capharnaüm, Tabgha et les rives du lac de Tibériade. Une longue journée verte dans le nord.",
           "he": "בזיליקת הבשורה בנצרת, ואחריה כפר נחום, טבחה וחוף הכנרת. יום ארוך וירוק בצפון."
-        },
-        "fav": true
+        }
       },
       {
         "id": "spa",
@@ -1801,33 +1804,20 @@
           "de": "Hotel-Spas und Massagen in der Stadt, online buchbar. Gut für einen Regentag oder den Tag nach einem langen Flug.",
           "fr": "Spas d'hôtel et massages en ville, réservables en ligne. Parfait un jour de pluie ou le lendemain d'un long vol.",
           "he": "ספא במלונות ועיסויים ברחבי העיר, בהזמנה אונליין. מתאים ליום גשום, או ליום שאחרי טיסה ארוכה."
-        }
-      },
-      {
-        "id": "all",
-        "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Al-Khazneh_%28The_Treasury%29_2%2C_Petra%2C_Jordan.jpg/960px-Al-Khazneh_%28The_Treasury%29_2%2C_Petra%2C_Jordan.jpg",
-        "image_credit": "Vyacheslav Argenberg, CC BY 4.0",
-        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Al-Khazneh_(The_Treasury)_2,_Petra,_Jordan.jpg",
-        "title": {
-          "en": "All tours from Tel Aviv",
-          "de": "Alle Touren ab Tel Aviv",
-          "fr": "Toutes les excursions depuis Tel Aviv",
-          "he": "כל הסיורים מתל אביב"
         },
-        "meta": {
-          "en": "GetYourGuide",
-          "de": "GetYourGuide",
-          "fr": "GetYourGuide",
-          "he": "GetYourGuide"
-        },
-        "blurb": {
-          "en": "Bethlehem, Petra, boat trips, cooking classes - and guided walks of Levinsky Market, Florentin's street art and Old Jaffa. Everything you can book from Tel Aviv, in one place.",
-          "de": "Bethlehem, Petra, Bootstouren, Kochkurse - und geführte Rundgänge über den Levinsky-Markt, durch Florentins Street-Art und Alt-Jaffa. Alles, was sich ab Tel Aviv buchen lässt, an einem Ort.",
-          "fr": "Bethléem, Pétra, sorties en bateau, cours de cuisine - et des visites guidées du marché Levinsky, du street art de Florentin et du vieux Jaffa. Tout ce qui se réserve depuis Tel Aviv, au même endroit.",
-          "he": "בית לחם, פטרה, שיט, סדנאות בישול - וגם סיורים מודרכים בשוק לוינסקי, בגרפיטי של פלורנטין וביפו העתיקה. כל מה שאפשר להזמין מתל אביב, במקום אחד."
-        }
+        "langs": [
+          "he"
+        ]
       }
-    ]
+    ],
+    "more": {
+      "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours",
+      "label": {
+        "en": "Looking for something else? Bethlehem, boat trips, cooking classes and guided walks in Tel Aviv - all tours from Tel Aviv",
+        "de": "Etwas anderes gesucht? Bethlehem, Bootstouren, Kochkurse und geführte Rundgänge in Tel Aviv - alle Touren ab Tel Aviv",
+        "fr": "Envie d'autre chose ? Bethléem, sorties en bateau, cours de cuisine et visites guidées à Tel Aviv - toutes les excursions depuis Tel Aviv",
+        "he": "מחפשים משהו אחר? בית לחם, שיט, סדנאות בישול וסיורים מודרכים בתל אביב - כל הסיורים מתל אביב"
+      }
+    }
   }
 }

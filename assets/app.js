@@ -10,14 +10,14 @@
 
   const UI = {
     en: {
-      fav: "Guest favourite",
+      fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
       tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A cozy room in Florentin", brand_short: "Cozy room", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
-      places_title: "Places we love", places_lead: "Our favourite corners of the city - most within a 20-minute walk. Tap a card for the map.", map: "Open in Maps", photo: "Photo",
+      places_title: "Places we love", places_lead: "Our favourite corners of the city - most within a 20-minute walk. Tap a card for the map. Guided-tour buttons are partner links - same price for you.", map: "Open in Maps", photo: "Photo",
       cat_food: "Food & restaurants", cat_culture: "Culture & city events", cat_nightlife: "Nightlife & parties",
       footer: "Made with care by your host. Enjoy Florentin!",
       stay_until: d => `Events during your stay · until ${d}`,
@@ -32,14 +32,14 @@
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
     },
     de: {
-      fav: "Gäste-Favorit",
+      fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
-      tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Diese Woche",
+      tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein gemütliches Zimmer in Florentin", brand_short: "Gemütliches Zimmer", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
-      places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt - die meisten in 20 Minuten zu Fuß. Karte antippen für den Weg.", map: "In Maps öffnen", photo: "Foto",
+      places_title: "Unsere Lieblingsorte", places_lead: "Unsere liebsten Ecken der Stadt - die meisten in 20 Minuten zu Fuß. Karte antippen für den Weg. Die Tour-Buttons sind Partnerlinks - gleicher Preis für Sie.", map: "In Maps öffnen", photo: "Foto",
       cat_food: "Essen & Restaurants", cat_culture: "Kultur & Stadtevents", cat_nightlife: "Nachtleben & Partys",
       footer: "Mit Liebe von Ihrem Gastgeber. Viel Spaß in Florentin!",
       stay_until: d => `Veranstaltungen während Ihres Aufenthalts · bis ${d}`,
@@ -54,14 +54,14 @@
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
     },
     fr: {
-      fav: "Coup de cœur des voyageurs",
+      fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
-      tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Cette semaine",
+      tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre cosy à Florentin", brand_short: "Chambre cosy", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
-      places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville - la plupart à 20 minutes à pied. Touchez une carte pour l'itinéraire.", map: "Ouvrir dans Maps", photo: "Photo",
+      places_title: "Nos endroits préférés", places_lead: "Nos coins préférés de la ville - la plupart à 20 minutes à pied. Touchez une carte pour l'itinéraire. Les boutons de visite guidée sont des liens partenaires - même prix pour vous.", map: "Ouvrir dans Maps", photo: "Photo",
       cat_food: "Cuisine & restaurants", cat_culture: "Culture & événements", cat_nightlife: "Vie nocturne & soirées",
       footer: "Préparé avec soin par votre hôte. Profitez de Florentin !",
       stay_until: d => `Événements pendant votre séjour · jusqu'au ${d}`,
@@ -76,14 +76,14 @@
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
     },
     he: {
-      fav: "אהוב על אורחים",
+      fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
       tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר נעים בפלורנטין", brand_short: "חדר נעים", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
-      places_title: "מקומות שאנחנו אוהבים", places_lead: "הפינות האהובות עלינו בעיר - רובן ב-20 דקות הליכה. לחצו על כרטיס למפה.", map: "פתיחה במפות", photo: "צילום",
+      places_title: "מקומות שאנחנו אוהבים", places_lead: "הפינות האהובות עלינו בעיר - רובן ב-20 דקות הליכה. לחצו על כרטיס למפה. כפתורי הסיור המודרך הם קישורי שותפים - אותו מחיר בשבילכם.", map: "פתיחה במפות", photo: "צילום",
       cat_food: "אוכל ומסעדות", cat_culture: "תרבות ואירועים", cat_nightlife: "חיי לילה ומסיבות",
       footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
       stay_until: d => `אירועים במהלך השהות · עד ${d}`,
@@ -331,10 +331,10 @@
     document.getElementById("first").hidden = firsts.length === 0;
     for (const c of state.house.cards) {
       const body = el("div", { class: "body" });
+      const parts = { img: null, kv: null, tel: null, items: null, steps: [] };
       if (c.image) {
-        const img = el("img", { class: "card-img", src: c.image, alt: (c.image_alt && L_(c.image_alt)) || "", loading: "lazy",
+        parts.img = el("img", { class: "card-img", src: c.image, alt: (c.image_alt && L_(c.image_alt)) || "", loading: "lazy",
           onerror: e => e.target.remove() });
-        body.append(img);
       }
       if (c.kv) {
         const dl = el("dl", { class: "kv" });
@@ -351,17 +351,20 @@
           }
           dl.append(el("dt", {}, L_(row.label)), dd);
         }
-        body.append(dl);
+        parts.kv = dl;
       }
       if (c.tel) {
-        body.append(el("div", { class: "tel" },
-          c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label)))));
+        parts.tel = el("div", { class: "tel" },
+          c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label))));
       }
-      if (c.items) body.append(el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
+      if (c.items) parts.items = el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id))));
       if (c.steps) {
-        if (c.steps_title) body.append(el("h4", { class: "sec-title" }, L_(c.steps_title)));
-        body.append(el("ol", { class: "steps" }, L_(c.steps).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
+        if (c.steps_title) parts.steps.push(el("h4", { class: "sec-title" }, L_(c.steps_title)));
+        parts.steps.push(el("ol", { class: "steps" }, L_(c.steps).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
       }
+      // A card with numbered steps (the emergency card) shows what to DO first, the photo and phone numbers after
+      body.append(...(c.steps ? [parts.items, ...parts.steps, parts.img, parts.kv, parts.tel]
+                              : [parts.img, parts.kv, parts.tel, parts.items]).filter(Boolean));
       if (c.video) {
         body.append(el("video", { class: "card-video", src: c.video.src, poster: c.video.poster || "", muted: "", loop: "", playsinline: "", controls: "", preload: "none" }));
         body.append(el("p", { class: "muted small" }, L_(c.video.caption)));
@@ -433,19 +436,22 @@
     document.getElementById("tours-lead").textContent = L_(tr.lead);
     document.getElementById("tours-note").textContent = L_(tr.note);
     for (const it of tr.items) {
+      if (it.langs && !it.langs.includes(state.lang)) continue;   // e.g. a Hebrew-only booking site
       const media = el("a", { class: "ev-media", href: it.url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
         el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
-        it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null);
+        it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null,
+        it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null);
       box.append(el("article", { class: "ev tour", id: "tour-" + it.id },
         media,
-        el("div", { class: "ev-top" }, el("h3", {}, L_(it.title), it.fav ? el("span", { class: "badge fav" }, "★ " + t("fav")) : null)),
+        el("div", { class: "ev-top" }, el("h3", {}, L_(it.title))),
         el("div", { class: "where" }, L_(it.meta)),
         el("p", {}, L_(it.blurb)),
         el("div", { class: "foot-row" },
           it.image_credit_url ? el("a", { class: "credit-link", href: it.image_credit_url, target: "_blank", rel: "noopener" }, t("photo")) : el("span", {}),
           el("a", { class: "book", href: it.url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
     }
+    if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
   }
 
   const MAX_FEED_AGE_DAYS = 10;
@@ -540,11 +546,13 @@
   // Bottom tab bar: highlight the section in view
   (function tabbar() {
     const links = [...document.querySelectorAll(".tabbar a")];
-    const targets = ["top", "house", "tours", "places", "week"].map(id => document.getElementById(id)).filter(Boolean);
+    const hero = document.querySelector(".hero"); if (hero && !hero.id) hero.id = "hero";
+    const targets = ["hero", "first", "house", "tours", "places", "week"].map(id => document.getElementById(id)).filter(Boolean);
+    const tabOf = id => (id === "hero" || id === "first") ? "top" : id;
     const io = new IntersectionObserver(entries => {
       const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (!vis) return;
-      links.forEach(a => a.setAttribute("aria-current", a.dataset.target === vis.target.id ? "true" : "false"));
+      links.forEach(a => a.setAttribute("aria-current", a.dataset.target === tabOf(vis.target.id) ? "true" : "false"));
     }, { rootMargin: "-40% 0px -50% 0px", threshold: [0, .1, .5] });
     targets.forEach(el => io.observe(el));
   })();

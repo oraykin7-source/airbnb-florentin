@@ -464,3 +464,11 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 
 /* Guided-tour link inside a place card (2.10): one entry per spot instead of a duplicate tour card */
 .place-tour { display: inline-block; margin: 2px 0 10px; font-weight: 700; font-size: .95rem; text-decoration: none; color: var(--accent); background: var(--accent-soft); padding: 8px 12px; border-radius: 10px; }
+
+/* Review fixes (2.10): tap targets, tab labels on one line, guests' pick tag on the photo, "all tours" link row */
+.ev.tour .book, .place-tour { min-height: 44px; display: inline-flex; align-items: center; }
+.tabs button { min-height: 44px; }
+.tabbar a span { white-space: nowrap; }
+.name-box input { font-size: 16px; }
+.ev-media .fav-tag { position: absolute; inset-inline-start: 12px; top: 12px; font-size: .8rem; font-weight: 700; color: var(--happy-ink); background: var(--happy); padding: 5px 10px; border-radius: 999px; }
+.more-tours { display: block; margin-top: 4px; padding: 14px 16px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow), 0 0 0 1px var(--ring); color: var(--accent); font-weight: 600; text-decoration: none; }
