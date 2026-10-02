@@ -1611,27 +1611,71 @@
               "Naim Gym, Alfasi St 22: two floors of machines. Single visit 50 ₪, just walk in. Open on Saturday too (9:00-22:00).",
               "Space Florentin, Abarbanel St 72: big chain gym in the neighbourhood. Ask at the desk for a day pass; staying a few weeks? They have a monthly plan with no commitment.",
               "Icon Fitness, Shalom Tower, Ahad Ha'am St 9: large gym, single visit about 90 ₪.",
-              "CrossFit Florentin, Abulafia St 3: coached classes only - message them on WhatsApp first (details on crossfitflorentin.co.il)."
+              "CrossFit Florentin, Abulafia St 3: coached classes only - message them on WhatsApp first."
             ],
             "de": [
               "Naim Gym, Alfasi St 22: zwei Etagen mit Geräten. Einzelbesuch 50 ₪, einfach vorbeikommen. Auch samstags geöffnet (9-22 Uhr).",
               "Space Florentin, Abarbanel St 72: großes Ketten-Studio im Viertel. Am Empfang nach einer Tageskarte fragen; bei mehreren Wochen Aufenthalt gibt es ein Monatsabo ohne Bindung.",
               "Icon Fitness, Shalom Tower, Ahad Ha'am St 9: großes Studio, Einzelbesuch etwa 90 ₪.",
-              "CrossFit Florentin, Abulafia St 3: nur Kurse mit Trainer - vorher per WhatsApp anmelden (Infos auf crossfitflorentin.co.il)."
+              "CrossFit Florentin, Abulafia St 3: nur Kurse mit Trainer - vorher per WhatsApp anmelden."
             ],
             "fr": [
               "Naim Gym, rue Alfasi 22 : deux étages de machines. Séance à l'unité 50 ₪, sans réservation. Ouvert aussi le samedi (9 h-22 h).",
               "Space Florentin, rue Abarbanel 72 : grande salle de chaîne dans le quartier. Demandez un pass journée à l'accueil ; pour un séjour de plusieurs semaines, il existe un abonnement mensuel sans engagement.",
               "Icon Fitness, tour Shalom, rue Ahad Ha'am 9 : grande salle, séance à l'unité environ 90 ₪.",
-              "CrossFit Florentin, rue Abulafia 3 : uniquement des cours encadrés - écrivez-leur d'abord sur WhatsApp (infos sur crossfitflorentin.co.il)."
+              "CrossFit Florentin, rue Abulafia 3 : uniquement des cours encadrés - écrivez-leur d'abord sur WhatsApp."
             ],
             "he": [
               "נעים, אלפסי 22: שתי קומות של מכשירים. כניסה בודדת 50 ₪, בלי תיאום. פתוח גם בשבת (9:00-22:00).",
               "Space פלורנטין, אברבנאל 72: חדר כושר גדול של רשת בתוך השכונה. שאלו בקבלה על כרטיס יומי; לשהות של כמה שבועות יש מנוי חודשי בלי התחייבות.",
               "Icon Fitness, מגדל שלום, אחד העם 9: חדר כושר גדול, כניסה בודדת בערך 90 ₪.",
-              "קרוספיט פלורנטין, אבולעפיה 3: רק שיעורים עם מאמן - כתבו להם קודם בוואטסאפ (פרטים ב-crossfitflorentin.co.il)."
+              "קרוספיט פלורנטין, אבולעפיה 3: רק שיעורים עם מאמן - כתבו להם קודם בוואטסאפ."
             ]
-          }
+          },
+          "links": [
+            {
+              "label": {
+                "en": "Naim Gym",
+                "de": "Naim Gym",
+                "fr": "Naim Gym",
+                "he": "נעים"
+              },
+              "url": {
+                "en": "https://www.naim.org.il/en/gym/",
+                "he": "https://www.naim.org.il/gym/"
+              }
+            },
+            {
+              "label": {
+                "en": "Space Florentin",
+                "de": "Space Florentin",
+                "fr": "Space Florentin",
+                "he": "Space Florentin"
+              },
+              "url": "https://www.spaceclub.co.il/Club?clubId=16"
+            },
+            {
+              "label": {
+                "en": "Icon Fitness",
+                "de": "Icon Fitness",
+                "fr": "Icon Fitness",
+                "he": "Icon Fitness"
+              },
+              "url": "https://www.iconfitness.co.il/tel-aviv/"
+            },
+            {
+              "label": {
+                "en": "CrossFit Florentin",
+                "de": "CrossFit Florentin",
+                "fr": "CrossFit Florentin",
+                "he": "קרוספיט פלורנטין"
+              },
+              "url": {
+                "en": "https://www.crossfitflorentin.co.il/en",
+                "he": "https://www.crossfitflorentin.co.il/"
+              }
+            }
+          ]
         }
       ]
     },
