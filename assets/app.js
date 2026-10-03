@@ -26,7 +26,7 @@
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A cozy room in Florentin", brand_short: "Cozy room", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
-      places_title: "Places I love", places_lead: "My favourite corners of the city - most within a 20-minute walk. Tap a card for the map. Guided-tour buttons are partner links - same price for you.", map: "Open in Maps", photo: "Photo",
+      places_title: "Places I love", places_lead: "My favourite corners of the city - most within a 20-minute walk. Tap a photo for more pictures, the Map button for directions. Guided-tour buttons are partner links - same price for you.", map: "Open in Maps", photo: "Photo",
       cat_food: "Food & restaurants", cat_culture: "Culture & city events", cat_nightlife: "Nightlife & parties",
       footer: "Made with care by your host. Enjoy Florentin!",
       stay_until: d => `Events during your stay · until ${d}`,
@@ -57,7 +57,7 @@
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein gemütliches Zimmer in Florentin", brand_short: "Gemütliches Zimmer", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
-      places_title: "Meine Lieblingsorte", places_lead: "Meine liebsten Ecken der Stadt - die meisten in 20 Minuten zu Fuß. Karte antippen für den Weg. Die Tour-Buttons sind Partnerlinks - gleicher Preis für Sie.", map: "In Maps öffnen", photo: "Foto",
+      places_title: "Meine Lieblingsorte", places_lead: "Meine liebsten Ecken der Stadt - die meisten in 20 Minuten zu Fuß. Foto antippen für mehr Bilder, Karte-Button für den Weg. Die Tour-Buttons sind Partnerlinks - gleicher Preis für Sie.", map: "In Maps öffnen", photo: "Foto",
       cat_food: "Essen & Restaurants", cat_culture: "Kultur & Stadtevents", cat_nightlife: "Nachtleben & Partys",
       footer: "Mit Liebe von Ihrem Gastgeber. Viel Spaß in Florentin!",
       stay_until: d => `Veranstaltungen während Ihres Aufenthalts · bis ${d}`,
@@ -88,7 +88,7 @@
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre cosy à Florentin", brand_short: "Chambre cosy", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
-      places_title: "Mes endroits préférés", places_lead: "Mes coins préférés de la ville - la plupart à 20 minutes à pied. Touchez une carte pour l'itinéraire. Les boutons de visite guidée sont des liens partenaires - même prix pour vous.", map: "Ouvrir dans Maps", photo: "Photo",
+      places_title: "Mes endroits préférés", places_lead: "Mes coins préférés de la ville - la plupart à 20 minutes à pied. Touchez la photo pour plus d'images, le bouton Carte pour l'itinéraire. Les boutons de visite guidée sont des liens partenaires - même prix pour vous.", map: "Ouvrir dans Maps", photo: "Photo",
       cat_food: "Cuisine & restaurants", cat_culture: "Culture & événements", cat_nightlife: "Vie nocturne & soirées",
       footer: "Préparé avec soin par votre hôte. Profitez de Florentin !",
       stay_until: d => `Événements pendant votre séjour · jusqu'au ${d}`,
@@ -119,7 +119,7 @@
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר נעים בפלורנטין", brand_short: "חדר נעים", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
-      places_title: "מקומות שאני אוהב", places_lead: "הפינות האהובות עליי בעיר - רובן ב-20 דקות הליכה. לחצו על כרטיס למפה. כפתורי הסיור המודרך הם קישורי שותפים - אותו מחיר בשבילכם.", map: "פתיחה במפות", photo: "צילום",
+      places_title: "מקומות שאני אוהב", places_lead: "הפינות האהובות עליי בעיר - רובן ב-20 דקות הליכה. לחיצה על התמונה פותחת עוד תמונות, כפתור המפה מנווט. כפתורי הסיור המודרך הם קישורי שותפים - אותו מחיר בשבילכם.", map: "פתיחה במפות", photo: "צילום",
       cat_food: "אוכל ומסעדות", cat_culture: "תרבות ואירועים", cat_nightlife: "חיי לילה ומסיבות",
       footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
       stay_until: d => `אירועים במהלך השהות · עד ${d}`,
@@ -542,12 +542,13 @@
       const credit = el("a", { class: "credit-full", href: p.credit_url, target: "_blank", rel: "noopener", hidden: "" }, `${t("photo")}: ${p.credit}`);
       const more = el("button", { class: "more-btn", type: "button", "aria-expanded": "false",
         onclick: e => { const open = txt.classList.toggle("open"); credit.hidden = !open; e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less_txt") : t("more_txt"); } }, t("more_txt"));
+      const main = { src: p.image, caption: p.title, credit: p.credit, credit_url: p.credit_url };
       box.append(el("article", { class: "place", id: "place-" + p.id },
-        el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
+        galleryMedia(el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675", style: p.focus ? "object-position:" + p.focus : null }),
           el("span", { class: "walk" }, L_(p.walk)),
           p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null,
-          galleryButton(p.id, { src: p.image, caption: p.title, credit: p.credit, credit_url: p.credit_url })),
+          galleryBadge(p.id, main)), p.id, main),
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
           txt, credit, more,
@@ -589,12 +590,22 @@
     const extra = (state.gallery && state.gallery[id]) || [];
     return extra.length ? [main, ...extra] : null;
   }
-  function galleryButton(id, main) {
+  function galleryBadge(id, main) {
     const photos = galleryPhotos(id, main);
     if (!photos) return null;
-    return el("button", { class: "gal-btn", type: "button", onclick: e => { e.preventDefault(); e.stopPropagation(); openGallery(photos, 0); } },
-      svg('<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.2"/><path d="M8 5l1.2-2h5.6L16 5"/>', 16),
-      el("span", {}, t("gal_photos")(photos.length)));
+    return el("span", { class: "gal-badge", "aria-hidden": "true" },
+      svg('<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.2"/><path d="M8 5l1.2-2h5.6L16 5"/>', 14),
+      String(photos.length));
+  }
+  // Tapping the card photo opens the gallery when there is one (the map / booking links stay in the card)
+  function galleryMedia(media, id, main) {
+    const photos = galleryPhotos(id, main);
+    if (!photos) return media;
+    media.setAttribute("role", "button");
+    media.setAttribute("aria-label", t("gal_photos")(photos.length));
+    media.removeAttribute("aria-hidden"); media.removeAttribute("tabindex");
+    media.addEventListener("click", e => { e.preventDefault(); openGallery(photos, 0); });
+    return media;
   }
   function openGallery(photos, start) {
     let dlg = document.getElementById("lightbox");
@@ -633,12 +644,12 @@
     for (const it of tr.items) {
       if (it.langs && !it.langs.includes(state.lang)) continue;   // e.g. a Hebrew-only booking site
       const url = L_(it.url);                                     // may differ per language (English landing page)
-      const media = el("a", { class: "ev-media", href: url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
+      const main = { src: it.image, caption: it.title, credit: it.image_credit, credit_url: it.image_credit_url };
+      const media = galleryMedia(el("a", { class: "ev-media", href: url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
         el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
-        it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null,
         it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null,
-        galleryButton(it.id, { src: it.image, caption: it.title, credit: it.image_credit, credit_url: it.image_credit_url }));
+        galleryBadge(it.id, main)), it.id, main);
       // One uniform tile per tour (3.10 evening): photo, title, meta, short blurb, book link
       box.append(el("article", { class: "ev tour tour-tile", id: "tour-" + it.id },
         media,
@@ -646,7 +657,9 @@
           el("h3", {}, L_(it.title)),
           el("div", { class: "where" }, L_(it.meta)),
           el("p", {}, L_(it.blurb)),
-          el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
+          el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()),
+          // Photo credit as a short link under the text, same as the place cards (designer review 3.10, item 12)
+          it.image_credit ? el("a", { class: "credit-link", href: it.image_credit_url || url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${it.image_credit}` }, t("photo") + " ↗") : null)));
     }
     if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
   }

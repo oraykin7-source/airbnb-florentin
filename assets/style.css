@@ -982,3 +982,9 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .lb-prev { left: 12px; } .lb-next { right: 12px; }
 [dir="rtl"] .lb-prev { left: auto; right: 12px; } [dir="rtl"] .lb-next { right: auto; left: 12px; }
 @media (hover: hover) and (min-width: 700px) { .lb-nav { display: block; } .lb-item img { max-height: calc(100% - 110px); } }
+/* Gallery v2 (Oren: the big button hid the photo): tap the photo, small count badge, credit under the text */
+.gal-btn { display: none; }
+.gal-badge { position: absolute; inset-inline-end: 8px; bottom: 8px; z-index: 2; display: inline-flex; align-items: center; gap: 4px; height: 26px; padding: 0 8px; border-radius: 999px; background: rgba(42,36,31,.62); color: #fff; font-size: var(--fs-xs); font-weight: 700; backdrop-filter: blur(3px); pointer-events: none; }
+.gal-badge svg { flex: none; }
+.ev-media[role="button"], .place-media[role="button"] { cursor: pointer; }
+.ev.tour.tour-tile .tour-txt .credit-link { display: block; margin-top: 6px; }
