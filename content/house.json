@@ -936,7 +936,7 @@
           "A robot vacuum-and-mop cleans the apartment every day at 11:00. Bags on the floor are fine; cables and clothes are better off it. If your door is closed, the robot simply skips your room.",
           "Rubbish goes in the kitchen bin (recycling: plastic bottles to the orange cage, cardboard to the blue bin on the street).",
           "No smoking or vaping anywhere in the apartment - please step outside.",
-          "No parties or events, and no overnight visitors beyond the guest on the booking (extra guests carry an extra fee on Airbnb).",
+          "No parties or events. Only the guest on the booking may stay overnight - the room is booked for one person.",
           "No pets, sorry.",
           "Quiet after 23:00, please - I get up at 6 for work.",
           "Check-out is at {{checkout_time}} - see the Check-out card."
@@ -949,7 +949,7 @@
           "Ein Saug- und Wischroboter reinigt jeden Tag um 11:00 Uhr die Wohnung. Taschen auf dem Boden sind in Ordnung; Kabel und Kleidung besser nicht. Ist Ihre Tür geschlossen, lässt der Roboter Ihr Zimmer einfach aus.",
           "Müll in den Küchenmülleimer (Recycling: Plastikflaschen in den orangen Gitterkorb, Karton in die blaue Tonne auf der Straße).",
           "Nirgends in der Wohnung rauchen oder dampfen - bitte nach draußen gehen.",
-          "Keine Partys oder Veranstaltungen, keine Übernachtungsbesucher über den gebuchten Gast hinaus (zusätzliche Gäste kosten bei Airbnb extra).",
+          "Keine Partys oder Veranstaltungen. Übernachten darf nur der gebuchte Gast - das Zimmer ist für eine Person gebucht.",
           "Leider keine Haustiere.",
           "Nach 23 Uhr bitte leise - ich stehe um 6 Uhr für die Arbeit auf.",
           "Check-out um {{checkout_time}} - siehe Karte Check-out."
@@ -962,7 +962,7 @@
           "Un robot aspirateur-laveur nettoie l'appartement chaque jour à 11 h. Les sacs au sol ne gênent pas ; les câbles et les vêtements, si. Si votre porte est fermée, le robot saute simplement votre chambre.",
           "Les déchets vont dans la poubelle de la cuisine (tri : bouteilles en plastique dans la cage orange, carton dans le bac bleu dans la rue).",
           "Interdit de fumer ou de vapoter partout dans l'appartement - merci de sortir.",
-          "Pas de fêtes ni d'événements, et pas de visiteurs pour la nuit au-delà du voyageur de la réservation (les personnes supplémentaires sont facturées sur Airbnb).",
+          "Pas de fêtes ni d'événements. Seul le voyageur de la réservation peut dormir ici - la chambre est réservée pour une personne.",
           "Pas d'animaux, désolé.",
           "Silence après 23 h, s'il vous plaît - je me lève à 6 h pour le travail.",
           "Départ à {{checkout_time}} - voir la carte Départ."
@@ -975,7 +975,7 @@
           "רובוט שואב-שוטף מנקה את הדירה כל יום ב-11:00. תיקים על הרצפה בסדר; כבלים ובגדים עדיף שלא. אם הדלת שלכם סגורה, הרובוט פשוט מדלג על החדר.",
           "אשפה לפח במטבח (מחזור: בקבוקי פלסטיק לכלוב הכתום, קרטון לפח הכחול ברחוב).",
           "אין עישון או אידוי בשום מקום בדירה - בבקשה לצאת החוצה.",
-          "בלי מסיבות או אירועים, ובלי אורחים ללינה מעבר לאורח שבהזמנה (אורחים נוספים כרוכים בתשלום נוסף ב-Airbnb).",
+          "בלי מסיבות או אירועים. ללון יכול רק האורח שבהזמנה - החדר מוזמן לאדם אחד.",
           "בלי חיות מחמד, מצטער.",
           "שקט אחרי 23:00 בבקשה - אני קם ב-6 לעבודה.",
           "צ'ק-אאוט ב-{{checkout_time}} - ראו כרטיס צ'ק-אאוט."
@@ -1722,40 +1722,36 @@
       "id": "review",
       "icon": "⭐",
       "title": {
-        "en": "Five stars?",
-        "de": "Fünf Sterne?",
-        "fr": "Cinq étoiles ?",
-        "he": "חמישה כוכבים?"
+        "en": "Something not right?",
+        "de": "Stimmt etwas nicht?",
+        "fr": "Quelque chose ne va pas ?",
+        "he": "משהו לא בסדר?"
       },
       "sub": {
-        "en": "Tell me during your stay, not after",
-        "de": "Sagen Sie es mir während des Aufenthalts, nicht danach",
-        "fr": "Dites-le-moi pendant le séjour, pas après",
-        "he": "ספרו לי במהלך השהות, לא אחריה"
+        "en": "Tell me now - I'd rather fix it than read about it later",
+        "de": "Sagen Sie es mir gleich - ich behebe es lieber, als später davon zu lesen",
+        "fr": "Dites-le-moi tout de suite - je préfère le régler que le lire plus tard",
+        "he": "ספרו לי עכשיו - עדיף לי לתקן מאשר לקרוא על זה אחר כך"
       },
       "items": {
         "en": [
-          "On Airbnb, five stars simply means \"everything was fine\" - anything less tells other travellers something went wrong.",
-          "So if anything is missing or not quite right - a towel, the Wi-Fi, a noisy night - please tell me right away (WhatsApp button at the top) and I'll fix it straight away. My goal is that you leave with a genuine five-star experience.",
-          "And if you did enjoy your stay, a few words in your review mean a lot to a small host like me. Thank you!",
+          "If anything is missing or not quite right - a towel, the Wi-Fi, a noisy night - please tell me right away (WhatsApp button at the top) and I'll fix it straight away.",
+          "After check-out, Airbnb will ask you for a review. Write it honestly - it helps other travellers, and it helps me improve. A few words mean a lot to a small host like me. Thank you!",
           "How it works: a day after check-out, Airbnb sends you a \"Write a review\" prompt (app → Trips, or by email). Rate each category, add a couple of sentences, and that's it - both reviews are published at the same time."
         ],
         "de": [
-          "Bei Airbnb bedeuten fünf Sterne einfach \"alles war in Ordnung\" - alles darunter signalisiert anderen Reisenden, dass etwas schiefgelaufen ist.",
-          "Falls also etwas fehlt oder nicht ganz stimmt - ein Handtuch, das WLAN, eine laute Nacht - sagen Sie es mir bitte sofort (WhatsApp-Button oben), und ich kümmere mich direkt darum. Mein Ziel ist, dass Sie mit einem echten Fünf-Sterne-Erlebnis abreisen.",
-          "Und wenn es Ihnen gefallen hat: Ein paar Worte in Ihrer Bewertung bedeuten einem kleinen Gastgeber wie mir sehr viel. Danke!",
+          "Falls etwas fehlt oder nicht ganz stimmt - ein Handtuch, das WLAN, eine laute Nacht - sagen Sie es mir bitte sofort (WhatsApp-Button oben), und ich kümmere mich direkt darum.",
+          "Nach dem Check-out bittet Airbnb Sie um eine Bewertung. Schreiben Sie sie ehrlich - das hilft anderen Reisenden und hilft mir, besser zu werden. Ein paar Worte bedeuten einem kleinen Gastgeber wie mir sehr viel. Danke!",
           "So geht's: einen Tag nach dem Check-out schickt Airbnb Ihnen die Aufforderung \"Bewertung schreiben\" (App → Reisen, oder per E-Mail). Jede Kategorie bewerten, zwei Sätze dazu, fertig - beide Bewertungen werden gleichzeitig veröffentlicht."
         ],
         "fr": [
-          "Sur Airbnb, cinq étoiles veut simplement dire « tout allait bien » - une note inférieure signale aux autres voyageurs qu'il y a eu un problème.",
-          "Alors si quelque chose manque ou n'est pas tout à fait au point - une serviette, le Wi-Fi, une nuit bruyante - dites-le-moi tout de suite (bouton WhatsApp en haut) et je le règle immédiatement. Mon objectif est que vous repartiez avec une vraie expérience cinq étoiles.",
-          "Et si vous avez aimé votre séjour, quelques mots dans votre commentaire comptent beaucoup pour un petit hôte comme moi. Merci !",
+          "Si quelque chose manque ou n'est pas tout à fait au point - une serviette, le Wi-Fi, une nuit bruyante - dites-le-moi tout de suite (bouton WhatsApp en haut) et je le règle immédiatement.",
+          "Après le départ, Airbnb vous demandera un commentaire. Écrivez-le honnêtement - il aide les autres voyageurs et m'aide à m'améliorer. Quelques mots comptent beaucoup pour un petit hôte comme moi. Merci !",
           "Comment ça marche : le lendemain du départ, Airbnb vous envoie une invitation « Écrire un commentaire » (appli → Voyages, ou par e-mail). Notez chaque catégorie, ajoutez deux phrases, et c'est tout - les deux avis sont publiés en même temps."
         ],
         "he": [
-          "ב-Airbnb, חמישה כוכבים פשוט אומרים \"הכול היה בסדר\" - כל דבר פחות מזה אומר למטיילים אחרים שמשהו השתבש.",
-          "אז אם משהו חסר או לא בדיוק כמו שצריך - מגבת, הוויי-פיי, לילה רועש - בבקשה ספרו לי מיד (כפתור וואטסאפ למעלה) ואתקן על המקום. המטרה שלי שתצאו מכאן עם חוויה אמיתית של חמישה כוכבים.",
-          "ואם נהניתם, כמה מילים בביקורת שלכם שוות המון למארח קטן כמוני. תודה!",
+          "אם משהו חסר או לא בדיוק כמו שצריך - מגבת, הוויי-פיי, לילה רועש - בבקשה ספרו לי מיד (כפתור וואטסאפ למעלה) ואתקן על המקום.",
+          "אחרי הצ'ק-אאוט Airbnb תבקש מכם ביקורת. כתבו אותה בכנות - זה עוזר למטיילים אחרים ועוזר לי להשתפר. כמה מילים שוות המון למארח קטן כמוני. תודה!",
           "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה → טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
         ]
       },

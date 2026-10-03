@@ -21,6 +21,7 @@
 | `assets/img/house/` + `thumb/` | תמונות המכשירים (צילומי אורן; קפה/דוד/תמי 4 משופרים ב-ChatGPT). `ninja-combi.jpg` = תמונת יצרן זמנית. |
 | `assets/img/eat/`, `assets/img/tiles/` | תמונות מנה CC לכרטיס "איפה אורן אוכל"; אריחי השעה הראשונה (Pexels + תמי 4 של אורן). |
 | `.claude/skills/site-review/` | סקיל `/site-review` – סקירת מומחה של האתר (מבנה/תוכן/עיצוב/מובייל). |
+| `.claude/skills/airbnb-rules/` | סקיל `/airbnb-rules` – ספר הכללים של Airbnb (`rules.md`, אומת 3.10.2026), רשימת בדיקה ותוצאת הביקורת האחרונה (`audit.md`). לשאול אותו לפני כל שינוי בליסטינג/הודעות/אתר. רענון רבעוני: משימה מתוזמנת `florentin-airbnb-rules-quarterly`. |
 | `kitchen/index.html` | מדריך מטבח מפורט (EN/DE/FR בלבד). |
 | `data/weekly.json`, `data/stays.json` | נכתבים ע"י ה-Routines. לא לערוך ידנית. |
 | `agent/ROUTINE.md`, `agent/validate.py` | הוראות הסוכן השבועי + בדיקות (`validate.py house` לפני כל commit של תוכן). |
