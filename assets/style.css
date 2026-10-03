@@ -1087,3 +1087,5 @@ body { overflow-anchor: none; }
 .hood .lead { color: var(--ink); }
 .ev:not(.tour) .foot-row a { display: inline-flex; align-items: center; min-height: 44px; }
 .jump .jt span { font-size: var(--fs-xs); color: var(--muted); }
+.hood h3 { margin: 18px 0 4px; font-size: var(--fs-md); color: var(--accent); }
+.hood h2 + h3 { margin-top: 10px; }
