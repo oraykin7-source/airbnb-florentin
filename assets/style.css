@@ -785,7 +785,7 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .ev.tour.tour-row h3 { font-size: 1rem; line-height: 1.25; overflow-wrap: normal; word-break: normal; }
 .ev.tour.tour-row .foot-row { margin-top: 6px; }
 .ev.tour.tour-row .book { min-height: 38px; padding: 7px 12px; font-size: .85rem; border-radius: 10px; }
-.more-tours:not(.map-all) { background: transparent; box-shadow: none; border: 1px dashed color-mix(in srgb, var(--muted) 45%, transparent);
+.more-tours:not(.map-all) { display: flex; align-items: center; background: transparent; box-shadow: none; border: 1px dashed color-mix(in srgb, var(--muted) 45%, transparent);
   color: var(--muted); font-weight: 500; font-size: .9rem; line-height: 1.45; text-align: start; padding: 14px 16px; }
 
 /* 5. Places: short "Photo ↗" when collapsed (full credit inside "More"), compact map pill, equal heights */
