@@ -11,8 +11,8 @@
   const UI = {
     en: {
       co_tomorrow: tm => `Check-out tomorrow by ${tm} - three things to do`, co_today: tm => `Check-out today by ${tm} - three things to do`,
-      more: "More",
-      less: "Less",
+      more_txt: "More",
+      less_txt: "Less",
       tour_pill: "Tour",
       map_all: "All places on one map",
       ok_title: "Everything OK?",
@@ -41,8 +41,8 @@
     },
     de: {
       co_tomorrow: tm => `Check-out morgen bis ${tm} - drei Dinge vorher`, co_today: tm => `Check-out heute bis ${tm} - drei Dinge vorher`,
-      more: "Mehr",
-      less: "Weniger",
+      more_txt: "Mehr",
+      less_txt: "Weniger",
       tour_pill: "Tour",
       map_all: "Alle Orte auf einer Karte",
       ok_title: "Alles in Ordnung?",
@@ -71,8 +71,8 @@
     },
     fr: {
       co_tomorrow: tm => `Départ demain avant ${tm} - trois choses à faire`, co_today: tm => `Départ aujourd'hui avant ${tm} - trois choses à faire`,
-      more: "Plus",
-      less: "Moins",
+      more_txt: "Plus",
+      less_txt: "Moins",
       tour_pill: "Visite",
       map_all: "Tous les lieux sur une carte",
       ok_title: "Tout va bien ?",
@@ -101,8 +101,8 @@
     },
     he: {
       co_tomorrow: tm => `צ'ק-אאוט מחר עד ${tm} - שלושה דברים לעשות`, co_today: tm => `צ'ק-אאוט היום עד ${tm} - שלושה דברים לעשות`,
-      more: "עוד",
-      less: "פחות",
+      more_txt: "עוד",
+      less_txt: "פחות",
       tour_pill: "סיור",
       map_all: "כל המקומות על מפה אחת",
       ok_title: "הכל בסדר?",
@@ -471,7 +471,7 @@
     for (const p of state.places.places) {
       const txt = el("p", { class: "place-text" }, ...rich(L_(p.text)));
       const more = el("button", { class: "more-btn", type: "button", "aria-expanded": "false",
-        onclick: e => { const open = txt.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less") : t("more"); } }, t("more"));
+        onclick: e => { const open = txt.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less_txt") : t("more_txt"); } }, t("more_txt"));
       box.append(el("article", { class: "place", id: "place-" + p.id },
         el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
