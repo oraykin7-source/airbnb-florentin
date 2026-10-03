@@ -50,7 +50,14 @@ def check_house(path: Path) -> int:
         for m in re.finditer(pat, raw):
             line = raw.count("\n", 0, m.start()) + 1
             problems.append(f"{path}:{line}: {msg}")
-    print("\n".join(problems) if problems else f"OK: {path} has no placeholders or secrets")
+    # The page is rendered by one JS file: a syntax error blanks the whole guide. Check it too.
+    import subprocess, shutil
+    js = ROOT / "assets" / "app.js"
+    if shutil.which("node"):
+        r = subprocess.run(["node", "--check", str(js)], capture_output=True, text=True)
+        if r.returncode != 0:
+            problems.append(f"{js}: JavaScript syntax error\n{r.stderr.strip()[:400]}")
+    print("\n".join(problems) if problems else f"OK: {path} has no placeholders or secrets; app.js parses")
     return 1 if problems else 0
 
 
