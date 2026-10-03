@@ -822,6 +822,7 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 :root[data-theme="dark"] .qbtn-wa { box-shadow: none; }
 
 /* 8. Desktop keeps the same rhythm, a little roomier */
+@media (min-width: 620px) { .place-media { aspect-ratio: 4 / 3; } }
 @media (min-width: 1000px) {
   .hero { padding-top: 48px; }
   .name-box, .quick { max-width: 480px; }
