@@ -1037,3 +1037,39 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 /* each page starts under the sticky header with some air */
 main > .block:first-of-type { scroll-margin-top: 80px; }
 body { overflow-anchor: none; }
+/* ===== Home page (3.10 night): intro line, tiles with a one-line description, calmer frames on phones ===== */
+.home-intro { margin: 4px 0 0; max-width: 56ch; }
+.jump a { align-items: center; padding: 12px 14px; min-height: 76px; }
+.jump .jt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.jump .jt strong { font-size: var(--fs-md); line-height: 1.2; }
+.jump .jt span { font-size: var(--fs-xs); font-weight: 500; line-height: 1.3; color: var(--muted); }
+@media (max-width: 619px) {
+  :root { --radius: 16px; }
+  .tile, .strip .tile { border-radius: 16px; }
+  .jump a { border-radius: 14px; }
+  .place-body { padding: 12px 14px 14px; }
+  .ev.tour.tour-tile .tour-txt { padding: 10px 12px 12px; }
+  .mapcard-routes .route { border-radius: 14px; }
+}
+/* ===== Header (3.10 night, Oren): language drop-down + hamburger menu; logo gets room ===== */
+.wordmark { flex: none; padding-right: 20px; }
+.brand { min-width: 0; }
+.head-actions { display: flex; align-items: center; gap: 8px; flex: none; }
+.langmenu { position: relative; }
+.lang-btn { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 12px 0 14px; border: 0; border-radius: 999px; background: var(--chip); color: var(--ink); font: 700 var(--fs-sm)/1 Inter, Heebo, sans-serif; letter-spacing: .04em; cursor: pointer; }
+[dir="rtl"] .lang-btn { font-family: Heebo, Inter, sans-serif; letter-spacing: 0; padding: 0 14px 0 12px; }
+.lang-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.langmenu .lang { position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 70; flex-direction: column; gap: 2px; min-width: 150px; padding: 6px; border-radius: 16px; background: var(--surface); box-shadow: var(--shadow-hi), 0 0 0 1px var(--ring); }
+.langmenu .lang[hidden], .burger-panel[hidden] { display: none; }
+.langmenu .lang button { width: 100%; min-height: 46px; padding: 0 14px; border-radius: 12px; text-align: start; font: 600 var(--fs-md)/1 Inter, sans-serif; letter-spacing: 0; color: var(--ink); background: transparent; }
+.langmenu .lang button[data-lang="he"] { font-family: Heebo, Inter, sans-serif; }
+.langmenu .lang button[aria-checked="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.burger { width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--chip); color: var(--ink); cursor: pointer; }
+.burger[aria-expanded="true"] { background: var(--accent); color: var(--accent-ink, #fff); }
+.burger-panel { position: absolute; top: 100%; inset-inline: 12px; margin-top: 4px; z-index: 70; display: flex; flex-direction: column; padding: 8px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow-hi), 0 0 0 1px var(--ring); }
+.burger-panel a { display: flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: 12px; color: var(--ink); font-weight: 700; font-size: var(--fs-md); text-decoration: none; }
+.burger-panel a[hidden] { display: none; }
+.burger-panel a:active { background: var(--chip); }
+.burger-panel hr { border: 0; border-top: 1px solid var(--line); margin: 6px 4px; }
+.burger-panel .burger-sos { color: var(--danger); }
+.burger-panel .burger-wa { color: #1a8f4a; }

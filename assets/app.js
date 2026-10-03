@@ -22,7 +22,7 @@
       fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
-      sub_places: "Places", sub_eat: "Eat", jump_places: "Places & food", eat_more: n => `${n} more places`, eat_less: "Show fewer", gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Home", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
+      home_intro: "This is my home: you have your own room, and the kitchen, bathroom and living room are shared with me - I live here too. Below is what guests ask me most; the tiles lead to the other pages.", jump_house_sub: "Kitchen, AC, hot water, rules, emergency", jump_tours_sub: "Day trips I recommend", jump_places_sub: "Where I eat, what I love nearby", jump_week_sub: "Events in Tel Aviv", house_lead: "The room and the shared spaces: how things work, the house rules, and what to do in an emergency.", sub_places: "Places", sub_eat: "Eat", jump_places: "Places & food", eat_more: n => `${n} more places`, eat_less: "Show fewer", gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Home", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A cozy room in Florentin", brand_short: "Cozy room", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
@@ -53,7 +53,7 @@
       fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
-      sub_places: "Orte", sub_eat: "Essen", jump_places: "Orte & Essen", eat_more: n => `${n} weitere Orte`, eat_less: "Weniger anzeigen", gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Home", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
+      home_intro: "Das ist mein Zuhause: Sie haben Ihr eigenes Zimmer, Küche, Bad und Wohnzimmer teilen Sie mit mir - ich wohne auch hier. Unten steht, was Gäste mich am häufigsten fragen; die Kacheln führen zu den anderen Seiten.", jump_house_sub: "Küche, Klima, Warmwasser, Regeln, Notfall", jump_tours_sub: "Ausflüge, die ich empfehle", jump_places_sub: "Wo ich esse, was ich in der Nähe liebe", jump_week_sub: "Veranstaltungen in Tel Aviv", house_lead: "Das Zimmer und die gemeinsamen Räume: wie alles funktioniert, die Hausregeln und was im Notfall zu tun ist.", sub_places: "Orte", sub_eat: "Essen", jump_places: "Orte & Essen", eat_more: n => `${n} weitere Orte`, eat_less: "Weniger anzeigen", gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Home", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein gemütliches Zimmer in Florentin", brand_short: "Gemütliches Zimmer", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
@@ -84,7 +84,7 @@
       fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
-      sub_places: "Lieux", sub_eat: "Manger", jump_places: "Lieux & table", eat_more: n => `${n} autres adresses`, eat_less: "Voir moins", gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
+      home_intro: "Voici ma maison : vous avez votre propre chambre, la cuisine, la salle de bains et le salon sont partagés avec moi - j'habite ici aussi. Voici ce que les voyageurs me demandent le plus ; les tuiles mènent aux autres pages.", jump_house_sub: "Cuisine, clim, eau chaude, règles, urgence", jump_tours_sub: "Excursions que je recommande", jump_places_sub: "Où je mange, ce que j'aime près d'ici", jump_week_sub: "Événements à Tel Aviv", house_lead: "La chambre et les espaces partagés : comment tout fonctionne, le règlement et que faire en cas d'urgence.", sub_places: "Lieux", sub_eat: "Manger", jump_places: "Lieux & table", eat_more: n => `${n} autres adresses`, eat_less: "Voir moins", gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre cosy à Florentin", brand_short: "Chambre cosy", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
@@ -115,7 +115,7 @@
       fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
-      sub_places: "מקומות", sub_eat: "אוכל", jump_places: "מקומות ואוכל", eat_more: n => `עוד ${n} מקומות`, eat_less: "הצג פחות", gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "בית", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
+      home_intro: "זה הבית שלי: יש לכם חדר משלכם, והמטבח, חדר האמבטיה והסלון משותפים איתי - אני גר פה גם. למטה מה שאורחים שואלים אותי הכי הרבה, והאריחים מובילים לשאר הדפים.", jump_house_sub: "מטבח, מזגן, מים חמים, כללים, חירום", jump_tours_sub: "טיולי יום שאני ממליץ עליהם", jump_places_sub: "איפה אני אוכל, מה אני אוהב בסביבה", jump_week_sub: "אירועים בתל אביב", house_lead: "החדר והחללים המשותפים: איך הכל עובד, כללי הבית ומה עושים במקרה חירום.", sub_places: "מקומות", sub_eat: "אוכל", jump_places: "מקומות ואוכל", eat_more: n => `עוד ${n} מקומות`, eat_less: "הצג פחות", gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "בית", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר נעים בפלורנטין", brand_short: "חדר נעים", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
@@ -343,6 +343,9 @@
     document.querySelectorAll("[data-i18n]").forEach(n => { n.textContent = t(n.dataset.i18n); });
     document.querySelectorAll(".lang button").forEach(b =>
       b.setAttribute("aria-checked", String(b.dataset.lang === state.lang)));
+    const lc = document.getElementById("lang-cur"); if (lc) lc.textContent = state.lang === "he" ? "עב" : state.lang.toUpperCase();
+    const bw = document.getElementById("burger-wa"), wb = document.getElementById("wa-btn"); if (bw && wb) bw.href = wb.href;
+    const bt = document.getElementById("burger-tours"); if (bt) bt.hidden = !!(document.getElementById("tours") && document.getElementById("tours").hidden);
     document.querySelectorAll("#cat-tabs button").forEach(b =>
       b.setAttribute("aria-selected", String(b.dataset.cat === state.cat)));
 
@@ -776,7 +779,7 @@
   // ---------- pages (3.10 evening, Oren: "a site with a page per topic, not one long landing page") ----------
   // One HTML file, five pages switched by the URL hash: start / apartment / tours / places (+eat) / this week.
   // Old deep links keep working (#card-tours, #card-ac, #week, #place-beach ...) because the hash picks the page.
-  const PAGES = { start: [".hero", ".jump", "#first"], house: ["#house"], tours: ["#tours"], places: ["#places-sub", "#eat", "#places"], week: ["#week"] };
+  const PAGES = { start: [".hero", "#home-intro", ".jump", "#first"], house: ["#house"], tours: ["#tours"], places: ["#places-sub", "#eat", "#places"], week: ["#week"] };
   const TAB_OF = { start: "top", house: "house", tours: "tours", places: "places", week: "week" };
   function pageOfHash(h) {
     h = (h || "").replace(/^#/, "");
@@ -836,8 +839,23 @@
 
   // ---------- wiring ----------
   document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
-    state.lang = b.dataset.lang; saveLang(state.lang); renderAll();
+    state.lang = b.dataset.lang; saveLang(state.lang); closeMenus(); renderAll();
   }));
+  // Header menus: language drop-down + hamburger (pages and contacts)
+  function closeMenus() {
+    document.getElementById("lang-list").hidden = true; document.getElementById("lang-btn").setAttribute("aria-expanded", "false");
+    document.getElementById("burger-panel").hidden = true; document.getElementById("burger").setAttribute("aria-expanded", "false");
+  }
+  function toggleMenu(listId, btnId) {
+    const list = document.getElementById(listId), btn = document.getElementById(btnId), open = list.hidden;
+    closeMenus(); list.hidden = !open; btn.setAttribute("aria-expanded", String(open));
+  }
+  document.getElementById("lang-btn").addEventListener("click", e => { e.stopPropagation(); toggleMenu("lang-list", "lang-btn"); });
+  document.getElementById("burger").addEventListener("click", e => { e.stopPropagation(); toggleMenu("burger-panel", "burger"); });
+  document.getElementById("burger-panel").addEventListener("click", e => { const a = e.target.closest("a"); if (!a) return; closeMenus();
+    if (a.classList.contains("burger-sos")) { e.preventDefault(); showCardPage("card-emergency"); const c = document.getElementById("card-emergency"); if (c) { c.open = true; requestAnimationFrame(() => c.scrollIntoView({ block: "start" })); } } });
+  document.addEventListener("click", closeMenus);
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenus(); });
   document.querySelectorAll("#cat-tabs button").forEach(b => b.addEventListener("click", () => {
     state.cat = b.dataset.cat; renderChrome(); renderEvents();
   }));

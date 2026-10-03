@@ -17,19 +17,35 @@
   <!-- logo-only fonts, subset to the letters the logo uses (a few hundred bytes each) -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&text=CcOoZzYyRrMm%20&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&text=Florentin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=20261003zj">
+  <link rel="stylesheet" href="assets/style.css?v=20261003zl">
 </head>
 <body>
   <header class="top">
     <div class="brand">
       <a class="wordmark" href="#top" aria-label="A cozy room in Florentin"><span class="wm-caps">Cozy room</span><span class="wm-script">Florentin</span></a>
     </div>
-    <div class="lang" role="radiogroup" aria-label="Language">
-      <button type="button" role="radio" data-lang="en">EN</button>
-      <button type="button" role="radio" data-lang="de">DE</button>
-      <button type="button" role="radio" data-lang="fr">FR</button>
-      <button type="button" role="radio" data-lang="he">עב</button>
+    <div class="head-actions">
+      <div class="langmenu">
+        <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language"><span id="lang-cur">EN</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="lang" id="lang-list" role="listbox" aria-label="Language" hidden>
+          <button type="button" role="option" data-lang="en">English</button>
+          <button type="button" role="option" data-lang="de">Deutsch</button>
+          <button type="button" role="option" data-lang="fr">Français</button>
+          <button type="button" role="option" data-lang="he">עברית</button>
+        </div>
+      </div>
+      <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="burger-panel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
+    <nav class="burger-panel" id="burger-panel" aria-label="Menu" hidden>
+      <a href="#top"><span data-i18n="tab_home">Home</span></a>
+      <a href="#house"><span data-i18n="tab_house">Apartment</span></a>
+      <a href="#tours" id="burger-tours"><span data-i18n="tab_tours">Tours</span></a>
+      <a href="#places"><span data-i18n="tab_places">Places</span></a>
+      <a href="#week"><span data-i18n="tab_week">This week</span></a>
+      <hr>
+      <a href="#card-emergency" class="burger-sos"><span data-i18n="sos">Emergency</span></a>
+      <a href="#" class="burger-wa" id="burger-wa" target="_blank" rel="noopener"><span data-i18n="whatsapp">WhatsApp Oren</span></a>
+    </nav>
   </header>
 
   <main id="top">
@@ -47,11 +63,13 @@
       <p class="sos-static" id="sos-static">Police <a href="tel:100">100</a> · Ambulance <a href="tel:101">101</a> · Fire <a href="tel:102">102</a></p>
     </section>
 
+    <p class="muted lead home-intro" id="home-intro" data-i18n="home_intro"></p>
+
     <nav class="jump" aria-label="Sections">
-      <a href="#house" data-i18n="house_title">The apartment</a>
-      <a href="#tours" data-i18n="tours_title">Day trips &amp; tours</a>
-      <a href="#places" data-i18n="jump_places">Places &amp; food</a>
-      <a href="#week" data-i18n="week_title">This week in Tel Aviv</a>
+      <a href="#house"><span class="jt"><strong data-i18n="house_title">The apartment</strong><span data-i18n="jump_house_sub"></span></span></a>
+      <a href="#tours"><span class="jt"><strong data-i18n="tours_title">Day trips &amp; tours</strong><span data-i18n="jump_tours_sub"></span></span></a>
+      <a href="#places"><span class="jt"><strong data-i18n="jump_places">Places &amp; food</strong><span data-i18n="jump_places_sub"></span></span></a>
+      <a href="#week"><span class="jt"><strong data-i18n="week_title">This week in Tel Aviv</strong><span data-i18n="jump_week_sub"></span></span></a>
     </nav>
 
     <section id="first" class="block first-block" hidden>
@@ -62,6 +80,7 @@
 
     <section id="house" class="block">
       <h2 data-i18n="house_title">The apartment</h2>
+      <p class="muted lead" data-i18n="house_lead"></p>
       <div id="house-cards"></div>
     </section>
 
@@ -121,6 +140,6 @@
     <p data-i18n="footer">Made with care by your host. Enjoy Florentin!</p>
   </footer>
 
-  <script src="assets/app.js?v=20261003zj" defer></script>
+  <script src="assets/app.js?v=20261003zl" defer></script>
 </body>
 </html>
