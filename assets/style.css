@@ -1091,3 +1091,4 @@ body { overflow-anchor: none; }
 .hood h2 + h3 { margin-top: 10px; }
 /* Google Maps pills under lists of places (bars, gyms ...): every place we mention has a visible map link */
 .maplinks { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.hours-note { margin: 0 0 8px; }
