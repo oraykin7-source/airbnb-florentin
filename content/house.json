@@ -1637,28 +1637,6 @@
         "fr": "Florentin et Tel Aviv : les conseils d'un local",
         "he": "פלורנטין ותל אביב, טיפים ממקומי"
       },
-      "items": {
-        "en": [
-          "Going out: the bars around Florentin St and Vital St really fill up late - locals go out after 22:00. Earlier in the evening many of them have happy hour (see below).",
-          "Shabbat (Friday afternoon to Saturday evening): regular buses, trains and the light rail stop and many shops close - but Tel Aviv runs free weekend buses across the city, Ramat Gan and Givatayim (search 'Shabbat' lines in Moovit), plus night buses on Thursday and Friday nights. Otherwise taxis (Gett or Yango) - and shop on Friday morning.",
-          "Rent a bike or scooter through the Tel-O-Fun or other city apps - Tel Aviv is flat and has good bike lanes."
-        ],
-        "de": [
-          "Ausgehen: Die Bars rund um die Florentin St und Vital St werden erst spät richtig voll - Einheimische gehen nach 22 Uhr aus. Am frühen Abend haben viele Happy Hour (siehe unten).",
-          "Schabbat (Freitagnachmittag bis Samstagabend): normale Busse, Züge und Stadtbahn stehen, viele Läden schließen - aber Tel Aviv betreibt kostenlose Wochenendbusse durch die Stadt, Ramat Gan und Givatayim (in Moovit nach 'Shabbat'-Linien suchen), dazu Nachtbusse in den Nächten auf Freitag und Samstag. Sonst Taxis (Gett oder Yango) - und freitagvormittags einkaufen.",
-          "Fahrräder oder Scooter über Tel-O-Fun oder andere Stadt-Apps mieten - Tel Aviv ist flach und hat gute Radwege."
-        ],
-        "fr": [
-          "Sortir : les bars autour des rues Florentin et Vital se remplissent vraiment tard - les locaux sortent après 22 h. En début de soirée, beaucoup proposent un happy hour (voir plus bas).",
-          "Shabbat (du vendredi après-midi au samedi soir) : bus réguliers, trains et tramway s'arrêtent et beaucoup de commerces ferment - mais Tel Aviv fait circuler des bus gratuits le week-end dans la ville, Ramat Gan et Givatayim (cherchez les lignes 'Shabbat' dans Moovit), plus des bus de nuit les jeudis et vendredis soirs. Sinon taxis (Gett ou Yango) - et faites vos courses le vendredi matin.",
-          "Louez un vélo ou une trottinette via Tel-O-Fun ou d'autres applis de la ville - Tel Aviv est plate et bien équipée en pistes cyclables."
-        ],
-        "he": [
-          "בילוי בערב: הברים סביב רחוב פלורנטין ורחוב ויטל מתמלאים באמת מאוחר - המקומיים יוצאים אחרי 22:00. בתחילת הערב יש בהרבה מהם האפי האוור (ראו למטה).",
-          "שבת (משישי אחה\"צ עד מוצ\"ש): האוטובוסים הרגילים, הרכבות והרכבת הקלה עוצרים והרבה חנויות סגורות - אבל העירייה מפעילה קווי סופ\"ש חינם ברחבי תל אביב, רמת גן וגבעתיים (חפשו קווי 'שבת' ב-Moovit), ועוד קווי לילה בלילות חמישי ושישי. אחרת מוניות (Gett או Yango) - וקנו ביום שישי בבוקר.",
-          "השכירו אופניים או קורקינט דרך תל-אופן או אפליקציות עירוניות אחרות - תל אביב שטוחה ויש בה שבילי אופניים טובים."
-        ]
-      },
       "group": "local",
       "sections": [
         {
@@ -1835,25 +1813,25 @@
           },
           "items": {
             "en": [
-              "The weekend is Friday-Saturday; Sunday is a normal workday. Shabbat runs from Friday sunset to Saturday night: markets and most shops close and regular transport stops (the free weekend buses and night buses still run) - and in Tel Aviv many restaurants, bars and the beach are in full swing.",
+              "The weekend is Friday-Saturday; Sunday is a normal workday. Shabbat runs from Friday sunset to Saturday night: markets and most shops close and regular transport stops (see Getting around) - but in Tel Aviv many restaurants, bars and the beach are in full swing.",
               "Friday morning is the best market time (Levinsky, Carmel), Friday afternoon the bars around Florentin fill up early - the locals' favourite hours.",
               "Nightlife starts late: bars fill after 22:00, clubs after midnight, and Thursday night is the big night out.",
               "Hummus and street food are lunch things - many of the best places close by 15:00-17:00 and on Shabbat."
             ],
             "de": [
-              "Das Wochenende ist Freitag-Samstag; Sonntag ist ein normaler Arbeitstag. Schabbat geht von Freitag Sonnenuntergang bis Samstagabend: Märkte und die meisten Läden schließen, der reguläre Nahverkehr steht (die kostenlosen Wochenend- und Nachtbusse fahren weiter) - und in Tel Aviv sind viele Restaurants, Bars und der Strand voll im Gang.",
+              "Das Wochenende ist Freitag-Samstag; Sonntag ist ein normaler Arbeitstag. Schabbat dauert von Freitagabend bis Samstagnacht: Märkte und die meisten Läden schließen, der normale Verkehr steht (siehe Unterwegs) - in Tel Aviv sind aber viele Restaurants, Bars und der Strand in vollem Gang.",
               "Freitagvormittag ist die beste Marktzeit (Levinsky, Carmel), Freitagnachmittag füllen sich die Bars rund um Florentin früh - die Lieblingsstunden der Einheimischen.",
               "Das Nachtleben beginnt spät: Bars füllen sich nach 22 Uhr, Clubs nach Mitternacht, und Donnerstagabend ist der große Ausgehabend.",
               "Hummus und Streetfood sind Mittagssache - viele der besten Läden schließen um 15-17 Uhr und am Schabbat."
             ],
             "fr": [
-              "Le week-end, c'est vendredi-samedi ; le dimanche est un jour de travail normal. Le Shabbat va du coucher du soleil vendredi au samedi soir : marchés et la plupart des commerces ferment, les transports réguliers s'arrêtent (les bus gratuits du week-end et les bus de nuit continuent) - et à Tel Aviv beaucoup de restaurants, de bars et la plage battent leur plein.",
+              "Le week-end, c'est vendredi-samedi ; le dimanche est un jour de travail normal. Shabbat va du vendredi soir au samedi soir : marchés et la plupart des magasins ferment, les transports réguliers s'arrêtent (voir Se déplacer) - mais à Tel Aviv, beaucoup de restaurants, de bars et la plage battent leur plein.",
               "Le vendredi matin est le meilleur moment pour les marchés (Levinsky, Carmel) ; le vendredi après-midi les bars autour de Florentin se remplissent tôt - les heures préférées des locaux.",
               "La vie nocturne commence tard : les bars se remplissent après 22h, les clubs après minuit, et le jeudi soir est LA soirée.",
               "Houmous et street food se mangent à midi - beaucoup des meilleures adresses ferment vers 15h-17h et le Shabbat."
             ],
             "he": [
-              "סוף השבוע הוא שישי-שבת; ראשון יום עבודה רגיל. שבת מכניסת השבת בשישי עד מוצ\"ש: שווקים ורוב החנויות סגורים והתחבורה הרגילה עוצרת (קווי הסופ\"ש החינמיים וקווי הלילה ממשיכים) - ובתל אביב הרבה מסעדות, ברים והים בשיא.",
+              "סוף השבוע הוא שישי-שבת; יום ראשון הוא יום עבודה רגיל. שבת נמשכת משקיעת שישי עד מוצאי שבת: השווקים ורוב החנויות סגורים והתחבורה הרגילה עוצרת (ראו \"להסתובב בעיר\") - אבל בתל אביב הרבה מסעדות, ברים והחוף בשיא.",
               "שישי בבוקר הוא הזמן הכי טוב לשווקים (לוינסקי, הכרמל), שישי אחה\"צ הברים סביב פלורנטין מתמלאים מוקדם - השעות האהובות על המקומיים.",
               "חיי הלילה מתחילים מאוחר: ברים מתמלאים אחרי 22:00, מועדונים אחרי חצות, וחמישי בערב הוא הערב הגדול.",
               "חומוס ואוכל רחוב זה עניין של צהריים - הרבה מהמקומות הטובים נסגרים ב-15:00-17:00 ובשבת."
