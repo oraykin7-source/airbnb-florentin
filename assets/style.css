@@ -697,3 +697,19 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
   .strip { grid-auto-flow: row; grid-template-columns: 1fr 1fr; grid-auto-columns: auto; overflow: visible; margin: 0; padding: 4px 0 10px; max-width: none; }
   .tile { aspect-ratio: 4 / 3; }
 }
+
+/* Wide screens (3.10 evening): use the width instead of a narrow phone column */
+@media (min-width: 1000px) {
+  main { max-width: 1120px; padding: 0 32px; }
+  .top { padding-inline: max(16px, calc((100vw - 1120px) / 2 + 32px)); }
+  .hero { padding-top: 56px; }
+  .hero h1 { font-size: 3rem; }
+  .name-box { max-width: 520px; }
+  .quick { max-width: 520px; }
+  .strip { grid-template-columns: repeat(4, 1fr); }
+  .tile { aspect-ratio: 3 / 4; }
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .places { grid-template-columns: repeat(3, 1fr); }
+  .events { grid-template-columns: 1fr 1fr; }
+  .tabbar { max-width: 640px; }
+}
