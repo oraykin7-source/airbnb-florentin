@@ -252,8 +252,18 @@
     if (kitchenPage) for (const k of ["The full guide", "full kitchen guide", "kitchen guide", "Die vollständige Anleitung", "Küchenguide", "Le guide complet", "guide cuisine", "המדריך המלא", "מדריך המטבח"])
       add(k, kitchenPage.href + "?lang=" + state.lang, "page");
   }
+  // 480px variant for phones (generated as <name>-m.webp next to the original); desktop gets the original
+  const smallSrc = (src, full) => /^assets\/img\/(eat|places)\/.*\.webp$/.test(src) ? { srcset: `${src.replace(/\.webp$/, "-m.webp")} 480w, ${src} ${full}w`, sizes: "(min-width: 900px) 520px, 100vw" } : {};
+  // Typographic polish at display time (content files stay plain): " - " -> en dash, Hebrew gershayim/geresh, curly quotes
+  function typo(text) {
+    let t = String(text ?? "");
+    t = t.replace(/ - /g, " \u2013 ");
+    t = t.replace(/(?<=[\u05D0-\u05EA])"(?=[\u05D0-\u05EA])/g, "\u05F4").replace(/(?<=[\u05D0-\u05EA])'(?=[\u05D0-\u05EA])/g, "\u05F3");
+    t = t.replace(/"([^"\n]{1,60})"/g, state.lang === "de" ? "\u201E$1\u201C" : state.lang === "fr" ? "\u00AB\u202F$1\u202F\u00BB" : "\u201C$1\u201D");
+    return t;
+  }
   function rich(text, selfId) {
-    text = String(text);
+    text = typo(text);
     if (!LINKS.size) return [text];
     const keys = [...LINKS.keys()].sort((a, b) => b.length - a.length);
     const re = new RegExp("(" + keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")", "g");
@@ -414,7 +424,7 @@
     for (const c of firsts) {
       strip.append(el("a", { class: "tile", href: "#card-" + c.id, onclick: e => { const d = document.getElementById("card-" + c.id); if (!d) return; e.preventDefault(); d.open = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start", behavior: "smooth" })); } },
         (c.tile || c.thumb) ? el("img", { src: c.tile || c.thumb, alt: "", loading: "lazy" }) : el("span", { class: "tile-ico" }, c.icon),
-        el("span", { class: "tile-txt" }, el("strong", {}, L_(c.title)), el("span", {}, L_(c.sub)))));
+        el("span", { class: "tile-txt" }, el("strong", {}, L_(c.title)), el("span", {}, typo(L_(c.sub))))));
     }
     document.getElementById("first").hidden = firsts.length === 0;
     for (const c of state.house.cards) {
@@ -475,7 +485,7 @@
             el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
             el("span", { class: "muted" }, `${r.where} · ${hoursText(r.hours)}`),
             r.shabbat === true ? el("span", { class: "badge sat" }, t("open_sat")) : null,
-            r.note ? el("div", { class: "muted small" }, L_(r.note)) : null,
+            r.note ? el("div", { class: "muted small" }, typo(L_(r.note))) : null,
             (r.links || r.image_credit) ? el("div", { class: "row-links small" },
               ...(r.links || []).map(l => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label + " " + ARROW())),
               r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : null) : null)))));
@@ -495,7 +505,7 @@
       const card = el("details", { class: "card" + (c.emergency ? " emergency" : ""), id: "card-" + c.id },
         el("summary", {},
           glyph(c.id, c.icon),
-          el("span", {}, el("h3", {}, fill(L_(c.title), host)), el("span", { class: "sub" }, fill(L_(c.sub), host))),
+          el("span", {}, el("h3", {}, fill(L_(c.title), host)), el("span", { class: "sub" }, typo(fill(L_(c.sub), host)))),
           el("span", { class: "chev", "aria-hidden": "true" }, svg(CHEV))),
         body);
       if (c.id === "eat") continue;   // rendered as its own open section (3.10, like "Places I love")
@@ -513,19 +523,19 @@
     sec.hidden = !c; box.replaceChildren();
     if (!c) return;
     document.getElementById("eat-title").textContent = L_(c.title);
-    document.getElementById("eat-lead").textContent = L_(c.sub);
+    document.getElementById("eat-lead").textContent = typo(L_(c.sub));
     for (const lst of c.lists || []) {
       box.append(el("h3", { class: "group-title eat-group" }, el("span", { class: "dot", "aria-hidden": "true" }), L_(lst.title)));
       const SHOW = 4, extra = [];
       lst.rows.forEach((r, i) => {
         const card = el("article", { class: "place eat" + (i >= SHOW ? " eat-extra" : ""), hidden: i >= SHOW ? "" : null },
           r.image ? el("a", { class: "place-media", href: r.url, target: "_blank", rel: "noopener", "aria-label": r.name },
-            el("img", { src: r.image, alt: r.name, loading: "lazy", onerror: e => e.target.closest(".place-media").remove() }),
+            el("img", { src: r.image, alt: r.name, loading: "lazy", ...smallSrc(r.image, 900), onerror: e => e.target.closest(".place-media").remove() }),
             r.shabbat === true ? el("span", { class: "walk" }, t("open_sat")) : null) : null,
           el("div", { class: "place-body" },
             el("h3", {}, r.name),
             el("p", { class: "muted small" }, `${r.where} · ${hoursText(r.hours)}`),
-            r.note ? el("p", { class: "place-text open" }, L_(r.note)) : null,
+            r.note ? el("p", { class: "place-text open" }, typo(L_(r.note))) : null,
             // Same footer as the place cards: compact Map pill + short "Photo ↗" credit link (designer round 2, item 3)
             el("div", { class: "place-foot" },
               el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + r.name }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
@@ -552,7 +562,7 @@
       const main = { src: p.image, caption: p.title, credit: p.credit, credit_url: p.credit_url };
       box.append(el("article", { class: "place", id: "place-" + p.id },
         galleryMedia(el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
-          el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675", style: p.focus ? "object-position:" + p.focus : null }),
+          el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675", ...smallSrc(p.image, 780), style: p.focus ? "object-position:" + p.focus : null }),
           el("span", { class: "walk" }, L_(p.walk)),
           p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null,
           galleryBadge(p.id, main)), p.id, main),
@@ -655,15 +665,15 @@
       const media = galleryMedia(el("a", { class: "ev-media", href: url, target: "_blank", rel: "noopener sponsored", "aria-hidden": "true", tabindex: "-1" },
         el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
-        it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null,
         galleryBadge(it.id, main)), it.id, main);
       // One uniform tile per tour (3.10 evening): photo, title, meta, short blurb, book link
       box.append(el("article", { class: "ev tour tour-tile", id: "tour-" + it.id },
         media,
         el("div", { class: "tour-txt" },
+          it.fav ? el("span", { class: "fav-line" }, "★ " + t("fav")) : null,
           el("h3", {}, L_(it.title)),
-          el("div", { class: "where" }, L_(it.meta)),
-          el("p", {}, L_(it.blurb)),
+          el("div", { class: "where" }, typo(L_(it.meta))),
+          el("p", {}, typo(L_(it.blurb))),
           el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()),
           // Photo credit as a short link under the text, same as the place cards (designer review 3.10, item 12)
           it.image_credit ? el("a", { class: "credit-link", href: it.image_credit_url || url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${it.image_credit}` }, t("photo") + (state.lang === "he" ? " ↖" : " ↗")) : null)));

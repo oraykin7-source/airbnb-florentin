@@ -1016,3 +1016,7 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .ev:not(.tour) > .foot-row { padding: 0 14px 14px; }
 .eat-more { grid-column: 1 / -1; justify-self: start; margin: 4px 0 8px; padding: 0 16px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 700; min-height: 44px; }
 .eat-extra[hidden] { display: none; }
+/* Tours (designer: too many layers on one photo): the "guests' pick" label moves from the photo to a quiet line above the title */
+.fav-line { color: var(--accent); font-size: var(--fs-xs); font-weight: 700; letter-spacing: var(--caps-track); text-transform: uppercase; }
+[dir="rtl"] .fav-line { letter-spacing: 0; text-transform: none; font-size: var(--fs-sm); }
+.ev.tour.tour-tile .tour-txt .credit-link { margin-top: 2px; }
