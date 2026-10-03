@@ -573,3 +573,69 @@ h1, h2, h3, .tile-txt strong, .brand-short, .block > h2, .week-head h2 { font-fa
 .card .chev { font-size: 16px; width: 32px; height: 32px; }
 .place .credit-link { font-size: .62rem; opacity: .8; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
 .ev.tour .foot-row .credit-link { font-size: .7rem; opacity: .75; }
+
+/* ===== 3.10 afternoon: council + site-review fixes ===== */
+/* Darker terracotta for text and buttons (sunlight contrast ≥ 4.5), the light one stays for decoration */
+:root { --accent: #a4502c; --accent-deco: #c9704b; --muted: #6b6159; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --accent: #e08a62; --accent-deco: #e08a62; --muted: #b3a79b; } }
+:root[data-theme="dark"] { --accent: #e08a62; --accent-deco: #e08a62; --muted: #b3a79b; }
+.group-title .dot, .ev-media .fav-tag { background: var(--accent-deco); }
+.ev-media .fav-tag { color: #fff; }
+/* WhatsApp is green again; terracotta only for the "primary" button */
+.qbtn-wa { background: #25d366; color: #0b2b16; }
+.qbtn-wa:hover { background: #1fbf5b; }
+
+/* Floating pill tab bar */
+.tabbar { left: 12px; right: 12px; bottom: calc(10px + env(safe-area-inset-bottom)); width: auto; border-radius: 999px; border: 1px solid var(--line);
+  padding: 6px 6px; box-shadow: 0 10px 30px -10px rgba(42,36,31,.25), 0 0 0 1px var(--ring); }
+@media (min-width: 760px) { .tabbar { max-width: 640px; margin: 0 auto; border-radius: 999px; border-bottom: 1px solid var(--line); } }
+.tabbar a { border-radius: 999px; min-height: 52px; }
+.tabbar a svg { padding: 3px 12px; }
+body { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
+
+/* Tours: two big cards for the guests' picks, compact rows for the rest */
+.ev.tour.tour-row { display: grid; grid-template-columns: 104px 1fr; gap: 0; align-items: stretch; padding: 0; }
+.ev.tour.tour-row .ev-media { aspect-ratio: 1 / 1; height: 100%; border-radius: 0; }
+.ev.tour.tour-row .ev-media .credit { display: none; }
+.ev.tour.tour-row .tour-txt { padding: 12px 14px 12px; display: flex; flex-direction: column; gap: 4px; }
+.ev.tour.tour-row h3 { font-size: 1rem; }
+.ev.tour.tour-row .where { font-size: .8rem; margin: 0; }
+.ev.tour.tour-row p { font-size: .9rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ev.tour.tour-row .foot-row { margin-top: 8px; }
+.ev.tour.tour-row .book { width: auto; display: inline-flex; padding: 9px 14px; font-size: .9rem; min-height: 40px; box-shadow: none; }
+.ev.tour:not(.tour-row) .tour-txt { padding: 0; }
+.ev.tour .foot-row .credit-link { display: none; }
+
+/* Places: one strong line, "more" to unfold, visible tour pill, map-all button */
+.place-body p.place-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.place-body p.place-text.open { display: block; -webkit-line-clamp: unset; }
+.more-btn { align-self: flex-start; border: 0; background: none; color: var(--accent); font: 700 .85rem/1 inherit; font-family: inherit; padding: 6px 0; min-height: 32px; cursor: pointer; }
+.place-media .tour-pill { position: absolute; inset-inline-start: 10px; top: 10px; font-size: .74rem; font-weight: 700; color: #fff; background: var(--accent); padding: 5px 9px; border-radius: 999px; }
+.place-media .walk { font-size: .8rem; }
+.map-all { grid-column: 1 / -1; text-align: center; font-size: 1rem; padding: 16px; }
+
+/* This week: one line of text, small photo on the side */
+.ev:not(.tour) { display: grid; grid-template-columns: 84px 1fr; gap: 0; }
+.ev:not(.tour) .ev-media { aspect-ratio: 1 / 1; height: 100%; border-radius: 0; }
+.ev:not(.tour) .ev-media .credit { display: none; }
+.ev:not(.tour) .ev-media.ph { aspect-ratio: 1 / 1; font-size: 1.6rem; }
+.ev:not(.tour) > .ev-top, .ev:not(.tour) > .where, .ev:not(.tour) > p, .ev:not(.tour) > .foot-row { grid-column: 2; }
+.ev:not(.tour) > .ev-top { padding: 12px 14px 0; }
+.ev:not(.tour) > .where { padding: 0 14px; font-size: .82rem; }
+.ev:not(.tour) > p { padding: 0 14px; font-size: .9rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ev:not(.tour) > .foot-row { padding: 0 14px 12px; margin-top: 6px; }
+.ev:not(.tour) h3 { font-size: 1rem; }
+
+/* Check-out tick boxes */
+ul.checks { list-style: none; padding: 0; margin: 14px 0 0; }
+li.check { display: flex; gap: 12px; align-items: flex-start; margin: 10px 0; }
+li.check input { width: 24px; height: 24px; margin: 2px 0 0; accent-color: var(--accent); flex: none; }
+li.check label { flex: 1; }
+li.check input:checked + label { color: var(--muted); text-decoration: line-through; }
+
+/* "Everything OK?" card under the greeting */
+.ok-card { margin: 14px 0 0; padding: 14px 16px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow), 0 0 0 1px var(--ring); display: flex; flex-direction: column; gap: 6px; }
+.ok-card[hidden] { display: none; }
+.ok-card h3 { font-size: 1.05rem; }
+.ok-card p { margin: 0; font-size: .95rem; color: var(--muted); }
+.ok-card a { align-self: flex-start; margin-top: 4px; text-decoration: none; font-weight: 700; padding: 10px 14px; border-radius: 12px; min-height: 44px; display: inline-flex; align-items: center; }

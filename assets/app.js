@@ -11,6 +11,13 @@
   const UI = {
     en: {
       co_tomorrow: tm => `Check-out tomorrow by ${tm} - three things to do`, co_today: tm => `Check-out today by ${tm} - three things to do`,
+      more: "More",
+      less: "Less",
+      tour_pill: "Tour",
+      map_all: "All places on one map",
+      ok_title: "Everything OK?",
+      ok_text: "Something missing, or not quite right? Tell me now and I will sort it out.",
+      ok_btn: "Message Oren",
       fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
@@ -34,6 +41,13 @@
     },
     de: {
       co_tomorrow: tm => `Check-out morgen bis ${tm} - drei Dinge vorher`, co_today: tm => `Check-out heute bis ${tm} - drei Dinge vorher`,
+      more: "Mehr",
+      less: "Weniger",
+      tour_pill: "Tour",
+      map_all: "Alle Orte auf einer Karte",
+      ok_title: "Alles in Ordnung?",
+      ok_text: "Fehlt etwas oder stimmt etwas nicht? Sagen Sie es mir jetzt, ich kümmere mich darum.",
+      ok_btn: "Oren schreiben",
       fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
@@ -57,6 +71,13 @@
     },
     fr: {
       co_tomorrow: tm => `Départ demain avant ${tm} - trois choses à faire`, co_today: tm => `Départ aujourd'hui avant ${tm} - trois choses à faire`,
+      more: "Plus",
+      less: "Moins",
+      tour_pill: "Visite",
+      map_all: "Tous les lieux sur une carte",
+      ok_title: "Tout va bien ?",
+      ok_text: "Il manque quelque chose, ou quelque chose ne va pas ? Dites-le-moi maintenant, je m'en occupe.",
+      ok_btn: "Écrire à Oren",
       fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
@@ -80,6 +101,13 @@
     },
     he: {
       co_tomorrow: tm => `צ'ק-אאוט מחר עד ${tm} - שלושה דברים לעשות`, co_today: tm => `צ'ק-אאוט היום עד ${tm} - שלושה דברים לעשות`,
+      more: "עוד",
+      less: "פחות",
+      tour_pill: "סיור",
+      map_all: "כל המקומות על מפה אחת",
+      ok_title: "הכל בסדר?",
+      ok_text: "משהו חסר או לא בדיוק כמו שצריך? ספרו לי עכשיו ואסדר את זה.",
+      ok_btn: "לכתוב לאורן",
       fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
@@ -313,6 +341,15 @@
       coB.hidden = !which;
       if (which) coB.textContent = t(which)(tm) + " " + ARROW();
     }
+    // "Everything OK?" card (3.10): from the day after the first visit until check-out, opens WhatsApp
+    const ok = document.getElementById("ok-card");
+    if (ok) {
+      let first = null;
+      try { first = localStorage.getItem("firstOpen"); if (!first) { first = today; localStorage.setItem("firstOpen", today); } } catch (e) {}
+      const show = first && first < today && (!checkout || today <= checkout) && num;
+      ok.hidden = !show;
+      if (show) { ok.querySelector("h3").textContent = t("ok_title"); ok.querySelector("p").textContent = t("ok_text"); ok.querySelector("a").href = `https://wa.me/${num}`; ok.querySelector("a").textContent = t("ok_btn") + " " + ARROW(); }
+    }
     const label = document.getElementById("stay-label");
     const input = document.getElementById("checkout-input");
     const reset = document.getElementById("checkout-reset");
@@ -371,7 +408,16 @@
         parts.tel = el("div", { class: "tel" },
           c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label))));
       }
-      if (c.items) parts.items = el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id))));
+      if (c.items && c.id === "checkout") {
+        // tick-box list (3.10): ticks are remembered on this phone for the day
+        let done = {}; try { done = JSON.parse(localStorage.getItem("co-" + (new Date()).toISOString().slice(0, 10)) || "{}"); } catch (e) {}
+        parts.items = el("ul", { class: "checks" }, L_(c.items).map((s, i) => {
+          const id = "co-" + i;
+          const cb = el("input", { type: "checkbox", id, checked: done[i] ? "" : null, onchange: e => { done[i] = e.target.checked; try { localStorage.setItem("co-" + (new Date()).toISOString().slice(0, 10), JSON.stringify(done)); } catch (x) {} } });
+          if (!done[i]) cb.removeAttribute("checked");
+          return el("li", { class: "check" }, cb, el("label", { for: id }, ...rich(fill(s, host), c.id)));
+        }));
+      } else if (c.items) parts.items = el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id))));
       if (c.steps) {
         if (c.steps_title) parts.steps.push(el("h4", { class: "sec-title" }, L_(c.steps_title)));
         parts.steps.push(el("ol", { class: "steps" }, L_(c.steps).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
@@ -422,20 +468,27 @@
     const box = document.getElementById("places-list");
     box.replaceChildren();
     if (!state.places) return;
-    const L = state.lang;
     for (const p of state.places.places) {
+      const txt = el("p", { class: "place-text" }, ...rich(L_(p.text)));
+      const more = el("button", { class: "more-btn", type: "button", "aria-expanded": "false",
+        onclick: e => { const open = txt.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less") : t("more"); } }, t("more"));
       box.append(el("article", { class: "place", id: "place-" + p.id },
         el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
-          el("span", { class: "walk" }, L_(p.walk))),
+          el("span", { class: "walk" }, L_(p.walk)),
+          p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null),
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
-          el("p", {}, ...rich(L_(p.text))),
+          txt, more,
           p.tour ? el("a", { class: "place-tour", href: p.tour.url, target: "_blank", rel: "noopener sponsored" }, "🧭 " + L_(p.tour.label) + " " + ARROW()) : null,
           el("div", { class: "place-foot" },
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));
     }
+    // One map with every place (3.10): a Google Maps search of all the names, opened in the app
+    const q = state.places.places.map(p => (p.title.en || L_(p.title)) + " Tel Aviv").join(" | ");
+    const all = state.places.map_all || ("https://www.google.com/maps/search/" + encodeURIComponent(q));
+    box.append(el("a", { class: "more-tours map-all", href: all, target: "_blank", rel: "noopener" }, "🗺️ " + t("map_all") + " " + ARROW()));
   }
 
   // Day trips & tours: open photo cards (same look as the weekly events), each with a partner link
@@ -457,14 +510,15 @@
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
         it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null,
         it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null);
-      box.append(el("article", { class: "ev tour", id: "tour-" + it.id },
+      // Guests' picks get the big photo card; the others a compact row (3.10, site review)
+      box.append(el("article", { class: "ev tour" + (it.fav ? "" : " tour-row"), id: "tour-" + it.id },
         media,
-        el("div", { class: "ev-top" }, el("h3", {}, L_(it.title))),
-        el("div", { class: "where" }, L_(it.meta)),
-        el("p", {}, L_(it.blurb)),
-        el("div", { class: "foot-row" },
-          it.image_credit_url ? el("a", { class: "credit-link", href: it.image_credit_url, target: "_blank", rel: "noopener" }, t("photo")) : el("span", {}),
-          el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
+        el("div", { class: "tour-txt" },
+          el("div", { class: "ev-top" }, el("h3", {}, L_(it.title))),
+          el("div", { class: "where" }, L_(it.meta)),
+          el("p", {}, L_(it.blurb)),
+          el("div", { class: "foot-row" },
+            el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW())))));
     }
     if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
   }
