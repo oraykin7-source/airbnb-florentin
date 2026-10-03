@@ -900,3 +900,16 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 #eat .eat-group { grid-column: 1 / -1; margin: 10px 0 2px; }
 #eat .place.eat .place-media { aspect-ratio: 16 / 9; }
 @media (min-width: 900px) { #eat .eat-list { grid-template-columns: 1fr 1fr; } }
+/* 3.10 (Oren): the walk card was far too big - now a slim strip of route chips */
+.mapcard { background: transparent; box-shadow: none; border-radius: 0; overflow: visible; }
+.mapcard-art { display: none; }
+.mapcard-body { padding: 4px 0 0; gap: 8px; }
+.mapcard-body h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); }
+[dir="rtl"] .mapcard-body h3 { letter-spacing: 0; font-size: .95rem; text-transform: none; }
+.mapcard-body > p { display: none; }
+.mapcard-routes { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.mapcard-routes::-webkit-scrollbar { display: none; }
+.mapcard-routes .route { flex: none; display: inline-flex; flex-direction: column; gap: 2px; padding: 10px 14px; border-radius: 999px; background: var(--surface); box-shadow: 0 0 0 1px var(--ring); text-decoration: none; color: var(--ink); max-width: 78vw; }
+.mapcard-routes .route strong { font-size: .92rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mapcard-routes .route span { font-size: .75rem; color: var(--muted); }
+.mapcard-all { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: .9rem; text-decoration: none; align-self: flex-start; }
