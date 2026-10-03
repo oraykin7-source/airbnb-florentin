@@ -1061,6 +1061,19 @@
               "shabbat": false
             },
             {
+              "name": "Super 1",
+              "where": "Eliphelet St, at the far end after Salame St, near Kibbutz Galuyot St",
+              "hours": "",
+              "note": {
+                "en": "a big supermarket",
+                "de": "ein großer Supermarkt",
+                "fr": "un grand supermarché",
+                "he": "סופר גדול"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=%D7%A1%D7%95%D7%A4%D7%A8%201%20%D7%90%D7%9C%D7%99%D7%A4%D7%9C%D7%98%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91",
+              "shabbat": false
+            },
+            {
               "name": "AM:PM",
               "where": "Herzl St 61",
               "hours": "until 22:30",

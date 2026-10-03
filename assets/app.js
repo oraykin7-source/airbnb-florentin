@@ -491,7 +491,7 @@
             el("img", { src: r.image, alt: "", loading: "lazy", onerror: e => e.target.closest(".row-pic").remove() })) : null,
           el("div", { class: "row-txt" },
             el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name),
-            el("span", { class: "muted" }, `${r.where} · ${hoursText(r.hours)}`),
+            el("span", { class: "muted" }, [r.where, hoursText(r.hours)].filter(Boolean).join(" · ")),
             r.shabbat === true ? el("span", { class: "badge sat" }, t("open_sat")) : null,
             r.note ? el("div", { class: "muted small" }, typo(L_(r.note))) : null,
             (r.links || r.image_credit) ? el("div", { class: "row-links small" },
@@ -545,7 +545,7 @@
             r.shabbat === true ? el("span", { class: "walk" }, t("open_sat")) : null) : null,
           el("div", { class: "place-body" },
             el("h3", {}, r.name),
-            el("p", { class: "muted small" }, `${r.where} · ${hoursText(r.hours)}`),
+            el("p", { class: "muted small" }, [r.where, hoursText(r.hours)].filter(Boolean).join(" · ")),
             r.note ? el("p", { class: "place-text open" }, typo(L_(r.note))) : null,
             // Same footer as the place cards: compact Map pill + short "Photo ↗" credit link (designer round 2, item 3)
             el("div", { class: "place-foot" },
