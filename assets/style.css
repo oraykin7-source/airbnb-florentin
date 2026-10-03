@@ -919,3 +919,8 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .cards[data-group="safe"] #card-rules { border-inline-start: 0; }
 @media (min-width: 900px) { .cards:not([data-group="safe"]) { grid-template-columns: repeat(var(--cols, 3), 1fr); } }
 @media (max-width: 899px) { .cards:not([data-group="safe"]) .card:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+/* 3.10 (designer review, urgent): route chips widened the places column past the screen; long credits were cut */
+.places { grid-template-columns: minmax(0, 1fr); }
+.places > * { min-width: 0; }
+@media (min-width: 900px) { .places { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.place-foot .credit-link, .place .credit-link { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
