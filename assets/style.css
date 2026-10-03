@@ -658,3 +658,7 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .ev:not(.tour) .ev-media.ph { display: grid; }
 .ev:not(.tour) .ev-media { grid-row: 1 / span 4; }
 .ev:not(.tour) > p { -webkit-line-clamp: 2; }
+/* dark mode: walk badge stays readable, wordmark plate warm */
+.place-media .walk { color: #2a241f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark { --wm-plate: #3d2d24; --wm-script: #e08a62; } }
+:root[data-theme="dark"] .wordmark { --wm-plate: #3d2d24; --wm-script: #e08a62; }

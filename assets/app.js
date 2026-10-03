@@ -530,6 +530,18 @@
     return !(age >= -1 && age <= MAX_FEED_AGE_DAYS);
   }
   function renderEvents() {
+    // Hide category chips that have nothing in the window (3.10); jump to the first one that does
+    try {
+      const { today: t0, checkout: c0 } = currentStay();
+      const inWin = it => { const ds = it.date_start, de = it.date_end || ds; return !ds || (de >= t0 && (!c0 || ds <= c0)); };
+      const counts = {}; for (const it of (state.weekly && state.weekly.items) || []) if (inWin(it)) counts[it.category] = (counts[it.category] || 0) + 1;
+      const chips = document.querySelectorAll(".tabs button[data-cat]");
+      if (chips.length && Object.keys(counts).length) {
+        chips.forEach(b => { b.hidden = !counts[b.dataset.cat]; });
+        if (!counts[state.cat]) { const first = [...chips].find(b => counts[b.dataset.cat]); if (first) { state.cat = first.dataset.cat; chips.forEach(b => b.setAttribute("aria-selected", String(b === first))); } }
+      }
+    } catch (e) {}
+
     const box = document.getElementById("events");
     const meta = document.getElementById("week-meta");
     box.replaceChildren();
