@@ -50,6 +50,23 @@ def check_house(path: Path) -> int:
         for m in re.finditer(pat, raw):
             line = raw.count("\n", 0, m.start()) + 1
             problems.append(f"{path}:{line}: {msg}")
+    # Rule (Oren, 3.10): every place we send a guest to (restaurant, bar, gym, market, shop) has a Google Maps link.
+    import json as _json
+    def _walk(o, trail=""):
+        if isinstance(o, dict):
+            if "name" in o and "where" in o:
+                u = o.get("url")
+                if not (isinstance(u, str) and ("google.com/maps" in u or "maps.app.goo.gl" in u)):
+                    problems.append(f"{path}: '{o['name']}' ({trail}) has no Google Maps url")
+            for k, v in o.items():
+                _walk(v, trail + "/" + k)
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                _walk(v, trail + f"[{i}]")
+    try:
+        _walk(_json.loads(raw))
+    except ValueError:
+        pass
     # The page is rendered by one JS file: a syntax error blanks the whole guide. Check it too.
     import subprocess, shutil
     js = ROOT / "assets" / "app.js"

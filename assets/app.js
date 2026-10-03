@@ -502,6 +502,9 @@
         body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
         if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && L_(sec.image_alt)) || "", loading: "lazy", onerror: e => e.target.remove() }));
         if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
+        if (sec.maps) body.append(el("div", { class: "maplinks" }, sec.maps.map(m =>
+          el("a", { class: "map-link", href: m.url, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + L_(m.label) },
+            svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, L_(m.label))))));
         if (sec.links) body.append(extLinks(sec.links));
       }
       if (c.links) body.append(extLinks(c.links));

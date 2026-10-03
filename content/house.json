@@ -1671,7 +1671,54 @@
               "בקבוקים בזול: בית היין ברחוב העלייה, כמה דקות מכאן. חנויות מוכרות אלכוהול רק עד 23:00 - אחר כך רק בברים ובבתי קפה.",
               "לשתות ברחוב, בפארק או בחוף אסור בלילה (מ-21:00 לפי חוק) - גם מכוס. המשטרה אוכפת; עדיף לשבת בבר."
             ]
-          }
+          },
+          "maps": [
+            {
+              "label": {
+                "en": "Berlin",
+                "de": "Berlin",
+                "fr": "Berlin",
+                "he": "Berlin"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Berlin%20bar%20Vital%20St%201%20Tel%20Aviv"
+            },
+            {
+              "label": {
+                "en": "Mezcal",
+                "de": "Mezcal",
+                "fr": "Mezcal",
+                "he": "Mezcal"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Mezcal+Vital+St+2+Tel+Aviv-Yafo"
+            },
+            {
+              "label": {
+                "en": "Alpaca Bar",
+                "de": "Alpaca Bar",
+                "fr": "Alpaca Bar",
+                "he": "Alpaca Bar"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Alpaca%20Bar%20Florentin%20Tel%20Aviv"
+            },
+            {
+              "label": {
+                "en": "La Tigra",
+                "de": "La Tigra",
+                "fr": "La Tigra",
+                "he": "La Tigra"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=La%20Tigra%20bar%20Florentin%20Tel%20Aviv"
+            },
+            {
+              "label": {
+                "en": "Beit HaYayin",
+                "de": "Beit HaYayin",
+                "fr": "Beit HaYayin",
+                "he": "בית היין"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=%D7%91%D7%99%D7%AA%20%D7%94%D7%99%D7%99%D7%9F%20%D7%94%D7%A2%D7%9C%D7%99%D7%99%D7%94%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91"
+            }
+          ]
         },
         {
           "title": {
@@ -1942,6 +1989,44 @@
                 "en": "https://www.crossfitflorentin.co.il/en",
                 "he": "https://www.crossfitflorentin.co.il/"
               }
+            }
+          ],
+          "maps": [
+            {
+              "label": {
+                "en": "Naim Gym",
+                "de": "Naim Gym",
+                "fr": "Naim Gym",
+                "he": "נעים"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Naim%20Gym%20Alfasi%20St%2022%20Tel%20Aviv"
+            },
+            {
+              "label": {
+                "en": "Space Florentin",
+                "de": "Space Florentin",
+                "fr": "Space Florentin",
+                "he": "Space Florentin"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Space%20gym%20Abarbanel%20St%2072%20Tel%20Aviv"
+            },
+            {
+              "label": {
+                "en": "Icon Fitness",
+                "de": "Icon Fitness",
+                "fr": "Icon Fitness",
+                "he": "Icon Fitness"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Icon%20Fitness%20Shalom%20Tower%20Ahad%20Ha%27am%20St%209%20Tel%20Aviv"
+            },
+            {
+              "label": {
+                "en": "CrossFit Florentin",
+                "de": "CrossFit Florentin",
+                "fr": "CrossFit Florentin",
+                "he": "קרוספיט פלורנטין"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=CrossFit%20Florentin%20Abulafia%20St%203%20Tel%20Aviv"
             }
           ]
         }
