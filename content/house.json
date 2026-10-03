@@ -264,7 +264,7 @@
         "fr": "Tami4 : eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
         "he": "תמי 4: מים מסוננים קרים וחמים - להחזיק את הכפתור האדום לחמים"
       },
-      "image": "assets/img/first-hour/water-bar-2.webp",
+      "image": "assets/img/first-hour/water-bar-3.webp",
       "image_alt": {
         "en": "The Tami4 control panel",
         "de": "Das Bedienfeld des Tami4",
@@ -300,7 +300,7 @@
       "thumb": "assets/img/house/thumb/tami4.webp",
       "group": "comfort",
       "first_hour": 4,
-      "tile": "assets/img/first-hour/water-bar-2.webp"
+      "tile": "assets/img/first-hour/water-bar-3.webp"
     },
     {
       "id": "ac",
