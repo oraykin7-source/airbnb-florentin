@@ -569,3 +569,7 @@ h1, h2, h3, .tile-txt strong, .brand-short, .block > h2, .week-head h2 { font-fa
 .qbtn-wa, .qbtn.primary { background: var(--accent); color: var(--accent-ink); }
 .qbtn-sos { border-color: var(--danger-fill); color: var(--danger); background: var(--surface); }
 .tel a { border-radius: 14px; }
+/* 3.10 polish: readable chevrons, shorter credits in the 2-column places */
+.card .chev { font-size: 16px; width: 32px; height: 32px; }
+.place .credit-link { font-size: .62rem; opacity: .8; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.ev.tour .foot-row .credit-link { font-size: .7rem; opacity: .75; }
