@@ -22,7 +22,7 @@
       fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
-      tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
+      gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A cozy room in Florentin", brand_short: "Cozy room", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
@@ -53,7 +53,7 @@
       fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
-      tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
+      gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein gemütliches Zimmer in Florentin", brand_short: "Gemütliches Zimmer", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
@@ -84,7 +84,7 @@
       fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
-      tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
+      gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre cosy à Florentin", brand_short: "Chambre cosy", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
@@ -115,7 +115,7 @@
       fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
-      tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
+      gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר נעים בפלורנטין", brand_short: "חדר נעים", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
@@ -135,7 +135,7 @@
     },
   };
 
-  const state = { lang: pickLang(), cat: "food", house: null, places: null, weekly: null, stays: null };
+  const state = { lang: pickLang(), cat: "food", house: null, places: null, weekly: null, stays: null, gallery: null };
 
   // Personalisation lives only in this browser. A link from the host's Airbnb message can carry
   // ?guest=Anna&checkout=2026-10-26 (Airbnb fills those in); we store them once and drop them from the URL.
@@ -546,7 +546,8 @@
         el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
           el("span", { class: "walk" }, L_(p.walk)),
-          p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null),
+          p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null,
+          galleryButton(p.id, { src: p.image, caption: p.title, credit: p.credit, credit_url: p.credit_url })),
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
           txt, credit, more,
@@ -581,6 +582,44 @@
   }
 
   // Day trips & tours: open photo cards (same look as the weekly events), each with a partner link
+  // ---------- photo gallery (3.10, Oren): extra photos for tours and places ----------
+  // assets/img/gallery/manifest.json maps an item id to [{src, caption, credit, credit_url}].
+  // A small "N photos" button on the card opens a full-screen strip (native scroll-snap, no library).
+  function galleryPhotos(id, main) {
+    const extra = (state.gallery && state.gallery[id]) || [];
+    return extra.length ? [main, ...extra] : null;
+  }
+  function galleryButton(id, main) {
+    const photos = galleryPhotos(id, main);
+    if (!photos) return null;
+    return el("button", { class: "gal-btn", type: "button", onclick: e => { e.preventDefault(); e.stopPropagation(); openGallery(photos, 0); } },
+      svg('<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.2"/><path d="M8 5l1.2-2h5.6L16 5"/>', 16),
+      el("span", {}, t("gal_photos")(photos.length)));
+  }
+  function openGallery(photos, start) {
+    let dlg = document.getElementById("lightbox");
+    if (!dlg) { dlg = el("dialog", { id: "lightbox", class: "lightbox" }); document.body.append(dlg); }
+    dlg.replaceChildren();
+    const strip = el("div", { class: "lb-strip" }, photos.map(ph =>
+      el("figure", { class: "lb-item" },
+        el("img", { src: ph.src, alt: L_(ph.caption) || "", loading: "lazy" }),
+        el("figcaption", {},
+          el("span", { class: "lb-cap" }, L_(ph.caption) || ""),
+          ph.credit ? el("a", { class: "lb-credit", href: ph.credit_url || "#", target: "_blank", rel: "noopener" }, `${t("photo")}: ${ph.credit}`) : null))));
+    const counter = el("span", { class: "lb-count" }, `1 / ${photos.length}`);
+    const go = d => { const w = strip.clientWidth; strip.scrollBy({ left: d * w * (document.documentElement.dir === "rtl" ? -1 : 1), behavior: "smooth" }); };
+    strip.addEventListener("scroll", () => { const i = Math.round(Math.abs(strip.scrollLeft) / strip.clientWidth); counter.textContent = `${Math.min(i + 1, photos.length)} / ${photos.length}`; }, { passive: true });
+    dlg.append(
+      el("div", { class: "lb-top" }, counter,
+        el("button", { class: "lb-close", type: "button", "aria-label": t("gal_close"), onclick: () => dlg.close() }, "✕")),
+      strip,
+      el("button", { class: "lb-nav lb-prev", type: "button", "aria-label": t("gal_prev"), onclick: () => go(-1) }, "‹"),
+      el("button", { class: "lb-nav lb-next", type: "button", "aria-label": t("gal_next"), onclick: () => go(1) }, "›"));
+    dlg.onclick = e => { if (e.target === dlg) dlg.close(); };   // tap the dark backdrop to close
+    dlg.showModal();
+    if (start) strip.scrollTo({ left: start * strip.clientWidth * (document.documentElement.dir === "rtl" ? -1 : 1) });
+  }
+
   function renderTours() {
     const sec = document.getElementById("tours"), box = document.getElementById("tours-list");
     const tr = state.house && state.house.tours;
@@ -598,7 +637,8 @@
         el("img", { src: it.image, alt: "", loading: "lazy", referrerpolicy: "no-referrer",
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
         it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null,
-        it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null);
+        it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null,
+        galleryButton(it.id, { src: it.image, caption: it.title, credit: it.image_credit, credit_url: it.image_credit_url }));
       // One uniform tile per tour (3.10 evening): photo, title, meta, short blurb, book link
       box.append(el("article", { class: "ev tour tour-tile", id: "tour-" + it.id },
         media,
@@ -762,6 +802,7 @@
   // never delays the apartment / emergency cards.
   getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderEat(); renderTours(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
   getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); renderEat(); applyHashCard(); }).catch(() => {});
+  getJSON(DEMO ? "assets/img/gallery/manifest.sample.json" : "assets/img/gallery/manifest.json").then(v => { state.gallery = v; renderTours(); renderPlaces(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {
       state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
