@@ -1079,3 +1079,11 @@ body { overflow-anchor: none; }
 /* Eat: "Open on Saturday" filter chip */
 .satchip { min-height: 44px; padding: 0 16px; margin: 4px 0 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: 700 var(--fs-sm)/1 Inter, Heebo, sans-serif; cursor: pointer; }
 .satchip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink, #fff); }
+/* designer round 3: contrast of the menu WhatsApp link, About Florentin as strong as the other titles, bigger "Details" target */
+.burger-panel .burger-wa { color: #0f6b34; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .burger-panel .burger-wa { color: #5fdc8c; } }
+:root[data-theme="dark"] .burger-panel .burger-wa { color: #5fdc8c; }
+.hood h2 { font-size: var(--fs-xl); }
+.hood .lead { color: var(--ink); }
+.ev:not(.tour) .foot-row a { display: inline-flex; align-items: center; min-height: 44px; }
+.jump .jt span { font-size: var(--fs-xs); color: var(--muted); }
