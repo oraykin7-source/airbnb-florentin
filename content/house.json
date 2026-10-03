@@ -43,7 +43,7 @@
         ],
         "de": [
           "Die Küche hat ein mobiles Induktionskochfeld und einen Ninja Combi (Ofen, Heißluftfritteuse und Dampfgarer in einem). Die vollständige Anleitung erklärt die Stufen, die Töpfe mit Klickgriff und wo alles ist.",
-          "Außerdem da, ganz ohne Anleitung: Toaster und Sandwichtoaster (Schubladen links), Ninja-Blender und Handmixer (Schrank neben den Tellern). Bedienen Sie sich.",
+          "Außerdem vorhanden, ganz ohne Anleitung: Toaster und Sandwichtoaster (Schubladen links), Ninja-Blender und Handmixer (Schrank neben den Tellern). Bedienen Sie sich.",
           "Milch im Kühlschrank, Öl, Gewürze und die Kaffeekapseln gehören zum Aufenthalt dazu - bedienen Sie sich. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
           "Der Schrank unter der Spüle und die beiden oberen Schränke links enthalten Orens private Sachen - kein Grund, sie zu öffnen. Alles für Gäste ist in den anderen Schränken. Danke!"
         ],
@@ -173,27 +173,27 @@
           "items": {
             "en": [
               "Fill the bottle with cold water up to the line (cold water fizzes better - the Tami4 is perfect for this).",
-              "Screw the bottle onto the machine until it clicks, then press the button on top 2–3 times in short pushes. More pushes = more fizz.",
+              "Screw the bottle onto the machine until it clicks, then press the button on top 2-3 times in short pushes. More pushes = more fizz.",
               "Unscrew slowly. Only ever carbonate plain water - never juice or anything with sugar, it damages the machine.",
               "If nothing fizzes, the gas cylinder is empty - just tell me."
             ],
             "de": [
               "Flasche bis zur Markierung mit kaltem Wasser füllen (kaltes Wasser sprudelt besser - der Tami4 ist dafür ideal).",
-              "Flasche in die Maschine schrauben, bis sie einrastet, dann die Taste oben 2–3 Mal kurz drücken. Mehr Drücken = mehr Sprudel.",
+              "Flasche in die Maschine schrauben, bis sie einrastet, dann die Taste oben 2-3 Mal kurz drücken. Mehr Drücken = mehr Sprudel.",
               "Langsam abschrauben. Nur reines Wasser sprudeln - nie Saft oder etwas Zuckerhaltiges, das beschädigt die Maschine.",
               "Sprudelt nichts, ist der Gaszylinder leer - sagen Sie mir einfach Bescheid."
             ],
             "fr": [
               "Remplissez la bouteille d'eau froide jusqu'au trait (l'eau froide pétille mieux - la Tami4 est parfaite pour ça).",
-              "Vissez la bouteille sur la machine jusqu'au clic, puis appuyez 2–3 fois brièvement sur le bouton du haut. Plus d'appuis = plus de bulles.",
+              "Vissez la bouteille sur la machine jusqu'au clic, puis appuyez 2-3 fois brièvement sur le bouton du haut. Plus d'appuis = plus de bulles.",
               "Dévissez doucement. Ne gazéifiez que de l'eau plate - jamais de jus ni de boisson sucrée, cela abîme la machine.",
               "Si rien ne pétille, la bouteille de gaz est vide - dites-le-moi simplement."
             ],
             "he": [
               "ממלאים את הבקבוק במים קרים עד הקו (מים קרים מתגזים טוב יותר - התמי 4 מושלם לזה).",
               "מבריגים את הבקבוק למכונה עד שנשמע קליק, ואז לוחצים על הכפתור העליון 2-3 לחיצות קצרות. יותר לחיצות = יותר גז.",
-              "לפתוח לאט. להגזיז רק מים רגילים - אף פעם לא מיץ או משהו עם סוכר, זה הורס את המכונה.",
-              "אם שום דבר לא מתגזז, בלון הגז ריק - פשוט תגידו לי."
+              "לפתוח לאט. להכניס למכונה רק מים רגילים - אף פעם לא מיץ או משהו עם סוכר, זה הורס את המכונה.",
+              "אם המים לא מתגזים, בלון הגז ריק - פשוט תגידו לי."
             ]
           }
         },
@@ -214,19 +214,19 @@
           "items": {
             "en": [
               "On the metal rack, under the Ninja Combi.",
-              "Quickest way: press a number (1–6) - that's the number of minutes at full power - and it starts by itself. STOP/CANCEL to stop, open the door to pause.",
+              "Quickest way: press a number (1-6) - that's the number of minutes at full power - and it starts by itself. STOP/CANCEL to stop, open the door to pause.",
               "Custom time: TIME COOK, type the time, START. POWER lowers the power (e.g. for defrosting or chocolate).",
               "No metal, no foil, no closed containers. Cover food with a plate to avoid splashes - and wipe it if something does splash."
             ],
             "de": [
               "Im Metallregal, unter dem Ninja Combi.",
-              "Am schnellsten: eine Zahl (1–6) drücken - das sind Minuten bei voller Leistung - und es startet von selbst. STOP/CANCEL zum Stoppen, Tür öffnen zum Pausieren.",
+              "Am schnellsten: eine Zahl (1-6) drücken - das sind Minuten bei voller Leistung - und es startet von selbst. STOP/CANCEL zum Stoppen, Tür öffnen zum Pausieren.",
               "Eigene Zeit: TIME COOK, Zeit eingeben, START. POWER reduziert die Leistung (z. B. zum Auftauen oder für Schokolade).",
               "Kein Metall, keine Folie, keine geschlossenen Behälter. Essen mit einem Teller abdecken - und auswischen, falls doch etwas spritzt."
             ],
             "fr": [
               "Sur l'étagère métallique, sous le Ninja Combi.",
-              "Le plus rapide : appuyez sur un chiffre (1–6) - ce sont des minutes à pleine puissance - et ça démarre tout seul. STOP/CANCEL pour arrêter, ouvrir la porte pour mettre en pause.",
+              "Le plus rapide : appuyez sur un chiffre (1-6) - ce sont des minutes à pleine puissance - et ça démarre tout seul. STOP/CANCEL pour arrêter, ouvrir la porte pour mettre en pause.",
               "Durée personnalisée : TIME COOK, tapez la durée, START. POWER baisse la puissance (décongélation, chocolat…).",
               "Pas de métal, pas d'aluminium, pas de récipient fermé. Couvrez avec une assiette pour éviter les projections - et essuyez si ça éclabousse."
             ],
@@ -319,13 +319,13 @@
       },
       "items": {
         "en": [
-          "Please close the windows while the AC runs and switch it off when you go out. 24–25°C is comfortable; lower doesn't cool faster."
+          "Please close the windows while the AC runs and switch it off when you go out. 24-25°C is comfortable; lower doesn't cool faster."
         ],
         "de": [
-          "Bitte bei laufender Klimaanlage die Fenster schließen und beim Weggehen ausschalten. 24–25 °C ist angenehm; niedriger kühlt nicht schneller."
+          "Bitte bei laufender Klimaanlage die Fenster schließen und beim Weggehen ausschalten. 24-25 °C ist angenehm; niedriger kühlt nicht schneller."
         ],
         "fr": [
-          "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant. 24–25 °C est confortable ; plus bas ne refroidit pas plus vite."
+          "Merci de fermer les fenêtres quand la clim tourne et de l'éteindre en sortant. 24-25 °C est confortable ; plus bas ne refroidit pas plus vite."
         ],
         "he": [
           "בבקשה לסגור את החלונות כשהמזגן עובד ולכבות אותו כשיוצאים. 24-25° נעים; נמוך יותר לא מקרר מהר יותר."
@@ -365,7 +365,7 @@
             "he": [
               "1. הדלקה/כיבוי - כפתור ⏻ הכתום במרכז הטבעת.",
               "2. טמפרטורה - TEMP ▲ / ▼ (למעלה ולמטה בטבעת).",
-              "3. מצב - לוחצים MODE (למעלה מימין) עד שהצג מראה ❄ לקירור או ☀ לחימום. את שאר הכפתורים אפשר להתעלם."
+              "3. מצב - לוחצים MODE (למעלה מימין) עד שהצג מראה ❄ לקירור או ☀ לחימום. משאר הכפתורים אפשר להתעלם."
             ]
           }
         },
@@ -402,7 +402,7 @@
             "he": [
               "1. הדלקה/כיבוי - הכפתור העליון משמאל.",
               "2. טמפרטורה - כפתורי − / +.",
-              "3. מצב - פשוט לוחצים COOL או HEAT. את שאר הכפתורים אפשר להתעלם."
+              "3. מצב - פשוט לוחצים COOL או HEAT. משאר הכפתורים אפשר להתעלם."
             ]
           }
         }
@@ -549,13 +549,13 @@
         "en": [
           "Like most Israeli homes, hot water comes from a tank on the roof called a dud. It's heated by the sun and, when that's not enough, by an electric switch.",
           "Where the switch is: {{boiler_switch}} (photo above - the small red light shows it's on).",
-          "On cloudy days or in the evening, turn the switch on about 30–40 minutes before showering, then turn it off afterwards.",
+          "On cloudy days or in the evening, turn the switch on about 30-40 minutes before showering, then turn it off afterwards.",
           "In summer the sun is usually enough - the water can be very hot, so test it first."
         ],
         "de": [
           "Wie in den meisten israelischen Wohnungen kommt das Warmwasser aus einem Tank auf dem Dach, dem „Dud“. Er wird von der Sonne geheizt und bei Bedarf elektrisch per Schalter.",
           "Wo der Schalter ist: {{boiler_switch}} (Foto oben - das kleine rote Licht zeigt, dass er an ist).",
-          "An bewölkten Tagen oder abends den Schalter etwa 30–40 Minuten vor dem Duschen einschalten und danach wieder ausschalten.",
+          "An bewölkten Tagen oder abends den Schalter etwa 30-40 Minuten vor dem Duschen einschalten und danach wieder ausschalten.",
           "Im Sommer reicht meist die Sonne - das Wasser kann sehr heiß sein, bitte vorher prüfen."
         ],
         "fr": [
@@ -875,25 +875,25 @@
               "Address to give emergency services: it is in your Airbnb booking (Trips → your reservation) and in my check-in message. Can't find it? Call or WhatsApp me.",
               "Nearest hospital with a 24/7 ER: Ichilov (Tel Aviv Sourasky Medical Center), 6 Weizmann St - about 15 minutes by taxi.",
               "Pharmacies (Super-Pharm, Be) are all over the city; some are open late or 24/7.",
-              "To reach your host: the WhatsApp button at the top of this page, or the Airbnb app."
+              "To reach me: the WhatsApp button at the top of this page, or the Airbnb app."
             ],
             "de": [
               "Adresse für den Notruf: Sie steht in Ihrer Airbnb-Buchung (Reisen → Ihre Buchung) und in meiner Check-in-Nachricht. Nicht gefunden? Rufen Sie mich an oder schreiben Sie mir per WhatsApp.",
               "Nächstes Krankenhaus mit 24/7-Notaufnahme: Ichilov (Tel Aviv Sourasky Medical Center), Weizmann St 6 - ca. 15 Minuten mit dem Taxi.",
               "Apotheken (Super-Pharm, Be) gibt es überall; einige haben spät oder rund um die Uhr offen.",
-              "Gastgeber erreichen: WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
+              "Mich erreichen: WhatsApp-Button oben auf dieser Seite oder die Airbnb-App."
             ],
             "fr": [
               "Adresse à donner aux secours : elle figure dans votre réservation Airbnb (Voyages → votre réservation) et dans mon message d'arrivée. Introuvable ? Appelez-moi ou écrivez-moi sur WhatsApp.",
               "Hôpital le plus proche avec urgences 24h/24 : Ichilov (Tel Aviv Sourasky Medical Center), 6 rue Weizmann - environ 15 minutes en taxi.",
               "Pharmacies (Super-Pharm, Be) partout en ville ; certaines ouvertes tard ou 24h/24.",
-              "Joindre votre hôte : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
+              "Me joindre : le bouton WhatsApp en haut de cette page, ou l'appli Airbnb."
             ],
             "he": [
-              "הכתובת למסירה לשירותי החירום: היא מופיעה בהזמנה שלכם ב-Airbnb (נסיעות ← ההזמנה) ובהודעת הצ'ק-אין ששלחתי. לא מוצאים? התקשרו או כתבו לי בוואטסאפ.",
+              "הכתובת למסירה לשירותי החירום: היא מופיעה בהזמנה שלכם ב-Airbnb (טיולים ← ההזמנה) ובהודעת הצ'ק-אין ששלחתי. לא מוצאים? התקשרו או כתבו לי בוואטסאפ.",
               "בית החולים הקרוב עם מיון 24/7: איכילוב (המרכז הרפואי ת\"א ע\"ש סוראסקי), ויצמן 6 - כ-15 דקות במונית.",
               "בתי מרקחת (סופר-פארם, Be) בכל העיר; חלקם פתוחים עד מאוחר או 24/7.",
-              "ליצירת קשר עם המארח: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
+              "ליצירת קשר איתי: כפתור הוואטסאפ בראש העמוד, או אפליקציית Airbnb."
             ]
           }
         }
@@ -916,7 +916,7 @@
       },
       "items": {
         "en": [
-          "You have your own private room; the kitchen, bathroom and living room are shared with Oren, who lives here too. Make yourself at home - and say hi!",
+          "You have your own private room; the kitchen, bathroom and living room are shared with me - I live here too. Make yourself at home - and say hi!",
           "Please eat at the kitchen table or in your room rather than on the sofa - the fabric doesn't forgive crumbs.",
           "Milk, oil, spices and coffee capsules are part of your stay - help yourself. For anything else you'd like to cook, the shops are 5 minutes away (see the Groceries card).",
           "Back from the beach? Please go straight to the shower and rinse off the sand before walking around the apartment - sand gets everywhere and is hard to clean.",
@@ -929,7 +929,7 @@
           "Check-out is at {{checkout_time}} - see the Check-out card."
         ],
         "de": [
-          "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit Oren, der hier ebenfalls wohnt. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
+          "Sie haben Ihr eigenes Zimmer; Küche, Bad und Wohnzimmer teilen Sie sich mit mir - ich wohne hier auch. Fühlen Sie sich wie zu Hause - und sagen Sie Hallo!",
           "Bitte am Küchentisch oder im Zimmer essen, nicht auf dem Sofa - der Stoff verzeiht keine Krümel.",
           "Milch, Öl, Gewürze und Kaffeekapseln gehören zum Aufenthalt dazu - bedienen Sie sich. Alles andere zum Kochen gibt es 5 Minuten entfernt (siehe Karte Einkaufen).",
           "Zurück vom Strand? Bitte direkt unter die Dusche und den Sand abspülen, bevor Sie durch die Wohnung gehen - Sand verteilt sich überall und ist schwer zu entfernen.",
@@ -942,7 +942,7 @@
           "Check-out um {{checkout_time}} - siehe Karte Check-out."
         ],
         "fr": [
-          "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec Oren, qui habite ici aussi. Faites comme chez vous - et dites bonjour !",
+          "Vous avez votre chambre privée ; la cuisine, la salle de bain et le salon sont partagés avec moi - j'habite ici aussi. Faites comme chez vous - et dites bonjour !",
           "Merci de manger à la table de la cuisine ou dans votre chambre plutôt que sur le canapé - le tissu ne pardonne pas les miettes.",
           "Le lait, l'huile, les épices et les capsules de café font partie du séjour - servez-vous. Pour tout le reste, les commerces sont à 5 minutes (voir la carte Courses).",
           "De retour de la plage ? Merci d'aller directement sous la douche pour rincer le sable avant de circuler dans l'appartement - le sable se glisse partout et s'enlève mal.",
@@ -955,7 +955,7 @@
           "Départ à {{checkout_time}} - voir la carte Départ."
         ],
         "he": [
-          "יש לכם חדר פרטי משלכם; המטבח, השירותים והסלון משותפים עם אורן, שגר כאן גם. תרגישו בבית - ותגידו שלום!",
+          "יש לכם חדר פרטי משלכם; המטבח, חדר האמבטיה והסלון משותפים איתי - אני גר כאן. תרגישו בבית - ותגידו שלום!",
           "בבקשה לאכול ליד שולחן המטבח או בחדר ולא על הספה - הבד לא סולח לפירורים.",
           "חלב, שמן, תבלינים וקפסולות קפה הם חלק מהאירוח - תרגישו חופשי. לכל דבר אחר שתרצו לבשל, החנויות במרחק 5 דקות (ראו כרטיס קניות).",
           "חוזרים מהים? בבקשה ישר למקלחת לשטוף את החול לפני שמסתובבים בדירה - חול מגיע לכל מקום וקשה לנקות.",
@@ -996,7 +996,7 @@
           "Les prix varient pas mal d'un magasin à l'autre - les chaînes (Shufersal, Super Yuda) sont en général moins chères que les magasins de dépannage (AM:PM). Plusieurs sont ouverts 24h/24, Shabbat compris. Les horaires viennent de Google et peuvent changer - touchez un nom pour naviguer."
         ],
         "he": [
-          "המחירים שונים למדי בין החנויות - הרשתות (שופרסל, סופר יודה) בדרך כלל זולות מחנויות הנוחות (AM:PM). כמה פתוחות 24/7, כולל בשבת. השעות מגוגל ועשויות להשתנות - לחצו על שם לניווט."
+          "המחירים שונים למדי בין החנויות - הרשתות (שופרסל, סופר יודה) בדרך כלל זולות יותר מחנויות הנוחות (AM:PM). כמה פתוחות 24/7, כולל בשבת. השעות מגוגל ועשויות להשתנות - לחצו על שם לניווט."
         ]
       },
       "lists": [
@@ -1270,7 +1270,7 @@
             "en": "Dinner",
             "de": "Abendessen",
             "fr": "Dîner",
-            "he": "ערב"
+            "he": "ארוחת ערב"
           },
           "rows": [
             {
@@ -1739,7 +1739,7 @@
         "he": [
           "אם משהו חסר או לא בדיוק כמו שצריך - מגבת, הוויי-פיי, לילה רועש - בבקשה ספרו לי מיד (כפתור וואטסאפ למעלה) ואתקן על המקום.",
           "אחרי הצ'ק-אאוט Airbnb תבקש מכם ביקורת. כתבו אותה בכנות - זה עוזר למטיילים אחרים ועוזר לי להשתפר. כמה מילים שוות המון למארח קטן כמוני. תודה!",
-          "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה → טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
+          "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה ← טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
         ]
       },
       "group": "safe"
@@ -1897,7 +1897,7 @@
           "en": "The Church of the Nativity and Manger Square in Bethlehem, plus the main sights of Jerusalem, with a guide all day.",
           "de": "Die Geburtskirche und der Krippenplatz in Bethlehem, dazu die wichtigsten Sehenswürdigkeiten Jerusalems, mit Guide den ganzen Tag.",
           "fr": "L'église de la Nativité et la place de la Crèche à Bethléem, plus les grands sites de Jérusalem, avec un guide toute la journée.",
-          "he": "כנסיית המולד וכיכר המאורה בבית לחם, ועוד האתרים המרכזיים של ירושלים, עם מדריך כל היום."
+          "he": "כנסיית המולד וכיכר האבוס בבית לחם, ועוד האתרים המרכזיים של ירושלים, עם מדריך כל היום."
         }
       },
       {

@@ -124,7 +124,7 @@
       footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
       stay_until: d => `אירועים במהלך השהות · עד ${d}`,
       checkout_today: "צ'ק-אאוט היום - נסיעה טובה!",
-      whatsapp: "וואטסאפ לאורן", sos: "חירום", sos_police: "משטרה", sos_amb: "מד״א", sos_fire: "כיבוי אש", map_short: "מפה", reset_dates: "חזרה לתאריכי ההזמנה",
+      whatsapp: "וואטסאפ לאורן", sos: "חירום", sos_police: "משטרה", sos_amb: "מד\"א", sos_fire: "כיבוי אש", map_short: "מפה", reset_dates: "חזרה לתאריכי ההזמנה",
       welcome_name: n => `ברוכים הבאים הביתה, ${n}`, name_prompt: "השם שלכם", name_save: "שמירה", name_change: "לא אתם?",
       stay_label: "אירועים מהיום ועד הצ'ק-אאוט שלכם:", stay_label_none: "אירועים מהיום. הזינו תאריך צ'ק-אאוט כדי לצמצם את הרשימה:",
       updated: d => `עודכן ${d}`,
@@ -711,7 +711,7 @@
       let when;
       if (!it.date_start) when = it.is_new ? t("new_opening") : (it.category === "food" ? t("tip") : t("ongoing"));
       else if (it.date_end && it.date_end !== it.date_start && it.date_end > today)
-        when = `${fmtDate(it.date_start < today ? today : it.date_start, { day: "numeric", month: "short" })} – ${fmtDate(it.date_end, { day: "numeric", month: "short" })}`;
+        when = `${fmtDate(it.date_start < today ? today : it.date_start, { day: "numeric", month: "short" })} - ${fmtDate(it.date_end, { day: "numeric", month: "short" })}`;
       else when = fmtDate(it.date_end && it.date_start < today ? it.date_end : it.date_start, { weekday: "short", day: "numeric", month: "short" });   // a run that ends today shows just today, not "3 Oct – 3 Oct"
       if (it.time) when += ` · ${it.time}`;
 

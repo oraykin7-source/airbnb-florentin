@@ -190,7 +190,7 @@
     {
       "category": "food",
       "title": {
-        "en": "Jaffa Farmer's Market",
+        "en": "Jaffa Farmers' Market",
         "de": "Bauernmarkt in Jaffa",
         "fr": "Marché fermier de Jaffa"
       },
@@ -260,7 +260,7 @@
       "category": "culture",
       "title": {
         "en": "Jaffa Wednesdays",
-        "de": "Mittwoche in Jaffa",
+        "de": "Mittwochs in Jaffa",
         "fr": "Les mercredis de Jaffa"
       },
       "blurb": {
@@ -496,7 +496,7 @@
       "blurb": {
         "en": "An open-air birthday rave by the water from late afternoon, with Adam Ten, Kino Todo and Eli Nissan on the decks. Come for sunset rather than midnight.",
         "de": "Ein Open-Air-Geburtstagsrave am Wasser ab dem späten Nachmittag, mit Adam Ten, Kino Todo und Eli Nissan an den Decks. Kommen Sie zum Sonnenuntergang, nicht um Mitternacht.",
-        "fr": "Un rave d'anniversaire en plein air au bord de l'eau dès la fin d'après-midi, avec Adam Ten, Kino Todo et Eli Nissan aux platines. Venez pour le coucher de soleil plutôt qu'à minuit."
+        "fr": "Une rave d'anniversaire en plein air au bord de l'eau dès la fin d'après-midi, avec Adam Ten, Kino Todo et Eli Nissan aux platines. Venez pour le coucher de soleil plutôt qu'à minuit."
       },
       "date_start": "2026-09-29",
       "date_end": null,

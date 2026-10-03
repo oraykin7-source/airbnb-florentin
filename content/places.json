@@ -135,10 +135,10 @@
         "he": "מוזיאון תל אביב לאמנות"
       },
       "text": {
-        "en": "Israeli and international modern art in a striking building - the newer wing is worth the visit on its own. Good for a hot afternoon. Check the current exhibitions in the weekly section below.",
-        "de": "Israelische und internationale moderne Kunst in einem beeindruckenden Gebäude - allein der neuere Flügel lohnt den Besuch. Gut für einen heißen Nachmittag. Aktuelle Ausstellungen finden Sie unten im Wochenteil.",
-        "fr": "Art moderne israélien et international dans un bâtiment saisissant - la nouvelle aile vaut à elle seule la visite. Parfait pour un après-midi de chaleur. Les expositions en cours sont dans la section de la semaine, plus bas.",
-        "he": "אמנות מודרנית ישראלית ובינלאומית בבניין מרשים - האגף החדש שווה ביקור בפני עצמו. טוב לאחר צהריים חם. בדקו את התערוכות הנוכחיות בחלק השבועי למטה."
+        "en": "Israeli and international modern art in a striking building - the newer wing is worth the visit on its own. Good for a hot afternoon. Check the current exhibitions in the 'This week' tab.",
+        "de": "Israelische und internationale moderne Kunst in einem beeindruckenden Gebäude - allein der neuere Flügel lohnt den Besuch. Gut für einen heißen Nachmittag. Aktuelle Ausstellungen finden Sie im Reiter 'Woche'.",
+        "fr": "Art moderne israélien et international dans un bâtiment saisissant - la nouvelle aile vaut à elle seule la visite. Parfait pour un après-midi de chaleur. Les expositions en cours sont dans l'onglet « Semaine ».",
+        "he": "אמנות מודרנית ישראלית ובינלאומית בבניין מרשים - האגף החדש שווה ביקור בפני עצמו. טוב לאחר צהריים חם. בדקו את התערוכות הנוכחיות בלשונית 'השבוע'."
       },
       "image": "assets/img/places/ta_museum.webp",
       "credit": "Yair Haklai, CC BY-SA 4.0, via Wikimedia Commons",
@@ -289,9 +289,9 @@
         "he": "התחנה"
       },
       "text": {
-        "en": "The restored 1892 Jaffa–Jerusalem railway station, between Neve Tzedek and the sea: shops, cafés, markets on the platforms and space for kids to run. Nice stop on the way to the beach.",
-        "de": "Der restaurierte Bahnhof der Strecke Jaffa–Jerusalem von 1892, zwischen Neve Tzedek und dem Meer: Läden, Cafés, Märkte auf den Bahnsteigen und Platz für Kinder zum Toben. Schöner Zwischenstopp auf dem Weg zum Strand.",
-        "fr": "L'ancienne gare Jaffa–Jérusalem de 1892, restaurée, entre Neve Tzedek et la mer : boutiques, cafés, marchés sur les quais et de l'espace pour les enfants. Une halte agréable sur le chemin de la plage.",
+        "en": "The restored 1892 Jaffa-Jerusalem railway station, between Neve Tzedek and the sea: shops, cafés, markets on the platforms and space for kids to run. Nice stop on the way to the beach.",
+        "de": "Der restaurierte Bahnhof der Strecke Jaffa-Jerusalem von 1892, zwischen Neve Tzedek und dem Meer: Läden, Cafés, Märkte auf den Bahnsteigen und Platz für Kinder zum Toben. Schöner Zwischenstopp auf dem Weg zum Strand.",
+        "fr": "L'ancienne gare Jaffa-Jérusalem de 1892, restaurée, entre Neve Tzedek et la mer : boutiques, cafés, marchés sur les quais et de l'espace pour les enfants. Une halte agréable sur le chemin de la plage.",
         "he": "תחנת הרכבת יפו-ירושלים מ-1892, משוחזרת, בין נווה צדק לים: חנויות, בתי קפה, שווקים על הרציפים ומקום לילדים לרוץ. עצירה נחמדה בדרך לים."
       },
       "image": "assets/img/places/hatachana.webp",
