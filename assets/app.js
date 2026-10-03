@@ -34,7 +34,7 @@
       welcome_name: n => `Welcome home, ${n}`, name_prompt: "Your first name", name_save: "Save", name_change: "Not you?",
       stay_label: "Showing events from today until your check-out:", stay_label_none: "Showing events from today. Enter your check-out date to narrow the list:",
       updated: d => `Updated ${d}`,
-      during_stay: "during your stay", new_opening: "New", ongoing: "Ongoing",
+      during_stay: "during your stay", tip: "Worth a visit", new_opening: "New", ongoing: "Ongoing",
       empty: "Nothing listed for your dates in this category yet - check another tab.",
       loading: "Loading…", unavailable: "This week's listings are being refreshed. Please check back soon.",
       more: "Details", copy: "Copy", copied: "Copied", source: "via",
@@ -64,7 +64,7 @@
       welcome_name: n => `Willkommen zu Hause, ${n}`, name_prompt: "Ihr Vorname", name_save: "Speichern", name_change: "Nicht Sie?",
       stay_label: "Events von heute bis zu Ihrem Check-out:", stay_label_none: "Events ab heute. Check-out-Datum eingeben, um die Liste einzugrenzen:",
       updated: d => `Aktualisiert am ${d}`,
-      during_stay: "während Ihres Aufenthalts", new_opening: "Neu", ongoing: "Laufend",
+      during_stay: "während Ihres Aufenthalts", tip: "Einen Besuch wert", new_opening: "Neu", ongoing: "Laufend",
       empty: "Für Ihre Daten gibt es in dieser Kategorie noch nichts - schauen Sie in einen anderen Reiter.",
       loading: "Wird geladen…", unavailable: "Die Tipps dieser Woche werden gerade aktualisiert. Bitte später erneut vorbeischauen.",
       more: "Details", copy: "Kopieren", copied: "Kopiert", source: "via",
@@ -94,7 +94,7 @@
       welcome_name: n => `Bienvenue chez vous, ${n}`, name_prompt: "Votre prénom", name_save: "Enregistrer", name_change: "Ce n'est pas vous ?",
       stay_label: "Événements d'aujourd'hui jusqu'à votre départ :", stay_label_none: "Événements à partir d'aujourd'hui. Indiquez votre date de départ pour affiner la liste :",
       updated: d => `Mis à jour le ${d}`,
-      during_stay: "pendant votre séjour", new_opening: "Nouveau", ongoing: "En cours",
+      during_stay: "pendant votre séjour", tip: "À découvrir", new_opening: "Nouveau", ongoing: "En cours",
       empty: "Rien pour vos dates dans cette catégorie pour l'instant - essayez un autre onglet.",
       loading: "Chargement…", unavailable: "Les sorties de la semaine sont en cours de mise à jour. Revenez bientôt.",
       more: "Détails", copy: "Copier", copied: "Copié", source: "via",
@@ -124,7 +124,7 @@
       welcome_name: n => `ברוכים הבאים הביתה, ${n}`, name_prompt: "השם שלכם", name_save: "שמירה", name_change: "לא אתם?",
       stay_label: "אירועים מהיום ועד הצ'ק-אאוט שלכם:", stay_label_none: "אירועים מהיום. הזינו תאריך צ'ק-אאוט כדי לצמצם את הרשימה:",
       updated: d => `עודכן ${d}`,
-      during_stay: "במהלך השהות", new_opening: "חדש", ongoing: "מתמשך",
+      during_stay: "במהלך השהות", tip: "שווה ביקור", new_opening: "חדש", ongoing: "מתמשך",
       empty: "עדיין אין פריטים לתאריכים שלכם בקטגוריה הזו - נסו לשונית אחרת.",
       loading: "טוען…", unavailable: "רשימת השבוע מתעדכנת כרגע. בדקו שוב בקרוב.",
       more: "פרטים", copy: "העתקה", copied: "הועתק", source: "מתוך",
@@ -581,7 +581,7 @@
 
     for (const it of items) {
       let when;
-      if (!it.date_start) when = it.category === "food" ? t("new_opening") : t("ongoing");
+      if (!it.date_start) when = it.is_new ? t("new_opening") : (it.category === "food" ? t("tip") : t("ongoing"));
       else if (it.date_end && it.date_end !== it.date_start)
         when = `${fmtDate(it.date_start < today ? today : it.date_start, { day: "numeric", month: "short" })} – ${fmtDate(it.date_end, { day: "numeric", month: "short" })}`;
       else when = fmtDate(it.date_start, { weekday: "short", day: "numeric", month: "short" });

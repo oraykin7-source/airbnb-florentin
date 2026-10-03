@@ -40,7 +40,7 @@ Collect, per category, the 6-10 best picks for a visitor staying in Florentin:
 
 | category | what |
 |---|---|
-| `food` | new or notable restaurants, bars with food, food markets and food events. New openings may have no date. |
+| `food` | new or notable restaurants, bars with food, food markets and food events. A place with no date is shown as "Worth a visit"; add `"is_new": true` ONLY if the source says it opened in the last 3 months (then the page shows "New"). |
 | `culture` | exhibitions, festivals, concerts, tours, markets and city events. |
 | `nightlife` | parties, club nights, live music and bar events. |
 
