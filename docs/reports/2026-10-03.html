@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>דוח שינויים ומצב פרויקט · מדריך האורחים פלורנטין · 3.10.2026</title>
+<style>
+  :root{--ink:#1e293b;--ink2:#334155;--muted:#475569;--soft:#64748b;--line:#e2e8f0;--page:#f7f8fa;--card:#ffffff;--green:#166534;--green-mid:#16a34a;--green-50:#f0fdf4;--green-100:#dcfce7;--amber:#92400e;--amber-50:#fffbeb;--amber-100:#fef3c7;--red:#b91c1c;--red-50:#fef2f2;--red-100:#fee2e2;--navy:#0f172a;--r:14px;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--page);color:var(--ink);font-family:"Segoe UI","Arial Hebrew",Arial,sans-serif;line-height:1.65;padding:28px 18px 60px;}
+  .wrap{max-width:940px;margin:0 auto;}
+  .hero{background:var(--navy);color:#fff;border-radius:var(--r);padding:30px 28px 26px;text-align:center;margin-bottom:30px;}
+  .hero h1{font-size:27px;font-weight:800;letter-spacing:-.3px;} .hero h1 .accent{color:#4ade80;}
+  .hero .sub{margin-top:8px;font-size:13px;color:#94a3b8;}
+  .pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:18px;}
+  .pill{border:1px solid #334155;border-radius:999px;padding:6px 14px;font-size:12px;color:#cbd5e1;} .pill b{color:#4ade80;font-weight:700;} .pill.warn b{color:#fbbf24;} .pill.bad b{color:#f87171;}
+  h2{font-size:17px;font-weight:800;color:var(--green);margin:30px 0 13px;display:flex;align-items:center;gap:9px;}
+  h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--green-mid);flex:none;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:19px 21px;margin-bottom:13px;}
+  .card h3{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:9px;display:flex;flex-wrap:wrap;align-items:center;gap:9px;}
+  .card p{font-size:13.5px;color:var(--ink2);margin-bottom:9px;} .card p:last-child{margin-bottom:0;}
+  .card ul{margin:0 18px 9px 0;font-size:13.5px;color:var(--ink2);} .card li{margin-bottom:5px;}
+  .tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 11px;white-space:nowrap;}
+  .ok{background:var(--green-100);color:var(--green);} .wait{background:var(--amber-100);color:var(--amber);} .stop{background:var(--red-100);color:var(--red);}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;background:#f1f5f9;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px;direction:ltr;display:inline-block;}
+  .src{font-size:11.5px;color:var(--soft);border-top:1px solid var(--line);padding-top:9px;margin-top:12px;}
+  .lead{background:var(--green-50);border:1px solid var(--green-100);border-radius:var(--r);padding:19px 21px;font-size:14px;color:var(--ink2);margin-bottom:8px;}
+  .alert{background:var(--red-50);border-color:var(--red-100);} .note{background:var(--amber-50);border-color:var(--amber-100);}
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:13px;}
+  th{background:var(--green);color:#fff;font-weight:700;text-align:right;padding:8px 11px;} th:first-child{border-radius:0 8px 0 0;} th:last-child{border-radius:8px 0 0 0;}
+  td{padding:8px 11px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top;} tr:nth-child(even) td{background:#fafbfc;}
+  .foot{text-align:center;font-size:12px;color:var(--soft);margin-top:34px;padding-top:16px;border-top:1px solid var(--line);}
+  @media print{body{background:#fff;padding:0;} .card,.lead{break-inside:avoid;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>דוח שינויים ומצב פרויקט <span class="accent">·</span> מדריך האורחים פלורנטין</h1>
+    <div class="sub">האתר החי https://stayflorentin.com + מודעת Airbnb 5202090 · נכון ל-3.10.2026, 12:30 · ענף main</div>
+    <div class="pills">
+      <span class="pill"><b>27</b> קומיטים מאתמול בלילה · HEAD <b>e3fc516</b></span>
+      <span class="pill"><b>v=20261003h</b> גרסת האתר</span>
+      <span class="pill"><b>4</b> רוטינות (3 בענן, 1 במק)</span>
+      <span class="pill warn"><b>7</b> משימות פתוחות למחר</span>
+      <span class="pill warn"><b>1</b> Airlalo: נדחה</span>
+    </div>
+  </div>
+
+  <h2>תקציר</h2>
+  <div class="lead">
+    יום של עיצוב והחלטות. השוואה מול Base44 (בנה גרסה של המדריך ב-10 דקות) הובילה למועצה, לסקירת מומחה האתר ולמחקר מתחרים, ואז לשאלון של 12 החלטות שאורן ענה עליו. <b>האתר עבר לעיצוב חם</b> (קלף + טרקוטה), אריחי "השעה הראשונה" הוחלפו לתמונות מגונרטות שנכונות למכשירים (שתיים מהן מצילומים של אורן), הסיורים, המקומות ו"השבוע" קיבלו פריסה קומפקטית, כרטיסי הדירה הפכו לריבועים זוגות-זוגות, ונוספו תיבות סימון לצ'ק-אאוט, כרטיס "הכל בסדר?", אייקון למסך הבית ומפה אחת לכל המקומות. <b>תשתית:</b> סוכן הודעות אורחים בענן (טיוטה בג'ימייל + push), סקיל כללי Airbnb עם ביקורת מלאה, שלוש משימות במק אוחדו לאחת, מאגר פרטי חדש למוצר למארחים. <b>נמדד:</b> 8 אפליקציות נמחקו ב-Base44 לפינוי מקום; app.js נבדק תחבירית לפני כל commit (אחרי שסוגר מיותר כמעט הפיל את האתר, נתפס לפני הדחיפה).
+  </div>
+
+  <h2>מה בוצע היום</h2>
+  <div class="card"><h3>עיצוב חם + החלטות השאלון <span class="tag ok">✓ באוויר</span></h3>
+    <p><b>השורש:</b> Base44 הראה שהמראה שלנו כבד וכחול; המועצה ומומחה האתר הסכימו לאמץ את הסטייל ולסרב לתוכן מומצא.</p>
+    <p><b>מה שונה:</b> פלטה חמה, Plus Jakarta Sans לכותרות, טרקוטה כהה לטקסט (ניגודיות 5+), וואטסאפ ירוק, סרגל לשוניות צף כגלולה, סיורים 2 גדולים + 3 שורות, מקומות 2 עמודות עם שתי שורות ו"עוד" + תג סיור + "כל המקומות על מפה אחת", "השבוע" שורות קומפקטיות (רוטינה: משפט ≤110 תווים), צ'ק-אאוט עם תיבות סימון, כרטיס "הכל בסדר?" (יום אחרי הפתיחה הראשונה עד הצ'ק-אאוט), manifest + אייקון, כרטיסי הדירה כריבועים 2 בשורה (חירום תמיד ברוחב מלא).</p>
+    <p><b>נדחה:</b> מקומות כאריחים קטנים עם חלונית (המועצה 3 מול 2: אורח לא ילחץ על אריח "לוינסקי"; גם סיכון כפתור "חזור" באנדרואיד).</p>
+    <div class="src">style.css בלוקים "Warm theme (3.10)" ו-"3.10 afternoon/evening"; app.js renderPlaces/renderTours/renderChrome; docs/council-design-2026-10-03.md; docs/competitor-guides-2026-10-03.md</div></div>
+  <div class="card"><h3>אריחי השעה הראשונה: תמונות נכונות <span class="tag ok">✓ באוויר</span></h3>
+    <p><b>הכלל (מועצה):</b> כל מה שאורח צריך למצוא או להפעיל – צילום אמיתי; תמונה מגונרטת רק לקישוט או לחפץ כללי.</p>
+    <p><b>בפועל:</b> אריח "מים חמים" = מקלחת חמה עם אדים (קישוט), בכרטיס – צילום המתג הבודד העליון עם הנורה דולקת ועיגול. בר מים = Tami4 שנוצר מצילום של אורן. מזגן = עילי עם שלט (מחר לייצר תואם לדגם החדש). טלוויזיה = מגונרט. 5–25KB כל אחד. קבצים: assets/img/first-hour/{shower,water-bar-2,ac,tv}.webp.</p>
+    <div class="src">נוצרו באפליקציית Base44 של אורן (app 6ac0b272…); הורדו דרך media.base44.com</div></div>
+  <div class="card"><h3>סוכן הודעות אורחים (ענן) <span class="tag ok">✓ פעיל</span></h3>
+    <p>Routine "Florentin guide - guest messages" (trig_01P3ojj7rJcBgwnRUZ1zGAD8), כל שעה 7:00–23:00: הודעה חדשה מאורח במייל Airbnb → טיוטה בג'ימייל (לא נשלחת) + push לטלפון רק כשיש טיוטה. עובד לפי <code>agent/guest-replies.md</code> (עובדות, טון, "אסור"). נבדק על ההודעה של Laurence: טיוטה נוצרה, תווית claude-drafted, push התקבל. הודעות תודה בלי שאלה – בלי טיוטה.</p>
+    <div class="src">Gmail היה מנותק בצד גוגל (אושר מחדש ע"י אורן 3.10 בבוקר). המשימה המקומית florentin-guest-inbox נמחקה.</div></div>
+  <div class="card"><h3>סקיל כללי Airbnb + ביקורת <span class="tag ok">✓</span></h3>
+    <p>ספר כללים (25 מאמרים, ציטוטים, אומת 3.10) ב-<code>.claude/skills/airbnb-rules/</code>. ביקורת מלאה: תוקנו כרטיס "חמישה כוכבים" (הכוונת דירוג) וכלל האורח הנוסף; המזגן באמניטיז שונה ל-split; נוסף גילוי על מצלמת הניווט של הרובוט; הקוד נמחק מהודעת "חדר בפלורנטין"; הודעת Welcome: Airbnb מציגה את הוראות הצ'ק-אין 48 שעות לפני, אורן שולח רק את הקוד. שורת הסיורים ב-Welcome נשארת (החלטת אורן). רענון רבעוני בתוך הבדיקה השבועית.</p></div>
+  <div class="card"><h3>תשתית ואוטומציה <span class="tag ok">✓</span></h3>
+    <ul><li>3 משימות במק אוחדו ל-<code>florentin-weekly-check</code> (ראשון 9:00): האפי האוור תמיד; שותפים בראשון הראשון בחודש; כללי Airbnb + רענון מחקר מתחרים בראשון הראשון ברבעון. כתיבה ל-<code>data/checks.json</code>, וואטסאפ לאורן לעצמו רק בשינוי.</li>
+      <li><code>validate.py house</code> מריץ גם <code>node --check app.js</code>. תג <code>v-before-council-3.10</code> לחזרה.</li>
+      <li>ROUTINE.md: אירוע שבועי חוזר = פריט אחד בתאריך הבא, בלי טווח (נחלת בנימין ג'+ו', ימי רביעי ביפו). תוקן ידנית גם ב-weekly.json הנוכחי.</li>
+      <li>מומחה האתר חייב לקרוא את <code>docs/competitor-guides-*.md</code> ולמדוד ניגודיות/משקל/RTL.</li>
+      <li>מאגר פרטי <code>oraykin7-source/guide-for-hosts</code> עם העתק הבסיס (ללא סודות) למוצר למארחים; CLAUDE.md שם מגדיר את היעד (3,000 ₪+/חודש).</li></ul></div>
+
+  <h2>ממצאים חדשים</h2>
+  <div class="card"><ul>
+    <li><b>Airalo דחו</b> את בקשת השותפות (3.10 03:23). קוד הפניה OREN3315 (3$ לאורח, 3$ לאורן) נוסף לשורת הטלפון במדריך, לא בהודעות Airbnb.</li>
+    <li>Gmail: גוגל ביטלה את האישור; הוגדר מחדש. ייתכן שיקרה שוב אחרי התראות אבטחה.</li>
+    <li>בטלפון במצב כהה: תג זמן ההליכה היה לבן על לבן (תוקן), ושורות קומפקטיות הסתירו טקסט ב-RTL (תוקן: margin שלילי של התמונה).</li>
+    <li>מטמון: החלפת תמונה באותו שם קובץ לא נראית בטלפון עד 10 דק'. מעכשיו שם קובץ חדש לכל תמונה חדשה.</li>
+    <li>Base44 במגבלת 5 אפליקציות: אורן מחק 8; נשארו המלון ועוד 2.</li></ul></div>
+
+  <h2>החלטות שהתקבלו</h2>
+  <div class="card"><table><tr><th>נושא</th><th>הכרעה</th><th>נימוק</th></tr>
+    <tr><td>תמונות מכשירים</td><td>מגונרטות באריח, אמיתיות בכרטיס</td><td>אורח ב-23:00 חייב לזהות את המכשיר שלו; האריח רק מזמין</td></tr>
+    <tr><td>מקומות</td><td>2 עמודות עם טקסט, לא אריחים</td><td>הטקסט בגוף ראשון הוא המוצר; אריח "לוינסקי" לא אומר כלום</td></tr>
+    <tr><td>ליסטינג</td><td>נשאר אורח אחד</td><td>אורח נוסף רק דרך שינוי הזמנה ב-Airbnb (103 ₪ מוגדרים)</td></tr>
+    <tr><td>שורת סיורים ב-Welcome</td><td>נשארת</td><td>אזור אפור, סיכון קטן; אורן החליט</td></tr>
+    <tr><td>שרת משלנו</td><td>לא עכשיו</td><td>הענן של Claude מכסה; שרת רק אם בדיקה כל שעה לא תספיק</td></tr>
+    <tr><td>מוצר למארחים</td><td>פרויקט נפרד ופרטי</td><td>סודות וקוד בנפרד; מחקר ומועצה לפני בניה</td></tr></table></div>
+
+  <h2>⛔ משימות למחר (ראשון 4.10)</h2>
+  <div class="card"><table><tr><th>#</th><th>משימה</th><th>למה בסדר הזה</th></tr>
+    <tr><td>1</td><td>לבדוק את ריצת האירועים של מוצ"ש (19:00): אירועים שבועיים בתאריך הבא, תיאורים ≤110, HAPPY HOUR ב-checks.json</td><td>הכלל החדש ברוטינה רץ לראשונה; אם נכשל – weekly.json ישן נשאר</td></tr>
+    <tr><td>2</td><td>08:00 טכנאי טורנדו: אחרי ההתקנה לצלם את השלט החדש → לעדכן כרטיס מזגן + לייצר אריח מזגן תואם ב-Base44</td><td>כרטיס המזגן יהיה שגוי מרגע ההתקנה</td></tr>
+    <tr><td>3</td><td>לבדוק את הבדיקה השבועית הראשונה (ראשון 9:00) ואת ה-push של סוכן ההודעות</td><td>אוטומציות חדשות, יום ראשון להרצה</td></tr>
+    <tr><td>4</td><td>אופליין (service worker) + בדיקה שגרסה חדשה מתרעננת</td><td>אושר בשאלון; אחרי שהעיצוב התייצב</td></tr>
+    <tr><td>5</td><td>Guidebook ב-Airbnb: 13 המקומות, בלי קישורי שותפים (אני מקליד בכרום)</td><td>אושר; מעלה אמון לפני ההזמנה</td></tr>
+    <tr><td>6</td><td>16:15 שיחה עם דור (גרפיטיול); אחרי כן לרשום את ההסכם ב-TODO 15</td><td>ביומן</td></tr>
+    <tr><td>7</td><td>בדיקה עם בן אדם אמיתי בשמש ("תדליק מים חמים", "תמצא ארוחת ערב") לפני 28.10</td><td>המועצה: ואז להקפיא עיצוב</td></tr></table>
+    <p style="margin-top:10px"><b>לא הוחלט:</b> סרטונים קצרים למכשירים. <b>ממתין לאורן:</b> הדבקת הנוסח החדש בכללי הבית הנוספים ב-Airbnb ("Only the guest on the booking may stay overnight…"); לוודא שצפייה מרחוק ברובוט כבויה.</p></div>
+  <div class="card"><h3>מה שחייב לקרות בכל צעד</h3><ul>
+    <li><code>python3 agent/validate.py house</code> (כולל בדיקת תחביר ל-app.js) לפני commit; לקדם <code>?v=</code> אחרי CSS/JS; שם קובץ חדש לכל תמונה שמוחלפת.</li>
+    <li><code>git pull --rebase</code> לפני push; לחכות ל-"Deploy site"; לבדוק בטלפון במצב כהה ובעברית.</li>
+    <li>סודות לא בריפו ולא בצ'אט; קוד דלת רק אורן; קישורי שותפים רק באתר, לא בהודעות Airbnb.</li></ul></div>
+  <div class="card"><h3>מה שצריך לדעת כדי להמשיך</h3><ul>
+    <li>פרויקט: <code>/Users/orayin/Documents/Projects/airbnb-florentin</code>, main, HEAD e3fc516. STATUS.md סעיפי 3.10. TODO סעיפים 22–23.</li>
+    <li>רוטינות ענן: אירועים (שבת 16:06 UTC), צ'ק-אאוט לילי, הודעות אורחים (trig_01P3ojj7rJcBgwnRUZ1zGAD8). מק: florentin-weekly-check.</li>
+    <li>Base44: אפליקציה "Oren's Florentin Stay" (6ac0b272fc070e1a5412d0e9) משמשת רק לייצור תמונות; preview--oren-florentin-stay.base44.app.</li>
+    <li>מוצר למארחים: <code>../guide-for-hosts</code> (פרטי). פרויקט הדירה נשאר כאן.</li></ul></div>
+
+  <h2>פתוח וממתין לגורם חיצוני</h2>
+  <div class="card"><ul>
+    <li>מוכר השלטים – מעקב 10.10 (Golden Week). Bein Harim – מייל ישיר אם אין תשובה עד 6.10. יאללה באסטה – קוד.</li>
+    <li>טכנאי מנעול 12.10 12:00–15:00 (שאלות ב-TODO 17).</li>
+    <li>אורחים: Patrice 28.10 (הראשון עם המדריך החדש), Laurence 5–10.11, Jenni 15.12, Ale 26.1.</li></ul></div>
+
+  <div class="foot">דוח זה אינו חוות דעת משפטית · נוצר 3.10.2026 12:30</div>
+</div>
+</body>
+</html>
