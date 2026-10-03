@@ -652,3 +652,7 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .ev:not(.tour) { min-height: 84px; overflow: hidden; }
 .ev:not(.tour) .ev-media { position: relative; aspect-ratio: auto; min-height: 84px; }
 .ev:not(.tour) .ev-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* compact rows: cancel the negative photo margins of the big card */
+.ev.tour.tour-row .ev-media, .ev:not(.tour) .ev-media { margin: 0; }
+.ev:not(.tour) { padding: 0; }
+.ev:not(.tour) .ev-media.ph { display: grid; }
