@@ -22,7 +22,7 @@
       fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
-      gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
+      eat_more: n => `${n} more places`, eat_less: "Show fewer", gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A cozy room in Florentin", brand_short: "Cozy room", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
@@ -53,7 +53,7 @@
       fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
-      gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
+      eat_more: n => `${n} weitere Orte`, eat_less: "Weniger anzeigen", gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein gemütliches Zimmer in Florentin", brand_short: "Gemütliches Zimmer", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
@@ -84,7 +84,7 @@
       fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
-      gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
+      eat_more: n => `${n} autres adresses`, eat_less: "Voir moins", gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre cosy à Florentin", brand_short: "Chambre cosy", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
@@ -115,7 +115,7 @@
       fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
-      gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
+      eat_more: n => `עוד ${n} מקומות`, eat_less: "הצג פחות", gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר נעים בפלורנטין", brand_short: "חדר נעים", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
@@ -204,6 +204,7 @@
   const el = (tag, attrs = {}, ...kids) => {
     const n = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
+      if (v == null) continue;   // null/undefined attribute = not set (a null "hidden" must not hide the node)
       if (k === "class") n.className = v;
       else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
       else n.setAttribute(k, v);
@@ -515,8 +516,9 @@
     document.getElementById("eat-lead").textContent = L_(c.sub);
     for (const lst of c.lists || []) {
       box.append(el("h3", { class: "group-title eat-group" }, el("span", { class: "dot", "aria-hidden": "true" }), L_(lst.title)));
-      for (const r of lst.rows) {
-        box.append(el("article", { class: "place eat" },
+      const SHOW = 4, extra = [];
+      lst.rows.forEach((r, i) => {
+        const card = el("article", { class: "place eat" + (i >= SHOW ? " eat-extra" : ""), hidden: i >= SHOW ? "" : null },
           r.image ? el("a", { class: "place-media", href: r.url, target: "_blank", rel: "noopener", "aria-label": r.name },
             el("img", { src: r.image, alt: r.name, loading: "lazy", onerror: e => e.target.closest(".place-media").remove() }),
             r.shabbat === true ? el("span", { class: "walk" }, t("open_sat")) : null) : null,
@@ -524,11 +526,16 @@
             el("h3", {}, r.name),
             el("p", { class: "muted small" }, `${r.where} · ${hoursText(r.hours)}`),
             r.note ? el("p", { class: "place-text open" }, L_(r.note)) : null,
-            // CC BY needs the full credit visible; it wraps instead of being clipped (designer review 3.10, item 2)
-            r.image_credit ? el("a", { class: "credit-full", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : null,
+            // Same footer as the place cards: compact Map pill + short "Photo ↗" credit link (designer round 2, item 3)
             el("div", { class: "place-foot" },
-              el("span", {}),
-              el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));
+              el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + r.name }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
+              r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${r.image_credit}` }, t("photo") + (state.lang === "he" ? " ↖" : " ↗")) : null)));
+        box.append(card); if (i >= SHOW) extra.push(card);
+      });
+      if (extra.length) {
+        const btn = el("button", { class: "more-btn eat-more", type: "button", "aria-expanded": "false",
+          onclick: () => { const open = btn.getAttribute("aria-expanded") !== "true"; extra.forEach(c => { c.hidden = !open; }); btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? t("eat_less") : t("eat_more")(extra.length); } }, t("eat_more")(extra.length));
+        box.append(btn);
       }
     }
   }
