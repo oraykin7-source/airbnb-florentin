@@ -476,3 +476,96 @@ a, button, summary, .tile { -webkit-tap-highlight-color: transparent; }
 /* Check-out reminder under the greeting (evening before + the day itself) */
 a.stay { text-decoration: none; min-height: 36px; display: inline-flex; align-items: center; }
 a.stay[hidden] { display: none; }
+
+/* ===== Warm theme (3.10): parchment + terracotta, softer type, lighter cards, 2-column places ===== */
+:root {
+  --bg: #f7f3ee; --surface: #fffdfa; --ink: #2a241f; --muted: #7c7169; --line: #ece5dc;
+  --accent: #c9704b; --accent-ink: #ffffff; --accent-soft: #f6e6dc; --chip: #f1ebe3;
+  --happy: #f3cf82; --happy-ink: #2a241f; --danger: #b8402f; --danger-soft: #fbe9e5; --danger-fill: #c84b38;
+  --ring: rgba(42,36,31,.06);
+  --shadow: 0 1px 2px rgba(42,36,31,.04), 0 8px 24px -14px rgba(120,80,50,.18);
+  --shadow-hi: 0 2px 4px rgba(42,36,31,.05), 0 16px 36px -16px rgba(120,80,50,.26);
+  --radius: 22px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1c1915; --surface: #26221d; --ink: #f4ede5; --muted: #b3a79b; --line: #3a342d;
+    --accent: #e08a62; --accent-ink: #1c1915; --accent-soft: #3d2d24; --chip: #302a24;
+    --happy: #e9c272; --happy-ink: #1c1915; --danger: #ff9d8c; --danger-soft: #3d2622; --danger-fill: #e0604a;
+    --ring: rgba(255,255,255,.06);
+    --shadow: 0 10px 26px -16px rgba(0,0,0,.7); --shadow-hi: 0 18px 40px -18px rgba(0,0,0,.85);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1c1915; --surface: #26221d; --ink: #f4ede5; --muted: #b3a79b; --line: #3a342d;
+  --accent: #e08a62; --accent-ink: #1c1915; --accent-soft: #3d2d24; --chip: #302a24;
+  --happy: #e9c272; --happy-ink: #1c1915; --danger: #ff9d8c; --danger-soft: #3d2622; --danger-fill: #e0604a;
+  --ring: rgba(255,255,255,.06);
+  --shadow: 0 10px 26px -16px rgba(0,0,0,.7); --shadow-hi: 0 18px 40px -18px rgba(0,0,0,.85);
+}
+body { font-family: Inter, Heebo, system-ui, sans-serif; }
+h1, h2, h3, .tile-txt strong, .brand-short, .block > h2, .week-head h2 { font-family: "Plus Jakarta Sans", Manrope, Heebo, sans-serif; font-weight: 700; letter-spacing: -.02em; }
+.hero h1 { font-weight: 800; }
+.card h3, .place-body h3, .ev h3 { font-family: "Plus Jakarta Sans", Manrope, Heebo, sans-serif; font-weight: 700; letter-spacing: -.01em; }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .card h3, [dir="rtl"] .place-body h3, [dir="rtl"] .ev h3, [dir="rtl"] .tile-txt strong { font-family: Heebo, system-ui, sans-serif; letter-spacing: 0; }
+.block > h2, .week-head h2 { font-size: 1.6rem; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 700; }
+[dir="rtl"] .eyebrow { letter-spacing: 0; font-size: .95rem; text-transform: none; }
+.hero::after, #places::before { display: none; }
+.top { border-bottom: 0; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.wordmark { --wm-plate: var(--accent-soft); --wm-script: var(--accent); }
+.lang button[aria-checked="true"] { background: var(--accent); color: var(--accent-ink); }
+
+/* Apartment cards: icon in a soft tinted square, more air */
+.card { border-radius: var(--radius); }
+.card summary { padding: 18px 18px; gap: 14px; }
+.card .ico { background: var(--accent-soft); color: var(--accent); border-radius: 16px; width: 54px; height: 54px; font-size: 24px; }
+.card .thumb { border-radius: 16px; width: 54px; height: 54px; }
+.card .chev { background: transparent; color: var(--muted); }
+.card.emergency .ico { background: var(--danger-soft); color: var(--danger); }
+.card .body { border-top: 1px solid var(--line); padding: 6px 20px 22px; }
+.group-title { color: var(--accent); }
+.group-title .dot { background: var(--accent); }
+
+/* First-hour tiles: squarer, softer gradient */
+.strip { grid-auto-columns: 62%; gap: 12px; }
+.tile { aspect-ratio: 1 / 1.05; border-radius: 22px; }
+.tile-txt { padding: 60px 14px 16px; background: linear-gradient(to top, rgba(30,20,12,.88) 0%, rgba(30,20,12,.45) 55%, rgba(30,20,12,0) 100%); }
+
+/* Tours: full-width photo cards with a big terracotta Book button */
+.ev.tour { border-radius: var(--radius); }
+.ev.tour .ev-media { aspect-ratio: 16 / 10; }
+.ev.tour .foot-row { display: block; margin-top: 14px; }
+.ev.tour .book { display: flex; justify-content: center; width: 100%; padding: 13px 16px; border-radius: 14px; font-size: 1.02rem; box-shadow: 0 6px 16px -8px rgba(201,112,75,.6); }
+.ev.tour .foot-row .credit-link, .ev.tour .foot-row > span { display: block; margin-top: 8px; text-align: center; }
+.more-tours { text-align: center; border-radius: 14px; }
+
+/* Places: two columns on the phone, walk time as a pill on the photo, round map button */
+.places { grid-template-columns: 1fr 1fr; gap: 12px; }
+.place { border-radius: 20px; }
+.place-media { aspect-ratio: 1 / 1; }
+.place-media .walk { inset-inline-start: auto; inset-inline-end: 10px; top: 10px; bottom: auto; background: rgba(255,253,250,.92); color: var(--ink); font-size: .74rem; padding: 5px 9px; backdrop-filter: blur(6px); }
+.place-body { padding: 12px 14px 14px; gap: 4px; }
+.place-body h3 { font-size: 1rem; line-height: 1.25; }
+.place-body p { font-size: .9rem; line-height: 1.45; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.place-foot { flex-wrap: wrap; gap: 8px; padding-top: 10px; align-items: center; }
+.map-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); font-size: .85rem; }
+.place-tour { font-size: .85rem; padding: 7px 10px; margin: 0 0 6px; }
+.credit-link { font-size: .68rem; }
+@media (max-width: 360px) { .places { grid-template-columns: 1fr; } .place-media { aspect-ratio: 16 / 10; } }
+
+/* This week: lighter rows, photo when there is one */
+.ev { border-radius: var(--radius); }
+.ev .when { color: var(--accent); }
+.ev-media.ph { background: var(--accent-soft); color: var(--accent); }
+
+/* Tab bar */
+.tabbar { background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-top: 1px solid var(--line); box-shadow: 0 -8px 24px rgba(42,36,31,.05); }
+.tabbar a[aria-current="true"] { color: var(--accent); }
+.tabbar a[aria-current="true"] svg { background: var(--accent-soft); }
+
+/* Buttons */
+.qbtn { border-radius: 14px; }
+.qbtn-wa, .qbtn.primary { background: var(--accent); color: var(--accent-ink); }
+.qbtn-sos { border-color: var(--danger-fill); color: var(--danger); background: var(--surface); }
+.tel a { border-radius: 14px; }
