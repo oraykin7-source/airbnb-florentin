@@ -1189,6 +1189,118 @@
       "lists": [
         {
           "title": {
+            "en": "Coffee & cafés",
+            "de": "Kaffee & Cafés",
+            "fr": "Café & cafés",
+            "he": "קפה ובתי קפה"
+          },
+          "rows": [
+            {
+              "name": "Café Levinsky 41",
+              "where": "Levinski St 41",
+              "hours": "6:30-19:00, Fri until 17:00, closed Sat",
+              "note": {
+                "en": "Benny Briga's tiny gazoz bar: soda with fruit syrup, herbs and flowers. No menu, just ask - 3 min",
+                "de": "Benny Brigas winzige Gazoz-Bar: Sprudel mit Fruchtsirup, Kräutern, Blüten. Keine Karte, fragen - 3 Min.",
+                "fr": "le minuscule bar à gazoz de Benny Briga : soda, sirop de fruits, herbes, fleurs. Sans carte - 3 min",
+                "he": "הגזוז של בני בריגה: סודה עם סירופ פירות, עשבי תיבול ופרחים. אין תפריט, פשוט מבקשים - 3 דקות"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Levinsky+41+Levinski+St+41+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/levinsky41-w.webp",
+              "image_credit": "Silar, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:02015_Kalte_Getr%C3%A4nke%2C_am_Fest_Mari%C3%A4_Himmelfahrt%2C_Krakau_0568.JPG",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": false
+            },
+            {
+              "name": "Tony & Esther",
+              "where": "Levinski St 39",
+              "hours": "7:30-20:00, Fri until 18:00, closed Sat",
+              "note": {
+                "en": "the market's café: coffee and pastries in the morning, lunch later, tables on the street - 3 min",
+                "de": "das Café des Markts: morgens Kaffee und Gebäck, später Mittagessen, Tische auf der Straße - 3 Min.",
+                "fr": "le café du marché : café et viennoiseries le matin, déjeuner ensuite, tables dans la rue - 3 min",
+                "he": "הקפה של השוק: קפה ומאפים בבוקר, צהריים אחר כך, שולחנות על הרחוב - 3 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Tony+%26+Esther+Levinski+St+39+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/tonyesther-w.webp",
+              "image_credit": "Andy Li, CC0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Coffee_Caramel_Croissant%2C_Nutella_Cookie%2C_Flat_White%2C_Latte_-_Bee_May_Bakery_2026-09-29.jpg",
+              "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "shabbat": false
+            },
+            {
+              "name": "p.o.c café",
+              "where": "Kfar Giladi St 48",
+              "hours": "7:00-20:00, Fri until 19:00",
+              "note": {
+                "en": "Florentin's neighbourhood café - good coffee, homemade pastries and sandwiches, dogs welcome - 7 min",
+                "de": "das Nachbarschaftscafé von Florentin - guter Kaffee, hausgemachtes Gebäck, Sandwiches, Hunde ok - 7 Min.",
+                "fr": "le café de quartier de Florentin - bon café, pâtisseries maison, sandwichs, chiens bienvenus - 7 min",
+                "he": "הקפה השכונתי של פלורנטין - קפה טוב, מאפים ביתיים וסנדוויצ'ים, כלבים מוזמנים - 7 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=p.o.c+caf%C3%A9+Kfar+Giladi+St+48+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/poc-w.webp",
+              "image_credit": "Jonathan McIntosh, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Cappuccino_%28birds_eye%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": true
+            },
+            {
+              "name": "Kiosko",
+              "where": "Frenkel St 31",
+              "hours": "7:00-22:00, Fri until 17:00, closed Sat",
+              "note": {
+                "en": "relaxed Florentin coffee shop - iced coffee, salads, laptop-friendly, you'll find a seat - 7 min",
+                "de": "entspanntes Café in Florentin - Eiskaffee, Salate, laptopfreundlich, man findet einen Platz - 7 Min.",
+                "fr": "café décontracté de Florentin - café glacé, salades, ordinateur bienvenu, il y a toujours une place - 7 min",
+                "he": "בית קפה רגוע בפלורנטין - קפה קר, סלטים, ידידותי ללפטופ, תמיד יש מקום לשבת - 7 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Kiosko+Frenkel+St+31+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/kiosko-w.webp",
+              "image_credit": "Tony Webster, CC BY 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Iced_Coffee_in_Glass_-_Sunshine_Coffee_-_Laramie_Cafe_%2853838344552%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+              "shabbat": false
+            },
+            {
+              "name": "Mirage - coffee",
+              "where": "Yehuda HaLevi St 12, Park HaMesila",
+              "hours": "from 8:00, Fri until 17:00",
+              "note": {
+                "en": "great coffee and pastries on the park in the daytime - at night it's Eyal Shani's restaurant - 10 min",
+                "de": "tagsüber toller Kaffee und Gebäck am Park - abends ist es Eyal Shanis Restaurant - 10 Min. zu Fuß",
+                "fr": "le jour, excellent café et viennoiseries sur le parc - le soir, le restaurant d'Eyal Shani - 10 min",
+                "he": "קפה מעולה ומאפים על הפארק ביום - בלילה זו המסעדה של אייל שני - 10 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/place/Mirage/@32.0608486,34.7690641,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d2985f84e39:0x39ad6cd0cd4a5909!8m2!3d32.0608486!4d34.7690641!16s%2Fg%2F11rgfyj2kj",
+              "image": "assets/img/eat/mirage-coffee-w.webp",
+              "image_credit": "Vee Satayamas, CC BY 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_cup_of_cappuccino.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/4.0",
+              "shabbat": true
+            },
+            {
+              "name": "Dallal Bakery",
+              "where": "Kol Israel Haverim St 7, Neve Tzedek",
+              "hours": "7:00-16:00, Sat from 9:00",
+              "note": {
+                "en": "Neve Tzedek's French bakery - almond croissant and coffee, open on Shabbat morning - 12 min walk",
+                "de": "die französische Bäckerei von Neve Tzedek - Mandelcroissant und Kaffee, Samstagmorgen offen - 12 Min.",
+                "fr": "la boulangerie française de Neve Tzedek - croissant aux amandes et café, ouvert le samedi matin - 12 min",
+                "he": "המאפייה הצרפתית של נווה צדק - קרואסון שקדים וקפה, פתוח בשבת בבוקר - 12 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Dallal+Bakery+Kol+Israel+Haverim+St+7%2C+Neve+Tzedek+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/dallal-w.webp",
+              "image_credit": "Andy Li, CC0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Almond_Croissant_and_Flat_White_-_Olea_Grove_2026-08-11.jpg",
+              "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "shabbat": true
+            }
+          ]
+        },
+        {
+          "title": {
             "en": "Street food (daytime)",
             "de": "Streetfood (tagsüber)",
             "fr": "Street food (en journée)",
