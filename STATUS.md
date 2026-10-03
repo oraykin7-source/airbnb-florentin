@@ -24,6 +24,7 @@
 | `.claude/skills/airbnb-rules/` | סקיל `/airbnb-rules` – ספר הכללים של Airbnb (`rules.md`, אומת 3.10.2026), רשימת בדיקה ותוצאת הביקורת האחרונה (`audit.md`). לשאול אותו לפני כל שינוי בליסטינג/הודעות/אתר. רענון רבעוני: בראשון הראשון של ינואר/אפריל/יולי/אוקטובר כחלק מ-`florentin-weekly-check`. |
 | `kitchen/index.html` | מדריך מטבח מפורט (EN/DE/FR בלבד). |
 | `data/weekly.json`, `data/stays.json` | נכתבים ע"י ה-Routines. לא לערוך ידנית. |
+| `agent/guest-replies.md` | עובדות, טון וכללי "אסור" לסוכן טיוטות התשובה לאורחים (רץ בענן). לעדכן כאן כשמשהו בבית משתנה. |
 | `agent/ROUTINE.md`, `agent/validate.py` | הוראות הסוכן השבועי + בדיקות (`validate.py house` לפני כל commit של תוכן). |
 | `docs/` | דוחות יומיים, סקירות מועצה/ChatGPT, חומרי הדפסה (QR, שלט, בריף למוכר, `seller-email.md` = המייל שנשלח). |
 | `.github/workflows/pages-retry.yml` | רשת ביטחון: אם פריסת Pages נכשלת (500 של GitHub), ריצה חוזרת אוטומטית אחרי דקה, עד 2 ניסיונות. נוסף 30.9 אחרי כישלון חד-פעמי. |
