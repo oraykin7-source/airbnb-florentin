@@ -253,7 +253,7 @@
       "id": "tami4",
       "icon": "💧",
       "title": {
-        "en": "Water bar (Tami4)",
+        "en": "Filtered water (Tami4)",
         "de": "Wasserbar (Tami4)",
         "fr": "Fontaine à eau (Tami4)",
         "he": "בר מים (תמי 4)"
@@ -584,55 +584,20 @@
       "tile": "assets/img/first-hour/shower.webp"
     },
     {
-      "id": "laundry",
-      "icon": "🧺",
-      "title": {
-        "en": "Towels & laundry",
-        "de": "Handtücher & Wäsche",
-        "fr": "Serviettes et linge",
-        "he": "מגבות וכביסה"
-      },
-      "sub": {
-        "en": "Two towels on the bed, more in the wardrobe · washing machine on request",
-        "de": "Zwei Handtücher auf dem Bett, weitere im Schrank · Waschmaschine auf Anfrage",
-        "fr": "Deux serviettes sur le lit, d'autres dans l'armoire · machine à laver sur demande",
-        "he": "שתי מגבות על המיטה, עוד בארון · מכונת כביסה לפי בקשה"
-      },
-      "items": {
-        "en": [
-          "You'll find two towels on your bed - the large one for the body, the small one for the face. Extra towels are in the wardrobe.",
-          "Washing machine: you're welcome to use it - just message Oren first (WhatsApp button at the top). He'll show you how it works and, if it's only a few items, may add some of his own so the machine runs full rather than for four socks."
-        ],
-        "de": [
-          "Auf Ihrem Bett liegen zwei Handtücher - das große für den Körper, das kleine fürs Gesicht. Weitere Handtücher sind im Schrank.",
-          "Waschmaschine: Sie dürfen sie gerne benutzen - schreiben Sie vorher kurz Oren (WhatsApp-Button oben). Er zeigt Ihnen, wie sie funktioniert, und legt bei wenigen Teilen vielleicht etwas von sich dazu, damit die Maschine voll läuft und nicht für vier Socken."
-        ],
-        "fr": [
-          "Vous trouverez deux serviettes sur votre lit - la grande pour le corps, la petite pour le visage. D'autres serviettes sont dans l'armoire.",
-          "Machine à laver : vous pouvez l'utiliser - envoyez d'abord un message à Oren (bouton WhatsApp en haut). Il vous montre comment elle marche et, s'il n'y a que quelques affaires, ajoutera peut-être les siennes pour que la machine tourne pleine plutôt que pour quatre chaussettes."
-        ],
-        "he": [
-          "על המיטה תמצאו שתי מגבות - הגדולה לגוף, הקטנה לפנים. מגבות נוספות בארון.",
-          "מכונת כביסה: אפשר להשתמש בשמחה - רק לשלוח קודם הודעה לאורן (כפתור וואטסאפ למעלה). הוא יראה איך היא עובדת, ואם מדובר בכמה פריטים בלבד, אולי יוסיף כמה משלו כדי שהמכונה תרוץ מלאה ולא בשביל ארבעה גרביים."
-        ]
-      },
-      "group": "comfort"
-    },
-    {
       "id": "checkout",
       "icon": "🧳",
       "group": "comfort",
       "title": {
-        "en": "Check-out",
-        "de": "Check-out",
-        "fr": "Départ",
-        "he": "צ'ק-אאוט"
+        "en": "Check-out & laundry",
+        "de": "Check-out & Wäsche",
+        "fr": "Départ & linge",
+        "he": "צ'ק-אאוט וכביסה"
       },
       "sub": {
-        "en": "By {{checkout_time}} - three things to do",
-        "de": "Bis {{checkout_time}} - drei Dinge",
-        "fr": "Avant {{checkout_time}} - trois choses à faire",
-        "he": "עד {{checkout_time}} - שלושה דברים"
+        "en": "By {{checkout_time}} · towels, washing machine",
+        "de": "Bis {{checkout_time}} · Handtücher, Waschmaschine",
+        "fr": "Avant {{checkout_time}} · serviettes, machine à laver",
+        "he": "עד {{checkout_time}} · מגבות, מכונת כביסה"
       },
       "items": {
         "en": [
@@ -663,7 +628,35 @@
           "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה). אין רכבות משישי אחר הצהריים עד מוצאי שבת - קחו מונית.",
           "שכחתם משהו? כתבו לאורן - הוא יבדוק."
         ]
-      }
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Towels & laundry",
+            "de": "Handtücher & Wäsche",
+            "fr": "Serviettes et linge",
+            "he": "מגבות וכביסה"
+          },
+          "items": {
+            "en": [
+              "You'll find two towels on your bed - the large one for the body, the small one for the face. Extra towels are in the wardrobe.",
+              "Washing machine: you're welcome to use it - just message Oren first (WhatsApp button at the top). He'll show you how it works and, if it's only a few items, may add some of his own so the machine runs full rather than for four socks."
+            ],
+            "de": [
+              "Auf Ihrem Bett liegen zwei Handtücher - das große für den Körper, das kleine fürs Gesicht. Weitere Handtücher sind im Schrank.",
+              "Waschmaschine: Sie dürfen sie gerne benutzen - schreiben Sie vorher kurz Oren (WhatsApp-Button oben). Er zeigt Ihnen, wie sie funktioniert, und legt bei wenigen Teilen vielleicht etwas von sich dazu, damit die Maschine voll läuft und nicht für vier Socken."
+            ],
+            "fr": [
+              "Vous trouverez deux serviettes sur votre lit - la grande pour le corps, la petite pour le visage. D'autres serviettes sont dans l'armoire.",
+              "Machine à laver : vous pouvez l'utiliser - envoyez d'abord un message à Oren (bouton WhatsApp en haut). Il vous montre comment elle marche et, s'il n'y a que quelques affaires, ajoutera peut-être les siennes pour que la machine tourne pleine plutôt que pour quatre chaussettes."
+            ],
+            "he": [
+              "על המיטה תמצאו שתי מגבות - הגדולה לגוף, הקטנה לפנים. מגבות נוספות בארון.",
+              "מכונת כביסה: אפשר להשתמש בשמחה - רק לשלוח קודם הודעה לאורן (כפתור וואטסאפ למעלה). הוא יראה איך היא עובדת, ואם מדובר בכמה פריטים בלבד, אולי יוסיף כמה משלו כדי שהמכונה תרוץ מלאה ולא בשביל ארבעה גרביים."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "emergency",
@@ -1883,6 +1876,31 @@
         }
       },
       {
+        "id": "bethlehem",
+        "url": "https://www.getyourguide.com/tel-aviv-l487/jerusalem-and-bethlehem-full-day-trip-from-tel-aviv-t22202/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_bethlehem",
+        "image": "assets/img/tours/bethlehem.webp",
+        "image_credit": "Bahnfrend, CC BY-SA 4.0",
+        "image_credit_url": "https://commons.wikimedia.org/wiki/File:Church_of_the_Nativity,_2019_(01).jpg",
+        "title": {
+          "en": "Bethlehem & Jerusalem",
+          "de": "Bethlehem & Jerusalem",
+          "fr": "Bethléem & Jérusalem",
+          "he": "בית לחם וירושלים"
+        },
+        "meta": {
+          "en": "Full day · pick-up in Tel Aviv",
+          "de": "Ganzer Tag · Abholung in Tel Aviv",
+          "fr": "Journée entière · prise en charge à Tel Aviv",
+          "he": "יום שלם · איסוף מתל אביב"
+        },
+        "blurb": {
+          "en": "The Church of the Nativity and Manger Square in Bethlehem, plus the main sights of Jerusalem, with a guide all day.",
+          "de": "Die Geburtskirche und der Krippenplatz in Bethlehem, dazu die wichtigsten Sehenswürdigkeiten Jerusalems, mit Guide den ganzen Tag.",
+          "fr": "L'église de la Nativité et la place de la Crèche à Bethléem, plus les grands sites de Jérusalem, avec un guide toute la journée.",
+          "he": "כנסיית המולד וכיכר המאורה בבית לחם, ועוד האתרים המרכזיים של ירושלים, עם מדריך כל היום."
+        }
+      },
+      {
         "id": "spa",
         "url": {
           "en": "https://spaplus-tracking.partnergopro.com/click?campaign_id=2&ref_id=50&path=https%3A%2F%2Fwww.spaplus.co.il%2Fen",
@@ -1916,10 +1934,10 @@
     "more": {
       "url": "https://www.getyourguide.com/tel-aviv-l487/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tours",
       "label": {
-        "en": "Looking for something else? Bethlehem, boat trips, cooking classes and guided walks in Tel Aviv - all tours from Tel Aviv",
-        "de": "Etwas anderes gesucht? Bethlehem, Bootstouren, Kochkurse und geführte Rundgänge in Tel Aviv - alle Touren ab Tel Aviv",
-        "fr": "Envie d'autre chose ? Bethléem, sorties en bateau, cours de cuisine et visites guidées à Tel Aviv - toutes les excursions depuis Tel Aviv",
-        "he": "מחפשים משהו אחר? בית לחם, שיט, סדנאות בישול וסיורים מודרכים בתל אביב - כל הסיורים מתל אביב"
+        "en": "Looking for something else? Boat trips, cooking classes and guided walks in Tel Aviv - all tours from Tel Aviv",
+        "de": "Etwas anderes gesucht? Bootstouren, Kochkurse und geführte Rundgänge in Tel Aviv - alle Touren ab Tel Aviv",
+        "fr": "Envie d'autre chose ? Sorties en bateau, cours de cuisine et visites guidées à Tel Aviv - toutes les excursions depuis Tel Aviv",
+        "he": "מחפשים משהו אחר? שיט, סדנאות בישול וסיורים מודרכים בתל אביב - כל הסיורים מתל אביב"
       }
     }
   }

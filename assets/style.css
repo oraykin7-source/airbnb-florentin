@@ -828,3 +828,54 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
   .name-box, .quick { max-width: 480px; }
   .block { padding-top: 56px; }
 }
+
+/* ===== 3.10 night: full rows everywhere (3-wide), compact tiles on phones, uniform tour tiles, map card ===== */
+.cards { grid-template-columns: repeat(3, 1fr); }
+.cards[data-group="safe"] { grid-template-columns: 1fr 1fr; }
+.cards[data-group="safe"] .card.emergency:not([open]) { grid-column: 1 / -1; }
+.cards[data-group="safe"] #card-rules { border-inline-start: 4px solid var(--accent); }
+.cards[data-group="safe"] .card:not([open]) summary { flex-direction: row; align-items: center; gap: 14px; }
+.cards[data-group="safe"] .card:not([open]) .chev { position: static; }
+@media (max-width: 619px) {
+  .cards[data-group="safe"] { grid-template-columns: 1fr; }
+  .cards:not([data-group="safe"]) { gap: 8px; }
+  .cards:not([data-group="safe"]) .card:not([open]) summary { align-items: center; text-align: center; gap: 8px; padding: 14px 6px 12px; }
+  .cards:not([data-group="safe"]) .card:not([open]) .sub, .cards:not([data-group="safe"]) .card:not([open]) .chev { display: none; }
+  .cards:not([data-group="safe"]) .card:not([open]) h3 { font-size: .84rem; line-height: 1.2; overflow-wrap: anywhere; }
+  .cards:not([data-group="safe"]) .card:not([open]) .ico, .cards:not([data-group="safe"]) .card:not([open]) .thumb { width: 44px; height: 44px; }
+}
+
+/* Tours: one uniform tile each (photo, title, meta, blurb, link) */
+#tours-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+#tours-list .more-tours { grid-column: 1 / -1; margin-top: 0; }
+.ev.tour.tour-tile { display: flex; flex-direction: column; padding: 0; overflow: hidden; }
+.ev.tour.tour-tile .ev-media { aspect-ratio: 4 / 3; height: auto; border-radius: 0; flex: none; }
+.ev.tour.tour-tile .ev-media .credit { display: block; }
+.ev.tour.tour-tile .tour-txt { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.ev.tour.tour-tile h3 { font-size: 1rem; line-height: 1.25; }
+.ev.tour.tour-tile .where { font-size: .78rem; margin: 0; }
+.ev.tour.tour-tile p { font-size: .85rem; line-height: 1.4; margin: 2px 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.ev.tour.tour-tile .book { margin-top: auto; padding-top: 8px; color: var(--accent); font-weight: 700; font-size: .9rem; text-decoration: none; background: none; box-shadow: none; width: auto; display: inline-block; }
+@media (max-width: 619px) {
+  #tours-list { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ev.tour.tour-tile .tour-txt { padding: 10px 11px 12px; }
+  .ev.tour.tour-tile h3 { font-size: .92rem; }
+  .ev.tour.tour-tile p { -webkit-line-clamp: 2; font-size: .8rem; }
+}
+
+/* Places: 12 fill 2-up and 3-up; map card spans the row */
+.mapcard { grid-column: 1 / -1; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow), 0 0 0 1px var(--ring); overflow: hidden; }
+.mapcard-art svg { display: block; width: 100%; height: 110px; }
+.mapcard-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; }
+.mapcard-body h3 { font-size: 1.1rem; }
+.mapcard-body p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.45; }
+.mapcard-routes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px; }
+.mapcard .route { display: flex; flex-direction: column; gap: 2px; text-decoration: none; padding: 11px 12px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); }
+.mapcard .route strong { font-size: .92rem; line-height: 1.25; }
+.mapcard .route span { font-size: .78rem; color: var(--muted); }
+.mapcard-all { font-size: .85rem; color: var(--accent); text-decoration: none; font-weight: 600; margin-top: 2px; }
+@media (max-width: 480px) { .mapcard-routes { grid-template-columns: 1fr; } }
+.ev.tour.tour-tile .ev-media { margin: 0; }
+.ev.tour.tour-tile .book { padding: 8px 0 0; white-space: nowrap; border-radius: 0; min-height: 0; }
+.ev.tour.tour-tile .ev-media .credit { font-size: .6rem; max-width: calc(100% - 16px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 2px 6px; }
+@media (max-width: 619px) { .ev.tour.tour-tile p { -webkit-line-clamp: 3; } .ev.tour.tour-tile .ev-media .fav-tag { font-size: .72rem; padding: 4px 8px; inset-inline-start: 8px; top: 8px; } }

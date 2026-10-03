@@ -106,10 +106,10 @@
         "he": "נווה צדק"
       },
       "text": {
-        "en": "The first Jewish neighbourhood outside Jaffa (1887), now the prettiest few streets in the city: low houses, bougainvillea, boutiques, ice cream and cafés along Shabazi Street. Ideal for a slow morning.",
-        "de": "Das erste jüdische Viertel außerhalb Jaffas (1887), heute die schönsten paar Straßen der Stadt: niedrige Häuser, Bougainvillea, Boutiquen, Eis und Cafés entlang der Shabazi-Straße. Ideal für einen langsamen Vormittag.",
-        "fr": "Le premier quartier juif hors de Jaffa (1887), aujourd'hui les plus jolies rues de la ville : maisons basses, bougainvilliers, boutiques, glaces et cafés le long de la rue Shabazi. Idéal pour une matinée tranquille.",
-        "he": "השכונה היהודית הראשונה מחוץ ליפו (1887), היום הרחובות הכי יפים בעיר: בתים נמוכים, בוגנוויליה, בוטיקים, גלידה ובתי קפה לאורך רחוב שבזי. אידיאלי לבוקר איטי."
+        "en": "The first Jewish neighbourhood outside Jaffa (1887), now the prettiest few streets in the city: low houses, bougainvillea, boutiques, ice cream and cafés along Shabazi Street. Ideal for a slow morning. Don't miss the Suzanne Dellal courtyard (orange trees) - Batsheva Dance Company performs there, and you don't need Hebrew.",
+        "de": "Das erste jüdische Viertel außerhalb Jaffas (1887), heute die schönsten paar Straßen der Stadt: niedrige Häuser, Bougainvillea, Boutiquen, Eis und Cafés entlang der Shabazi-Straße. Ideal für einen langsamen Vormittag. Nicht verpassen: der Innenhof des Suzanne Dellal Centre (Orangenbäume) - dort tritt die Batsheva Dance Company auf, Hebräisch braucht man nicht.",
+        "fr": "Le premier quartier juif hors de Jaffa (1887), aujourd'hui les plus jolies rues de la ville : maisons basses, bougainvilliers, boutiques, glaces et cafés le long de la rue Shabazi. Idéal pour une matinée tranquille. À ne pas manquer : la cour du Centre Suzanne Dellal (orangers) - la Batsheva Dance Company s'y produit, pas besoin d'hébreu.",
+        "he": "השכונה היהודית הראשונה מחוץ ליפו (1887), היום הרחובות הכי יפים בעיר: בתים נמוכים, בוגנוויליה, בוטיקים, גלידה ובתי קפה לאורך רחוב שבזי. אידיאלי לבוקר איטי. אל תפספסו את החצר של מרכז סוזן דלל (עצי תפוז) - להקת בת-שבע מופיעה שם, ולא צריך עברית."
       },
       "image": "assets/img/places/neve_tzedek.webp",
       "credit": "Dor Shabashewitz, CC BY 4.0, via Wikimedia Commons",
@@ -117,33 +117,6 @@
       "map": "https://maps.google.com/?q=Shabazi+Street+Neve+Tzedek",
       "license_url": "https://creativecommons.org/licenses/by/4.0",
       "image_title": "File:19 Neve Tzedek St, Tel Aviv.jpg"
-    },
-    {
-      "id": "suzanne_dellal",
-      "walk": {
-        "en": "10 min walk",
-        "de": "10 Min. zu Fuß",
-        "fr": "10 min à pied",
-        "he": "10 דקות הליכה"
-      },
-      "title": {
-        "en": "Suzanne Dellal Centre",
-        "de": "Suzanne Dellal Centre",
-        "fr": "Centre Suzanne Dellal",
-        "he": "מרכז סוזן דלל"
-      },
-      "text": {
-        "en": "Israel's home of contemporary dance, in the heart of Neve Tzedek. Batsheva Dance Company performs here - if there's a show during your stay, go; you don't need Hebrew. The courtyard with its orange trees is lovely even without a ticket.",
-        "de": "Israels Zentrum für zeitgenössischen Tanz, mitten in Neve Tzedek. Die Batsheva Dance Company tritt hier auf - gibt es während Ihres Aufenthalts eine Vorstellung, gehen Sie hin; Hebräisch braucht man nicht. Der Innenhof mit den Orangenbäumen ist auch ohne Ticket schön.",
-        "fr": "La maison de la danse contemporaine en Israël, au cœur de Neve Tzedek. La Batsheva Dance Company s'y produit - s'il y a un spectacle pendant votre séjour, allez-y, pas besoin d'hébreu. La cour aux orangers vaut le détour même sans billet.",
-        "he": "הבית של המחול העכשווי בישראל, בלב נווה צדק. להקת בת-שבע מופיעה כאן - אם יש מופע בזמן השהות שלכם, לכו; לא צריך עברית. החצר עם עצי התפוז יפה גם בלי כרטיס."
-      },
-      "image": "assets/img/places/suzanne_dellal.webp",
-      "credit": "Danny Lyulyev, CC BY-SA 3.0, via Wikimedia Commons",
-      "credit_url": "https://commons.wikimedia.org/wiki/File:Suzanne_Dellal_Centre_(panorama).jpg",
-      "map": "https://maps.google.com/?q=Suzanne+Dellal+Centre",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "image_title": "File:Suzanne Dellal Centre (panorama).jpg"
     },
     {
       "id": "ta_museum",
@@ -378,6 +351,53 @@
       "map": "https://maps.google.com/?q=Sarona+Tel+Aviv",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "image_title": "File:Tel Aviv Sarona 1.jpg"
+    }
+  ],
+  "routes": [
+    {
+      "id": "south",
+      "mode": "walking",
+      "title": {
+        "en": "Florentin to Jaffa on foot",
+        "de": "Von Florentin nach Jaffa zu Fuß",
+        "fr": "De Florentin à Jaffa à pied",
+        "he": "מפלורנטין ליפו ברגל"
+      },
+      "meta": {
+        "en": "About 3 hours with stops",
+        "de": "Ca. 3 Stunden mit Pausen",
+        "fr": "Environ 3 h avec les pauses",
+        "he": "כ-3 שעות עם עצירות"
+      },
+      "stops": [
+        "Levinsky Market, Tel Aviv",
+        "HaTachana, Tel Aviv",
+        "Neve Tzedek, Tel Aviv",
+        "Old Jaffa, Tel Aviv",
+        "Jaffa Port, Tel Aviv"
+      ]
+    },
+    {
+      "id": "north",
+      "mode": "walking",
+      "title": {
+        "en": "Markets, boulevards and museum",
+        "de": "Märkte, Boulevards und Museum",
+        "fr": "Marchés, boulevards et musée",
+        "he": "שווקים, שדרות ומוזיאון"
+      },
+      "meta": {
+        "en": "About 3 hours with stops",
+        "de": "Ca. 3 Stunden mit Pausen",
+        "fr": "Environ 3 h avec les pauses",
+        "he": "כ-3 שעות עם עצירות"
+      },
+      "stops": [
+        "Carmel Market, Tel Aviv",
+        "Rothschild Boulevard, Tel Aviv",
+        "Tel Aviv Museum of Art",
+        "Sarona Market, Tel Aviv"
+      ]
     }
   ]
 }

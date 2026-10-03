@@ -15,6 +15,7 @@
       less_txt: "Less",
       tour_pill: "Tour",
       map_all: "All places on one map",
+      map_title: "Plan your walk", map_text: "Two ready-made walking routes through the places above. They open in Google Maps and start at the first stop.",
       ok_title: "Everything OK?",
       ok_text: "Something missing, or not quite right? Tell me now and I will sort it out.",
       ok_btn: "Message Oren",
@@ -45,6 +46,7 @@
       less_txt: "Weniger",
       tour_pill: "Tour",
       map_all: "Alle Orte auf einer Karte",
+      map_title: "Planen Sie Ihren Spaziergang", map_text: "Zwei fertige Fußrouten durch die Orte oben. Sie öffnen sich in Google Maps und beginnen am ersten Stopp.",
       ok_title: "Alles in Ordnung?",
       ok_text: "Fehlt etwas oder stimmt etwas nicht? Sagen Sie es mir jetzt, ich kümmere mich darum.",
       ok_btn: "Oren schreiben",
@@ -75,6 +77,7 @@
       less_txt: "Moins",
       tour_pill: "Visite",
       map_all: "Tous les lieux sur une carte",
+      map_title: "Planifiez votre balade", map_text: "Deux itinéraires à pied prêts à l'emploi à travers les lieux ci-dessus. Ils s'ouvrent dans Google Maps et partent du premier arrêt.",
       ok_title: "Tout va bien ?",
       ok_text: "Il manque quelque chose, ou quelque chose ne va pas ? Dites-le-moi maintenant, je m'en occupe.",
       ok_btn: "Écrire à Oren",
@@ -105,6 +108,7 @@
       less_txt: "פחות",
       tour_pill: "סיור",
       map_all: "כל המקומות על מפה אחת",
+      map_title: "תכננו את הטיול הרגלי", map_text: "שני מסלולי הליכה מוכנים דרך המקומות שלמעלה. נפתחים בגוגל מפות ומתחילים מהעצירה הראשונה.",
       ok_title: "הכל בסדר?",
       ok_text: "משהו חסר או לא בדיוק כמו שצריך? ספרו לי עכשיו ואסדר את זה.",
       ok_btn: "לכתוב לאורן",
@@ -400,7 +404,7 @@
     const groups = state.house.groups || {};
     const grids = {};
     for (const [gid, label] of Object.entries(groups)) {
-      grids[gid] = el("div", { class: "cards" });
+      grids[gid] = el("div", { class: "cards", "data-group": gid });
       box.append(el("h3", { class: "group-title", "data-group": gid }, el("span", { class: "dot", "aria-hidden": "true" }), L_(label)), grids[gid]);
     }
     const strip = document.getElementById("first-hour");
@@ -520,10 +524,29 @@
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + L_(p.title) }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${p.credit}` }, t("photo") + " ↗")))));
     }
-    // One map with every place (3.10): a Google Maps search of all the names, opened in the app
+    // Map card (3.10 evening): small illustration, one sentence, walking routes through public landmarks.
+    // No start address: the first stop is a public place, so nothing private ever reaches the page.
+    const routeUrl = r => {
+      const st = r.stops, enc = encodeURIComponent;
+      return "https://www.google.com/maps/dir/?api=1&travelmode=" + (r.mode || "walking") + "&origin=" + enc(st[0]) +
+        "&destination=" + enc(st[st.length - 1]) + (st.length > 2 ? "&waypoints=" + st.slice(1, -1).map(enc).join("%7C") : "");
+    };
     const q = state.places.places.map(p => (p.title.en || L_(p.title)) + " Tel Aviv").join(" | ");
     const all = state.places.map_all || ("https://www.google.com/maps/search/" + encodeURIComponent(q));
-    box.append(el("a", { class: "more-tours map-all", href: all, target: "_blank", rel: "noopener" }, "🗺️ " + t("map_all") + " " + ARROW()));
+    const pin = (x, y) => `<circle cx="${x}" cy="${y}" r="5" fill="var(--accent)"/><circle cx="${x}" cy="${y}" r="2" fill="var(--surface)"/>`;
+    const art = el("div", { class: "mapcard-art", "aria-hidden": "true" });
+    art.innerHTML = '<svg viewBox="0 0 320 120" preserveAspectRatio="xMidYMid slice"><rect width="320" height="120" fill="var(--accent-soft)"/>' +
+      '<path d="M0 96c40-8 70 6 110-4s70-10 110-2 70 0 100-6V120H0z" fill="var(--chip)"/>' +
+      '<path d="M30 30 90 52 140 40 200 74 270 58" fill="none" stroke="var(--accent)" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>' +
+      pin(30, 30) + pin(90, 52) + pin(140, 40) + pin(200, 74) + pin(270, 58) + "</svg>";
+    box.append(el("section", { class: "mapcard" }, art,
+      el("div", { class: "mapcard-body" },
+        el("h3", {}, t("map_title")),
+        el("p", {}, t("map_text")),
+        el("div", { class: "mapcard-routes" }, (state.places.routes || []).map(r =>
+          el("a", { class: "route", href: routeUrl(r), target: "_blank", rel: "noopener" },
+            el("strong", {}, "🚶 " + L_(r.title)), el("span", {}, L_(r.meta))))),
+        el("a", { class: "mapcard-all", href: all, target: "_blank", rel: "noopener" }, t("map_all") + " " + ARROW()))));
   }
 
   // Day trips & tours: open photo cards (same look as the weekly events), each with a partner link
@@ -545,15 +568,14 @@
           onerror: e => { e.target.parentNode.replaceWith(el("div", { class: "ev-media ph ph-culture", "aria-hidden": "true" }, "🧭")); } }),
         it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null,
         it.fav ? el("span", { class: "fav-tag" }, "★ " + t("fav")) : null);
-      // Guests' picks get the big photo card; the others a compact row (3.10, site review)
-      box.append(el("article", { class: "ev tour" + (it.fav ? "" : " tour-row"), id: "tour-" + it.id },
+      // One uniform tile per tour (3.10 evening): photo, title, meta, short blurb, book link
+      box.append(el("article", { class: "ev tour tour-tile", id: "tour-" + it.id },
         media,
         el("div", { class: "tour-txt" },
-          el("div", { class: "ev-top" }, el("h3", {}, L_(it.title))),
+          el("h3", {}, L_(it.title)),
           el("div", { class: "where" }, L_(it.meta)),
           el("p", {}, L_(it.blurb)),
-          el("div", { class: "foot-row" },
-            el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW())))));
+          el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()))));
     }
     if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
   }
