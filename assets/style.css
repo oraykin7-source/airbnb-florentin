@@ -895,3 +895,8 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .place-body h3 { font-size: 1.25rem; }
 .place-body p.place-text { -webkit-line-clamp: 3; font-size: 1rem; color: var(--ink); }
 @media (min-width: 900px) { .cards { grid-template-columns: repeat(3, 1fr); } .cards[data-group="safe"] { grid-template-columns: 1fr 1fr; } .places { grid-template-columns: 1fr 1fr; } }
+/* "Where Oren eats" as open cards (3.10) */
+#eat .eat-list { grid-template-columns: 1fr; }
+#eat .eat-group { grid-column: 1 / -1; margin: 10px 0 2px; }
+#eat .place.eat .place-media { aspect-ratio: 16 / 9; }
+@media (min-width: 900px) { #eat .eat-list { grid-template-columns: 1fr 1fr; } }

@@ -497,10 +497,37 @@
           el("span", {}, el("h3", {}, fill(L_(c.title), host)), el("span", { class: "sub" }, fill(L_(c.sub), host))),
           el("span", { class: "chev", "aria-hidden": "true" }, svg(CHEV))),
         body);
+      if (c.id === "eat") continue;   // rendered as its own open section (3.10, like "Places I love")
       (grids[c.group] || box).append(card);
     }
   }
 
+  // "Where Oren eats" as open photo cards, same look as the places (3.10)
+  function renderEat() {
+    const sec = document.getElementById("eat"), box = document.getElementById("eat-list");
+    const c = state.house && state.house.cards.find(x => x.id === "eat");
+    if (!sec || !box) return;
+    sec.hidden = !c; box.replaceChildren();
+    if (!c) return;
+    document.getElementById("eat-title").textContent = L_(c.title);
+    document.getElementById("eat-lead").textContent = L_(c.sub);
+    for (const lst of c.lists || []) {
+      box.append(el("h3", { class: "group-title eat-group" }, el("span", { class: "dot", "aria-hidden": "true" }), L_(lst.title)));
+      for (const r of lst.rows) {
+        box.append(el("article", { class: "place eat" },
+          r.image ? el("a", { class: "place-media", href: r.url, target: "_blank", rel: "noopener", "aria-label": r.name },
+            el("img", { src: r.image, alt: r.name, loading: "lazy", onerror: e => e.target.closest(".place-media").remove() }),
+            r.shabbat === true ? el("span", { class: "walk" }, t("open_sat")) : null) : null,
+          el("div", { class: "place-body" },
+            el("h3", {}, r.name),
+            el("p", { class: "muted small" }, `${r.where} · ${hoursText(r.hours)}`),
+            r.note ? el("p", { class: "place-text open" }, L_(r.note)) : null,
+            el("div", { class: "place-foot" },
+              r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : el("span", {}),
+              el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));
+      }
+    }
+  }
   function renderPlaces() {
     const box = document.getElementById("places-list");
     box.replaceChildren();
@@ -682,7 +709,7 @@
     if (!hashScrolled) { hashScrolled = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start" })); }
   }
   window.addEventListener("hashchange", () => { openCard = hashCard(); hashScrolled = false; applyHashCard(); });
-  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderTours(); renderPlaces(); renderEvents(); applyHashCard(); }
+  function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderEat(); renderTours(); renderPlaces(); renderEvents(); applyHashCard(); }
 
   // Bottom tab bar: highlight the section in view
   (function tabbar() {
@@ -729,8 +756,8 @@
 
   // Each part renders as soon as its own file arrives: a slow or failed events feed
   // never delays the apartment / emergency cards.
-  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderTours(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
-  getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); applyHashCard(); }).catch(() => {});
+  getJSON("content/house.json").then(v => { state.house = v; registerLinks(); renderChrome(); renderHouse(); renderEat(); renderTours(); renderPlaces(); applyHashCard(); }).catch(() => { state.house = null; const b = document.getElementById("house-cards"); b.replaceChildren(el("p", { class: "empty" }, t("load_error"))); });
+  getJSON("content/places.json").then(v => { state.places = v; registerLinks(); renderPlaces(); renderHouse(); renderEat(); applyHashCard(); }).catch(() => {});
   Promise.allSettled([getJSON(DEMO ? "data/weekly.sample.json" : "data/weekly.json"), getJSON(DEMO ? "data/stays.sample.json" : "data/stays.json")])
     .then(([weekly, stays]) => {
       state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
