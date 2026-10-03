@@ -253,16 +253,16 @@
       "id": "tami4",
       "icon": "💧",
       "title": {
-        "en": "Filtered water (Tami4)",
-        "de": "Wasserbar (Tami4)",
-        "fr": "Fontaine à eau (Tami4)",
-        "he": "בר מים (תמי 4)"
+        "en": "Water bar",
+        "de": "Wasserbar",
+        "fr": "Fontaine à eau",
+        "he": "בר מים"
       },
       "sub": {
-        "en": "Filtered cold & hot water - hold the red button to pour hot",
-        "de": "Gefiltertes kaltes & heißes Wasser - rote Taste gedrückt halten für heiß",
-        "fr": "Eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
-        "he": "מים מסוננים קרים וחמים - להחזיק את הכפתור האדום למזיגת מים חמים"
+        "en": "Tami4: filtered cold & hot water - hold the red button for hot",
+        "de": "Tami4: gefiltertes kaltes & heißes Wasser - rote Taste gedrückt halten für heiß",
+        "fr": "Tami4 : eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
+        "he": "תמי 4: מים מסוננים קרים וחמים - להחזיק את הכפתור האדום לחמים"
       },
       "image": "assets/img/first-hour/water-bar-2.webp",
       "image_alt": {
@@ -534,16 +534,16 @@
       "id": "hot_water",
       "icon": "🚿",
       "title": {
-        "en": "Hot water (the \"dud\")",
-        "de": "Warmwasser (der „Dud“)",
-        "fr": "Eau chaude (le « doud »)",
-        "he": "מים חמים (הדוד)"
+        "en": "Hot water",
+        "de": "Warmwasser",
+        "fr": "Eau chaude",
+        "he": "מים חמים"
       },
       "sub": {
-        "en": "Important - read before showering",
-        "de": "Wichtig - vor dem Duschen lesen",
-        "fr": "Important - à lire avant la douche",
-        "he": "חשוב - לקרוא לפני המקלחת"
+        "en": "The boiler (\"dud\") - read before showering",
+        "de": "Der Boiler („Dud“) - vor dem Duschen lesen",
+        "fr": "Le chauffe-eau (« doud ») - à lire avant la douche",
+        "he": "הדוד - לקרוא לפני המקלחת"
       },
       "items": {
         "en": [
@@ -588,10 +588,10 @@
       "icon": "🧳",
       "group": "comfort",
       "title": {
-        "en": "Check-out & laundry",
-        "de": "Check-out & Wäsche",
-        "fr": "Départ & linge",
-        "he": "צ'ק-אאוט וכביסה"
+        "en": "Check-out",
+        "de": "Check-out",
+        "fr": "Départ",
+        "he": "צ'ק-אאוט"
       },
       "sub": {
         "en": "By {{checkout_time}} · towels, washing machine",
@@ -974,16 +974,16 @@
       "id": "shops",
       "icon": "🛒",
       "title": {
-        "en": "Groceries & markets",
-        "de": "Einkaufen & Märkte",
-        "fr": "Courses et marchés",
-        "he": "קניות ושווקים"
+        "en": "Groceries",
+        "de": "Einkaufen",
+        "fr": "Courses",
+        "he": "קניות"
       },
       "sub": {
-        "en": "Several open 24/7 - list with maps links",
-        "de": "Mehrere rund um die Uhr offen - Liste mit Kartenlinks",
-        "fr": "Plusieurs ouverts 24h/24 - liste avec liens de navigation",
-        "he": "כמה פתוחים 24/7 - רשימה עם קישורי ניווט"
+        "en": "Supermarkets & markets, several open 24/7",
+        "de": "Supermärkte & Märkte, einige rund um die Uhr offen",
+        "fr": "Supermarchés et marchés, plusieurs ouverts 24h/24",
+        "he": "סופרים ושווקים, כמה פתוחים 24/7"
       },
       "items": {
         "en": [
@@ -1361,16 +1361,16 @@
       "id": "florentin",
       "icon": "🎨",
       "title": {
-        "en": "Local tips: Florentin & Tel Aviv",
-        "de": "Tipps: Florentin & Tel Aviv",
-        "fr": "Conseils : Florentin et Tel Aviv",
-        "he": "טיפים: פלורנטין ותל אביב"
+        "en": "Go local",
+        "de": "Lokale Tipps",
+        "fr": "Vivre local",
+        "he": "להיות מקומי"
       },
       "sub": {
-        "en": "How the city works, from a local",
-        "de": "Wie die Stadt tickt - von einem Einheimischen",
-        "fr": "Comment la ville fonctionne, par un local",
-        "he": "איך העיר עובדת, ממקומי"
+        "en": "Florentin & Tel Aviv tips from a local",
+        "de": "Florentin & Tel Aviv: Tipps von einem Einheimischen",
+        "fr": "Florentin et Tel Aviv : les conseils d'un local",
+        "he": "פלורנטין ותל אביב, טיפים ממקומי"
       },
       "items": {
         "en": [
