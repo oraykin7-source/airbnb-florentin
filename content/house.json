@@ -1259,6 +1259,91 @@
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lahmacun_(Turkish_Pizza).jpg",
               "image_license_url": "https://creativecommons.org/licenses/by/2.0",
               "shabbat": false
+            },
+            {
+              "name": "Falafel Gabay",
+              "where": "Bograshov St 25",
+              "hours": "until 22:30, Fri until 17:00, closed Sat",
+              "note": {
+                "en": "the Yemenite falafel - crispy falafel, soups and schnitzel, by Bograshov beach - 30 min walk",
+                "de": "das jemenitische Falafel - knusprige Falafel, Suppen, Schnitzel, nahe Bograshov-Strand - 30 Min.",
+                "fr": "le falafel yéménite - falafels croustillants, soupes, schnitzel, près de la plage Bograshov - 30 min",
+                "he": "הפלאפל התימני - פלאפל פריך, מרקים ושניצל, ליד חוף בוגרשוב - 30 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Falafel+Gabay+Bograshov+St+25+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/gabay-w.webp",
+              "image_credit": "Contrapunctus-1, CC0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_falafel_platter_at_Agasi%2C_Lajpat_Nagar%2C_Delhi.jpg",
+              "image_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "shabbat": false
+            },
+            {
+              "name": "HaKosem",
+              "where": "Shlomo HaMelech St 1",
+              "hours": "until 22:00, Fri until 15:30, closed Sat",
+              "note": {
+                "en": "'The Magician' - Tel Aviv's famous falafel and shawarma, corner of King George - 25 min walk",
+                "de": "'Der Zauberer' - Tel Avivs berühmte Falafel und Schawarma, Ecke King George - 25 Min. zu Fuß",
+                "fr": "'Le Magicien' - le falafel et shawarma le plus connu de Tel Aviv, angle King George - 25 min à pied",
+                "he": "הקוסם - הפלאפל והשווארמה המפורסמים של תל אביב, פינת קינג ג'ורג' - 25 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=HaKosem+Shlomo+HaMelech+St+1+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/hakosem-w.webp",
+              "image_credit": "Israel_photo_gallery, CC BY-SA 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Falafel_in_a_pita.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+              "shabbat": false
+            },
+            {
+              "name": "Abu Hassan (Ali Karavan)",
+              "where": "HaDolphin St 1, Jaffa",
+              "hours": "from 8:00 until the hummus runs out (~14:30), closed Sat",
+              "note": {
+                "en": "Jaffa's legendary hummus since 1959 - the 'triangle': hummus, ful, msabbaha. Go early - 25 min",
+                "de": "Jaffas legendärer Hummus seit 1959 - das 'Dreieck': Hummus, Ful, Msabbaha. Früh kommen - 25 Min.",
+                "fr": "le houmous légendaire de Jaffa depuis 1959 - le 'triangle' : houmous, foul, msabbaha. Tôt - 25 min",
+                "he": "החומוס האגדי של יפו מ-1959 - 'משולש': חומוס, פול, מסבחה. לבוא מוקדם - 25 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Abu+Hassan+%28Ali+Karavan%29+HaDolphin+St+1%2C+Jaffa+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/abuhassan-w.webp",
+              "image_credit": "Charles Haynes from Hobart, Australia, CC BY-SA 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mixed_Plate_%283186676853%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+              "shabbat": false
+            },
+            {
+              "name": "Fish & Chips Jaffa Port",
+              "where": "Nemal Yafo St 1, Jaffa Port",
+              "hours": "10:30-22:00, closed Sun",
+              "note": {
+                "en": "fish & chips on the Jaffa Port quay - order at the counter, eat by the boats - 20 min walk",
+                "de": "Fish & Chips am Kai des Hafens von Jaffa - am Tresen bestellen, bei den Booten essen - 20 Min.",
+                "fr": "fish & chips sur le quai du port de Jaffa - commande au comptoir, à manger près des bateaux - 20 min",
+                "he": "פיש אנד צ'יפס על הרציף בנמל יפו - מזמינים בדלפק ואוכלים מול הסירות - 20 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Fish+%26+Chips+Jaffa+Port+Nemal+Yafo+St+1%2C+Jaffa+Port+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/fishchips-w.webp",
+              "image_credit": "Bahnfrend, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Fish_%26_Chips%2C_Gage_Roads_Freo%2C_2026_%2801%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": true
+            },
+            {
+              "name": "Koko Zen",
+              "where": "Florentin St 5",
+              "hours": "11:00-23:00, closed Sun",
+              "note": {
+                "en": "Koko Neko's Japanese café next door: fluffy soufflé pancakes, matcha, sando sandwiches",
+                "de": "das japanische Café von Koko Neko nebenan: fluffige Soufflé-Pancakes, Matcha, Sando-Sandwiches",
+                "fr": "le café japonais de Koko Neko, juste à côté : pancakes soufflés, matcha, sandos",
+                "he": "הקפה היפני של קוקו נקו, דלת ליד: פנקייק סופלה אוורירי, מאצ'ה, סנדוויצ'ים יפניים"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Koko+Zen+Florentin+St+5+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/kokozen-w.webp",
+              "image_credit": "Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Souffe_pancakes_%2876651%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": true
             }
           ]
         },
@@ -1298,23 +1383,6 @@
               "shabbat": true
             },
             {
-              "name": "Cena",
-              "where": "Herzl St 10",
-              "hours": "from 19:00",
-              "note": {
-                "en": "Italian, a few doors from HaShachaf - pasta",
-                "de": "Italienisch, ein paar Häuser von HaShachaf - Pasta",
-                "fr": "italien, à deux pas de HaShachaf - pâtes",
-                "he": "איטלקי, כמה בתים מהשחף - פסטה"
-              },
-              "url": "https://www.google.com/maps/place/Cena/@32.0625804,34.7699414,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d25caf7d2d9:0x8c4a03af8d86af99!8m2!3d32.0625804!4d34.7699414!16s%2Fg%2F11rd8qd71v",
-              "image": "assets/img/eat/cena-w.webp",
-              "image_credit": "10Rosso, CC BY 2.0, via Wikimedia Commons",
-              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro_3.jpg",
-              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
-              "shabbat": false
-            },
-            {
               "name": "Mirage (Eyal Shani)",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
               "hours": "until 00:00",
@@ -1347,6 +1415,97 @@
               "image_credit_url": "https://commons.wikimedia.org/wiki/File:Amorino_Gelato_Flowers_and_Macaroons.jpg",
               "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
               "shabbat": false
+            },
+            {
+              "name": "Koko Neko",
+              "where": "Florentin St 5",
+              "hours": "12:00-15:30 & 17:00-23:00",
+              "note": {
+                "en": "my go-to ramen: tonkotsu with chashu and egg. No bookings, expect a queue - 7 min walk",
+                "de": "mein Ramen-Stammlokal: Tonkotsu mit Chashu und Ei. Keine Reservierung, Schlange - 7 Min. zu Fuß",
+                "fr": "mon ramen préféré : tonkotsu, chashu et œuf. Sans réservation, prévoir la queue - 7 min à pied",
+                "he": "הראמן שלי: טונקוצו עם צ'אשו וביצה. בלי הזמנה מראש, יש תור - 7 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Koko+Neko+Florentin+St+5+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/kokoneko-w.webp",
+              "image_credit": "Ceeseven, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chashu_Ramen_with_Egg.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": true
+            },
+            {
+              "name": "Mezcal",
+              "where": "Vital St 2",
+              "hours": "from 17:00, Fri-Sat from 13:00, closed Sun",
+              "note": {
+                "en": "Mexican bar-restaurant in the Florentin nightlife - tacos, ceviche, mezcal cocktails - 7 min walk",
+                "de": "mexikanisches Bar-Restaurant im Florentin-Nachtleben - Tacos, Ceviche, Mezcal-Cocktails - 7 Min.",
+                "fr": "bar-restaurant mexicain dans la nuit de Florentin - tacos, ceviche, cocktails au mezcal - 7 min",
+                "he": "בר-מסעדה מקסיקני בלב הלילה של פלורנטין - טאקוס, סביצ'ה, קוקטיילי מסקל - 7 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Mezcal+Vital+St+2+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/mezcal-w.webp",
+              "image_credit": "T.Tseng, CC BY 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Al_pastor_tacos_%2834320411213%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+              "shabbat": true
+            },
+            {
+              "name": "Lava",
+              "where": "Beit HaBad Alley 7, Park HaMesila",
+              "hours": "from 18:00, Fri-Sat from 16:00",
+              "note": {
+                "en": "my pasta place - order at the screen, grab a table on Park HaMesila. Try the vongole - 10 min",
+                "de": "mein Pasta-Lokal - am Bildschirm bestellen, Tisch am Park HaMesila. Probieren: Vongole - 10 Min.",
+                "fr": "mes pâtes préférées - commande à l'écran, table sur le parc HaMesila. Goûtez les vongole - 10 min",
+                "he": "הפסטה שלי - מזמינים במסך ותופסים שולחן על פארק המסילה. לנסות את הוונגולה - 10 דקות הליכה"
+              },
+              "url": "https://maps.google.com/?cid=3504456719158185277",
+              "image": "assets/img/eat/lava-w.webp",
+              "image_credit": "Jason Hutchens, CC BY 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_Vongole_by_Jason_Hutchens.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+              "shabbat": true
+            },
+            {
+              "name": "Oscar's",
+              "where": "Nahalat Binyamin St 68, Park HaMesila",
+              "hours": "from 18:00, days vary - check Instagram",
+              "note": {
+                "en": "the schnitzel place of the moment - schnitzel with free refills of mash, on Park HaMesila - 10 min",
+                "de": "die Schnitzelbude der Stunde - Schnitzel mit Kartoffelpüree-Nachschlag, am Park HaMesila - 10 Min.",
+                "fr": "la schnitzelerie du moment - schnitzel et purée à volonté, sur le parc HaMesila - 10 min à pied",
+                "he": "השניצלייה של הרגע - שניצל עם פירה בלי הגבלה, על פארק המסילה - 10 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Oscar%27s+Nahalat+Binyamin+St+68%2C+Park+HaMesila+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/oscars-w.webp",
+              "image_credit": "JIP, CC BY-SA 4.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:Wiener_Schnitzel_at_restaurant_West_Side_Story.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+              "shabbat": false
+            },
+            {
+              "name": "The Old Man and the Sea",
+              "where": "Nemal Yafo St 1, Jaffa Port",
+              "hours": "11:00-00:00",
+              "note": {
+                "en": "fish on the Jaffa Port quay - the table fills with salads before the grilled fish - 20 min walk",
+                "de": "Fisch am Kai des Hafens von Jaffa - erst ein Tisch voller Salate, dann gegrillter Fisch - 20 Min.",
+                "fr": "poisson sur le quai du port de Jaffa - une table pleine de salades, puis le poisson grillé - 20 min",
+                "he": "דגים על הרציף בנמל יפו - השולחן מתמלא סלטים ואז מגיע הדג על הגריל - 20 דקות הליכה"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=The+Old+Man+and+the+Sea+Nemal+Yafo+St+1%2C+Jaffa+Port+Tel+Aviv-Yafo",
+              "image": "assets/img/eat/oldman-w.webp",
+              "image_credit": "mwanasimba from La Réunion, CC BY-SA 2.0, via Wikimedia Commons",
+              "image_credit_url": "https://commons.wikimedia.org/wiki/File:K%C3%B6yce%C4%9Fiz_%282838500753%29.jpg",
+              "image_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+              "links": [
+                {
+                  "label": "Book (Ontopo)",
+                  "url": "https://ontopo.com/en/il/page/18519284"
+                }
+              ],
+              "shabbat": true
             }
           ]
         }
