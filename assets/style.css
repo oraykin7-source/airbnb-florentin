@@ -713,3 +713,117 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
   .events { grid-template-columns: 1fr 1fr; }
   .tabbar { max-width: 640px; }
 }
+
+/* ===== 3.10 polish (autonomous pass, see docs/design-brief-2026-10-03.md). Backup: git tag v-before-polish-3.10 ===== */
+/* Native widgets (date picker, scrollbars) follow the theme */
+:root { color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+:root[data-theme="dark"] { color-scheme: dark; }
+
+/* Rhythm: the same section spacing on phone and desktop */
+.block { padding-top: 44px; }
+.block > h2, .week-head h2 { margin-bottom: 6px; }
+.lead { margin: 0 0 16px; }
+.first-block { padding-top: 36px; }
+
+/* 1. Opening: one calm screen - greeting, name pill, two equal buttons, one quiet line */
+.hero { padding-top: 28px; padding-bottom: 0; }
+.eyebrow { margin-bottom: 10px; gap: 8px; }
+.eyebrow .sky { width: 28px; height: 28px; box-shadow: none; }
+.hero h1 { margin-bottom: 16px; }
+.name-box { margin: 0 0 14px; max-width: 420px; display: flex; align-items: center; gap: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; padding-inline-start: 6px; }
+.name-box:focus-within { border-color: var(--accent); }
+.name-box input { flex: 1 1 auto; min-width: 0; max-width: none; border: 0; background: transparent; min-height: 40px; padding: 0 12px; font-size: 16px; border-radius: 999px; color: var(--ink); }
+.name-box input:focus { outline: none; }
+.name-box .name-save { flex: none; border: 0; cursor: pointer; min-height: 40px; padding: 0 18px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font: 700 .92rem/1 inherit; font-family: inherit; }
+.name-box.named { background: none; border: 0; padding: 0; margin: -8px 0 8px; }
+.name-box .not-you { font-size: .85rem; color: var(--muted); min-height: 36px; padding: 0; }
+.quick { margin-top: 0; gap: 10px; }
+.quick .qbtn { min-height: 54px; padding: 0 12px; gap: 8px; white-space: nowrap; font-size: 1rem; border-radius: 16px; }
+.quick .qbtn svg { flex: none; }
+.qbtn-wa { box-shadow: 0 6px 16px -10px rgba(37,211,102,.9); }
+.qbtn-sos { border-width: 1.5px; }
+.sos-static { margin-top: 12px; font-size: .8rem; line-height: 1.5; color: var(--muted); white-space: normal; }
+.sos-static .sos-n { white-space: nowrap; }
+.sos-static a { color: var(--danger); font-weight: 700; text-decoration: none; }
+.sos-static .sep { opacity: .6; }
+@media (max-width: 360px) { .quick .qbtn { font-size: .92rem; padding: 0 8px; } }
+
+/* 2. Apartment cards: one icon system (line glyph in a tinted square), subtle chevron, equal heights */
+.cards { align-items: stretch; }
+.card .ico { width: 44px; height: 44px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); font-size: 22px; outline: 0; }
+.card .ico svg { width: 24px; height: 24px; display: block; }
+.card.emergency .ico { background: var(--danger-soft); color: var(--danger); }
+.card:not([open]) .ico { width: 44px; height: 44px; border-radius: 14px; }
+.card .chev { background: none; color: var(--muted); width: 24px; height: 24px; opacity: .7; }
+.card .chev svg { width: 18px; height: 18px; display: block; }
+.card:not([open]) .chev { top: 12px; inset-inline-end: 10px; width: 24px; height: 24px; }
+.card[open] .chev { background: none; color: var(--accent); opacity: 1; }
+.card:not([open]) summary { gap: 12px; padding: 16px 14px 14px; height: 100%; }
+.card:not([open]) h3 { font-size: 1rem; line-height: 1.25; }
+.card:not([open]) .sub { font-size: .8rem; line-height: 1.35; margin-top: 2px; }
+.card.emergency:not([open]) summary { padding: 14px 16px; }
+.group-title { margin: 30px 0 12px; }
+.group-title:first-child { margin-top: 12px; }
+
+/* 3. First-hour tiles: uniform portrait crop, title readable in sunlight, two tiles + a peek of the next */
+.strip { grid-auto-columns: 43%; gap: 10px; }
+.tile { aspect-ratio: 3 / 4; border-radius: 20px; }
+.tile img { object-fit: cover; object-position: center; }
+.tile-txt { padding: 70px 12px 12px; gap: 3px;
+  background: linear-gradient(to top, rgba(22,15,10,.94) 0%, rgba(22,15,10,.78) 38%, rgba(22,15,10,0) 100%); text-shadow: 0 1px 3px rgba(0,0,0,.5); }
+.tile-txt strong { font-size: 1.02rem; line-height: 1.2; }
+.tile-txt span { font-size: .78rem; line-height: 1.3; opacity: .95; }
+@media (min-width: 620px) { .tile { aspect-ratio: 4 / 3; } .tile-txt strong { font-size: 1.15rem; } .tile-txt span { font-size: .85rem; } }
+@media (min-width: 1000px) { .tile { aspect-ratio: 3 / 4; } }
+
+/* 4. Tours: compact rows never clip the title (RTL too); "all tours" reads as a secondary link */
+.ev.tour.tour-row { grid-template-columns: 96px minmax(0, 1fr); min-height: 0; }
+.ev.tour.tour-row .ev-media { min-height: 100%; }
+.ev.tour.tour-row .tour-txt { padding: 12px 14px; gap: 3px; }
+.ev.tour.tour-row h3 { font-size: 1rem; line-height: 1.25; overflow-wrap: normal; word-break: normal; }
+.ev.tour.tour-row .foot-row { margin-top: 6px; }
+.ev.tour.tour-row .book { min-height: 38px; padding: 7px 12px; font-size: .85rem; border-radius: 10px; }
+.more-tours:not(.map-all) { background: transparent; box-shadow: none; border: 1px dashed color-mix(in srgb, var(--muted) 45%, transparent);
+  color: var(--muted); font-weight: 500; font-size: .9rem; line-height: 1.45; text-align: start; padding: 14px 16px; }
+
+/* 5. Places: short "Photo ↗" when collapsed (full credit inside "More"), compact map pill, equal heights */
+.places { align-items: stretch; }
+.place-body { gap: 4px; }
+.place-foot { flex-wrap: nowrap; justify-content: space-between; align-items: center; padding-top: 12px; gap: 8px; }
+.map-link { display: inline-flex; align-items: center; gap: 5px; min-height: 36px; padding: 0 12px 0 10px; border-radius: 999px; font-size: .82rem; font-weight: 700; background: var(--accent-soft); color: var(--accent); }
+.map-link svg { flex: none; }
+.place .credit-link, .credit-link { font-size: .72rem; opacity: 1; color: var(--muted); display: inline; -webkit-line-clamp: unset; white-space: nowrap; padding: 8px 0; }
+.credit-full { display: block; font-size: .72rem; line-height: 1.35; color: var(--muted); text-decoration: none; margin-top: 2px; word-break: break-word; }
+.credit-full[hidden] { display: none; }
+.place-tour { font-size: .8rem; line-height: 1.3; padding: 8px 10px; border-radius: 12px; margin: 4px 0 0; min-height: 40px; }
+.more-btn { min-height: 32px; padding: 4px 0; }
+.place-media .walk, .place-media .tour-pill { font-size: .72rem; padding: 4px 9px; line-height: 1.25; }
+/* Photo badges keep fixed colours: they sit on photos, not on the page background */
+.place-media .tour-pill { background: #a4502c; color: #fff; }
+.ev-media .fav-tag { background: rgba(255,253,250,.94); color: #2a241f; font-size: .74rem; padding: 4px 10px; }
+
+/* 6. This week: one chip style above the title, one line of text, small photo */
+.ev:not(.tour) { grid-template-columns: 92px minmax(0, 1fr); }
+.ev:not(.tour) > .ev-top { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; padding: 12px 14px 0; }
+.ev:not(.tour) > .ev-top h3 { flex: 1 1 100%; font-size: 1rem; line-height: 1.25; }
+.ev .when { display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; line-height: 1; padding: 5px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+[dir="rtl"] .ev .when { letter-spacing: 0; font-size: .74rem; }
+.ev .badge { margin: 0; font-size: .68rem; line-height: 1; padding: 5px 8px; }
+.ev:not(.tour) > .where { margin-top: 2px; }
+.ev:not(.tour) > p { -webkit-line-clamp: 2; margin-top: 4px; }
+.ev:not(.tour) > .foot-row { font-size: .82rem; margin-top: 8px; }
+.ev .foot-row a { font-weight: 700; text-decoration: none; white-space: nowrap; }
+[dir="rtl"] .ev [dir="ltr"], [dir="rtl"] .ev h3[dir="auto"], [dir="rtl"] .ev p[dir="auto"], [dir="rtl"] .ev .where[dir="auto"] { text-align: start; }
+
+/* 7. Dark mode details */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .qbtn-wa { box-shadow: none; } }
+:root[data-theme="dark"] .qbtn-wa { box-shadow: none; }
+
+/* 8. Desktop keeps the same rhythm, a little roomier */
+@media (min-width: 1000px) {
+  .hero { padding-top: 48px; }
+  .name-box, .quick { max-width: 480px; }
+  .block { padding-top: 56px; }
+}

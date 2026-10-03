@@ -30,7 +30,7 @@
       footer: "Made with care by your host. Enjoy Florentin!",
       stay_until: d => `Events during your stay · until ${d}`,
       checkout_today: "Check-out today - safe travels!",
-      whatsapp: "WhatsApp your host", sos: "Emergency", reset_dates: "Reset to booking dates",
+      whatsapp: "WhatsApp Oren", sos: "Emergency", sos_police: "Police", sos_amb: "Ambulance", sos_fire: "Fire", map_short: "Map", reset_dates: "Reset to booking dates",
       welcome_name: n => `Welcome home, ${n}`, name_prompt: "Your first name", name_save: "Save", name_change: "Not you?",
       stay_label: "Showing events from today until your check-out:", stay_label_none: "Showing events from today. Enter your check-out date to narrow the list:",
       updated: d => `Updated ${d}`,
@@ -60,7 +60,7 @@
       footer: "Mit Liebe von Ihrem Gastgeber. Viel Spaß in Florentin!",
       stay_until: d => `Veranstaltungen während Ihres Aufenthalts · bis ${d}`,
       checkout_today: "Heute ist Check-out - gute Reise!",
-      whatsapp: "Gastgeber per WhatsApp", sos: "Notfall", reset_dates: "Zurück zu den Buchungsdaten",
+      whatsapp: "WhatsApp an Oren", sos: "Notfall", sos_police: "Polizei", sos_amb: "Rettung", sos_fire: "Feuerwehr", map_short: "Karte", reset_dates: "Zurück zu den Buchungsdaten",
       welcome_name: n => `Willkommen zu Hause, ${n}`, name_prompt: "Ihr Vorname", name_save: "Speichern", name_change: "Nicht Sie?",
       stay_label: "Events von heute bis zu Ihrem Check-out:", stay_label_none: "Events ab heute. Check-out-Datum eingeben, um die Liste einzugrenzen:",
       updated: d => `Aktualisiert am ${d}`,
@@ -90,7 +90,7 @@
       footer: "Préparé avec soin par votre hôte. Profitez de Florentin !",
       stay_until: d => `Événements pendant votre séjour · jusqu'au ${d}`,
       checkout_today: "Départ aujourd'hui - bon voyage !",
-      whatsapp: "WhatsApp à votre hôte", sos: "Urgences", reset_dates: "Revenir aux dates de la réservation",
+      whatsapp: "WhatsApp à Oren", sos: "Urgences", sos_police: "Police", sos_amb: "Ambulance", sos_fire: "Pompiers", map_short: "Carte", reset_dates: "Revenir aux dates de la réservation",
       welcome_name: n => `Bienvenue chez vous, ${n}`, name_prompt: "Votre prénom", name_save: "Enregistrer", name_change: "Ce n'est pas vous ?",
       stay_label: "Événements d'aujourd'hui jusqu'à votre départ :", stay_label_none: "Événements à partir d'aujourd'hui. Indiquez votre date de départ pour affiner la liste :",
       updated: d => `Mis à jour le ${d}`,
@@ -120,7 +120,7 @@
       footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
       stay_until: d => `אירועים במהלך השהות · עד ${d}`,
       checkout_today: "צ'ק-אאוט היום - נסיעה טובה!",
-      whatsapp: "וואטסאפ למארח", sos: "חירום", reset_dates: "חזרה לתאריכי ההזמנה",
+      whatsapp: "וואטסאפ לאורן", sos: "חירום", sos_police: "משטרה", sos_amb: "מד״א", sos_fire: "כיבוי אש", map_short: "מפה", reset_dates: "חזרה לתאריכי ההזמנה",
       welcome_name: n => `ברוכים הבאים הביתה, ${n}`, name_prompt: "השם שלכם", name_save: "שמירה", name_change: "לא אתם?",
       stay_label: "אירועים מהיום ועד הצ'ק-אאוט שלכם:", stay_label_none: "אירועים מהיום. הזינו תאריך צ'ק-אאוט כדי לצמצם את הרשימה:",
       updated: d => `עודכן ${d}`,
@@ -273,6 +273,32 @@
   }
   const L_ = o => (o && typeof o === "object") ? (o[state.lang] ?? o.en ?? "") : (o ?? "");
 
+  // ---------- line glyphs (3.10 polish): one consistent icon set, drawn in the accent colour ----------
+  const CHEV = '<path d="m6 9 6 6 6-6"/>';
+  const GLYPHS = {
+    kitchen: '<path d="M4 11h16v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M2 11h2M20 11h2"/><path d="M9 4.5c-.7.8-.7 1.7 0 2.5M12 4c-.7.8-.7 1.7 0 2.5M15 4.5c-.7.8-.7 1.7 0 2.5"/>',
+    tami4: '<path d="M12 3.5s6 6.4 6 10.7a6 6 0 0 1-12 0C6 9.9 12 3.5 12 3.5z"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.5"/>',
+    ac: '<path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/><path d="m9.5 4.5 2.5 2 2.5-2M9.5 19.5l2.5-2 2.5 2"/>',
+    tv: '<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8.5 21h7M12 17v4"/>',
+    hot_water: '<path d="M4.5 21V7.5a3.5 3.5 0 0 1 3.5-3.5h3.5a2.5 2.5 0 0 1 2.5 2.5V8"/><path d="M9.5 12a4.5 4.5 0 0 1 9 0z"/><path d="M11 15.5v1M14 15.5v1M17 15.5v1M12.5 19v1M15.5 19v1"/>',
+    laundry: '<path d="M8.5 3.5 4 6.5l2 3.8 2-1v11.2h8V9.3l2 1 2-3.8-4.5-3c-.4 1.5-1.9 2.6-3.5 2.6S8.9 5 8.5 3.5z"/>',
+    checkout: '<rect x="4" y="7.5" width="16" height="12.5" rx="2.2"/><path d="M9 7.5V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5v2M9 11.5v4.5M15 11.5v4.5"/>',
+    emergency: '<path d="M10.3 4.2 2.6 17.6A2 2 0 0 0 4.3 20.6h15.4a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4M12 17h.01"/>',
+    rules: '<path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M12 17.2s-3-1.7-3-3.6a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 1.9-3 3.6-3 3.6z"/>',
+    shops: '<circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/><path d="M3 4h2.2l2.3 11h10.9L21 7.5H6"/>',
+    eat: '<path d="M6.5 3v5.5a2 2 0 0 0 4 0V3M8.5 10.5V21M8.5 3v4"/><path d="M17 21V3c-2.2 1.2-3 4-3 8h3"/>',
+    florentin: '<path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/>',
+    review: '<path d="M4.5 5h15a1 1 0 0 1 1 1v9.5a1 1 0 0 1-1 1H10l-4.5 3.5v-3.5h-1a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M8 9.5h8M8 12.5h5"/>',
+  };
+  const svg = (paths, size = 24) => {
+    const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("width", size); s.setAttribute("height", size);
+    s.setAttribute("fill", "none"); s.setAttribute("stroke", "currentColor"); s.setAttribute("stroke-width", "1.8");
+    s.setAttribute("stroke-linecap", "round"); s.setAttribute("stroke-linejoin", "round"); s.setAttribute("aria-hidden", "true");
+    s.innerHTML = paths; return s;
+  };
+  const glyph = (id, emoji) => el("span", { class: "ico", "aria-hidden": "true" }, GLYPHS[id] ? svg(GLYPHS[id]) : emoji);
+
   async function getJSON(path) {
     const r = await fetch(path, { cache: "no-cache" });
     if (!r.ok) throw new Error(`${path}: ${r.status}`);
@@ -315,14 +341,20 @@
     document.getElementById("welcome").textContent = name ? t("welcome_name")(name) : t("welcome");
     const nb = document.getElementById("name-box");
     nb.replaceChildren();
+    // Name: a single quiet pill while unknown; once set, only a small "Not you?" link (3.10 polish)
+    nb.classList.toggle("named", !!name);
     if (name) {
-      nb.append(el("button", { class: "linkish", type: "button", onclick: () => { setGuestName(""); renderChrome(); } }, t("name_change")));
+      nb.append(el("button", { class: "linkish not-you", type: "button", onclick: () => { setGuestName(""); renderChrome(); } }, t("name_change")));
     } else {
-      const inp = el("input", { type: "text", maxlength: "40", placeholder: t("name_prompt"), autocomplete: "given-name" });
+      const inp = el("input", { type: "text", maxlength: "40", placeholder: t("name_prompt"), autocomplete: "given-name", "aria-label": t("name_prompt"), enterkeyhint: "done" });
       const save = () => { if (inp.value.trim()) { setGuestName(inp.value); renderChrome(); } };
       inp.addEventListener("keydown", e => { if (e.key === "Enter") save(); });
-      nb.append(inp, el("button", { class: "qbtn qbtn-ghost", type: "button", onclick: save }, t("name_save")));
+      nb.append(inp, el("button", { class: "name-save", type: "button", onclick: save }, t("name_save")));
     }
+    // Emergency numbers: one quiet line in the guest's language (the static English line is the no-script fallback)
+    const sl = document.getElementById("sos-static");
+    if (sl) sl.replaceChildren(...[["sos_police", "100"], ["sos_amb", "101"], ["sos_fire", "102"]].flatMap(([k, n], i) =>
+      [i ? el("span", { class: "sep", "aria-hidden": "true" }, " · ") : null, el("span", { class: "sos-n" }, t(k) + " ", el("a", { href: "tel:" + n }, n))]).filter(Boolean));
 
     const wa = document.getElementById("wa-btn");
     const num = state.house && String(state.house.host.whatsapp || "").replace(/\D/g, "");
@@ -453,12 +485,13 @@
       if (c.link) body.append(el("div", { class: "tel" },
         el("a", { href: `${c.link.href}?lang=${L}` }, L_(c.link.label) + " " + ARROW())));
 
+      // One icon system for every card (3.10 polish): a line glyph in a tinted square. The real photos
+      // of the devices stay inside the card body, where the guest needs them.
       const card = el("details", { class: "card" + (c.emergency ? " emergency" : ""), id: "card-" + c.id },
         el("summary", {},
-          c.thumb ? el("img", { class: "thumb", src: c.thumb, alt: "", loading: "lazy", onerror: e => e.target.replaceWith(el("span", { class: "ico", "aria-hidden": "true" }, c.icon)) })
-                  : el("span", { class: "ico", "aria-hidden": "true" }, c.icon),
+          glyph(c.id, c.icon),
           el("span", {}, el("h3", {}, fill(L_(c.title), host)), el("span", { class: "sub" }, fill(L_(c.sub), host))),
-          el("span", { class: "chev", "aria-hidden": "true" }, "▾")),
+          el("span", { class: "chev", "aria-hidden": "true" }, svg(CHEV))),
         body);
       (grids[c.group] || box).append(card);
     }
@@ -470,8 +503,10 @@
     if (!state.places) return;
     for (const p of state.places.places) {
       const txt = el("p", { class: "place-text" }, ...rich(L_(p.text)));
+      // Full photo credit (CC BY needs it) lives in the "More" part; collapsed cards show only "Photo ↗" (3.10 polish)
+      const credit = el("a", { class: "credit-full", href: p.credit_url, target: "_blank", rel: "noopener", hidden: "" }, `${t("photo")}: ${p.credit}`);
       const more = el("button", { class: "more-btn", type: "button", "aria-expanded": "false",
-        onclick: e => { const open = txt.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less_txt") : t("more_txt"); } }, t("more_txt"));
+        onclick: e => { const open = txt.classList.toggle("open"); credit.hidden = !open; e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less_txt") : t("more_txt"); } }, t("more_txt"));
       box.append(el("article", { class: "place", id: "place-" + p.id },
         el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
@@ -479,11 +514,11 @@
           p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null),
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
-          txt, more,
+          txt, credit, more,
           p.tour ? el("a", { class: "place-tour", href: p.tour.url, target: "_blank", rel: "noopener sponsored" }, "🧭 " + L_(p.tour.label) + " " + ARROW()) : null,
           el("div", { class: "place-foot" },
-            el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${p.credit}`),
-            el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));
+            el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + L_(p.title) }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
+            el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${p.credit}` }, t("photo") + " ↗")))));
     }
     // One map with every place (3.10): a Google Maps search of all the names, opened in the app
     const q = state.places.places.map(p => (p.title.en || L_(p.title)) + " Tel Aviv").join(" | ");
@@ -582,9 +617,9 @@
     for (const it of items) {
       let when;
       if (!it.date_start) when = it.is_new ? t("new_opening") : (it.category === "food" ? t("tip") : t("ongoing"));
-      else if (it.date_end && it.date_end !== it.date_start)
+      else if (it.date_end && it.date_end !== it.date_start && it.date_end > today)
         when = `${fmtDate(it.date_start < today ? today : it.date_start, { day: "numeric", month: "short" })} – ${fmtDate(it.date_end, { day: "numeric", month: "short" })}`;
-      else when = fmtDate(it.date_start, { weekday: "short", day: "numeric", month: "short" });
+      else when = fmtDate(it.date_end && it.date_start < today ? it.date_end : it.date_start, { weekday: "short", day: "numeric", month: "short" });   // a run that ends today shows just today, not "3 Oct – 3 Oct"
       if (it.time) when += ` · ${it.time}`;
 
       const inStay = checkout && it.date_start && it.date_start <= checkout && (it.date_end || it.date_start) >= today;
@@ -599,13 +634,16 @@
             it.image_credit ? el("span", { class: "credit" }, it.image_credit) : null)
         : el("div", { class: `ev-media ph ph-${it.category}`, "aria-hidden": "true" }, ICON[it.category]);
 
+      // 3.10 polish: the date / "Worth a visit" chip sits above the title (same chip for every row);
+      // the feed has no Hebrew, so English text keeps its own direction inside the RTL page (dir=auto).
       box.append(el("article", { class: "ev" },
         media,
         el("div", { class: "ev-top" },
-          el("h3", {}, L_(it.title), inStay ? el("span", { class: "badge" }, t("during_stay")) : null),
-          el("span", { class: "when" }, when)),
-        whereBits ? el("div", { class: "where" }, whereBits + (it.price ? ` · ${it.price}` : "")) : null,
-        el("p", {}, L_(it.blurb)),
+          el("span", { class: "when" }, when),
+          inStay ? el("span", { class: "badge" }, t("during_stay")) : null,
+          el("h3", { dir: "auto" }, L_(it.title))),
+        whereBits ? el("div", { class: "where", dir: "auto" }, whereBits + (it.price ? ` · ${it.price}` : "")) : null,
+        el("p", { dir: "auto" }, L_(it.blurb)),
         el("div", { class: "foot-row" },
           el("span", { class: "src" }, `${t("source")} ${host}`),
           el("a", { href: it.url, target: "_blank", rel: "noopener" }, t("more") + " " + ARROW()))));
