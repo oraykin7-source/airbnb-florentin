@@ -1061,19 +1061,6 @@
               "shabbat": false
             },
             {
-              "name": "Minimarket Levinsky",
-              "where": "Levinski St 77",
-              "hours": "until 23:00",
-              "note": {
-                "en": "small grocery",
-                "de": "kleiner Laden",
-                "fr": "petite épicerie",
-                "he": "מכולת קטנה"
-              },
-              "url": "https://www.google.com/maps/place/%D7%9E%D7%99%D7%A0%D7%99%D7%9E%D7%A8%D7%A7%D7%98+%D7%9C%D7%95%D7%99%D7%A0%D7%A1%D7%A7%D7%99/@32.0588142,34.775272,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b62173d5487:0xad1f2e9a865f3d48!8m2!3d32.0588142!4d34.775272!16s%2Fg%2F11c5fz9svk",
-              "shabbat": false
-            },
-            {
               "name": "AM:PM",
               "where": "Herzl St 61",
               "hours": "until 22:30",
