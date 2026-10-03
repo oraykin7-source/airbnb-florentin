@@ -809,7 +809,7 @@
     return changed;
   }
   const hashId = () => decodeURIComponent((location.hash || "").slice(1));
-  const hashCard = () => (/^card-[\w-]+$/.test(location.hash) ? location.hash.slice(1) : null);
+  const hashCard = () => (/^#card-[\w-]+$/.test(location.hash) ? location.hash.slice(1) : null);
   let openCard = hashCard(), hashScrolled = false, routedOnce = false;
   function route() {
     const { view, sub } = pageOfHash(location.hash);
