@@ -924,3 +924,41 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .places > * { min-width: 0; }
 @media (min-width: 900px) { .places { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .place-foot .credit-link, .place .credit-link { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+/* ===== 3.10 designer round (docs/graphic-design-review-2026-10-03.md, items 3-7, 9, 10, 13, 15) ===== */
+:root { --fs-xs: .75rem; --fs-sm: .875rem; --fs-md: 1rem; --fs-lg: 1.25rem; --fs-xl: 1.5625rem; --fs-2xl: 1.95rem; --caps-track: .08em; }
+/* 3+4: one type scale (12/14/16/20/25/31), nothing below 12px */
+.hero h1 { font-size: clamp(var(--fs-2xl), 7.4vw, 2.5rem); }
+.block > h2, .week-head h2 { font-size: var(--fs-xl); }
+.place-body h3 { font-size: var(--fs-lg); }
+.card h3, .ev h3, .ev:not(.tour) > .ev-top h3, .tile-txt strong, .lead, .headsup li { font-size: var(--fs-md); }
+.sub, .where, .ev .where, .ev:not(.tour) > .where, .ev.tour.tour-row .where, .ev.tour.tour-tile .where, .src, .map-link, .more-btn, .name-box .qbtn, .ev.tour .book, .mapcard-all, .mapcard-routes .route strong, .sos-static, .ev:not(.tour) > .foot-row, .place-tour, .tile-txt span, .credit-full { font-size: var(--fs-sm); }
+.tabbar a, .ev .when, .ev .badge, .badge, .place-media .walk, .place-media .tour-pill, .ev-media .fav-tag, .credit-link, .place .credit-link, .ev.tour .foot-row .credit-link, .group-title, .eyebrow, .mapcard-body h3, .mapcard-routes .route span { font-size: var(--fs-xs); }
+@media (max-width: 400px) { .tabbar a { font-size: var(--fs-xs); } .ev.tour.tour-tile .ev-media .fav-tag { font-size: var(--fs-xs); } }
+.ev.tour.tour-tile .ev-media .credit { font-size: .6875rem; }
+[dir="rtl"] .group-title, [dir="rtl"] .mapcard-body h3 { font-size: var(--fs-sm); }
+/* 15: one tracking value for small caps labels (Hebrew stays 0) */
+.eyebrow, .group-title, .mapcard-body h3, .ev .when { letter-spacing: var(--caps-track); }
+[dir="rtl"] .eyebrow, [dir="rtl"] .group-title, [dir="rtl"] .mapcard-body h3, [dir="rtl"] .ev .when { letter-spacing: 0; }
+/* 5: real device photos at their own ratio, centred, no beige band */
+.card-img { width: auto; max-width: 100%; height: auto; max-height: 340px; margin: 14px auto 0; background: none; object-fit: initial; }
+/* 6: "This week" photos as a fixed 76px square (like the apartment row pictures) */
+.ev:not(.tour) { grid-template-columns: 92px minmax(0, 1fr); }
+.ev:not(.tour) .ev-media { align-self: start; width: 76px; height: 76px; min-height: 0; aspect-ratio: 1; margin: 14px 0 0; margin-inline-start: 14px; border-radius: 14px; }
+/* 7: shorter food/place photos, 2-line text (still one card per row) */
+.place-media, #eat .place.eat .place-media { aspect-ratio: 2 / 1; }
+.place-body p.place-text { -webkit-line-clamp: 2; }
+/* 9: cards stand off the background, especially in dark mode */
+:root { --ring: rgba(42,36,31,.10); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --surface: #2e2924; --ring: rgba(255,255,255,.09); } }
+:root[data-theme="dark"] { --surface: #2e2924; --ring: rgba(255,255,255,.09); }
+/* 10: line length on wide screens */
+.lead, .block > p.muted, .week-head p { max-width: 62ch; }
+.cards[data-group="safe"] .sub { max-width: 60ch; }
+/* 13: 44px touch targets */
+.ev.tour.tour-tile .book { min-height: 44px; display: inline-flex; align-items: center; }
+.more-btn, .map-link, .mapcard-all { min-height: 44px; }
+.name-box input, .name-box .qbtn { min-height: 44px; }
+.sos-static a { display: inline-block; padding: 12px 6px; margin: -12px -6px; }
+.place-media { overflow: hidden; }
+.place-media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.place-media img { object-position: 50% 35%; }

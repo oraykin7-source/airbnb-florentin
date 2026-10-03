@@ -524,8 +524,10 @@
             el("h3", {}, r.name),
             el("p", { class: "muted small" }, `${r.where} · ${hoursText(r.hours)}`),
             r.note ? el("p", { class: "place-text open" }, L_(r.note)) : null,
+            // CC BY needs the full credit visible; it wraps instead of being clipped (designer review 3.10, item 2)
+            r.image_credit ? el("a", { class: "credit-full", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : null,
             el("div", { class: "place-foot" },
-              r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : el("span", {}),
+              el("span", {}),
               el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener" }, t("map") + " " + ARROW())))));
       }
     }
