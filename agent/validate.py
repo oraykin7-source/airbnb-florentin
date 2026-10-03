@@ -56,7 +56,7 @@ def check_house(path: Path) -> int:
         if isinstance(o, dict):
             if "name" in o and "where" in o:
                 u = o.get("url")
-                if not (isinstance(u, str) and ("google.com/maps" in u or "maps.app.goo.gl" in u)):
+                if not (isinstance(u, str) and ("google.com/maps" in u or "maps.app.goo.gl" in u or "maps.google.com" in u)):
                     problems.append(f"{path}: '{o['name']}' ({trail}) has no Google Maps url")
             for k, v in o.items():
                 _walk(v, trail + "/" + k)
