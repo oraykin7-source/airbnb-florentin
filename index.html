@@ -17,7 +17,7 @@
   <!-- logo-only fonts, subset to the letters the logo uses (a few hundred bytes each) -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&text=CcOoZzYyRrMm%20&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&text=Florentin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=20261003zf">
+  <link rel="stylesheet" href="assets/style.css?v=20261003zg">
 </head>
 <body>
   <header class="top">
@@ -50,7 +50,7 @@
     <nav class="jump" aria-label="Sections">
       <a href="#house" data-i18n="house_title">The apartment</a>
       <a href="#tours" data-i18n="tours_title">Day trips &amp; tours</a>
-      <a href="#places" data-i18n="places_title">Places I love</a>
+      <a href="#places" data-i18n="jump_places">Places &amp; food</a>
       <a href="#week" data-i18n="week_title">This week in Tel Aviv</a>
     </nav>
 
@@ -71,6 +71,11 @@
       <div class="events" id="tours-list"></div>
       <p class="muted small tours-note" id="tours-note"></p>
     </section>
+
+    <div class="subtabs" id="places-sub" role="tablist">
+      <button type="button" role="tab" data-sub="places" data-i18n="sub_places">Places</button>
+      <button type="button" role="tab" data-sub="eat" data-i18n="sub_eat">Eat</button>
+    </div>
 
     <section id="eat" class="block" hidden>
       <h2 id="eat-title"></h2>
@@ -116,6 +121,6 @@
     <p data-i18n="footer">Made with care by your host. Enjoy Florentin!</p>
   </footer>
 
-  <script src="assets/app.js?v=20261003zf" defer></script>
+  <script src="assets/app.js?v=20261003zg" defer></script>
 </body>
 </html>

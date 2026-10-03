@@ -22,7 +22,7 @@
       fav: "My guests' pick", more_tours: "all tours",
       tours_title: "Day trips & tours", tab_tours: "Tours", book: "Details & booking",
       sos_static2: "Siren? Here's what to do", open_sat: "Open Sat", closed_sat: "closed Sat", until: "until", from: "from", open_247: "24/7", load_error: "Couldn't load the apartment guide - check your connection and refresh, or message Oren.",
-      eat_more: n => `${n} more places`, eat_less: "Show fewer", gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
+      sub_places: "Places", sub_eat: "Eat", jump_places: "Places & food", eat_more: n => `${n} more places`, eat_less: "Show fewer", gal_photos: n => `${n} photos`, gal_close: "Close", gal_prev: "Previous photo", gal_next: "Next photo", tab_home: "Start", tab_house: "Apartment", tab_places: "Places", tab_week: "This week",
       first_title: "Your first hour", first_lead: "What every guest asks about on day one - tap a tile.", hi_morning: "Good morning", hi_afternoon: "Good afternoon", hi_evening: "Good evening", hi_night: "Good night", hi_city: "Tel Aviv",
       brand: "A cozy room in Florentin", brand_short: "Cozy room", welcome: "Welcome home",
       house_title: "The apartment", week_title: "This week in Tel Aviv",
@@ -53,7 +53,7 @@
       fav: "Tipp meiner Gäste", more_tours: "alle Touren",
       tours_title: "Ausflüge & Touren", tab_tours: "Touren", book: "Details & Buchung",
       sos_static2: "Sirene? So geht's", open_sat: "Sa. offen", closed_sat: "Sa. geschlossen", until: "bis", from: "ab", open_247: "rund um die Uhr", load_error: "Der Wohnungsguide konnte nicht geladen werden - Verbindung prüfen und neu laden, oder Oren schreiben.",
-      eat_more: n => `${n} weitere Orte`, eat_less: "Weniger anzeigen", gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
+      sub_places: "Orte", sub_eat: "Essen", jump_places: "Orte & Essen", eat_more: n => `${n} weitere Orte`, eat_less: "Weniger anzeigen", gal_photos: n => `${n} Fotos`, gal_close: "Schließen", gal_prev: "Vorheriges Foto", gal_next: "Nächstes Foto", tab_home: "Start", tab_house: "Wohnung", tab_places: "Orte", tab_week: "Woche",
       first_title: "Ihre erste Stunde", first_lead: "Was jeder Gast am ersten Tag fragt - Kachel antippen.", hi_morning: "Guten Morgen", hi_afternoon: "Guten Tag", hi_evening: "Guten Abend", hi_night: "Gute Nacht", hi_city: "Tel Aviv",
       brand: "Ein gemütliches Zimmer in Florentin", brand_short: "Gemütliches Zimmer", welcome: "Willkommen zu Hause",
       house_title: "Die Wohnung", week_title: "Diese Woche in Tel Aviv",
@@ -84,7 +84,7 @@
       fav: "Le choix de mes voyageurs", more_tours: "toutes les excursions",
       tours_title: "Excursions & visites", tab_tours: "Visites", book: "Détails et réservation",
       sos_static2: "Sirène ? Voici quoi faire", open_sat: "Ouvert sam.", closed_sat: "fermé sam.", until: "jusqu'à", from: "à partir de", open_247: "24h/24", load_error: "Impossible de charger le guide - vérifiez la connexion et rechargez, ou écrivez à Oren.",
-      eat_more: n => `${n} autres adresses`, eat_less: "Voir moins", gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
+      sub_places: "Lieux", sub_eat: "Manger", jump_places: "Lieux & table", eat_more: n => `${n} autres adresses`, eat_less: "Voir moins", gal_photos: n => `${n} photos`, gal_close: "Fermer", gal_prev: "Photo précédente", gal_next: "Photo suivante", tab_home: "Accueil", tab_house: "Appart", tab_places: "Lieux", tab_week: "Semaine",
       first_title: "Votre première heure", first_lead: "Ce que tout voyageur demande le premier jour - touchez une tuile.", hi_morning: "Bonjour", hi_afternoon: "Bon après-midi", hi_evening: "Bonsoir", hi_night: "Bonne nuit", hi_city: "Tel Aviv",
       brand: "Une chambre cosy à Florentin", brand_short: "Chambre cosy", welcome: "Bienvenue chez vous",
       house_title: "L'appartement", week_title: "Cette semaine à Tel Aviv",
@@ -115,7 +115,7 @@
       fav: "הבחירה של האורחים שלי", more_tours: "כל הסיורים",
       tours_title: "טיולי יום וסיורים", tab_tours: "טיולים", book: "פרטים והזמנה",
       sos_static2: "אזעקה? מה עושים", open_sat: "פתוח בשבת", closed_sat: "סגור בשבת", until: "עד", from: "מ-", open_247: "24/7", load_error: "לא הצלחנו לטעון את מדריך הדירה - בדקו חיבור ורעננו, או כתבו לאורן.",
-      eat_more: n => `עוד ${n} מקומות`, eat_less: "הצג פחות", gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
+      sub_places: "מקומות", sub_eat: "אוכל", jump_places: "מקומות ואוכל", eat_more: n => `עוד ${n} מקומות`, eat_less: "הצג פחות", gal_photos: n => `${n} תמונות`, gal_close: "סגירה", gal_prev: "התמונה הקודמת", gal_next: "התמונה הבאה", tab_home: "התחלה", tab_house: "הדירה", tab_places: "מקומות", tab_week: "השבוע",
       first_title: "השעה הראשונה שלכם", first_lead: "מה שכל אורח שואל ביום הראשון - לחצו על תמונה.", hi_morning: "בוקר טוב", hi_afternoon: "צהריים טובים", hi_evening: "ערב טוב", hi_night: "לילה טוב", hi_city: "תל אביב",
       brand: "חדר נעים בפלורנטין", brand_short: "חדר נעים", welcome: "ברוכים הבאים הביתה",
       house_title: "הדירה", week_title: "השבוע בתל אביב",
@@ -773,31 +773,66 @@
     }
   }
 
-  // Deep link: stayflorentin.com/#card-tours opens that card and scrolls to it (links sent in messages)
-  const hashCard = () => (/^#card-[\w-]+$/.test(location.hash) ? location.hash.slice(1) : null);
-  let openCard = hashCard(), hashScrolled = false;
+  // ---------- pages (3.10 evening, Oren: "a site with a page per topic, not one long landing page") ----------
+  // One HTML file, five pages switched by the URL hash: start / apartment / tours / places (+eat) / this week.
+  // Old deep links keep working (#card-tours, #card-ac, #week, #place-beach ...) because the hash picks the page.
+  const PAGES = { start: [".hero", ".jump", "#first"], house: ["#house"], tours: ["#tours"], places: ["#places-sub", "#eat", "#places"], week: ["#week"] };
+  const TAB_OF = { start: "top", house: "house", tours: "tours", places: "places", week: "week" };
+  function pageOfHash(h) {
+    h = (h || "").replace(/^#/, "");
+    if (h === "tours" || h === "card-tours" || /^tour-/.test(h)) return { view: "tours" };
+    if (h === "eat") return { view: "places", sub: "eat" };
+    if (h === "places" || /^place-/.test(h)) return { view: "places", sub: "places" };
+    if (h === "week") return { view: "week" };
+    if (h === "house" || /^card-/.test(h)) return { view: "house" };
+    return { view: "start" };
+  }
+  function setView(view, sub) {
+    const changed = state.view !== view;
+    state.view = view; if (sub) state.sub = sub;
+    const eatEl = document.getElementById("eat");
+    const eatOk = !!eatEl && !eatEl.hidden;
+    if (!eatOk) state.sub = "places";
+    state.sub = state.sub || "places";
+    const on = new Set(PAGES[view]);
+    for (const sel of new Set(Object.values(PAGES).flat())) {
+      const n = document.querySelector(sel); if (!n) continue;
+      let off = !on.has(sel);
+      if (view === "places" && sel === "#eat") off = state.sub !== "eat";
+      if (view === "places" && sel === "#places") off = state.sub !== "places";
+      n.toggleAttribute("data-off", off);
+    }
+    document.body.dataset.view = view;
+    document.querySelectorAll(".tabbar a").forEach(a => a.setAttribute("aria-current", String(a.dataset.target === TAB_OF[view])));
+    document.querySelectorAll("#places-sub button").forEach(b => { b.setAttribute("aria-selected", String(b.dataset.sub === state.sub)); b.hidden = b.dataset.sub === "eat" && !eatOk; });
+    const sw = document.getElementById("places-sub"); if (sw && !eatOk) sw.setAttribute("data-off", "");
+    return changed;
+  }
+  const hashId = () => decodeURIComponent((location.hash || "").slice(1));
+  const hashCard = () => (/^card-[\w-]+$/.test(location.hash) ? location.hash.slice(1) : null);
+  let openCard = hashCard(), hashScrolled = false, routedOnce = false;
+  function route() {
+    const { view, sub } = pageOfHash(location.hash);
+    const changed = setView(view, sub);
+    const id = hashId();
+    const target = id && id !== "top" ? document.getElementById(id === "card-tours" ? "tours" : id) : null;
+    if (changed && !(target && !target.hidden && /^(card-|tour-|place-)/.test(id))) { window.scrollTo({ top: 0, behavior: "instant" }); }
+    return changed;
+  }
   function applyHashCard() {
+    route();
     if (!openCard) return;
     const d = document.getElementById(openCard === "card-tours" ? "tours" : openCard); if (!d || d.hidden) return;   // not rendered yet: try again after the data loads
     if (d.tagName === "DETAILS") d.open = true;
     if (!hashScrolled) { hashScrolled = true; requestAnimationFrame(() => d.scrollIntoView({ block: "start" })); }
   }
-  window.addEventListener("hashchange", () => { openCard = hashCard(); hashScrolled = false; applyHashCard(); });
+  window.addEventListener("hashchange", () => { openCard = hashCard(); hashScrolled = false; applyHashCard();
+    const id = hashId(); if (/^(tour-|place-)/.test(id)) { const n = document.getElementById(id); if (n) requestAnimationFrame(() => n.scrollIntoView({ block: "start" })); } });
+  // Used by buttons that open a card: make sure the page that holds it is showing first
+  function showCardPage(id) { location.hash.slice(1) === id || history.pushState(null, "", "#" + id); route(); }
   function renderAll() { registerLinks(); renderChrome(); renderHouse(); renderEat(); renderTours(); renderPlaces(); renderEvents(); applyHashCard(); }
-
-  // Bottom tab bar: highlight the section in view
-  (function tabbar() {
-    const links = [...document.querySelectorAll(".tabbar a")];
-    const hero = document.querySelector(".hero"); if (hero && !hero.id) hero.id = "hero";
-    const targets = ["hero", "first", "house", "tours", "places", "week"].map(id => document.getElementById(id)).filter(Boolean);
-    const tabOf = id => (id === "hero" || id === "first") ? "top" : id;
-    const io = new IntersectionObserver(entries => {
-      const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (!vis) return;
-      links.forEach(a => a.setAttribute("aria-current", a.dataset.target === tabOf(vis.target.id) ? "true" : "false"));
-    }, { rootMargin: "-40% 0px -50% 0px", threshold: [0, .1, .5] });
-    targets.forEach(el => io.observe(el));
-  })();
+  document.querySelectorAll("#places-sub button").forEach(b => b.addEventListener("click", () => { setView("places", b.dataset.sub); history.replaceState(null, "", "#" + (b.dataset.sub === "eat" ? "eat" : "places")); window.scrollTo({ top: 0, behavior: "instant" }); }));
+  route();
 
   // ---------- wiring ----------
   document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
@@ -809,12 +844,12 @@
 
   // The Emergency button also opens the card, not just scrolls to it
   document.getElementById("co-banner").addEventListener("click", e => {
-    const card = document.getElementById("card-checkout"); if (!card) return;
+    showCardPage("card-checkout"); const card = document.getElementById("card-checkout"); if (!card) return;
     e.preventDefault(); card.open = true;
     requestAnimationFrame(() => card.scrollIntoView({ block: "start", behavior: "smooth" }));
   });
   document.querySelectorAll("#sos-btn, #sos-brand, #sos-link").forEach(b => b.addEventListener("click", e => {
-    const card = document.getElementById("card-emergency"); if (!card) return;
+    showCardPage("card-emergency"); const card = document.getElementById("card-emergency"); if (!card) return;
     e.preventDefault(); card.open = true;
     requestAnimationFrame(() => card.scrollIntoView({ block: "start", behavior: "smooth" }));
   }));

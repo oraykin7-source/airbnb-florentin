@@ -1020,3 +1020,20 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .fav-line { color: var(--accent); font-size: var(--fs-xs); font-weight: 700; letter-spacing: var(--caps-track); text-transform: uppercase; }
 [dir="rtl"] .fav-line { letter-spacing: 0; text-transform: none; font-size: var(--fs-sm); }
 .ev.tour.tour-tile .tour-txt .credit-link { margin-top: 2px; }
+/* ===== Pages (3.10 evening): each bottom tab is its own page ===== */
+[data-off] { display: none !important; }
+/* Start page: the other pages as four big tiles under the first-hour strip's header area */
+.jump { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 22px 0 6px; }
+.jump a { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 64px; padding: 12px 16px; border-radius: var(--r-md, 16px); background: var(--surface); box-shadow: var(--shadow), 0 0 0 1px var(--ring); color: var(--ink); font-weight: 700; font-size: var(--fs-md); text-decoration: none; }
+.jump a::after { content: "→"; color: var(--accent); font-weight: 700; }
+[dir="rtl"] .jump a::after { content: "←"; }
+.jump a[hidden] { display: none; }
+@media (min-width: 900px) { .jump { grid-template-columns: repeat(4, 1fr); } }
+/* Places page: Places | Eat switch */
+.subtabs { display: flex; gap: 8px; padding: 6px 0 0; }
+.subtabs button { min-height: 44px; padding: 0 18px; border: 0; border-radius: 999px; background: var(--chip); color: var(--ink); font: inherit; font-size: var(--fs-md); font-weight: 700; cursor: pointer; }
+.subtabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink, #fff); }
+.subtabs button[hidden] { display: none; }
+/* each page starts under the sticky header with some air */
+main > .block:first-of-type { scroll-margin-top: 80px; }
+body { overflow-anchor: none; }
