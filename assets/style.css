@@ -656,3 +656,5 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .ev.tour.tour-row .ev-media, .ev:not(.tour) .ev-media { margin: 0; }
 .ev:not(.tour) { padding: 0; }
 .ev:not(.tour) .ev-media.ph { display: grid; }
+.ev:not(.tour) .ev-media { grid-row: 1 / span 4; }
+.ev:not(.tour) > p { -webkit-line-clamp: 2; }
