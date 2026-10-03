@@ -1041,7 +1041,7 @@
             {
               "name": "Mama",
               "where": "HaAliya St 17",
-              "hours": "until 20:30",
+              "hours": "8:30-20:30, Fri until 17:30",
               "note": {
                 "en": "deli & minimarket - cold cuts, cheeses, non-kosher meat, Russian/Ukrainian products",
                 "de": "Feinkost & Minimarkt - Aufschnitt, Käse, nicht-koscheres Fleisch, russische/ukrainische Produkte",
@@ -1054,7 +1054,7 @@
             {
               "name": "Shufersal Express",
               "where": "Florentin St 27",
-              "hours": "until 22:00",
+              "hours": "6:30-22:00, Fri until 15:15",
               "note": {
                 "en": "big chain, good prices",
                 "de": "große Kette, gute Preise",
@@ -1080,7 +1080,7 @@
             {
               "name": "AM:PM",
               "where": "Herzl St 61",
-              "hours": "until 22:30",
+              "hours": "8:00-22:30",
               "note": {
                 "en": "convenience chain, pricier",
                 "de": "Convenience-Kette, teurer",
@@ -1189,7 +1189,7 @@
             {
               "name": "Café Levinsky 41",
               "where": "Levinski St 41",
-              "hours": "6:30-19:00, Fri until 17:00, closed Sat",
+              "hours": "7:00-19:00, Fri until 17:00, closed Sat",
               "note": {
                 "en": "Benny Briga's tiny gazoz bar: soda with fruit syrup, herbs and flowers. No menu, just ask - 3 min",
                 "de": "Benny Brigas winzige Gazoz-Bar: Sprudel mit Fruchtsirup, Kräutern, Blüten. Keine Karte, fragen - 3 Min.",
@@ -1257,7 +1257,7 @@
             {
               "name": "Mirage - coffee",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
-              "hours": "from 8:00, Fri until 17:00",
+              "hours": "8:00-00:00",
               "note": {
                 "en": "same Mirage, in the morning: coffee, sandwiches and pastries on the park - 10 min walk",
                 "de": "dasselbe Mirage, am Morgen: Kaffee, Sandwiches und Gebäck am Park - 10 Min. zu Fuß",
@@ -1301,7 +1301,7 @@
             {
               "name": "Garger HaZahav",
               "where": "Levinski St 30",
-              "hours": "until 17:00, closed Sat",
+              "hours": "until 17:00, Tue-Thu until 23:00, Fri until 15:30, closed Sat",
               "note": {
                 "en": "the best hummus in Levinsky market - 5 min walk",
                 "de": "der beste Hummus im Levinsky-Markt - 5 Min. zu Fuß",
@@ -1318,7 +1318,7 @@
             {
               "name": "Sabich Frishman",
               "where": "Levinski St 57",
-              "hours": "until 21:00",
+              "hours": "until 21:00, Fri until 16:00",
               "note": {
                 "en": "sabich: pita with fried aubergine, egg, salads - Tel Aviv's classic",
                 "de": "Sabich: Pita mit gebratener Aubergine, Ei, Salaten - der Klassiker Tel Avivs",
@@ -1335,7 +1335,7 @@
             {
               "name": "Burekas shel Ima",
               "where": "Levinski St 46",
-              "hours": "until 18:00, closed Sat",
+              "hours": "until 18:00, Fri until 16:00, closed Sat",
               "note": {
                 "en": "'Mom's burekas' - flaky pastry, breakfast on the go",
                 "de": "'Mamas Burekas' - Blätterteig, Frühstück auf die Hand",
@@ -1349,7 +1349,7 @@
             {
               "name": "Turk Lahmajoun",
               "where": "Nahalat Binyamin St 77",
-              "hours": "until 20:00, closed Sat",
+              "hours": "until 20:00, Fri until 15:00, closed Sat",
               "note": {
                 "en": "Turkish: lahmajoun, lamb shawarma in laffa - 10 min walk",
                 "de": "Türkisch: Lahmacun, Lamm-Schawarma im Laffa - 10 Min. zu Fuß",
@@ -1366,7 +1366,7 @@
             {
               "name": "Falafel Gabay",
               "where": "Bograshov St 25",
-              "hours": "until 22:30, Fri until 17:00, closed Sat",
+              "hours": "until 21:30, Fri until 17:00, closed Sat",
               "note": {
                 "en": "the Yemenite falafel - crispy falafel, soups and schnitzel, by Bograshov beach - 30 min walk",
                 "de": "das jemenitische Falafel - knusprige Falafel, Suppen, Schnitzel, nahe Bograshov-Strand - 30 Min.",
@@ -1400,7 +1400,7 @@
             {
               "name": "Abu Hassan (Ali Karavan)",
               "where": "HaDolphin St 1, Jaffa",
-              "hours": "from 8:00 until the hummus runs out (~14:30), closed Sat",
+              "hours": "8:00-15:00, closed Sat",
               "note": {
                 "en": "Jaffa's legendary hummus since 1959 - the 'triangle': hummus, ful, msabbaha. Go early - 25 min",
                 "de": "Jaffas legendärer Hummus seit 1959 - das 'Dreieck': Hummus, Ful, Msabbaha. Früh kommen - 25 Min.",
@@ -1434,7 +1434,7 @@
             {
               "name": "Koko Zen",
               "where": "Florentin St 5",
-              "hours": "11:00-23:00, closed Sun",
+              "hours": "11:00-21:00, closed Sun",
               "note": {
                 "en": "Koko Neko's Japanese café next door: fluffy soufflé pancakes, matcha, sando sandwiches",
                 "de": "das japanische Café von Koko Neko nebenan: fluffige Soufflé-Pancakes, Matcha, Sando-Sandwiches",
@@ -1461,7 +1461,7 @@
             {
               "name": "HaShachaf",
               "where": "Herzl St 22",
-              "hours": "from 17:00",
+              "hours": "from 18:00, Fri-Sat from 12:00",
               "note": {
                 "en": "fish & seafood, Greek style - octopus, fish carpaccio. Same corner as Mirage, by Park HaMesila",
                 "de": "Fisch & Meeresfrüchte auf griechische Art - Oktopus, Fisch-Carpaccio. Gleiche Ecke wie Mirage, am Park HaMesila",
@@ -1502,7 +1502,7 @@
             {
               "name": "Cassata",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
-              "hours": "until 00:00",
+              "hours": "12:00-00:00, Thu until 01:00, Fri from 11:00",
               "note": {
                 "en": "Eyal Shani's ice cream, next door to Mirage - try the campfire marshmallow",
                 "de": "Eyal Shanis Eisdiele, direkt neben Mirage - probieren Sie das Lagerfeuer-Marshmallow-Eis",
@@ -1519,7 +1519,7 @@
             {
               "name": "Koko Neko",
               "where": "Florentin St 5",
-              "hours": "12:00-15:30 & 17:00-23:00",
+              "hours": "12:00-23:30, closed Sun",
               "note": {
                 "en": "my go-to ramen: tonkotsu with chashu and egg. No bookings, expect a queue - 7 min walk",
                 "de": "mein Ramen-Stammlokal: Tonkotsu mit Chashu und Ei. Keine Reservierung, Schlange - 7 Min. zu Fuß",
@@ -1536,7 +1536,7 @@
             {
               "name": "Mezcal",
               "where": "Vital St 2",
-              "hours": "from 17:00, Fri-Sat from 13:00, closed Sun",
+              "hours": "17:00-00:00, closed Wed",
               "note": {
                 "en": "Mexican bar-restaurant in the Florentin nightlife - tacos, ceviche, mezcal cocktails - 7 min walk",
                 "de": "mexikanisches Bar-Restaurant im Florentin-Nachtleben - Tacos, Ceviche, Mezcal-Cocktails - 7 Min.",
@@ -1570,7 +1570,7 @@
             {
               "name": "Oscar's",
               "where": "Nahalat Binyamin St 68, Park HaMesila",
-              "hours": "from 18:00, every Saturday night",
+              "hours": "18:00-23:00, Fri from 17:00, every Saturday night",
               "note": {
                 "en": "the schnitzel place of the moment - schnitzel with free refills of mash, on Park HaMesila - 10 min",
                 "de": "die Schnitzelbude der Stunde - Schnitzel mit Kartoffelpüree-Nachschlag, am Park HaMesila - 10 Min.",
