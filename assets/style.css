@@ -1076,3 +1076,6 @@ body { overflow-anchor: none; }
 .hood { padding-top: 8px; padding-bottom: 24px; }
 .hood h2 { font-size: var(--fs-lg); }
 .hood .lead { max-width: 60ch; }
+/* Eat: "Open on Saturday" filter chip */
+.satchip { min-height: 44px; padding: 0 16px; margin: 4px 0 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: 700 var(--fs-sm)/1 Inter, Heebo, sans-serif; cursor: pointer; }
+.satchip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink, #fff); }
