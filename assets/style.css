@@ -676,3 +676,24 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .card.emergency:not([open]) summary { flex-direction: row; align-items: center; }
 .card.emergency:not([open]) .chev { position: static; }
 @media (max-width: 340px) { .cards { grid-template-columns: 1fr; } .card:not([open]) summary { flex-direction: row; align-items: center; } }
+
+/* Opening polish (3.10 evening): more air, aligned buttons, quiet emergency line; desktop alignment */
+.hero { padding-top: 40px; }
+.eyebrow { margin-bottom: 14px; }
+.hero h1 { font-size: clamp(1.95rem, 7.4vw, 2.5rem); margin-bottom: 20px; }
+.name-box { margin-top: 0; gap: 10px; }
+.name-box input { max-width: none; min-height: 48px; font-size: 16px; border-radius: 14px; }
+.name-box .qbtn { min-height: 48px; padding: 0 20px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-soft); }
+.quick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.quick .qbtn { justify-content: center; min-height: 52px; border-radius: 14px; }
+.sos-static { margin-top: 14px; font-size: .78rem; line-height: 1.7; }
+.sos-static br { display: none; }
+.sos-static a.sos-link { margin-inline-start: .5em; font-weight: 500; text-decoration-thickness: 1px; }
+.sos-static a { font-weight: 600; }
+
+/* Desktop: header lines up with the 760px column; first-hour tiles become a grid instead of a clipped carousel */
+.top { padding-inline: max(16px, calc((100vw - 760px) / 2 + 16px)); }
+@media (min-width: 620px) {
+  .strip { grid-auto-flow: row; grid-template-columns: 1fr 1fr; grid-auto-columns: auto; overflow: visible; margin: 0; padding: 4px 0 10px; max-width: none; }
+  .tile { aspect-ratio: 4 / 3; }
+}
