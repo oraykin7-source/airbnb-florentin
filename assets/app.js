@@ -788,7 +788,7 @@
   // ---------- pages (3.10 evening, Oren: "a site with a page per topic, not one long landing page") ----------
   // One HTML file, five pages switched by the URL hash: start / apartment / tours / places (+eat) / this week.
   // Old deep links keep working (#card-tours, #card-ac, #week, #place-beach ...) because the hash picks the page.
-  const PAGES = { start: [".hero", "#home-intro", ".jump", "#first", "#hood"], house: ["#house"], tours: ["#tours"], places: ["#places-sub", "#eat", "#places"], week: ["#week"] };
+  const PAGES = { start: [".hero", ".jump", "#first", "#hood"], house: ["#house"], tours: ["#tours"], places: ["#places-sub", "#eat", "#places"], week: ["#week"] };
   const TAB_OF = { start: "top", house: "house", tours: "tours", places: "places", week: "week" };
   function pageOfHash(h) {
     h = (h || "").replace(/^#/, "");
