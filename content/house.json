@@ -300,7 +300,7 @@
       "thumb": "assets/img/house/thumb/tami4.webp",
       "group": "comfort",
       "first_hour": 4,
-      "tile": "assets/img/first-hour/water-bar.webp"
+      "tile": "assets/img/first-hour/water-bar-2.webp"
     },
     {
       "id": "ac",
@@ -581,7 +581,7 @@
       "thumb": "assets/img/house/thumb/hot_water.webp",
       "group": "comfort",
       "first_hour": 1,
-      "tile": "assets/img/first-hour/hot-water.webp"
+      "tile": "assets/img/first-hour/shower.webp"
     },
     {
       "id": "laundry",
