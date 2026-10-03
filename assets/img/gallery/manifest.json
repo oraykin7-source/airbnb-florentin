@@ -1,0 +1,648 @@
+{
+  "masada": [
+    {
+      "src": "assets/img/gallery/masada-1.webp",
+      "caption": {
+        "en": "Herod's Northern Palace, Masada",
+        "de": "Herodes' Nordpalast, Masada",
+        "fr": "Palais nord d'Hérode, Massada",
+        "he": "ארמון הצפוני של הורדוס, מצדה"
+      },
+      "credit": "אבינועם מיכאלי, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_10475_Herod_palace_at_Masada.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "src": "assets/img/gallery/masada-2.webp",
+      "caption": {
+        "en": "Salt shore of the Dead Sea",
+        "de": "Salzufer am Toten Meer",
+        "fr": "Rivage salé de la mer Morte",
+        "he": "חוף המלח של ים המלח"
+      },
+      "credit": "Tiia Monto, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Dead_Sea_shore.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/masada-3.webp",
+      "caption": {
+        "en": "Floating in the Dead Sea",
+        "de": "Schweben im Toten Meer",
+        "fr": "Flotter dans la mer Morte",
+        "he": "ציפה בים המלח"
+      },
+      "credit": "Rob Bye, CC0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Dead_Sea_floating_(Unsplash).jpg",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "jerusalem": [
+    {
+      "src": "assets/img/gallery/jerusalem-1.webp",
+      "caption": {
+        "en": "The Western Wall",
+        "de": "Die Klagemauer",
+        "fr": "Le mur des Lamentations",
+        "he": "הכותל המערבי"
+      },
+      "credit": "David King, CC BY 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Western_Wall_Plaza_-_Jerusalem_(1291829327).jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "src": "assets/img/gallery/jerusalem-2.webp",
+      "caption": {
+        "en": "Old City from the Mount of Olives",
+        "de": "Altstadt vom Ölberg aus",
+        "fr": "Vieille ville depuis le mont des Oliviers",
+        "he": "העיר העתיקה מהר הזיתים"
+      },
+      "credit": "Godot13, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013(2)-View_of_the_Dome_of_the_Rock_&_Temple_Mount_02.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/jerusalem-3.webp",
+      "caption": {
+        "en": "Jewish Quarter and Hurva Synagogue",
+        "de": "Jüdisches Viertel, Hurva-Synagoge",
+        "fr": "Quartier juif et synagogue Hurva",
+        "he": "הרובע היהודי ובית הכנסת החורבה"
+      },
+      "credit": "Bahnfrend, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jewish_Quarter,_2019_(05).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "coast": [
+    {
+      "src": "assets/img/gallery/coast-1.webp",
+      "caption": {
+        "en": "Roman aqueduct, Caesarea",
+        "de": "Römisches Aquädukt, Caesarea",
+        "fr": "Aqueduc romain, Césarée",
+        "he": "אמת המים הרומית, קיסריה"
+      },
+      "credit": "Flashpacker Travelguide, CC BY-SA 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Caesarea_Aqueduct_Aqu%C3%A4dukt_Israel_(35101295615).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "src": "assets/img/gallery/coast-2.webp",
+      "caption": {
+        "en": "Bahá'í Gardens, Haifa",
+        "de": "Bahai-Gärten, Haifa",
+        "fr": "Jardins bahá'ís, Haïfa",
+        "he": "הגנים הבהאיים, חיפה"
+      },
+      "credit": "Yuval Y, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Haifa_Bahai_Gardens_-_landscape.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/coast-3.webp",
+      "caption": {
+        "en": "Sea walls of Old Akko",
+        "de": "Seemauern von Akko",
+        "fr": "Remparts maritimes d'Acre",
+        "he": "חומות הים של עכו העתיקה"
+      },
+      "credit": "Oren Rozen, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Acre_201016_St_Johns_Church_01.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "galilee": [
+    {
+      "src": "assets/img/gallery/galilee-1.webp",
+      "caption": {
+        "en": "Basilica of the Annunciation, Nazareth",
+        "de": "Verkündigungsbasilika, Nazareth",
+        "fr": "Basilique de l'Annonciation, Nazareth",
+        "he": "כנסיית הבשורה, נצרת"
+      },
+      "credit": "Flashpacker Travelguide, CC BY-SA 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Israel_Nazareth_Old_City_Altstadt_Verk%C3%BCndigungsbasilika_Church_of_Annunciation_(34714423420).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "src": "assets/img/gallery/galilee-2.webp",
+      "caption": {
+        "en": "The Sea of Galilee",
+        "de": "Der See Genezareth",
+        "fr": "Le lac de Tibériade",
+        "he": "הכנרת"
+      },
+      "credit": "Cbrooks1022, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Sea_of_Galilee_with_Israeli_flag.JPG",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/galilee-3.webp",
+      "caption": {
+        "en": "Ancient synagogue, Capernaum",
+        "de": "Antike Synagoge, Kapernaum",
+        "fr": "Synagogue antique, Capharnaüm",
+        "he": "בית הכנסת העתיק, כפר נחום"
+      },
+      "credit": "David Shankbone, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Capernaum_synagogue_by_David_Shankbone.jpg",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "bethlehem": [
+    {
+      "src": "assets/img/gallery/bethlehem-1.webp",
+      "caption": {
+        "en": "Silver Star, Grotto of the Nativity",
+        "de": "Silberstern, Geburtsgrotte",
+        "fr": "Étoile d'argent, grotte de la Nativité",
+        "he": "כוכב הכסף במערת המולד"
+      },
+      "credit": "Berthold Werner, Public domain, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Bethlehem_BW_4.JPG",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "src": "assets/img/gallery/bethlehem-2.webp",
+      "caption": {
+        "en": "Church of the Nativity, nave",
+        "de": "Geburtskirche, Kirchenschiff",
+        "fr": "Nef de la basilique de la Nativité",
+        "he": "אולם כנסיית המולד"
+      },
+      "credit": "Bukvoed, CC BY 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Bethlehem-Nativity-187.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "src": "assets/img/gallery/bethlehem-3.webp",
+      "caption": {
+        "en": "Manger Square",
+        "de": "Krippenplatz",
+        "fr": "Place de la Mangeoire",
+        "he": "כיכר האבוס"
+      },
+      "credit": "adriatikus, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:4776-20080121-0852UTC--bethlehem-manger-square.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "beach": [
+    {
+      "src": "assets/img/gallery/beach-1.webp",
+      "caption": {
+        "en": "Sunset on the beach, Jaffa behind",
+        "de": "Sonnenuntergang, Jaffa im Hintergrund",
+        "fr": "Coucher de soleil, Jaffa au fond",
+        "he": "שקיעה בחוף, יפו ברקע"
+      },
+      "credit": "Jorge Láscar, CC BY 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Central_Tel_Aviv_beaches_and_Jaffa_on_the_background_(9869221525).jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "src": "assets/img/gallery/beach-2.webp",
+      "caption": {
+        "en": "The beach promenade",
+        "de": "Die Strandpromenade",
+        "fr": "La promenade du bord de mer",
+        "he": "טיילת החוף"
+      },
+      "credit": "israeltourism, CC BY-SA 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Tel_Aviv_Promenade_panoramics.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "src": "assets/img/gallery/beach-3.webp",
+      "caption": {
+        "en": "The beaches from above",
+        "de": "Die Strände von oben",
+        "fr": "Les plages vues d'en haut",
+        "he": "החופים מלמעלה"
+      },
+      "credit": "Simon Mannweiler, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:080718_Tel_Aviv_(05).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "jaffa_port": [
+    {
+      "src": "assets/img/gallery/jaffa_port-1.webp",
+      "caption": {
+        "en": "Fishing boats, Jaffa Port",
+        "de": "Fischerboote im Hafen von Jaffa",
+        "fr": "Bateaux de pêche, port de Jaffa",
+        "he": "סירות דייגים בנמל יפו"
+      },
+      "credit": "Ludvig14, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa_Port_T02.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/jaffa_port-2.webp",
+      "caption": {
+        "en": "Boats in the harbour",
+        "de": "Boote im Hafen",
+        "fr": "Bateaux dans le port",
+        "he": "סירות בנמל"
+      },
+      "credit": "Bahnfrend, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Boats,_Jaffa_Port,_2019_(01).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/jaffa_port-3.webp",
+      "caption": {
+        "en": "Jaffa Port from the air",
+        "de": "Hafen von Jaffa aus der Luft",
+        "fr": "Le port de Jaffa vu du ciel",
+        "he": "נמל יפו מהאוויר"
+      },
+      "credit": "Godot13, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:ISR-2013-Aerial-Jaffa-Port_of_Jaffa.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "old_jaffa": [
+    {
+      "src": "assets/img/gallery/old_jaffa-1.webp",
+      "caption": {
+        "en": "Stone alleys of Old Jaffa",
+        "de": "Steingassen von Alt-Jaffa",
+        "fr": "Ruelles de pierre du vieux Jaffa",
+        "he": "סמטאות האבן של יפו העתיקה"
+      },
+      "credit": "xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_03.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "src": "assets/img/gallery/old_jaffa-2.webp",
+      "caption": {
+        "en": "The Clock Tower",
+        "de": "Der Uhrturm",
+        "fr": "La tour de l'Horloge",
+        "he": "מגדל השעון"
+      },
+      "credit": "Deror Avi, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa_Clock_Tower_P1060427.JPG",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/old_jaffa-3.webp",
+      "caption": {
+        "en": "The flea market",
+        "de": "Der Flohmarkt",
+        "fr": "Le marché aux puces",
+        "he": "שוק הפשפשים"
+      },
+      "credit": "Avishai Teicher, Public domain, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Flee_Market,_Jaffa.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  ],
+  "neve_tzedek": [
+    {
+      "src": "assets/img/gallery/neve_tzedek-1.webp",
+      "caption": {
+        "en": "Suzanne Dellal plaza",
+        "de": "Suzanne-Dellal-Platz",
+        "fr": "Place Suzanne Dellal",
+        "he": "רחבת סוזן דלל"
+      },
+      "credit": "Radosław Botev, CC BY 3.0 pl, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Neve_Tzedek_Tel_Aviv_(1).jpg",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/pl/deed.en"
+    },
+    {
+      "src": "assets/img/gallery/neve_tzedek-2.webp",
+      "caption": {
+        "en": "Corner house, Neve Tzedek",
+        "de": "Eckhaus in Neve Tzedek",
+        "fr": "Maison d'angle, Neve Tzedek",
+        "he": "בית פינתי בנווה צדק"
+      },
+      "credit": "Artem.G, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Building_in_Neve_Tzedek.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/neve_tzedek-3.webp",
+      "caption": {
+        "en": "Dolls on a windowsill",
+        "de": "Puppen auf dem Fensterbrett",
+        "fr": "Poupées sur un rebord de fenêtre",
+        "he": "בובות על אדן החלון"
+      },
+      "credit": "David Berkowitz, CC BY 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Neve_Tzedek_Sculptures_-_Tel_Aviv_(4025113373).jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    }
+  ],
+  "ta_museum": [
+    {
+      "src": "assets/img/gallery/ta_museum-1.webp",
+      "caption": {
+        "en": "The museum plaza",
+        "de": "Der Museumsplatz",
+        "fr": "Le parvis du musée",
+        "he": "רחבת המוזיאון"
+      },
+      "credit": "Tfeliz, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Art_Museum_Tel_Aviv.JPG",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/ta_museum-2.webp",
+      "caption": {
+        "en": "Henry Moore sculpture",
+        "de": "Skulptur von Henry Moore",
+        "fr": "Sculpture de Henry Moore",
+        "he": "פסל של הנרי מור"
+      },
+      "credit": "Yair Haklai, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Henry_Moore-Reclining_Figure-Tel_Aviv_Museum_of_Art.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/ta_museum-3.webp",
+      "caption": {
+        "en": "Amir Building entrance",
+        "de": "Eingang des Amir-Gebäudes",
+        "fr": "Entrée du bâtiment Amir",
+        "he": "הכניסה לבניין אמיר"
+      },
+      "credit": "ארתור שמונק, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_15282_Tel_Aviv_Museum_of_Art.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    }
+  ],
+  "levinsky": [
+    {
+      "src": "assets/img/gallery/levinsky-1.webp",
+      "caption": {
+        "en": "Nuts and seeds",
+        "de": "Nüsse und Kerne",
+        "fr": "Noix et graines",
+        "he": "אגוזים וגרעינים"
+      },
+      "credit": "הרווי ספיר, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_49490_old_market,_livinski_street,_tel_aviv.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "src": "assets/img/gallery/levinsky-2.webp",
+      "caption": {
+        "en": "Walnuts by the sack",
+        "de": "Walnüsse sackweise",
+        "fr": "Noix au sac",
+        "he": "אגוזי מלך בשקים"
+      },
+      "credit": "הרווי ספיר, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_49500_old_market,_livinski_street,_tel_aviv.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "src": "assets/img/gallery/levinsky-3.webp",
+      "caption": {
+        "en": "Levinsky Street stalls",
+        "de": "Stände in der Levinsky-Straße",
+        "fr": "Étals de la rue Levinsky",
+        "he": "דוכנים ברחוב לוינסקי"
+      },
+      "credit": "ד\"ר אבישי טייכר, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_9952_levinsky_market_in_tel_aviv.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    }
+  ],
+  "florentin_art": [
+    {
+      "src": "assets/img/gallery/florentin_art-1.webp",
+      "caption": {
+        "en": "\"Enjoy your life\" bear mural",
+        "de": "Bärenmural „Enjoy your life“",
+        "fr": "Fresque de l'ours « Enjoy your life »",
+        "he": "ציור הדוב \"Enjoy your life\""
+      },
+      "credit": "Nizzan Cohen, CC BY 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Grafitiyul_bear_in_Florentin_street_Tel_Aviv.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "src": "assets/img/gallery/florentin_art-2.webp",
+      "caption": {
+        "en": "Catrina mural",
+        "de": "Catrina-Wandbild",
+        "fr": "Fresque de la Catrina",
+        "he": "ציור קיר של קטרינה"
+      },
+      "credit": "LeRenartQuiPense, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Mexican_graffiti_Tel_Aviv_Florentin_area.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/florentin_art-3.webp",
+      "caption": {
+        "en": "Three men in fezzes",
+        "de": "Drei Männer mit Fes",
+        "fr": "Trois hommes au fez",
+        "he": "שלושה גברים בתרבוש"
+      },
+      "credit": "LeRenartQuiPense, CC BY 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Turks_graffiti_Florentin_Tel_Aviv.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    }
+  ],
+  "carmel": [
+    {
+      "src": "assets/img/gallery/carmel-1.webp",
+      "caption": {
+        "en": "Fruit stall",
+        "de": "Obststand",
+        "fr": "Étal de fruits",
+        "he": "דוכן פירות"
+      },
+      "credit": "ישראל פרקר, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:128488_tel_aviv_carmel_market_PikiWiki_Israel.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "src": "assets/img/gallery/carmel-2.webp",
+      "caption": {
+        "en": "The market alley",
+        "de": "Die Marktgasse",
+        "fr": "L'allée du marché",
+        "he": "סמטת השוק"
+      },
+      "credit": "Jorge Láscar, CC BY 2.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Carmel_Market,_Tel_Aviv_(9869191184).jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "src": "assets/img/gallery/carmel-3.webp",
+      "caption": {
+        "en": "Produce stall",
+        "de": "Gemüsestand",
+        "fr": "Étal de produits frais",
+        "he": "דוכן ירקות ופירות"
+      },
+      "credit": "רונן מרקוס, CC BY 2.5, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_51463_carmel_market,_tel_aviv.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    }
+  ],
+  "rothschild": [
+    {
+      "src": "assets/img/gallery/rothschild-1.webp",
+      "caption": {
+        "en": "Deck chairs on the boulevard",
+        "de": "Liegestühle auf dem Boulevard",
+        "fr": "Chaises longues sur le boulevard",
+        "he": "כיסאות נוח בשדרה"
+      },
+      "credit": "Naamag95, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93_1.JPG",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/rothschild-2.webp",
+      "caption": {
+        "en": "Bike lane under the trees",
+        "de": "Radweg unter den Bäumen",
+        "fr": "Piste cyclable sous les arbres",
+        "he": "שביל אופניים תחת העצים"
+      },
+      "credit": "Izemah, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Rothschild_Boulevard_bike_lane.JPG",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/rothschild-3.webp",
+      "caption": {
+        "en": "Bauhaus house, no. 106",
+        "de": "Bauhaus-Gebäude Nr. 106",
+        "fr": "Maison Bauhaus, n° 106",
+        "he": "בית בסגנון באוהאוס, מספר 106"
+      },
+      "credit": "David Shankbone, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:106_Rothschild_Boulevard_by_David_Shankbone.jpg",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "hatachana": [
+    {
+      "src": "assets/img/gallery/hatachana-1.webp",
+      "caption": {
+        "en": "The old station building",
+        "de": "Das alte Bahnhofsgebäude",
+        "fr": "L'ancienne gare",
+        "he": "בניין התחנה הישן"
+      },
+      "credit": "Bahnfrend, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa_railway_station,_2019_(01).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/hatachana-2.webp",
+      "caption": {
+        "en": "Platform and tracks",
+        "de": "Bahnsteig und Gleise",
+        "fr": "Quai et rails",
+        "he": "הרציף והמסילה"
+      },
+      "credit": "Bukvoed, CC BY 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa-railways-station-80.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "src": "assets/img/gallery/hatachana-3.webp",
+      "caption": {
+        "en": "Garden in the compound",
+        "de": "Garten im Gelände",
+        "fr": "Jardin de l'enceinte",
+        "he": "גינה במתחם"
+      },
+      "credit": "Bahnfrend, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa_railway_station,_2019_(04).jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "ta_port": [
+    {
+      "src": "assets/img/gallery/ta_port-1.webp",
+      "caption": {
+        "en": "The port from the air",
+        "de": "Der Hafen aus der Luft",
+        "fr": "Le port vu du ciel",
+        "he": "הנמל מהאוויר"
+      },
+      "credit": "אילן ארד, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Tel_Aviv_Port_Lowshot.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/ta_port-2.webp",
+      "caption": {
+        "en": "Sunset over the breakwater",
+        "de": "Sonnenuntergang am Wellenbrecher",
+        "fr": "Coucher de soleil sur la jetée",
+        "he": "שקיעה מעל שובר הגלים"
+      },
+      "credit": "Romanhit, CC BY-SA 3.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:%D7%A0%D7%9E%D7%9C_%D7%AA%D7%9C_%D7%90%D7%91%D7%99%D7%91_-_%D7%A9%D7%A7%D7%99%D7%A2%D7%94.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "src": "assets/img/gallery/ta_port-3.webp",
+      "caption": {
+        "en": "The carousel from above",
+        "de": "Das Karussell von oben",
+        "fr": "Le carrousel vu d'en haut",
+        "he": "הקרוסלה מלמעלה"
+      },
+      "credit": "Giladtop, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:%D7%94%D7%A7%D7%A8%D7%95%D7%A1%D7%9C%D7%94_%D7%94%D7%A2%D7%91%D7%A8%D7%99%D7%AA_%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%94.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "sarona": [
+    {
+      "src": "assets/img/gallery/sarona-1.webp",
+      "caption": {
+        "en": "Templer house",
+        "de": "Templerhaus",
+        "fr": "Maison templière",
+        "he": "בית טמפלרי"
+      },
+      "credit": "Limor Noah, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:SARONA_TEL_AVIV.JPG",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/sarona-2.webp",
+      "caption": {
+        "en": "The lawns of Sarona",
+        "de": "Die Rasenflächen von Sarona",
+        "fr": "Les pelouses de Sarona",
+        "he": "המדשאות של שרונה"
+      },
+      "credit": "Hoshvilim, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Sarona_Market,_Tel_Aviv_38.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "src": "assets/img/gallery/sarona-3.webp",
+      "caption": {
+        "en": "Restored Templer house",
+        "de": "Restauriertes Templerhaus",
+        "fr": "Maison templière restaurée",
+        "he": "בית טמפלרי משוחזר"
+      },
+      "credit": "Ynhockey, CC BY-SA 4.0, via Wikimedia Commons",
+      "credit_url": "https://commons.wikimedia.org/wiki/File:Tel_Aviv_Sarona_Albert_Mandler_10.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ]
+}
