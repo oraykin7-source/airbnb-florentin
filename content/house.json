@@ -1061,19 +1061,6 @@
               "shabbat": false
             },
             {
-              "name": "Super Levinsky",
-              "where": "Levinski St 78",
-              "hours": "until 21:00",
-              "note": {
-                "en": "fruit & veg, corner of Derech Yafo",
-                "de": "Obst & Gemüse, Ecke Derech Yafo",
-                "fr": "fruits et légumes, angle Derech Yafo",
-                "he": "פירות וירקות, פינת דרך יפו"
-              },
-              "url": "https://www.google.com/maps/place/Super+Levinsky/@32.0582903,34.7759643,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4b8d00f2e8bf:0xbc519a8cf02e9ad8!8m2!3d32.0582903!4d34.7759643!16s%2Fg%2F11scppfhzd",
-              "shabbat": false
-            },
-            {
               "name": "Minimarket Levinsky",
               "where": "Levinski St 77",
               "hours": "until 23:00",
