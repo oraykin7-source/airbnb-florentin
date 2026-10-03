@@ -89,7 +89,8 @@
           "fr": "Visite guidée : vieille ville, port et puces",
           "he": "סיור מודרך: העיר העתיקה, הנמל ושוק הפשפשים"
         }
-      }
+      },
+      "focus": "50% 15%"
     },
     {
       "id": "neve_tzedek",
@@ -116,7 +117,8 @@
       "credit_url": "https://commons.wikimedia.org/wiki/File:19_Neve_Tzedek_St,_Tel_Aviv.jpg",
       "map": "https://maps.google.com/?q=Shabazi+Street+Neve+Tzedek",
       "license_url": "https://creativecommons.org/licenses/by/4.0",
-      "image_title": "File:19 Neve Tzedek St, Tel Aviv.jpg"
+      "image_title": "File:19 Neve Tzedek St, Tel Aviv.jpg",
+      "focus": "50% 50%"
     },
     {
       "id": "ta_museum",
@@ -143,7 +145,8 @@
       "credit_url": "https://commons.wikimedia.org/wiki/File:Preston_Scott_Cohen-Herta_and_Paul_Amir_Building-Tel_Aviv_Museum_of_Art.jpg",
       "map": "https://maps.google.com/?q=Tel+Aviv+Museum+of+Art",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "image_title": "File:Preston Scott Cohen-Herta and Paul Amir Building-Tel Aviv Museum of Art.jpg"
+      "image_title": "File:Preston Scott Cohen-Herta and Paul Amir Building-Tel Aviv Museum of Art.jpg",
+      "focus": "50% 55%"
     },
     {
       "id": "levinsky",
@@ -296,7 +299,8 @@
       "credit_url": "https://commons.wikimedia.org/wiki/File:Jaffa_railway_station.JPG",
       "map": "https://maps.google.com/?q=HaTachana+Tel+Aviv",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "image_title": "File:Jaffa railway station.JPG"
+      "image_title": "File:Jaffa railway station.JPG",
+      "focus": "50% 20%"
     },
     {
       "id": "ta_port",

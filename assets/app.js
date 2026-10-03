@@ -544,7 +544,7 @@
         onclick: e => { const open = txt.classList.toggle("open"); credit.hidden = !open; e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.textContent = open ? t("less_txt") : t("more_txt"); } }, t("more_txt"));
       box.append(el("article", { class: "place", id: "place-" + p.id },
         el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
-          el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675" }),
+          el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675", style: p.focus ? "object-position:" + p.focus : null }),
           el("span", { class: "walk" }, L_(p.walk)),
           p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null,
           galleryButton(p.id, { src: p.image, caption: p.title, credit: p.credit, credit_url: p.credit_url })),
