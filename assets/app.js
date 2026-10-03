@@ -500,6 +500,8 @@
       if (c.id === "eat") continue;   // rendered as its own open section (3.10, like "Places I love")
       (grids[c.group] || box).append(card);
     }
+    // A group with fewer than three cards spreads them across the whole row instead of leaving a gap
+    for (const g of Object.values(grids)) g.style.setProperty("--cols", Math.min(Math.max(g.children.length, 1), 3));
   }
 
   // "Where Oren eats" as open photo cards, same look as the places (3.10)

@@ -913,3 +913,9 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .mapcard-routes .route strong { font-size: .92rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .mapcard-routes .route span { font-size: .75rem; color: var(--muted); }
 .mapcard-all { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: .9rem; text-decoration: none; align-self: flex-start; }
+
+/* 3.10 night 2: Emergency framed all round in red; House rules and the feedback card identical; short groups fill the row */
+.cards[data-group="safe"] .card.emergency, [dir="rtl"] .cards[data-group="safe"] .card.emergency { box-shadow: var(--shadow); border: 2px solid var(--danger); }
+.cards[data-group="safe"] #card-rules { border-inline-start: 0; }
+@media (min-width: 900px) { .cards:not([data-group="safe"]) { grid-template-columns: repeat(var(--cols, 3), 1fr); } }
+@media (max-width: 899px) { .cards:not([data-group="safe"]) .card:last-child:nth-child(odd) { grid-column: 1 / -1; } }
