@@ -118,7 +118,7 @@
             "fr": "Café - machine à capsules",
             "he": "קפה - מכונת קפסולות"
           },
-          "image": "assets/img/house/nespresso.webp",
+          "image": "assets/img/house/nespresso-studio.webp",
           "image_alt": {
             "en": "The capsule machine, milk frother and capsules",
             "de": "Kapselmaschine, Milchaufschäumer und Kapseln",
@@ -163,7 +163,7 @@
             "fr": "Eau pétillante - SodaStream",
             "he": "מים מוגזים - סודה-סטרים"
           },
-          "image": "assets/img/house/sodastream.webp",
+          "image": "assets/img/house/sodastream-studio.webp",
           "image_alt": {
             "en": "The SodaStream and its bottle",
             "de": "Der SodaStream mit Flasche",
@@ -264,7 +264,7 @@
         "fr": "Eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
         "he": "מים מסוננים קרים וחמים - להחזיק את הכפתור האדום למזיגת מים חמים"
       },
-      "image": "assets/img/house/tami4.webp",
+      "image": "assets/img/first-hour/water-bar-2.webp",
       "image_alt": {
         "en": "The Tami4 control panel",
         "de": "Das Bedienfeld des Tami4",
@@ -339,7 +339,7 @@
             "fr": "Chambre (télécommande blanche Tornado)",
             "he": "חדר השינה (שלט טורנדו לבן)"
           },
-          "image": "assets/img/house/ac-remote-bedroom.webp",
+          "image": "assets/img/house/ac-remote-bedroom-studio.webp",
           "image_alt": {
             "en": "Tornado remote",
             "de": "Tornado-Fernbedienung",
@@ -376,7 +376,7 @@
             "fr": "Salon (télécommande Tadiran)",
             "he": "סלון (שלט תדיראן)"
           },
-          "image": "assets/img/house/ac-remote-living.webp",
+          "image": "assets/img/house/ac-remote-living-studio.webp",
           "image_alt": {
             "en": "Tadiran remote",
             "de": "Tadiran-Fernbedienung",
@@ -449,7 +449,7 @@
             "fr": "Votre chambre - TV Hisense + clé Xiaomi (deux télécommandes)",
             "he": "החדר שלכם - טלוויזיית הייסנס + סטרימר שיאומי (שני שלטים)"
           },
-          "image": "assets/img/house/tv-remotes-room.webp",
+          "image": "assets/img/house/tv-remotes-room-studio.webp",
           "image_alt": {
             "en": "Left: the small Xiaomi remote (streaming). Right: the Hisense TV remote.",
             "de": "Links: die kleine Xiaomi-Fernbedienung (Streaming). Rechts: die Hisense-TV-Fernbedienung.",
@@ -490,7 +490,7 @@
             "fr": "Salon - TV Samsung (une télécommande)",
             "he": "סלון - טלוויזיית סמסונג (שלט אחד)"
           },
-          "image": "assets/img/house/tv-remote.webp",
+          "image": "assets/img/house/tv-remote-studio.webp",
           "image_alt": {
             "en": "The Samsung TV remote",
             "de": "Die Samsung-Fernbedienung",
@@ -833,7 +833,7 @@
             "fr": "Trousse de premiers secours",
             "he": "ערכת עזרה ראשונה"
           },
-          "image": "assets/img/house/first-aid-kit.webp",
+          "image": "assets/img/house/first-aid-kit-studio.webp",
           "image_alt": {
             "en": "Blue and white first-aid bag",
             "de": "Blau-weiße Erste-Hilfe-Tasche",
