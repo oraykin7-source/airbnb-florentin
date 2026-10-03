@@ -988,3 +988,29 @@ li.check input:checked + label { color: var(--muted); text-decoration: line-thro
 .gal-badge svg { flex: none; }
 .ev-media[role="button"], .place-media[role="button"] { cursor: pointer; }
 .ev.tour.tour-tile .tour-txt .credit-link { display: block; margin-top: 6px; }
+/* ===== 3.10 evening: designer round 2 (items 1, 2, 4, 5) + Oren: chips inside the screen, event photo on top ===== */
+/* 1: the type scale wins over the old rules (same specificity, no !important) */
+.cards:not([data-group="safe"]) .card:not([open]) h3 { font-size: var(--fs-sm); }
+.card:not([open]) .sub { font-size: var(--fs-xs); }
+@media (max-width: 619px) { .ev.tour.tour-tile h3 { font-size: var(--fs-md); } .ev.tour.tour-tile p { font-size: var(--fs-sm); } }
+.ev.tour.tour-tile .book, .more-tours, .small, .ev:not(.tour) > p, .foot { font-size: var(--fs-sm); }
+.muted, .stay-pick, .tabs button { font-size: var(--fs-md); }
+.lang button { font-size: var(--fs-sm); }
+.name-box .name-save { font-size: var(--fs-sm); }
+.hero h1 { font-size: var(--fs-2xl); }
+/* 2: the booking link sits on the same edge as the rest of the tile */
+.ev.tour.tour-tile .book { justify-content: flex-start; width: auto; padding-inline: 0; }
+/* 4: no text under 12px in Hebrew either */
+[dir="rtl"] .ev .when { font-size: var(--fs-xs); }
+/* 5: every gallery slide in the same 3:2 frame */
+.lb-item img { aspect-ratio: 3 / 2; object-fit: cover; max-height: calc(100% - 96px); }
+/* Oren: route chips and category chips must stay inside the screen - wrap instead of scrolling off */
+.mapcard-routes { flex-wrap: wrap; overflow: visible; }
+.mapcard-routes .route { max-width: 100%; }
+.tabs { flex-wrap: wrap; overflow: visible; }
+/* Oren: "This week" rows - wide photo on top, text under it (like the place cards) */
+.ev:not(.tour) { display: block; }
+.ev:not(.tour) .ev-media { width: auto; height: auto; min-height: 0; aspect-ratio: 2 / 1; margin: 0; border-radius: 0; }
+.ev:not(.tour) .ev-media.ph { aspect-ratio: 2 / 1; }
+.ev:not(.tour) > .ev-top { padding: 12px 14px 0; }
+.ev:not(.tour) > .foot-row { padding: 0 14px 14px; }

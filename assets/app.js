@@ -555,7 +555,7 @@
           p.tour ? el("a", { class: "place-tour", href: p.tour.url, target: "_blank", rel: "noopener sponsored" }, "🧭 " + L_(p.tour.label) + " " + ARROW()) : null,
           el("div", { class: "place-foot" },
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + L_(p.title) }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
-            el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${p.credit}` }, t("photo") + " ↗")))));
+            el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${p.credit}` }, t("photo") + (state.lang === "he" ? " ↖" : " ↗"))))));
     }
     // Map card (3.10 evening): small illustration, one sentence, walking routes through public landmarks.
     // No start address: the first stop is a public place, so nothing private ever reaches the page.
@@ -659,7 +659,7 @@
           el("p", {}, L_(it.blurb)),
           el("a", { class: "book", href: url, target: "_blank", rel: "noopener sponsored" }, t("book") + " " + ARROW()),
           // Photo credit as a short link under the text, same as the place cards (designer review 3.10, item 12)
-          it.image_credit ? el("a", { class: "credit-link", href: it.image_credit_url || url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${it.image_credit}` }, t("photo") + " ↗") : null)));
+          it.image_credit ? el("a", { class: "credit-link", href: it.image_credit_url || url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${it.image_credit}` }, t("photo") + (state.lang === "he" ? " ↖" : " ↗")) : null)));
     }
     if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
   }
