@@ -41,7 +41,8 @@ window.gd = (() => {
     const d = F.contentDocument;
     if (dark) d.documentElement.setAttribute('data-theme', 'dark');
     d.documentElement.style.scrollBehavior = 'auto';
-    await sleep(300);
+    d.querySelectorAll('img[loading="lazy"]').forEach(i => { i.loading = 'eager'; }); // so crops can be measured
+    await sleep(1500);
     return { title: d.title, dir: d.documentElement.dir, w, h, dark, lang };
   }
   function scroll(y) { F.contentWindow.scrollTo({ top: y, behavior: 'instant' }); return F.contentWindow.scrollY; }
@@ -119,8 +120,10 @@ window.gd = (() => {
     d.querySelectorAll('img').forEach(i => {
       if (!vis(i)) return; const r = i.getBoundingClientRect(); const cs = W.getComputedStyle(i);
       const ra = r.width / r.height, na = i.naturalWidth / (i.naturalHeight || 1);
-      const crop = Math.round(100 * (1 - Math.min(ra, na) / Math.max(ra, na)));
-      imgs.push(`${i.parentElement.className || i.parentElement.tagName}: shown ${Math.round(r.width)}x${Math.round(r.height)} (${ra.toFixed(2)}) natural ${i.naturalWidth}x${i.naturalHeight} (${na.toFixed(2)}) fit:${cs.objectFit} crop≈${crop}%`);
+      const lost = Math.round(100 * (1 - Math.min(ra, na) / Math.max(ra, na)));
+      // cover: that share of the photo is cut away; contain: that share of the box is an empty band
+      const what = cs.objectFit === 'contain' ? `empty band≈${lost}%` : `crop≈${lost}%`;
+      imgs.push(`${i.parentElement.className || i.parentElement.tagName}: ${i.src.split('/').pop().split('?')[0]} shown ${Math.round(r.width)}x${Math.round(r.height)} (${ra.toFixed(2)}) natural ${i.naturalWidth}x${i.naturalHeight} (${na.toFixed(2)}) fit:${cs.objectFit} ${what}`);
     });
 
     // 6. Icons and touch targets
@@ -145,7 +148,12 @@ window.gd = (() => {
     const hebTracking = [...d.querySelectorAll('*')].filter(e => e.children.length === 0 && vis(e) && heb.test(e.textContent) && parseFloat(W.getComputedStyle(e).letterSpacing) > 0.3)
       .map(e => `${tag(e)} ls ${W.getComputedStyle(e).letterSpacing} "${e.textContent.trim().slice(0, 20)}"`);
     const latinInRtl = d.documentElement.dir === 'rtl' ? [...d.querySelectorAll('h3,p')].filter(e => vis(e) && /^[A-Za-z]/.test(e.textContent.trim())).length : 0;
-    const truncated = [...d.querySelectorAll('*')].filter(e => vis(e) && e.children.length === 0 && W.getComputedStyle(e).textOverflow === 'ellipsis' && e.scrollWidth > e.clientWidth + 1).map(e => `${tag(e)} "${e.textContent.trim().slice(0, 30)}"`);
+    // cut-off text: ellipsis, or a no-wrap line wider than its box (clipped or spilling out)
+    const truncated = [...d.querySelectorAll('*')].filter(e => {
+      if (!vis(e) || e.children.length !== 0 || !e.textContent.trim()) return false;
+      const cs = W.getComputedStyle(e); if (e.scrollWidth <= e.clientWidth + 1) return false;
+      return cs.textOverflow === 'ellipsis' || cs.whiteSpace === 'nowrap';
+    }).map(e => `${tag(e)} in #${(e.closest('[id]') || {}).id} "${e.textContent.trim().slice(0, 30)}"`);
 
     const sections = [...d.querySelectorAll('.hero, .block, section')].filter(vis).map(b => { const r = b.getBoundingClientRect(); return `${b.id || b.className} top ${Math.round(r.top + W.scrollY)} h ${Math.round(r.height)}`; });
 

@@ -21,6 +21,7 @@
 | `assets/img/house/` + `thumb/` | תמונות המכשירים (צילומי אורן; קפה/דוד/תמי 4 משופרים ב-ChatGPT). `ninja-combi.jpg` = תמונת יצרן זמנית. |
 | `assets/img/eat/`, `assets/img/tiles/` | תמונות מנה CC לכרטיס "איפה אורן אוכל"; אריחי השעה הראשונה (Pexels + תמי 4 של אורן). |
 | `.claude/skills/site-review/` | סקיל `/site-review` – סקירת מומחה של האתר (מבנה/תוכן/עיצוב/מובייל). |
+| `.claude/skills/graphic-designer/` | סקיל `/graphic-designer` – ביקורת מעצב גרפי בכיר (טיפוגרפיה, צבע, רווחים, תמונות, אייקונים, עברית, מצב כהה), מודד באתר החי (`measure.js`) ונותן תיקון מדויק לכל הערה. להריץ אחרי כל שינוי עיצובי. בסיס הידע: `docs/graphic-design-research-2026-10-03.md`; הסקירה האחרונה: `docs/graphic-design-review-2026-10-03.md` (ציון 6/10). רענון רבעוני – חלק E ב-`florentin-weekly-check`. |
 | `.claude/skills/airbnb-rules/` | סקיל `/airbnb-rules` – ספר הכללים של Airbnb (`rules.md`, אומת 3.10.2026), רשימת בדיקה ותוצאת הביקורת האחרונה (`audit.md`). לשאול אותו לפני כל שינוי בליסטינג/הודעות/אתר. רענון רבעוני: בראשון הראשון של ינואר/אפריל/יולי/אוקטובר כחלק מ-`florentin-weekly-check`. |
 | `kitchen/index.html` | מדריך מטבח מפורט (EN/DE/FR בלבד). |
 | `data/weekly.json`, `data/stays.json` | נכתבים ע"י ה-Routines. לא לערוך ידנית. |

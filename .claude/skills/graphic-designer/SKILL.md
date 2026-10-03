@@ -42,7 +42,9 @@ await gd.load({lang:'en', w:400, h:860, dark:false}); gd.report()
 - **The 8 required views:** 400×860 and 1280×900, each in light and dark, each in EN and HE. DE also at 400×860, because German makes the longest words.
 - **Screenshots:** `gd.scroll(y)`, wait 1 s, then use `computer` → `zoom` on the iframe rectangle. Convert coordinates with screenshot-width ÷ `window.innerWidth`; a 1920-wide window gives a 1568 frame, so the factor is 0.8167. A hidden window can paint late. If a state looks wrong (for example two tab-bar items highlighted at once), read the DOM before you report it.
 - `gd.openCard('hot_water')` opens a card and scrolls to it. Check at least one open apartment card, the emergency card and one place card's "More".
-- Lazy images report natural size 0×0 until they load. To measure crops, scroll the page through first, or set `img.loading='eager'` and wait.
+- `gd.load()` switches lazy images to eager so their crops can be measured. If an image still reports a natural size of 0×0, wait and run `gd.report()` again.
+- The site can change while you review: other sessions push often. Note the `?v=` you measured, and re-check the top findings on the newest version before you write the file.
+- The kit lives in a closure on the top page. If the tab reloads, `gd` is gone; paste the file again.
 
 **What `gd.report()` returns** (copy the numbers into the review):
 - `fontSizesDistinct` and `fontSizes`: every computed size in use, with the elements that use it. Target ≤ 6–7 sizes on one page view (checklist T1).
