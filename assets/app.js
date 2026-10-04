@@ -15,7 +15,7 @@
       less_txt: "Less",
       tour_pill: "Tour",
       map_all: "All places on one map",
-      map_title: "Plan your walk", map_text: "Two ready-made walking routes through the places above. They open in Google Maps and start at the first stop.",
+      map_title: "Plan your route", map_text: "Two ready-made walking routes through the places above. They open in Google Maps and start at the first stop.",
       ok_title: "Everything OK?",
       ok_text: "Something missing, or not quite right? Tell me now and I will sort it out.",
       ok_btn: "Message Oren",
@@ -46,7 +46,7 @@
       less_txt: "Weniger",
       tour_pill: "Tour",
       map_all: "Alle Orte auf einer Karte",
-      map_title: "Planen Sie Ihren Spaziergang", map_text: "Zwei fertige Fußrouten durch die Orte oben. Sie öffnen sich in Google Maps und beginnen am ersten Stopp.",
+      map_title: "Planen Sie Ihre Route", map_text: "Zwei fertige Fußrouten durch die Orte oben. Sie öffnen sich in Google Maps und beginnen am ersten Stopp.",
       ok_title: "Alles in Ordnung?",
       ok_text: "Fehlt etwas oder stimmt etwas nicht? Sagen Sie es mir jetzt, ich kümmere mich darum.",
       ok_btn: "Oren schreiben",
@@ -77,7 +77,7 @@
       less_txt: "Moins",
       tour_pill: "Visite",
       map_all: "Tous les lieux sur une carte",
-      map_title: "Planifiez votre balade", map_text: "Deux itinéraires à pied prêts à l'emploi à travers les lieux ci-dessus. Ils s'ouvrent dans Google Maps et partent du premier arrêt.",
+      map_title: "Planifiez votre itinéraire", map_text: "Deux itinéraires à pied prêts à l'emploi à travers les lieux ci-dessus. Ils s'ouvrent dans Google Maps et partent du premier arrêt.",
       ok_title: "Tout va bien ?",
       ok_text: "Il manque quelque chose, ou quelque chose ne va pas ? Dites-le-moi maintenant, je m'en occupe.",
       ok_btn: "Écrire à Oren",
@@ -108,7 +108,7 @@
       less_txt: "פחות",
       tour_pill: "סיור",
       map_all: "כל המקומות על מפה אחת",
-      map_title: "תכננו את הטיול הרגלי", map_text: "שני מסלולי הליכה מוכנים דרך המקומות שלמעלה. נפתחים בגוגל מפות ומתחילים מהעצירה הראשונה.",
+      map_title: "תכננו את המסלול", map_text: "שני מסלולי הליכה מוכנים דרך המקומות שלמעלה. נפתחים בגוגל מפות ומתחילים מהעצירה הראשונה.",
       ok_title: "הכל בסדר?",
       ok_text: "משהו חסר או לא בדיוק כמו שצריך? ספרו לי עכשיו ואסדר את זה.",
       ok_btn: "לכתוב לאורן",
@@ -609,7 +609,7 @@
         el("p", {}, t("map_text")),
         el("div", { class: "mapcard-routes" }, (state.places.routes || []).map(r =>
           el("a", { class: "route", href: routeUrl(r), target: "_blank", rel: "noopener" },
-            el("strong", {}, "🚶 " + L_(r.title)), el("span", {}, L_(r.meta))))),
+            el("strong", {}, (r.mode === "bicycling" ? "🚴 " : "🚶 ") + L_(r.title)), el("span", {}, L_(r.meta))))),
         el("a", { class: "mapcard-all", href: all, target: "_blank", rel: "noopener" }, t("map_all") + " " + ARROW()))));
   }
 

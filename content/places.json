@@ -402,6 +402,27 @@
         "Tel Aviv Museum of Art",
         "Sarona Market, Tel Aviv"
       ]
+    },
+    {
+      "id": "bike",
+      "mode": "bicycling",
+      "title": {
+        "en": "By bike: along the sea to Tel Aviv Port",
+        "de": "Mit dem Rad: am Meer entlang zum Hafen von Tel Aviv",
+        "fr": "À vélo : le long de la mer jusqu'au port de Tel Aviv",
+        "he": "על אופניים: לאורך הים עד נמל תל אביב"
+      },
+      "meta": {
+        "en": "Jaffa Port and the beach promenade",
+        "de": "Hafen Jaffa und Strandpromenade",
+        "fr": "Port de Jaffa et promenade de la plage",
+        "he": "נמל יפו וטיילת החוף"
+      },
+      "stops": [
+        "Levinsky Market, Tel Aviv",
+        "Jaffa Port, Tel Aviv",
+        "Tel Aviv Port, Tel Aviv"
+      ]
     }
   ]
 }
