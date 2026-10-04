@@ -1092,3 +1092,7 @@ body { overflow-anchor: none; }
 /* Google Maps pills under lists of places (bars, gyms ...): every place we mention has a visible map link */
 .maplinks { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
 .hours-note { margin: 0 0 8px; }
+/* Home: emergency + WhatsApp stay at the top; the "Everything OK?" card comes after the phone numbers and is slimmer */
+.ok-card { margin: 14px 0 4px; padding: 14px 16px; }
+.ok-card h3 { font-size: var(--fs-md); margin: 0 0 4px; }
+.ok-card p { font-size: var(--fs-sm); margin: 0 0 10px; }
