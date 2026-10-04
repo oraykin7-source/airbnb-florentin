@@ -1096,3 +1096,5 @@ body { overflow-anchor: none; }
 .ok-card { margin: 14px 0 4px; padding: 14px 16px; }
 .ok-card h3 { font-size: var(--fs-md); margin: 0 0 4px; }
 .ok-card p { font-size: var(--fs-sm); margin: 0 0 10px; }
+/* "This week": an event without a photo is a text-only card (no big empty placeholder) */
+.ev:not(.tour) .ev-media.ph { display: none; }
