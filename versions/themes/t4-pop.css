@@ -1,0 +1,9 @@
+/* Theme 4 · Pop: butter yellow, thick black outlines, hard offset shadows, heavy grotesque */
+:root:root:root{--bg:#fff1b8;--surface:#ffffff;--ink:#111111;--muted:#3f3f3f;--line:#111;--accent:#d92d27;--accent-deco:#d92d27;--accent-ink:#fff;--accent-soft:#ffe0dc;--chip:#ffe48a;--happy:#ffd84d;--happy-ink:#111;--danger:#b3150f;--danger-soft:#ffe0dc;--danger-fill:#d92d27;--ring:#111;--shadow:none;--shadow-hi:none;--radius:10px;--fh:Archivo,sans-serif;--fb:Archivo,sans-serif}
+body,body *:not(.wm-script):not(svg *){font-family:var(--fb)!important}
+body h1:not(.z):not(svg *),body h2:not(.z):not(svg *),body h3:not(.z):not(svg *),body .wm-caps:not(.z):not(svg *),body .tile h3:not(.z):not(svg *),body .tile strong:not(.z):not(svg *),body .card summary strong:not(.z):not(svg *){font-family:var(--fh)!important;font-weight:700!important;letter-spacing:-.02em}
+.card,.place,.ev{box-shadow:4px 4px 0 #111,0 0 0 2.5px #111!important}
+.qbtn,.lang-btn,.burger{border:2.5px solid #111!important;box-shadow:3px 3px 0 #111!important}
+.tabbar{background:#fff!important;border-radius:14px!important;box-shadow:4px 4px 0 #111,0 0 0 2.5px #111!important}
+.tile{box-shadow:4px 4px 0 #111,0 0 0 2.5px #111!important}
+.wordmark{--wm-plate:#ffd84d;--wm-script:#d92d27;--wm-sun:rgba(255,255,255,.5)}

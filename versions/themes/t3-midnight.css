@@ -1,0 +1,7 @@
+/* Theme 3 · Midnight: dark plum with coral, big radii, glow instead of borders, rounded type */
+:root:root:root{color-scheme:dark;--bg:#150f1f;--surface:#221a31;--ink:#f3edfb;--muted:#b7a9cc;--line:#3a2d52;--accent:#ff8f70;--accent-deco:#ff8f70;--accent-ink:#1a1022;--accent-soft:#3a2740;--chip:#2e2340;--happy:#ffd27a;--happy-ink:#1a1022;--danger:#ff9a8d;--danger-soft:#3b2230;--danger-fill:#e5604f;--ring:rgba(255,143,112,.10);--shadow:0 16px 32px -16px rgba(0,0,0,.85);--shadow-hi:0 22px 40px -16px rgba(0,0,0,.9),0 0 30px -10px rgba(255,143,112,.35);--radius:26px;--fh:Nunito,sans-serif;--fb:Nunito,sans-serif}
+body,body *:not(.wm-script):not(svg *){font-family:var(--fb)!important}
+body h1:not(.z):not(svg *),body h2:not(.z):not(svg *),body h3:not(.z):not(svg *),body .wm-caps:not(.z):not(svg *),body .tile h3:not(.z):not(svg *),body .tile strong:not(.z):not(svg *),body .card summary strong:not(.z):not(svg *){font-family:var(--fh)!important;font-weight:900!important;letter-spacing:-.01em}
+.wordmark{--wm-plate:#2e2340;--wm-script:#ffd27a;--wm-sun:rgba(255,143,112,.3)}
+.tabbar{background:#221a31!important;box-shadow:0 14px 30px -10px rgba(0,0,0,.9),0 0 0 1px rgba(255,143,112,.15)!important}
+.qbtn,.lang-btn,.burger{border-radius:999px!important}

@@ -1,0 +1,9 @@
+/* Theme 2 · Olive: sage and stone, flat bordered cards with no shadows, soft serif headings */
+:root:root:root{--bg:#eef0e6;--surface:#fbfcf6;--ink:#1f2a1a;--muted:#5b6850;--line:#c9d1bb;--accent:#456b2f;--accent-deco:#6f9a52;--accent-ink:#fff;--accent-soft:#e1e9d3;--chip:#e4e9d8;--happy:#e5cf7d;--happy-ink:#1f2a1a;--danger:#a63a22;--danger-soft:#f6e6dd;--danger-fill:#b84a2d;--ring:#b3be9f;--shadow:none;--shadow-hi:none;--radius:6px;--fh:Fraunces,Georgia,serif;--fb:Nunito,sans-serif}
+body,body *:not(.wm-script):not(svg *){font-family:var(--fb)!important}
+body h1:not(.z):not(svg *),body h2:not(.z):not(svg *),body h3:not(.z):not(svg *),body .wm-caps:not(.z):not(svg *),body .tile h3:not(.z):not(svg *),body .tile strong:not(.z):not(svg *),body .card summary strong:not(.z):not(svg *){font-family:var(--fh)!important;font-weight:700!important;letter-spacing:0}
+.card,.place,.ev{box-shadow:0 0 0 1.5px #aebb98!important}
+.card[open]{box-shadow:0 0 0 2px #456b2f!important}
+.tabbar{border-radius:10px!important;box-shadow:0 0 0 1.5px #aebb98!important;background:#fbfcf6!important}
+.qbtn{border-radius:6px!important}
+.wordmark{--wm-plate:#e1e9d3;--wm-script:#456b2f;--wm-sun:rgba(229,207,125,.5)}

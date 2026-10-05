@@ -1,0 +1,6 @@
+/* Theme 1 · Sea: cool blue-green, rounded-but-tight, soft blue shadows, geometric sans */
+:root:root:root{--bg:#e9f3f8;--surface:#ffffff;--ink:#0d2b40;--muted:#4a687b;--line:#cfe2ec;--accent:#0f6f94;--accent-deco:#1b9bc4;--accent-ink:#fff;--accent-soft:#d9edf6;--chip:#dcebf3;--happy:#ffd166;--happy-ink:#0d2b40;--danger:#b3261e;--danger-soft:#fdecea;--danger-fill:#c4372d;--ring:rgba(13,43,64,.07);--shadow:0 1px 1px rgba(13,43,64,.05),0 12px 24px -14px rgba(15,111,148,.45);--shadow-hi:0 2px 4px rgba(13,43,64,.06),0 18px 34px -16px rgba(15,111,148,.5);--radius:12px;--fh:"Plus Jakarta Sans",sans-serif;--fb:Figtree,sans-serif}
+body,body *:not(.wm-script):not(svg *){font-family:var(--fb)!important}
+body h1:not(.z):not(svg *),body h2:not(.z):not(svg *),body h3:not(.z):not(svg *),body .wm-caps:not(.z):not(svg *),body .tile h3:not(.z):not(svg *),body .tile strong:not(.z):not(svg *),body .card summary strong:not(.z):not(svg *){font-family:var(--fh)!important;letter-spacing:-.02em}
+.wordmark{--wm-plate:#d4ebf5;--wm-script:#0f6f94;--wm-sun:rgba(255,209,102,.55)}
+.tabbar{background:#fff!important;box-shadow:0 10px 30px -10px rgba(15,111,148,.45),0 0 0 1px rgba(13,43,64,.06)!important}
