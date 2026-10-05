@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Control panel – A cozy room in Florentin</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eef3;--p:#fff;--ink:#14212e;--mut:#5b6b7a;--line:#d5dde5;--go:#0f9d58;--warn:#e08a00;--bad:#d93025;--blue:#2457d6;--m:"IBM Plex Mono",ui-monospace,Menlo,monospace;--s:"IBM Plex Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--ink);font:400 15px/1.45 var(--s);padding:14px 14px 40px;max-width:1100px;margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 2px 14px}
+header h1{font:600 13px var(--m);letter-spacing:.08em;text-transform:uppercase}header h1 b{color:var(--blue)}
+.wa{font:600 13px var(--m);background:var(--ink);color:#fff;padding:9px 14px;border-radius:8px;text-decoration:none}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.p{background:var(--p);border:1px solid var(--line);border-radius:12px;padding:16px}
+.p h2{font:600 12px var(--m);letter-spacing:.09em;text-transform:uppercase;color:var(--mut);display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.chip{font:600 11px var(--m);padding:3px 8px;border-radius:99px;background:#e3f4ea;color:var(--go);text-transform:uppercase;letter-spacing:.04em}
+.chip.w{background:#fdf0d5;color:#a86400}.chip.b{background:#fde7e5;color:var(--bad)}
+.big{font:600 44px/1 var(--m);letter-spacing:-.02em}.sm{color:var(--mut);font-size:13px;margin-top:6px}
+.span2{grid-column:span 2}@media(max-width:620px){.span2{grid-column:auto}}
+.hero{background:var(--ink);color:#fff;border:0}.hero h2{color:#9fb1c3}.hero .sm{color:#b9c8d6}.hero .big{font-size:56px}
+.hero .g{font:500 22px/1.25 var(--s);margin-top:12px;max-width:30ch}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px}.kv dt{font:600 12px var(--m);color:var(--mut);padding-top:2px}.kv dd{margin:0}
+.step{display:flex;gap:10px;margin:8px 0}.step i{flex:none;width:24px;height:24px;border-radius:6px;background:var(--bg);font:600 12px/24px var(--m);text-align:center;font-style:normal}
+.bars{display:grid;gap:9px}.bar{display:grid;grid-template-columns:118px 1fr 52px;gap:10px;align-items:center;font-size:13.5px}
+.bar div{height:12px;background:var(--bg);border-radius:6px;overflow:hidden}.bar div span{display:block;height:100%;background:var(--blue);border-radius:6px}
+.bar b{font:600 12px var(--m);text-align:right}
+.eat{display:flex;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}.eat:first-of-type{border-top:0}
+.eat img{width:46px;height:46px;border-radius:8px;object-fit:cover}.eat b{display:block;font-weight:600}.eat small{color:var(--mut)}
+.sos .step{display:inline-flex;width:32%;vertical-align:top}.sos{border-color:#f2b8b3;background:#fff7f6}.sos h2{color:var(--bad)}
+.num{display:flex;gap:8px;margin-top:12px}.num a{flex:1;text-align:center;text-decoration:none;font:600 14px var(--m);background:var(--bad);color:#fff;padding:10px 4px;border-radius:8px}
+.num a:nth-child(2){background:#a3231b}.num a:nth-child(3){background:#7a1a14}
+footer{margin-top:18px;font:500 12px var(--m);color:var(--mut)}
+</style></head><body>
+<header><h1><b>●</b> Cozy room · Florentin / guest panel</h1><a class="wa" href="https://wa.me/972523244799">WhatsApp Oren</a></header>
+<div class="grid">
+<div class="p hero span2"><h2><span>Tel Aviv · local time</span><span class="chip">live</span></h2><div class="big" id="clock">--:--</div><p class="g" id="greet">Welcome home.</p><p class="sm" id="check">Check-out is at 12:00 on your last day. The door locks itself; no keys to return.</p></div>
+<div class="p"><h2><span>Hot water</span><span class="chip" id="hwchip">tip</span></h2><p id="hw"></p><p class="sm">The boiler (“dud”) sits on the roof, heated by the sun, and by an electric switch when that isn’t enough.</p></div>
+<div class="p"><h2><span>Water bar</span><span class="chip">ready</span></h2>
+<dl class="kv"><dt>COLD</dt><dd>Cup buttons on the right. One touch.</dd><dt>HOT</dt><dd>Red cup button, top left. Press and hold, release to stop.</dd><dt>BOILING</dt><dd>Steam button first (bottom left), then hold the red one.</dd></dl></div>
+<div class="p"><h2><span>Air conditioning</span><span class="chip w">3 buttons</span></h2>
+<div class="step"><i>1</i><span><b>ON/OFF</b> – the orange ⏻ (bedroom), top-left button (living room)</span></div><div class="step"><i>2</i><span><b>Temp</b> – TEMP ▲▼ or − / +. 24–25°C is comfortable.</span></div><div class="step"><i>3</i><span><b>Mode</b> – ❄ cooling / ☀ heating. Ignore the rest.</span></div></div>
+<div class="p"><h2><span>TV</span><span class="chip">no login</span></h2><p>All streaming accounts are already signed in on both TVs. Please don’t log out or add other accounts.</p><p class="sm">Living room Netflix: choose the profile called “guest”.</p></div>
+<div class="p span2"><h2><span>Walking distance</span><span class="chip">minutes</span></h2><div class="bars" id="bars"></div></div>
+<div class="p"><h2><span>Eat within 7 min</span><span class="chip">Oren’s picks</span></h2>
+<div class="eat"><img src="../assets/img/eat/garger-w-m.webp" alt=""><div><b>Garger HaZahav</b><small>Best hummus in Levinsky · 5 min</small></div></div>
+<div class="eat"><img src="../assets/img/eat/kokoneko-w-m.webp" alt=""><div><b>Koko Neko</b><small>My go-to ramen · no bookings · 7 min</small></div></div>
+<div class="eat"><img src="../assets/img/eat/kiosko-w-m.webp" alt=""><div><b>Kiosko</b><small>Iced coffee, laptop-friendly · 7 min</small></div></div></div>
+<div class="p"><h2><span>Check-out</span><span class="chip w">12:00</span></h2><div class="step"><i>1</i><span>Switch off the AC and the lights.</span></div><div class="step"><i>2</i><span>Pull the door shut. It locks itself, no keys to return.</span></div><div class="step"><i>3</i><span>Message me so I know the room is free.</span></div></div>
+<div class="p sos span2"><h2><span>Siren</span><span class="chip b">3 steps</span></h2>
+<div class="step"><i>1</i><span>Go into my room, off the living room. No need to knock.</span></div><div class="step"><i>2</i><span>Close the steel door, lift the handle up.</span></div><div class="step"><i>3</i><span>Stay 10 minutes after the siren stops.</span></div>
+<div class="num"><a href="tel:100">100 Police</a><a href="tel:101">101 Amb.</a><a href="tel:102">102 Fire</a></div></div>
+</div>
+<footer>Version 2 · Control panel · design exploration</footer>
+<script>
+const bars=[["Levinsky Market",5],["Neve Tzedek",10],["HaTachana",12],["Carmel Market",15],["Old Jaffa",15],["Rothschild Blvd",15],["The beaches",20]];
+document.getElementById("bars").innerHTML=bars.map(([n,m])=>`<div class="bar"><span>${n}</span><div><span style="width:${m/20*100}%"></span></div><b>${m} min</b></div>`).join("");
+function tick(){const d=new Date(),f=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Jerusalem",hour:"2-digit",minute:"2-digit",hour12:false}).format(d),h=+f.slice(0,2);
+document.getElementById("clock").textContent=f;
+document.getElementById("greet").textContent=(h<5||h>=22?"Good night":h<12?"Good morning":h<17?"Good afternoon":"Good evening")+", welcome home.";
+const ev=h>=17||h<8,c=document.getElementById("hwchip");c.textContent=ev?"switch on":"sun is enough";c.className="chip "+(ev?"w":"");
+document.getElementById("hw").textContent=ev?"Evening: turn the boiler switch on 30–40 minutes before showering, then off afterwards.":"Daytime: in summer the sun is usually enough. The water can be very hot, so test it first."}
+tick();setInterval(tick,20000);
+</script></body></html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Poster – A cozy room in Florentin</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1237ff;--deep:#0a1fa8;--sun:#ffd400;--white:#fff;--d:Anton,"Arial Narrow",Impact,sans-serif;--b:Archivo,system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--blue);color:var(--white);font:500 17px/1.45 var(--b);overflow-x:hidden}
+a{color:inherit}
+.sos{position:fixed;z-index:9;inset-inline-end:12px;bottom:12px;background:var(--sun);color:var(--blue);font:700 15px var(--b);text-decoration:none;padding:12px 18px;border-radius:99px;box-shadow:0 6px 0 var(--deep)}
+.hero{min-height:min(100svh,620px);gap:20px;display:flex;flex-direction:column;justify-content:space-between;padding:22px 20px 0}
+.top{display:flex;justify-content:space-between;align-items:center;font:700 13px var(--b);letter-spacing:.14em;text-transform:uppercase}
+.top span:last-child{background:var(--sun);color:var(--blue);padding:5px 10px;border-radius:99px}
+h1{font:400 clamp(60px,24vw,200px)/.86 var(--d);text-transform:uppercase;letter-spacing:-.01em;margin:28px 0 18px}
+h1 em{font-style:normal;color:var(--sun);display:block}
+h1 span{-webkit-text-stroke:2px var(--white);color:transparent}
+.sub{max-width:34ch;font-size:19px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 26px}
+.btn{font:700 16px var(--b);text-decoration:none;padding:14px 22px;border-radius:99px;border:2px solid var(--white)}
+.btn.y{background:var(--sun);color:var(--blue);border-color:var(--sun)}
+.tick{overflow:hidden;background:var(--sun);color:var(--blue);margin:0 -20px;border-block:3px solid var(--deep)}
+.tick div{display:flex;width:max-content;animation:m 26s linear infinite;font:400 28px/1 var(--d);text-transform:uppercase;padding:12px 0}
+.tick span{padding-inline:18px;white-space:nowrap}.tick span:after{content:"✦";margin-inline-start:36px}
+@keyframes m{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tick div{animation:none}}
+section{padding:56px 20px}
+h2{font:400 clamp(48px,12vw,120px)/.92 var(--d);text-transform:uppercase;margin-bottom:8px}
+h2 small{display:block;font:700 13px var(--b);letter-spacing:.16em;color:var(--sun);margin-bottom:10px}
+.lead{max-width:44ch;margin-bottom:26px}
+.grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.tile{position:relative;aspect-ratio:3/4;border-radius:20px;overflow:hidden;border:3px solid var(--white);background:var(--deep);text-decoration:none;display:block}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92;mix-blend-mode:luminosity}
+.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--blue) 0%,transparent 60%)}
+.tile b{position:absolute;z-index:2;top:2px;inset-inline-start:12px;font:400 84px/1 var(--d);color:var(--sun)}
+.tile div{position:absolute;z-index:2;inset-inline:12px;bottom:12px}
+.tile h3{font:400 28px/1 var(--d);text-transform:uppercase}.tile p{font-size:14px;line-height:1.3;margin-top:6px}
+.light{background:var(--sun);color:var(--blue)}.light h2 small{color:var(--blue)}
+.walk{list-style:none;padding:0;border-top:3px solid var(--blue)}
+.walk li{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px solid var(--blue);padding:10px 0;font:400 clamp(30px,8vw,64px)/1 var(--d);text-transform:uppercase}
+.walk i{font:700 15px var(--b);font-style:normal;background:var(--blue);color:var(--sun);padding:6px 12px;border-radius:99px;white-space:nowrap}
+.sosbox{border:3px solid var(--sun);border-radius:22px;padding:22px}
+.sosbox ol{padding-inline-start:1.2em;margin:14px 0}.sosbox li{margin:6px 0}
+.nums{display:flex;gap:10px;flex-wrap:wrap}.nums a{font:400 34px var(--d);background:var(--white);color:var(--blue);padding:6px 16px;border-radius:14px;text-decoration:none}
+footer{padding:30px 20px 90px;font-size:13px;opacity:.85}
+@media(min-width:800px){.grid{grid-template-columns:repeat(4,1fr)}.hero{padding-inline:48px}section{padding-inline:48px}.tick{margin-inline:-48px}}
+</style></head><body>
+<a class="sos" href="#sos">Emergency</a>
+<header class="hero"><div>
+ <div class="top"><span>Cozy room · Florentin</span><span>Tel Aviv</span></div>
+ <h1>Welcome<em>home<span>.</span></em></h1>
+ <p class="sub">Your own room, my shared kitchen. Everything about the flat, one tap away.</p>
+ <div class="cta"><a class="btn y" href="#hour">Your first hour</a><a class="btn" href="https://wa.me/972523244799">WhatsApp Oren</a></div></div>
+ <div class="tick"><div><span>Levinsky Market · 5 min</span><span>Neve Tzedek · 10 min</span><span>HaTachana · 12 min</span><span>Carmel Market · 15 min</span><span>Old Jaffa · 15 min</span><span>The beach · 20 min</span><span>Levinsky Market · 5 min</span><span>Neve Tzedek · 10 min</span><span>HaTachana · 12 min</span><span>Carmel Market · 15 min</span><span>Old Jaffa · 15 min</span><span>The beach · 20 min</span></div></div>
+</header>
+<section id="hour"><h2><small>DAY ONE</small>Your first hour</h2><p class="lead">What every guest asks about on day one. Tap a tile.</p>
+<div class="grid">
+<a class="tile" href="#"><img src="../assets/img/first-hour/shower.webp" alt=""><b>1</b><div><h3>Hot water</h3><p>The boiler (“dud”). Read before showering.</p></div></a>
+<a class="tile" href="#"><img src="../assets/img/first-hour/ac.webp" alt=""><b>2</b><div><h3>Air con</h3><p>Two remotes. Three buttons each.</p></div></a>
+<a class="tile" href="#"><img src="../assets/img/first-hour/tv.webp" alt=""><b>3</b><div><h3>TV</h3><p>All accounts ready. Nothing to log in to.</p></div></a>
+<a class="tile" href="#"><img src="../assets/img/first-hour/water-bar-4.webp" alt=""><b>4</b><div><h3>Water bar</h3><p>Cold or hot. Hold the red button.</p></div></a>
+</div></section>
+<section class="light"><h2><small>ON FOOT</small>Walk it</h2><p class="lead">Distances from the front door.</p>
+<ul class="walk"><li>Levinsky Market<i>5 min</i></li><li>Neve Tzedek<i>10 min</i></li><li>HaTachana<i>12 min</i></li><li>Carmel Market<i>15 min</i></li><li>Old Jaffa<i>15 min</i></li><li>The beaches<i>20 min</i></li></ul></section>
+<section id="sos"><div class="sosbox"><h2 style="font-size:clamp(44px,10vw,90px)"><small>IF THE SIREN GOES</small>Three calm steps</h2>
+<ol><li>Go into my room, off the living room. Just walk in, even if I’m not home.</li><li>Close the steel door and lift the handle up.</li><li>Stay 10 minutes after the siren stops.</li></ol>
+<div class="nums"><a href="tel:100">Police 100</a><a href="tel:101">Ambulance 101</a><a href="tel:102">Fire 102</a></div></div></section>
+<footer>Version 1 · Poster · design exploration for stayflorentin.com</footer>
+</body></html>
