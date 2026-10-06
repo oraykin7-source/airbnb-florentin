@@ -210,15 +210,33 @@
       "map": "https://maps.google.com/?q=Florentin+Street+Tel+Aviv",
       "license_url": "https://creativecommons.org/licenses/by/4.0",
       "image_title": "File:Street Graffiti 1 Florentin Abarnabel Tel Aviv.jpg",
-      "tour": {
-        "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_street_art_and_graf",
-        "label": {
-          "en": "Guided street-art walk (2 h)",
-          "de": "Geführte Street-Art-Tour (2 Std.)",
-          "fr": "Balade street art guidée (2 h)",
-          "he": "סיור גרפיטי מודרך (שעתיים)"
+      "tours": [
+        {
+          "url": "https://www.getyourguide.com/tel-aviv-l487/tel-aviv-street-art-and-graffiti-tour-t218631/?partner_id=UO1A9K8&utm_medium=online_publisher&cmp=guide_tel_aviv_street_art_and_graf",
+          "affiliate": true,
+          "label": {
+            "en": "Guided street-art walk (2 h)",
+            "de": "Geführte Street-Art-Tour (2 Std.)",
+            "fr": "Balade street art guidée (2 h)",
+            "he": "סיור גרפיטי מודרך (שעתיים)"
+          }
+        },
+        {
+          "url": "https://grafitiyul.co.il/",
+          "label": {
+            "en": "Graffiti tour + spray workshop (Grafitiyul, 2.5 h)",
+            "de": "Graffiti-Tour + Sprüh-Workshop (Grafitiyul, 2,5 Std.)",
+            "fr": "Visite graffiti + atelier bombe (Grafitiyul, 2 h 30)",
+            "he": "סיור גרפיטי + סדנת ריסוס (גרפיטיול, שעתיים וחצי)"
+          },
+          "desc": {
+            "en": "Led by an artist from the local Grafitiyul crew; you paint a piece and take it home. Private tour for 1-2 people: 1,300 ₪, tour only (1.5 h) 1,000 ₪, Friday from 15:00 and Saturday +250 ₪. Prices quoted by Grafitiyul, Oct 2026.",
+            "de": "Mit einem Künstler der lokalen Grafitiyul-Crew; Sie sprühen ein eigenes Werk und nehmen es mit. Private Tour für 1-2 Personen: 1.300 ₪, nur Tour (1,5 Std.) 1.000 ₪, Freitag ab 15:00 und Samstag +250 ₪. Preise laut Grafitiyul, Okt. 2026.",
+            "fr": "Avec un artiste du collectif local Grafitiyul ; vous peignez une pièce et l'emportez. Visite privée pour 1-2 personnes : 1 300 ₪, visite seule (1 h 30) 1 000 ₪, vendredi dès 15 h et samedi +250 ₪. Prix indiqués par Grafitiyul, oct. 2026.",
+            "he": "עם אמן מקבוצת גרפיטיול; מרססים יצירה משלכם ולוקחים הביתה. סיור פרטי ל-1-2 אנשים: 1,300 ₪, סיור בלבד (שעה וחצי) 1,000 ₪, שישי מ-15:00 ושבת +250 ₪. מחירים לפי גרפיטיול, אוקטובר 2026."
+          }
         }
-      }
+      ]
     },
     {
       "id": "carmel",

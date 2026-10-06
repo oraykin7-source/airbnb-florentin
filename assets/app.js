@@ -569,6 +569,7 @@
     if (!state.places) return;
     for (const p of state.places.places) {
       const txt = el("p", { class: "place-text" }, ...rich(L_(p.text)));
+      const tours = p.tours || (p.tour ? [p.tour] : []); // 6.10: a card may offer more than one tour (`tours`), `tour` kept for old data
       // Full photo credit (CC BY needs it) lives in the "More" part; collapsed cards show only "Photo ↗" (3.10 polish)
       const credit = el("a", { class: "credit-full", href: p.credit_url, target: "_blank", rel: "noopener", hidden: "" }, `${t("photo")}: ${p.credit}`);
       const more = el("button", { class: "more-btn", type: "button", "aria-expanded": "false",
@@ -578,12 +579,14 @@
         galleryMedia(el("a", { class: "place-media", href: p.map, target: "_blank", rel: "noopener", "aria-label": L_(p.title) },
           el("img", { src: p.image, alt: L_(p.title), loading: "lazy", width: "1200", height: "675", ...smallSrc(p.image, 780), style: p.focus ? "object-position:" + p.focus : null }),
           el("span", { class: "walk" }, L_(p.walk)),
-          p.tour ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null,
+          tours.length ? el("span", { class: "tour-pill" }, "🧭 " + t("tour_pill")) : null,
           galleryBadge(p.id, main)), p.id, main),
         el("div", { class: "place-body" },
           el("h3", {}, L_(p.title)),
           txt, credit, more,
-          p.tour ? el("a", { class: "place-tour", href: p.tour.url, target: "_blank", rel: "noopener sponsored" }, "🧭 " + L_(p.tour.label) + " " + ARROW()) : null,
+          ...tours.map(tr => el("div", { class: "tour-opt" },
+            el("a", { class: "place-tour", href: tr.url, target: "_blank", rel: tr.affiliate ? "noopener sponsored" : "noopener" }, "🧭 " + L_(tr.label) + " " + ARROW()),
+            tr.desc ? el("p", { class: "tour-desc small" }, L_(tr.desc)) : null)),
           el("div", { class: "place-foot" },
             el("a", { class: "map-link", href: p.map, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + L_(p.title) }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
             el("a", { class: "credit-link", href: p.credit_url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${p.credit}` }, t("photo") + (state.lang === "he" ? " ↖" : " ↗"))))));
