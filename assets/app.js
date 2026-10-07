@@ -929,4 +929,30 @@
       state.stays = stays.status === "fulfilled" ? stays.value : null;
       renderChrome(); renderEvents();
     });
+
+  // ---------- 7.10: privacy-friendly counts (GoatCounter: no cookies, no personal data, IPs not stored) ----------
+  // Off until GC_CODE holds Oren's GoatCounter site code. Counts pages and a few taps (WhatsApp, emergency, tours, maps, language).
+  const GC_CODE = "";
+  if (GC_CODE) {
+    const gs = document.createElement("script");
+    gs.async = true; gs.src = "https://gc.zgo.at/count.js";
+    gs.dataset.goatcounter = `https://${GC_CODE}.goatcounter.com/count`;
+    gs.dataset.goatcounterSettings = '{"no_onload": true}';
+    document.head.append(gs);
+    const gc = (path, event) => { try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title: path, event: !!event }); } catch (e) {} };
+    const sendView = () => { const id = hashId(); gc("/" + (state.view || "start") + (state.view === "places" && state.sub === "eat" ? "/eat" : "") + (/^eat-./.test(id) ? "/" + id : "")); };
+    gs.addEventListener("load", sendView);
+    window.addEventListener("hashchange", () => setTimeout(sendView, 50));
+    document.addEventListener("click", e => {
+      const a = e.target.closest("a, button"); if (!a) return;
+      let k = null;
+      if (a.matches(".qbtn-wa, #burger-wa, .ok-line a")) k = "whatsapp";
+      else if (a.matches(".qbtn-sos, .burger-sos")) k = "emergency";
+      else if (a.matches(".book, .place-tour")) { const c = a.closest("[id]"); k = "tour" + (c ? ":" + c.id : ""); }
+      else if (a.matches(".map-link")) k = "map";
+      else if (a.matches(".lang button")) k = "lang:" + a.dataset.lang;
+      else if (a.matches(".eat-jump button")) k = "eat-group";
+      if (k) gc(k, true);
+    });
+  }
 })();
