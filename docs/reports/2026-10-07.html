@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>דוח שינויים ומצב פרויקט · [שם הפרויקט] · [תאריך]</title>
+<style>
+  :root{
+    --ink:#1e293b; --ink2:#334155; --muted:#475569; --soft:#64748b;
+    --line:#e2e8f0; --page:#f7f8fa; --card:#ffffff;
+    --green:#166534; --green-mid:#16a34a; --green-50:#f0fdf4; --green-100:#dcfce7;
+    --amber:#92400e; --amber-50:#fffbeb; --amber-100:#fef3c7;
+    --red:#b91c1c; --red-50:#fef2f2; --red-100:#fee2e2;
+    --navy:#0f172a;
+    --r:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--page); color:var(--ink);
+    font-family:"Segoe UI","Arial Hebrew",Arial,sans-serif;
+    line-height:1.65; padding:28px 18px 60px;
+  }
+  .wrap{max-width:940px;margin:0 auto;}
+
+  /* ===== header ===== */
+  .hero{
+    background:var(--navy); color:#fff; border-radius:var(--r);
+    padding:30px 28px 26px; text-align:center; margin-bottom:30px;
+  }
+  .hero h1{font-size:27px;font-weight:800;letter-spacing:-.3px;}
+  .hero h1 .accent{color:#4ade80;}
+  .hero .sub{margin-top:8px;font-size:13px;color:#94a3b8;}
+  .pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:18px;}
+  .pill{
+    border:1px solid #334155; border-radius:999px;
+    padding:6px 14px; font-size:12px; color:#cbd5e1;
+  }
+  .pill b{color:#4ade80;font-weight:700;}
+  .pill.warn b{color:#fbbf24;}
+  .pill.bad  b{color:#f87171;}
+
+  /* ===== sections ===== */
+  h2{
+    font-size:17px;font-weight:800;color:var(--green);
+    margin:30px 0 13px; display:flex; align-items:center; gap:9px;
+  }
+  h2::before{
+    content:""; width:9px;height:9px;border-radius:50%;
+    background:var(--green-mid); flex:none;
+  }
+
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:var(--r); padding:19px 21px; margin-bottom:13px;
+  }
+  .card h3{
+    font-size:15px;font-weight:700;color:var(--ink);
+    margin-bottom:9px; display:flex; flex-wrap:wrap; align-items:center; gap:9px;
+  }
+  .card p{font-size:13.5px;color:var(--ink2);margin-bottom:9px;}
+  .card p:last-child{margin-bottom:0;}
+  .card ul{margin:0 18px 9px 0;font-size:13.5px;color:var(--ink2);}
+  .card li{margin-bottom:5px;}
+
+  .tag{
+    font-size:11.5px;font-weight:700;border-radius:999px;
+    padding:3px 11px; white-space:nowrap;
+  }
+  .ok  {background:var(--green-100);color:var(--green);}
+  .wait{background:var(--amber-100);color:var(--amber);}
+  .stop{background:var(--red-100);  color:var(--red);}
+
+  code{
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+    background:#f1f5f9;border:1px solid var(--line);border-radius:5px;
+    padding:1px 5px;font-size:12.5px;direction:ltr;display:inline-block;
+  }
+  .src{
+    font-size:11.5px;color:var(--soft);border-top:1px solid var(--line);
+    padding-top:9px;margin-top:12px;
+  }
+
+  .lead{
+    background:var(--green-50);border:1px solid var(--green-100);
+    border-radius:var(--r);padding:19px 21px;font-size:14px;
+    color:var(--ink2);margin-bottom:8px;
+  }
+  .alert{background:var(--red-50);border-color:var(--red-100);}
+  .note {background:var(--amber-50);border-color:var(--amber-100);}
+
+  table{width:100%;border-collapse:collapse;margin:6px 0 4px;font-size:13px;}
+  th{
+    background:var(--green);color:#fff;font-weight:700;
+    text-align:right;padding:8px 11px;
+  }
+  th:first-child{border-radius:0 8px 0 0;}
+  th:last-child {border-radius:8px 0 0 0;}
+  td{padding:8px 11px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top;}
+  tr:nth-child(even) td{background:#fafbfc;}
+
+  .foot{
+    text-align:center;font-size:12px;color:var(--soft);
+    margin-top:34px;padding-top:16px;border-top:1px solid var(--line);
+  }
+  @media print{
+    body{background:#fff;padding:0;}
+    .card,.lead{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>דוח שינויים ומצב פרויקט <span class="accent">·</span> stayflorentin.com</h1>
+    <div class="sub">גרסה v=20261007q · האתר החי + פיילוט guide-for-hosts · נכון ל-7.10.2026, ערב</div>
+    <div class="pills">
+      <span class="pill"><b>3/3</b> סוקרים ב-8.5 ומעלה (מעצב 8.5, בונה 8.5, שיווק 8.6)</span>
+      <span class="pill"><b>29</b> קומיטים היום</span>
+      <span class="pill warn"><b>5</b> פריטים ממתינים לאורן</span>
+      <span class="pill bad"><b>0</b> חוסמים</span>
+    </div>
+  </div>
+
+  <h2>תקציר</h2>
+  <div class="lead">שלושת הסוקרים (מעצב, בונה אתרים, איש שיווק) עלו מ-7.5 ל-8.5–8.6, נמדד באתר החי. השינוי הגדול: סולם גופנים אחד (אין יותר ערכים מחוץ לסולם), דף בית חדש (אוכל → "השעה הראשונה" → 4 אריחים), קישור ישיר לכל מקום אוכל, "השבוע" בעברית, ותמונות אמיתיות באישור (פה קפה, מסקל, בורקס). בנוסף: 10 הודעות אינסטגרם נשלחו (3 תשובות חיוביות), פיילוט "Stay Guide" נבנה בפרויקט נפרד עם סנכרון דו-כיווני.</div>
+
+  <h2>מה בוצע היום</h2>
+  <div class="card">
+    <h3>סולם גופנים ועיצוב <span class="tag ok">✓ באוויר</span></h3>
+    <p><b>השורש:</b> בסיס 17px ב-<code>style.css:35</code> וערכים 13.6/14.4/15.2/16.32/16.8/17.6 מבלוקים ישנים. נמדד ב-getComputedStyle.</p>
+    <p><b>המשמעות בפועל:</b> בכרטיס דירה פתוח הטקסט היה גדול מהכותרת. היום רק 12/14/16/20/25/31.2 בכל 6 העמודים.</p>
+    <p><b>התיקון:</b> בלוקים מתוארכים בסוף style.css; רדיוס אחד; ניגודיות כפתורי חירום בכהה; אורך שורה 34em.</p>
+    <div class="src">feecc05 … 5e0bee6 · docs/graphic-design-review-2026-10-07.md (סבבים 1–4)</div>
+  </div>
+  <div class="card">
+    <h3>דף הבית, אוכל וקישורים ישירים <span class="tag ok">✓ באוויר</span></h3>
+    <p><b>השורש:</b> בעל קיוסקו כתב "לא מוצא את הכתוב עלינו"; 4 מקומות שקיבלו מייל הוסתרו מאחורי "עוד".</p>
+    <p><b>התיקון:</b> אריח "איפה אורן אוכל" ראשון; "השעה הראשונה" במסך הראשון; <code>#eat-&lt;slug&gt;</code> פותח ומדגיש את הכרטיס עם תווית "מתוך איפה אורן אוכל"; כפתורי קבוצות; שמות עבריים (<code>name_he</code>, באישור אורן); קרדיט מלא לכל תמונה.</p>
+    <div class="src">docs/site-review-2026-10-07.md · דוגמה: stayflorentin.com/#eat-dallal-bakery</div>
+  </div>
+  <div class="card">
+    <h3>שיווק ותוכן <span class="tag ok">✓ באוויר</span></h3>
+    <p>"השבוע" ב-4 שפות (הרוטינה והוולידטור דורשים עברית; <code>until</code> להתראות), כפתור מפות לכל אירוע, תצוגה מקדימה בוואטסאפ (<code>assets/img/og-card.png</code>), "הכל בסדר?" כשורה עם פתיח וואטסאפ, תודה בצ'ק-אאוט, פיצה תדר, מסקל (שעות + האפי אוור לפי המקום), ויי-פיי: "הסיסמה על הכרטיס ליד הראוטר".</p>
+    <div class="src">docs/marketing-review-2026-10-07.md (7.5 → 8.1 → 8.6)</div>
+  </div>
+  <div class="card">
+    <h3>פרויקט המוצר וסנכרון <span class="tag ok">✓</span></h3>
+    <p>פיילוט "Stay Guide" ב-<code>../guide-for-hosts</code> (צבעים/גופנים אחרים, דף מכירה). כלל 10 ב-CLAUDE.md: כל שינוי מנוע עובר לשני, רישום ב-<code>../guide-for-hosts/SYNC.md</code>. הועברו מהמוצר לכאן: <code>?lang=</code>, תיקון טעינת תמונות (~1.5MB פחות), שדה <code>fav</code>, דף מטבח בעברית.</p>
+    <div class="src">guide-for-hosts: b5ed35d, a203c21 · florentin: d6d607f, 9276f18</div>
+  </div>
+
+  <h2>ממצאים חדשים שדורשים החלטה</h2>
+  <div class="lead alert">אין חוסמים. מה שנשאר ל-9 הוא תוכן שרק אורן יכול לתת.</div>
+  <div class="card">
+    <h3>לציון 9 <span class="tag warn">ממתין לאורן</span></h3>
+    <ul><li>קוד GoatCounter (חיבור כבוי ב-<code>GC_CODE</code> ב-app.js)</li><li>"המנה של אורן" לכל מקום (שדה <code>fav</code>, ריק = מוסתר; לא להמציא)</li><li>צילום אמיתי של הנינג'ה (<code>ninja-combi.webp</code> = תמונת יצרן)</li><li>קריאה אחת של דף המטבח בעברית</li></ul>
+  </div>
+
+  <h2>החלטות שהתקבלו היום</h2>
+  <table>
+    <tr><th style="width:32%">הנושא</th><th>ההכרעה והנימוק</th></tr>
+    <tr><td>תמונות מקומות</td><td>רק באישור כתוב מהמקום, עם קרדיט. <b>Google Maps של מבקרים אסור (זכויות).</b></td></tr>
+    <tr><td>אינסטגרם</td><td>5 הודעות בסבב, נוסח שונה בכל אחת. <b>מניעת חסימה של החשבון.</b></td></tr>
+    <tr><td>GoatCounter</td><td>אושר. <b>בלי עוגיות ובלי מידע אישי; את החשבון אורן פותח.</b></td></tr>
+    <tr><td>טענות סיורים</td><td>"האורחים שלי נהנו" נכון (אורן). <b>נשאר.</b></td></tr>
+    <tr><td>מוצר למארחים</td><td>סופ"ש 16–17.10; פיילוט חינם לפני גבייה. <b>9–10.10 תפוס בשיפוץ.</b></td></tr>
+  </table>
+
+  <h2>משימות למחר, 8.10.2026</h2>
+  <div class="lead note"><b>נקודת הפתיחה של מחר.</b> אורן מתחבר אחרי שהקרדיטים חוזרים.</div>
+  <table>
+    <tr><th style="width:8%">סדר</th><th style="width:36%">המשימה</th><th>למה דווקא בסדר הזה</th></tr>
+    <tr><td><b>1</b></td><td>הודעות אינסטגרם: השחף, לאבה, מיראז' (@miragetelaviv), קסטה (@cassata.telaviv)</td><td>תוזמן ל-11:07 בשיחה הישנה; אם לא רץ (השיחה נסגרה / אין קרדיטים) – לשלוח ידנית מכרום במק</td></tr>
+    <tr><td><b>2</b></td><td>לבדוק תשובות באינסטגרם ובמייל (קיוסקו – תמונה; גרגר, סביח, טורק, הקוסם, פיש אנד צ'יפס, קוקו)</td><td>תמונה שמגיעה = שיפור ישיר באתר</td></tr>
+    <tr><td><b>3</b></td><td>להדליק GoatCounter אם אורן שלח קוד</td><td>שתי דקות, מביא את השיווק לכ-9</td></tr>
+    <tr><td><b>4</b></td><td>מחסני חשמל: האם נשלחה חשבונית לוינגייט</td><td>ההצהרה נשלחה 7.10 בערב; המוקד חוזר מחר</td></tr>
+    <tr><td><b>5</b></td><td>ספק השלט מאליאקספרס – תזכורת אם אין תשובה עד ראשון</td><td>שבוע הזהב בסין הסתיים 7.10</td></tr>
+  </table>
+  <div class="card">
+    <h3>מה שחייב לקרות בכל צעד</h3>
+    <ul><li><code>python3 agent/validate.py house</code> לפני commit; לקדם <code>?v=</code> אחרי CSS/JS</li><li><code>git pull --rebase</code> לפני push; אם הפריסה נכשלת (500 של GitHub) – <code>gh run rerun</code></li><li>כל שינוי מנוע: שורה ב-<code>../guide-for-hosts/SYNC.md</code> תחת "ממתין"</li><li>עובדות בלבד; לא לשלוח הודעות בלי הוראה מפורשת של אורן; לדבר איתו בעברית בלבד</li></ul>
+  </div>
+  <div class="card">
+    <h3>מה שצריך לדעת כדי להמשיך</h3>
+    <ul><li>גרסה חיה: v=20261007q, commit 1a00d9a. גיבוי לפני סבב הגופנים: תגית <code>v-before-fonts-7.10</code></li><li>יומנים פרטיים: <code>../airbnb-florentin-private/venue-requests.md</code>, <code>instagram-messages.md</code></li><li>שרת מקומי: <code>python3 -m http.server 8420 --bind 127.0.0.1</code> (בלי bind נכשל בהרשאות)</li><li>תשובות לאורחי Airbnb במייל: לכתובת Reply-To (…@reply.airbnb.com), טקסט בלי קישורים</li></ul>
+  </div>
+
+  <h2>פתוח וממתין לגורם חיצוני</h2>
+  <div class="card"><ul><li>מחסני חשמל – חשבונית מתוקנת לוינגייט</li><li>ספק השלט באליאקספרס – תשובה</li><li>מקומות באינסטגרם – תמונות (קיוסקו בדרך)</li><li>תדר – תמונת פיצה (כרגע תמונת חצר בית רומנו, CC)</li></ul></div>
+
+  <div class="foot">Cozy Room Florentin · stayflorentin.com · דוח פנימי · 7.10.2026</div>
+</div>
+</body>
+</html>
