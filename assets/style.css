@@ -1142,3 +1142,38 @@ body { font-size: var(--fs-md); }
 /* direct link to a venue (#eat-kiosko): brief highlight */
 .place.eat { scroll-margin-top: 84px; }
 .place.eat.flash { box-shadow: var(--shadow), 0 0 0 3px var(--accent); transition: box-shadow .3s; }
+
+/* ===== 7.10 round 3 (designer round-2 1-6, 8; site-review round-2 3-6, 8) ===== */
+/* first-hour tiles: the instruction is no longer cut mid-word */
+.tile-txt span { -webkit-line-clamp: 4; }
+/* "This week": three equal category buttons in one row, round date field */
+#cat-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; flex-wrap: nowrap; }
+#cat-tabs button { justify-content: center; text-align: center; padding-inline: 8px; font-size: var(--fs-sm); min-width: 0; white-space: normal; line-height: 1.2; }
+#checkout-input { border-radius: 999px; min-height: 44px; }
+/* desktop: readable line length in open apartment cards */
+.card .body ul, .card .body p, .card .body ol { max-width: 70ch; }
+/* home: four tiles, titles on one baseline; breathing room before "The city" */
+.jump.jump-rest a { align-items: flex-start; min-height: 100px; }
+.jump.jump-rest a::after { align-self: center; }
+.hood { padding-top: 24px; }
+.hood-more { margin-top: 12px; }
+.hood-more > summary { cursor: pointer; color: var(--accent); font-weight: 700; font-size: var(--fs-sm); min-height: 44px; display: flex; align-items: center; list-style: none; }
+.hood-more > summary::-webkit-details-marker { display: none; }
+.hood-more > summary::after { content: " +"; }
+.hood-more[open] > summary::after { content: " −"; }
+/* one card radius everywhere */
+:root { --r-card: 16px; }
+.card, .place, .ev, .tile, .jump a, .mapcard { border-radius: var(--r-card); }
+/* one credit per open place card; 44px save button */
+.place:has(.place-text.open) .place-foot .credit-link { display: none; }
+.name-box .name-save { min-height: 44px; }
+/* event cards: same body/title sizes as the rest of the site, 3 lines before the cut */
+.ev:not(.tour) > p { font-size: var(--fs-md); -webkit-line-clamp: 3; }
+.ev:not(.tour) h3, .ev:not(.tour) > .ev-top h3 { font-size: var(--fs-lg); }
+.ev.tour.tour-tile p, .ev.tour.tour-row p { -webkit-line-clamp: 4; }
+@media (max-width: 619px) { .ev.tour.tour-tile p { -webkit-line-clamp: 4; } }
+/* Eat: jump chips to the three groups */
+.eat-jump { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 8px; scrollbar-width: none; }
+.eat-jump::-webkit-scrollbar { display: none; }
+.eat-jump button { flex: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 0; background: var(--accent-soft); color: var(--accent); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
+.eat-group { scroll-margin-top: 84px; }

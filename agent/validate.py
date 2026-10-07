@@ -214,6 +214,10 @@ def main() -> int:
                 text_ok(where, f"text.{l}", str(txt[l]), 300, errors)
         if len(str(h.get("icon", ""))) > 4:
             errors.append(f"{where}: icon must be a single emoji")
+        # 7.10: a note that names a day/date must say when it stops being true (the site hides it after "until")
+        en = str((txt or {}).get("en", "")) if isinstance(txt, dict) else ""
+        if re.search(r"\b(\d{1,2} (January|February|March|April|May|June|July|August|September|October|November|December)|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|this week|tonight|tomorrow)\b", en) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(h.get("until", ""))):
+            errors.append(f"{where}: mentions a day/date but has no until (YYYY-MM-DD)")
     if len(w.get("headsup") or []) > 4:
         errors.append("headsup: at most 4 notes")
 
