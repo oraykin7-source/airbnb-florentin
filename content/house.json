@@ -1487,6 +1487,19 @@
               "shabbat": true
             },
             {
+              "name": "Teder Pizza",
+              "where": "Derech Jaffa 9, Beit Romano",
+              "hours": "from 18:00, Fri-Sat from 12:00",
+              "note": {
+                "en": "Eyal Shani's thin pizza at Teder, the music bar and radio station in Beit Romano",
+                "de": "Eyal Shanis dünne Pizza im Teder, Musikbar und Radiosender im Beit Romano",
+                "fr": "la pizza fine d'Eyal Shani au Teder, bar musical et radio à Beit Romano",
+                "he": "הפיצה הדקה של אייל שני בתדר - בר מוזיקה ותחנת רדיו בבית רומנו"
+              },
+              "url": "https://www.google.com/maps/search/?api=1&query=Teder+Derech+Jaffa+9+Tel+Aviv-Yafo",
+              "shabbat": true
+            },
+            {
               "name": "Mirage (Eyal Shani)",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
               "hours": "until 00:00",
