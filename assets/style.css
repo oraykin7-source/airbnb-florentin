@@ -1108,3 +1108,9 @@ body { overflow-anchor: none; }
 .jump a.jump-eat { grid-column: 1 / -1; background: var(--accent-soft); box-shadow: var(--shadow), 0 0 0 1px var(--accent); min-height: 72px; }
 .jump a.jump-eat .jt strong { font-size: var(--fs-lg, 1.15rem); color: var(--accent); }
 .jump a.jump-eat .jt span { color: var(--ink); opacity: .8; }
+
+/* 7.10: "Everything OK?" is one quiet line under the buttons, not a card with a second WhatsApp button (Oren: too busy) */
+.ok-line { margin: 10px 0 0; font-size: var(--fs-sm, .9rem); color: var(--muted); }
+.ok-line[hidden] { display: none; }
+.ok-line span { font-weight: 700; color: var(--ink); }
+.ok-line a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
