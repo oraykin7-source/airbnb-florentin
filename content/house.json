@@ -605,28 +605,32 @@
           "Pull the door shut behind you - it locks itself, there are no keys to return.",
           "Send me a message so I know the room is free.",
           "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk). No trains from Friday afternoon until Saturday evening - take a taxi.",
-          "Left something behind? Message me - I'll check."
+          "Left something behind? Message me - I'll check.",
+          "Thank you for staying with me! A day after check-out Airbnb will ask you for a review - an honest one helps me a lot."
         ],
         "de": [
           "Klimaanlage und Licht ausschalten.",
           "Tür hinter sich zuziehen - sie schließt von selbst, es gibt keine Schlüssel abzugeben.",
           "Schicken Sie mir eine Nachricht, damit ich weiß, dass das Zimmer frei ist.",
           "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß). Von Freitagnachmittag bis Samstagabend fahren keine Züge - nehmen Sie ein Taxi.",
-          "Etwas vergessen? Schreiben Sie mir - ich schaue nach."
+          "Etwas vergessen? Schreiben Sie mir - ich schaue nach.",
+          "Danke, dass Sie bei mir gewohnt haben! Einen Tag nach dem Check-out bittet Airbnb Sie um eine Bewertung - eine ehrliche hilft mir sehr."
         ],
         "fr": [
           "Éteignez la clim et les lumières.",
           "Tirez la porte derrière vous - elle se verrouille seule, il n'y a pas de clés à rendre.",
           "Envoyez-moi un message pour que je sache que la chambre est libre.",
           "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied). Pas de trains du vendredi après-midi au samedi soir - prenez un taxi.",
-          "Oublié quelque chose ? Écrivez-moi - je vérifierai."
+          "Oublié quelque chose ? Écrivez-moi - je vérifierai.",
+          "Merci d'avoir séjourné chez moi ! Le lendemain du départ, Airbnb vous demandera un avis - un avis honnête m'aide beaucoup."
         ],
         "he": [
           "מכבים מזגן ואורות.",
           "סוגרים את הדלת מאחוריכם - היא ננעלת לבד, אין מפתחות להחזיר.",
           "שולחים לי הודעה כדי שאדע שהחדר פנוי.",
           "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה). אין רכבות משישי אחר הצהריים עד מוצאי שבת - קחו מונית.",
-          "שכחתם משהו? כתבו לי - אני אבדוק."
+          "שכחתם משהו? כתבו לי - אני אבדוק.",
+          "תודה שהתארחתם אצלי! יום אחרי הצ'ק-אאוט Airbnb תבקש מכם לכתוב ביקורת - ביקורת כנה עוזרת לי מאוד."
         ]
       },
       "sections": [
@@ -2059,10 +2063,10 @@
         "he": "משהו לא בסדר?"
       },
       "sub": {
-        "en": "Tell me now - I'd rather fix it than read about it later",
-        "de": "Sagen Sie es mir gleich - ich behebe es lieber, als später davon zu lesen",
-        "fr": "Dites-le-moi tout de suite - je préfère le régler que le lire plus tard",
-        "he": "ספרו לי עכשיו - עדיף לי לתקן מאשר לקרוא על זה אחר כך"
+        "en": "Tell me during your stay, so I can fix it while you're here",
+        "de": "Sagen Sie es mir während Ihres Aufenthalts, damit ich es gleich beheben kann",
+        "fr": "Dites-le-moi pendant votre séjour, pour que je puisse le régler tout de suite",
+        "he": "ספרו לי בזמן השהייה, כדי שאוכל לתקן כל עוד אתם כאן"
       },
       "items": {
         "en": [

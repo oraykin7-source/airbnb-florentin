@@ -46,6 +46,8 @@ Collect, per category, the 6-10 best picks for a visitor staying in Florentin:
 
 Rules: every item comes from a page on one of the three sites and carries that page's exact URL; dated items fall inside the window; skip anything already ended or undated-and-unconfirmable; prefer places within easy reach of Florentin (Florentin, Jaffa, Neve Tzedek, Rothschild, the ports) and things that don't require Hebrew; never invent times, venues or prices - leave them `null` if not on the page.
 
+**Languages (7.10):** every title, blurb and heads-up text in four languages: en, de, fr and he. Hebrew = natural Israeli Hebrew, venue and street names as Israelis write them; translate only what the English says (no new facts). The validator rejects an item without Hebrew.
+
 ## 3b. "Heads-up this week"
 
 Besides the items, write 1-4 short practical notes for the window in a `headsup` list - things that catch foreign visitors out. Only include what applies to the window; leave the list empty if nothing does. Typical notes:
@@ -57,7 +59,7 @@ Every note tied to a specific day (a holiday, a closure, "Saturday 3 October") M
 - Friday: shops and markets close early (around 14:00-15:00).
 - Anything else you can confirm from the sources: a big event closing streets, a marathon, a heatwave warning, jellyfish season at the beaches.
 
-Each note: `{"icon": "🕯️", "text": {"en": "...", "de": "...", "fr": "..."}}` - one or two sentences, no links.
+Each note: `{"icon": "🕯️", "text": {"en": "...", "de": "...", "fr": "...", "he": "..."}}` - one or two sentences, no links.
 
 ## 4. Write `data/weekly.json`
 
@@ -67,13 +69,13 @@ Each note: `{"icon": "🕯️", "text": {"en": "...", "de": "...", "fr": "..."}}
   "window_start": "2026-10-03",
   "window_end": "2026-10-11",
   "headsup": [
-    { "icon": "🕯️", "text": { "en": "Shabbat: from Friday ~16:30 until Saturday ~19:30 no trains or buses and most shops are closed - plan taxis and shop on Friday morning.", "de": "...", "fr": "..." } }
+    { "icon": "🕯️", "text": { "en": "Shabbat: from Friday ~16:30 until Saturday ~19:30 no trains or buses and most shops are closed - plan taxis and shop on Friday morning.", "de": "...", "fr": "...", "he": "..." } }
   ],
   "items": [
     {
       "category": "food",
-      "title":  { "en": "...", "de": "...", "fr": "..." },
-      "blurb":  { "en": "1-2 warm, useful sentences", "de": "...", "fr": "..." },
+      "title":  { "en": "...", "de": "...", "fr": "...", "he": "..." },
+      "blurb":  { "en": "1-2 warm, useful sentences", "de": "...", "fr": "...", "he": "..." },
       "date_start": "2026-10-04",
       "date_end": null,
       "time": "20:00",

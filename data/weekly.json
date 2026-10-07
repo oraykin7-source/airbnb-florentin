@@ -8,7 +8,8 @@
       "text": {
         "en": "The next Shabbat starts Friday 9 October in the afternoon and ends after dark on Saturday: no trains, almost no buses, most shops closed. Taxis and Gett still run, at a surcharge.",
         "de": "Der nächste Schabbat beginnt am Freitag, 9. Oktober, nachmittags und endet am Samstag nach Einbruch der Dunkelheit: keine Züge, fast keine Busse, die meisten Läden geschlossen. Taxis und Gett fahren weiter, mit Zuschlag.",
-        "fr": "Le prochain Chabbat commence le vendredi 9 octobre dans l'après-midi et se termine samedi après la tombée de la nuit : pas de trains, presque pas de bus, la plupart des commerces fermés. Les taxis et Gett circulent, avec un supplément."
+        "fr": "Le prochain Chabbat commence le vendredi 9 octobre dans l'après-midi et se termine samedi après la tombée de la nuit : pas de trains, presque pas de bus, la plupart des commerces fermés. Les taxis et Gett circulent, avec un supplément.",
+        "he": "השבת הבאה נכנסת ביום שישי 9 באוקטובר אחר הצהריים ויוצאת בשבת אחרי החשכה: אין רכבות, כמעט אין אוטובוסים ורוב החנויות סגורות. מוניות וגט ממשיכות לעבוד, בתוספת תשלום."
       },
       "until": "2026-10-10"
     },
@@ -17,7 +18,8 @@
       "text": {
         "en": "Friday is a short day: Levinsky and Carmel markets and most shops wind down around 14:00-15:00, so do the food shopping on Friday morning.",
         "de": "Freitag ist ein kurzer Tag: Der Levinsky- und der Carmel-Markt sowie die meisten Läden machen gegen 14-15 Uhr Schluss, also am Freitagmorgen einkaufen.",
-        "fr": "Le vendredi est une journée courte : les marchés Levinsky et Carmel ainsi que la plupart des commerces ferment vers 14h-15h, faites donc les courses le vendredi matin."
+        "fr": "Le vendredi est une journée courte : les marchés Levinsky et Carmel ainsi que la plupart des commerces ferment vers 14h-15h, faites donc les courses le vendredi matin.",
+        "he": "יום שישי הוא יום קצר: שוק לוינסקי, שוק הכרמל ורוב החנויות נסגרים בסביבות 14:00-15:00, אז קונים אוכל ביום שישי בבוקר."
       },
       "until": "2026-10-09"
     }
@@ -28,12 +30,14 @@
       "title": {
         "en": "Paulaner Fest on the Migdalor deck",
         "de": "Paulaner Fest auf dem Migdalor-Deck",
-        "fr": "Paulaner Fest sur la terrasse du Migdalor"
+        "fr": "Paulaner Fest sur la terrasse du Migdalor",
+        "he": "פאולנר פסט על דק המגדלור"
       },
       "blurb": {
         "en": "Last day of the beer weekend on the seafront deck: draft Paulaner, a hot-dog pop-up by Eran Bick and a sunset saxophone set. Free entry.",
         "de": "Letzter Tag des Bierwochenendes auf dem Deck am Meer: Paulaner vom Fass, ein Hotdog-Pop-up von Eran Bick und ein Saxofon-Set zum Sonnenuntergang. Eintritt frei.",
-        "fr": "Dernier jour du week-end bière sur la terrasse face à la mer : Paulaner pression, un pop-up hot-dog d'Eran Bick et un set de saxophone au coucher du soleil. Entrée libre."
+        "fr": "Dernier jour du week-end bière sur la terrasse face à la mer : Paulaner pression, un pop-up hot-dog d'Eran Bick et un set de saxophone au coucher du soleil. Entrée libre.",
+        "he": "היום האחרון של סוף שבוע הבירה על הדק מול הים: פאולנר מהחבית, פופ-אפ נקניקיות של ערן ביק וסט סקסופון בשקיעה. הכניסה חופשית."
       },
       "date_start": "2026-10-03",
       "date_end": null,
@@ -51,12 +55,14 @@
       "title": {
         "en": "Pub Quiz #40 at Lauter",
         "de": "Pub Quiz #40 im Lauter",
-        "fr": "Pub Quiz #40 au Lauter"
+        "fr": "Pub Quiz #40 au Lauter",
+        "he": "פאב קוויז #40 בלאוטר"
       },
       "blurb": {
         "en": "Five rounds of trivia with a music round, in English-friendly company. The ticket includes the first drink; come as a team of 2-6 or get paired up. Doors 19:30, start 20:00, 18+.",
         "de": "Fünf Quizrunden samt Musikrunde, in internationaler Gesellschaft. Das Ticket enthält das erste Getränk; als Team von 2-6 kommen oder sich zuteilen lassen. Einlass 19:30, Start 20:00, ab 18.",
-        "fr": "Cinq manches de quiz dont une manche musicale, dans une ambiance ouverte aux anglophones. Le billet comprend la première boisson ; venez à 2-6 ou laissez-vous jumeler. Ouverture 19h30, début 20h, 18+."
+        "fr": "Cinq manches de quiz dont une manche musicale, dans une ambiance ouverte aux anglophones. Le billet comprend la première boisson ; venez à 2-6 ou laissez-vous jumeler. Ouverture 19h30, début 20h, 18+.",
+        "he": "חמישה סבבי טריוויה כולל סבב מוזיקה, בחברה שמתאימה גם לדוברי אנגלית. הכרטיס כולל משקה ראשון; באים כקבוצה של 2-6 או מצטרפים לקבוצה. פתיחת דלתות 19:30, התחלה 20:00, מגיל 18."
       },
       "date_start": "2026-10-05",
       "date_end": null,
@@ -74,12 +80,14 @@
       "title": {
         "en": "Jaffa Farmers' Market",
         "de": "Bauernmarkt in Jaffa",
-        "fr": "Marché fermier de Jaffa"
+        "fr": "Marché fermier de Jaffa",
+        "he": "שוק האיכרים ביפו"
       },
       "blurb": {
         "en": "The city's new permanent farmers' market runs every Wednesday in the flea market: dozens of stalls of produce and Jaffa food makers, plus winery and chef pop-ups. Free, 15:00-21:00.",
         "de": "Der neue städtische Bauernmarkt findet jeden Mittwoch im Flohmarkt statt: Dutzende Stände mit Erzeugnissen und Jaffa-Produzenten, dazu Weingut- und Koch-Pop-ups. Kostenlos, 15-21 Uhr.",
-        "fr": "Le nouveau marché fermier permanent de la ville a lieu chaque mercredi dans le marché aux puces : des dizaines d'étals de produits frais et de producteurs de Jaffa, plus des pop-ups de domaines et de chefs. Gratuit, 15h-21h."
+        "fr": "Le nouveau marché fermier permanent de la ville a lieu chaque mercredi dans le marché aux puces : des dizaines d'étals de produits frais et de producteurs de Jaffa, plus des pop-ups de domaines et de chefs. Gratuit, 15h-21h.",
+        "he": "שוק האיכרים הקבוע החדש של העיר פועל בכל יום רביעי בשוק הפשפשים: עשרות דוכני תוצרת ויצרני אוכל מיפו, ופופ-אפים של יקבים ושפים. חינם, 15:00-21:00."
       },
       "date_start": "2026-10-07",
       "date_end": null,
@@ -99,12 +107,14 @@
       "title": {
         "en": "Flatbush turns four",
         "de": "Flatbush wird vier",
-        "fr": "Flatbush fête ses quatre ans"
+        "fr": "Flatbush fête ses quatre ans",
+        "he": "פלטבוש חוגג ארבע"
       },
       "blurb": {
         "en": "A festive edition of Thirsty Thursdays for the bar's fourth birthday: 1+1 on drinks all night, live DJ sets and special plates.",
         "de": "Eine festliche Ausgabe der Thirsty Thursdays zum vierten Geburtstag der Bar: 1+1 auf Drinks die ganze Nacht, Live-DJ-Sets und Spezialgerichte.",
-        "fr": "Une édition festive des Thirsty Thursdays pour les quatre ans du bar : 1+1 sur les boissons toute la nuit, DJ en direct et plats spéciaux."
+        "fr": "Une édition festive des Thirsty Thursdays pour les quatre ans du bar : 1+1 sur les boissons toute la nuit, DJ en direct et plats spéciaux.",
+        "he": "ערב חגיגי של Thirsty Thursdays ליום ההולדת הרביעי של הבר: 1+1 על משקאות כל הלילה, סטים של DJ ומנות מיוחדות."
       },
       "date_start": "2026-10-08",
       "date_end": null,
@@ -122,12 +132,14 @@
       "title": {
         "en": "Morning Coffee Club at Jaffa Port",
         "de": "Morning Coffee Club im Hafen von Jaffa",
-        "fr": "Morning Coffee Club au port de Jaffa"
+        "fr": "Morning Coffee Club au port de Jaffa",
+        "he": "מועדון קפה של בוקר בנמל יפו"
       },
       "blurb": {
         "en": "A daytime coffee party at Blue Cafe inside Beit Hamecholot: DJ sets, local brands and an art market from 10:00 to 19:00. Free entry.",
         "de": "Eine Kaffeeparty am Tag im Blue Cafe im Beit Hamecholot: DJ-Sets, lokale Marken und ein Kunstmarkt von 10 bis 19 Uhr. Eintritt frei.",
-        "fr": "Une fête du café en plein jour au Blue Cafe, dans le Beit Hamecholot : DJ sets, marques locales et marché d'art de 10h à 19h. Entrée libre."
+        "fr": "Une fête du café en plein jour au Blue Cafe, dans le Beit Hamecholot : DJ sets, marques locales et marché d'art de 10h à 19h. Entrée libre.",
+        "he": "מסיבת קפה של יום בבלו קפה בבית המכולות: סטים של DJ, מותגים מקומיים ושוק אמנות מ-10:00 עד 19:00. הכניסה חופשית."
       },
       "date_start": "2026-10-10",
       "date_end": null,
@@ -145,12 +157,14 @@
       "title": {
         "en": "Cider and Calvados tasting at Lauter",
         "de": "Cider- und Calvados-Tasting im Lauter",
-        "fr": "Dégustation de cidre et de calvados au Lauter"
+        "fr": "Dégustation de cidre et de calvados au Lauter",
+        "he": "טעימת סיידר וקלבדוס בלאוטר"
       },
       "blurb": {
         "en": "A guided tasting through apple drinks, from light ciders to aged Calvados, with a look at varieties, fermentation and ageing.",
         "de": "Eine geführte Verkostung durch die Welt der Apfelgetränke, von leichten Cidres bis zum gereiften Calvados, mit Blick auf Sorten, Gärung und Reifung.",
-        "fr": "Une dégustation guidée des boissons à base de pomme, des cidres légers au calvados vieilli, avec un détour par les variétés, la fermentation et le vieillissement."
+        "fr": "Une dégustation guidée des boissons à base de pomme, des cidres légers au calvados vieilli, avec un détour par les variétés, la fermentation et le vieillissement.",
+        "he": "טעימה מודרכת של משקאות תפוחים, מסיידרים קלילים ועד קלבדוס מיושן, עם הסבר על זנים, תסיסה ויישון."
       },
       "date_start": "2026-10-11",
       "date_end": null,
@@ -168,12 +182,14 @@
       "title": {
         "en": "Ezra Bar in Florentin",
         "de": "Ezra Bar in Florentin",
-        "fr": "Ezra Bar à Florentin"
+        "fr": "Ezra Bar à Florentin",
+        "he": "בר עזרא בפלורנטין"
       },
       "blurb": {
         "en": "A short walk from the flat: a small Florentin bar built around the music, with a serious sound system and the feel of a childhood living room.",
         "de": "Nur ein kurzer Weg von der Wohnung: eine kleine Bar in Florentin, die um die Musik herum gebaut ist, mit ernsthafter Anlage und dem Gefühl eines Wohnzimmers aus der Kindheit.",
-        "fr": "À quelques pas de l'appartement : un petit bar de Florentin construit autour de la musique, avec une vraie sono et l'ambiance d'un salon d'enfance."
+        "fr": "À quelques pas de l'appartement : un petit bar de Florentin construit autour de la musique, avec une vraie sono et l'ambiance d'un salon d'enfance.",
+        "he": "הליכה קצרה מהדירה: בר פלורנטיני קטן שבנוי סביב המוזיקה, עם מערכת סאונד רצינית והרגשה של סלון של פעם."
       },
       "date_start": null,
       "date_end": null,
@@ -191,12 +207,14 @@
       "title": {
         "en": "Bitter Bar by Levinsky Market",
         "de": "Bitter Bar am Levinsky-Markt",
-        "fr": "Bitter Bar près du marché Levinsky"
+        "fr": "Bitter Bar près du marché Levinsky",
+        "he": "ביטר בר ליד שוק לוינסקי"
       },
       "blurb": {
         "en": "Sharp cocktails in a relaxed warehouse space just off Levinsky Market, ten minutes on foot. Happy hour runs 18:00-20:00.",
         "de": "Präzise Cocktails in einem entspannten Lagerraum direkt am Levinsky-Markt, zehn Minuten zu Fuß. Happy Hour von 18 bis 20 Uhr.",
-        "fr": "Des cocktails précis dans un espace d'entrepôt décontracté à côté du marché Levinsky, à dix minutes à pied. Happy hour de 18h à 20h."
+        "fr": "Des cocktails précis dans un espace d'entrepôt décontracté à côté du marché Levinsky, à dix minutes à pied. Happy hour de 18h à 20h.",
+        "he": "קוקטיילים חדים בחלל מחסן נינוח ליד שוק לוינסקי, עשר דקות הליכה. האפי אוור 18:00-20:00."
       },
       "date_start": null,
       "date_end": null,
@@ -214,12 +232,14 @@
       "title": {
         "en": "Pizza Lila",
         "de": "Pizza Lila",
-        "fr": "Pizza Lila"
+        "fr": "Pizza Lila",
+        "he": "פיצה לילה"
       },
       "blurb": {
         "en": "Thin sourdough crust and toppings well beyond the usual. The Levinsky Market original is still being rebuilt after the building next door collapsed, so head to the Shenkin branch at Nafha 3.",
         "de": "Dünner Sauerteigboden und Beläge weit jenseits des Üblichen. Das Original am Levinsky-Markt wird nach dem Einsturz des Nachbargebäudes noch wiederaufgebaut, daher die Filiale in Shenkin, Nafha 3.",
-        "fr": "Une pâte fine au levain et des garnitures bien au-delà de l'ordinaire. L'adresse d'origine du marché Levinsky est encore en reconstruction après l'effondrement du bâtiment voisin : rendez-vous à la succursale de Shenkin, Nafha 3."
+        "fr": "Une pâte fine au levain et des garnitures bien au-delà de l'ordinaire. L'adresse d'origine du marché Levinsky est encore en reconstruction après l'effondrement du bâtiment voisin : rendez-vous à la succursale de Shenkin, Nafha 3.",
+        "he": "בצק מחמצת דק ותוספות הרבה מעבר לרגיל. הסניף המקורי בשוק לוינסקי עדיין בשיקום אחרי קריסת הבניין הסמוך, אז הולכים לסניף שינקין ברחוב נפחא 3."
       },
       "date_start": null,
       "date_end": null,
@@ -237,12 +257,14 @@
       "title": {
         "en": "Nachalat Binyamin Art Fair",
         "de": "Kunsthandwerkermarkt Nachalat Binyamin",
-        "fr": "Foire d'art de Nachalat Binyamin"
+        "fr": "Foire d'art de Nachalat Binyamin",
+        "he": "יריד האמנים בנחלת בנימין"
       },
       "blurb": {
         "en": "Around 200 stalls of handmade jewellery, ceramics, textiles and glass, with the makers behind them. Every Tuesday and Friday, free, from 10:00.",
         "de": "Rund 200 Stände mit handgemachtem Schmuck, Keramik, Textilien und Glas, dazu die Macher selbst. Jeden Dienstag und Freitag, kostenlos, ab 10 Uhr.",
-        "fr": "Environ 200 étals de bijoux, céramiques, textiles et verre faits main, avec les artisans sur place. Chaque mardi et vendredi, gratuit, dès 10h."
+        "fr": "Environ 200 étals de bijoux, céramiques, textiles et verre faits main, avec les artisans sur place. Chaque mardi et vendredi, gratuit, dès 10h.",
+        "he": "כ-200 דוכנים של תכשיטים, קרמיקה, טקסטיל וזכוכית בעבודת יד, עם היוצרים עצמם. בכל שלישי ושישי, חינם, מ-10:00."
       },
       "date_start": "2026-10-06",
       "date_end": null,
@@ -260,12 +282,14 @@
       "title": {
         "en": "Film music by candlelight in Jaffa",
         "de": "Filmmusik bei Kerzenschein in Jaffa",
-        "fr": "Musiques de film à la lueur des bougies à Jaffa"
+        "fr": "Musiques de film à la lueur des bougies à Jaffa",
+        "he": "מוזיקת סרטים לאור נרות ביפו"
       },
       "blurb": {
         "en": "A string quintet plays themes from Titanic, Harry Potter and The Lion King on the open-air terrace of a Jaffa monastery, surrounded by hundreds of candles and facing the sea.",
         "de": "Ein Streichquintett spielt Themen aus Titanic, Harry Potter und Der König der Löwen auf der Freiluftterrasse eines Klosters in Jaffa, umgeben von hunderten Kerzen mit Blick aufs Meer.",
-        "fr": "Un quintette à cordes joue les thèmes de Titanic, Harry Potter et Le Roi Lion sur la terrasse à ciel ouvert d'un monastère de Jaffa, entouré de centaines de bougies face à la mer."
+        "fr": "Un quintette à cordes joue les thèmes de Titanic, Harry Potter et Le Roi Lion sur la terrasse à ciel ouvert d'un monastère de Jaffa, entouré de centaines de bougies face à la mer.",
+        "he": "חמישיית מיתרים מנגנת נושאים מטיטאניק, הארי פוטר ומלך האריות על המרפסת הפתוחה של מנזר ביפו, בין מאות נרות ומול הים."
       },
       "date_start": "2026-10-06",
       "date_end": null,
@@ -283,12 +307,14 @@
       "title": {
         "en": "Jaffa Wednesdays",
         "de": "Mittwochs in Jaffa",
-        "fr": "Les mercredis de Jaffa"
+        "fr": "Les mercredis de Jaffa",
+        "he": "רביעי ביפו"
       },
       "blurb": {
         "en": "A free evening route through Jaffa every Wednesday: the farmers' market in the flea market, a live sunset set at the port, then open-air cinema at Gan HaPisga.",
         "de": "Jeden Mittwoch eine kostenlose Abendroute durch Jaffa: Bauernmarkt im Flohmarkt, ein Live-Set zum Sonnenuntergang im Hafen und danach Freiluftkino im Gan HaPisga.",
-        "fr": "Chaque mercredi, un parcours gratuit en soirée dans Jaffa : le marché fermier dans le marché aux puces, un concert au coucher du soleil au port, puis cinéma en plein air au Gan HaPisga."
+        "fr": "Chaque mercredi, un parcours gratuit en soirée dans Jaffa : le marché fermier dans le marché aux puces, un concert au coucher du soleil au port, puis cinéma en plein air au Gan HaPisga.",
+        "he": "מסלול ערב חינמי ביפו בכל יום רביעי: שוק האיכרים בשוק הפשפשים, סט חי בשקיעה בנמל, ואז קולנוע פתוח בגן הפסגה."
       },
       "date_start": "2026-10-07",
       "date_end": null,
@@ -308,12 +334,14 @@
       "title": {
         "en": "The Universe of Hans Zimmer, Jaffa",
         "de": "Das Universum von Hans Zimmer, Jaffa",
-        "fr": "L'univers de Hans Zimmer, Jaffa"
+        "fr": "L'univers de Hans Zimmer, Jaffa",
+        "he": "היקום של הנס צימר, יפו"
       },
       "blurb": {
         "en": "A string quintet and piano play Gladiator, Interstellar and The Lion King under the vaults of an old Jaffa monastery, lit by hundreds of candles.",
         "de": "Ein Streichquintett und Klavier spielen Gladiator, Interstellar und Der König der Löwen unter den Gewölben eines alten Klosters in Jaffa, im Licht hunderter Kerzen.",
-        "fr": "Un quintette à cordes et un piano jouent Gladiator, Interstellar et Le Roi Lion sous les voûtes d'un ancien monastère de Jaffa, éclairé par des centaines de bougies."
+        "fr": "Un quintette à cordes et un piano jouent Gladiator, Interstellar et Le Roi Lion sous les voûtes d'un ancien monastère de Jaffa, éclairé par des centaines de bougies.",
+        "he": "חמישיית מיתרים ופסנתר מנגנים את גלדיאטור, בין כוכבים ומלך האריות מתחת לקמרונות של מנזר עתיק ביפו, לאור מאות נרות."
       },
       "date_start": "2026-10-08",
       "date_end": null,
@@ -331,12 +359,14 @@
       "title": {
         "en": "Session by Ohad Naharin, Batsheva",
         "de": "Session von Ohad Naharin, Batsheva",
-        "fr": "Session d'Ohad Naharin, Batsheva"
+        "fr": "Session d'Ohad Naharin, Batsheva",
+        "he": "Session של אוהד נהרין, בת שבע"
       },
       "blurb": {
         "en": "Batsheva dancers improvise through Ohad Naharin's repertory, a piece first made for the Fondation Beyeler. Ten minutes' walk in Neve Tzedek; also 19:30 and 21:00, and three slots on 9 October. Booking needed.",
         "de": "Batsheva-Tänzer improvisieren durch Ohad Naharins Repertoire, ein Stück, das zuerst für die Fondation Beyeler entstand. Zehn Gehminuten in Neve Tzedek; auch 19:30 und 21:00 sowie drei Termine am 9. Oktober. Anmeldung nötig.",
-        "fr": "Les danseurs de Batsheva improvisent dans le répertoire d'Ohad Naharin, une pièce créée pour la Fondation Beyeler. À dix minutes à pied, à Neve Tzedek ; aussi à 19h30 et 21h, et trois séances le 9 octobre. Réservation requise."
+        "fr": "Les danseurs de Batsheva improvisent dans le répertoire d'Ohad Naharin, une pièce créée pour la Fondation Beyeler. À dix minutes à pied, à Neve Tzedek ; aussi à 19h30 et 21h, et trois séances le 9 octobre. Réservation requise.",
+        "he": "רקדני בת שבע מאלתרים על הרפרטואר של אוהד נהרין, יצירה שנוצרה במקור לקרן ביילר. עשר דקות הליכה בנווה צדק; גם ב-19:30 וב-21:00, ושלושה מועדים ב-9 באוקטובר. צריך להזמין."
       },
       "date_start": "2026-10-08",
       "date_end": null,
@@ -354,12 +384,14 @@
       "title": {
         "en": "Israel Philharmonic season opening",
         "de": "Saisoneröffnung des Israel Philharmonic",
-        "fr": "Ouverture de saison de l'Orchestre philharmonique d'Israël"
+        "fr": "Ouverture de saison de l'Orchestre philharmonique d'Israël",
+        "he": "פתיחת העונה של הפילהרמונית"
       },
       "blurb": {
         "en": "The orchestra's 90th season opens under Lahav Shani with Bardanashvili, the Sibelius violin concerto and Mahler's Fourth, with Nikolaj Szeps-Znaider and soprano Chen Reiss. Repeated 9 and 10 October; tickets in advance.",
         "de": "Die 90. Saison des Orchesters eröffnet unter Lahav Shani mit Bardanashvili, dem Violinkonzert von Sibelius und Mahlers Vierter, mit Nikolaj Szeps-Znaider und Sopranistin Chen Reiss. Wiederholung am 9. und 10. Oktober; Karten im Voraus.",
-        "fr": "La 90e saison de l'orchestre s'ouvre sous la direction de Lahav Shani avec Bardanashvili, le concerto pour violon de Sibelius et la Quatrième de Mahler, avec Nikolaj Szeps-Znaider et la soprano Chen Reiss. Repris les 9 et 10 octobre ; billets à l'avance."
+        "fr": "La 90e saison de l'orchestre s'ouvre sous la direction de Lahav Shani avec Bardanashvili, le concerto pour violon de Sibelius et la Quatrième de Mahler, avec Nikolaj Szeps-Znaider et la soprano Chen Reiss. Repris les 9 et 10 octobre ; billets à l'avance.",
+        "he": "העונה ה-90 של התזמורת נפתחת בניצוח להב שני עם ברדנשווילי, הקונצ'רטו לכינור של סיבליוס והסימפוניה הרביעית של מאהלר, עם ניקולאי שפס-זנידר והסופרן חן רייס. חוזר ב-9 וב-10 באוקטובר; כרטיסים מראש."
       },
       "date_start": "2026-10-08",
       "date_end": null,
@@ -377,12 +409,14 @@
       "title": {
         "en": "Kabbalat Shabbat at Tel Aviv Port",
         "de": "Kabbalat Schabbat im Hafen von Tel Aviv",
-        "fr": "Kabbalat Chabbat au port de Tel Aviv"
+        "fr": "Kabbalat Chabbat au port de Tel Aviv",
+        "he": "קבלת שבת בנמל תל אביב"
       },
       "blurb": {
         "en": "A musical welcome to Shabbat by the sea, with an Israeli prayer ensemble, singing and dancing at sunset. Every Friday, doors 17:30, free with advance registration.",
         "de": "Ein musikalischer Schabbat-Empfang am Meer, mit einem israelischen Gebetsensemble, Gesang und Tanz zum Sonnenuntergang. Jeden Freitag, Einlass 17:30, kostenlos mit Voranmeldung.",
-        "fr": "Un accueil musical du Chabbat au bord de la mer, avec un ensemble de prière israélien, chants et danses au coucher du soleil. Chaque vendredi, ouverture 17h30, gratuit sur inscription."
+        "fr": "Un accueil musical du Chabbat au bord de la mer, avec un ensemble de prière israélien, chants et danses au coucher du soleil. Chaque vendredi, ouverture 17h30, gratuit sur inscription.",
+        "he": "קבלת שבת מוזיקלית מול הים, עם אנסמבל תפילה ישראלי, שירה וריקודים בשקיעה. בכל יום שישי, פתיחת דלתות 17:30, חינם בהרשמה מראש."
       },
       "date_start": "2026-10-09",
       "date_end": null,
@@ -400,12 +434,14 @@
       "title": {
         "en": "Curating Architecture in the Anthropocene",
         "de": "Architektur kuratieren im Anthropozän",
-        "fr": "Exposer l'architecture à l'ère de l'Anthropocène"
+        "fr": "Exposer l'architecture à l'ère de l'Anthropocène",
+        "he": "אוצרות אדריכלות באנתרופוקן"
       },
       "blurb": {
         "en": "A conversation inside the Heritage of the Future exhibition at Liebling Haus, the White City Center, on what exhibitions and architects can still do in a climate crisis.",
         "de": "Ein Gespräch innerhalb der Ausstellung Heritage of the Future im Liebling Haus, dem White City Center, darüber, was Ausstellungen und Architekten in der Klimakrise noch bewirken können.",
-        "fr": "Une conversation au sein de l'exposition Heritage of the Future à la Liebling Haus, le White City Center, sur ce que peuvent encore faire les expositions et les architectes face à la crise climatique."
+        "fr": "Une conversation au sein de l'exposition Heritage of the Future à la Liebling Haus, le White City Center, sur ce que peuvent encore faire les expositions et les architectes face à la crise climatique.",
+        "he": "שיחה בתוך התערוכה מורשת העתיד בבית ליבלינג, מרכז העיר הלבנה, על מה תערוכות ואדריכלים עוד יכולים לעשות במשבר האקלים."
       },
       "date_start": "2026-10-11",
       "date_end": null,
@@ -423,12 +459,14 @@
       "title": {
         "en": "Tom Wesselmann: All Out",
         "de": "Tom Wesselmann: All Out",
-        "fr": "Tom Wesselmann : All Out"
+        "fr": "Tom Wesselmann : All Out",
+        "he": "טום וסלמן: All Out"
       },
       "blurb": {
         "en": "A large survey of the American Pop artist at the Tel Aviv Museum of Art: flat, monumental still lifes and nudes from the Mugrabi Collection. Open daily except Monday; entry fee.",
         "de": "Eine große Werkschau des amerikanischen Pop-Künstlers im Tel Aviv Museum of Art: flache, monumentale Stillleben und Akte aus der Mugrabi-Sammlung. Täglich außer Montag; Eintritt.",
-        "fr": "Une grande rétrospective de l'artiste pop américain au Tel Aviv Museum of Art : natures mortes et nus plats et monumentaux de la collection Mugrabi. Ouvert tous les jours sauf lundi ; entrée payante."
+        "fr": "Une grande rétrospective de l'artiste pop américain au Tel Aviv Museum of Art : natures mortes et nus plats et monumentaux de la collection Mugrabi. Ouvert tous les jours sauf lundi ; entrée payante.",
+        "he": "תערוכה גדולה של אמן הפופ האמריקאי במוזיאון תל אביב לאמנות: טבע דומם ועירום שטוחים ומונומנטליים מאוסף מוגרבי. פתוח כל יום חוץ משני; בתשלום."
       },
       "date_start": "2026-06-11",
       "date_end": "2026-12-26",
@@ -446,12 +484,14 @@
       "title": {
         "en": "Be'eri Art Gallery at Beit Romano",
         "de": "Be'eri-Galerie im Beit Romano",
-        "fr": "Galerie Be'eri au Beit Romano"
+        "fr": "Galerie Be'eri au Beit Romano",
+        "he": "גלריית בארי בבית רומנו"
       },
       "blurb": {
         "en": "The Be'eri gallery, destroyed on 7 October 2023, now shows Israeli artists inside the Beit Romano complex next to Teder bar, a ten-minute walk away. Open from 19:00.",
         "de": "Die am 7. Oktober 2023 zerstörte Galerie Be'eri zeigt israelische Künstler jetzt im Beit-Romano-Komplex neben der Teder-Bar, zehn Gehminuten entfernt. Ab 19 Uhr geöffnet.",
-        "fr": "La galerie Be'eri, détruite le 7 octobre 2023, expose désormais des artistes israéliens dans le complexe Beit Romano, à côté du bar Teder, à dix minutes à pied. Ouvert dès 19h."
+        "fr": "La galerie Be'eri, détruite le 7 octobre 2023, expose désormais des artistes israéliens dans le complexe Beit Romano, à côté du bar Teder, à dix minutes à pied. Ouvert dès 19h.",
+        "he": "גלריית בארי, שנהרסה ב-7 באוקטובר 2023, מציגה עכשיו אמנים ישראלים במתחם בית רומנו ליד בר תדר, עשר דקות הליכה. פתוח מ-19:00."
       },
       "date_start": null,
       "date_end": null,
@@ -469,12 +509,14 @@
       "title": {
         "en": "Hazeevot at Hameretz 2",
         "de": "Hazeevot im Hameretz 2",
-        "fr": "Hazeevot au Hameretz 2"
+        "fr": "Hazeevot au Hameretz 2",
+        "he": "הזאבות בהמרץ 2"
       },
       "blurb": {
         "en": "Back from a summer of fifty European shows, the band closes the season in a small room on the edge of Florentin, a few minutes' walk away.",
         "de": "Zurück von einem Sommer mit fünfzig Europa-Konzerten schließt die Band die Saison in einem kleinen Raum am Rand von Florentin, wenige Minuten zu Fuß.",
-        "fr": "De retour d'un été de cinquante concerts en Europe, le groupe clôture la saison dans une petite salle en bordure de Florentin, à quelques minutes à pied."
+        "fr": "De retour d'un été de cinquante concerts en Europe, le groupe clôture la saison dans une petite salle en bordure de Florentin, à quelques minutes à pied.",
+        "he": "אחרי קיץ של חמישים הופעות באירופה, הלהקה סוגרת את העונה באולם קטן בקצה פלורנטין, כמה דקות הליכה."
       },
       "date_start": "2026-10-03",
       "date_end": null,
@@ -492,12 +534,14 @@
       "title": {
         "en": "Hits Different at Levontin 7",
         "de": "Hits Different im Levontin 7",
-        "fr": "Hits Different au Levontin 7"
+        "fr": "Hits Different au Levontin 7",
+        "he": "Hits Different בלבונטין 7"
       },
       "blurb": {
         "en": "A listening party for music that has not been released: sketches, demos and beats straight from local producers, in the basement club on Levontin.",
         "de": "Eine Hör-Party für unveröffentlichte Musik: Skizzen, Demos und Beats direkt von lokalen Produzenten, im Kellerclub in der Levontin.",
-        "fr": "Une écoute collective de musiques inédites : esquisses, démos et beats directement issus de producteurs locaux, dans le club en sous-sol de la rue Levontin."
+        "fr": "Une écoute collective de musiques inédites : esquisses, démos et beats directement issus de producteurs locaux, dans le club en sous-sol de la rue Levontin.",
+        "he": "מסיבת האזנה למוזיקה שעוד לא יצאה: סקיצות, דמואים וביטים ישר ממפיקים מקומיים, במועדון המרתף בלבונטין."
       },
       "date_start": "2026-10-03",
       "date_end": null,
@@ -515,12 +559,14 @@
       "title": {
         "en": "Simchat Torah second Hakafot at Barby",
         "de": "Simchat Tora - zweite Hakafot im Barby",
-        "fr": "Simchat Torah, secondes Hakafot au Barby"
+        "fr": "Simchat Torah, secondes Hakafot au Barby",
+        "he": "הקפות שניות של שמחת תורה בבארבי"
       },
       "blurb": {
         "en": "The Barby's take on the holiday's second round of dancing, one of the most energetic nights of its year. Free admission, no dress code.",
         "de": "Die Barby-Version der zweiten Tanzrunde des Feiertags, eine der energischsten Nächte des Jahres. Eintritt frei, kein Dresscode.",
-        "fr": "La version du Barby de la seconde ronde de danses de la fête, l'une des soirées les plus énergiques de son année. Entrée libre, sans code vestimentaire."
+        "fr": "La version du Barby de la seconde ronde de danses de la fête, l'une des soirées les plus énergiques de son année. Entrée libre, sans code vestimentaire.",
+        "he": "ההקפות השניות של החג בגרסת הבארבי, אחד הלילות הסוערים של השנה שלהם. הכניסה חופשית, בלי קוד לבוש."
       },
       "date_start": "2026-10-03",
       "date_end": null,
@@ -538,12 +584,14 @@
       "title": {
         "en": "Sunday Klezmer Bar at Yung Yidish",
         "de": "Sonntags-Klezmerbar im Yung Yidish",
-        "fr": "Bar klezmer du dimanche au Yung Yidish"
+        "fr": "Bar klezmer du dimanche au Yung Yidish",
+        "he": "בר כליזמר של יום ראשון ביונג יידיש"
       },
       "blurb": {
         "en": "Live klezmer with the Jerusalem Klezmorim of Avrum Burstein, played among tens of thousands of old Yiddish books in a loft above the central bus station.",
         "de": "Live-Klezmer mit den Jerusalem Klezmorim von Avrum Burstein, gespielt zwischen zehntausenden alten jiddischen Büchern in einem Loft über dem zentralen Busbahnhof.",
-        "fr": "Du klezmer en direct avec les Klezmorim de Jérusalem d'Avrum Burstein, joué parmi des dizaines de milliers de vieux livres en yiddish, dans un loft au-dessus de la gare routière centrale."
+        "fr": "Du klezmer en direct avec les Klezmorim de Jérusalem d'Avrum Burstein, joué parmi des dizaines de milliers de vieux livres en yiddish, dans un loft au-dessus de la gare routière centrale.",
+        "he": "כליזמר חי עם הכליזמרים הירושלמים של אברום בורשטיין, בין עשרות אלפי ספרי יידיש ישנים בלופט מעל התחנה המרכזית."
       },
       "date_start": "2026-10-04",
       "date_end": null,
@@ -561,12 +609,14 @@
       "title": {
         "en": "Shevet turns seven",
         "de": "Shevet wird sieben",
-        "fr": "Shevet fête ses sept ans"
+        "fr": "Shevet fête ses sept ans",
+        "he": "שבט חוגג שבע"
       },
       "blurb": {
         "en": "The community space in the middle of town marks seven years with a long evening of music and content for anyone who wants to drop in.",
         "de": "Der Gemeinschaftsraum mitten in der Stadt feiert sieben Jahre mit einem langen Abend aus Musik und Programm, offen für alle.",
-        "fr": "L'espace communautaire au centre-ville fête ses sept ans avec une longue soirée de musique et de contenus, ouverte à qui veut passer."
+        "fr": "L'espace communautaire au centre-ville fête ses sept ans avec une longue soirée de musique et de contenus, ouverte à qui veut passer.",
+        "he": "מרחב הקהילה במרכז העיר מציין שבע שנים בערב ארוך של מוזיקה ותוכן לכל מי שרוצה לקפוץ."
       },
       "date_start": "2026-10-05",
       "date_end": null,
@@ -584,12 +634,14 @@
       "title": {
         "en": "Freaks & Sticks - Freak 2 Freak",
         "de": "Freaks & Sticks - Freak 2 Freak",
-        "fr": "Freaks & Sticks - Freak 2 Freak"
+        "fr": "Freaks & Sticks - Freak 2 Freak",
+        "he": "Freaks & Sticks - Freak 2 Freak"
       },
       "blurb": {
         "en": "The city's most colourful dance floor returns to Haoman 17 for an all-night back-to-back set with Bobaz Lobster. Starts around midnight.",
         "de": "Der bunteste Dancefloor der Stadt kehrt ins Haoman 17 zurück, für ein Back-to-Back-Set die ganze Nacht mit Bobaz Lobster. Beginn gegen Mitternacht.",
-        "fr": "Le dancefloor le plus coloré de la ville revient au Haoman 17 pour un set back-to-back toute la nuit avec Bobaz Lobster. Début vers minuit."
+        "fr": "Le dancefloor le plus coloré de la ville revient au Haoman 17 pour un set back-to-back toute la nuit avec Bobaz Lobster. Début vers minuit.",
+        "he": "רחבת הריקודים הכי צבעונית בעיר חוזרת להאומן 17 לסט בק-טו-בק כל הלילה עם Bobaz Lobster. מתחיל בערך בחצות."
       },
       "date_start": "2026-10-08",
       "date_end": null,
@@ -607,12 +659,14 @@
       "title": {
         "en": "Bazaar - Playa by the Sea",
         "de": "Bazaar - Playa am Meer",
-        "fr": "Bazaar - Playa au bord de la mer"
+        "fr": "Bazaar - Playa au bord de la mer",
+        "he": "בזאר - פלאיה ליד הים"
       },
       "blurb": {
         "en": "An open-air pre-Burn edition of Bazaar at Moonchild: a curated line-up from afternoon sun into the night, with a clothing swap and market stalls.",
         "de": "Eine Open-Air-Ausgabe von Bazaar vor dem Burn im Moonchild: ein kuratiertes Line-up von der Nachmittagssonne bis in die Nacht, mit Kleidertausch und Marktständen.",
-        "fr": "Une édition en plein air de Bazaar avant le Burn, au Moonchild : une programmation soignée du soleil de l'après-midi jusqu'à la nuit, avec troc de vêtements et étals."
+        "fr": "Une édition en plein air de Bazaar avant le Burn, au Moonchild : une programmation soignée du soleil de l'après-midi jusqu'à la nuit, avec troc de vêtements et étals.",
+        "he": "גרסת פרי-ברן פתוחה של בזאר במונצ'יילד: ליין-אפ נבחר משמש אחר הצהריים ועד הלילה, עם החלפת בגדים ודוכני שוק."
       },
       "date_start": "2026-10-10",
       "date_end": null,
@@ -630,12 +684,14 @@
       "title": {
         "en": "Moabet drag show at Callas",
         "de": "Moabet-Dragshow im Callas",
-        "fr": "Spectacle drag Moabet au Callas"
+        "fr": "Spectacle drag Moabet au Callas",
+        "he": "מופע הדראג מואבט בקאלאס"
       },
       "blurb": {
         "en": "Shovit brings back a sold-out Mizrahi drag show with Shovit Afioras, Prince Omar, Merav Abu Jackson and Diva D. Doors 20:00, show 21:00.",
         "de": "Shovit bringt eine ausverkaufte mizrachische Dragshow zurück, mit Shovit Afioras, Prince Omar, Merav Abu Jackson und Diva D. Einlass 20:00, Show 21:00.",
-        "fr": "Shovit ramène un spectacle drag mizrahi complet, avec Shovit Afioras, Prince Omar, Merav Abu Jackson et Diva D. Ouverture 20h, spectacle 21h."
+        "fr": "Shovit ramène un spectacle drag mizrahi complet, avec Shovit Afioras, Prince Omar, Merav Abu Jackson et Diva D. Ouverture 20h, spectacle 21h.",
+        "he": "שוביט מחזירה מופע דראג מזרחי שנמכר במלואו, עם שוביט אפיורס, פרינס עומר, מירב אבו ג'קסון ודיווה די. פתיחת דלתות 20:00, מופע 21:00."
       },
       "date_start": "2026-10-10",
       "date_end": null,
@@ -653,12 +709,14 @@
       "title": {
         "en": "Buena Vista Social Club tribute",
         "de": "Buena Vista Social Club - Tribute",
-        "fr": "Hommage au Buena Vista Social Club"
+        "fr": "Hommage au Buena Vista Social Club",
+        "he": "מחווה לבואנה ויסטה סושיאל קלאב"
       },
       "blurb": {
         "en": "Latin Power's long-running Cuban tribute, with bassist Fernando Knopf and Cuban vocalist Yanna Esperanza Mirabal: salsa, cha-cha-cha, rumba and bolero.",
         "de": "Die seit Jahren laufende kubanische Hommage von Latin Power, mit Bassist Fernando Knopf und der kubanischen Sängerin Yanna Esperanza Mirabal: Salsa, Cha-Cha-Cha, Rumba und Bolero.",
-        "fr": "L'hommage cubain de longue date de Latin Power, avec le bassiste Fernando Knopf et la chanteuse cubaine Yanna Esperanza Mirabal : salsa, cha-cha-cha, rumba et boléro."
+        "fr": "L'hommage cubain de longue date de Latin Power, avec le bassiste Fernando Knopf et la chanteuse cubaine Yanna Esperanza Mirabal : salsa, cha-cha-cha, rumba et boléro.",
+        "he": "מחוות הקובנית הוותיקה של לטין פאוור, עם הבסיסט פרננדו קנופף והזמרת הקובנית יאנה אספרנסה מירבל: סלסה, צ'ה-צ'ה-צ'ה, רומבה ובולרו."
       },
       "date_start": "2026-10-10",
       "date_end": null,
@@ -676,12 +734,14 @@
       "title": {
         "en": "Ayelet Raveh live at Kuli Alma",
         "de": "Ayelet Raveh live im Kuli Alma",
-        "fr": "Ayelet Raveh en concert au Kuli Alma"
+        "fr": "Ayelet Raveh en concert au Kuli Alma",
+        "he": "אילת רווה בהופעה בקולי אלמה"
       },
       "blurb": {
         "en": "A late live set in the art-covered basement bar off Rothschild, a short walk from Florentin. Entry is free.",
         "de": "Ein spätes Live-Set in der kunstvoll bemalten Kellerbar nahe der Rothschild, ein kurzer Weg von Florentin. Eintritt frei.",
-        "fr": "Un set tardif dans le bar en sous-sol couvert d'art, près de Rothschild, à quelques minutes de Florentin. Entrée libre."
+        "fr": "Un set tardif dans le bar en sous-sol couvert d'art, près de Rothschild, à quelques minutes de Florentin. Entrée libre.",
+        "he": "סט חי מאוחר בבר המרתף המכוסה אמנות ליד רוטשילד, הליכה קצרה מפלורנטין. הכניסה חופשית."
       },
       "date_start": "2026-10-11",
       "date_end": null,

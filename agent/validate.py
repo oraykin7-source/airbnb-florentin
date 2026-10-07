@@ -24,7 +24,7 @@ SOURCES = ("visit.tel-aviv.gov.il", "secrettelaviv.com", "chillz.com")
 CATEGORIES = ("food", "culture", "nightlife")
 IMAGE_HOSTS = ("images.unsplash.com", "unsplash.com", "images.pexels.com", "upload.wikimedia.org", "commons.wikimedia.org")
 BLOCKED_IMAGE_HOSTS = SOURCES + ("instagram.com", "cdninstagram.com", "facebook.com", "fbcdn.net", "tiktok.com", "x.com", "twitter.com")
-LANGS = ("en", "de", "fr")
+LANGS = ("en", "de", "fr", "he")  # 7.10: Hebrew added (Oren), the Hebrew page showed English event text
 MIN_ITEMS = 5
 MAX_AGE_DAYS = 3          # generated_at must be recent: the file is produced right before commit
 MAX_TITLE = 90
@@ -164,7 +164,7 @@ def main() -> int:
         for field, limit in (("title", MAX_TITLE), ("blurb", MAX_BLURB)):
             val = it.get(field)
             if not isinstance(val, dict) or any(not str(val.get(l, "")).strip() for l in LANGS):
-                errors.append(f"{where}: {field} must have non-empty en/de/fr")
+                errors.append(f"{where}: {field} must have non-empty en/de/fr/he")
             else:
                 for l in LANGS:
                     text_ok(where, f"{field}.{l}", str(val[l]), limit, errors)
@@ -208,7 +208,7 @@ def main() -> int:
         where = f"headsup[{i}]"
         txt = h.get("text")
         if not isinstance(txt, dict) or any(not str(txt.get(l, "")).strip() for l in LANGS):
-            errors.append(f"{where}: text must have non-empty en/de/fr")
+            errors.append(f"{where}: text must have non-empty en/de/fr/he")
         else:
             for l in LANGS:
                 text_ok(where, f"text.{l}", str(txt[l]), 300, errors)

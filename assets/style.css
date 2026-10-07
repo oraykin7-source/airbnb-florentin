@@ -1165,7 +1165,7 @@ body { font-size: var(--fs-md); }
 :root { --r-card: 16px; }
 .card, .place, .ev, .tile, .jump a, .mapcard { border-radius: var(--r-card); }
 /* one credit per open place card; 44px save button */
-.place:has(.place-text.open) .place-foot .credit-link { display: none; }
+.place:not(.eat):has(.place-text.open) .place-foot .credit-link { display: none; } /* place cards only: Eat cards always show the photo credit (CC BY / venue permission) */
 .name-box .name-save { min-height: 44px; }
 /* event cards: same body/title sizes as the rest of the site, 3 lines before the cut */
 .ev:not(.tour) > p { font-size: var(--fs-md); -webkit-line-clamp: 3; }
@@ -1177,3 +1177,15 @@ body { font-size: var(--fs-md); }
 .eat-jump::-webkit-scrollbar { display: none; }
 .eat-jump button { flex: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 0; background: var(--accent-soft); color: var(--accent); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
 .eat-group { scroll-margin-top: 84px; }
+/* 7.10 marketing round: a venue owner landing on their card sees where it comes from; full credit for photos given by the venue */
+.place.eat.landed::before { content: attr(data-from); display: block; padding: 10px 14px; font-size: var(--fs-sm); font-weight: 700; color: var(--accent); background: var(--accent-soft); }
+.place-foot .credit-link.credit-venue { white-space: normal; }
+/* 7.10 site-review round 3: tours one column on phones (no cut text), Eat chips wrap at 44px */
+@media (max-width: 619px) {
+  #tours-list { grid-template-columns: 1fr; gap: 12px; }
+  .ev.tour.tour-tile p { font-size: var(--fs-md); -webkit-line-clamp: 3; }
+  .ev.tour.tour-tile h3 { font-size: var(--fs-lg); }
+  .ev.tour.tour-tile .ev-media { aspect-ratio: 16 / 9; }
+}
+.eat-jump { flex-wrap: wrap; overflow: visible; }
+.eat-jump button { min-height: 44px; }
