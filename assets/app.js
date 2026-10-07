@@ -551,19 +551,20 @@
       box.append(el("h3", { class: "group-title eat-group", id: "eat-g-" + gi }, el("span", { class: "dot", "aria-hidden": "true" }), L_(lst.title)));
       const SHOW = 4, extra = [];
       rows.forEach((r, i) => {
+        const nm = (state.lang === "he" && r.name_he) || r.name;   // 7.10: Hebrew name the venue itself uses (Oren approved); slug stays from r.name
         const card = el("article", { class: "place eat" + (i >= SHOW ? " eat-extra" : ""), id: "eat-" + eatSlug(r.name), hidden: i >= SHOW ? "" : null },
-          r.image ? el("a", { class: "place-media", href: r.url, target: "_blank", rel: "noopener", "aria-label": r.name },
-            el("img", { src: r.image, alt: r.name, loading: "lazy", ...smallSrc(r.image, 900), onerror: e => e.target.closest(".place-media").remove() }),
+          r.image ? el("a", { class: "place-media", href: r.url, target: "_blank", rel: "noopener", "aria-label": nm },
+            el("img", { src: r.image, alt: nm, loading: "lazy", ...smallSrc(r.image, 900), onerror: e => e.target.closest(".place-media").remove() }),
             r.shabbat === true ? el("span", { class: "walk" }, t("open_sat")) : null) : null,
           el("div", { class: "place-body" },
-            el("h3", {}, typo(r.name)),
+            el("h3", {}, typo(nm)),
             el("p", { class: "muted small" }, ...(r.where ? [el("bdi", {}, r.where)] : []), (r.where && r.hours ? " · " : ""), typo(hoursText(r.hours) || "")),
             r.note ? el("p", { class: "place-text open" }, cap1(typo(L_(r.note)))) : null,
             // optional favourite dish ("fav" on the row, 4 languages; empty = hidden) - only dishes Oren names himself
             r.fav && L_(r.fav) ? el("p", { class: "fav" }, el("span", { class: "fav-k" }, t("fav_pick")), " ", typo(L_(r.fav))) : null,
             // Same footer as the place cards: compact Map pill + short "Photo ↗" credit link (designer round 2, item 3)
             el("div", { class: "place-foot" },
-              el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + r.name }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
+              el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + nm }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
               r.image_credit ? el("a", { class: "credit-link credit-venue", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${r.image_credit}` }, /with permission/.test(r.image_credit) ? `${t("photo")}: ${r.image_credit.replace(/^(.*?) \/ (@[\w.]+),?\s*with permission$/, "$1 ($2)")}` : `${t("photo")}: ${r.image_credit.replace(/^(.*?), ((?:CC[^,]*)|Public domain), via Wikimedia Commons$/, "$1 ($2)")}`) : null)));
         box.append(card); if (i >= SHOW) extra.push(card);
       });

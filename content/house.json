@@ -1192,6 +1192,7 @@
           "rows": [
             {
               "name": "Kiosko",
+              "name_he": "קיוסקו",
               "where": "Frenkel St 31",
               "hours": "7:00-22:00, Fri until 17:00, closed Sat",
               "note": {
@@ -1209,6 +1210,7 @@
             },
             {
               "name": "Café Levinsky 41",
+              "name_he": "קפה לוינסקי 41",
               "where": "Levinski St 41",
               "hours": "7:00-19:00, Fri until 17:00, closed Sat",
               "note": {
@@ -1226,6 +1228,7 @@
             },
             {
               "name": "p.o.c café",
+              "name_he": "פה קפה",
               "where": "Kfar Giladi St 48",
               "hours": "7:00-20:00, Fri until 19:00",
               "note": {
@@ -1242,6 +1245,7 @@
             },
             {
               "name": "Mirage - coffee",
+              "name_he": "מיראז' - קפה",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
               "hours": "8:00-00:00",
               "note": {
@@ -1259,6 +1263,7 @@
             },
             {
               "name": "Dallal Bakery",
+              "name_he": "מאפיית דלאל",
               "where": "Kol Israel Haverim St 7, Neve Tzedek",
               "hours": "7:00-16:00, Sat from 9:00",
               "note": {
@@ -1276,6 +1281,7 @@
             },
             {
               "name": "Tony & Esther",
+              "name_he": "טוני ואסתר",
               "where": "Levinski St 39",
               "hours": "7:30-20:00, Fri until 18:00, closed Sat",
               "note": {
@@ -1303,6 +1309,7 @@
           "rows": [
             {
               "name": "Garger HaZahav",
+              "name_he": "גרגר הזהב",
               "where": "Levinski St 30",
               "hours": "until 17:00, Tue-Thu until 23:00, Fri until 15:30, closed Sat",
               "note": {
@@ -1320,6 +1327,7 @@
             },
             {
               "name": "Sabich Frishman",
+              "name_he": "סביח פרישמן",
               "where": "Levinski St 57",
               "hours": "until 21:00, Fri until 16:00",
               "note": {
@@ -1337,6 +1345,7 @@
             },
             {
               "name": "Burekas shel Ima",
+              "name_he": "הבורקס של אמא",
               "where": "Levinski St 46",
               "hours": "until 18:00, Fri until 16:00, closed Sat",
               "note": {
@@ -1353,6 +1362,7 @@
             },
             {
               "name": "Turk Lahmajoun",
+              "name_he": "טורק לחמג'ון",
               "where": "Nahalat Binyamin St 77",
               "hours": "until 20:00, Fri until 15:00, closed Sat",
               "note": {
@@ -1370,6 +1380,7 @@
             },
             {
               "name": "Falafel Gabay",
+              "name_he": "פלאפל גבאי",
               "where": "Bograshov St 25",
               "hours": "until 21:30, Fri until 17:00, closed Sat",
               "note": {
@@ -1387,6 +1398,7 @@
             },
             {
               "name": "HaKosem",
+              "name_he": "הקוסם",
               "where": "Shlomo HaMelech St 1",
               "hours": "until 22:00, Fri until 15:30, closed Sat",
               "note": {
@@ -1404,6 +1416,7 @@
             },
             {
               "name": "Abu Hassan (Ali Karavan)",
+              "name_he": "אבו חסן (עלי קרוואן)",
               "where": "HaDolphin St 1, Jaffa",
               "hours": "8:00-15:00, closed Sat",
               "note": {
@@ -1421,6 +1434,7 @@
             },
             {
               "name": "Fish & Chips Jaffa Port",
+              "name_he": "פיש אנד צ'יפס נמל יפו",
               "where": "Nemal Yafo St 1, Jaffa Port",
               "hours": "10:30-22:00, closed Sun",
               "note": {
@@ -1465,6 +1479,7 @@
           "rows": [
             {
               "name": "HaShachaf",
+              "name_he": "השחף",
               "where": "Herzl St 22",
               "hours": "from 18:00, Fri-Sat from 12:00",
               "note": {
@@ -1492,6 +1507,7 @@
             },
             {
               "name": "Teder Pizza",
+              "name_he": "פיצה תדר",
               "where": "Derech Jaffa 9, Beit Romano",
               "hours": "from 18:00, Fri-Sat from 12:00",
               "note": {
@@ -1509,6 +1525,7 @@
             },
             {
               "name": "Mirage (Eyal Shani)",
+              "name_he": "מיראז' (אייל שני)",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
               "hours": "until 00:00",
               "note": {
@@ -1522,6 +1539,7 @@
             },
             {
               "name": "Cassata",
+              "name_he": "קאסאטה",
               "where": "Yehuda HaLevi St 12, Park HaMesila",
               "hours": "12:00-00:00, Thu until 01:00, Fri from 11:00",
               "note": {
@@ -1556,6 +1574,7 @@
             },
             {
               "name": "Mezcal",
+              "name_he": "מסקל",
               "where": "Vital St 2",
               "hours": "17:00-00:00",
               "note": {
@@ -1572,6 +1591,7 @@
             },
             {
               "name": "Lava",
+              "name_he": "לאבה",
               "where": "Beit HaBad Alley 7, Park HaMesila",
               "hours": "from 18:00, Fri-Sat from 16:00",
               "note": {
@@ -1589,6 +1609,7 @@
             },
             {
               "name": "Oscar's",
+              "name_he": "אוסקר",
               "where": "Nahalat Binyamin St 68, Park HaMesila",
               "hours": "18:00-23:00, Fri from 17:00, every Saturday night",
               "note": {
@@ -1606,6 +1627,7 @@
             },
             {
               "name": "The Old Man and the Sea",
+              "name_he": "הזקן והים",
               "where": "Nemal Yafo St 1, Jaffa Port",
               "hours": "11:00-00:00",
               "note": {
