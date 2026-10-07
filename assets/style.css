@@ -1193,3 +1193,8 @@ body { font-size: var(--fs-md); }
 .tours-ask { margin: 4px 0 14px; font-size: var(--fs-sm); }
 .tours-ask a { color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .ev:not(.tour) > .foot-row { flex-wrap: wrap; gap: 8px; align-items: center; }
+/* 7.10 site-review round 4: notes after the 3 check-out to-dos; tour text 4 lines on phones; tighter Eat chips */
+.checks li.check-note { list-style: none; padding-inline-start: 0; color: var(--muted); margin-top: 6px; }
+@media (max-width: 619px) { .ev.tour.tour-tile p { -webkit-line-clamp: 5; } }
+.eat-jump { gap: 6px; }
+.eat-jump button { padding: 0 11px; }

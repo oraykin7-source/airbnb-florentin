@@ -467,6 +467,7 @@
         // tick-box list (3.10): ticks are remembered on this phone for the day
         let done = {}; try { done = JSON.parse(localStorage.getItem("co-" + (new Date()).toISOString().slice(0, 10)) || "{}"); } catch (e) {}
         parts.items = el("ul", { class: "checks" }, L_(c.items).map((s, i) => {
+          if (i >= 3) return el("li", { class: "check-note" }, ...rich(fill(s, host), c.id));   // 7.10: only the 3 to-dos get a tick box (home banner says "three things")
           const id = "co-" + i;
           const cb = el("input", { type: "checkbox", id, checked: done[i] ? "" : null, onchange: e => { done[i] = e.target.checked; try { localStorage.setItem("co-" + (new Date()).toISOString().slice(0, 10), JSON.stringify(done)); } catch (x) {} } });
           if (!done[i]) cb.removeAttribute("checked");
@@ -892,6 +893,7 @@
   document.getElementById("lang-btn").addEventListener("click", e => { e.stopPropagation(); toggleMenu("lang-list", "lang-btn"); });
   document.getElementById("burger").addEventListener("click", e => { e.stopPropagation(); toggleMenu("burger-panel", "burger"); });
   document.getElementById("burger-panel").addEventListener("click", e => { const a = e.target.closest("a"); if (!a) return; closeMenus();
+    if (a.getAttribute("href") === "#top") { e.preventDefault(); history.pushState(null, "", "#top"); route(); window.scrollTo({ top: 0, behavior: "instant" }); return; }   // 7.10: Home from the menu lands at the very top
     if (a.classList.contains("burger-sos")) { e.preventDefault(); showCardPage("card-emergency"); const c = document.getElementById("card-emergency"); if (c) { c.open = true; requestAnimationFrame(() => c.scrollIntoView({ block: "start" })); } } });
   document.addEventListener("click", closeMenus);
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenus(); });
