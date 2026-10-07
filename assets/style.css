@@ -1114,3 +1114,31 @@ body { overflow-anchor: none; }
 .ok-line[hidden] { display: none; }
 .ok-line span { font-weight: 700; color: var(--ink); }
 .ok-line a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ===== 7.10 type & home cleanup (docs/graphic-design-review-2026-10-07.md 1-6, docs/site-review-2026-10-07.md 1, 3, 6, 7, 9) ===== */
+/* one body size: text no longer bigger than its own heading */
+body { font-size: var(--fs-md); }
+.card[open] h3 { font-size: var(--fs-lg); }
+.sec-title { font-size: var(--fs-md); font-weight: 700; }
+/* off-scale 14.4 / 13.6 -> 14 */
+.muted.small, .place-body p.small, .place-body p.muted, .place-body p.tour-desc, .more-tours:not(.map-all), .name-box .not-you, .ev.tour.tour-tile p { font-size: var(--fs-sm); }
+.name-box .not-you { min-height: 44px; display: inline-flex; align-items: center; }
+/* off-scale 15.2 / 16.32 / 16.8 / 17.6 */
+.tel a, .row-txt > a:first-child, .hu-ico { font-size: var(--fs-md); }
+.steps li { font-size: var(--fs-lg); line-height: 1.4; }
+[dir="rtl"] .eyebrow { font-size: var(--fs-sm); }
+.more-btn, .eat-more { font-weight: 700; }
+/* home: eat tile, then "Your first hour", then four equal tiles with one-line titles */
+.ok-line { margin: 8px 0 0; }
+.jump.jump-top { padding: 20px 0 0; }
+.jump.jump-rest { padding: 18px 0 6px; }
+.jump .jt strong { font-family: "Plus Jakarta Sans", Manrope, Heebo, sans-serif; font-weight: 700; }
+[dir="rtl"] .jump .jt strong { font-family: Heebo, system-ui, sans-serif; }
+.jump .jt span { font-size: var(--fs-sm); }
+.jump.jump-rest a { min-height: 88px; }
+.jump a.jump-eat { min-height: 76px; }
+@media (min-width: 900px) { .jump a.jump-eat { justify-content: flex-start; gap: 16px; } }
+.first-block { padding-top: 24px; }
+/* direct link to a venue (#eat-kiosko): brief highlight */
+.place.eat { scroll-margin-top: 84px; }
+.place.eat.flash { box-shadow: var(--shadow), 0 0 0 3px var(--accent); transition: box-shadow .3s; }
