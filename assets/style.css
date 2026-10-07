@@ -1217,3 +1217,6 @@ body { font-size: var(--fs-md); }
 .mapcard-routes .route { flex: 1 1 100%; border-radius: 16px; }
 .mapcard-routes .route strong { white-space: normal; }
 @media (min-width: 900px) { .card .body > .card-img { margin-inline: 0 auto; } }
+/* Eat group chips: one row of three equal buttons (text may wrap inside), so the first café stays on the first screen */
+.eat-jump { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.eat-jump button { padding: 4px 8px; line-height: 1.2; white-space: normal; text-align: center; }

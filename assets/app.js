@@ -564,7 +564,7 @@
             // Same footer as the place cards: compact Map pill + short "Photo ↗" credit link (designer round 2, item 3)
             el("div", { class: "place-foot" },
               el("a", { class: "map-link", href: r.url, target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + r.name }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))),
-              r.image_credit ? el("a", { class: "credit-link" + (/with permission/.test(r.image_credit) ? " credit-venue" : ""), href: r.image_credit_url || r.url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${r.image_credit}` }, /with permission/.test(r.image_credit) ? `${t("photo")}: ${r.image_credit.replace(/^(.*?) \/ (@[\w.]+),?\s*with permission$/, "$1 ($2)")}` : t("photo") + (state.lang === "he" ? " ↖" : " ↗")) : null)));
+              r.image_credit ? el("a", { class: "credit-link credit-venue", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${r.image_credit}` }, /with permission/.test(r.image_credit) ? `${t("photo")}: ${r.image_credit.replace(/^(.*?) \/ (@[\w.]+),?\s*with permission$/, "$1 ($2)")}` : `${t("photo")}: ${r.image_credit.replace(/^(.*?), ((?:CC[^,]*)|Public domain), via Wikimedia Commons$/, "$1 ($2)")}`) : null)));
         box.append(card); if (i >= SHOW) extra.push(card);
       });
       if (extra.length) {
@@ -794,7 +794,12 @@
       if (it.time) when += ` · ${it.time}`;
 
       const inStay = checkout && it.date_start && it.date_start <= checkout && (it.date_end || it.date_start) >= today;
-      const whereBits = [it.venue, it.area].filter(Boolean).join(" · ");
+      const HE_AREA = { "Jaffa": "יפו", "Florentin": "פלורנטין", "Levinsky Market": "שוק לוינסקי", "Shenkin": "שינקין", "Neve Tzedek": "נווה צדק", "Jaffa Port": "נמל יפו", "Tel Aviv Port": "נמל תל אביב", "Rothschild": "רוטשילד", "Kerem HaTeimanim": "כרם התימנים", "Carmel Market": "שוק הכרמל", "Sarona": "שרונה", "City centre": "מרכז העיר" };
+      const HE_PRICE = { "Free": "חינם", "Free entry": "כניסה חופשית", "Free with registration": "חינם בהרשמה" };
+      const he = state.lang === "he";
+      const area = he ? (it.area_he || HE_AREA[it.area] || it.area) : it.area;
+      const price = he ? (it.price_he || HE_PRICE[it.price] || it.price) : it.price;
+      const whereBits = [it.venue, area].filter(Boolean).join(" · ");
       const host = (() => { try { return new URL(it.url).hostname.replace(/^www\./, ""); } catch (_) { return it.source; } })();
 
       const ICON = { food: "🍽️", culture: "🎭", nightlife: "🎧" };
@@ -813,7 +818,7 @@
           el("span", { class: "when" }, when),
           inStay ? el("span", { class: "badge" }, t("during_stay")) : null,
           el("h3", { dir: "auto" }, typo(L_(it.title)))),
-        whereBits ? el("div", { class: "where", dir: "auto" }, whereBits + (it.price ? ` · ${it.price}` : "")) : null,
+        whereBits ? el("div", { class: "where", dir: "auto" }, whereBits + (price ? ` · ${price}` : "")) : null,
         el("p", { dir: "auto" }, typo(L_(it.blurb))),
         el("div", { class: "foot-row" },
           it.venue ? el("a", { class: "map-link", href: it.map || ("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([it.venue, it.area, "Tel Aviv-Yafo"].filter(Boolean).join(", "))), target: "_blank", rel: "noopener", "aria-label": t("map") + ": " + it.venue }, svg('<path d="M12 21s-6-5.2-6-11a6 6 0 0 1 12 0c0 5.8-6 11-6 11z"/><circle cx="12" cy="10" r="2.3"/>', 16), el("span", {}, t("map_short"))) : null,

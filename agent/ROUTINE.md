@@ -46,7 +46,7 @@ Collect, per category, the 6-10 best picks for a visitor staying in Florentin:
 
 Rules: every item comes from a page on one of the three sites and carries that page's exact URL; dated items fall inside the window; skip anything already ended or undated-and-unconfirmable; prefer places within easy reach of Florentin (Florentin, Jaffa, Neve Tzedek, Rothschild, the ports) and things that don't require Hebrew; never invent times, venues or prices - leave them `null` if not on the page.
 
-**Languages (7.10):** every title, blurb and heads-up text in four languages: en, de, fr and he. Hebrew = natural Israeli Hebrew, venue and street names as Israelis write them; translate only what the English says (no new facts). The validator rejects an item without Hebrew.
+**Languages (7.10):** every title, blurb and heads-up text in four languages: en, de, fr and he. Hebrew = natural Israeli Hebrew, venue and street names as Israelis write them; translate only what the English says (no new facts). The validator rejects an item without Hebrew. Also give `area_he` / `price_he` (Hebrew of `area` / `price`, e.g. "Jaffa" → "יפו", "Free" → "חינם") whenever `area` / `price` is set; venue names stay as the venue writes them.
 
 ## 3b. "Heads-up this week"
 
@@ -82,6 +82,8 @@ Each note: `{"icon": "🕯️", "text": {"en": "...", "de": "...", "fr": "...", 
       "venue": "Name of the place",
       "area": "Florentin",
       "price": "₪80",
+      "area_he": "פלורנטין",
+      "price_he": "80 ₪",
       "url": "https://www.secrettelaviv.com/....",
       "source": "secrettelaviv.com",
       "image": "https://images.unsplash.com/photo-....?w=800",
