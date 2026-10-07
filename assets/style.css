@@ -491,7 +491,7 @@ a.stay[hidden] { display: none; }
   :root:not([data-theme="light"]) {
     --bg: #1c1915; --surface: #26221d; --ink: #f4ede5; --muted: #b3a79b; --line: #3a342d;
     --accent: #e08a62; --accent-ink: #1c1915; --accent-soft: #3d2d24; --chip: #302a24;
-    --happy: #e9c272; --happy-ink: #1c1915; --danger: #ff9d8c; --danger-soft: #3d2622; --danger-fill: #e0604a;
+    --happy: #e9c272; --happy-ink: #1c1915; --danger: #ff9d8c; --danger-soft: #3d2622; --danger-fill: #c84b38;
     --ring: rgba(255,255,255,.06);
     --shadow: 0 10px 26px -16px rgba(0,0,0,.7); --shadow-hi: 0 18px 40px -18px rgba(0,0,0,.85);
   }
@@ -499,7 +499,7 @@ a.stay[hidden] { display: none; }
 :root[data-theme="dark"] {
   --bg: #1c1915; --surface: #26221d; --ink: #f4ede5; --muted: #b3a79b; --line: #3a342d;
   --accent: #e08a62; --accent-ink: #1c1915; --accent-soft: #3d2d24; --chip: #302a24;
-  --happy: #e9c272; --happy-ink: #1c1915; --danger: #ff9d8c; --danger-soft: #3d2622; --danger-fill: #e0604a;
+  --happy: #e9c272; --happy-ink: #1c1915; --danger: #ff9d8c; --danger-soft: #3d2622; --danger-fill: #c84b38;
   --ring: rgba(255,255,255,.06);
   --shadow: 0 10px 26px -16px rgba(0,0,0,.7); --shadow-hi: 0 18px 40px -18px rgba(0,0,0,.85);
 }
@@ -1198,3 +1198,17 @@ body { font-size: var(--fs-md); }
 @media (max-width: 619px) { .ev.tour.tour-tile p { -webkit-line-clamp: 5; } }
 .eat-jump { gap: 6px; }
 .eat-jump button { padding: 0 11px; }
+/* 7.10 from the hosts product: "Oren's pick" line on Eat cards (shown only when content has a fav) */
+.place-body p.fav { display: block; margin: 2px 0 0; font-size: var(--fs-sm); color: var(--ink); }
+.place-body p.fav .fav-k { font-weight: 700; color: var(--accent); }
+
+/* ===== 7.10 designer round 3 (to 8.5) ===== */
+/* readable desktop line length (~70 characters) */
+.card .body ul, .card .body p, .card .body ol, .lead { max-width: 34em; }
+@media (min-width: 900px) { #headsup { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; } #headsup li { margin: 0; } }
+/* emergency call buttons: one per row, centred */
+.tel { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.tel a { justify-content: center; text-align: center; }
+/* "More about Tel Aviv +" spacing */
+.hood-more > summary::after { content: "+"; margin-inline-start: 6px; }
+.hood-more[open] > summary::after { content: "−"; }

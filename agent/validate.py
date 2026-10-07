@@ -67,6 +67,22 @@ def check_house(path: Path) -> int:
         _walk(_json.loads(raw))
     except ValueError:
         pass
+    # 7.10 (from the hosts product): optional favourite dish on eat rows - all four languages, short plain text
+    try:
+        for card in (_json.loads(raw).get("cards") or []):
+            for lst in card.get("lists") or []:
+                for row in lst.get("rows") or []:
+                    fav = row.get("fav")
+                    if fav is None:
+                        continue
+                    if not isinstance(fav, dict) or any(not str(fav.get(l, "")).strip() for l in ("en", "de", "fr", "he")):
+                        problems.append(f"{path}: {row.get('name')}: fav needs non-empty en/de/fr/he")
+                        continue
+                    for l in ("en", "de", "fr", "he"):
+                        if len(fav[l]) > 60 or SUSPICIOUS.search(fav[l]):
+                            problems.append(f"{path}: {row.get('name')}: fav.{l} too long or contains markup/links")
+    except (ValueError, AttributeError):
+        pass
     # The page is rendered by one JS file: a syntax error blanks the whole guide. Check it too.
     import subprocess, shutil
     js = ROOT / "assets" / "app.js"

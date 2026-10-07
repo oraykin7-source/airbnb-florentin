@@ -260,7 +260,7 @@
       },
       "sub": {
         "en": "Tami4: filtered cold & hot water - hold the red button for hot",
-        "de": "Tami4: gefiltertes kaltes & heißes Wasser - rote Taste gedrückt halten für heiß",
+        "de": "Tami4: Wasser kalt & heiß - für heiß rote Taste halten",
         "fr": "Tami4 : eau filtrée froide et chaude - maintenir le bouton rouge pour l'eau chaude",
         "he": "תמי 4: מים מסוננים קרים וחמים - להחזיק את הכפתור האדום לחמים"
       },
@@ -2075,22 +2075,22 @@
         "en": [
           "If anything is missing or not quite right - a towel, the Wi-Fi, a noisy night - please tell me right away (WhatsApp: ☰ menu at the top) and I'll fix it straight away.",
           "After check-out, Airbnb will ask you for a review. Write it honestly - it helps other travellers, and it helps me improve. A few words mean a lot to a small host like me. Thank you!",
-          "How it works: a day after check-out, Airbnb sends you a \"Write a review\" prompt (app → Trips, or by email). Rate each category, add a couple of sentences, and that's it - both reviews are published at the same time."
+          "How it works: after check-out, Airbnb sends you a \"Write a review\" prompt (app → Trips, or by email). Rate each category, add a couple of sentences, and that's it - both reviews are published at the same time."
         ],
         "de": [
           "Falls etwas fehlt oder nicht ganz stimmt - ein Handtuch, das WLAN, eine laute Nacht - sagen Sie es mir bitte sofort (WhatsApp: ☰-Menü oben), und ich kümmere mich direkt darum.",
           "Nach dem Check-out bittet Airbnb Sie um eine Bewertung. Schreiben Sie sie ehrlich - das hilft anderen Reisenden und hilft mir, besser zu werden. Ein paar Worte bedeuten einem kleinen Gastgeber wie mir sehr viel. Danke!",
-          "So geht's: einen Tag nach dem Check-out schickt Airbnb Ihnen die Aufforderung \"Bewertung schreiben\" (App → Reisen, oder per E-Mail). Jede Kategorie bewerten, zwei Sätze dazu, fertig - beide Bewertungen werden gleichzeitig veröffentlicht."
+          "So geht's: nach dem Check-out schickt Airbnb Ihnen die Aufforderung \"Bewertung schreiben\" (App → Reisen, oder per E-Mail). Jede Kategorie bewerten, zwei Sätze dazu, fertig - beide Bewertungen werden gleichzeitig veröffentlicht."
         ],
         "fr": [
           "Si quelque chose manque ou n'est pas tout à fait au point - une serviette, le Wi-Fi, une nuit bruyante - dites-le-moi tout de suite (WhatsApp : menu ☰ en haut) et je le règle immédiatement.",
           "Après le départ, Airbnb vous demandera un commentaire. Écrivez-le honnêtement - il aide les autres voyageurs et m'aide à m'améliorer. Quelques mots comptent beaucoup pour un petit hôte comme moi. Merci !",
-          "Comment ça marche : le lendemain du départ, Airbnb vous envoie une invitation « Écrire un commentaire » (appli → Voyages, ou par e-mail). Notez chaque catégorie, ajoutez deux phrases, et c'est tout - les deux avis sont publiés en même temps."
+          "Comment ça marche : après le départ, Airbnb vous envoie une invitation « Écrire un commentaire » (appli → Voyages, ou par e-mail). Notez chaque catégorie, ajoutez deux phrases, et c'est tout - les deux avis sont publiés en même temps."
         ],
         "he": [
           "אם משהו חסר או לא בדיוק כמו שצריך - מגבת, הוויי-פיי, לילה רועש - בבקשה ספרו לי מיד (וואטסאפ: תפריט ☰ למעלה) ואתקן על המקום.",
           "אחרי הצ'ק-אאוט Airbnb תבקש מכם ביקורת. כתבו אותה בכנות - זה עוזר למטיילים אחרים ועוזר לי להשתפר. כמה מילים שוות המון למארח קטן כמוני. תודה!",
-          "איך זה עובד: יום אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה ← טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
+          "איך זה עובד: אחרי הצ'ק-אאוט, Airbnb שולחת לכם בקשה \"כתבו ביקורת\" (באפליקציה ← טיולים, או במייל). מדרגים כל קטגוריה, מוסיפים כמה משפטים, וזהו - שתי הביקורות מתפרסמות באותו זמן."
         ]
       },
       "group": "safe"
