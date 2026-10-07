@@ -606,7 +606,7 @@
           "Send me a message so I know the room is free.",
           "Airport: the Gett taxi app (~25 min) or the train from HaHagana station (10 min walk). No trains from Friday afternoon until Saturday evening - take a taxi.",
           "Left something behind? Message me - I'll check.",
-          "Thank you for staying with me! A day after check-out Airbnb will ask you for a review - an honest one helps me a lot."
+          "Thank you for staying with me! After check-out Airbnb will ask you for a review - an honest one helps me a lot."
         ],
         "de": [
           "Klimaanlage und Licht ausschalten.",
@@ -614,7 +614,7 @@
           "Schicken Sie mir eine Nachricht, damit ich weiß, dass das Zimmer frei ist.",
           "Flughafen: Taxi-App Gett (ca. 25 Min.) oder Zug ab Bahnhof HaHagana (10 Min. zu Fuß). Von Freitagnachmittag bis Samstagabend fahren keine Züge - nehmen Sie ein Taxi.",
           "Etwas vergessen? Schreiben Sie mir - ich schaue nach.",
-          "Danke, dass Sie bei mir gewohnt haben! Einen Tag nach dem Check-out bittet Airbnb Sie um eine Bewertung - eine ehrliche hilft mir sehr."
+          "Danke, dass Sie bei mir gewohnt haben! Nach dem Check-out bittet Airbnb Sie um eine Bewertung - eine ehrliche hilft mir sehr."
         ],
         "fr": [
           "Éteignez la clim et les lumières.",
@@ -622,7 +622,7 @@
           "Envoyez-moi un message pour que je sache que la chambre est libre.",
           "Aéroport : l'appli de taxi Gett (~25 min) ou le train depuis la gare HaHagana (10 min à pied). Pas de trains du vendredi après-midi au samedi soir - prenez un taxi.",
           "Oublié quelque chose ? Écrivez-moi - je vérifierai.",
-          "Merci d'avoir séjourné chez moi ! Le lendemain du départ, Airbnb vous demandera un avis - un avis honnête m'aide beaucoup."
+          "Merci d'avoir séjourné chez moi ! Après le départ, Airbnb vous demandera un avis - un avis honnête m'aide beaucoup."
         ],
         "he": [
           "מכבים מזגן ואורות.",
@@ -630,7 +630,7 @@
           "שולחים לי הודעה כדי שאדע שהחדר פנוי.",
           "לשדה התעופה: אפליקציית Gett (~25 דק') או הרכבת מתחנת ההגנה (10 דק' הליכה). אין רכבות משישי אחר הצהריים עד מוצאי שבת - קחו מונית.",
           "שכחתם משהו? כתבו לי - אני אבדוק.",
-          "תודה שהתארחתם אצלי! יום אחרי הצ'ק-אאוט Airbnb תבקש מכם לכתוב ביקורת - ביקורת כנה עוזרת לי מאוד."
+          "תודה שהתארחתם אצלי! אחרי הצ'ק-אאוט Airbnb תבקש מכם לכתוב ביקורת - ביקורת כנה עוזרת לי מאוד."
         ]
       },
       "sections": [
@@ -1518,7 +1518,6 @@
                 "he": "המקום של אייל שני על הפארק, פתוח כל היום: כריכים ומאפים בבוקר, דגים ופירות ים מהצהריים עד הלילה - 10 דקות הליכה"
               },
               "url": "https://www.google.com/maps/place/Mirage/@32.0608486,34.7690641,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4d2985f84e39:0x39ad6cd0cd4a5909!8m2!3d32.0608486!4d34.7690641!16s%2Fg%2F11rgfyj2kj",
-              "image": "assets/img/eat/mirage-g.webp",
               "shabbat": true
             },
             {
@@ -2250,7 +2249,12 @@
           "de": "Die Geburtskirche und der Krippenplatz in Bethlehem, dazu die wichtigsten Sehenswürdigkeiten Jerusalems, mit Guide den ganzen Tag.",
           "fr": "L'église de la Nativité et la place de la Crèche à Bethléem, plus les grands sites de Jérusalem, avec un guide toute la journée.",
           "he": "כנסיית המולד וכיכר האבוס בבית לחם, ועוד האתרים המרכזיים של ירושלים, עם מדריך כל היום."
-        }
+        },
+        "langs": [
+          "en",
+          "de",
+          "fr"
+        ]
       },
       {
         "id": "spa",

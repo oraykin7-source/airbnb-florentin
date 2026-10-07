@@ -1189,3 +1189,7 @@ body { font-size: var(--fs-md); }
 }
 .eat-jump { flex-wrap: wrap; overflow: visible; }
 .eat-jump button { min-height: 44px; }
+/* 7.10 marketing round 2: "ask me" under the tours intro; map pill in event footers */
+.tours-ask { margin: 4px 0 14px; font-size: var(--fs-sm); }
+.tours-ask a { color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.ev:not(.tour) > .foot-row { flex-wrap: wrap; gap: 8px; align-items: center; }
