@@ -735,7 +735,8 @@
     }
     const L = state.lang;
     const hu = document.getElementById("headsup");
-    hu.replaceChildren(...(state.weekly.headsup || []).map(n =>
+    const huToday = currentStay().today; // 7.10: a note with "until" (YYYY-MM-DD) disappears after that day
+    hu.replaceChildren(...(state.weekly.headsup || []).filter(n => !n.until || n.until >= huToday).map(n =>
       el("li", {}, el("span", { class: "hu-ico", "aria-hidden": "true" }, n.icon || "ℹ️"), L_(n.text))));
     hu.hidden = hu.children.length === 0;
     const { today, checkout } = currentStay();

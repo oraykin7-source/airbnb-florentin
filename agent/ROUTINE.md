@@ -50,6 +50,8 @@ Rules: every item comes from a page on one of the three sites and carries that p
 
 Besides the items, write 1-4 short practical notes for the window in a `headsup` list - things that catch foreign visitors out. Only include what applies to the window; leave the list empty if nothing does. Typical notes:
 
+Every note tied to a specific day (a holiday, a closure, "Saturday 3 October") MUST carry `"until": "YYYY-MM-DD"` = the last day it is true; the site hides it after that date. (7.10: a Simchat Torah note stayed on the page for 4 days after the holiday.)
+
 - Shabbat: from Friday afternoon (about 2 hours before sunset) to Saturday night there are no trains and almost no buses; most shops close; taxis (Gett) run at a surcharge.
 - Jewish holidays inside the window (name them, with the dates): same as Shabbat, sometimes for two days; Yom Kippur = no traffic at all.
 - Friday: shops and markets close early (around 14:00-15:00).
