@@ -124,7 +124,7 @@
       footer: "הוכן באהבה על ידי המארח שלכם. תיהנו מפלורנטין!",
       stay_until: d => `אירועים במהלך השהות · עד ${d}`,
       checkout_today: "צ'ק-אאוט היום - נסיעה טובה!",
-      whatsapp: "וואטסאפ לאורן", sos: "חירום", sos_police: "משטרה", sos_amb: "מד\"א", sos_fire: "כיבוי אש", map_short: "מפה", reset_dates: "חזרה לתאריכי ההזמנה",
+      whatsapp: "וואטסאפ לאורן", sos: "חירום", sos_police: "משטרה", sos_amb: "מד״א", sos_fire: "כיבוי אש", map_short: "מפה", reset_dates: "חזרה לתאריכי ההזמנה",
       welcome_name: n => `ברוכים הבאים הביתה, ${n}`, name_prompt: "השם שלכם", name_save: "שמירה", name_change: "לא אתם?",
       stay_label: "אירועים מהיום ועד הצ'ק-אאוט שלכם:", stay_label_none: "אירועים מהיום. הזינו תאריך צ'ק-אאוט כדי לצמצם את הרשימה:",
       updated: d => `עודכן ${d}`,
@@ -226,7 +226,7 @@
   const ARROW = () => state.lang === "he" ? "←" : "→";
   // External links on a card or section: [{label: {en,...}, url: "https://..." | {en,...}}]
   const extLinks = links => el("div", { class: "ext-links" },
-    links.map(l => el("a", { href: L_(l.url), target: "_blank", rel: "noopener" }, L_(l.label) + " " + ARROW())));
+    links.map(l => el("a", { href: L_(l.url), target: "_blank", rel: "noopener" }, typo(L_(l.label)) + " " + ARROW())));
   // "until 17:00, closed Sat" style hour strings -> localised
   const hoursText = h => typo(String(h || "")
     .replace(/from 8:00 until the hummus runs out \(~14:30\)/, t("from") + " 8:00 " + t("hummus_out"))
@@ -467,7 +467,7 @@
       }
       if (c.tel) {
         parts.tel = el("div", { class: "tel" },
-          c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + L_(x.label))));
+          c.tel.map(x => el("a", { href: "tel:" + fill(x.number, host).replace(/[^\d+]/g, "") }, "📞 " + typo(L_(x.label)))));
       }
       if (c.items && c.id === "checkout") {
         // tick-box list (3.10): ticks are remembered on this phone for the day
@@ -481,7 +481,7 @@
         }));
       } else if (c.items) parts.items = el("ul", {}, L_(c.items).map(s => el("li", {}, ...rich(fill(s, host), c.id))));
       if (c.steps) {
-        if (c.steps_title) parts.steps.push(el("h4", { class: "sec-title" }, L_(c.steps_title)));
+        if (c.steps_title) parts.steps.push(el("h4", { class: "sec-title" }, typo(L_(c.steps_title))));
         parts.steps.push(el("ol", { class: "steps" }, L_(c.steps).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
       }
       // A card with numbered steps (the emergency card) shows what to DO first, the photo and phone numbers after
@@ -492,7 +492,7 @@
         body.append(el("p", { class: "muted small" }, L_(c.video.caption)));
       }
       for (const lst of c.lists || []) {
-        body.append(el("h4", { class: "sec-title" }, L_(lst.title)));
+        body.append(el("h4", { class: "sec-title" }, typo(L_(lst.title))));
         body.append(el("ul", { class: "plain" }, lst.rows.map(r => el("li", { class: "row" + (r.image ? " row-img" : "") },
           r.image ? el("a", { class: "row-pic", href: r.url, target: "_blank", rel: "noopener", "aria-hidden": "true", tabindex: "-1" },
             el("img", { src: r.image, alt: "", loading: "lazy", onerror: e => e.target.closest(".row-pic").remove() })) : null,
@@ -506,7 +506,7 @@
               r.image_credit ? el("a", { class: "credit-link", href: r.image_credit_url || r.url, target: "_blank", rel: "noopener" }, `${t("photo")}: ${r.image_credit}`) : null) : null)))));
       }
       for (const sec of c.sections || []) {
-        body.append(el("h4", { class: "sec-title" }, L_(sec.title)));
+        body.append(el("h4", { class: "sec-title" }, typo(L_(sec.title))));
         if (sec.image) body.append(el("img", { class: "card-img card-img-tall", src: sec.image, alt: (sec.image_alt && L_(sec.image_alt)) || "", loading: "lazy", onerror: e => e.target.remove() }));
         if (sec.items) body.append(el("ul", {}, L_(sec.items).map(s => el("li", {}, ...rich(fill(s, host), c.id)))));
         if (sec.maps) body.append(el("div", { class: "maplinks" }, sec.maps.map(m =>
@@ -556,7 +556,7 @@
             el("img", { src: r.image, alt: r.name, loading: "lazy", ...smallSrc(r.image, 900), onerror: e => e.target.closest(".place-media").remove() }),
             r.shabbat === true ? el("span", { class: "walk" }, t("open_sat")) : null) : null,
           el("div", { class: "place-body" },
-            el("h3", {}, r.name),
+            el("h3", {}, typo(r.name)),
             el("p", { class: "muted small" }, ...(r.where ? [el("bdi", {}, r.where)] : []), (r.where && r.hours ? " · " : ""), typo(hoursText(r.hours) || "")),
             r.note ? el("p", { class: "place-text open" }, cap1(typo(L_(r.note)))) : null,
             // optional favourite dish ("fav" on the row, 4 languages; empty = hidden) - only dishes Oren names himself
@@ -724,7 +724,7 @@
           // Photo credit as a short link under the text, same as the place cards (designer review 3.10, item 12)
           it.image_credit ? el("a", { class: "credit-link", href: it.image_credit_url || url, target: "_blank", rel: "noopener", title: `${t("photo")}: ${it.image_credit}` }, t("photo") + (state.lang === "he" ? " ↖" : " ↗")) : null)));
     }
-    if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, L_(tr.more.label) + " " + ARROW()));
+    if (tr.more) box.append(el("a", { class: "more-tours", href: tr.more.url, target: "_blank", rel: "noopener sponsored" }, typo(L_(tr.more.label)) + " " + ARROW()));
   }
 
   const MAX_FEED_AGE_DAYS = 10;

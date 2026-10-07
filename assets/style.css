@@ -1212,3 +1212,8 @@ body { font-size: var(--fs-md); }
 /* "More about Tel Aviv +" spacing */
 .hood-more > summary::after { content: "+"; margin-inline-start: 6px; }
 .hood-more[open] > summary::after { content: "−"; }
+/* 7.10 designer round 4 polish */
+.block > p.muted, .block > p.lead, .week-head p { max-width: 34em; }
+.mapcard-routes .route { flex: 1 1 100%; border-radius: 16px; }
+.mapcard-routes .route strong { white-space: normal; }
+@media (min-width: 900px) { .card .body > .card-img { margin-inline: 0 auto; } }
