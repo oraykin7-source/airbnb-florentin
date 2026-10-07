@@ -1103,3 +1103,8 @@ body { overflow-anchor: none; }
 .tour-opt { display: flex; flex-direction: column; gap: 2px; margin: 0 0 8px; }
 .tour-opt .place-tour { margin: 2px 0 0; align-self: flex-start; }
 .tour-desc { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.4; display: block !important; -webkit-line-clamp: unset !important; }
+
+/* 7.10: food page highlighted on Home - a venue (Kiosko) could not find itself; full-width accent tile first */
+.jump a.jump-eat { grid-column: 1 / -1; background: var(--accent-soft); box-shadow: var(--shadow), 0 0 0 1px var(--accent); min-height: 72px; }
+.jump a.jump-eat .jt strong { font-size: var(--fs-lg, 1.15rem); color: var(--accent); }
+.jump a.jump-eat .jt span { color: var(--ink); opacity: .8; }
