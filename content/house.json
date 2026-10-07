@@ -1154,10 +1154,10 @@
         "he": "איפה אורן אוכל"
       },
       "sub": {
-        "en": "Hummus, sabich, burekas, shawarma, fish, pasta, ice cream - look for the 'Open Sat' tag or use the Open Sat filter",
-        "de": "Hummus, Sabich, Burekas, Schawarma, Fisch, Pasta, Eis - Etikett „samstags offen“ oder den Filter nutzen",
-        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace - étiquette « ouvert le samedi » ou le filtre",
-        "he": "חומוס, סביח, בורקס, שווארמה, דגים, פסטה, גלידה - תג \"פתוח בשבת\" או הסינון"
+        "en": "Hummus, sabich, burekas, shawarma, fish, pasta, ice cream.",
+        "de": "Hummus, Sabich, Burekas, Schawarma, Fisch, Pasta, Eis.",
+        "fr": "Houmous, sabich, burekas, shawarma, poisson, pâtes, glace.",
+        "he": "חומוס, סביח, בורקס, שווארמה, דגים, פסטה, גלידה."
       },
       "items": {
         "en": [

@@ -9,7 +9,8 @@
         "en": "The next Shabbat starts Friday 9 October in the afternoon and ends after dark on Saturday: no trains, almost no buses, most shops closed. Taxis and Gett still run, at a surcharge.",
         "de": "Der nächste Schabbat beginnt am Freitag, 9. Oktober, nachmittags und endet am Samstag nach Einbruch der Dunkelheit: keine Züge, fast keine Busse, die meisten Läden geschlossen. Taxis und Gett fahren weiter, mit Zuschlag.",
         "fr": "Le prochain Chabbat commence le vendredi 9 octobre dans l'après-midi et se termine samedi après la tombée de la nuit : pas de trains, presque pas de bus, la plupart des commerces fermés. Les taxis et Gett circulent, avec un supplément."
-      }
+      },
+      "until": "2026-10-10"
     },
     {
       "icon": "🛍️",
@@ -17,7 +18,8 @@
         "en": "Friday is a short day: Levinsky and Carmel markets and most shops wind down around 14:00-15:00, so do the food shopping on Friday morning.",
         "de": "Freitag ist ein kurzer Tag: Der Levinsky- und der Carmel-Markt sowie die meisten Läden machen gegen 14-15 Uhr Schluss, also am Freitagmorgen einkaufen.",
         "fr": "Le vendredi est une journée courte : les marchés Levinsky et Carmel ainsi que la plupart des commerces ferment vers 14h-15h, faites donc les courses le vendredi matin."
-      }
+      },
+      "until": "2026-10-09"
     }
   ],
   "items": [
