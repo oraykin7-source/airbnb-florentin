@@ -1,62 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en" dir="ltr" translate="no">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kitchen Guide · Küche · Cuisine</title>
+<title>Kitchen Guide · Küche · Cuisine · מטבח</title>
 <meta name="robots" content="noindex, nofollow">
-  <meta name="google" content="notranslate">
+<meta name="google" content="notranslate">
+<link rel="icon" href="../assets/img/icon-192.png">
+<meta name="theme-color" content="#f7f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1915" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Inter:wght@400;600;700&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root { box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-    --bg:#f7f7f4; --card:#ffffff; --ink:#1f2a2e; --muted:#5b6a70; --accent:#1b6b6d; --gold:#e8a33d; --warn:#fff3e0; --warnb:#e8a33d; --line:#e2e6e6; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#121818; --card:#1c2426; --ink:#eef2f2; --muted:#a7b3b6; --line:#2d3a3c; --warn:#3a2c14; } }
-  :root[data-theme="dark"] { --bg:#121818; --card:#1c2426; --ink:#eef2f2; --muted:#a7b3b6; --line:#2d3a3c; --warn:#3a2c14; }
-  html { scroll-padding-top: env(safe-area-inset-top,0px); }
-  body { margin:0; background:var(--bg); color:var(--ink); font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height:1.55; }
-  .wrap { max-width:720px; margin:0 auto; padding:16px 16px 48px; }
-  header { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 0 16px; }
-  h1 { font-size:1.45rem; margin:0; }
-  .lang { display:flex; gap:6px; }
-  .lang button { border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:999px; padding:6px 14px; font-weight:600; cursor:pointer; }
-  .lang button.on { background:var(--accent); color:#fff; }
+  /* Florentin warm theme (same tokens as assets/style.css): parchment + terracotta */
+  :root {
+    --bg:#f7f3ee; --surface:#fffdfa; --ink:#2a241f; --muted:#6b6159; --line:#ece5dc;
+    --accent:#a4502c; --accent-deco:#c9704b; --accent-ink:#ffffff; --accent-soft:#f6e6dc; --chip:#f1ebe3;
+    --danger:#b8402f; --danger-soft:#fbe9e5;
+    --ring:rgba(42,36,31,.06);
+    --shadow:0 1px 2px rgba(42,36,31,.04), 0 8px 24px -14px rgba(120,80,50,.18);
+    --radius:22px;
+    --font-head:"Plus Jakarta Sans", Inter, Heebo, system-ui, sans-serif;
+    --font-body:Inter, Heebo, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#1c1915; --surface:#26221d; --ink:#f4ede5; --muted:#b3a79b; --line:#3a342d;
+    --accent:#e08a62; --accent-deco:#e08a62; --accent-ink:#1c1915; --accent-soft:#3d2d24; --chip:#302a24;
+    --danger:#ff9d8c; --danger-soft:#3d2622; --ring:rgba(255,255,255,.06); --shadow:0 10px 26px -16px rgba(0,0,0,.7); } }
+  :root[data-theme="dark"] {
+    --bg:#1c1915; --surface:#26221d; --ink:#f4ede5; --muted:#b3a79b; --line:#3a342d;
+    --accent:#e08a62; --accent-deco:#e08a62; --accent-ink:#1c1915; --accent-soft:#3d2d24; --chip:#302a24;
+    --danger:#ff9d8c; --danger-soft:#3d2622; --ring:rgba(255,255,255,.06); --shadow:0 10px 26px -16px rgba(0,0,0,.7); }
+  [dir="rtl"] { --font-head:Heebo, system-ui, sans-serif; --font-body:Heebo, system-ui, sans-serif; }
+  * { box-sizing:border-box; }
+  html { scroll-padding-top:12px; -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:400 1rem/1.6 var(--font-body); overflow-x:clip; }
+  .wrap { max-width:720px; margin:0 auto; padding:calc(8px + env(safe-area-inset-top,0px)) 16px calc(48px + env(safe-area-inset-bottom,0px)); }
+  header { display:flex; justify-content:space-between; align-items:center; gap:8px 12px; flex-wrap:wrap; padding:4px 0 16px; }
+  h1 { font:700 1.6rem/1.2 var(--font-head); letter-spacing:-.02em; margin:0; }
+  h2 { font:700 1.2rem/1.3 var(--font-head); letter-spacing:-.01em; margin:0 0 10px; color:var(--accent); display:flex; align-items:center; gap:8px; }
+  h3 { font:600 1rem/1.4 var(--font-body); margin:16px 0 4px; }
+  [dir="rtl"] h1, [dir="rtl"] h2 { letter-spacing:0; }
+  .lang { display:flex; gap:4px; flex:none; }
+  .lang button { min-width:44px; min-height:44px; padding:0 10px; border:1px solid var(--accent); border-radius:999px; background:transparent; color:var(--accent); font:600 .875rem/1 Inter, Heebo, sans-serif; cursor:pointer; }
+  .lang button[lang="he"] { font-family:Heebo, sans-serif; }
+  .lang button.on { background:var(--accent); color:var(--accent-ink); }
   nav { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
-  nav a { text-decoration:none; color:var(--ink); background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 12px; font-size:.92rem; }
-  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin-bottom:14px; }
-  h2 { font-size:1.15rem; margin:0 0 8px; color:var(--accent); display:flex; align-items:center; gap:8px; }
-  h3 { font-size:1rem; margin:14px 0 4px; }
-  ol, ul { margin:6px 0; padding-left:22px; }
+  nav a { display:inline-flex; align-items:center; min-height:44px; padding:0 16px; text-decoration:none; color:var(--ink); background:var(--surface); box-shadow:0 0 0 1px var(--line); border-radius:999px; font-size:.9rem; font-weight:500; }
+  section { background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow), 0 0 0 1px var(--ring); padding:18px 20px; margin-bottom:16px; }
+  ol, ul { margin:6px 0; padding-inline-start:22px; }
   li { margin:4px 0; }
-  .warn { background:var(--warn); border-left:4px solid var(--warnb); border-radius:8px; padding:10px 12px; margin:10px 0; }
-  .ok { color:var(--accent); font-weight:600; }
-  .no { color:#c0392b; font-weight:600; }
+  p { margin:0 0 8px; }
+  .warn { background:var(--danger-soft); border-inline-start:4px solid var(--danger); border-radius:12px; padding:10px 14px; margin:10px 0; }
+  .ok { color:var(--accent); font-weight:600; white-space:nowrap; }
+  .no { color:var(--danger); font-weight:600; white-space:nowrap; }
   table { width:100%; border-collapse:collapse; font-size:.93rem; }
-  td, th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  td, th { text-align:start; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  td:first-child strong { white-space:nowrap; }
   .muted { color:var(--muted); font-size:.9rem; }
-  [data-l] { display:none; } html[data-lang="en"] [data-l="en"], html[data-lang="de"] [data-l="de"], html[data-lang="fr"] [data-l="fr"] { display:revert; }
-  .back { display:inline-block; margin-bottom:6px; color:var(--accent); text-decoration:none; font-weight:600; font-size:.92rem; }
-  @media print { .lang, nav { display:none; } section { break-inside:avoid; } }
+  a { color:var(--accent); }
+  :focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+  [data-l] { display:none; }
+  html[data-lang="en"] [data-l="en"], html[data-lang="de"] [data-l="de"], html[data-lang="fr"] [data-l="fr"], html[data-lang="he"] [data-l="he"] { display:revert; }
+  .back { display:inline-flex; align-items:center; min-height:44px; color:var(--accent); text-decoration:none; font-weight:600; font-size:.95rem; }
+  @media print { .lang, nav, .back { display:none; } section { break-inside:avoid; box-shadow:none; border:1px solid #ccc; } }
 </style>
 </head>
 <body>
 <div class="wrap">
-<a class="back" href="../"><span data-l="en">← Home guide</span><span data-l="de">← Zum Wohnungsguide</span><span data-l="fr">← Guide de l'appart</span></a>
+<a class="back" id="back" href="../"><span data-l="en">← Home guide</span><span data-l="de">← Zum Wohnungsguide</span><span data-l="fr">← Guide de l'appart</span><span data-l="he">→ חזרה למדריך הבית</span></a>
 <header>
-  <h1><span data-l="en">Kitchen Guide</span><span data-l="de">Küchenanleitung</span><span data-l="fr">Guide de la cuisine</span></h1>
-  <div class="lang"><button id="b-en" onclick="setLang('en')">EN</button><button id="b-de" onclick="setLang('de')">DE</button><button id="b-fr" onclick="setLang('fr')">FR</button></div>
+  <h1><span data-l="en">Kitchen Guide</span><span data-l="de">Küchenanleitung</span><span data-l="fr">Guide de la cuisine</span><span data-l="he">מדריך המטבח</span></h1>
+  <div class="lang" role="group" aria-label="Language"><button type="button" id="b-en" onclick="setLang('en')">EN</button><button type="button" id="b-de" onclick="setLang('de')">DE</button><button type="button" id="b-fr" onclick="setLang('fr')">FR</button><button type="button" id="b-he" onclick="setLang('he')" lang="he" aria-label="עברית">עב</button></div>
 </header>
 
 <nav>
-  <a href="#hob"><span data-l="en">Induction hob</span><span data-l="de">Induktionskochfeld</span><span data-l="fr">Plaque à induction</span></a>
+  <a href="#hob"><span data-l="en">Induction hob</span><span data-l="de">Induktionskochfeld</span><span data-l="fr">Plaque à induction</span><span data-l="he">כיריים אינדוקציה</span></a>
   <a href="#ninja">Ninja Combi</a>
-  <a href="#where"><span data-l="en">Where things are</span><span data-l="de">Wo ist was</span><span data-l="fr">Où trouver quoi</span></a>
-  <a href="#pots"><span data-l="en">Pots &amp; handle</span><span data-l="de">Töpfe &amp; Griff</span><span data-l="fr">Casseroles &amp; poignée</span></a>
-  <a href="#pans"><span data-l="en">Pans &amp; utensils</span><span data-l="de">Pfannen &amp; Utensilien</span><span data-l="fr">Poêles &amp; ustensiles</span></a>
-  <a href="#clean"><span data-l="en">Cleaning</span><span data-l="de">Reinigung</span><span data-l="fr">Nettoyage</span></a>
+  <a href="#where"><span data-l="en">Where things are</span><span data-l="de">Wo ist was</span><span data-l="fr">Où trouver quoi</span><span data-l="he">איפה מה נמצא</span></a>
+  <a href="#pots"><span data-l="en">Pots &amp; handle</span><span data-l="de">Töpfe &amp; Griff</span><span data-l="fr">Casseroles &amp; poignée</span><span data-l="he">סירים וידית</span></a>
+  <a href="#pans"><span data-l="en">Pans &amp; utensils</span><span data-l="de">Pfannen &amp; Utensilien</span><span data-l="fr">Poêles &amp; ustensiles</span><span data-l="he">מחבתות וכלים</span></a>
+  <a href="#clean"><span data-l="en">Cleaning</span><span data-l="de">Reinigung</span><span data-l="fr">Nettoyage</span><span data-l="he">ניקיון</span></a>
 </nav>
 
 <!-- INDUCTION -->
 <section id="hob">
-  <h2>🔥 <span data-l="en">Induction hob (Midea, 2 zones)</span><span data-l="de">Induktionskochfeld (Midea, 2 Zonen)</span><span data-l="fr">Plaque à induction (Midea, 2 zones)</span></h2>
+  <h2>🔥 <span data-l="en">Induction hob (Midea, 2 zones)</span><span data-l="de">Induktionskochfeld (Midea, 2 Zonen)</span><span data-l="fr">Plaque à induction (Midea, 2 zones)</span><span data-l="he">כיריים אינדוקציה (Midea, שני אזורים)</span></h2>
   <div data-l="en">
     <p>A portable two-zone induction plate on the left of the counter. Each zone has its own controls: 🔒 lock, ⏱ timer, − / +, <strong>B</strong> (boost) and ⏻ power. The glass stays relatively cool; without a suitable pan on the zone nothing happens.</p>
     <ol>
@@ -107,6 +138,23 @@
       <li>Si les boutons ne réagissent pas, le 🔒 verrouillage est actif : maintenez-le enfoncé jusqu'à ce qu'il se libère.</li>
     </ol>
     <div class="warn">Ne posez pas de téléphones, cartes ou objets métalliques sur le verre. Ne chauffez jamais une poêle vide et ne laissez jamais une poêle sans surveillance au niveau 4. Ne couvrez pas les aérations de la plaque.</div>
+  </div>
+  <div data-l="he">
+    <p>כיריים אינדוקציה ניידות עם שני אזורי בישול, בצד שמאל של השיש. לכל אזור כפתורים משלו: 🔒 נעילה, ⏱ טיימר, − / +, <strong>B</strong> (בוסט) ו-⏻ הפעלה. הזכוכית נשארת קרירה יחסית; בלי סיר מתאים על האזור, לא קורה כלום.</p>
+    <ol>
+      <li>מניחים את הסיר על אזור, ואז נוגעים ב-⏻ של אותו אזור.</li>
+      <li>קובעים עוצמה עם − / +. הכיריים האלה <strong>חמות מאוד מאוד</strong>, הרבה יותר ממה שנראה. להשתמש רק בעוצמות האלה:
+        <table style="margin-top:6px"><tr><th>עוצמה</th><th>למה</th></tr>
+        <tr><td><strong>1</strong></td><td>נמוכה: שמירה על חום, בישול רוטב על אש קטנה</td></tr>
+        <tr><td><strong>2 עד 3</strong></td><td>בינונית: טיגון רגיל, ביצים, ירקות, רוב הבישול</td></tr>
+        <tr><td><strong>4</strong></td><td>גבוהה: צריבת בשר. רק לזמן קצר, ואף פעם לא עם מחבת ריקה</td></tr>
+        <tr><td><strong>8 או B</strong></td><td>רק להרתחת מים לפסטה או לאורז, בסיר. אף פעם לא עם מחבת: זה שורף את הציפוי הנון-סטיק</td></tr></table></li>
+      <li>⏱ קובע טיימר שמכבה את האזור לבד.</li>
+      <li>כדי להזיז סיר מרימים אותו, <strong>לא גוררים</strong> על הזכוכית.</li>
+      <li>בסוף הבישול נוגעים ב-⏻ כדי לכבות את האזור. הזכוכית עלולה להישאר חמה מהסיר: מחכים כמה דקות לפני שמנגבים.</li>
+      <li>אם הכפתורים לא מגיבים, 🔒 הנעילה פעילה: לוחצים עליה לחיצה ארוכה עד שהיא משתחררת.</li>
+    </ol>
+    <div class="warn">לא להניח טלפונים, כרטיסים או חפצי מתכת על הזכוכית. אף פעם לא לחמם מחבת ריקה, ולא להשאיר מחבת על עוצמה 4 בלי השגחה. לא לכסות את פתחי האוורור של הכיריים.</div>
   </div>
 </section>
 
@@ -203,10 +251,40 @@
     </ol>
     <div class="warn">Ne lancez jamais une fonction COMBI, STEAM ou SLOW COOK avec la cuve vide. Ne couvrez pas les aérations. Ne déplacez pas l'appareil tant qu'il est chaud ; il reste sur l'étagère au-dessus du micro-ondes. Utilisez des gants de cuisine pour la cuve et la plaque.</div>
   </div>
+  <div data-l="he">
+    <p>מכשיר אחד שהוא תנור, אייר פרייר, מאדה, כיריים וסיר אורז. שני כללים מכסים כמעט הכל: <strong>סיר הקומבי</strong> (הסיר העמוק) חייב להיות תמיד בפנים, ו<strong>פונקציות הקומבי צריכות מים</strong> בסיר.</p>
+    <h3>כפתורים</h3>
+    <ul>
+      <li><strong>SmartSwitch</strong> (המתג המחליק בלוח): למעלה = COMBI COOKER, למטה = AIR FRY / HOB. נדלקות רק הפונקציות של המצב שנבחר.</li>
+      <li><strong>חיצי הפונקציות</strong> (באמצע) בוחרים תוכנית. <strong>החיצים משמאל</strong> = טמפרטורה, <strong>החיצים מימין</strong> = זמן.</li>
+      <li><strong>START/STOP</strong> מפעיל; לחיצה בזמן הבישול עוצרת את התוכנית. הדלת נפתחת מצד ימין.</li>
+    </ul>
+    <h3>איזו פונקציה?</h3>
+    <table>
+      <tr><th>רוצים</th><th>מה להפעיל</th></tr>
+      <tr><td>עוף + אורז + ירקות בבת אחת</td><td><strong>COMBI MEALS</strong>: מים ואורז/דגנים בסיר הקומבי (קומה 1), חלבון וירקות על תבנית האפייה (קומה 2)</td></tr>
+      <tr><td>עסיסי מבפנים, פריך מבחוץ (תפוחי אדמה, עוף)</td><td><strong>COMBI CRISP</strong></td></tr>
+      <tr><td>צ'יפס, נאגטס, כל דבר פריך</td><td><strong>AIR FRY</strong></td></tr>
+      <tr><td>פיצה, תבשיל בתנור, עוגה</td><td><strong>BAKE</strong> (עובד כמו תנור) או <strong>COMBI BAKE</strong> לעוגות</td></tr>
+      <tr><td>אורז או פסטה, בלי לסנן</td><td><strong>RICE/PASTA</strong></td></tr>
+      <tr><td>דג, כיסונים, ירקות</td><td><strong>STEAM</strong></td></tr>
+      <tr><td>טיגון בצל, צריבת בשר, רוטב על אש קטנה</td><td><strong>SEAR/SAUTÉ</strong>: כמו כיריים, אפשר עם דלת פתוחה</td></tr>
+      <tr><td>שאריות</td><td><strong>REHEAT</strong></td></tr>
+      <tr><td>השחמה מלמעלה</td><td><strong>GRILL</strong></td></tr>
+    </table>
+    <h3>הפעלה רגילה</h3>
+    <ol>
+      <li>בודקים שסיר הקומבי בפנים. בכל פונקציית COMBI שופכים מים לסיר (בערך כוס עד שתי כוסות, אלא אם הטבלה אומרת אחרת).</li>
+      <li>מזיזים את ה-SmartSwitch למצב הנכון, בוחרים פונקציה, מכוונים טמפרטורה וזמן ולוחצים START/STOP.</li>
+      <li>המכשיר מתחמם קודם ("PRE" בתצוגה), ואז סופר לאחור. באמצע הזמן מנערים או הופכים את האוכל כדי שייצא פריך באופן אחיד.</li>
+      <li>כשפותחים את הדלת יוצאים אדים: פותחים לאט, הרחק מהפנים.</li>
+    </ol>
+    <div class="warn">אף פעם לא להפעיל COMBI, STEAM או SLOW COOK עם סיר ריק. לא לכסות את פתחי האוורור. לא להזיז את המכשיר כשהוא חם; הוא נשאר על המדף מעל המיקרוגל. להשתמש בכפפות תנור לסיר ולתבנית.</div>
+  </div>
 </section>
 
 <section id="where">
-  <h2>🗄️ <span data-l="en">Where things are</span><span data-l="de">Wo ist was</span><span data-l="fr">Où trouver quoi</span></h2>
+  <h2>🗄️ <span data-l="en">Where things are</span><span data-l="de">Wo ist was</span><span data-l="fr">Où trouver quoi</span><span data-l="he">איפה מה נמצא</span></h2>
   <div data-l="en">
     <ul>
       <li><strong>Above the sink:</strong> glasses. <strong>Next to it:</strong> plates, and beside them the Ninja blender and mixer.</li>
@@ -237,10 +315,20 @@
     </ul>
     <div class="warn"><strong>Placards de l'hôte :</strong> le placard sous l'évier et les deux placards du haut à gauche contiennent les affaires personnelles d'Oren - inutile de les ouvrir. Tout ce qu'il faut pour les voyageurs est dans les autres placards. Merci !</div>
   </div>
+  <div data-l="he">
+    <ul>
+      <li><strong>מעל הכיור:</strong> כוסות. <strong>לידו:</strong> צלחות, ולידן הבלנדר והמיקסר של נינג'ה.</li>
+      <li><strong>המגירות משמאל:</strong> סכו"ם, כלי בישול, מגבות מטבח, והטוסטר (לטוסט גבינה).</li>
+      <li><strong>מתחת לשיש, מימין:</strong> סירים, מחבתות ותבניות אפייה.</li>
+      <li><strong>הארון התחתון, משמאל לסירים:</strong> קופסאות אחסון מפלסטיק ומזכוכית.</li>
+      <li><strong>מדף המתכת:</strong> מיקרוגל, ומעליו הנינג'ה קומבי.</li>
+    </ul>
+    <div class="warn"><strong>הארונות שלי:</strong> בארון שמתחת לכיור ובשני הארונות העליונים משמאל יש דברים אישיים שלי - אין צורך לפתוח אותם. כל מה שמיועד לאורחים נמצא בשאר הארונות. תודה!</div>
+  </div>
 </section>
 
 <section id="pots">
-  <h2>🍲 <span data-l="en">Pots with detachable handle</span><span data-l="de">Töpfe mit abnehmbarem Griff</span><span data-l="fr">Casseroles à poignée amovible</span></h2>
+  <h2>🍲 <span data-l="en">Pots with detachable handle</span><span data-l="de">Töpfe mit abnehmbarem Griff</span><span data-l="fr">Casseroles à poignée amovible</span><span data-l="he">סירים עם ידית נשלפת</span></h2>
   <div data-l="en">
     <p>The pots (Food Appeal) share one click-on handle. This is how they are meant to be used:</p>
     <ol>
@@ -268,11 +356,20 @@
     </ol>
     <div class="warn">La poignée est la pièce qui casse. Son remplacement coûte environ 200 ₪. Ne la laissez jamais fixée pendant la cuisson, et ne soulevez jamais une casserole pleine avec une poignée mal enclenchée.</div>
   </div>
+  <div data-l="he">
+    <p>לסירים (Food Appeal) יש ידית אחת משותפת שננעלת בקליק. כך משתמשים בהם:</p>
+    <ol>
+      <li>מחברים את הידית ומניחים את הסיר על הכיריים.</li>
+      <li><strong>מורידים את הידית</strong> לפני שמתחילים לבשל. אסור שתישאר על הסיר החם.</li>
+      <li>כשהאוכל מוכן, מחברים את הידית בקליק ומרימים את הסיר. ואז מורידים אותה שוב.</li>
+    </ol>
+    <div class="warn">הידית היא החלק היחיד שנשבר. ידית חלופית עולה כ-200 ₪. אף פעם לא להשאיר אותה מחוברת בזמן בישול, ואף פעם לא להרים סיר מלא בידית שלא ננעלה עד הסוף.</div>
+  </div>
 </section>
 
 <!-- PANS -->
 <section id="pans">
-  <h2>🥄 <span data-l="en">Pans &amp; utensils</span><span data-l="de">Pfannen &amp; Utensilien</span><span data-l="fr">Poêles &amp; ustensiles</span></h2>
+  <h2>🥄 <span data-l="en">Pans &amp; utensils</span><span data-l="de">Pfannen &amp; Utensilien</span><span data-l="fr">Poêles &amp; ustensiles</span><span data-l="he">מחבתות וכלים</span></h2>
   <div data-l="en">
     <p>The pans and the Ninja pot are <strong>non-stick coated</strong>. The coating is what makes them easy to use and easy to clean, and one scratch ruins it.</p>
     <table>
@@ -306,11 +403,22 @@
     </table>
     <p class="muted">Les casseroles et poêles de la cuisine sont compatibles induction. Si vous apportez les vôtres, cherchez le symbole de la bobine sous le fond ou testez avec un aimant.</p>
   </div>
+  <div data-l="he">
+    <p>המחבתות וסיר הנינג'ה <strong>מצופים נון-סטיק</strong>. הציפוי הוא מה שהופך אותם לנוחים לבישול ולניקוי, ושריטה אחת הורסת אותו.</p>
+    <table>
+      <tr><td class="ok">✔ להשתמש</td><td>כפות ומריות מעץ, כלי סיליקון, מלקחי ניילון (הכל במגירות משמאל)</td></tr>
+      <tr><td class="no">✘ אף פעם</td><td>כפות, מזלגות וסכינים ממתכת, מטרפות מתכת, מלקחי מתכת, צמר פלדה או ספוגים שוחקים</td></tr>
+      <tr><td class="ok">✔ חום</td><td>חום בינוני (עוצמה 2 עד 3) מספיק לנון-סטיק. מוסיפים שמן לפני החימום.</td></tr>
+      <tr><td class="no">✘ אף פעם</td><td>לחמם מחבת ריקה, לעלות מעל עוצמה 4 או להשתמש ב-B עם מחבת (8 או B רק להרתחת מים בסיר), או לשים מחבת חמה מתחת למים קרים</td></tr>
+      <tr><td class="ok">✔ חיתוך</td><td>רק על קרש חיתוך, אף פעם לא בתוך מחבת או על זכוכית הכיריים</td></tr>
+    </table>
+    <p class="muted">הסירים והמחבתות במטבח מתאימים לאינדוקציה. אם הבאתם משלכם, בדקו שיש סמל סליל בתחתית או נסו עם מגנט.</p>
+  </div>
 </section>
 
 <!-- CLEANING -->
 <section id="clean">
-  <h2>🧽 <span data-l="en">Cleaning</span><span data-l="de">Reinigung</span><span data-l="fr">Nettoyage</span></h2>
+  <h2>🧽 <span data-l="en">Cleaning</span><span data-l="de">Reinigung</span><span data-l="fr">Nettoyage</span><span data-l="he">ניקיון</span></h2>
   <div data-l="en">
     <ul>
       <li><strong>Hob:</strong> wait for the H to disappear, then wipe with a damp cloth and a drop of dish soap. Burnt-on spots: glass-hob scraper or ceramic cleaner, never a scouring pad.</li>
@@ -332,18 +440,35 @@
       <li><strong>Poêles :</strong> laissez refroidir, lavez à l'eau chaude avec une éponge douce. Séchez avant d'empiler, avec un essuie-tout entre les poêles.</li>
     </ul>
   </div>
+  <div data-l="he">
+    <ul>
+      <li><strong>כיריים:</strong> מחכים שה-H ייעלם, ואז מנגבים במטלית לחה עם טיפת סבון כלים. כתמים שרופים: מגרד לזכוכית או חומר ניקוי לקרמיקה, אף פעם לא ספוג שוחק.</li>
+      <li><strong>נינג'ה:</strong> מנתקים מהחשמל ומחכים שיתקרר. סיר הקומבי, התבנית ופלטת הגריל מתאימים למדיח, או שוטפים ביד עם ספוג רך. מנגבים את הפנים ואת הדלת במטלית לחה. מרוקנים ומייבשים את הסיר אחרי כל שימוש.</li>
+      <li><strong>מחבתות:</strong> מחכים שיתקררו, שוטפים במים חמימים ובספוג רך. מייבשים לפני שמסדרים אחת על השנייה, עם נייר סופג בין המחבתות.</li>
+    </ul>
+  </div>
 </section>
 
 
 
 </div>
 <script>
-  var LANGS=['en','de','fr'];
-  function setLang(l){ document.documentElement.setAttribute('data-lang',l); document.documentElement.lang=l;
-    LANGS.forEach(function(x){ document.getElementById('b-'+x).classList.toggle('on',x===l); });
-    try{ localStorage.setItem('lang',l); }catch(e){} }
-  // same language as the home guide: ?lang= from the link, else the saved choice, else the browser language
-  var saved=new URLSearchParams(location.search).get('lang');
+  var LANGS=['en','de','fr','he'];
+  var TITLES={en:'Kitchen Guide',de:'Küchenanleitung',fr:'Guide de la cuisine',he:'מדריך המטבח'};
+  function setLang(l){
+    var root=document.documentElement;
+    root.setAttribute('data-lang',l); root.lang=l; root.dir=(l==='he'?'rtl':'ltr');
+    document.title=TITLES[l];
+    LANGS.forEach(function(x){ var b=document.getElementById('b-'+x); b.classList.toggle('on',x===l); b.setAttribute('aria-pressed',x===l?'true':'false'); });
+    // back to the home guide in the same language, on the kitchen card
+    document.getElementById('back').href='../?lang='+l+'#card-kitchen';
+    try{ localStorage.setItem('lang',l); }catch(e){}
+    // keep ?lang= in the address in step with the choice, so a reload does not switch back
+    try{ var u=new URL(location.href); if(u.searchParams.get('lang')!==l){ u.searchParams.set('lang',l); history.replaceState(null,'',u); } }catch(e){}
+  }
+  // same order as the home guide: ?lang= from the link, else the saved choice, else the browser language
+  var q=(new URLSearchParams(location.search).get('lang')||'').toLowerCase();
+  var saved=LANGS.indexOf(q)>=0?q:null;
   try{ saved=saved||localStorage.getItem('lang'); }catch(e){}
   saved=saved||(navigator.language||'en').slice(0,2).toLowerCase();
   setLang(LANGS.indexOf(saved)>=0?saved:'en');
