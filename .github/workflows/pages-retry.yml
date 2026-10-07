@@ -21,4 +21,9 @@ jobs:
           RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
           sleep 60
-          gh run rerun "$RUN_ID" --failed --repo "${{ github.repository }}"
+          # 7.10: if someone already re-ran it (or it is running / succeeded), do nothing - a failed
+          # "cannot be retried" here only sent Oren a needless failure e-mail.
+          state=$(gh run view "$RUN_ID" --repo "${{ github.repository }}" --json status,conclusion -q '.status + " " + .conclusion')
+          echo "deploy run now: $state"
+          if [ "$state" != "completed failure" ]; then echo "nothing to retry"; exit 0; fi
+          gh run rerun "$RUN_ID" --failed --repo "${{ github.repository }}" || echo "rerun not possible - leaving it"
