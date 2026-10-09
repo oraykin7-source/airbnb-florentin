@@ -950,7 +950,7 @@
 
   // ---------- 7.10: privacy-friendly counts (GoatCounter: no cookies, no personal data, IPs not stored) ----------
   // Off until GC_CODE holds Oren's GoatCounter site code. Counts pages and a few taps (WhatsApp, emergency, tours, maps, language).
-  const GC_CODE = "";
+  const GC_CODE = "stayflorentin";
   if (GC_CODE) {
     const gs = document.createElement("script");
     gs.async = true; gs.src = "https://gc.zgo.at/count.js";
