@@ -1,157 +1,30 @@
 {
-  "generated_at": "2026-10-03T19:24:00+03:00",
-  "window_start": "2026-10-03",
-  "window_end": "2026-10-11",
+  "generated_at": "2026-10-10T19:40:00+03:00",
+  "window_start": "2026-10-10",
+  "window_end": "2026-10-18",
   "headsup": [
     {
       "icon": "🚌",
       "text": {
-        "en": "The next Shabbat starts Friday 9 October in the afternoon and ends after dark on Saturday: no trains, almost no buses, most shops closed. Taxis and Gett still run, at a surcharge.",
-        "de": "Der nächste Schabbat beginnt am Freitag, 9. Oktober, nachmittags und endet am Samstag nach Einbruch der Dunkelheit: keine Züge, fast keine Busse, die meisten Läden geschlossen. Taxis und Gett fahren weiter, mit Zuschlag.",
-        "fr": "Le prochain Chabbat commence le vendredi 9 octobre dans l'après-midi et se termine samedi après la tombée de la nuit : pas de trains, presque pas de bus, la plupart des commerces fermés. Les taxis et Gett circulent, avec un supplément.",
-        "he": "השבת הבאה נכנסת ביום שישי 9 באוקטובר אחר הצהריים ויוצאת בשבת אחרי החשכה: אין רכבות, כמעט אין אוטובוסים ורוב החנויות סגורות. מוניות וגט ממשיכות לעבוד, בתוספת תשלום."
+        "en": "Shabbat runs from Friday 16 October in the afternoon until after dark on Saturday: no trains, almost no buses, most shops closed. Taxis and Gett keep working, at a surcharge.",
+        "de": "Der Schabbat läuft von Freitag, 16. Oktober, nachmittags bis Samstag nach Einbruch der Dunkelheit: keine Züge, fast keine Busse, die meisten Läden geschlossen. Taxis und Gett fahren weiter, mit Zuschlag.",
+        "fr": "Le Chabbat court du vendredi 16 octobre dans l'après-midi jusqu'à samedi après la tombée de la nuit : pas de trains, presque pas de bus, la plupart des commerces fermés. Les taxis et Gett circulent, avec un supplément.",
+        "he": "שבת נכנסת ביום שישי 16 באוקטובר אחר הצהריים ויוצאת בשבת אחרי החשכה: אין רכבות, כמעט אין אוטובוסים ורוב החנויות סגורות. מוניות וגט ממשיכות לעבוד, בתוספת תשלום."
       },
-      "until": "2026-10-10"
+      "until": "2026-10-17"
     },
     {
       "icon": "🛍️",
       "text": {
-        "en": "Friday is a short day: Levinsky and Carmel markets and most shops wind down around 14:00-15:00, so do the food shopping on Friday morning.",
-        "de": "Freitag ist ein kurzer Tag: Der Levinsky- und der Carmel-Markt sowie die meisten Läden machen gegen 14-15 Uhr Schluss, also am Freitagmorgen einkaufen.",
-        "fr": "Le vendredi est une journée courte : les marchés Levinsky et Carmel ainsi que la plupart des commerces ferment vers 14h-15h, faites donc les courses le vendredi matin.",
-        "he": "יום שישי הוא יום קצר: שוק לוינסקי, שוק הכרמל ורוב החנויות נסגרים בסביבות 14:00-15:00, אז קונים אוכל ביום שישי בבוקר."
+        "en": "Friday 16 October is a short day: Levinsky and Carmel markets and most shops wind down around 14:00-15:00, so do the food shopping in the morning.",
+        "de": "Freitag, 16. Oktober, ist ein kurzer Tag: Der Levinsky- und der Carmel-Markt sowie die meisten Läden machen gegen 14-15 Uhr Schluss, also morgens einkaufen.",
+        "fr": "Le vendredi 16 octobre est une journée courte : les marchés Levinsky et Carmel ainsi que la plupart des commerces ferment vers 14h-15h, faites donc les courses le matin.",
+        "he": "יום שישי 16 באוקטובר הוא יום קצר: שוק לוינסקי, שוק הכרמל ורוב החנויות נסגרים בסביבות 14:00-15:00, אז קונים אוכל בבוקר."
       },
-      "until": "2026-10-09"
+      "until": "2026-10-16"
     }
   ],
   "items": [
-    {
-      "category": "food",
-      "title": {
-        "en": "Paulaner Fest on the Migdalor deck",
-        "de": "Paulaner Fest auf dem Migdalor-Deck",
-        "fr": "Paulaner Fest sur la terrasse du Migdalor",
-        "he": "פאולנר פסט על דק המגדלור"
-      },
-      "blurb": {
-        "en": "Last day of the beer weekend on the seafront deck: draft Paulaner, a hot-dog pop-up by Eran Bick and a sunset saxophone set. Free entry.",
-        "de": "Letzter Tag des Bierwochenendes auf dem Deck am Meer: Paulaner vom Fass, ein Hotdog-Pop-up von Eran Bick und ein Saxofon-Set zum Sonnenuntergang. Eintritt frei.",
-        "fr": "Dernier jour du week-end bière sur la terrasse face à la mer : Paulaner pression, un pop-up hot-dog d'Eran Bick et un set de saxophone au coucher du soleil. Entrée libre.",
-        "he": "היום האחרון של סוף שבוע הבירה על הדק מול הים: פאולנר מהחבית, פופ-אפ נקניקיות של ערן ביק וסט סקסופון בשקיעה. הכניסה חופשית."
-      },
-      "date_start": "2026-10-03",
-      "date_end": null,
-      "time": "18:00",
-      "venue": "Migdalor Cafe",
-      "area": null,
-      "price": "Free",
-      "url": "https://www.secrettelaviv.com/tickets/paulaner-fest-migdalor-cafe",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/14565750/pexels-photo-14565750.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Juliano Ferreira / Pexels"
-    },
-    {
-      "category": "food",
-      "title": {
-        "en": "Pub Quiz #40 at Lauter",
-        "de": "Pub Quiz #40 im Lauter",
-        "fr": "Pub Quiz #40 au Lauter",
-        "he": "פאב קוויז #40 בלאוטר"
-      },
-      "blurb": {
-        "en": "Five rounds of trivia with a music round, in English-friendly company. The ticket includes the first drink; come as a team of 2-6 or get paired up. Doors 19:30, start 20:00, 18+.",
-        "de": "Fünf Quizrunden samt Musikrunde, in internationaler Gesellschaft. Das Ticket enthält das erste Getränk; als Team von 2-6 kommen oder sich zuteilen lassen. Einlass 19:30, Start 20:00, ab 18.",
-        "fr": "Cinq manches de quiz dont une manche musicale, dans une ambiance ouverte aux anglophones. Le billet comprend la première boisson ; venez à 2-6 ou laissez-vous jumeler. Ouverture 19h30, début 20h, 18+.",
-        "he": "חמישה סבבי טריוויה כולל סבב מוזיקה, בחברה שמתאימה גם לדוברי אנגלית. הכרטיס כולל משקה ראשון; באים כקבוצה של 2-6 או מצטרפים לקבוצה. פתיחת דלתות 19:30, התחלה 20:00, מגיל 18."
-      },
-      "date_start": "2026-10-05",
-      "date_end": null,
-      "time": "19:30",
-      "venue": "Lauter",
-      "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/pub-quiz-40-lauter",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/7016492/pexels-photo-7016492.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Darlene Alderson / Pexels"
-    },
-    {
-      "category": "food",
-      "title": {
-        "en": "Jaffa Farmers' Market",
-        "de": "Bauernmarkt in Jaffa",
-        "fr": "Marché fermier de Jaffa",
-        "he": "שוק האיכרים ביפו"
-      },
-      "blurb": {
-        "en": "The city's new permanent farmers' market runs every Wednesday in the flea market: dozens of stalls of produce and Jaffa food makers, plus winery and chef pop-ups. Free, 15:00-21:00.",
-        "de": "Der neue städtische Bauernmarkt findet jeden Mittwoch im Flohmarkt statt: Dutzende Stände mit Erzeugnissen und Jaffa-Produzenten, dazu Weingut- und Koch-Pop-ups. Kostenlos, 15-21 Uhr.",
-        "fr": "Le nouveau marché fermier permanent de la ville a lieu chaque mercredi dans le marché aux puces : des dizaines d'étals de produits frais et de producteurs de Jaffa, plus des pop-ups de domaines et de chefs. Gratuit, 15h-21h.",
-        "he": "שוק האיכרים הקבוע החדש של העיר פועל בכל יום רביעי בשוק הפשפשים: עשרות דוכני תוצרת ויצרני אוכל מיפו, ופופ-אפים של יקבים ושפים. חינם, 15:00-21:00."
-      },
-      "date_start": "2026-10-07",
-      "date_end": null,
-      "time": "15:00",
-      "venue": "Jaffa Flea Market, Amiad 12",
-      "area": "Jaffa",
-      "price": "Free",
-      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2137",
-      "source": "visit.tel-aviv.gov.il",
-      "image": "https://stayflorentin.com/assets/img/gallery/old_jaffa-3.webp",
-      "image_credit": "Photo: Avishai Teicher, Public domain, via Wikimedia Commons",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Flee_Market,_Jaffa.jpg",
-      "image_license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
-    },
-    {
-      "category": "food",
-      "title": {
-        "en": "Flatbush turns four",
-        "de": "Flatbush wird vier",
-        "fr": "Flatbush fête ses quatre ans",
-        "he": "פלטבוש חוגג ארבע"
-      },
-      "blurb": {
-        "en": "A festive edition of Thirsty Thursdays for the bar's fourth birthday: 1+1 on drinks all night, live DJ sets and special plates.",
-        "de": "Eine festliche Ausgabe der Thirsty Thursdays zum vierten Geburtstag der Bar: 1+1 auf Drinks die ganze Nacht, Live-DJ-Sets und Spezialgerichte.",
-        "fr": "Une édition festive des Thirsty Thursdays pour les quatre ans du bar : 1+1 sur les boissons toute la nuit, DJ en direct et plats spéciaux.",
-        "he": "ערב חגיגי של Thirsty Thursdays ליום ההולדת הרביעי של הבר: 1+1 על משקאות כל הלילה, סטים של DJ ומנות מיוחדות."
-      },
-      "date_start": "2026-10-08",
-      "date_end": null,
-      "time": "18:00",
-      "venue": "Flatbush",
-      "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/flatbush-4th-anniversary-flatbush",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/6545129/pexels-photo-6545129.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Valentina Antonucci / Pexels"
-    },
-    {
-      "category": "food",
-      "title": {
-        "en": "Morning Coffee Club at Jaffa Port",
-        "de": "Morning Coffee Club im Hafen von Jaffa",
-        "fr": "Morning Coffee Club au port de Jaffa",
-        "he": "מועדון קפה של בוקר בנמל יפו"
-      },
-      "blurb": {
-        "en": "A daytime coffee party at Blue Cafe inside Beit Hamecholot: DJ sets, local brands and an art market from 10:00 to 19:00. Free entry.",
-        "de": "Eine Kaffeeparty am Tag im Blue Cafe im Beit Hamecholot: DJ-Sets, lokale Marken und ein Kunstmarkt von 10 bis 19 Uhr. Eintritt frei.",
-        "fr": "Une fête du café en plein jour au Blue Cafe, dans le Beit Hamecholot : DJ sets, marques locales et marché d'art de 10h à 19h. Entrée libre.",
-        "he": "מסיבת קפה של יום בבלו קפה בבית המכולות: סטים של DJ, מותגים מקומיים ושוק אמנות מ-10:00 עד 19:00. הכניסה חופשית."
-      },
-      "date_start": "2026-10-10",
-      "date_end": null,
-      "time": "10:00",
-      "venue": "Blue Cafe, Beit Hamecholot, Jaffa Port",
-      "area": "Jaffa",
-      "price": "Free",
-      "url": "https://www.secrettelaviv.com/tickets/morning-coffee-club-jaffa-port-2",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/32765785/pexels-photo-32765785.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Kenan Odabas / Pexels"
-    },
     {
       "category": "food",
       "title": {
@@ -172,85 +45,203 @@
       "venue": "Lauter",
       "area": null,
       "price": null,
+      "area_he": null,
+      "price_he": null,
       "url": "https://www.secrettelaviv.com/tickets/sparkling-apples-cider-and-calvados-lauter-2",
       "source": "secrettelaviv.com",
-      "image": null,
-      "image_credit": null
+      "image": "https://images.pexels.com/photos/29518289/pexels-photo-29518289.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Matthew Baxter / Pexels"
     },
     {
       "category": "food",
       "title": {
-        "en": "Ezra Bar in Florentin",
-        "de": "Ezra Bar in Florentin",
-        "fr": "Ezra Bar à Florentin",
-        "he": "בר עזרא בפלורנטין"
+        "en": "Coffee and alfajores at Studio Now",
+        "de": "Kaffee und Alfajores im Studio Now",
+        "fr": "Café et alfajores au Studio Now",
+        "he": "קפה ואלפחורס בסטודיו נאו"
       },
       "blurb": {
-        "en": "A short walk from the flat: a small Florentin bar built around the music, with a serious sound system and the feel of a childhood living room.",
-        "de": "Nur ein kurzer Weg von der Wohnung: eine kleine Bar in Florentin, die um die Musik herum gebaut ist, mit ernsthafter Anlage und dem Gefühl eines Wohnzimmers aus der Kindheit.",
-        "fr": "À quelques pas de l'appartement : un petit bar de Florentin construit autour de la musique, avec une vraie sono et l'ambiance d'un salon d'enfance.",
-        "he": "הליכה קצרה מהדירה: בר פלורנטיני קטן שבנוי סביב המוזיקה, עם מערכת סאונד רצינית והרגשה של סלון של פעם."
+        "en": "A Friday-morning pop-up: a coffee blend roasted for the event, served with alfajores, while you browse the handmade ceramics around you.",
+        "de": "Ein Pop-up am Freitagmorgen: eine für den Anlass geröstete Kaffeemischung, dazu Alfajores, während man sich die handgemachte Keramik ansieht.",
+        "fr": "Un pop-up du vendredi matin : un mélange de café torréfié pour l'occasion, servi avec des alfajores, au milieu de céramiques faites main.",
+        "he": "פופ-אפ של בוקר שישי: בלנד קפה שנקלה במיוחד לאירוע, מוגש עם אלפחורס, בין קרמיקה בעבודת יד."
+      },
+      "date_start": "2026-10-16",
+      "date_end": null,
+      "time": "10:00",
+      "venue": "Studio Now",
+      "area": null,
+      "price": null,
+      "area_he": null,
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/cafe-alfajoras-studio-now",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/30699816/pexels-photo-30699816.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Cesar Eduardo / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "The big vegan picnic in Park HaYarkon",
+        "de": "Das große vegane Picknick im Park HaYarkon",
+        "fr": "Le grand pique-nique vegan au parc HaYarkon",
+        "he": "הפיקניק הטבעוני הגדול בפארק הירקון"
+      },
+      "blurb": {
+        "en": "A potluck picnic on the grass: bring one plant-based dish and your own cutlery. Yoga, face painting, games and a dog adoption corner. Free, but you need to register in advance.",
+        "de": "Ein Picknick zum Mitbringen auf der Wiese: ein pflanzliches Gericht und eigenes Besteck mitnehmen. Yoga, Kinderschminken, Spiele und eine Ecke für Hundevermittlung. Kostenlos, Anmeldung im Voraus nötig.",
+        "fr": "Un pique-nique participatif sur l'herbe : apportez un plat végétal et vos couverts. Yoga, maquillage pour enfants, jeux et un coin adoption de chiens. Gratuit, sur inscription préalable.",
+        "he": "פיקניק פוטלאק על הדשא: מביאים מנה טבעונית אחת וסכום רב-פעמי. יוגה, ציורי פנים, משחקים ופינת אימוץ כלבים. חינם, בהרשמה מראש."
+      },
+      "date_start": "2026-10-16",
+      "date_end": null,
+      "time": "11:00",
+      "venue": "Park HaYarkon",
+      "area": "Park HaYarkon",
+      "price": "Free",
+      "area_he": "פארק הירקון",
+      "price_he": "חינם",
+      "url": "https://www.secrettelaviv.com/tickets/the-big-vegan-picnic-park-hayarkon",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/4374575/pexels-photo-4374575.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Taryn Elliott / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Pintxo De La Casa at Bar Vermini",
+        "de": "Pintxo De La Casa in der Bar Vermini",
+        "fr": "Pintxo De La Casa au Bar Vermini",
+        "he": "פינצ'ו דה לה קאסה בבר ורמיני"
+      },
+      "blurb": {
+        "en": "A Basque-style Saturday afternoon: a spread of pintxos, vermouths from several countries and DJ Asaf Samuel on the records. No reservation needed.",
+        "de": "Ein baskisch inspirierter Samstagnachmittag: eine Auswahl an Pintxos, Wermut aus mehreren Ländern und DJ Asaf Samuel an den Platten. Keine Reservierung nötig.",
+        "fr": "Un samedi après-midi à la basque : un assortiment de pintxos, des vermouths de plusieurs pays et DJ Asaf Samuel aux platines. Sans réservation.",
+        "he": "אחר צהריים של שבת בסטייל בסקי: מגוון פינצ'וס, ורמוטים ממדינות שונות ודיג'יי אסף סמואל על התקליטים. בלי הזמנת מקום."
+      },
+      "date_start": "2026-10-17",
+      "date_end": null,
+      "time": "12:00",
+      "venue": "Bar Vermini",
+      "area": null,
+      "price": null,
+      "area_he": null,
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/pintxo-de-la-casa-bar-vermini-2",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/21327980/pexels-photo-21327980.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Blackphant / Pexels"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Jaffa Farmers' Market",
+        "de": "Bauernmarkt in Jaffa",
+        "fr": "Marché fermier de Jaffa",
+        "he": "שוק האיכרים ביפו"
+      },
+      "blurb": {
+        "en": "The city's permanent farmers' market runs every Wednesday in the flea market: dozens of stalls of produce and Jaffa food makers, plus winery and chef pop-ups. Free, 15:00-21:00.",
+        "de": "Der städtische Bauernmarkt findet jeden Mittwoch im Flohmarkt statt: Dutzende Stände mit Erzeugnissen und Jaffa-Produzenten, dazu Weingut- und Koch-Pop-ups. Kostenlos, 15-21 Uhr.",
+        "fr": "Le marché fermier permanent de la ville a lieu chaque mercredi dans le marché aux puces : des dizaines d'étals de produits frais et de producteurs de Jaffa, plus des pop-ups de domaines et de chefs. Gratuit, 15h-21h.",
+        "he": "שוק האיכרים הקבוע של העיר פועל בכל יום רביעי בשוק הפשפשים: עשרות דוכני תוצרת ויצרני אוכל מיפו, ופופ-אפים של יקבים ושפים. חינם, 15:00-21:00."
+      },
+      "date_start": "2026-10-14",
+      "date_end": null,
+      "time": "15:00",
+      "venue": "Jaffa Flea Market, Amiad 12",
+      "area": "Jaffa",
+      "price": "Free",
+      "area_he": "יפו",
+      "price_he": "חינם",
+      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2137",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://stayflorentin.com/assets/img/gallery/old_jaffa-3.webp",
+      "image_credit": "Photo: Avishai Teicher, Public domain, via Wikimedia Commons",
+      "image_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Flee_Market,_Jaffa.jpg"
+    },
+    {
+      "category": "food",
+      "title": {
+        "en": "Christoff Wine Salon, Florentin",
+        "de": "Christoff Wine Salon, Florentin",
+        "fr": "Christoff Wine Salon, Florentin",
+        "he": "כריסטוף יין סלון, פלורנטין"
+      },
+      "blurb": {
+        "en": "A small wine salon on Hashuk Street, a few minutes from the flat and as popular with locals as with visitors. There is a grilled-cheese evening every Friday.",
+        "de": "Ein kleiner Weinsalon in der Hashuk St, wenige Minuten von der Wohnung, bei Einheimischen genauso beliebt wie bei Gästen. Jeden Freitag gibt es einen Grilled-Cheese-Abend.",
+        "fr": "Un petit salon à vin rue Hashuk, à quelques minutes de l'appartement, autant apprécié des habitants que des visiteurs. Soirée grilled cheese chaque vendredi.",
+        "he": "סלון יין קטן ברחוב השוק, כמה דקות מהדירה, אהוב על מקומיים ועל מבקרים. בכל יום שישי יש אירוע גריל צ'יז."
       },
       "date_start": null,
       "date_end": null,
       "time": null,
-      "venue": "Ezra Bar, Arbanel 38",
+      "venue": "Christoff Wine Salon, Hashuk 28",
       "area": "Florentin",
       "price": null,
-      "url": "https://www.secrettelaviv.com/magazine/blog/cocktail-bars",
+      "area_he": "פלורנטין",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-wine-bars-in-tel-aviv",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/5423398/pexels-photo-5423398.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Wellington Paixao / Pexels"
+      "image": "https://images.pexels.com/photos/19393192/pexels-photo-19393192.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Vladimir Srajber / Pexels"
     },
     {
       "category": "food",
       "title": {
-        "en": "Bitter Bar by Levinsky Market",
-        "de": "Bitter Bar am Levinsky-Markt",
-        "fr": "Bitter Bar près du marché Levinsky",
-        "he": "ביטר בר ליד שוק לוינסקי"
+        "en": "La Bodega in Levinsky Market",
+        "de": "La Bodega im Levinsky-Markt",
+        "fr": "La Bodega au marché Levinsky",
+        "he": "לה בודגה בשוק לוינסקי"
       },
       "blurb": {
-        "en": "Sharp cocktails in a relaxed warehouse space just off Levinsky Market, ten minutes on foot. Happy hour runs 18:00-20:00.",
-        "de": "Präzise Cocktails in einem entspannten Lagerraum direkt am Levinsky-Markt, zehn Minuten zu Fuß. Happy Hour von 18 bis 20 Uhr.",
-        "fr": "Des cocktails précis dans un espace d'entrepôt décontracté à côté du marché Levinsky, à dix minutes à pied. Happy hour de 18h à 20h.",
-        "he": "קוקטיילים חדים בחלל מחסן נינוח ליד שוק לוינסקי, עשר דקות הליכה. האפי אוור 18:00-20:00."
+        "en": "Mediterranean and Spanish plates with a carefully chosen wine list and a record collection, right inside Levinsky market - about ten minutes on foot from the flat.",
+        "de": "Mediterrane und spanische Teller mit sorgfältig ausgewählter Weinkarte und einer Plattensammlung, mitten im Levinsky-Markt - etwa zehn Minuten zu Fuß von der Wohnung.",
+        "fr": "Des assiettes méditerranéennes et espagnoles, une carte des vins choisie avec soin et une collection de vinyles, en plein marché Levinsky - à dix minutes à pied de l'appartement.",
+        "he": "מנות ים-תיכוניות וספרדיות עם קארטת יינות מוקפדת ואוסף תקליטים, בתוך שוק לוינסקי - בערך עשר דקות הליכה מהדירה."
       },
       "date_start": null,
       "date_end": null,
       "time": null,
-      "venue": "Bitter Bar, Zevulun St 5",
+      "venue": "La Bodega, Levinsky 33",
       "area": "Levinsky Market",
       "price": null,
-      "url": "https://www.secrettelaviv.com/magazine/blog/cocktail-bars",
+      "area_he": "שוק לוינסקי",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-wine-bars-in-tel-aviv",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/31893698/pexels-photo-31893698.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Marty Shih / Pexels"
+      "image": "https://images.pexels.com/photos/11851422/pexels-photo-11851422.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Thong Tran / Pexels"
     },
     {
       "category": "food",
       "title": {
-        "en": "Pizza Lila",
-        "de": "Pizza Lila",
-        "fr": "Pizza Lila",
-        "he": "פיצה לילה"
+        "en": "Hoodna Bar on Abarbanel Street",
+        "de": "Hoodna Bar in der Abarbanel-Straße",
+        "fr": "Hoodna Bar, rue Abarbanel",
+        "he": "בר הודנה ברחוב אבארבנאל"
       },
       "blurb": {
-        "en": "Thin sourdough crust and toppings well beyond the usual. The Levinsky Market original is still being rebuilt after the building next door collapsed, so head to the Shenkin branch at Nafha 3.",
-        "de": "Dünner Sauerteigboden und Beläge weit jenseits des Üblichen. Das Original am Levinsky-Markt wird nach dem Einsturz des Nachbargebäudes noch wiederaufgebaut, daher die Filiale in Shenkin, Nafha 3.",
-        "fr": "Une pâte fine au levain et des garnitures bien au-delà de l'ordinaire. L'adresse d'origine du marché Levinsky est encore en reconstruction après l'effondrement du bâtiment voisin : rendez-vous à la succursale de Shenkin, Nafha 3.",
-        "he": "בצק מחמצת דק ותוספות הרבה מעבר לרגיל. הסניף המקורי בשוק לוינסקי עדיין בשיקום אחרי קריסת הבניין הסמוך, אז הולכים לסניף שינקין ברחוב נפחא 3."
+        "en": "A graffiti-covered bar in the middle of Florentin with free live music from Israeli performers - the easiest place nearby to walk into a concert by accident.",
+        "de": "Eine mit Graffiti überzogene Bar mitten in Florentin, mit kostenloser Live-Musik israelischer Künstler - der einfachste Ort in der Nähe, um zufällig in ein Konzert zu geraten.",
+        "fr": "Un bar couvert de graffitis au cœur de Florentin, avec de la musique live gratuite d'artistes israéliens - l'endroit le plus simple du quartier pour tomber par hasard sur un concert.",
+        "he": "בר מכוסה גרפיטי בלב פלורנטין עם מוזיקה חיה בחינם של אמנים ישראלים - המקום הקרוב שבו הכי קל להיכנס להופעה במקרה."
       },
       "date_start": null,
       "date_end": null,
       "time": null,
-      "venue": "Pizza Lila, Nafha 3",
-      "area": "Shenkin",
+      "venue": "Hoodna Bar, Abarbanel 13",
+      "area": "Florentin",
       "price": null,
-      "url": "https://www.secrettelaviv.com/magazine/blog/toptens/best-restaurants-in-tel-aviv-2026",
+      "area_he": "פלורנטין",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/best/tags/bars-and-clubs/hoodna-bar",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/3570077/pexels-photo-3570077.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Myatezhny39 / Pexels"
+      "image": "https://images.pexels.com/photos/15789084/pexels-photo-15789084.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: John Detochka / Pexels"
     },
     {
       "category": "culture",
@@ -266,41 +257,18 @@
         "fr": "Environ 200 étals de bijoux, céramiques, textiles et verre faits main, avec les artisans sur place. Chaque mardi et vendredi, gratuit, dès 10h.",
         "he": "כ-200 דוכנים של תכשיטים, קרמיקה, טקסטיל וזכוכית בעבודת יד, עם היוצרים עצמם. בכל שלישי ושישי, חינם, מ-10:00."
       },
-      "date_start": "2026-10-06",
+      "date_start": "2026-10-13",
       "date_end": null,
       "time": "10:00",
       "venue": "Nahalat Binyamin 1",
       "area": null,
       "price": "Free",
+      "area_he": null,
+      "price_he": "חינם",
       "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2138",
       "source": "visit.tel-aviv.gov.il",
       "image": "https://images.pexels.com/photos/31858690/pexels-photo-31858690.jpeg?auto=compress&cs=tinysrgb&w=800",
       "image_credit": "Photo: Sarah O'Shea / Pexels"
-    },
-    {
-      "category": "culture",
-      "title": {
-        "en": "Film music by candlelight in Jaffa",
-        "de": "Filmmusik bei Kerzenschein in Jaffa",
-        "fr": "Musiques de film à la lueur des bougies à Jaffa",
-        "he": "מוזיקת סרטים לאור נרות ביפו"
-      },
-      "blurb": {
-        "en": "A string quintet plays themes from Titanic, Harry Potter and The Lion King on the open-air terrace of a Jaffa monastery, surrounded by hundreds of candles and facing the sea.",
-        "de": "Ein Streichquintett spielt Themen aus Titanic, Harry Potter und Der König der Löwen auf der Freiluftterrasse eines Klosters in Jaffa, umgeben von hunderten Kerzen mit Blick aufs Meer.",
-        "fr": "Un quintette à cordes joue les thèmes de Titanic, Harry Potter et Le Roi Lion sur la terrasse à ciel ouvert d'un monastère de Jaffa, entouré de centaines de bougies face à la mer.",
-        "he": "חמישיית מיתרים מנגנת נושאים מטיטאניק, הארי פוטר ומלך האריות על המרפסת הפתוחה של מנזר ביפו, בין מאות נרות ומול הים."
-      },
-      "date_start": "2026-10-06",
-      "date_end": null,
-      "time": "20:00",
-      "venue": "Saint Nicholas Monastery",
-      "area": "Jaffa",
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/the-most-beautiful-movie-music-by-the-light-of-hundreds-of-candles-saint-nicholas-monastery-jaffa",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/9418649/pexels-photo-9418649.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Cotton Bro / Pexels"
     },
     {
       "category": "culture",
@@ -316,93 +284,155 @@
         "fr": "Chaque mercredi, un parcours gratuit en soirée dans Jaffa : le marché fermier dans le marché aux puces, un concert au coucher du soleil au port, puis cinéma en plein air au Gan HaPisga.",
         "he": "מסלול ערב חינמי ביפו בכל יום רביעי: שוק האיכרים בשוק הפשפשים, סט חי בשקיעה בנמל, ואז קולנוע פתוח בגן הפסגה."
       },
-      "date_start": "2026-10-07",
+      "date_start": "2026-10-14",
       "date_end": null,
       "time": "16:00",
       "venue": "Flea market, port and Gan HaPisga",
       "area": "Jaffa",
       "price": "Free",
+      "area_he": "יפו",
+      "price_he": "חינם",
       "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2159",
       "source": "visit.tel-aviv.gov.il",
       "image": "https://stayflorentin.com/assets/img/gallery/old_jaffa-1.webp",
       "image_credit": "Photo: xiquinhosilva, CC BY 2.0, via Wikimedia Commons",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_03.jpg",
-      "image_license_url": "https://creativecommons.org/licenses/by/2.0"
+      "image_license_url": "https://creativecommons.org/licenses/by/2.0",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_03.jpg"
     },
     {
       "category": "culture",
       "title": {
-        "en": "The Universe of Hans Zimmer, Jaffa",
-        "de": "Das Universum von Hans Zimmer, Jaffa",
-        "fr": "L'univers de Hans Zimmer, Jaffa",
-        "he": "היקום של הנס צימר, יפו"
+        "en": "Jaffa SYNC: silent film with a live soundtrack",
+        "de": "Jaffa SYNC: Stummfilm mit Live-Soundtrack",
+        "fr": "Jaffa SYNC : film muet et bande-son live",
+        "he": "ג'אפה סינק: סרט אילם עם פסקול חי"
       },
       "blurb": {
-        "en": "A string quintet and piano play Gladiator, Interstellar and The Lion King under the vaults of an old Jaffa monastery, lit by hundreds of candles.",
-        "de": "Ein Streichquintett und Klavier spielen Gladiator, Interstellar und Der König der Löwen unter den Gewölben eines alten Klosters in Jaffa, im Licht hunderter Kerzen.",
-        "fr": "Un quintette à cordes et un piano jouent Gladiator, Interstellar et Le Roi Lion sous les voûtes d'un ancien monastère de Jaffa, éclairé par des centaines de bougies.",
-        "he": "חמישיית מיתרים ופסנתר מנגנים את גלדיאטור, בין כוכבים ומלך האריות מתחת לקמרונות של מנזר עתיק ביפו, לאור מאות נרות."
+        "en": "Open-air cinema in the garden above Old Jaffa: the silent love story Lonely Ones, with a live hip-hop soundtrack played by a DJ and band. Free, and the series continues on 21 and 28 October with Berlin and Tokyo nights.",
+        "de": "Freiluftkino im Garten über Alt-Jaffa: der Stummfilm Lonely Ones, begleitet von einem live gespielten Hip-Hop-Soundtrack mit DJ und Band. Kostenlos; die Reihe geht am 21. und 28. Oktober mit Berlin- und Tokio-Abenden weiter.",
+        "fr": "Cinéma en plein air dans le jardin au-dessus de la vieille Jaffa : le film muet Lonely Ones, accompagné d'une bande-son hip-hop jouée en direct par un DJ et un groupe. Gratuit ; la série se poursuit les 21 et 28 octobre avec Berlin et Tokyo.",
+        "he": "קולנוע פתוח בגן שמעל יפו העתיקה: הסרט האילם בודדים, בליווי פסקול היפ-הופ שמתנגן חי על ידי דיג'יי ולהקה. חינם, והסדרה נמשכת ב-21 וב-28 באוקטובר עם ערבי ברלין וטוקיו."
       },
-      "date_start": "2026-10-08",
+      "date_start": "2026-10-14",
+      "date_end": null,
+      "time": "21:00",
+      "venue": "Gan HaPisga, Old Jaffa",
+      "area": "Old Jaffa",
+      "price": "Free",
+      "area_he": "יפו העתיקה",
+      "price_he": "חינם",
+      "url": "https://www.secrettelaviv.com/tickets/jaffa-sync-gan-hapisga-old-jaffa-2",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/14551498/pexels-photo-14551498.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Asia Culture Center / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Territories opens at Beit Kandinof",
+        "de": "Territories eröffnet im Beit Kandinof",
+        "fr": "Vernissage de Territories au Beit Kandinof",
+        "he": "פתיחת התערוכה טריטוריות בבית קנדינוף"
+      },
+      "blurb": {
+        "en": "Opening night of the new exhibition at Beit Kandinof, one of the nicest buildings in Jaffa: a relaxed evening of art in an old stone courtyard. Ask the gallery to reserve a place.",
+        "de": "Eröffnungsabend der neuen Ausstellung im Beit Kandinof, einem der schönsten Häuser Jaffas: ein entspannter Kunstabend in einem alten Steinhof. Platz vorher bei der Galerie reservieren.",
+        "fr": "Vernissage de la nouvelle exposition au Beit Kandinof, l'un des plus beaux bâtiments de Jaffa : une soirée d'art détendue dans une cour de pierre ancienne. Réservez votre place auprès de la galerie.",
+        "he": "ערב הפתיחה של התערוכה החדשה בבית קנדינוף, אחד הבניינים היפים ביפו: ערב אמנות רגוע בחצר אבן עתיקה. כדאי לשמור מקום מראש בגלריה."
+      },
+      "date_start": "2026-10-14",
+      "date_end": null,
+      "time": "20:00",
+      "venue": "Beit Kandinof",
+      "area": "Jaffa",
+      "price": null,
+      "area_he": "יפו",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/territories-exhibition-opening-beit-kandinof",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/7859550/pexels-photo-7859550.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Greta Hoffman / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Tipsy Talks: Frida Kahlo, in English",
+        "de": "Tipsy Talks: Frida Kahlo, auf Englisch",
+        "fr": "Tipsy Talks : Frida Kahlo, en anglais",
+        "he": "טיפסי טוקס: פרידה קאלו, באנגלית"
+      },
+      "blurb": {
+        "en": "An art talk in English about the woman behind the flower crown, held in a Florentin bar with wine and cheese included in the ticket. Doors 20:30, talk 21:00; the exact address is sent after you pay.",
+        "de": "Ein Kunstvortrag auf Englisch über die Frau hinter dem Blumenkranz, in einer Bar in Florentin, Wein und Käse im Ticket inbegriffen. Einlass 20:30, Beginn 21:00; die genaue Adresse kommt nach der Zahlung.",
+        "fr": "Une conférence d'art en anglais sur la femme derrière la couronne de fleurs, dans un bar de Florentin, vin et fromage compris dans le billet. Ouverture 20h30, début 21h ; l'adresse exacte est envoyée après le paiement.",
+        "he": "הרצאת אמנות באנגלית על האישה שמאחורי זר הפרחים, בבר בפלורנטין, כולל יין וגבינות במחיר הכרטיס. דלתות ב-20:30, ההרצאה ב-21:00; הכתובת המדויקת נשלחת אחרי התשלום."
+      },
+      "date_start": "2026-10-14",
+      "date_end": null,
+      "time": "20:30",
+      "venue": null,
+      "area": "Florentin",
+      "price": "₪120",
+      "area_he": "פלורנטין",
+      "price_he": "120 ₪",
+      "url": "https://www.secrettelaviv.com/tickets/tipsy-talks-frida-kahlo-tba-florentin",
+      "source": "secrettelaviv.com",
+      "image": null,
+      "image_credit": null
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Classical music in a seaside monastery, Jaffa",
+        "de": "Klassische Musik in einem Kloster am Meer, Jaffa",
+        "fr": "Musique classique dans un monastère au bord de la mer, Jaffa",
+        "he": "מוזיקה קלאסית במנזר על הים, יפו"
+      },
+      "blurb": {
+        "en": "A string quintet plays Vivaldi, Mozart, Strauss and Piazzolla on the roof of an old monastery by the sea, lit by hundreds of candles. Enter from the promenade side, not through the old city, and bring a light jacket; there is no bar on site.",
+        "de": "Ein Streichquintett spielt Vivaldi, Mozart, Strauss und Piazzolla auf dem Dach eines alten Klosters am Meer, im Licht hunderter Kerzen. Eingang von der Promenade, nicht durch die Altstadt; eine leichte Jacke mitnehmen, eine Bar gibt es nicht.",
+        "fr": "Un quintette à cordes joue Vivaldi, Mozart, Strauss et Piazzolla sur le toit d'un ancien monastère face à la mer, à la lueur de centaines de bougies. Entrée côté promenade, pas par la vieille ville ; prévoyez une veste légère, il n'y a pas de bar.",
+        "he": "חמישיית כלי קשת מנגנת ויוואלדי, מוצרט, שטראוס ופיאצולה על גג מנזר עתיק מול הים, לאור מאות נרות. הכניסה מצד הטיילת ולא דרך העיר העתיקה, וכדאי להביא ג'קט קל; אין בר במקום."
+      },
+      "date_start": "2026-10-15",
       "date_end": null,
       "time": "20:00",
       "venue": "Saint Nicholas Monastery",
       "area": "Jaffa",
       "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/the-universe-of-hans-zimmer-candlelight-concert-saint-nicholas-monastery-jaffa-2",
+      "area_he": "יפו",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/%e2%81%a0-classical-music-in-the-ancient-monastery-by-the-sea-%e2%81%a0-saint-nicholas-monastery-jaffa",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/6521575/pexels-photo-6521575.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Son Tung Tran / Pexels"
+      "image": "https://images.pexels.com/photos/7095711/pexels-photo-7095711.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Cottonbro / Pexels"
     },
     {
       "category": "culture",
       "title": {
-        "en": "Session by Ohad Naharin, Batsheva",
-        "de": "Session von Ohad Naharin, Batsheva",
-        "fr": "Session d'Ohad Naharin, Batsheva",
-        "he": "Session של אוהד נהרין, בת שבע"
+        "en": "THISISPAIN by Hillel Kogan, Neve Tzedek",
+        "de": "THISISPAIN von Hillel Kogan, Neve Tzedek",
+        "fr": "THISISPAIN de Hillel Kogan, Neve Tzedek",
+        "he": "THISISPAIN של הלל קוגן, נווה צדק"
       },
       "blurb": {
-        "en": "Batsheva dancers improvise through Ohad Naharin's repertory, a piece first made for the Fondation Beyeler. Ten minutes' walk in Neve Tzedek; also 19:30 and 21:00, and three slots on 9 October. Booking needed.",
-        "de": "Batsheva-Tänzer improvisieren durch Ohad Naharins Repertoire, ein Stück, das zuerst für die Fondation Beyeler entstand. Zehn Gehminuten in Neve Tzedek; auch 19:30 und 21:00 sowie drei Termine am 9. Oktober. Anmeldung nötig.",
-        "fr": "Les danseurs de Batsheva improvisent dans le répertoire d'Ohad Naharin, une pièce créée pour la Fondation Beyeler. À dix minutes à pied, à Neve Tzedek ; aussi à 19h30 et 21h, et trois séances le 9 octobre. Réservation requise.",
-        "he": "רקדני בת שבע מאלתרים על הרפרטואר של אוהד נהרין, יצירה שנוצרה במקור לקרן ביילר. עשר דקות הליכה בנווה צדק; גם ב-19:30 וב-21:00, ושלושה מועדים ב-9 באוקטובר. צריך להזמין."
+        "en": "Hillel Kogan and Michal Nathan put the poet Bialik and flamenco on the same stage, at the Inbal theatre in the Suzanne Dellal courtyards - a short walk from Florentin and almost all movement, so no Hebrew needed.",
+        "de": "Hillel Kogan und Michal Nathan bringen den Dichter Bialik und Flamenco auf eine Bühne, im Inbal-Theater in den Höfen von Suzanne Dellal - ein kurzer Spaziergang von Florentin und fast reine Bewegung, also ohne Hebräischkenntnisse zu verstehen.",
+        "fr": "Hillel Kogan et Michal Nathan réunissent sur scène le poète Bialik et le flamenco, au théâtre Inbal dans les cours de Suzanne Dellal - à quelques minutes à pied de Florentin, et presque tout en mouvement, donc sans hébreu.",
+        "he": "הלל קוגן ומיכל נתן מעלים על אותה במה את ביאליק ואת הפלמנקו, בתיאטרון ענבל בחצרות סוזן דלל - הליכה קצרה מפלורנטין, וכמעט הכול תנועה, כך שאין צורך בעברית."
       },
-      "date_start": "2026-10-08",
+      "date_start": "2026-10-16",
       "date_end": null,
-      "time": "18:00",
-      "venue": "Suzanne Dellal Centre, Yehieli 6",
+      "time": "14:00",
+      "venue": "Inbal Dance Theater, Suzanne Dellal",
       "area": "Neve Tzedek",
       "price": null,
-      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2190",
-      "source": "visit.tel-aviv.gov.il",
-      "image": "https://images.pexels.com/photos/6926734/pexels-photo-6926734.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Pavel Danilyuk / Pexels"
-    },
-    {
-      "category": "culture",
-      "title": {
-        "en": "Israel Philharmonic season opening",
-        "de": "Saisoneröffnung des Israel Philharmonic",
-        "fr": "Ouverture de saison de l'Orchestre philharmonique d'Israël",
-        "he": "פתיחת העונה של הפילהרמונית"
-      },
-      "blurb": {
-        "en": "The orchestra's 90th season opens under Lahav Shani with Bardanashvili, the Sibelius violin concerto and Mahler's Fourth, with Nikolaj Szeps-Znaider and soprano Chen Reiss. Repeated 9 and 10 October; tickets in advance.",
-        "de": "Die 90. Saison des Orchesters eröffnet unter Lahav Shani mit Bardanashvili, dem Violinkonzert von Sibelius und Mahlers Vierter, mit Nikolaj Szeps-Znaider und Sopranistin Chen Reiss. Wiederholung am 9. und 10. Oktober; Karten im Voraus.",
-        "fr": "La 90e saison de l'orchestre s'ouvre sous la direction de Lahav Shani avec Bardanashvili, le concerto pour violon de Sibelius et la Quatrième de Mahler, avec Nikolaj Szeps-Znaider et la soprano Chen Reiss. Repris les 9 et 10 octobre ; billets à l'avance.",
-        "he": "העונה ה-90 של התזמורת נפתחת בניצוח להב שני עם ברדנשווילי, הקונצ'רטו לכינור של סיבליוס והסימפוניה הרביעית של מאהלר, עם ניקולאי שפס-זנידר והסופרן חן רייס. חוזר ב-9 וב-10 באוקטובר; כרטיסים מראש."
-      },
-      "date_start": "2026-10-08",
-      "date_end": null,
-      "time": null,
-      "venue": "Huberman St 1",
-      "area": null,
-      "price": null,
-      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2204",
-      "source": "visit.tel-aviv.gov.il",
-      "image": "https://images.pexels.com/photos/9399878/pexels-photo-9399878.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Engina Kyurt / Pexels"
+      "area_he": "נווה צדק",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/thisispain-by-hillel-kogan-inbal-dance-theater-2",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/13863662/pexels-photo-13863662.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Jose Manuel Espigares Garcia / Pexels"
     },
     {
       "category": "culture",
@@ -418,12 +448,14 @@
         "fr": "Un accueil musical du Chabbat au bord de la mer, avec un ensemble de prière israélien, chants et danses au coucher du soleil. Chaque vendredi, ouverture 17h30, gratuit sur inscription.",
         "he": "קבלת שבת מוזיקלית מול הים, עם אנסמבל תפילה ישראלי, שירה וריקודים בשקיעה. בכל יום שישי, פתיחת דלתות 17:30, חינם בהרשמה מראש."
       },
-      "date_start": "2026-10-09",
+      "date_start": "2026-10-16",
       "date_end": null,
       "time": "18:00",
       "venue": "Tel Aviv Port, central check-in area",
       "area": null,
       "price": "Free with registration",
+      "area_he": null,
+      "price_he": "חינם בהרשמה",
       "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2194",
       "source": "visit.tel-aviv.gov.il",
       "image": null,
@@ -432,327 +464,299 @@
     {
       "category": "culture",
       "title": {
-        "en": "Curating Architecture in the Anthropocene",
-        "de": "Architektur kuratieren im Anthropozän",
-        "fr": "Exposer l'architecture à l'ère de l'Anthropocène",
-        "he": "אוצרות אדריכלות באנתרופוקן"
+        "en": "Kids' fair at Jaffa Port",
+        "de": "Kindermarkt im Hafen von Jaffa",
+        "fr": "Foire des enfants au port de Jaffa",
+        "he": "יריד הילדים בנמל יפו"
       },
       "blurb": {
-        "en": "A conversation inside the Heritage of the Future exhibition at Liebling Haus, the White City Center, on what exhibitions and architects can still do in a climate crisis.",
-        "de": "Ein Gespräch innerhalb der Ausstellung Heritage of the Future im Liebling Haus, dem White City Center, darüber, was Ausstellungen und Architekten in der Klimakrise noch bewirken können.",
-        "fr": "Une conversation au sein de l'exposition Heritage of the Future à la Liebling Haus, le White City Center, sur ce que peuvent encore faire les expositions et les architectes face à la crise climatique.",
-        "he": "שיחה בתוך התערוכה מורשת העתיד בבית ליבלינג, מרכז העיר הלבנה, על מה תערוכות ואדריכלים עוד יכולים לעשות במשבר האקלים."
+        "en": "A market where the children run the stalls, selling crafts, toys and books, with hands-on money workshops alongside. Entry is free; the workshops cost 35 shekels and places are limited.",
+        "de": "Ein Markt, auf dem die Kinder die Stände führen und Basteleien, Spielzeug und Bücher verkaufen, dazu Workshops rund ums Geld. Eintritt frei; die Workshops kosten 35 Schekel, die Plätze sind begrenzt.",
+        "fr": "Un marché où les enfants tiennent les étals et vendent bricolages, jouets et livres, avec des ateliers pratiques sur l'argent. Entrée libre ; les ateliers coûtent 35 shekels et les places sont limitées.",
+        "he": "יריד שבו הילדים מנהלים את הדוכנים ומוכרים יצירות, צעצועים וספרים, ולידו סדנאות חווייתיות על כסף. הכניסה חינם; הסדנאות בעלות 35 שקלים והמקומות מוגבלים."
+      },
+      "date_start": "2026-10-17",
+      "date_end": null,
+      "time": "11:00",
+      "venue": "Beit Hamecholot, Jaffa Port",
+      "area": "Jaffa Port",
+      "price": "Free entry",
+      "area_he": "נמל יפו",
+      "price_he": "כניסה חינם",
+      "url": "https://www.secrettelaviv.com/tickets/kids-fair-beit-hamecholot-jaffa-port",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/16063716/pexels-photo-16063716.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Elias Jaara / Pexels"
+    },
+    {
+      "category": "culture",
+      "title": {
+        "en": "Noma Bar: Look Again, Tel Aviv Museum of Art",
+        "de": "Noma Bar: Look Again, Kunstmuseum Tel Aviv",
+        "fr": "Noma Bar : Look Again, Musée d'art de Tel Aviv",
+        "he": "נומה בר: להסתכל שוב, מוזיאון תל אביב לאמנות"
+      },
+      "blurb": {
+        "en": "A big show of the Israeli-born illustrator's double-image posters and covers, the kind where the second picture only appears once you look twice. On until January, ticketed.",
+        "de": "Eine große Ausstellung mit den Doppelbild-Plakaten und Covern des in Israel geborenen Illustrators - das zweite Bild zeigt sich erst beim zweiten Blick. Läuft bis Januar, Eintritt kostenpflichtig.",
+        "fr": "Une grande exposition des affiches et couvertures à double lecture de l'illustrateur né en Israël : la seconde image n'apparaît qu'au second regard. Jusqu'en janvier, billet payant.",
+        "he": "תערוכה גדולה של הכרזות והעטיפות הדו-משמעיות של המאייר שנולד בישראל - התמונה השנייה מופיעה רק במבט שני. עד ינואר, בכרטיס."
+      },
+      "date_start": "2026-08-05",
+      "date_end": "2027-01-16",
+      "time": null,
+      "venue": "Tel Aviv Museum of Art",
+      "area": null,
+      "price": null,
+      "area_he": null,
+      "price_he": null,
+      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2188",
+      "source": "visit.tel-aviv.gov.il",
+      "image": "https://images.pexels.com/photos/33511452/pexels-photo-33511452.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Tahir / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Alma Con Ritmo at Kuli Alma",
+        "de": "Alma Con Ritmo im Kuli Alma",
+        "fr": "Alma Con Ritmo au Kuli Alma",
+        "he": "אלמה קון ריטמו בקולי עלמא"
+      },
+      "blurb": {
+        "en": "The Latin night at Kuli Alma with DJs EmanuCali and La Danie, hot empanadas and a tattoo session in the gallery. Free before 23:00, 30 shekels after.",
+        "de": "Die Latin-Nacht im Kuli Alma mit den DJs EmanuCali und La Danie, heißen Empanadas und einer Tattoo-Session in der Galerie. Vor 23 Uhr kostenlos, danach 30 Schekel.",
+        "fr": "La soirée latino du Kuli Alma avec les DJs EmanuCali et La Danie, des empanadas chaudes et une session tatouage dans la galerie. Gratuit avant 23h, 30 shekels ensuite.",
+        "he": "מסיבת הלטינו של קולי עלמא עם הדיג'ייז אמנוקאלי ולה דני, אמפנדס חמות וסשן קעקועים בגלריה. חינם עד 23:00, אחר כך 30 שקלים."
+      },
+      "date_start": "2026-10-10",
+      "date_end": null,
+      "time": "20:00",
+      "venue": "Kuli Alma",
+      "area": null,
+      "price": "Free until 23:00, then ₪30",
+      "area_he": null,
+      "price_he": "חינם עד 23:00, אחר כך 30 ₪",
+      "url": "https://www.secrettelaviv.com/tickets/alma-con-ritmo-kuli-alma-6",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/8249231/pexels-photo-8249231.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: RDNE Stock Project / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "The Retaliation Trio at Ozen Bar",
+        "de": "The Retaliation Trio in der Ozen Bar",
+        "fr": "The Retaliation Trio à l'Ozen Bar",
+        "he": "הרטליאיישן טריו באוזן בר"
+      },
+      "blurb": {
+        "en": "Album launch for a trio with a raw, classic psychedelic rock sound and electronic undertones, in the small record-shop venue on Rothschild.",
+        "de": "Albumrelease eines Trios mit rohem, klassischem Psychedelic-Rock und elektronischen Untertönen, im kleinen Plattenladen-Club am Rothschild.",
+        "fr": "Sortie d'album pour un trio au rock psychédélique brut et classique, teinté d'électronique, dans le petit club-disquaire du boulevard Rothschild.",
+        "he": "מופע השקת אלבום של שלישייה עם צליל רוק פסיכדלי קלאסי וגלמי ונגיעות אלקטרוניות, בחלל הקטן של חנות התקליטים ברוטשילד."
       },
       "date_start": "2026-10-11",
       "date_end": null,
-      "time": "19:00",
-      "venue": "Liebling Haus, Idelson 29",
-      "area": null,
+      "time": "20:00",
+      "venue": "Ozen Bar",
+      "area": "Rothschild",
       "price": null,
-      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2205",
-      "source": "visit.tel-aviv.gov.il",
-      "image": null,
-      "image_credit": null
-    },
-    {
-      "category": "culture",
-      "title": {
-        "en": "Tom Wesselmann: All Out",
-        "de": "Tom Wesselmann: All Out",
-        "fr": "Tom Wesselmann : All Out",
-        "he": "טום וסלמן: All Out"
-      },
-      "blurb": {
-        "en": "A large survey of the American Pop artist at the Tel Aviv Museum of Art: flat, monumental still lifes and nudes from the Mugrabi Collection. Open daily except Monday; entry fee.",
-        "de": "Eine große Werkschau des amerikanischen Pop-Künstlers im Tel Aviv Museum of Art: flache, monumentale Stillleben und Akte aus der Mugrabi-Sammlung. Täglich außer Montag; Eintritt.",
-        "fr": "Une grande rétrospective de l'artiste pop américain au Tel Aviv Museum of Art : natures mortes et nus plats et monumentaux de la collection Mugrabi. Ouvert tous les jours sauf lundi ; entrée payante.",
-        "he": "תערוכה גדולה של אמן הפופ האמריקאי במוזיאון תל אביב לאמנות: טבע דומם ועירום שטוחים ומונומנטליים מאוסף מוגרבי. פתוח כל יום חוץ משני; בתשלום."
-      },
-      "date_start": "2026-06-11",
-      "date_end": "2026-12-26",
-      "time": null,
-      "venue": "Tel Aviv Museum of Art",
-      "area": "Shaul HaMelech Blvd 27",
-      "price": null,
-      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=2149",
-      "source": "visit.tel-aviv.gov.il",
-      "image": "https://images.pexels.com/photos/3724836/pexels-photo-3724836.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Loic Manegarium / Pexels"
-    },
-    {
-      "category": "culture",
-      "title": {
-        "en": "Be'eri Art Gallery at Beit Romano",
-        "de": "Be'eri-Galerie im Beit Romano",
-        "fr": "Galerie Be'eri au Beit Romano",
-        "he": "גלריית בארי בבית רומנו"
-      },
-      "blurb": {
-        "en": "The Be'eri gallery, destroyed on 7 October 2023, now shows Israeli artists inside the Beit Romano complex next to Teder bar, a ten-minute walk away. Open from 19:00.",
-        "de": "Die am 7. Oktober 2023 zerstörte Galerie Be'eri zeigt israelische Künstler jetzt im Beit-Romano-Komplex neben der Teder-Bar, zehn Gehminuten entfernt. Ab 19 Uhr geöffnet.",
-        "fr": "La galerie Be'eri, détruite le 7 octobre 2023, expose désormais des artistes israéliens dans le complexe Beit Romano, à côté du bar Teder, à dix minutes à pied. Ouvert dès 19h.",
-        "he": "גלריית בארי, שנהרסה ב-7 באוקטובר 2023, מציגה עכשיו אמנים ישראלים במתחם בית רומנו ליד בר תדר, עשר דקות הליכה. פתוח מ-19:00."
-      },
-      "date_start": null,
-      "date_end": null,
-      "time": null,
-      "venue": "Beit Romano, Derech Jaffa 9",
-      "area": "Florentin",
-      "price": null,
-      "url": "https://visit.tel-aviv.gov.il/Pages/EventLocation.aspx?ListType=Events&ItemId=1939",
-      "source": "visit.tel-aviv.gov.il",
-      "image": "https://images.pexels.com/photos/15138863/pexels-photo-15138863.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Bertelli Fotografia / Pexels"
-    },
-    {
-      "category": "nightlife",
-      "title": {
-        "en": "Hazeevot at Hameretz 2",
-        "de": "Hazeevot im Hameretz 2",
-        "fr": "Hazeevot au Hameretz 2",
-        "he": "הזאבות בהמרץ 2"
-      },
-      "blurb": {
-        "en": "Back from a summer of fifty European shows, the band closes the season in a small room on the edge of Florentin, a few minutes' walk away.",
-        "de": "Zurück von einem Sommer mit fünfzig Europa-Konzerten schließt die Band die Saison in einem kleinen Raum am Rand von Florentin, wenige Minuten zu Fuß.",
-        "fr": "De retour d'un été de cinquante concerts en Europe, le groupe clôture la saison dans une petite salle en bordure de Florentin, à quelques minutes à pied.",
-        "he": "אחרי קיץ של חמישים הופעות באירופה, הלהקה סוגרת את העונה באולם קטן בקצה פלורנטין, כמה דקות הליכה."
-      },
-      "date_start": "2026-10-03",
-      "date_end": null,
-      "time": "21:45",
-      "venue": "Hameretz 2",
-      "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/hazeevot-hameretz-2-3",
+      "area_he": "רוטשילד",
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/the-retaliation-trio-ozen-bar",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/15865135/pexels-photo-15865135.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Danik Prihodko / Pexels"
+      "image": "https://images.pexels.com/photos/33865968/pexels-photo-33865968.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Andrade Matheus / Pexels"
     },
     {
       "category": "nightlife",
       "title": {
-        "en": "Hits Different at Levontin 7",
-        "de": "Hits Different im Levontin 7",
-        "fr": "Hits Different au Levontin 7",
-        "he": "Hits Different בלבונטין 7"
+        "en": "Maayan Linik live at Rafi",
+        "de": "Maayan Linik live im Rafi",
+        "fr": "Maayan Linik en concert au Rafi",
+        "he": "מעיין ליניק בהופעה ברפי"
       },
       "blurb": {
-        "en": "A listening party for music that has not been released: sketches, demos and beats straight from local producers, in the basement club on Levontin.",
-        "de": "Eine Hör-Party für unveröffentlichte Musik: Skizzen, Demos und Beats direkt von lokalen Produzenten, im Kellerclub in der Levontin.",
-        "fr": "Une écoute collective de musiques inédites : esquisses, démos et beats directement issus de producteurs locaux, dans le club en sous-sol de la rue Levontin.",
-        "he": "מסיבת האזנה למוזיקה שעוד לא יצאה: סקיצות, דמואים וביטים ישר ממפיקים מקומיים, במועדון המרתף בלבונטין."
+        "en": "The singer and multi-instrumentalist plays a set ahead of her second album - pop with jazz, neo-soul and Middle Eastern edges. Romy Avidan DJs before and after. Entry is free.",
+        "de": "Die Sängerin und Multiinstrumentalistin spielt ein Set vor ihrem zweiten Album - Pop mit Jazz, Neo-Soul und nahöstlichen Kanten. Romy Avidan legt davor und danach auf. Eintritt frei.",
+        "fr": "La chanteuse multi-instrumentiste joue un set avant son deuxième album - une pop teintée de jazz, de neo-soul et de couleurs moyen-orientales. Romy Avidan aux platines avant et après. Entrée libre.",
+        "he": "הזמרת והנגנית מעלה סט לקראת האלבום השני שלה - פופ עם ג'אז, ניו-סול וגוונים מזרח-תיכוניים. רומי אבידן בדיג'יי סטים לפני ואחרי. הכניסה חינם."
       },
-      "date_start": "2026-10-03",
-      "date_end": null,
-      "time": "22:00",
-      "venue": "Levontin 7",
-      "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/hits-different-unreleased-edition-levontin-7",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/14364672/pexels-photo-14364672.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Caleb Oquendo / Pexels"
-    },
-    {
-      "category": "nightlife",
-      "title": {
-        "en": "Simchat Torah second Hakafot at Barby",
-        "de": "Simchat Tora - zweite Hakafot im Barby",
-        "fr": "Simchat Torah, secondes Hakafot au Barby",
-        "he": "הקפות שניות של שמחת תורה בבארבי"
-      },
-      "blurb": {
-        "en": "The Barby's take on the holiday's second round of dancing, one of the most energetic nights of its year. Free admission, no dress code.",
-        "de": "Die Barby-Version der zweiten Tanzrunde des Feiertags, eine der energischsten Nächte des Jahres. Eintritt frei, kein Dresscode.",
-        "fr": "La version du Barby de la seconde ronde de danses de la fête, l'une des soirées les plus énergiques de son année. Entrée libre, sans code vestimentaire.",
-        "he": "ההקפות השניות של החג בגרסת הבארבי, אחד הלילות הסוערים של השנה שלהם. הכניסה חופשית, בלי קוד לבוש."
-      },
-      "date_start": "2026-10-03",
-      "date_end": null,
-      "time": "22:00",
-      "venue": "Barby",
-      "area": null,
-      "price": "Free",
-      "url": "https://www.secrettelaviv.com/tickets/simchat-torah-second-hakafot-at-the-barby-free-admission-barby",
-      "source": "secrettelaviv.com",
-      "image": null,
-      "image_credit": null
-    },
-    {
-      "category": "nightlife",
-      "title": {
-        "en": "Sunday Klezmer Bar at Yung Yidish",
-        "de": "Sonntags-Klezmerbar im Yung Yidish",
-        "fr": "Bar klezmer du dimanche au Yung Yidish",
-        "he": "בר כליזמר של יום ראשון ביונג יידיש"
-      },
-      "blurb": {
-        "en": "Live klezmer with the Jerusalem Klezmorim of Avrum Burstein, played among tens of thousands of old Yiddish books in a loft above the central bus station.",
-        "de": "Live-Klezmer mit den Jerusalem Klezmorim von Avrum Burstein, gespielt zwischen zehntausenden alten jiddischen Büchern in einem Loft über dem zentralen Busbahnhof.",
-        "fr": "Du klezmer en direct avec les Klezmorim de Jérusalem d'Avrum Burstein, joué parmi des dizaines de milliers de vieux livres en yiddish, dans un loft au-dessus de la gare routière centrale.",
-        "he": "כליזמר חי עם הכליזמרים הירושלמים של אברום בורשטיין, בין עשרות אלפי ספרי יידיש ישנים בלופט מעל התחנה המרכזית."
-      },
-      "date_start": "2026-10-04",
+      "date_start": "2026-10-13",
       "date_end": null,
       "time": "20:00",
-      "venue": "Yung Yidish TLV",
+      "venue": "Rafi",
       "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/sunday-yung-klezmer-bar-yung-yidish-tlv",
+      "price": "Free",
+      "area_he": null,
+      "price_he": "חינם",
+      "url": "https://www.secrettelaviv.com/tickets/maayan-linik-rafi",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/8186275/pexels-photo-8186275.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Brett Sayles / Pexels"
+      "image": "https://images.pexels.com/photos/8198205/pexels-photo-8198205.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: RDNE Stock Project / Pexels"
     },
     {
       "category": "nightlife",
       "title": {
-        "en": "Shevet turns seven",
-        "de": "Shevet wird sieben",
-        "fr": "Shevet fête ses sept ans",
-        "he": "שבט חוגג שבע"
+        "en": "Freak: Category is Politics at Callas",
+        "de": "Freak: Category is Politics im Callas",
+        "fr": "Freak : Category is Politics au Callas",
+        "he": "פריק: קטגוריית פוליטיקה בקאלאס"
       },
       "blurb": {
-        "en": "The community space in the middle of town marks seven years with a long evening of music and content for anyone who wants to drop in.",
-        "de": "Der Gemeinschaftsraum mitten in der Stadt feiert sieben Jahre mit einem langen Abend aus Musik und Programm, offen für alle.",
-        "fr": "L'espace communautaire au centre-ville fête ses sept ans avec une longue soirée de musique et de contenus, ouverte à qui veut passer.",
-        "he": "מרחב הקהילה במרכז העיר מציין שבע שנים בערב ארוך של מוזיקה ותוכן לכל מי שרוצה לקפוץ."
+        "en": "A loud, campy drag night hosted by La Belle with four performers, built around the coming election season. Doors 21:00, show 22:00; the dress code is strictly black or white.",
+        "de": "Eine laute, campy Drag-Nacht, moderiert von La Belle, mit vier Performerinnen und rund um die kommende Wahlsaison gebaut. Einlass 21:00, Show 22:00; Dresscode streng schwarz oder weiß.",
+        "fr": "Une soirée drag bruyante et camp animée par La Belle, avec quatre performeuses, construite autour de la saison électorale à venir. Ouverture 21h, show 22h ; dress code strictement noir ou blanc.",
+        "he": "ערב דראג רועש וקמפי בהנחיית לה בל עם ארבע מופיעות, סביב עונת הבחירות המתקרבת. דלתות ב-21:00, המופע ב-22:00; קוד לבוש שחור או לבן בלבד."
       },
-      "date_start": "2026-10-05",
+      "date_start": "2026-10-13",
       "date_end": null,
-      "time": "19:00",
-      "venue": "Shevet",
+      "time": "21:00",
+      "venue": "Callas TLV, Menachem Begin 37",
       "area": null,
       "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/shevet-7y-bday-celebration-shevet",
+      "area_he": null,
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/freak-category-is-politics-callas-tlv",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/10781266/pexels-photo-10781266.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Tolga Aslanturk / Pexels"
+      "image": "https://images.pexels.com/photos/4722552/pexels-photo-4722552.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Cottonbro / Pexels"
     },
     {
       "category": "nightlife",
       "title": {
-        "en": "Freaks & Sticks - Freak 2 Freak",
-        "de": "Freaks & Sticks - Freak 2 Freak",
-        "fr": "Freaks & Sticks - Freak 2 Freak",
-        "he": "Freaks & Sticks - Freak 2 Freak"
+        "en": "Eviatar Banai and the band at Barby",
+        "de": "Eviatar Banai und Band im Barby",
+        "fr": "Eviatar Banai et son groupe au Barby",
+        "he": "אביתר בנאי והלהקה בבארבי"
       },
       "blurb": {
-        "en": "The city's most colourful dance floor returns to Haoman 17 for an all-night back-to-back set with Bobaz Lobster. Starts around midnight.",
-        "de": "Der bunteste Dancefloor der Stadt kehrt ins Haoman 17 zurück, für ein Back-to-Back-Set die ganze Nacht mit Bobaz Lobster. Beginn gegen Mitternacht.",
-        "fr": "Le dancefloor le plus coloré de la ville revient au Haoman 17 pour un set back-to-back toute la nuit avec Bobaz Lobster. Début vers minuit.",
-        "he": "רחבת הריקודים הכי צבעונית בעיר חוזרת להאומן 17 לסט בק-טו-בק כל הלילה עם Bobaz Lobster. מתחיל בערך בחצות."
+        "en": "One of the best-loved Israeli songwriters plays the big room at Barby with a full band, strings included. Hebrew lyrics, but the arrangements carry the evening.",
+        "de": "Einer der beliebtesten israelischen Songwriter spielt mit voller Band und Streichern im großen Saal des Barby. Hebräische Texte, doch die Arrangements tragen den Abend.",
+        "fr": "L'un des auteurs-compositeurs israéliens les plus aimés joue dans la grande salle du Barby avec un groupe complet et des cordes. Textes en hébreu, mais ce sont les arrangements qui portent la soirée.",
+        "he": "אחד מהיוצרים האהובים בישראל מופיע באולם הגדול של בארבי עם להקה מלאה, כולל כלי קשת. המילים בעברית, אבל העיבודים נושאים את הערב."
       },
-      "date_start": "2026-10-08",
+      "date_start": "2026-10-14",
       "date_end": null,
-      "time": "23:55",
+      "time": "21:00",
+      "venue": "Barby",
+      "area": null,
+      "price": "₪145",
+      "area_he": null,
+      "price_he": "145 ₪",
+      "url": "https://www.secrettelaviv.com/tickets/eviatar-banai-and-the-band-barby-7",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/9008740/pexels-photo-9008740.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Yan Krukov / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Timeless: Sander Van Doorn producer set",
+        "de": "Timeless: Producer-Set von Sander Van Doorn",
+        "fr": "Timeless : set producteur de Sander Van Doorn",
+        "he": "טיימלס: סט מפיק של סנדר ואן דורן"
+      },
+      "blurb": {
+        "en": "The first night of a new series built on the house, deep house and club trance of roughly 2000 to 2015. Sander Van Doorn headlines with a two-hour producer set; only 600 tickets.",
+        "de": "Die erste Nacht einer neuen Reihe rund um House, Deep House und Club-Trance von etwa 2000 bis 2015. Sander Van Doorn spielt ein zweistündiges Producer-Set; nur 600 Tickets.",
+        "fr": "La première soirée d'une nouvelle série consacrée à la house, la deep house et la club trance d'environ 2000 à 2015. Sander Van Doorn en tête d'affiche avec un set producteur de deux heures ; seulement 600 billets.",
+        "he": "הלילה הראשון של סדרה חדשה סביב האוס, דיפ האוס וקלאב טראנס של 2000 עד 2015 בערך. סנדר ואן דורן בסט מפיק של שעתיים; רק 600 כרטיסים."
+      },
+      "date_start": "2026-10-15",
+      "date_end": null,
+      "time": "22:00",
+      "venue": "The Place",
+      "area": null,
+      "price": "₪159-249",
+      "area_he": null,
+      "price_he": "159-249 ₪",
+      "url": "https://www.secrettelaviv.com/tickets/timeless-producer-set-the-place",
+      "source": "secrettelaviv.com",
+      "image": "https://images.pexels.com/photos/2114365/pexels-photo-2114365.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Jerome / Pexels"
+    },
+    {
+      "category": "nightlife",
+      "title": {
+        "en": "Festidrama at Haoman 17",
+        "de": "Festidrama im Haoman 17",
+        "fr": "Festidrama au Haoman 17",
+        "he": "פסטידרמה בהאומן 17"
+      },
+      "blurb": {
+        "en": "An outdoor night at Haoman 17 with DJ sets from Lior Makro and Shay Sium and live turns from Shasha, Oco-City and Ayallew. Tickets are limited; check the start time before you set out.",
+        "de": "Eine Nacht unter freiem Himmel im Haoman 17 mit DJ-Sets von Lior Makro und Shay Sium und Auftritten von Shasha, Oco-City und Ayallew. Begrenzte Tickets; die Startzeit vorher prüfen.",
+        "fr": "Une nuit en plein air au Haoman 17 avec les sets de Lior Makro et Shay Sium et les passages de Shasha, Oco-City et Ayallew. Billets limités ; vérifiez l'heure de début avant de partir.",
+        "he": "לילה בחוץ בהאומן 17 עם סטים של ליאור מאקרו ושי סיום והופעות של שאשא, אוקו-סיטי ואיילו. הכרטיסים מוגבלים; כדאי לבדוק את שעת הפתיחה לפני שיוצאים."
+      },
+      "date_start": "2026-10-15",
+      "date_end": null,
+      "time": null,
       "venue": "Haoman 17",
       "area": null,
       "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/freaks-sticks-freak-2-freak-haoman-17",
+      "area_he": null,
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/festidrama-haoman-17",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/9005458/pexels-photo-9005458.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Yank Rukov / Pexels"
+      "image": "https://images.pexels.com/photos/5192503/pexels-photo-5192503.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Maor Attias / Pexels"
     },
     {
       "category": "nightlife",
       "title": {
-        "en": "Bazaar - Playa by the Sea",
-        "de": "Bazaar - Playa am Meer",
-        "fr": "Bazaar - Playa au bord de la mer",
-        "he": "בזאר - פלאיה ליד הים"
+        "en": "2000s party at The Wave Club",
+        "de": "2000er-Party im The Wave Club",
+        "fr": "Soirée années 2000 au Wave Club",
+        "he": "מסיבת שנות ה-2000 בוייב קלאב"
       },
       "blurb": {
-        "en": "An open-air pre-Burn edition of Bazaar at Moonchild: a curated line-up from afternoon sun into the night, with a clothing swap and market stalls.",
-        "de": "Eine Open-Air-Ausgabe von Bazaar vor dem Burn im Moonchild: ein kuratiertes Line-up von der Nachmittagssonne bis in die Nacht, mit Kleidertausch und Marktständen.",
-        "fr": "Une édition en plein air de Bazaar avant le Burn, au Moonchild : une programmation soignée du soleil de l'après-midi jusqu'à la nuit, avec troc de vêtements et étals.",
-        "he": "גרסת פרי-ברן פתוחה של בזאר במונצ'יילד: ליין-אפ נבחר משמש אחר הצהריים ועד הלילה, עם החלפת בגדים ודוכני שוק."
+        "en": "A monthly 2000s night from Lamda with DJ Reef Yarkony: a playlist of the decade's hits and a room that sings along. Doors 23:00, on Shabach Street.",
+        "de": "Eine monatliche 2000er-Nacht von Lamda mit DJ Reef Yarkony: eine Playlist der Hits des Jahrzehnts und ein Saal, der mitsingt. Einlass 23:00, in der Shabach-Straße.",
+        "fr": "Une soirée années 2000 mensuelle de Lamda avec DJ Reef Yarkony : une playlist des tubes de la décennie et une salle qui chante. Ouverture 23h, rue Shabach.",
+        "he": "מסיבת שנות ה-2000 החודשית של למדא עם הדיג'יי ריף ירקוני: פלייליסט של להיטי העשור ואולם ששר יחד. דלתות ב-23:00, ברחוב שבח."
       },
-      "date_start": "2026-10-10",
+      "date_start": "2026-10-15",
       "date_end": null,
-      "time": "16:00",
-      "venue": "Moonchild",
+      "time": "23:00",
+      "venue": "The Wave Club, Shabach 1",
       "area": null,
       "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/bazaar-playa-by-the-sea-moonchild",
+      "area_he": null,
+      "price_he": null,
+      "url": "https://www.secrettelaviv.com/tickets/2000s-style-party-the-wave-club",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/27570912/pexels-photo-27570912.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Nano Erdozain / Pexels"
+      "image": "https://images.pexels.com/photos/4306943/pexels-photo-4306943.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: Zach Spears / Pexels"
     },
     {
       "category": "nightlife",
       "title": {
-        "en": "Moabet drag show at Callas",
-        "de": "Moabet-Dragshow im Callas",
-        "fr": "Spectacle drag Moabet au Callas",
-        "he": "מופע הדראג מואבט בקאלאס"
+        "en": "Sinnery at Kuli Alma",
+        "de": "Sinnery im Kuli Alma",
+        "fr": "Sinnery au Kuli Alma",
+        "he": "סינרי בקולי עלמא"
       },
       "blurb": {
-        "en": "Shovit brings back a sold-out Mizrahi drag show with Shovit Afioras, Prince Omar, Merav Abu Jackson and Diva D. Doors 20:00, show 21:00.",
-        "de": "Shovit bringt eine ausverkaufte mizrachische Dragshow zurück, mit Shovit Afioras, Prince Omar, Merav Abu Jackson und Diva D. Einlass 20:00, Show 21:00.",
-        "fr": "Shovit ramène un spectacle drag mizrahi complet, avec Shovit Afioras, Prince Omar, Merav Abu Jackson et Diva D. Ouverture 20h, spectacle 21h.",
-        "he": "שוביט מחזירה מופע דראג מזרחי שנמכר במלואו, עם שוביט אפיורס, פרינס עומר, מירב אבו ג'קסון ודיווה די. פתיחת דלתות 20:00, מופע 21:00."
+        "en": "A heavy, loud Sunday night: the Israeli thrash band Sinnery with Respect Through Fear in the Kuli Alma cellar. Free entry, 18 and over.",
+        "de": "Ein harter, lauter Sonntagabend: die israelische Thrash-Band Sinnery mit Respect Through Fear im Keller des Kuli Alma. Eintritt frei, ab 18.",
+        "fr": "Un dimanche soir lourd et bruyant : le groupe de thrash israélien Sinnery avec Respect Through Fear dans la cave du Kuli Alma. Entrée libre, à partir de 18 ans.",
+        "he": "ערב ראשון כבד ורועש: להקת הת'ראש הישראלית סינרי עם רספקט ת'רו פיר במרתף של קולי עלמא. הכניסה חינם, מגיל 18."
       },
-      "date_start": "2026-10-10",
+      "date_start": "2026-10-18",
       "date_end": null,
-      "time": "20:00",
-      "venue": "Callas TLV",
-      "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/moabet-callas-tlv",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/1840320/pexels-photo-1840320.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Teemu R / Pexels"
-    },
-    {
-      "category": "nightlife",
-      "title": {
-        "en": "Buena Vista Social Club tribute",
-        "de": "Buena Vista Social Club - Tribute",
-        "fr": "Hommage au Buena Vista Social Club",
-        "he": "מחווה לבואנה ויסטה סושיאל קלאב"
-      },
-      "blurb": {
-        "en": "Latin Power's long-running Cuban tribute, with bassist Fernando Knopf and Cuban vocalist Yanna Esperanza Mirabal: salsa, cha-cha-cha, rumba and bolero.",
-        "de": "Die seit Jahren laufende kubanische Hommage von Latin Power, mit Bassist Fernando Knopf und der kubanischen Sängerin Yanna Esperanza Mirabal: Salsa, Cha-Cha-Cha, Rumba und Bolero.",
-        "fr": "L'hommage cubain de longue date de Latin Power, avec le bassiste Fernando Knopf et la chanteuse cubaine Yanna Esperanza Mirabal : salsa, cha-cha-cha, rumba et boléro.",
-        "he": "מחוות הקובנית הוותיקה של לטין פאוור, עם הבסיסט פרננדו קנופף והזמרת הקובנית יאנה אספרנסה מירבל: סלסה, צ'ה-צ'ה-צ'ה, רומבה ובולרו."
-      },
-      "date_start": "2026-10-10",
-      "date_end": null,
-      "time": "21:30",
-      "venue": "UpTown Music Club",
-      "area": null,
-      "price": null,
-      "url": "https://www.secrettelaviv.com/tickets/tribute-show-to-buena-vista-social-club-by-latin-power-uptown-music-club",
-      "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: George Charry / Pexels"
-    },
-    {
-      "category": "nightlife",
-      "title": {
-        "en": "Ayelet Raveh live at Kuli Alma",
-        "de": "Ayelet Raveh live im Kuli Alma",
-        "fr": "Ayelet Raveh en concert au Kuli Alma",
-        "he": "אילת רווה בהופעה בקולי אלמה"
-      },
-      "blurb": {
-        "en": "A late live set in the art-covered basement bar off Rothschild, a short walk from Florentin. Entry is free.",
-        "de": "Ein spätes Live-Set in der kunstvoll bemalten Kellerbar nahe der Rothschild, ein kurzer Weg von Florentin. Eintritt frei.",
-        "fr": "Un set tardif dans le bar en sous-sol couvert d'art, près de Rothschild, à quelques minutes de Florentin. Entrée libre.",
-        "he": "סט חי מאוחר בבר המרתף המכוסה אמנות ליד רוטשילד, הליכה קצרה מפלורנטין. הכניסה חופשית."
-      },
-      "date_start": "2026-10-11",
-      "date_end": null,
-      "time": "22:30",
+      "time": "22:00",
       "venue": "Kuli Alma",
       "area": null,
       "price": "Free",
-      "url": "https://www.secrettelaviv.com/tickets/ayelet-raveh-kuli-alma",
+      "area_he": null,
+      "price_he": "חינם",
+      "url": "https://www.secrettelaviv.com/tickets/sinnery-kuli-alma",
       "source": "secrettelaviv.com",
-      "image": "https://images.pexels.com/photos/14483028/pexels-photo-14483028.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "image_credit": "Photo: Samimi Bir Fotografci / Pexels"
+      "image": "https://images.pexels.com/photos/11974570/pexels-photo-11974570.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "image_credit": "Photo: TheShutterVision / Pexels"
     }
   ]
 }
